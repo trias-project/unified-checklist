@@ -40,7 +40,6 @@ Load libraries:
 ```{r}
 # Tidyverse packages
 library(dplyr)
-library(magrittr)
 library(purrr)
 
 # Other packages

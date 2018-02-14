@@ -83,7 +83,7 @@ map_dfr(checklists_metadata, function(x) list(
 )
 ```
 
-## Get taxa from checklists
+# Get taxa from checklists
 
 For each checklist, get the taxa from GBIF. _Note: here we return checklist taxa, not backbone taxa._
 
@@ -97,7 +97,7 @@ checklist_taxa_info <- trias::get_taxa(
 ```
 
 ```{r}
-View(checklist_taxa_info)
+head(checklist_taxa_info, 20)
 ```
 
 _Tested until here_

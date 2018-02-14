@@ -31,7 +31,7 @@ Sys.setlocale("LC_CTYPE", "en_US.UTF-8")
 ```
 
 ```{r}
-devtools::install_github("trias-project/trias", ref = devtools::github_pull(3), force = TRUE) # Update once PR is accepted
+devtools::install_github("trias-project/trias", ref = devtools::github_pull(3)) # Update once PR is accepted
 devtools::install_github("ropensci/rgbif")
 ```
 
@@ -40,6 +40,7 @@ Load libraries:
 ```{r}
 # Tidyverse packages
 library(dplyr)
+library(magrittr)
 library(purrr)
 
 # Other packages
@@ -122,78 +123,6 @@ Total number of taxa:
 
 ```{r}
 nrow(checklist_taxa)
-```
-
-Create a vector of unique `nubKey`s (= the corresponding taxon in the GBIF Backbone Taxonomy, if found). This list will be used to retrieve GBIF Backbone Taxonomy information. Having a list with unique keys avoids multiple calls for the same `nubKey`.
-
-```{r}
-checklist_taxa %>%
-  select(nubKey) %>%
-  filter(!is.na(nubKey)) %>%
-  distinct(nubKey) -> nub_keys
-```
-
-Number of `nubKey`s:
-
-```{r}
-length(nub_keys)
-```
-
-## Get GBIF Backbone Taxonomy information:
-
-Select the taxon properties we want from the API:
-
-```{r}
-taxon_properties = c(
-  "key",
-  "scientificName",
-  "kingdom",
-  "taxonomicStatus",
-  "acceptedKey",
-  "accepted"
-)
-```
-
-Call `http://api.gbif.org/v1/species/{int}` for each `nubKey` to get taxon information:
-
-```{r get_backbone_taxa}
-nub_keys %>% rowwise() %>% 
-  do_(interp(~ as.data.frame(name_usage(key = .$x)$data), 
-             x = as.name("nubKey"))) %>% select(taxon_properties) -> backbone_taxa
-```
-
-Join GBIF Backbone Taxonomy information with the original taxa. Some taxa will share a `nubKey` (same species appearing on different checklists) and some will have no `nubKey` (they were not found in the GBIF Backbone Taxonomy):
-
-```{r}
-checklist_taxa_with_backbone <- left_join(checklist_taxa, backbone_taxa, by = c("nubKey" ="key"))
-```
-
-Number of taxa (should be the same as the original number of taxa = `r nrow(checklist_taxa)`):
-
-```{r}
-nrow(checklist_taxa_with_backbone)
-```
-
-Preview taxa:
-
-```{r}
-head(checklist_taxa_with_backbone)
-```
-
-Rename column names in order to distinguish info from checklist and GBIF Backbone Taxonomy:
-
-```{r}
-checklist_taxa_with_backbone %<>% rename(
-  "checklist_taxonKey" = "key",
-  "checklist_scientificName" = "dataset_scientificName",
-  "checklist_datasetKey" = "datasetKey",
-  "backbone_taxonKey" = "nubKey",
-  "backbone_scientificName" = "scientificName",
-  "backbone_kingdom" = "kingdom",
-  "backbone_taxonomicStatus" = "taxonomicStatus",
-  "backbone_acceptedKey" = "acceptedKey",
-  "backbone_accepted" = "accepted"
-)
 ```
 
 Save taxa to a tsv file:

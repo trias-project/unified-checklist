@@ -51,7 +51,7 @@ library(trias)
 Set file paths:
 
 ```{r}
-taxa_output_file <- "../data/output/checklist_taxa.tsv"
+taxa_output_file <- "data/output/checklist_taxa.tsv"
 ```
 
 # Select checklist datasets
@@ -68,7 +68,7 @@ checklists <- c(
 Get metadata of these checklist from GBIF:
 
 ```{r get_dataset_metadata}
-checklists_metadata <- map(checklists, function (x) rgbif::datasets(uuid = x))
+checklists_metadata <- map(checklists, function(x) rgbif::datasets(uuid = x))
 ```
 
 Preview metadata to ensure we have the correct ones:
@@ -88,8 +88,7 @@ map_dfr(checklists_metadata, function(x) list(
 For each checklist, get the taxa from GBIF. _Note: here we return checklist taxa, not backbone taxa._
 
 ```{r get_checklist_taxa}
-library(magrittr)
-checklist_taxa_info <- trias::get_taxa(
+checklist_taxa_all_fields <- trias::get_taxa(
   checklist_keys = checklists,
   taxon_keys = NULL,
   limit = NULL
@@ -97,34 +96,15 @@ checklist_taxa_info <- trias::get_taxa(
 ```
 
 ```{r}
-head(checklist_taxa_info, 20)
+head(checklist_taxa_all_fields, 20)
 ```
 
-_Tested until here_
-
----
-
-Create df with the information we want for each taxon:
+Create a data frame with the information we want for each taxon:
 
 ```{r}
-checklist_taxa <- map_dfr(checklist_taxa_info, function(x) list(
-  key = x$data$key,
-  dataset_scientificName = x$data$scientificName,
-  datasetKey = x$data$datasetKey,
-  nubKey = x$data$nubKey
-))
-```
-
-Reorder columns:
-
-```{r}
-checklist_taxa %<>% select(nubKey, key, dataset_scientificName, datasetKey)
-```
-
-Sort by nubKey:
-
-```{r}
-checklist_taxa %<>% arrange(nubKey)
+checklist_taxa <- checklist_taxa_all_fields %>%
+  select(key, scientificName, datasetKey, nubKey) %>%
+  arrange(key)
 ```
 
 Show some stats:
@@ -219,5 +199,5 @@ checklist_taxa_with_backbone %<>% rename(
 Save taxa to a tsv file:
 
 ```{r}
-write.table(checklist_taxa_with_backbone, file = taxa_output_file, quote = FALSE, sep = "\t", na = "",  row.names = FALSE)
+write.table(checklist_taxa, file = taxa_output_file, quote = FALSE, sep = "\t", na = "",  row.names = FALSE)
 ```

@@ -15,6 +15,10 @@ output:
 knit: (function(input_file, encoding) { rmarkdown::render(input_file, encoding = encoding, output_file = paste0("../docs/",sub(".Rmd", ".html", basename(input_file))))})
 ---
 
+This document describes how retrieve the taxa from our checklists.
+
+# Setup
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
@@ -51,27 +55,27 @@ Set file paths:
 taxa_output_file <- "../data/output/checklist_taxa.tsv"
 ```
 
-## Select checklist datasets
+# Select checklist datasets
 
-These are the alien species checklists we want to use and combine:
+These are the alien species checklist datasets we want to use and combine:
 
 ```{r}
-checklist_datasets <- c(
-  "9ff7d317-609b-4c08-bd86-3bc404b77c42", # Manual of the Alien Plants of Belgium
+checklists <- c(
+  "289244ee-e1c1-49aa-b2d7-d379391ce265", # Inventory of alien macroinvertebrates in Flanders, Belgium
   "e4746398-f7c4-47a1-a474-ae80a4f18e92"  # Invasive Alien Species in Belgium - HARMONIA database
 )
 ```
 
-Call `http://api.gbif.org/v1/datasets/{uuid}` for each dataset to get dataset metadata:
+Get metadata of these checklist from GBIF:
 
 ```{r get_dataset_metadata}
-checklist_datasets_info <- map(checklist_datasets, function (x) rgbif::datasets(uuid = x))
+checklists_metadata <- map(checklists, function (x) rgbif::datasets(uuid = x))
 ```
 
-Show info about these datasets:
+Preview metadata to ensure we have the correct ones:
 
 ```{r}
-map_dfr(checklist_datasets_info, function(x) list(
+map_dfr(checklists_metadata, function(x) list(
   datasetKey = x$data$key,
   title = x$data$title,
   modified = x$data$modified,
@@ -82,15 +86,24 @@ map_dfr(checklist_datasets_info, function(x) list(
 
 ## Get taxa from checklists
 
-Call `http://api.gbif.org/v1/species/search?datasetKey={uuid}` for each dataset to get taxon information. As no paging is yet implemented for this API in `rgbif`, we use a function from our `trias` package:
+For each checklist, get the taxa from GBIF. _Note: here we return checklist taxa, not backbone taxa._
 
 ```{r get_checklist_taxa}
-checklist_taxa_info <- trias::checklists_import(
-  checklist_datasets,
-  tot_limit = NULL, 
-  verbose = TRUE
+library(magrittr)
+checklist_taxa_info <- trias::get_taxa(
+  checklist_keys = checklists,
+  taxon_keys = NULL,
+  limit = NULL
 )
 ```
+
+```{r}
+View(checklist_taxa_info)
+```
+
+_Tested until here_
+
+---
 
 Create df with the information we want for each taxon:
 

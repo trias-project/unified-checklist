@@ -26,6 +26,11 @@ Set locale (so we use UTF-8 character encoding):
 Sys.setlocale("LC_CTYPE", "en_US.UTF-8")
 ```
 
+```{r}
+devtools::install_github("trias-project/trias", ref = devtools::github_pull(3), force = TRUE) # Update once PR is accepted
+devtools::install_github("ropensci/rgbif")
+```
+
 Load libraries:
 
 ```{r}

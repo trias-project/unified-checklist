@@ -179,6 +179,20 @@ checklist_taxa %>%
   )
 ```
 
+Only keep taxa with valid distribution:
+
+```{r keep_valid_distribution}
+checklist_taxa %<>%
+  filter(valid_distribution) %>%
+  select(-valid_distribution)
+```
+
+Total number of taxa with valid distributions:
+
+```{r show_total_valid_distribution_taxa}
+nrow(checklist_taxa)
+```
+
 # Save output
 
 Save taxa to a tsv file:

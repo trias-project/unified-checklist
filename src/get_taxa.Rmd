@@ -20,24 +20,24 @@ This document describes how retrieve the taxa from our checklists.
 # Setup
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
 ```
 
 Set locale (so we use UTF-8 character encoding):
 
-```{r}
+```{r set_encoding}
 # This works on Mac OS X, might not work on other OS
 Sys.setlocale("LC_CTYPE", "en_US.UTF-8")
 ```
 
-```{r}
-devtools::install_github("trias-project/trias", ref = devtools::github_pull(3)) # Update once PR is accepted
+```{r install_packages}
+devtools::install_github("trias-project/trias", ref = devtools::github_pull(6)) # Update once PR is accepted
 devtools::install_github("ropensci/rgbif")
 ```
 
 Load libraries:
 
-```{r}
+```{r load_libraries}
 # Tidyverse packages
 library(dplyr)
 library(magrittr)
@@ -51,15 +51,15 @@ library(trias)
 
 Set file paths:
 
-```{r}
-taxa_output_file <- "data/output/checklist_taxa.tsv"
+```{r set_output_file_path}
+taxa_output_file <- "../data/output/checklist_taxa.tsv"
 ```
 
 # Select checklist datasets
 
 These are the alien species checklist datasets we want to use and combine:
 
-```{r}
+```{r define_checklists}
 checklists <- c(
   "289244ee-e1c1-49aa-b2d7-d379391ce265", # Inventory of alien macroinvertebrates in Flanders, Belgium
   "e4746398-f7c4-47a1-a474-ae80a4f18e92"  # Invasive Alien Species in Belgium - HARMONIA database
@@ -68,13 +68,13 @@ checklists <- c(
 
 Get metadata of these checklist from GBIF:
 
-```{r get_dataset_metadata}
+```{r get_checklist_metadata_from_gbif}
 checklists_metadata <- map(checklists, function(x) rgbif::datasets(uuid = x))
 ```
 
-Preview metadata to ensure we have the correct ones:
+Preview metadata to ensure we have the correct checklists:
 
-```{r}
+```{r preview_metadata}
 map_dfr(checklists_metadata, function(x) list(
   datasetKey = x$data$key,
   title = x$data$title,
@@ -84,11 +84,13 @@ map_dfr(checklists_metadata, function(x) list(
 )
 ```
 
-# Get taxa from checklists
+# Get taxa
 
-For each checklist, get the taxa from GBIF. _Note: here we return checklist taxa, not backbone taxa._
+For each checklist, get the taxa from GBIF.
 
-```{r get_checklist_taxa}
+**Note**: here we return checklist taxa, not backbone taxa.
+
+```{r get_taxa_from_gbif}
 checklist_taxa_all_fields <- trias::get_taxa(
   checklist_keys = checklists,
   taxon_keys = NULL,
@@ -96,13 +98,15 @@ checklist_taxa_all_fields <- trias::get_taxa(
 )
 ```
 
-```{r}
+Preview data:
+
+```{r preview_taxa}
 head(checklist_taxa_all_fields, 20)
 ```
 
 Create a data frame with the information we want for each taxon:
 
-```{r}
+```{r select_columns}
 checklist_taxa <- checklist_taxa_all_fields %>%
   select(key, scientificName, datasetKey, nubKey) %>%
   arrange(key)
@@ -110,7 +114,7 @@ checklist_taxa <- checklist_taxa_all_fields %>%
 
 Show some stats:
 
-```{r}
+```{r show_taxa_stats_per_checklist}
 checklist_taxa %>%
   group_by(datasetKey) %>%
   summarize(
@@ -121,9 +125,75 @@ checklist_taxa %>%
 
 Total number of taxa:
 
-```{r}
+```{r show_total_taxa}
 nrow(checklist_taxa)
 ```
+
+# Filter on distribution
+
+Our checklists might contain more than alien species in Belgium. We therefore use the `trias::has_distribution()` function to filter on the [distribution](http://rs.gbif.org/extension/gbif/1.0/distribution.xml) information.
+
+We will filter on:
+
+* `countryCode = BE`: distributions in Belgium. Regional distributions within Belgium are also considered.
+* `establishmentMeans = INTRODUCED`: [GBIF enum](http://gbif.github.io/parsers/apidocs/org/gbif/api/vocabulary/EstablishmentMeans.html) for non-native/alien/exotic/introduced distributions
+* `occurrenceStatus = PRESENT`: presence distributions. Historical distributions (e.g. with an ending date in event date) are also considered.
+
+**Note**: we filter on distribution information of our _checklist taxa_, not backbone taxa. That is because backbone taxa contain distribution information from our own checklists _and_ other checklists, which we don't want to consider here.
+
+E.g. compare:
+
+* Distributions for _checklist_ taxon [Eriocheir sinensis](https://api.gbif.org/v1/species/140563012/distributions) (`140563012`)
+* Distributions for _backbone_ taxon [Eriocheir sinensis](https://api.gbif.org/v1/species/2225776/distributions) (`2225776`)
+
+Get distribution for all taxa and append `TRUE`/`FALSE` result as extra column:
+
+```{r check_distributions_on_gbif}
+checklist_taxa %<>%
+  rowwise() %>%
+  mutate(valid_distribution = has_distribution(
+    taxon_key = .data$key,
+    country = "BE",
+    establishmentMeans = "INTRODUCED",
+    status = "PRESENT"
+  ))
+```
+
+Preview results:
+
+```{r preview_has_distribution}
+checklist_taxa %>%
+  select(key, scientificName, valid_distribution) %>%
+  head(20)
+```
+
+Show some stats:
+
+```{r show_distribution_stats_per_checklist}
+checklist_taxa %>%
+  group_by(datasetKey) %>%
+  summarize(
+    taxa = n(),
+    taxa_with_valid_distribution = sum(valid_distribution),
+    taxa_without_valid_distribution = sum(!valid_distribution)
+  )
+```
+
+Only keep taxa with valid distribution:
+
+```{r keep_valid_distribution}
+checklist_taxa %<>%
+  filter(valid_distribution) %>%
+  select(-valid_distribution)
+```
+
+Total number of taxa with valid distributions:
+
+```{r show_total_valid_distribution_taxa}
+nrow(checklist_taxa)
+```
+
+# Save output
 
 Save taxa to a tsv file:
 

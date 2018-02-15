@@ -159,6 +159,26 @@ checklist_taxa %<>%
   ))
 ```
 
+Preview results:
+
+```{r preview_has_distribution}
+checklist_taxa %>%
+  select(key, scientificName, valid_distribution) %>%
+  head(20)
+```
+
+Show some stats:
+
+```{r show_distribution_stats_per_checklist}
+checklist_taxa %>%
+  group_by(datasetKey) %>%
+  summarize(
+    taxa = n(),
+    taxa_with_valid_distribution = sum(valid_distribution),
+    taxa_without_valid_distribution = sum(!valid_distribution)
+  )
+```
+
 # Save output
 
 Save taxa to a tsv file:

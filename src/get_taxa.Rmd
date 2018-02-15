@@ -146,27 +146,14 @@ E.g. compare:
 * Distributions for _checklist_ taxon [Eriocheir sinensis](https://api.gbif.org/v1/species/140563012/distributions) (`140563012`)
 * Distributions for _backbone_ taxon [Eriocheir sinensis](https://api.gbif.org/v1/species/2225776/distributions) (`2225776`)
 
-Check distribution for a single taxon:
+Get distribution for all taxa and append `TRUE`/`FALSE` result as extra column:
 
-```{r}
-has_distribution(
-  taxon_key = 140563012,
-  countryCode = "BE",
-  establishmentMeans = "INTRODUCED",
-  status = "PRESENT"
-)
-```
-
-Check distribution for all taxa:
-
-```{r eval = FALSE}
-checklist_taxa %>%
-  select(key) %>%
-  head() %>%
+```{r check_distributions_on_gbif}
+checklist_taxa %<>%
   rowwise() %>%
-  mutate(distribution = has_distribution(
-    key,
-    countryCode = "BE",
+  mutate(valid_distribution = has_distribution(
+    taxon_key = .data$key,
+    country = "BE",
     establishmentMeans = "INTRODUCED",
     status = "PRESENT"
   ))

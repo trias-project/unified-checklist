@@ -1,8 +1,8 @@
 ---
 title: "Get taxa from checklists"
 author:
-- Damiano Oldoni
 - Peter Desmet
+- Damiano Oldoni
 date: "`r Sys.Date()`"
 output:
   html_document:
@@ -15,7 +15,7 @@ output:
 knit: (function(input_file, encoding) { rmarkdown::render(input_file, encoding = encoding, output_file = paste0("../docs/",sub(".Rmd", ".html", basename(input_file))))})
 ---
 
-This document describes how retrieve the taxa from our checklists.
+This document describes how to retrieve the taxa from our checklists.
 
 # Setup
 
@@ -23,12 +23,7 @@ This document describes how retrieve the taxa from our checklists.
 knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
 ```
 
-Set locale (so we use UTF-8 character encoding):
-
-```{r set_encoding}
-# This works on Mac OS X, might not work on other OS
-Sys.setlocale("LC_CTYPE", "en_US.UTF-8")
-```
+Install packages:
 
 ```{r install_packages}
 devtools::install_github("trias-project/trias")
@@ -91,7 +86,7 @@ For each checklist, get the taxa from GBIF.
 **Note**: here we return checklist taxa, not backbone taxa.
 
 ```{r get_taxa_from_gbif}
-checklist_taxa_all_fields <- trias::get_taxa(
+checklist_taxa_all_fields <- trias::gbif_get_taxa(
   checklist_keys = checklists,
   taxon_keys = NULL,
   limit = NULL
@@ -151,7 +146,7 @@ Get distribution for all taxa and append `TRUE`/`FALSE` result as extra column:
 ```{r check_distributions_on_gbif}
 checklist_taxa %<>%
   rowwise() %>%
-  mutate(valid_distribution = has_distribution(
+  mutate(valid_distribution = gbif_has_distribution(
     taxon_key = .data$key,
     country = "BE",
     establishmentMeans = "INTRODUCED",

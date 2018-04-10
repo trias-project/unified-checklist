@@ -89,7 +89,8 @@ For each checklist, get the taxa from GBIF.
 checklist_taxa_all_fields <- trias::gbif_get_taxa(
   checklist_keys = checklists,
   taxon_keys = NULL,
-  limit = NULL
+  limit = NULL,
+  origin = "source" # Only source taxa, not denormed higher classification taxa
 )
 ```
 

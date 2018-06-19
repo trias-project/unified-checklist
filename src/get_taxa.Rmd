@@ -86,12 +86,11 @@ For each checklist, get the taxa from GBIF.
 **Note**: here we return checklist taxa, not backbone taxa.
 
 ```{r get_taxa_from_gbif}
-checklist_taxa_all_fields <- trias::gbif_get_taxa(
-  checklist_keys = checklists,
-  taxon_keys = NULL,
-  limit = NULL,
-  origin = "source" # Only source taxa, not denormed higher classification taxa
-)
+checklist_taxa_all_fields <- rgbif::name_lookup(
+  datasetKey = checklists,
+  origin = "source",# Only source taxa, not denormed higher classification taxa
+  limit = 99999,
+  return = "data")
 ```
 
 Preview data:

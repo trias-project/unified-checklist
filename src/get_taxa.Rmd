@@ -51,7 +51,7 @@ taxa_output_file <- "../data/output/checklist_taxa.tsv"
 
 # Select checklist datasets
 
-These are the alien species checklist datasets we want to use and combine:
+These are the alien species checklist datasets we want to use and combine, ranked by trust (by experts):
 
 ```{r define_checklists}
 checklists <- c(

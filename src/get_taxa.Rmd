@@ -148,8 +148,9 @@ checklist_taxa <- checklist_taxa %>%
   mutate(valid_distribution = trias::gbif_has_distribution(
     taxon_key = .data$key,
     country = "BE",
-    establishmentMeans = "INTRODUCED",
-    status = "PRESENT"
+    establishmentMeans = c("INTRODUCED", "NATURALISED", "INVASIVE",
+                                   "ASSISTED COLONISATION"),
+    status = c("PRESENT", "COMMMON", "RARE", "IRREGULAR")
   ))
 ```
 

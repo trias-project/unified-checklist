@@ -15,7 +15,7 @@ output:
 knit: (function(input_file, encoding) { rmarkdown::render(input_file, encoding = encoding, output_file = paste0("../docs/",sub(".Rmd", ".html", basename(input_file))))})
 ---
 
-This document describes how to retrieve the taxa from our checklists.
+This document describes how to retrieve the taxa from our checklists and create a verification spreadsheet.
 
 # Setup
 

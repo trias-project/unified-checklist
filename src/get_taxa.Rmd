@@ -60,7 +60,7 @@ checklists <- c(
 )
 ```
 
-Get metadata of these checklist from GBIF:
+Get metadata of these checklists from GBIF:
 
 ```{r get_checklist_metadata_from_gbif}
 checklists_metadata <- map(checklists, function(x) rgbif::datasets(uuid = x))

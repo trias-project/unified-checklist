@@ -35,7 +35,6 @@ Load libraries:
 # Tidyverse packages
 library(dplyr)
 library(magrittr)
-library(purrr)
 
 # Other packages
 library(lazyeval)
@@ -144,7 +143,7 @@ E.g. compare:
 Get distribution for all taxa and append `TRUE`/`FALSE` result as extra column:
 
 ```{r check_distributions_on_gbif}
-checklist_taxa %<>%
+checklist_taxa <- checklist_taxa %>%
   rowwise() %>%
   mutate(valid_distribution = gbif_has_distribution(
     taxon_key = .data$key,
@@ -177,7 +176,7 @@ checklist_taxa %>%
 Only keep taxa with valid distribution:
 
 ```{r keep_valid_distribution}
-checklist_taxa %<>%
+checklist_taxa <- checklist_taxa %>%
   filter(valid_distribution) %>%
   select(-valid_distribution)
 ```

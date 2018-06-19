@@ -130,9 +130,9 @@ Our checklists might contain more than alien species in Belgium. We therefore us
 
 We will filter on:
 
-* `countryCode = BE`: distributions in Belgium. Regional distributions within Belgium are also considered.
-* `establishmentMeans = INTRODUCED`: [GBIF enum](http://gbif.github.io/parsers/apidocs/org/gbif/api/vocabulary/EstablishmentMeans.html) for non-native/alien/exotic/introduced distributions
-* `occurrenceStatus = PRESENT`: presence distributions. Historical distributions (e.g. with an ending date in event date) are also considered.
+1. [invasion stage](http://gbif.github.io/parsers/apidocs/org/gbif/api/vocabulary/EstablishmentMeans.html): `establishmentMeans` equal to one of `INTRODUCED`,  `NATURALISED`, `INVASIVE`, `ASSISTED COLONISATION`
+2. [presence status](https://gbif.github.io/gbif-api/apidocs/org/gbif/api/vocabulary/OccurrenceStatus.html): `status` equal to one of `PRESENT`, `COMMMON`, `RARE`, `IRREGULAR`
+3. presence in Belgium (`country` equal to `BE`)
 
 **Note**: we filter on distribution information of our _checklist taxa_, not backbone taxa. That is because backbone taxa contain distribution information from our own checklists _and_ other checklists, which we don't want to consider here.
 

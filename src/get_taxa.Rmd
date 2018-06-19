@@ -55,6 +55,7 @@ These are the alien species checklist datasets we want to use and combine, ranke
 
 ```{r define_checklists}
 checklists <- c(
+  "9ff7d317-609b-4c08-bd86-3bc404b77c42", # Manual of the Alien Plants of Belgium
   "289244ee-e1c1-49aa-b2d7-d379391ce265", # Inventory of alien macroinvertebrates in Flanders, Belgium
   "98940a79-2bf1-46e6-afd6-ba2e85a26f9f"  # Checklist of non-native freshwater fishes in Flanders, Belgium
 )

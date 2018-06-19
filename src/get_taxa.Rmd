@@ -188,6 +188,33 @@ Total number of taxa with valid distributions:
 nrow(checklist_taxa)
 ```
 
+# Get backbone info
+
+To make decisions regarding synonyms and higher classification, we need to retrieve GBIF backbone information if present.
+
+```{r retrieve_taxonomic_info_backbone}
+taxon <- checklist_taxa %>% filter(is.finite(nubKey))
+nub_keys <- checklist_taxa %>% 
+  filter(is.finite(nubKey)) %>% 
+  distinct(nubKey)
+
+taxon_backbone_info <-  nub_keys %>%
+  rowwise() %>%
+  do_(interp(~ rgbif::name_usage(key = .$nubKey,
+                         return = "data")))
+taxon_info <- c("key", "species", "genus", "family", "order",
+                "class", "phylum", "kingdom",
+                "rank", "speciesKey", "taxonomicStatus", 
+                "acceptedKey", "accepted")
+
+taxon_backbone_info <- taxon_backbone_info %>%
+  select(key,one_of(taxon_info))
+
+combined_taxon_info <- taxon %>% left_join(taxon_backbone_info,
+                                           by = c("nubKey" = "key"))
+head(combined_taxon_info)
+```
+
 # Save output
 
 Save taxa to a tsv file:

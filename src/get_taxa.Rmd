@@ -27,7 +27,6 @@ Install packages:
 
 ```{r install_packages}
 devtools::install_github("trias-project/trias")
-devtools::install_github("ropensci/rgbif")
 ```
 
 Load libraries:

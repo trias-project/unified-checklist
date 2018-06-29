@@ -34,9 +34,13 @@ Load libraries:
 ```{r load_libraries}
 # Tidyverse packages
 library(dplyr)
+library(purrr)
+library(readr)
 library(magrittr)
 
+
 # Other packages
+library(rlang)
 library(lazyeval)
 library(rgbif)
 library(trias)
@@ -64,18 +68,19 @@ Get metadata of these checklists from GBIF:
 
 ```{r get_checklist_metadata_from_gbif}
 checklists_metadata <- map(checklists, function(x) rgbif::datasets(uuid = x))
-```
-
-Preview metadata to ensure we have the correct checklists:
-
-```{r preview_metadata}
-map_dfr(checklists_metadata, function(x) list(
+checklists_metadata <- map_dfr(checklists_metadata, function(x) list(
   datasetKey = x$data$key,
   title = x$data$title,
   modified = x$data$modified,
   publisher = x$data$publishingOrganizationKey,
   doi = x$data$doi)
 )
+```
+
+Preview metadata to ensure we have the correct checklists:
+
+```{r preview_metadata}
+checklists_metadata
 ```
 
 # Get taxa
@@ -86,7 +91,7 @@ For each checklist, get the taxa from GBIF.
 
 ```{r get_taxa_from_gbif}
 checklist_taxa_all_fields <- rgbif::name_lookup(
-  datasetKey = checklists,
+  datasetKey = checklists_metadata$datasetKey,
   origin = "source",# Only source taxa, not denormed higher classification taxa
   limit = 99999,
   return = "data")
@@ -98,12 +103,12 @@ Preview data:
 head(checklist_taxa_all_fields, 20)
 ```
 
-Create a data frame with the information we want for each taxon:
+Create a data frame with the information we want for each taxon, sorted by taxon key:
 
 ```{r select_columns}
 checklist_taxa <- checklist_taxa_all_fields %>%
   select(key, scientificName, datasetKey, nubKey) %>%
-  arrange(key) # Sort on taxonKey
+  arrange(key)
 ```
 
 Show some stats:
@@ -140,7 +145,7 @@ E.g. compare:
 * Distributions for _checklist_ taxon [Eriocheir sinensis](https://api.gbif.org/v1/species/140563012/distributions) (`140563012`)
 * Distributions for _backbone_ taxon [Eriocheir sinensis](https://api.gbif.org/v1/species/2225776/distributions) (`2225776`)
 
-Get distribution for all taxa and append `TRUE`/`FALSE` result as extra column:
+Get distribution for all taxa and append `TRUE`/`FALSE` result as extra column. This step can take long.
 
 ```{r check_distributions_on_gbif}
 checklist_taxa <- checklist_taxa %>%
@@ -178,7 +183,7 @@ Only keep taxa with valid distribution:
 
 ```{r keep_valid_distribution}
 checklist_taxa <- checklist_taxa %>%
-  filter(valid_distribution) %>%
+  filter(valid_distribution == TRUE) %>%
   select(-valid_distribution)
 ```
 
@@ -190,7 +195,7 @@ nrow(checklist_taxa)
 
 # Get backbone info
 
-To make decisions regarding synonyms and higher classification, we need to retrieve GBIF backbone information if present.
+To make decisions regarding synonyms and higher classification, we need to retrieve GBIF backbone information, if present:
 
 ```{r retrieve_taxonomic_info_backbone}
 taxon <- checklist_taxa %>% filter(is.finite(nubKey))
@@ -202,23 +207,52 @@ taxon_backbone_info <-  nub_keys %>%
   rowwise() %>%
   do_(interp(~ rgbif::name_usage(key = .$nubKey,
                          return = "data")))
+```
+
+We select taxonomic information we are interested to:
+
+```{r select_cols_backbone}
 taxon_info <- c("key", "species", "genus", "family", "order",
                 "class", "phylum", "kingdom",
                 "rank", "speciesKey", "taxonomicStatus", 
-                "acceptedKey", "accepted")
+                "acceptedKey", "accepted", "issues")
 
 taxon_backbone_info <- taxon_backbone_info %>%
-  select(key,one_of(taxon_info))
+  select(one_of(taxon_info))
+```
 
+In case some information misses, add empty column(s):
+
+```{r}
+cols_to_add <- taxon_info[
+  !which(taxon_info %in% colnames(taxon_backbone_info))
+]
+
+taxon_backbone_info <- map(cols_to_add, 
+                           function(x) taxon_backbone_info %>% 
+                             mutate(!! sym(x) := NA)) %>% 
+  reduce(full_join, .init = taxon_backbone_info)
+```
+
+We add prefix `backbone_` to these column names:
+
+```{r add_prefix_backbone}
+colnames(taxon_backbone_info) <- paste0("backbone_", 
+                                        colnames(taxon_backbone_info))
+```
+
+
+```{r}
 combined_taxon_info <- taxon %>% left_join(taxon_backbone_info,
-                                           by = c("nubKey" = "key"))
+                                           by = c("nubKey" = "backbone_key"))
 head(combined_taxon_info)
 ```
 
+
 # Save output
 
-Save taxa to a tsv file:
+Save the taxonomic information to a tsv file:
 
 ```{r}
-write.table(checklist_taxa, file = taxa_output_file, quote = FALSE, sep = "\t", na = "",  row.names = FALSE)
+write_tsv(combined_taxon_info, path = taxa_output_file, na = "")
 ```

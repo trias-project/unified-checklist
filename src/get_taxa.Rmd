@@ -280,9 +280,13 @@ We merge the information from checklists and GBIF backbone:
 ```{r}
 combined_taxon_info <- checklist_taxa %>% left_join(taxon_backbone_info,
                                            by = c("nubKey" = "backbone_key"))
-head(combined_taxon_info)
 ```
 
+Preview:
+
+```{r preview_merged_final}
+combined_taxon_info %>% head()
+```
 
 # Save output
 

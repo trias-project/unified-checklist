@@ -267,9 +267,10 @@ taxon_backbone_info <- map(cols_to_add,
   reduce(full_join, .init = taxon_backbone_info)
 ```
 
-We add prefix `backbone_` to these column names:
+For improving readibility we rename the column `accepted` to `acceptedName` and add prefix `backbone_` to all columns:
 
 ```{r add_prefix_backbone}
+taxon_backbone_info <- taxon_backbone_info %>% rename(acceptedName = accepted)
 colnames(taxon_backbone_info) <- paste0("backbone_", 
                                         colnames(taxon_backbone_info))
 ```

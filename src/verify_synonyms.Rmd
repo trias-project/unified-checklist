@@ -1,12 +1,17 @@
 ---
 title: "Verify synonyms"
+author:
+- Peter Desmet
+- Damiano Oldoni
+date: "`r Sys.Date()`"
 output:
   html_document:
     toc: true
-    toc_depth: 2
+    toc_depth: 3
     toc_float: true
-    theme: flatly
-    df_print: kable
+    number_sections: true
+    theme: yeti
+    df_print: paged
 knit: (function(input_file, encoding) { rmarkdown::render(input_file, encoding = encoding, output_file = paste0("../docs/",sub(".Rmd", ".html", basename(input_file))))})
 ---
 
@@ -14,47 +19,72 @@ knit: (function(input_file, encoding) { rmarkdown::render(input_file, encoding =
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+Load libraries:
+
+```{r load_libraries}
+# Tidyverse packages
+library(dplyr)
+library(readr)
+
+# Other packages
+library(rgbif)
+library(trias)
+library(googlesheets)
+```
+
 ## Load data
 
-Load taxa:
+Load checklist metadata (ranked by trust):
 
-```{r}
-# load from csv(taxa_by_nubKey)
+```{r load_checklist_metadata}
+checklist_metadata_file <- "../data/output/checklist_metadata.tsv"
+checklist_metadata <- read_tsv(checklist_metadata_file)
+```
+
+Load taxa information (from checklists and GBIF backbone):
+
+```{r load_taxa}
+taxa_file <- "../data/output/checklist_taxa.tsv"
+taxa <- read_tsv(taxa_file)
 ```
 
 Preview:
 
 ```{r}
-# nubKey
-# key
-# dataset_scientificName
-# datasetKey
-# scientificName
-# kingdom
-# taxonomicStatus
-# acceptedKey
-# accepted
+taxa %>% head(n = 10)
 ```
 
-Load verified synonyms:
+We need to verify synonyms and solve GBIF backbone related issues. Experts should verify taxa with:
+
+1. no match with GBIF Backbone
+2. taxonomic status equal to `SYNONYM`
+3. backbone issues equal to `FUZZY GBIF BACKBONE MATCH`
+
+Load verified synonyms from spreadsheet in TrIAS Google Drive:
+
+```{r load_googlesheet}
+my_sheets <- gs_ls()
+```
 
 ```{r}
-# load from tsv(verified_synonyms)
+verified_synonyms_file <- "../data/output/verified_synonyms.tsv"
+verified_synonyms <- read_tsv(verified_synonyms_file)
 ```
 
 Preview:
 
 ```{r}
-# columns:
-# nubKey
-# scientificName
-# acceptedKey
-# accepted
-# kingdom
-# date_added
-# verified_key
-# remarks
+verified_synonyms %>% head(n = 10)
 ```
+
+# Assign verified key(s) to taxa
+
+Taxa which don't need to be reviewed by experts can be easily handled: `verfied_key` is set equal to `nubKey`:
+
+```{r set_verified_key_equal_to_nubKey}
+taxa %>% mutate(verified_key = if_else())
+```
+
 
 ## Find new synonym combinations
 

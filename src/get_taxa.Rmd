@@ -218,7 +218,8 @@ nub_keys <- checklist_taxa %>%
 taxon_backbone_info <-  nub_keys %>%
   rowwise() %>%
   do_(interp(~ rgbif::name_usage(key = .$nubKey,
-                         return = "data")))
+                         return = "data"))) %>%
+  ungroup()
 ```
 
 We select taxonomic information we are interested to:

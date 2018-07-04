@@ -158,13 +158,17 @@ Get distribution for all taxa and append `TRUE`/`FALSE` result as extra column. 
 ```{r check_distributions_on_gbif}
 checklist_taxa <- checklist_taxa %>%
   rowwise() %>%
-  mutate(valid_distribution = trias::gbif_has_distribution(
-    taxon_key = .data$key,
-    country = "BE",
-    establishmentMeans = c("INTRODUCED", "NATURALISED", "INVASIVE",
-                                   "ASSISTED COLONISATION"),
-    status = c("PRESENT", "COMMMON", "RARE", "IRREGULAR")
-  ))
+  do_(interp(~ mutate(as.data.frame(.), 
+                      valid_distribution  = trias::gbif_has_distribution(
+                        taxon_key = .data$key,
+                        country = "BE",
+                        establishmentMeans = c("INTRODUCED", 
+                                               "NATURALISED", 
+                                               "INVASIVE", 
+                                               "ASSISTED COLONISATION"),
+                        status = c("PRESENT", "COMMMON", "RARE", "IRREGULAR"))
+                      ))) %>%
+  ungroup()
 ```
 
 Preview results:

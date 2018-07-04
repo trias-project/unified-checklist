@@ -26,7 +26,7 @@ knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
 Install packages:
 
 ```{r install_packages}
-devtools::install_github("trias-project/trias")
+devtools::install_github("trias-project/trias@add_gbif_verify_synonyms")
 ```
 
 Load libraries:

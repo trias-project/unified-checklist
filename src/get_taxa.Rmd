@@ -50,6 +50,7 @@ Set file paths:
 
 ```{r set_output_file_path}
 taxa_output_file <- "../data/output/checklist_taxa.tsv"
+checklist_metadata_file <- "../data/output/checklist_metadata.tsv"
 ```
 
 # Select checklist datasets
@@ -82,6 +83,13 @@ Preview metadata to ensure we have the correct checklists:
 ```{r preview_metadata}
 checklists_metadata
 ```
+
+We save the checklist details and order.
+
+```{r save_checklist_info}
+write_tsv(checklists_metadata, path = checklist_metadata_file)
+```
+
 
 # Get taxa
 

@@ -250,12 +250,12 @@ taxon_backbone_info <- taxon_backbone_info %>%
   mutate_at(vars(contains("issues"), contains("X.")),
           interp(~ str_replace_na(., ""))) %>%
   ungroup() %>%
-  unite(issues, contains("issues"), contains("X."), sep = ",", remove = TRUE) %>%
+  unite(issues, contains("issues"), contains("X."), 
+        sep = ",", remove = TRUE) %>% # remove redundant commas
   mutate(issues = gsub("^,*|(?<=,),|,*$", "", 
                        issues, 
-                       perl=T)) # remove redundant commas
+                       perl=T)) 
 ```
-
 
 In case some information misses, add empty column(s):
 

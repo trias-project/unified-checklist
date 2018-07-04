@@ -228,11 +228,32 @@ We select taxonomic information we are interested to:
 taxon_info <- c("key", "species", "genus", "family", "order",
                 "class", "phylum", "kingdom",
                 "rank", "speciesKey", "taxonomicStatus", 
-                "acceptedKey", "accepted", "issues")
+                "acceptedKey", "accepted")
 
 taxon_backbone_info <- taxon_backbone_info %>%
-  select(one_of(taxon_info))
+  select(one_of(taxon_info), contains("issues"), contains("X."))
 ```
+
+Issues are spread other multiple columns:
+
+```{r show_issues}
+taxon_backbone_info %>% 
+  select(contains("issues"), contains("X.")) %>% colnames()
+```
+
+Unite all issues together by comma in column `issues`:
+```{r issues_comma_separated}
+taxon_backbone_info <- taxon_backbone_info %>% 
+  rowwise() %>% # remove NA from columns containing issues
+  mutate_at(vars(contains("issues"), contains("X.")),
+          interp(~ str_replace_na(., ""))) %>%
+  ungroup() %>%
+  unite(issues, contains("issues"), contains("X."), sep = ",", remove = TRUE) %>%
+  mutate(issues = gsub("^,*|(?<=,),|,*$", "", 
+                       issues, 
+                       perl=T)) # remove redundant commas
+```
+
 
 In case some information misses, add empty column(s):
 

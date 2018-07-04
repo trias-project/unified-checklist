@@ -62,6 +62,8 @@ checklists <- c(
   "9ff7d317-609b-4c08-bd86-3bc404b77c42", # Manual of the Alien Plants of Belgium
   "289244ee-e1c1-49aa-b2d7-d379391ce265", # Inventory of alien macroinvertebrates in Flanders, Belgium
   "98940a79-2bf1-46e6-afd6-ba2e85a26f9f"  # Checklist of non-native freshwater fishes in Flanders, Belgium
+  # "b043c480-dd36-4f4f-aa82-e188753ff09d", # Catalogue of the Rust Fungi of Belgium
+  # "3f5e930b-52a5-461d-87ec-26ecd66f14a3" # RINSE - Registry of non-native species in the Two Seas region countries (Great Britain, France, Belgium and the Netherlands)
 )
 ```
 

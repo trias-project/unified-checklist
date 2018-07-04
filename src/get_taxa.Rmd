@@ -258,9 +258,8 @@ taxon_backbone_info <- taxon_backbone_info %>%
 In case some information misses, add empty column(s):
 
 ```{r}
-cols_to_add <- taxon_info[
-  !which(taxon_info %in% colnames(taxon_backbone_info))
-]
+cols_to_add <- taxon_info[!which(taxon_info %in% 
+           colnames(taxon_backbone_info))]
 
 taxon_backbone_info <- map(cols_to_add, 
                            function(x) taxon_backbone_info %>% 

@@ -34,7 +34,9 @@ Load libraries:
 ```{r load_libraries}
 # Tidyverse packages
 library(dplyr)
+library(tidyr)
 library(purrr)
+library(stringr)
 library(readr)
 library(magrittr)
 
@@ -230,31 +232,10 @@ We select taxonomic information we are interested to:
 taxon_info <- c("key", "species", "genus", "family", "order",
                 "class", "phylum", "kingdom",
                 "rank", "speciesKey", "taxonomicStatus", 
-                "acceptedKey", "accepted")
+                "acceptedKey", "accepted", "issues")
 
 taxon_backbone_info <- taxon_backbone_info %>%
-  select(one_of(taxon_info), contains("issues"), contains("X."))
-```
-
-Issues are spread other multiple columns:
-
-```{r show_issues}
-taxon_backbone_info %>% 
-  select(contains("issues"), contains("X.")) %>% colnames()
-```
-
-Unite all issues together by comma in column `issues`:
-```{r issues_comma_separated}
-taxon_backbone_info <- taxon_backbone_info %>% 
-  rowwise() %>% # remove NA from columns containing issues
-  mutate_at(vars(contains("issues"), contains("X.")),
-          interp(~ str_replace_na(., ""))) %>%
-  ungroup() %>%
-  unite(issues, contains("issues"), contains("X."), 
-        sep = ",", remove = TRUE) %>% # remove redundant commas
-  mutate(issues = gsub("^,*|(?<=,),|,*$", "", 
-                       issues, 
-                       perl=T)) 
+  select(one_of(taxon_info))
 ```
 
 In case some information misses, add empty column(s):
@@ -269,6 +250,21 @@ taxon_backbone_info <- map(cols_to_add,
   reduce(full_join, .init = taxon_backbone_info)
 ```
 
+Next, we unlist column `issues`:
+
+```{r unlist_issues}
+taxon_backbone_info <- taxon_backbone_info %>%
+  group_by_at(vars(-issues)) %>%
+  summarize(issues = str_c(issues, collapse = ",")) %>%
+  ungroup()
+```
+
+GBIF backbone issues returned: if multiple issues are present, they are separated by comma
+
+```{r preview issues}
+taxon_backbone_info %>% distinct(issues)
+```
+
 For improving readibility we rename the column `accepted` to `acceptedName` and add prefix `backbone_` to all columns:
 
 ```{r add_prefix_backbone}
@@ -280,8 +276,9 @@ colnames(taxon_backbone_info) <- paste0("backbone_",
 We merge the information from checklists and GBIF backbone:
 
 ```{r}
-combined_taxon_info <- checklist_taxa %>% left_join(taxon_backbone_info,
-                                           by = c("nubKey" = "backbone_key"))
+combined_taxon_info <- checklist_taxa %>%
+  left_join(taxon_backbone_info, 
+            by = c("nubKey" = "backbone_key"))
 ```
 
 Preview:

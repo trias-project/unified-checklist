@@ -250,7 +250,7 @@ taxon_backbone_info <- map(cols_to_add,
   reduce(full_join, .init = taxon_backbone_info)
 ```
 
-Next, we unlist column `issues`:
+Next, we unlist column `issues` and we separated them by comma (if multiple issues are present):
 
 ```{r unlist_issues}
 taxon_backbone_info <- taxon_backbone_info %>%
@@ -264,7 +264,7 @@ taxon_backbone_info <- taxon_backbone_info %>%
   ))
 ```
 
-GBIF backbone issues returned: if multiple issues are present, they are separated by comma
+All possible combinations of GBIF backbone issues present in our data frame:
 
 ```{r preview issues}
 taxon_backbone_info %>% distinct(issues)

@@ -229,7 +229,7 @@ taxon_backbone_info <-  nub_keys %>%
 We select taxonomic information we are interested to:
 
 ```{r select_cols_backbone}
-taxon_info <- c("key", "species", "genus", "family", "order",
+taxon_info <- c("key", "scientificName", "species", "genus", "family", "order",
                 "class", "phylum", "kingdom",
                 "rank", "speciesKey", "taxonomicStatus", 
                 "acceptedKey", "accepted", "issues")

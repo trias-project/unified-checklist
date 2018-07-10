@@ -19,6 +19,8 @@ knit: (function(input_file, encoding) { rmarkdown::render(input_file, encoding =
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+# Setup
+
 Load libraries:
 
 ```{r load_libraries}
@@ -29,19 +31,26 @@ library(readr)
 # Other packages
 library(rgbif)
 library(trias)
-library(googlesheets)
+library(googlesheets4)
 ```
 
-## Load data
+Set file path:
+
+```{r input_file_path}
+checklist_metadata_file <- "../data/output/checklist_metadata.tsv"
+```
+
+
+# Load data
 
 Load checklist metadata (ranked by trust):
 
 ```{r load_checklist_metadata}
-checklist_metadata_file <- "../data/output/checklist_metadata.tsv"
 checklist_metadata <- read_tsv(checklist_metadata_file)
+checklist_metadata
 ```
 
-Load taxa information (from checklists and GBIF backbone):
+Load taxa information as previously wrangled via checklists and GBIF backbone:
 
 ```{r load_taxa}
 taxa_file <- "../data/output/checklist_taxa.tsv"
@@ -54,16 +63,11 @@ Preview:
 taxa %>% head(n = 10)
 ```
 
-We need to verify synonyms and solve GBIF backbone related issues. Experts should verify taxa with:
-
-1. no match with GBIF Backbone
-2. taxonomic status equal to `SYNONYM`
-3. backbone issues equal to `FUZZY GBIF BACKBONE MATCH`
-
-Load verified synonyms from spreadsheet in TrIAS Google Drive:
+Load verified taxa from spreadsheet in TrIAS Google Drive:
 
 ```{r load_googlesheet}
-my_sheets <- gs_ls()
+my_sheets <- googlesheets4::read_sheet(ss = "verification_spreadsheet",
+                                       sheet = "Sheet1")
 ```
 
 ```{r}
@@ -79,14 +83,44 @@ verified_synonyms %>% head(n = 10)
 
 # Assign verified key(s) to taxa
 
-Taxa which don't need to be reviewed by experts can be easily handled: `verfied_key` is set equal to `nubKey`:
+We need to verify synonyms and solve GBIF backbone related issues. Experts should verify taxa if one of the following conditions holds true:
 
-```{r set_verified_key_equal_to_nubKey}
-taxa %>% mutate(verified_key = if_else())
+1. no match with GBIF Backbone (`nubKey` is not present)
+2. taxonomic status not available or a synonym (`backbone_taxonomicStatus` not `ACCEPTED` or `DOUBTFUL`, see [GBIF taxonomic status page](http://rs.gbif.org/vocabulary/gbif/taxonomic_status.xml) for more details)
+3. a backbone fuzzy match occurred (`backbone_issues` contains `BACKBONE_MATCH_FUZZY`)
+
+In all other cases, we can accept the `nubKey` as provided by GBIF backbone:
+
+```{r set_verified_key_equal_to_nubKey_or_NULL}
+taxa <- taxa %>% 
+  mutate(verified_key = if_else(is.finite(nubKey) & 
+                                  backbone_taxonomicStatus %in% 
+                                  c("ACCEPTED", "DOUBTFUL") & 
+                                  !str_detect(backbone_issues, 
+                                              "BACKBONE_MATCH_FUZZY"),
+                                .data$nubKey,
+                                NULL))
+```
+
+A summary:
+
+```{r stats}
+taxa %>% count(with_verified_key = is.finite(verified_key))
 ```
 
 
-## Find new synonym combinations
+We use function `verify_taxa()` from  `trias` package in order to 
+
+1. retrieve verified keys which have been already assigned (in `verified_synonyms`)
+2. update `verified_synonyms`. Updates include:
+  1. Updates from GBIF in the scientific names (`checklist_scientificName`, `backbone_scientificName` or `backbone_acceptedName`): those mostly consider slight spelling variations and will be updated in `verified_synonyms` authomatically (a message is returned).
+  2. New synonyms, fuzzy matches or no matches to GBIF backbone will be added to `verified_synonyms`.
+
+The taxa without 
+
+The function reports also unused rows in `verified_synonyms`, but they will not be removed or altered.
+
+## Find new 
 
 For every key, acceptedKey combination, where acceptedKey is not NA, update verified synonyms:
 

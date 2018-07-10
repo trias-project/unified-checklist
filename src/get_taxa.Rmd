@@ -270,12 +270,14 @@ GBIF backbone issues returned: if multiple issues are present, they are separate
 taxon_backbone_info %>% distinct(issues)
 ```
 
-For improving readibility we rename the column `accepted` to `acceptedName` and add prefix `backbone_` to all columns:
+For improving readibility we rename the column `accepted` to `acceptedName` and add prefix `backbone_` or `checklist_` to all columns containing information from GBIF backbone or checklist respectively:
 
 ```{r add_prefix_backbone}
 taxon_backbone_info <- taxon_backbone_info %>% rename(acceptedName = accepted)
 colnames(taxon_backbone_info) <- paste0("backbone_", 
                                         colnames(taxon_backbone_info))
+colnames(checklist_taxa) <- paste0("checklist_", 
+                                        colnames(checklist_taxa))
 ```
 
 We merge the information from checklists and GBIF backbone:
@@ -283,7 +285,8 @@ We merge the information from checklists and GBIF backbone:
 ```{r}
 combined_taxon_info <- checklist_taxa %>%
   left_join(taxon_backbone_info, 
-            by = c("nubKey" = "backbone_key"))
+            by = c("checklist_nubKey" = "backbone_key"))
+```
 ```
 
 Preview:

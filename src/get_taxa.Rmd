@@ -287,6 +287,12 @@ combined_taxon_info <- checklist_taxa %>%
   left_join(taxon_backbone_info, 
             by = c("checklist_nubKey" = "backbone_key"))
 ```
+
+For readibility we rename `checklist_nubKey` (tendency of GBIF to deprecate the word _nubKey_) to `backbone_taxonKey`.
+
+```{r checklist_nubKey_to_backbone_taxonKey}
+combined_taxon_info <- combined_taxon_info %>%
+  rename(backbone_taxonKey = checklist_nubKey)
 ```
 
 Preview:

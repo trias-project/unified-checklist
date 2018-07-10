@@ -256,7 +256,12 @@ Next, we unlist column `issues`:
 taxon_backbone_info <- taxon_backbone_info %>%
   group_by_at(vars(-issues)) %>%
   summarize(issues = str_c(issues, collapse = ",")) %>%
-  ungroup()
+  ungroup() %>%
+  mutate(issues = ifelse(
+    issues != "NULL",
+    issues,
+    NA
+  ))
 ```
 
 GBIF backbone issues returned: if multiple issues are present, they are separated by comma

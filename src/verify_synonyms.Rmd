@@ -27,11 +27,12 @@ Load libraries:
 # Tidyverse packages
 library(dplyr)
 library(readr)
-
+library(stringr)
+library(tidyr)
 # Other packages
 library(rgbif)
 library(trias)
-library(googlesheets4)
+library(googlesheets)
 ```
 
 Set file path:
@@ -65,14 +66,21 @@ taxa %>% head(n = 10)
 
 Load verified taxa from spreadsheet in TrIAS Google Drive:
 
-```{r load_googlesheet}
-my_sheets <- googlesheets4::read_sheet(ss = "verification_spreadsheet",
-                                       sheet = "Sheet1")
+```{r load_googlesheet, eval = FALSE}
+my_sheets <- googlesheets::gs_read(ss = "verification_spreadsheet",
+                                   ws = "Sheet1")
 ```
 
-```{r}
+Or via text file:
+
+```{r load_text_file}
 verified_synonyms_file <- "../data/output/verified_synonyms.tsv"
-verified_synonyms <- read_tsv(verified_synonyms_file)
+verified_synonyms <- read_tsv(verified_synonyms_file, 
+                              col_types = cols(
+                                backbone_taxonKey = col_integer(),
+                                backbone_acceptedKey = col_integer(),
+                                date_added = col_date())
+                              )
 ```
 
 Preview:
@@ -83,111 +91,145 @@ verified_synonyms %>% head(n = 10)
 
 # Assign verified key(s) to taxa
 
-We need to verify synonyms and solve GBIF backbone related issues. Experts should verify taxa if one of the following conditions holds true:
+We need to verify synonyms and solve unmatches to GBIF backbone. Experts should verify taxa if one of the following conditions holds true:
 
-1. no match with GBIF Backbone (`nubKey` is not present)
+1. no match with GBIF Backbone (`backbone_taxonKey` is not present)
 2. taxonomic status not available or a synonym (`backbone_taxonomicStatus` not `ACCEPTED` or `DOUBTFUL`, see [GBIF taxonomic status page](http://rs.gbif.org/vocabulary/gbif/taxonomic_status.xml) for more details)
-3. a backbone fuzzy match occurred (`backbone_issues` contains `BACKBONE_MATCH_FUZZY`)
 
-In all other cases, we can accept the `nubKey` as provided by GBIF backbone:
+In all other cases, we can accept the `backbone_taxonKey` as provided by GBIF backbone:
 
 ```{r set_verified_key_equal_to_nubKey_or_NULL}
 taxa <- taxa %>% 
-  mutate(verified_key = if_else(is.finite(nubKey) & 
+  mutate(verification_key = if_else(is.finite(backbone_taxonKey) & 
                                   backbone_taxonomicStatus %in% 
-                                  c("ACCEPTED", "DOUBTFUL") & 
-                                  !str_detect(backbone_issues, 
-                                              "BACKBONE_MATCH_FUZZY"),
-                                .data$nubKey,
+                                  c("ACCEPTED", "DOUBTFUL"),
+                                as.character(.data$backbone_taxonKey),
                                 NULL))
 ```
 
 A summary:
 
 ```{r stats}
-taxa %>% count(with_verified_key = is.finite(verified_key))
+taxa %>% count(with_verification_key = !is.na(verification_key))
 ```
 
 
 We use function `verify_taxa()` from  `trias` package in order to 
 
-1. retrieve verified keys which have been already assigned (in `verified_synonyms`)
+1. retrieve verified keys which have been already assigned (stored in `verified_synonyms`)
 2. update `verified_synonyms`. Updates include:
-  1. Updates from GBIF in the scientific names (`checklist_scientificName`, `backbone_scientificName` or `backbone_acceptedName`): those mostly consider slight spelling variations and will be updated in `verified_synonyms` authomatically (a message is returned).
-  2. New synonyms, fuzzy matches or no matches to GBIF backbone will be added to `verified_synonyms`.
-
-The taxa without 
+  - Updates from GBIF in the scientific names (`checklist_scientificName`, `backbone_scientificName` or `backbone_acceptedName`): those mostly consider slight spelling variations and will be updated in `verified_synonyms` authomatically (a message is returned).
+  - New synonyms or no matches to GBIF backbone will be added to `verified_synonyms`.
 
 The function reports also unused rows in `verified_synonyms`, but they will not be removed or altered.
 
-## Find new 
-
-For every key, acceptedKey combination, where acceptedKey is not NA, update verified synonyms:
-
-```{r}
-# For every key, acceptedKey -> check in file
-
-# If in file:
-# If scientificname + acceptedScientificName different -> update + store in updated_names
-# If same -> do nothing
-
-# If not in file -> add new line + store in new_synonyms
-
-# If in synonyms file but not found in grouped_taxa -> add " OUTDATED" to remarks + store in outdated_synonyms
+```{r apply_verify_taxa}
+verify <- trias::verify_taxa(taxa = taxa %>%
+                               filter(is.na(verification_key)), 
+                   verified_taxa = verified_synonyms)
 ```
 
-## Results
+## Save verification table
 
-These names have been updated (but synonym relation stayed the same):
+The data.frame `verify$verified_taxa` can be saved as text file and manually transferred to online spreadsheet:
 
-```{r}
-# updated_names
+```{r save_verification_df_to_tsv}
+write_tsv(verify$verified_taxa, 
+          path = "../data/output/verified_synonyms.tsv",
+          na = "")
 ```
+
+## New synonyms
+
+The following synonyms are new and should be verified:
+
+```{r new_synonyms}
+verify$new_synonyms
+```
+
+## New unmatched taxa
+
+The following taxa are not matched to GBIF backbone:
+
+```{r new_unmatched_taxa}
+verify$new_unmatched_taxa
+```
+
+## Updated names
+
+Consequences of updates in GBIF backbone with no consequences in synonym relation.
+
+### Updated backbone scientific names 
+
+These backbone scientific names have been updated (but synonym relation stayed the same):
+
+```{r updated_scientific_names}
+verify$updated_scientificName
+```
+
+### Updated backbone accepted scientific names 
+
+These backbone accepted names have been updated (but synonym relation stayed the same):
+
+```{r updated_scientific_names}
+verify$updated_acceptedName
+```
+
+### Updated issues
+
+The backbone issues related to these taxa have been udpated:
+
+```{r update_backbone_issues}
+verify$updated_backbone_issues
+```
+
+## Unused taxa
 
 These synonym relations are no longer used:
 
 ```{r}
-# outdated_synonyms
-```
-
-These synonym relations were added and should be verified:
-
-```{r}
-# new_synonyms
+verify$unused_taxa
 ```
 
 ## Update taxa
 
-Add `verified_key`
+We can now update taxa with verified info:
 
-```{r}
-# add column verified_key (is empty)
-```
-
-Accept all ACCEPTED and DOUBTFUL:
-
-```{r}
-# for taxonomicStatus = ACCEPTED or DOUBTFUL
-# verified_key = nubKey
-```
-
-Update taxa_by_nubKey with verified synonyms info:
-
-```{r}
-# for taxonomicStatus = SYNONYM
-# Look up nubKey + acceptedKey in verifiedSynonyms
-# populate verified_key
+```{r update_taxa}
+taxa <- taxa %>% left_join(verify$verified_taxa %>%
+                             separate_rows(checklists, sep = ",") %>%
+                             rename(checklist_datasetKey = checklists) %>%
+                             select(- c(date_added, remarks)))
 ```
 
 Shows some stats:
 
 ```{r}
-# Number of accepted taxa
-# Number of doubtful taxa
-# Number of verified synonyms
-# Number of unverified synonyms
+print(paste("Number of accepted taxa: ", 
+            taxa %>% 
+              filter(backbone_taxonomicStatus == "ACCEPTED") %>%
+              nrow()))
+print(paste("Number of doubtful taxa (no expert check needed): ", 
+            taxa %>% 
+              filter(backbone_taxonomicStatus == "DOUBTFUL") %>%
+              nrow()))
+print(paste("Number of taxa verified by expert: ",
+            taxa %>% 
+              filter(!is.na(verification_key)) %>%
+              filter(! backbone_taxonomicStatus %in% c("ACCEPTED", "DOUBTFUL") |
+                       is.na(backbone_taxonKey)) %>%
+              nrow()))
+print(paste("Number of taxa still to verify: ",
+            taxa %>% 
+              filter(is.na(verification_key)) %>%
+              nrow())) 
 ```
 
-```{r}
+Saved the updated taxa:
+
+```{r save_udpated_taxa}
 # save to csv -> taxa_by_nubKey_verified
+taxa_verified <- write_tsv(taxa, 
+                           path = "../data/output/verified_taxa.tsv",
+                           na = "")
 ```

@@ -1,1 +1,419 @@
-checklist_scientificName	backbone_scientificName	backbone_taxonomicStatus	backbone_taxonKey	backbone_acceptedName	backbone_acceptedKey	verified_key	backbone_kingdom	date_added	issues	checklists	remarks
+checklist_scientificName	backbone_scientificName	backbone_taxonKey	backbone_kingdom	backbone_taxonomicStatus	backbone_acceptedName	backbone_acceptedKey	backbone_issues	verification_key	date_added	checklists	remarks
+Dugesia tigrina	Dugesia tigrina (Girard, 1850)	2502879	Animalia	SYNONYM	Girardia tigrina (Girard, 1850)	5892120			2018-07-25	289244ee-e1c1-49aa-b2d7-d379391ce265	
+Dreissena rostriformis bugensis	Dreissena rostriformis bugensis Andrusov, 1897	4371624	Animalia	SYNONYM	Dreissena bugensis (Andrusov, 1897)	2287073			2018-07-25	289244ee-e1c1-49aa-b2d7-d379391ce265	
+Ferrissia fragilis	Ferrissia fragilis (Tryon, 1863)	2291152	Animalia	SYNONYM	Ferrissia californica (Rowell, 1863)	9520065	ORIGINAL_NAME_DERIVED		2018-07-25	289244ee-e1c1-49aa-b2d7-d379391ce265	
+Crassostrea gigas	Crassostrea gigas (Thunberg, 1793)	2286069	Animalia	SYNONYM	Magallana gigas (Thunberg, 1793)	7820753			2018-07-25	289244ee-e1c1-49aa-b2d7-d379391ce265	
+Astacus leptodactylus	Astacus leptodactylus Eschscholtz, 1823	4417551	Animalia	SYNONYM	Pontastacus leptodactylus (Eschscholtz, 1823)	8946295			2018-07-25	289244ee-e1c1-49aa-b2d7-d379391ce265	
+Aspius aspius	Aspius aspius (Linnaeus, 1758)	2360181	Animalia	SYNONYM	Leuciscus aspius (Linnaeus, 1758)	5851603	ORIGINAL_NAME_DERIVED		2018-07-25	98940a79-2bf1-46e6-afd6-ba2e85a26f9f	
+Acipenser guldenstaedti	Acipenser güldenstaedti Brandt & Ratzeberg, 1833	2402131	Animalia	SYNONYM	Acipenser gueldenstaedtii Brandt & Ratzeburg, 1831	2402129			2018-07-25	98940a79-2bf1-46e6-afd6-ba2e85a26f9f	
+Athyrium niponicum (Mett.) Hance	Athyrium niponicum (Mett) Hance	7125894	Plantae	SYNONYM	Anisocampium niponicum (Mett.) Yea C.Liu, W.L.Chiou & M.Kato	8241853	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Echinopsis silvestrii Spegazz.	Echinopsis silvestrii Speg.	5621983	Plantae	SYNONYM	Echinopsis albispinosa K.Schum.	7282357			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Armeria arenaria (Pers.) Schult.	Armeria arenaria Schult.	7136543	Plantae	SYNONYM	Armeria maritima subsp. maritima	3082290			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Actinidia deliciosa (Chevalier) C.S. Liang & A.R. Ferguson	Actinidia deliciosa (Chev.) C.F.Liang & A.R.Ferguson	7270761	Plantae	SYNONYM	Actinidia chinensis var. hispida C.F.Liang	3644922			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Parthenocissus inserta (A. Kerner) Fritsch	Parthenocissus inserta (A.Kerner) Fritsch	3039203	Plantae	SYNONYM	Parthenocissus vitacea (Knerr) Hitchc.	3039193	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Cornus sanguinea L. subsp. australis (C.A. Mey.) Jáv. ex Soó in Soó & Jáv.	Cornus sanguinea subsp. australis (C.A.Mey.) Soó	8207659	Plantae	SYNONYM	Cornus sanguinea subsp. australis (C.A.Mey.) Jáv.	3663237	ORIGINAL_NAME_DERIVED,CONFLICTING_BASIONYM_COMBINATION		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Portulaca papillatostellulata (Danin & H.G. Baker) Danin	Portulaca papillatostellulata (Danin & H.G.Baker) Danin	4022463	Plantae	SYNONYM	Portulaca macrantha (Maire) Ricceri & Arrigoni	4022910			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Proboscidea louisianica (Mill.) Thell.	Proboscidea louisianica Thell.	5415100	Plantae	SYNONYM	Proboscidea louisianica subsp. louisianica	7226243			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Platanus x hispanica Mill. ex Münchh.	Platanus hispanica Mill. ex Münchh.	7400250	Plantae	SYNONYM	Platanus hybrida Brot.	3152814			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Pterocarya fraxinifolia (Lam.) Spach	Pterocarya fraxinifolia (Poir.) Spach	8288647	Plantae	SYNONYM	Pterocarya pterocarpa (Michx.) Kunth ex Iljinsk.	4205311			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Polystichum tsus-simense J. Smith	Polystichum tsus-simense (Hook.) J.Sm.	2651108	Plantae	SYNONYM	Polystichum luctuosum (Kunze) Moore.	4046493	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Euonymus hederaceus Champ. ex Benth.	Euonymus hederaceus Champ. ex Benth.	3792460	Plantae	SYNONYM	Euonymus fortunei (Turcz.) Hand.-Mazz.	3169137			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Celastrus orbiculatus Thunb.	Celastrus orbiculatus Thunb.	3169169	Plantae	SYNONYM	Celastrus orbiculatus C.P.Thunberg ex A.Murray	8104460	CONFLICTING_BASIONYM_COMBINATION		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Ribes x nidigrolaria R. & A. Bauer	Ribes ×nidigrolaria Rud.Bauer & A.Bauer	4194699	Plantae	SYNONYM	Ribes nigrum x uva-crispa	9781288			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Ribes odoratum H.L. Wendl.	Ribes odoratum H.L.Wendl.	8436755	Plantae	SYNONYM	Ribes aureum var. villosum DC.	4194303			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Mazus reptans N.E. Brown	Mazus reptans N.E.Br.	3171303	Plantae	SYNONYM	Mazus miquelii Makino	3171302			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Ledum palustre L.	Ledum palustre L.	2882977	Plantae	SYNONYM	Rhododendron tomentosum subsp. tomentosum	6400570			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Cuscuta gronovii Willd. ex Schult.	Cuscuta gronovii Willd. ex Roem. & Schult.	2927492	Plantae	SYNONYM	Cuscuta gronovii Willd.	7694392	CONFLICTING_BASIONYM_COMBINATION		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Cuscuta campestris Yunck.	Cuscuta campestris Yunck.	3610757	Plantae	SYNONYM	Cuscuta pentagona Engelm.	2927490			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Convolvulus silvaticus Kit.	Convolvulus silvaticus Kit.	3678060	Plantae	SYNONYM	Calystegia silvatica subsp. silvatica	7225712			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Ipomoea hederacea (L.) Jacq. var. integriuscula A. Gray	Ipomoea hederacea var. integriuscula A.Gray	2928622	Plantae	SYNONYM	Ipomoea hederacea Jacq.	2928538			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Convolvulus dubius J. Gilbert	Convolvulus dubius J.L.Gilbert	3679953	Plantae	SYNONYM	Calystegia pulchra Brummitt & Heywood	3678949			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Ipomoea coccinea L.	Ipomoea coccinea L.	2928560	Plantae	SYNONYM	Ipomoea rubriflora O'Donell	7519113			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Typhonium venosum (Ait.) Hett. & Boyce	Typhonium venosum (Dryand. ex Aiton) Hett. & P.C.Boyce	2869586	Plantae	SYNONYM	Sauromatum venosum (Aiton) Kunth	2869597			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Isotrema macrophyllum (Lam.) C. Reed	Isotrema macrophyllum (Lam.) C.F.Reed	2873995	Plantae	SYNONYM	Aristolochia macrophylla Lam.	2873994	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Bergenia cordifolia (Haw.) Sternb.	Bergenia cordifolia (Haw.) Sternb.	5567698	Plantae	SYNONYM	Bergenia crassifolia Fritsch	5567694			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Bergenia x schmidtii (Regel) Silva-Tar.	Bergenia schmidtii (Regel) Silva Tarouca	5567657	Plantae	SYNONYM	Bergenia ciliata (Haw.) Sternb.	8330218	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Tulipa tarda Stapf	Tulipa tarda Stapf	5299589	Plantae	SYNONYM	Tulipa urumiensis Stapf	5299590			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Sedum sediforme (Jacq.) Pau i	Sedum sediforme (Jacq.) Pau	5688347	Plantae	SYNONYM	Petrosedum sediforme (Jacq.) Grulich	4201784	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Jovibarba sobolifera (Sims) Opiz	Jovibarba sobolifera (J.Sims) Opiz	8990928	Plantae	SYNONYM	Sempervivum globiferum subsp. globiferum	7334391	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Sedum stoloniferum S.G. Gmel.	Sedum stoloniferum S.G.Gmel.	5362051	Plantae	SYNONYM	Phedimus stoloniferus (S.G.Gmel.) 't Hart	4201585			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Sedum anopetalum DC.	Sedum anopetalum DC.	5362017	Plantae	SYNONYM	Petrosedum ochroleucum subsp. ochroleucum	9338223	CONFLICTING_BASIONYM_COMBINATION		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Sedum hybridum L.	Sedum hybridum L.	5362013	Plantae	SYNONYM	Phedimus middendorfianus (Maxim.) 't Hart	4201668			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Sedum anacampseros L.	Sedum anacampseros L.	5687999	Plantae	SYNONYM	Hylotelephium anacampseros (L.) H.Ohba	4202184			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Sedum kamtschaticum Fisch. & C.A. Mey. subsp. ellacombianum (Praeg.) R.T. Clausen	Sedum kamtschaticum subsp. ellacombianum (Praeger) R.T.Clausen	5708682	Plantae	SYNONYM	Phedimus ellacombianus (Praeger) H.'t Hart	4927972	ORIGINAL_NAME_DERIVED,CONFLICTING_BASIONYM_COMBINATION		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Sedum spurium Bieb.	Sedum spurium Bieb.	5362018	Plantae	SYNONYM	Phedimus spurius (M.Bieb.) 't Hart	4201607			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Crassula helmsii (T. Kirk) Cock.	Crassula helmsii (Kirk) Cockayne	5362054	Plantae	SYNONYM	Crassula helmsii A.Berger	8035075	CONFLICTING_BASIONYM_COMBINATION		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Sedum spectabile Boreau	Sedum spectabile Bor.	5362067	Plantae	SYNONYM	Hylotelephium spectabile (Boreau) H.Ohba	2985863			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Sedum telephium L. subsp. maximum (L.) Rouy & E.G. Camus	Sedum telephium subsp. maximum (L.) Rouy & E.G.Camus, 1901	9340574	Plantae	SYNONYM	Hylotelephium maximum (L.) J.Holub	7334631	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Zinnia violacea Cav.	Zinnia violacea Cav.	3111758	Plantae	SYNONYM	Zinnia elegans Jacq.	3111754			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Hemizonia fasciculata Torr. & A. Gray	Hemizonia fasciculata (DC.) Torr. & A.Gray	3145372	Plantae	SYNONYM	Deinandra fasciculata Greene	3145375			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Hemizonia pungens (Hook. & Arnott) Torr. & A. Gray	Hemizonia pungens (Hook. & Arn.) Torr. & A.Gray	3145384	Plantae	SYNONYM	Centromadia pungens subsp. pungens	7222628	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Artemisia sieversiana Ehrh.	Artemisia sieversiana Ehrh.	7807853	Plantae	SYNONYM	Artemisia sieversiana Ehrh. ex Willd.	3121562	CONFLICTING_BASIONYM_COMBINATION		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Matricaria recutita L. var. coronata (J. Gay ex Boiss.) Fertig	Matricaria recutita var. coronata (J.Gay ex Boiss.) I.Gruenberg-Fertig	8258539	Plantae	SYNONYM	Matricaria chamomilla L.	8370958	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Pilosella x duplex (Peter) Holub	Pilosella duplex (Peter) J.Holub	3134993	Plantae	SYNONYM	Pilosella prussica (Nägeli & Peter) Soják	9321334	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Bidens frondosa L. var. anomala Porter ex Fernald	Bidens frondosa var. anomala Porter ex Fern.	5700912	Plantae	SYNONYM	Bidens frondosa L.	5392174			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Eclipta prostrata (L.) L.	Eclipta prostrata (L.) L.	5384950	Plantae	SYNONYM	Eclipta alba Hassk.	5384955			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Bidens frondosa L. var. frondosa	Bidens frondosa var. frondosa	7872129	Plantae	SYNONYM	Bidens frondosa L.	5392174			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Centaurea x extranea Beck	Centaurea ×extranea Beck	8173637	Plantae	SYNONYM	Centaurea jacea x nigrescens	9671002			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Carduus x theriotii Rouy	Carduus theriotii Rouy, 1905	4211074	Plantae	SYNONYM	Carduus cyrneus Schlüssel & Jeanm.	3114588			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Tagetes patula L.	Tagetes patula L.	3088492	Plantae	SYNONYM	Tagetes erecta L.	3088488			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Achillea cartilaginea Ledeb. ex Reichenb. s.l.	Achillea cartilaginea Ledeb. ex Rchb.	3120381	Plantae	SYNONYM	Achillea salicifolia subsp. salicifolia	7222196			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Schkuhria pinnata (Lam.) O. Kuntze ex Thell. var. pinnata	Schkuhria pinnata var. pinnata	7066061	Plantae	SYNONYM	Schkuhria pinnata (Lam.) Kuntze	8346536			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Pulicaria arabica (L.) Cass. subsp. hispanica (Boiss.) Murb.	Pulicaria arabica subsp. hispanica (Boiss.) Murb.	6076957	Plantae	SYNONYM	Pulicaria paludosa Link	3095595			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Senecio quadridentatus Labill.	Senecio quadridentatus Labill.	3107661	Plantae	SYNONYM	Erechtites quadridentata (Labill.) DC.	3107663			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Cyanus depressa (Bieb.) Soják	Cyanus depressus (M.Bieb.) Sojak	8334968	Plantae	SYNONYM	Centaurea depressa M.Bieb.	3089549	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Helipterum floribundum DC.	Helipterum floribundum A.Cunn. ex DC.	3137630	Plantae	SYNONYM	Rhodanthe floribunda (DC.) Paul G.Wilson	3137629			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Cichorium calvum Schultz-Bip.	Cichorium calvum Sch.Bip.	8199647	Plantae	SYNONYM	Cichorium calvum Sch.Bip. ex Aschers.	5392271			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Cyanus triumfettii (All.) Á. Löve & D. Löve	Cyanus triumfettii (All.) Dostal ex A. & D.Love	5386028	Plantae	SYNONYM	Centaurea triumfettii subsp. triumfettii	7338495			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Senecio glossanthus (Sonder) Belcher	Senecio glossanthus (Sond.) Belcher	3108121	Plantae	SYNONYM	Erechtites glossantha Sond.	3108123			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Guizotia scabra (Vis,) Chiov. subsp. schimperi (Sch. Bip.) J. Baagøe	Guizotia scabra subsp. schimperi (Sch.Bip.) Baagoe	8335765	Plantae	SYNONYM	Guizotia schimperi Sch.Bip.	3088652			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Cichorium endivia L. subsp. endivia	Cichorium endivia subsp. endivia	7823591	Plantae	SYNONYM	Cichorium endivia L.	5392243			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Centaurea x psammogena Gáyer	Centaurea psammogena Gáyer	8708866	Plantae	SYNONYM	Centaurea varnensis Velen.	3128725			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Osteospermum jucundum (Phillips) Norlindh	Osteospermum jucundum (Phill.) T.Norl.	3093587	Plantae	SYNONYM	Dimorphotheca jucunda E.Phillips	5402340	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Xanthium ambrosioides Hook. & Arnott	Xanthium ambrosioides Hook. & Arn.	3089140	Plantae	SYNONYM	Xanthium spinosum var. ambrosioides (Hook & Arn.) Löve & Dans.	8005391			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Eurybia divaricata (L.) Nesom	Eurybia divaricata (L.) G.L.Nesom	5396125	Plantae	SYNONYM	Croptilon divaricatum (Nutt.) Raf.	3139628	CONFLICTING_BASIONYM_COMBINATION		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Erigeron x huelsenii Vatke	Erigeron huelsenii Vatke	3095939	Plantae	SYNONYM	×Conyzigeron huelsenii (Vatke) Rauschert	3095938			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Centaurea algeriensis Coss. & Durieu	Centaurea algeriensis Dur. & Coss.	4207003	Plantae	SYNONYM	Centaurea diluta subsp. algeriensis (Coss. & Dur.) Maire	6076279			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Soliva pterosperma (Juss.) Less.	Soliva pterosperma (Juss.) Less.	3092698	Plantae	SYNONYM	Soliva sessilis Ruiz & Pav.	3092691			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Galactites elegans (All.) Nyman ex Soldano	Galactites elegans (All.) Nym. ex A.Soldano	3137580	Plantae	SYNONYM	Centaurea cineraria subsp. cineraria	7066118			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Schkuhria pinnata (Lam.) O. Kuntze ex Thell. var. abrotanoides (Roth) Cabrera	Schkuhria pinnata var. abrotanoides (Roth) Cabrera	4247879	Plantae	SYNONYM	Schkuhria pinnata (Lam.) Kuntze	8346536	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Helipterum strictum (Lindl.) Benth.	Helipterum strictum (Lindl.) Benth.	3137688	Plantae	SYNONYM	Rhodanthe stricta (Lindl.) Paul G.Wilson	3137686	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Carthamus lanatus L.	Carthamus lanatus L.	3138230	Plantae	SYNONYM	Carthamus lanatus subsp. lanatus	7223448			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Photinia beauverdiana C.K. Schneider var. notabilis (C.K. Schneider) Rehd. & Wilson	Photinia beauverdiana var. notabilis (C.K.Schneider) Rehd. & E.H.Wilson	5363895	Plantae	SYNONYM	Photinia beauverdiana C.K.Schneid.	5363891	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Dasiphora davurica (Nestler) Komarov var. mandshurica (Maxim.) Verloove & Lambinon	Dasiphora davurica var. mandshurica (Maxim.) Verloove & Lambinon	8381801	Plantae	SYNONYM	Dasiphora fruticosa Rydb.	5370380			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Prunus virginiana L.	Prunus virginiana L.	3022668	Plantae	SYNONYM	Prunus serotina Ehrh.	3021850	CONFLICTING_BASIONYM_COMBINATION		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Prunus cerasus L.	Prunus cerasus L.	3021922	Plantae	SYNONYM	Prunus avium (L.) L.	3020791	CONFLICTING_BASIONYM_COMBINATION		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Pyracantha crenatoserrata (Hance) Rehder	Pyracantha crenatoserrata (Hance) Rehd.	2988170	Plantae	SYNONYM	Pyracantha fortuneana (Maxim.) H.L.Li	2988224			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Aronia prunifolia (Marshall). Rehd.	Aronia prunifolia (Marsh.) Rehd.	5363613	Plantae	SYNONYM	Photinia floribunda (Lindl.) K.R.Robertson & J.B.Phipps	5364001			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Spiraea x brachybotrys Lange	Spiraea brachybotrys Lange	3026426	Plantae	SYNONYM	Spiraea canescens D.Don	3027138			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Malus sylvestris (L.) Mill. subsp. mitis (Wallr.) Mansf.	Malus sylvestris subsp. mitis (Wallr.) Mansf.	3001381	Plantae	SYNONYM	Malus pumila Mill.	3001093	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Spiraea x vanhouttei (Briot) Carr.	Spiraea vanhouttei (Briot) Carrière	8236373	Plantae	SYNONYM	Spiraea vanhouttei (Briot) Zabel	3026622	CONFLICTING_BASIONYM_COMBINATION		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Spiraea chamaedryfolia L. subsp. ulmifolia (Scop.) J. Duvigneaud	Spiraea chamaedrifolia subsp. ulmifolia (Scop.) J.Duvigneaud	8324534	Plantae	SYNONYM	Spiraea chamaedryfolia L.	3026406	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Linaria supina (L.) Chazelles	Linaria supina (L.) Chaz.	5415009	Plantae	SYNONYM	Linaria supina subsp. supina	6070567	CONFLICTING_BASIONYM_COMBINATION		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Notodanthonia gracilis (Hook. f.) Zotov	Notodanthonia gracilis (Hook.f.) Zotov	4146338	Plantae	SYNONYM	Rytidosperma gracile (Hook.f.) Connor & Edgar	4136338			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Setaria adhaerens (Forssk.) Chiov.	Setaria adhaerens (Forssk.) Chiov.	5289670	Plantae	SYNONYM	Setaria verticillata (L.) P.Beauv.	5289686	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Setaria verticillata (L.) Beauv. var. ambigua (Guss.) Parl.	Setaria verticillata var. ambigua (Guss.) Parl.	7908347	Plantae	SYNONYM	Setaria verticillata (L.) P.Beauv.	5289686			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Panicum capillare subsp. hillmanii (Chase) Freckmann & Lelong	Panicum capillare subsp. hillmanii (Chase) Freckmann & Lelong	4153082	Plantae	SYNONYM	Panicum hillmanii Chase	2705098			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Triticum durum Desf.	Triticum durum Desf.	2706389	Plantae	SYNONYM	Triticum turgidum subsp. durum (Desf.) Husn.	6313051			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Avena hispanica Ard.	Avena hispanica Ard.	8027936	Plantae	SYNONYM	Avena strigosa Schreb.	2705295			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Eragrostis advena (Stapf) S.M. Phillips	Eragrostis advena (Stapf) S.M.Phillips	4150785	Plantae	SYNONYM	Sporobolus advenus (Stapf) P.M.Peterson	9267300			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Setaria pumila (Poiret) Roem. & Schult.	Setaria pumila (Poir.) Roem. & Schult.	5289693	Plantae	SYNONYM	Setaria helvola Roem. & Schult.	5673972			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Crypsis aculeata (L.) Ait.	Crypsis aculeata (L.) Aiton	5290184	Plantae	SYNONYM	Sporobolus aculeatus (L.) P.M.Peterson	9379326	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Panicum capillare L. subsp. barbipulvinatum (Nash) Tzvelev	Panicum capillare subsp. barbipulvinatum (Nash ex Rydb.) Tzvelev	6313647	Plantae	SYNONYM	Panicum capillare L.	2705162	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Phalaris arundinacea L. var. picta L.	Phalaris arundinacea var. picta L.	5289757	Plantae	SYNONYM	Phalaris arundinacea L.	5289756			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Eleusine indica (L.) Gaertn. subsp. indica	Eleusine indica subsp. indica	6431270	Plantae	SYNONYM	Eleusine indica (L.) Gaertn.	2705953			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Pennisetum flaccidum Griseb.	Pennisetum flaccidum Griseb.	2706137	Plantae	SYNONYM	Cenchrus flaccidus (Griseb.) Morrone	5828216			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Echinochloa muricata (Beauv.) Fernald var. wiegandii (Fassett) Mohlenbr.	Echinochloa muricata var. wiegandii (Fassett) Mohlenbr.	4118560	Plantae	SYNONYM	Echinochloa muricata (P.Beauv.) Fernald	2702816	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Hystrix patula Moench	Hystrix patula Moench	4146782	Plantae	SYNONYM	Elymus hystrix L.	8112114			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Digitaria sanguinalis (L.) Scop. subsp. pectiniformis Henr.	Digitaria sanguinalis subsp. pectiniformis Henrard	5675253	Plantae	SYNONYM	Digitaria sanguinalis (L.) Scop.	5289972			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Dinebra panicea (Retz.) P.M. Peterson & N. Snow var. brachiata (Steud.) P.M. Peterson & N. Snow	Dinebra panicea var. brachiata (Steud.) P.M.Peterson & N.Snow	8306067	Plantae	SYNONYM	Leptochloa panicea subsp. brachiata (Steud.) N.Snow	4132112	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Paspalum notatum Flueggé var. saurae (Parodi) Parodi	Paspalum notatum var. saurae Parodi	4106609	Plantae	SYNONYM	Paspalum saurae (Parodi) Parodi	4154259			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Pleioblastus pumilus (Mitford) Nakai	Pleioblastus pumilus (Mitford) Nakai	4131135	Plantae	SYNONYM	Pleioblastus argenteostriatus (Regel) Nakai	4132188			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Hordeum leporinum Link	Hordeum leporinum Link	4115652	Plantae	SYNONYM	Hordeum murinum subsp. leporinum (Link) Arcang.	4270548			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Eragrostis albensis H. Scholz	Eragrostis albensis H.Scholz	4150679	Plantae	SYNONYM	Eragrostis pilosa P.Beauv.	2705400			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Bromus diandrus Roth subsp. maximus (Desf.) Soó	Bromus diandrus subsp. maximus (Desf.) Soó	4110334	Plantae	SYNONYM	Bromus rigidus Roth	2703663	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Hordeum geniculatum All.	Hordeum geniculatum All.	4116522	Plantae	SYNONYM	Hordeum marinum subsp. gussoneanum (Parl.) Thell.	8338571			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Echinochloa muricata (Beauv.) Fernald var. microstachya Wiegand	Echinochloa muricata var. microstachya Wiegand	4118583	Plantae	SYNONYM	Echinochloa muricata (P.Beauv.) Fernald	2702816			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Helictotrichon bromoides (Gouan) C.E. Hubbard	Helictotrichon bromoides (Gouan) C.E.Hubb.	4153260	Plantae	SYNONYM	Helictochloa bromoides (Gouan) Romero Zarco	6559940	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Bromus hordeaceus L. subsp. pseudothominei (P.M. Smith) H. Scholz	Bromus hordeaceus subsp. pseudothominei (P.M.Sm.) H.Scholz	5927747	Plantae	SYNONYM	Bromus ferronii Mabille	4124881	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Phalaris paradoxa L. var. paradoxa	Phalaris paradoxa var. paradoxa	6067713	Plantae	SYNONYM	Phalaris paradoxa L.	5289758			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Triticum polonicum L.	Triticum polonicum L.	2706421	Plantae	SYNONYM	Triticum turgidum subsp. polonicum (L.) Thell.	6313049			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Urochloa mutica (Forssk.) T.Q. Nguyen	Urochloa mutica (Forssk.) T.Q.Nguyen	2705848	Plantae	SYNONYM	Brachiaria mutica Stapf	2705851			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Elymus scaber (R. Brown) A. Löve	Elymus scaber (R.Br.) A.Love	7324613	Plantae	SYNONYM	Anthosachne scabra (Labill.) Nevski	4134265			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Piptatherum miliaceum (L.) Coss. subsp. thomasii (Duby) Freitag	Piptatherum miliaceum subsp. thomasii (Duby) Freitag	4134872	Plantae	SYNONYM	Achnatherum miliaceum P.Beauv.	4141737	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Austrodanthonia setacea (R. Brown) H.P. Linder	Austrodanthonia setacea (R.Br.) H.P.Linder	4107735	Plantae	SYNONYM	Rytidosperma setaceum (R.Br.) Connor & Edgar	4135683			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Echinochloa hispidula (Retz.) Nees ex Royle	Echinochloa hispidula (Retz.) Nees ex Royle	8002116	Plantae	SYNONYM	Echinochloa oryzoides (Ard.) Fritsch	2702820	ORIGINAL_NAME_DERIVED,CONFLICTING_BASIONYM_COMBINATION		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Bromus hordeaceus L. subsp. molliformis (Lloyd) Maire & Weiller	Bromus hordeaceus subsp. molliformis (J.Lloyd ex Billot) Maire & Weiller	6312441	Plantae	SYNONYM	Bromus hordeaceus subsp. divaricatus (Bonnier & de Layens) Kerguélen	8918909			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Agrostis lachnantha Nees	Agrostis lachnantha Nees	4121178	Plantae	SYNONYM	Lachnagrostis lachnantha (Nees) Rúgolo & A.M.Molina	4135892			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Thinopyrum ponticum (Podp.) M.Barkworth & D.R. Dewey	Thinopyrum ponticum (Podp.) Barkworth & D.R.Dewey	2704143	Plantae	SYNONYM	Thinopyrum elongatum (Host) D.R.Dewey	4125808			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Austrodanthonia tenuior (Steud.) H.P. Linder	Austrodanthonia tenuior (Steud.) H.P.Linder	4107725	Plantae	SYNONYM	Rytidosperma tenuius (Steud.) A.Hansen & Sunding	7517279			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Eragrostis chloromelas Steud.	Eragrostis chloromelas Steud.	2705380	Plantae	SYNONYM	Eragrostis curvula Nees	2705378			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Urochloa plantaginea (Link) R. Webster	Urochloa plantaginea (Link) R.D.Webster	2705828	Plantae	SYNONYM	Panicum brevifolium L.	4153922	CONFLICTING_BASIONYM_COMBINATION		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Secale strictum (C. Presl) C. Presl	Secale strictum (C.Presl) C.Presl	4121049	Plantae	SYNONYM	Secale montanum Guss.	2705967			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Festuca brevipila R. Tracey	Festuca brevipila R.Tracey	2704955	Plantae	SYNONYM	Festuca trachyphylla Hack.	2704949			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Stipa bromoides (L.) Dörfl.	Stipa bromoides (L.) Dörfl.	4143865	Plantae	SYNONYM	Achnatherum bromoides (L.) P.Beauv.	4142335			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Digitaria ciliaris (Retz.) Koeler subsp. nubica (Stapf) S.T. Blake	Digitaria ciliaris subsp. nubica (Stapf) S.T.Blake	7736068	Plantae	SYNONYM	Digitaria ciliaris (Retz.) Koeler	5289998	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Aira caryophyllea subsp. plesiantha (Jord.) K. Richt.	Aira caryophyllea subsp. plesiantha (Jord. ex Boreau) K.Richt.	6084799	Plantae	SYNONYM	Aira caryophyllea L.	7747216	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Vulpia alopecuros (Schousb.) Dum.	Vulpia alopecuros (Schousb.) Dumort.	7477513	Plantae	SYNONYM	Vulpia alopecuros (Schousb.) Link	5827791	ORIGINAL_NAME_DERIVED,CONFLICTING_BASIONYM_COMBINATION		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Pennisetum petiolare (Hochst.) Chiov.	Pennisetum petiolare (Hochst.) Chiov.	2706130	Plantae	SYNONYM	Cenchrus petiolaris (Hochst.) Morrone	6068804			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Phalaris paradoxa L. var. praemorsa (Lam.) Coss. & Durieu	Phalaris paradoxa var. praemorsa (Lam.) Coss. & Durieu	8008561	Plantae	SYNONYM	Phalaris paradoxa L.	5289758	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Panicum capillare L. subsp. capillare	Panicum capillare subsp. capillare	6449040	Plantae	SYNONYM	Panicum capillare L.	2705162			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Eragrostis trichophora Coss. & Durieu	Eragrostis trichophora Coss. & Durieu	2705367	Plantae	SYNONYM	Eragrostis cylindriflora Hochst.	2705391			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Piptatherum miliaceum (L.) Coss. subsp. miliaceum	Piptatherum miliaceum subsp. miliaceum	6067668	Plantae	SYNONYM	Achnatherum miliaceum P.Beauv.	4141737			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Dinebra divaricatissima (S.T. Blake) P.M. Peterson & N. Snow	Dinebra divaricatissima (S.T.Blake) P.M.Peterson & N.Snow	7738621	Plantae	SYNONYM	Diplachne divaricatissima (S.T.Blake) P.M.Peterson	9316357	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Pentameris airoides Nees	Pentameris airoides Nees	8180630	Plantae	SYNONYM	Pentameris airoides Steud.	4146851			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Brachyachne convergens (F. Muell.) Stapf	Brachyachne convergens (F.Muell.) Stapf	4131558	Plantae	SYNONYM	Cynodon convergens F.Muell.	5677636			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Agropyron cristatum (L.) Gaertn. subsp. pectinatum (Bieb.) Tzvelev	Agropyron cristatum subsp. pectinatum (M.Bieb.) Tzvelev	4270510	Plantae	SYNONYM	Agropyron cristatum (L.) Gaertn.	2705196	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Moorochloa eruciformis (Smith) Veldkamp	Moorochloa eruciformis (Sm.) Veldkamp	4155246	Plantae	SYNONYM	Brachiaria eruciformis (Sm.) Griseb.	2704068			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Panicum miliaceum L. subsp. ruderale (Kitagawa) Tzvelev	Panicum miliaceum subsp. ruderale (Kitag.) Tzvelev	4134741	Plantae	SYNONYM	Panicum miliaceum L.	2705090	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Crypsis schoenoides (L.) Lam.	Crypsis schoenoides (L.) Lam.	5290185	Plantae	SYNONYM	Sporobolus schoenoides (L.) P.M.Peterson	9382716	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Pennisetum alopecuroides (L.) Spreng.	Pennisetum alopecuroides (L.) Spreng.	2706156	Plantae	SYNONYM	Cenchrus alopecuroides Thunb.	5671747			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Spartina x townsendii H. & J. Groves	Spartina townsendii H.Groves & J.Groves	5290034	Plantae	SYNONYM	Sporobolus townsendii (H.Groves & J.Groves) P.M.Peterson & Saarela	9393876			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Bromus carinatus Hook. & Arnott var. marginatus (Nees) Barkworth & Anderton	Bromus carinatus var. marginatus (Nees ex Steud.) Barkworth & Anderton	4932863	Plantae	SYNONYM	Bromus marginatus Steud.	2703686			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Cynodon incompletus Nees var. hirsutus (Stent) de Wet & J.R. Harlan	Cynodon incompletus var. hirsutus (Stent) de Wet & Harlan	5679524	Plantae	SYNONYM	Cynodon incompletus Nees	5674825	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Eragrostis virescens J. Presl subsp. verloovei R. Portal	Eragrostis virescens subsp. verloovei Portal	6084851	Plantae	SYNONYM	Eragrostis mexicana (Hornem.) Link	2705339			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Taeniatherum caput-medusae (L.) Nevski var. caput-medusae	Taeniatherum caput-medusae var. caput-medusae	4932718	Plantae	SYNONYM	Taeniatherum caput-medusae (L.) Nevski	2705666			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Trisetaria michelii (Savi) D. Heller	Trisetaria michelii (Savi) D.Heller	4114539	Plantae	SYNONYM	Avellinia festucoides (Link) Valdés & H.Scholz	4104665	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Panicum miliaceum L. subsp. agricola H. Scholz & Mikoláš	Panicum miliaceum subsp. agricola H.Scholz & Mikolá	4134826	Plantae	SYNONYM	Panicum miliaceum L.	2705090			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Miscanthus sacchariflorus (Maxim.) Benth.	Miscanthus sacchariflorus (Maxim.) Benth., 1887	8410425	Plantae	SYNONYM	Miscanthus sacchariflorus (Maxim.) Benth. & Hook.f. ex Franch.	7738766	ORIGINAL_NAME_DERIVED,CONFLICTING_BASIONYM_COMBINATION		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Triticum spelta L.	Triticum spelta L.	2706402	Plantae	SYNONYM	Triticum aestivum subsp. spelta (L.) Thell.	2706403			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Crypsis alopecuroides (Pill. & Mitterp.) Schrad.	Crypsis alopecuroides (Piller & Mitterp.) Schrad.	5290186	Plantae	SYNONYM	Sporobolus alopecuroides (Piller & Mitterp.) P.M.Peterson	9632508	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Avena matritensis Baum	Avena matritensis B.R.Baum	4152909	Plantae	SYNONYM	Avena barbata Link	2705300			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Dactylis polygama Horv.	Dactylis polygama Horv.	9224320	Plantae	SYNONYM	Dactylis glomerata subsp. lobata (Drejer) H.Lindb.	4932232			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Festuca ovina L. subsp. hirtula (Hack. & Travis) M.J. Wilkinson	Festuca ovina subsp. hirtula (Hack. ex Travis) M.J.Wilk.	4118730	Plantae	SYNONYM	Festuca guestfalica subsp. hirtula (Hack. ex Travis) Dengler	4123394	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Bromus diandrus Roth subsp. diandrus	Bromus diandrus subsp. diandrus	8190105	Plantae	SYNONYM	Bromus diandrus Roth	2703760			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Polypogon rioplatensis Herter	Polypogon rioplatensis Herter	4153734	Plantae	SYNONYM	Polypogon imberbis (Phil.) Johow	4154206			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Panicum chloroticum Nees ex Trin.	Panicum chloroticum Nees ex Trin.	8357651	Plantae	SYNONYM	Panicum dichotomiflorum Michx.	2705144			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Dichanthelium clandestinum (L.) Gould	Dichanthelium clandestinum (L.) Gould	2702543	Plantae	SYNONYM	Panicum clandestinum L.	2702544	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Cenchrus incertus M.A. Curtis	Cenchrus incertus M.A.Curtis	5289728	Plantae	SYNONYM	Cenchrus spinifex Cav.	5289726			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Spartina pectinata Link	Spartina pectinata Bosc ex Link	5290030	Plantae	SYNONYM	Sporobolus michauxianus (Hitchc.) P.M.Peterson & Saarela	9592414			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Molinia caerulea (L.) Moench subsp. arundinacea (Schrank) K. Richt.	Molinia caerulea subsp. arundinacea (Schrank) K.Richt.	8353934	Plantae	SYNONYM	Molinia caerulea (L.) Moench	5289877	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Eleusine coracana subsp. africana (Kennedy-O’Byrne) Hilu & de Wet	Eleusine coracana subsp. africana (Kenn.-O'Byrne) Hilu & de Wet	4115907	Plantae	SYNONYM	Eleusine africana Kenn.-O'Byrne	4124350			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Urochloa platyphylla (Munro ex Wright) R. Webster	Urochloa platyphylla (Munro ex C.Wright) R.D.Webster	2705854	Plantae	SYNONYM	Brachiaria platyphylla (Munro ex C.Wright) Nash	2705857			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Aira elegantissima Schur	Aira elegantissima Schur	5289579	Plantae	SYNONYM	Aira elegans Willd. ex Roem. & Schult.	7948459			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Dinebra decipiens var. peacockii (Maiden & Betche) P.M. Peterson & N. Snow	Dinebra decipiens var. peacockii (Maiden & Betche) P.M.Peterson & N.Snow	8328801	Plantae	SYNONYM	Leptochloa decipiens subsp. peacockii (Maiden & Betche) N.Snow	4132902	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Avena sterilis L. subsp. ludoviciana (Durieu) Nyman	Avena sterilis subsp. ludoviciana (Durieu) Nyman	2705287	Plantae	SYNONYM	Avena sterilis subsp. ludoviciana (Durieu) M.Gillet & Magne	8429888	ORIGINAL_NAME_DERIVED,CONFLICTING_BASIONYM_COMBINATION		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Hordeum glaucum Steud.	Hordeum glaucum Steud.	4116483	Plantae	SYNONYM	Hordeum murinum subsp. glaucum (Steud.) Tzvelev	4115425			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Echinochloa oryzicola (Vasing.) Vasing.	Echinochloa oryzicola Vasinger	2702817	Plantae	SYNONYM	Echinochloa oryzoides (Ard.) Fritsch	2702820			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Vulpia myuros (L.) C.C. Gmel. var. megalura (Nutt.) Auquier	Vulpia myuros var. megalura (Nutt.) Auquier	8091833	Plantae	SYNONYM	Vulpia myuros (L.) C.C.Gmel.	5289590	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Diplachne parviflora (R. Brown) Benth.	Diplachne parviflora (R.Br.) Benth.	4122787	Plantae	SYNONYM	Diplachne fusca subsp. fusca	7998563			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Lolium subulatum Vis.	Lolium subulatum Vis.	9231612	Plantae	SYNONYM	Lolium rigidum Gaudin	2706218			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Zuloagaea bulbosa (Kunth) Bess	Zuloagaea bulbosa (Kunth) Bess	4138275	Plantae	SYNONYM	Panicum bulbosum Kunth	2705106			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Rorippa stylosa (Pers.) Mansf. & Rothm.	Rorippa stylosa (Pers.) Mansf. & Rothm.	3053252	Plantae	SYNONYM	Rorippa pyrenaica (All.) Rchb.	3053399	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Noccaea brachypetala (Jord.) F.K. Mey.	Noccaea brachypetala (Jord.) F.K.Mey.	3045473	Plantae	SYNONYM	Noccaea caerulescens subsp. brachypetala (Jord.) Tzvelev	3045464	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Erucastrum incanum (L.) Koch	Erucastrum incanum (L.) W.D.J.Koch	5376070	Plantae	SYNONYM	Sinapis incana L.	3047620			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Sinapis dissecta Lag.	Sinapis dissecta Lag.	3047634	Plantae	SYNONYM	Sinapis alba subsp. dissecta (Lag.) Simonk.	3047633			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Matthiola longipetala (Vent.) DC. subsp. bicornis (Sibth. & Smith) P.W. Ball	Matthiola longipetala subsp. bicornis (Sm.) P.W.Ball	7740944	Plantae	SYNONYM	Matthiola longipetala subsp. longipetala	7225577	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Lepidium draba L. subsp. draba	Lepidium draba subsp. draba	5376966	Plantae	SYNONYM	Lepidium draba L.	5376961			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Rorippa x armoracioides (Tausch) Fuss	Rorippa armoracioides (Tausch) Fuss	3693306	Plantae	SYNONYM	Rorippa anceps (Wahlenb.) Rchb.	3693336	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Euclidium syriacum (L.) R. Brown	Euclidium syriacum (L.) R.Br.	8191598	Plantae	SYNONYM	Euclidium syriacum (L.) W.T.Aiton	3049314	ORIGINAL_NAME_DERIVED,CONFLICTING_BASIONYM_COMBINATION		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Arabis alpina L. subsp. caucasica (Willd. ex Schlecht.) Briq.	Arabis alpina subsp. caucasica (Willd. ex Schlecht.) Briq.	5374930	Plantae	SYNONYM	Arabis caucasica Willd.	5374922	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Crambe abyssinica Hochst. ex R.E. Fries	Crambe abyssinica Hochst. ex R.E.Fr.	5373484	Plantae	SYNONYM	Crambe hispanica subsp. abyssinica (Hochst. ex R.E.Fr.) A.Prina	8510990			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Barbarea stricta Andrz.	Barbarea stricta Andrz.	7560578	Plantae	SYNONYM	Barbarea stricta Andrz. ex Besser	5374614	CONFLICTING_BASIONYM_COMBINATION		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Lepidium neglectum Thell.	Lepidium neglectum Thell.	5377072	Plantae	SYNONYM	Lepidium densiflorum Schrad.	5377064			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Strigosella africana (L.) Botsch. var. laxa (Lam.) Botsch	Strigosella africana var. laxa (Lam.) Botsch.	5373456	Plantae	SYNONYM	Strigosella africana (L.) Botsch.	5373440	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Erysimum ruscinonense Jord.	Erysimum ruscinonense Jord.	3048071	Plantae	SYNONYM	Erysimum nevadense subsp. collisparsum (Jordan) P.W.Ball	3048069			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Lepidium draba L. subsp. chalepense (L.) Thell.	Lepidium draba subsp. chalepense (L.) Thell.	5928306	Plantae	SYNONYM	Lepidium chalepense L.	5376514	ORIGINAL_NAME_DERIVED,CONFLICTING_BASIONYM_COMBINATION		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Heracleum sibiricum L.	Heracleum sibiricum L.	6027427	Plantae	SYNONYM	Heracleum sphondylium subsp. sibiricum (L.) Simonk.	4271356			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Ammi visnaga (L.) Lam.	Ammi visnaga (L.) Lam.	3034183	Plantae	SYNONYM	Visnaga daucoides Gaertn.	5371753			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Seseli montanum L.	Seseli montanum L.	6026420	Plantae	SYNONYM	Hippomarathrum montanum subsp. montanum	8046546			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Orlaya platycarpos Koch	Orlaya platycarpos (L.) W.D.J.Koch	3638223	Plantae	SYNONYM	Caucalis platycarpos L.	3034523	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Amaranthus acutilobus Uline & Bray	Amaranthus acutilobus Uline & Bray	5384333	Plantae	SYNONYM	Amaranthus emarginatus subsp. emarginatus	7323251			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Amaranthus hybridus L. subsp. hybridus var. hybridus	Amaranthus hybridus var. hybridus	7323184	Plantae	SYNONYM	Amaranthus hybridus L.	5384364			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Amaranthus tuberculatus (Moq.) Sauer var. rudis (Sauer) Costea & Tardif	Amaranthus tuberculatus var. rudis (J.D.Sauer) Costea & Tardif	5548360	Plantae	SYNONYM	Amaranthus tuberculatus (Moq. ex DC.) J.D.Sauer	5384347	ORIGINAL_NAME_DERIVED,CONFLICTING_BASIONYM_COMBINATION		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Amaranthus hybridus L. subsp. hybridus var. pseudoretroflexus (Thell.) Carretero	Amaranthus hybridus var. pseudoretroflexus (Thell.) J.L.Carretero	5547860	Plantae	SYNONYM	Amaranthus powellii S.Watson	5384359	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Amaranthus x ralletii Contré	Amaranthus ×ralletii Contré	7975549	Plantae	SYNONYM	Amaranthus ozanonii Piszter	7576335			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Corispermum gmelinii Bunge	Corispermum gmelinii Bunge	7648345	Plantae	SYNONYM	Corispermum declinatum var. tylocarpum (Hance) C.P.Tsien & C.G.Ma	3759901			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Amaranthus powellii S. Watson subsp. bouchonii (Thell.) Costea & Carretero	Amaranthus powellii subsp. bouchonii (Thell.) Costea & Carretero	5548528	Plantae	SYNONYM	Amaranthus bouchonii Thell.	5384361			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Alternanthera nodiflora R. Brown	Alternanthera nodiflora R.Br.	7323675	Plantae	SYNONYM	Alternanthera sessilis (L.) DC.	3084939			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Amaranthus hybridus L. subsp. quitensis (Kunth) Costea & Carretero	Amaranthus hybridus subsp. quitensis (Kunth) Costea & Carretero	5547857	Plantae	SYNONYM	Amaranthus quitensis Kunth	7323711			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Bassia scoparia (L.) Voss s.l.	Bassia scoparia (L.) Voss	7852603	Plantae	SYNONYM	Bassia scoparia subsp. scoparia	7219488	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Einadia polygonoides (J. Murr) Wilson	Einadia polygonoides (Murr) Paul G.Wilson	3757344	Plantae	SYNONYM	Chenopodium polygonoides (Murr) Aellen	3757457			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Amaranthus macrocarpus Benth. var. pallidus Benth.	Amaranthus macrocarpus var. pallidus Benth.	5548724	Plantae	SYNONYM	Amaranthus macrocarpus subsp. pallidus (Benth.) N.Bayón	9454901			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Teloxys aristata (L.) Moq.	Teloxys aristata (L.) Moq.	3083888	Plantae	SYNONYM	Dysphania aristata (L.) Mosyakin & Clemants	5568439	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Alternanthera tenella Colla	Alternanthera tenella Colla	3084968	Plantae	SYNONYM	Alternanthera ficoidea R.Br.	8160803			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Alternanthera denticulata R. Brown	Alternanthera denticulata R.Br.	7655198	Plantae	SYNONYM	Alternanthera sessilis (L.) DC.	3084939	CONFLICTING_BASIONYM_COMBINATION		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Stachys macrantha (C. Koch) Stearn	Stachys macrantha (K.Koch) Stearn	3881468	Plantae	SYNONYM	Betonica macrantha K.Koch	3905825	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Caryopteris x clandonensis N.W. Simmonds ex Rehder	Caryopteris ×clandonensis N.W.Simmonds ex Rehder	9401236	Plantae	SYNONYM	Caryopteris incana x mongholica	9784442			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Clinopodium nepeta Kuntze subsp. glandulosum (Req.) Govaerts	Clinopodium nepeta subsp. glandulosum (Req.) Govaerts	3886262	Plantae	SYNONYM	Clinopodium nepeta subsp. spruneri (Boiss.) Bartolucci & F.Conti	7757431			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Mentha spicata L. subsp. glabrata (Lej. & Court.) Lebeau	Mentha spicata subsp. glabrata (Lej. & Courtois) Lebeau	3895556	Plantae	SYNONYM	Mentha spicata subsp. spicata	7308335	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Clinopodium grandiflorum (L.) O. Kuntze	Clinopodium grandiflorum (L.) Kuntze	7437438	Plantae	SYNONYM	Drymosiphon grandiflorus (L.) Melnikov	9269392			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Thymus pannonicus All.	Thymus pannonicus All.	5341447	Plantae	SYNONYM	Thymus pulegioides subsp. pannonicus (All.) Kerguélen	5605749			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Salvia lavandulifolia Vahl subsp. gallica Lippert	Salvia lavandulifolia subsp. gallica W.Lippert	3898065	Plantae	SYNONYM	Salvia officinalis subsp. gallica (W.Lippert) Reales, D.Rivera & Obón	6411218			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Mentha x smithiana R.A. Graham	Mentha smithiana R.A.Graham	2927185	Plantae	SYNONYM	Mentha wirtgeniana F.W.Schultz	3893979			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Rosmarinus officinalis L.	Rosmarinus officinalis L.	2926634	Plantae	SYNONYM	Salvia rosmarinus Schleiden	3889108			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Acer palmatum Thunb.	Acer palmatum Thunb.	3189882	Plantae	SYNONYM	Acer palmatum C.P.Thunberg ex A.Murray	7912328	CONFLICTING_BASIONYM_COMBINATION		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Anogramma chaerophylla (Desv.) Link	Anogramma chaerophylla (Desv.) Link	5566061	Plantae	SYNONYM	Gastoniella chaerophylla (Desv.) Li Bing Zhang & Liang Zhang	9662775			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Adiantum raddianum C. Presl	Adiantum raddianum C.Presl	2651826	Plantae	SYNONYM	Doryopteris raddiana (Pr.) F	7335777	CONFLICTING_BASIONYM_COMBINATION		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Amsinckia retrorsa Suksd.	Amsinckia retrorsa Suksd.	4067952	Plantae	SYNONYM	Amsinckia menziesii (Lehm.) A.Nels.Macbr.	2925870			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Amsinckia micrantha Suksd.	Amsinckia micrantha Suksdorf	4058401	Plantae	SYNONYM	Amsinckia menziesii (Lehm.) A.Nels.Macbr.	2925870			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Omphalodes linifolia (L.) Moench	Omphalodes linifolia (L.) Moench	2926050	Plantae	SYNONYM	Iberodes linifolia (L.) Serrano, R.Carbajal & S.Ortiz	9629001	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Nemophila menziesii Hook. & Arnott var. integrifolia Parish	Nemophila menziesii var. integrifolia Parish.	3611735	Plantae	SYNONYM	Nemophila menziesii var. integrifolia (Parish) Brand	7536406	CONFLICTING_BASIONYM_COMBINATION		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Anchusa ovata Lehm.	Anchusa ovata Lehm.	5662067	Plantae	SYNONYM	Lycopsis arvensis subsp. orientalis (L.) Kuzn.	8167990			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Aconogonon campanulatum (Hook. f.) H. Hara	Aconogonon campanulatum (Hook.fil.) Hara	6391389	Plantae	SYNONYM	Koenigia campanulata (Hook.f.) T.M.Schust. & Reveal	9018536	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Reynoutria compacta (Hook. f.) Nakai	Reynoutria compacta (Hook.fil.) Nakai	6709291	Plantae	SYNONYM	Reynoutria japonica Houtt.	2889173	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Rumex fueginus  Phil.	Rumex fueginus R.Phil.	2888982	Plantae	SYNONYM	Rumex persicarioides var. fueginus (Phil.) A.Haines	7350964			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+x Reyllopia conollyana (J.P. Bailey) Galasso	×Reyllopia conollyana (J.P.Bailey) Galasso	4038524	Plantae	SYNONYM	Fallopia baldschuanica x japonica	9758813	CONFLICTING_BASIONYM_COMBINATION		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Aconogonon x fennicum Reiersen	Aconogonon fennicum Reiersen	4035232	Plantae	SYNONYM	Koenigia fennica (Reiersen) T.M.Schust. & Reveal	8773480			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Emex spinosa (L.) Campd.	Emex spinosa (L.) Campd.	2888869	Plantae	SYNONYM	Rumex spinosus L.	2888870			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Rubrivena polystachya (Wall. ex Meisn.) M. Král	Rubrivena polystachya (Wall.) M.Král	4037343	Plantae	SYNONYM	Koenigia polystachya (Wall. ex Meisn.) T.M.Schust. & Reveal	8848208			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Emex australis Steinh.	Emex australis Steinh.	2888871	Plantae	SYNONYM	Rumex hypogaeus T.M.Schust. & Reveal	8909872			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Aconogonon divaricatum (L.) Nakai	Aconogonon divaricatum (L.) Nakai	7291572	Plantae	SYNONYM	Koenigia divaricata (L.) T.M.Schust. & Reveal	8720751			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Erodium moschatum (L.) L'Hérit. var. moschatum	Erodium moschatum var. moschatum	7258888	Plantae	SYNONYM	Erodium moschatum (Burm.f.) L'Hér.	9419993			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Monsonia angustifolia E. Mey. ex A. Rich.	Monsonia angustifolia E.Mey. ex A.Rich.	7926816	Plantae	SYNONYM	Monsonia angustifolia E.Mey.	3828021	CONFLICTING_BASIONYM_COMBINATION		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Geranium x magnificum Hyl.	Geranium ×magnificum Hyl.	2889980	Plantae	SYNONYM	Geranium ibericum x platypetalum	9742114			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Geranium x cantabrigiense Yeo	Geranium ×cantabrigiense Yeo	2890995	Plantae	SYNONYM	Geranium dalmaticum x macrorrhizum	9794106			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Erodium cygnorum Nees subsp. glandulosum Carol.	Erodium cygnorum subsp. glandulosum Carolin	3827934	Plantae	SYNONYM	Erodium carolinianum Aldasoro, C.Aedo, C.Navarro & L.Sáez	3828342			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Malva preissiana Miq.	Malva preissiana Miq.	3941038	Plantae	SYNONYM	Malva australiana M.F.Ray	3935002			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Malva setigera F.K. Schimp. & Spenn.	Malva setigera K.F.Schimp. & Spenn.	3940638	Plantae	SYNONYM	Althaea hirsuta L.	3152521			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Abutilon x suntense C.D. Brickell	Abutilon ×suntense C.D.Brickell	3935725	Plantae	SYNONYM	Corynabutilon ×suntense (C.D.Brickell) Fryxell	3937506			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Malva pseudolavatera Webb & Berthelot	Malva pseudolavatera Webb & Berthel.	3940998	Plantae	SYNONYM	Malva multiflora (Cav.) Soldano, Banfi & Galasso	3933415			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Malva trimestris (L.) Salisb. var. brachypoda (Pérez Lara) Verloove & Lambinon	Malva trimestris var. brachypoda (Pérez Lara) Verloove & Lambinon	8300984	Plantae	SYNONYM	Malva trimestris Salisb.	3940326	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Sidalcea oregana (Nutt.) A. Gray	Sidalcea oregana (Nutt. ex Torr. & A.Gray) A.Gray	9733080	Plantae	SYNONYM	Sidalcea malviflora subsp. malviflora	7226545	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Oenothera depressa E. Greene	Oenothera depressa Greene	6428493	Plantae	SYNONYM	Oenothera villosa subsp. villosa	6427623	CONFLICTING_BASIONYM_COMBINATION		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Ludwigia hexapetala (Hook. & Arnott) Zardini, Gu & Raven	Ludwigia hexapetala (Hook. & Arn.) E.M.Zardini, H.Y.Gu & P.H.Raven	5421040	Plantae	SYNONYM	Ludwigia grandiflora var. hexapetala (Hook. & Arn.) D.B.Ward	8309092	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Oenothera rubricalyx R.R. Gates	Oenothera rubricalyx R.R.Gates	3665866	Plantae	SYNONYM	Oenothera perangusta R.R.Gates	7322738			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Oenothera cruciata Nutt. ex G. Don	Oenothera cruciata Nutt. ex G.Don	7926755	Plantae	SYNONYM	Oenothera parviflora L.	8994150			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Chamaenerion dodonaei (Vill.) Schur	Chamaenerion dodonaei (Vill.) Schur	7742704	Plantae	SYNONYM	Epilobium dodonaei Vill.	3666323	ORIGINAL_NAME_DERIVED,CONFLICTING_BASIONYM_COMBINATION		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Clarkia elegans Douglas	Clarkia elegans Dougl.	5420958	Plantae	SYNONYM	Clarkia unguiculata Lindl.	5420957			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Oenothera elata Humb., Bonpl. & Kunth	Oenothera elata Kunth	3188829	Plantae	SYNONYM	Oenothera elata subsp. elata	7223881	CONFLICTING_BASIONYM_COMBINATION		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Larix x marschlinsii Coaz	Larix ×marschlinsii Coaz	4938682	Plantae	SYNONYM	Larix decidua x kaempferi	9762894			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Galium parisiense L. var. leiocarpum Tausch	Galium parisiense var. leiocarpum Tausch	2914818	Plantae	SYNONYM	Galium parisiense L.	2913169			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Phuopsis stylosa (Trin.) Benth. & Hook. f. ex B.D. Jackson	Phuopsis stylosa (Trin.) Hook.f. ex B.D.Jacks.	2903387	Plantae	SYNONYM	Phuopsis stylosa (Trin.) G.Nicholson	7671397	ORIGINAL_NAME_DERIVED,CONFLICTING_BASIONYM_COMBINATION		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Cucumis myriocarpus Naudin	Cucumis myriocarpus Naud.	2874575	Plantae	SYNONYM	Cucumis myriocarpus subsp. myriocarpus	3624993			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Bartsia trixago L.	Bartsia trixago L.	3171813	Plantae	SYNONYM	Bellardia trixago All.	5414976			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Parentucellia viscosa (L.) Caruel	Parentucellia viscosa (L.) Caruel	3171818	Plantae	SYNONYM	Bellardia viscosa Fisch. & C.A.Mey.	7733140			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Salix babylonica L. var. pekinensis A. Henry	Salix babylonica var. pekinensis Henry	9306497	Plantae	SYNONYM	Salix babylonica L.	5372639			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Salix dasyclados Wimm.	Salix dasyclados Wimmer	5583837	Plantae	SYNONYM	Salix holosericea Willd.	7895688			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Populus trichocarpa Torr. & A. Gray ex Hook.	Populus trichocarpa Torr. & Gray ex Hooker	6362904	Plantae	SYNONYM	Populus balsamifera subsp. trichocarpa (Torr. & A.Gray) Brayshaw	3806052			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Populus x generosa A. Henry	Populus generosa A.Henry	3040245	Plantae	SYNONYM	Populus jackii Sarg.	3040241			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Scorpiurus muricatus L. subsp. sulcatus (L.) Thell.	Scorpiurus muricatus subsp. sulcatus (L.) Thell.	5358307	Plantae	SYNONYM	Scorpiurus muricatus L.	5358302			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Medicago monantha (C.A. Mey.) Trautv. subsp. incisa (Benth.) Verloove & Lambinon	Medicago monantha subsp. incisa (Benth.) Verloove & Lambinon	3966132	Plantae	SYNONYM	Medicago monantha Trautv.	2965226	CONFLICTING_BASIONYM_COMBINATION		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Medicago x varia Martyn	Medicago varia Martyn	2965331	Plantae	SYNONYM	Medicago sativa subsp. varia (Martyn) Arcang.	8316569			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Scorpiurus muricatus L. subsp. muricatus	Scorpiurus muricatus subsp. muricatus	9388245	Plantae	SYNONYM	Scorpiurus muricatus L.	5358302			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Cytisus sessilifolius L.	Cytisus sessilifolius L.	5347864	Plantae	SYNONYM	Cytisophyllum sessilifolium O.Lang	2940408			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Melilotus officinalis Lam.	Melilotus officinalis Lam.	8193111	Plantae	SYNONYM	Melilotus officinalis Pall.	2971024	CONFLICTING_BASIONYM_COMBINATION		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Biserrula pelecinus L.	Biserrula pelecinus L.	2938473	Plantae	SYNONYM	Astragalus pelecinus subsp. pelecinus	7068263			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Sesbania exaltata (Rafin.) Rydberg ex A.W. Hill	Sesbania exaltata (Raf.) Rydb. ex A.W.Hill	7394001	Plantae	SYNONYM	Sesbania herbacea (Mill.) McVaugh	2970585	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Desmanthus illinoensis (Michaux) Mc. Millan ex Robinson & Fernald	Desmanthus illinoensis (Michx.) Robinson & Fernald	7484581	Plantae	SYNONYM	Desmanthus illinoensis MacMill.	5360112	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Sulla coronaria (L.) Med.	Sulla coronaria (L.) Medik., 1789	8081232	Plantae	SYNONYM	Hedysarum coronarium L.	2960919	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Scorpiurus muricatus L. subsp. subvillosus (L.) Thell.	Scorpiurus muricatus subsp. subvillosus (L.) Thell.	8082844	Plantae	SYNONYM	Scorpiurus muricatus L.	5358302	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Medicago monantha (C.A. Mey.) Trautv. subsp. noeana (Boiss.) Greuter & Burdet	Medicago monantha subsp. noeana (Boiss.) Greuter & Burdet	3966127	Plantae	SYNONYM	Medicago monantha Trautv.	2965226	CONFLICTING_BASIONYM_COMBINATION		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Lathyrus cicera L.	Lathyrus cicera L.	5356481	Plantae	SYNONYM	Astragalus cicer L.	5343253	CONFLICTING_BASIONYM_COMBINATION		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Vicia dalmatica A. Kerner	Vicia dalmatica A.Kern.	3973636	Plantae	SYNONYM	Vicia tenuifolia subsp. dalmatica (A.Kern.) Greuter	3971572			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Verbascum x angulosum Teyber	Verbascum ×angulosum Teyber	9629891	Plantae	SYNONYM	Verbascum nigrum x speciosum	9783082			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Chaenostoma cordatum (Thunb.) Benth.	Chaenostoma cordatum Benth.	5561475	Plantae	SYNONYM	Sutera cordata Kuntze	3728734			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Alonsoa intermedia Lodd.	Alonsoa intermedia Lodd.	3724078	Plantae	SYNONYM	Alonsoa linearis Ruiz & Pav.	7331548			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Aconitum x stoerkianum Reichenb.	Aconitum stoerkianum Rchb.	3920712	Plantae	SYNONYM	Aconitum nasutum subsp. paniculatum (Arcangeli) Greuter & Burdet	9159238			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Anemone hepatica L.	Anemone hepatica L.	6375391	Plantae	SYNONYM	Hepatica nobilis Schreb.	5371699			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Delphinium orientale J. Gay	Delphinium orientale Gay	3033829	Plantae	SYNONYM	Consolida orientalis (J.Gay) R.Schrödinger	3033828			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Aconitum napellus  L. subsp. napellus var. giganteum (Dum. ex Thielens) J. Duvigneaud	Aconitum napellus var. giganteum (Dumort. ex Thielens) J.Duvigneaud	3922770	Plantae	SYNONYM	Aconitum napellus subsp. lusitanicum Rouy	7707872	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Delphinium ajacis L.	Delphinium ajacis L.	3033833	Plantae	SYNONYM	Consolida ajacis (L.) Schur	3033830			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Calandrinia elegans Spach	Calandrinia elegans Spach	7389949	Plantae	SYNONYM	Calandrinia ciliata DC.	3084693			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Crocus x stellaris Haw.	Crocus stellaris Haw.	3586380	Plantae	SYNONYM	Crocus luteus Lam.	2747750			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Physalis angulata L. var. angulata	Physalis angulata var. angulata	7300041	Plantae	SYNONYM	Physalis angulata L.	5341792			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Solanum rostratum Dun.	Solanum rostratum Dun.	2930922	Plantae	SYNONYM	Solanum angustifolium Mill.	2929800			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Nicotiana x sanderae Sander ex Will. Watson	Nicotiana ×sanderae W.Watson	3799170	Plantae	SYNONYM	Nicotiana alata x forgetiana	9652942			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Solanum chenopodioides Lam.	Solanum chenopodioides Lam.	2929710	Plantae	SYNONYM	Solanum nigrum L.	9150405	CONFLICTING_BASIONYM_COMBINATION		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Petunia parviflora Juss.	Petunia parviflora Juss.	2928906	Plantae	SYNONYM	Calibrachoa parviflora (Jussieu) D'Arcy	2928905			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Physalis alkekengi L. var. franchetii (Masters) Makino	Physalis alkekengi var. franchetii (Masters) Makino	5829065	Plantae	SYNONYM	Alkekengi officinarum var. franchetii (Masters)	9537212	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Solanum nodiflorum Jacq. ?	Solanum nodiflorum Jacq.	2930248	Plantae	SYNONYM	Solanum americanum subsp. americanum	9594551			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Solanum triflorum Nutt. var. ponticum (Prodan) Borza	Solanum triflorum var. ponticum (Prodán) Borza	2931238	Plantae	SYNONYM	Solanum triflorum Nutt.	2931237			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Solanum nigrum L. subsp. schultesii (Opiz) Wessely	Solanum nigrum subsp. schultesii (Opiz) Wessely	2932877	Plantae	SYNONYM	Solanum decipiens Opiz	2932872	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Physalis minima L.	Physalis minima L.	5341772	Plantae	SYNONYM	Physalis lagascae Roem. & Schult.	5341775			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Physalis angulata L. var. pendula (Rydberg) Waterfall	Physalis angulata var. pendula (Rydb.) Waterf.	5341795	Plantae	SYNONYM	Physalis angulata L.	5341792	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Juncus tenuis Willd. subsp. dichotomus (Elliott) Verloove & Lambinon	Juncus tenuis subsp. dichotomus (Elliott) Verloove & Lambinon	8143288	Plantae	SYNONYM	Juncus dichotomus Elliott	2701120	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Juncus tenuis Willd. subsp. anthelatus (Wiegand) Verloove & Lambinon	Juncus tenuis subsp. anthelatus (Wiegand) Verloove & Lambinon	7841979	Plantae	SYNONYM	Juncus anthelatus (Wiegand) R.E.Brooks	2702058	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Juncus tenuis Willd. subsp. dudleyi (Wiegand) P. Fourn.	Juncus tenuis subsp. dudleyi (Wiegand) P.Fourn.	2701833	Plantae	SYNONYM	Juncus dudleyi Wiegand	2701831	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Honorius nutans (L.) Gray	Honorius nutans (L.) Gray	2773290	Plantae	SYNONYM	Ornithogalum nutans L.	2773281	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Loncomelos brevistylus (Wolfner ) Dostál	Loncomelos brevistylum (Wolfner) Dostál	2772890	Plantae	SYNONYM	Ornithogalum pyramidale L.	2772885			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Chionodoxa luciliae Boiss.	Chionodoxa luciliae Boiss.	2767272	Plantae	SYNONYM	Scilla luciliae (Boiss.) Speta	2767271			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Loncomelos narbonense (L.) Raf.	Loncomelos narbonense (L.) Raf.	2772978	Plantae	SYNONYM	Ornithogalum narbonense L.	2772958	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Scilla siberica Haw.	Scilla siberica Haw.	2767328	Plantae	SYNONYM	Scilla siberica Andrews	8080743	CONFLICTING_BASIONYM_COMBINATION		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Chionodoxa sardensis Whittall ex Barr & Sugd.	Chionodoxa sardensis Whittall ex Barr & Sayden	2767230	Plantae	SYNONYM	Scilla sardensis (Barr & Sugden) Speta	2767229			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Euphorbia serpens Kunth subsp. fissistipula (Thell.) Verloove & Lambinon	Euphorbia serpens subsp. fissistipula (Thell.) Verloove & Lambinon	8273282	Plantae	SYNONYM	Euphorbia serpens Kunth	3064221	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Euphorbia brittingeri Opiz ex Samp.	Euphorbia brittingeri Opiz ex Samp.	3069065	Plantae	SYNONYM	Euphorbia verrucosa L.	3069053			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Euphorbia glomerifera (Millsp.) L.C. Wheeler	Euphorbia glomerifera (Millsp.) L.C.Wheeler	3066330	Plantae	SYNONYM	Euphorbia hypericifolia L.	3066321			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Scabiosa atropurpurea L.	Scabiosa atropurpurea L.	2888805	Plantae	SYNONYM	Sixalix atropurpurea subsp. atropurpurea	7301011			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Symphoricarpos x doorenbosii Krüssm.	Symphoricarpos ×doorenbosii Krüssm.	8212772	Plantae	SYNONYM	Symphoricarpos albus var. laevigatus x microphyllus x orbiculatus	9761414			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Dipsacus strigosus Willd. ex Roem. & Schult.	Dipsacus strigosus Willd. ex Roem. & Schult.	4104284	Plantae	SYNONYM	Dipsacus strigosus Willd.	7443846	CONFLICTING_BASIONYM_COMBINATION		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Cephalaria syriaca (L.) Roem. & Schult.	Cephalaria syriaca (L.) Roem. & Schult.	2888796	Plantae	SYNONYM	Cephalaria syriaca Schrad.	8355821	ORIGINAL_NAME_DERIVED,CONFLICTING_BASIONYM_COMBINATION		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Cephalaria alpina (L.) Roem. & Schult.	Cephalaria alpina (L.) Roem. & Schult.	2888799	Plantae	SYNONYM	Cephalaria alpina Schrad.	8259811	ORIGINAL_NAME_DERIVED,CONFLICTING_BASIONYM_COMBINATION		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Lonicera chrysantha Turcz. ex Ledeb.	Lonicera chrysantha Turcz. ex Ledeb.	5334246	Plantae	SYNONYM	Lonicera chrysantha Turcz.	8242349	CONFLICTING_BASIONYM_COMBINATION		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Weigela floribunda (Siebold & Zucc.) K. Koch	Weigela floribunda (Siebold & Zucc.) K.Koch	2888732	Plantae	SYNONYM	Weigela floribunda C.A.Mey.	8011733	ORIGINAL_NAME_DERIVED,CONFLICTING_BASIONYM_COMBINATION		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Lonicera nitida Wils.	Lonicera nitida E.H.Wilson	5599249	Plantae	SYNONYM	Lonicera pileata var. yunnanensis (Franch.) Bernd Schulz	7764700			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Meconopsis cambrica (L.) Vig.	Meconopsis cambrica (L.) Vig.	3601091	Plantae	SYNONYM	Papaver cambricum L.	3602683	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Lamprocapnos spectabilis (L.) Fukuhara	Lamprocapnos spectabilis (L.) T.Fukuhara	2888564	Plantae	SYNONYM	Fumaria barnolae subsp. barnolae	7314977	CONFLICTING_BASIONYM_COMBINATION		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Papaver somniferum L. subsp. setigerum (DC.) Arcang.	Papaver somniferum subsp. setigerum (DC.) Arcangeli	8242032	Plantae	SYNONYM	Papaver setigerum DC.	3602227	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Carex agastachys L.f.	Carex agastachys L.f.	2725229	Plantae	SYNONYM	Carex pendula Huds.	2722051			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Cyperus esculentus L. var. leptostachyus Boeckeler	Cyperus esculentus var. leptostachyus Boeckeler	8087010	Plantae	SYNONYM	Cyperus esculentus L.	2716226			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Cyperus longus L. subsp. tenuiflorus (Rottb.) Kük.	Cyperus longus subsp. tenuiflorus (Rottb.) Kük.	2716588	Plantae	SYNONYM	Cyperus longus subsp. longus	7070211			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Cyperus involucratus Rottb.	Cyperus involucratus Rottb.	2714166	Plantae	SYNONYM	Cyperus alternifolius subsp. flabelliformis Kük.	2714158			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Eleocharis austriaca Hayek	Eleocharis austriaca Hayek	2717405	Plantae	SYNONYM	Eleocharis mamillata subsp. austriaca (Hayek) Strandh.	2717402			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Carex praecox Schreb. subsp. intermedia (Čelak.) W. Schultze-Motel	Carex praecox subsp. intermedia (Celak.) W.Schultze-Motel	2728287	Plantae	SYNONYM	Carex praecox Schreb.	2724120			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Scirpus atrovirens Willd. subsp. georgianus (R.M. Harper) Verloove & Lambinon	Scirpus atrovirens subsp. georgianus (R.M.Harper) Verloove & Lambinon	8390304	Plantae	SYNONYM	Scirpus georgianus R.M.Harper	2720269	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Hypericum x moserianum André	Hypericum moserianum André	3189474	Plantae	SYNONYM	Hypericum moseranum Andre	3189468	CONFLICTING_BASIONYM_COMBINATION		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Stellaria media (L.) Cirillo subsp. cupaniana (Jord. & Fourr.) Nyman	Stellaria media subsp. cupaniana (Jord. & Fourr.) Nym.	7625143	Plantae	SYNONYM	Stellaria cupaniana (Jordan & Fourr.) Beguinot	7938233	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Cerastium x maureri M. Schulze	Cerastium ×maureri Schulze	7925372	Plantae	SYNONYM	Cerastium arvense subsp. arvense x tomentosum	9660664			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Silene scabriflora Brot.	Silene scabriflora Brot.	8419625	Plantae	SYNONYM	Silene pendula L.	5384773			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Sagina subulata (Swartz) C. Presl	Sagina subulata (Sw.) C.Presl	3085400	Plantae	SYNONYM	Sagina alexandrae Iamonico	9440906	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Agrostemma gracile Boiss.	Agrostemma gracile Boiss.	7534154	Plantae	SYNONYM	Agrostemma brachyloba (Fenzl) K.Hammer	3085366			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Allium porrum L.	Allium porrum L.	7668251	Plantae	SYNONYM	Allium ampeloprasum L.	2856037			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Galanthus x warei J. Allen	Galanthus warei J.Allen	7556596	Plantae	SYNONYM	Galanthus nivalis L.	2855356			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Narcissus obvallaris Salisb.	Narcissus obvallaris Salisb.	2858374	Plantae	SYNONYM	Narcissus pseudonarcissus subsp. major (Curtis) Baker	2858363			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Galanthus nivalis L. var. scharlockii Caspary	Galanthus nivalis var. scharlockii Casp.	2855358	Plantae	SYNONYM	Galanthus nivalis L.	2855356			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Tristagma uniflorum (Lindl.) Traub	Tristagma uniflorum (Lindl.) Traub	2859569	Plantae	SYNONYM	Ipheion uniflorum Raf.	2859597	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Humulus japonicus Sieb. et Zucc.	Humulus japonicus Sieb. & Zucc.	2984536	Plantae	SYNONYM	Humulopsis scandens (Lour.) Grudz.	3874408			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Bromus japonicus Thunb. subsp. subsquarrosus (Borbás) Pénzes	Bromus japonicus subsp. subsquarrosus (Borbás) Pénzes	5943991	Plantae	SYNONYM	Bromus japonicus subsp. japonicus	7226794			2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Bromus japonicus Thunb. subsp. phrygius (Boiss.) Pénzes	Bromus japonicus subsp. phrygius (Boiss.) Pénzes	8404210	Plantae	SYNONYM	Bromus japonicus subsp. japonicus	7226794	ORIGINAL_NAME_DERIVED		2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Begonia x semperflorens hort.									2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Ephedra saxatalis (Stapf) Royle subsp. sikkimensis (Stapf) Florin									2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Spiranthes cernua (L.) Richard x S. odorata  (Nuttall) Lindley									2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Pterocarya x rhederiana C.K. Schneider									2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Berberis bealei Fortune (incl. hybrids)									2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Berberis x wagneri (Jouin) Rehder									2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Ipomoea lacunosa L. f. lacunosa									2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Lysichiton americanus Hultén & St John x L. camtschatcensis (L.) Schott									2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+"Sedum ""Autumn Joy"" (S. spectabile Boreau x telephium L.)"									2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Symphyotrichum laeve (L.) A. & D. Love (incl. S. versicolor (Willd.) Nesom)									2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Pulicaria arabica (L.) Cass. subsp. arabica									2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Symphyotrichum lanceolatum (Willd.) Nesom (incl. S. tradescantii (L.) Nesom)									2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Rosa chinensis group									2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Rosa 'Hollandica'									2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Rosa 'Dorothy Perkins'									2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Cotoneaster coriaceus Franch. (incl. C. lacteus W.W. Smith)									2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Prunus domestica L. subsp. instititia (L.) Bonnier & Layens									2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Linaria bipartita (Vent.) Desf.									2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Veronica teucrium L. subsp. teucrium									2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Veronica austriaca Jacq.									2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Vulpia ciliata Dum. subsp. ciliata									2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Eragrostis virescens J. Presl subsp. virescens									2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Digitaria ciliaris (Retz.) Koeler subsp. ciliaris									2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+x Festulolium braunii (K. Richt.) A. Camus (Festuca pratensis Huds. x Lolium perenne L.)									2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Austrodanthonia racemosa (R. Brown) H.P. Linder var. racemosa									2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Avena sativa L. x sterilis L.									2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Secale xderzhavinii Tzvelev									2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Eragrostis brownii (Kunth) Nees ex Wight									2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Trisetaria panicea (Lam.) Maire									2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Digitaria sanguinalis (L.) Scop. subsp. sanguinalis									2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Dinebra decipiens (R. Brown) P.M. Peterson & N. Snow subsp. decipiens									2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Glyceria striata (Lam.) Hitchc. subsp. diffomis Portal									2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Bromus carinatus Hook. & Arnott var. carinatus									2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Iberis amara L. var. coronaria (D. Don) Voss									2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Strigosella africana (L.) Botsch. var. africana									2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Neslia paniculata (L.) Desv. subsp. thracia (Velen.) Bornm.									2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Smyrnium olusastrum L.									2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Chenopodium x pelgrimsianum Aell.									2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Atriplex pseudocampanulata Aell.									2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Atriplex eardleyae Aell.									2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Chenopodium album L. x hircinum									2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Chenopodium bushianum Aell.									2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Chenopodium missouriense Aell.									2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Mentha x piperita L. nsubsp. piperita (M. aquatica L. x spicata subsp. glabrata)									2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Aesculus pavia L. (incl. var. discolor (Pursh) Torr. & A. Gray)									2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Cheilanthes viridis (Forssk.) Prantl var. macrophylla (Kunze) Sim									2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Persicaria pensylvanica (L.) Gómez de la Maza									2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Erodium cygnorum Nees subsp. cygnorum									2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Alcea ficifolia L. (Alcea rosea x rugosa)									2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Malva alcea L. var. ribifolia (Viv.) Paol.									2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Malva trimestris (L.) Salisb. var. trimestris									2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Oenothera affinis Cambess. ex A. St. Hil.									2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Oenothera glazioviana Micheli var. azorica (Rostański) Verloove									2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Salix purpurea L. var. purpurea									2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Salix elaeagnos Scop. subsp. angustifolia (Cariot) Rech. f.									2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Salix x sepulcralis Simonk. nvar. chrysocoma (Dode) Meikle									2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Lotus corniculatus L.var. sativus Hyl. ex Jalas									2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Vicia narbonensis L. subsp. narbonensis									2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Nemesia Hybrids									2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Iris x hollandica Hort.									2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Solanum aethiopicum L. var. aculeatum Dunal									2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Physalis longifolia Nutt. subsp. subglabrata (Mack. & Bush) Cronquist									2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Juncus tenuis Willd. subsp. tenuis									2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Chlorophytum comosum group									2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Galanthus nivalis L. var. nivalis									2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Allium paradoxum (Bieb.) G. Don var. paradoxum									2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Erythranthe guttata (DC.) G.L. Nesom (incl. hybrids)									2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Erythranthe lutea (L.) G.L.Nesom (incl. hybrids)									2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Erythranthe cuprea (Dombrain) G.L. Nesom (incl. hybrids)									2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Campsis radicans (L.) Seem. (incl. C. x tagliabuana (Vis.) Rehd.)									2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	
+Bromus japonicus Thunb. subsp. japonicus									2018-07-25	9ff7d317-609b-4c08-bd86-3bc404b77c42	

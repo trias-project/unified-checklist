@@ -160,19 +160,18 @@ E.g. compare:
 Get distribution for all taxa and append `TRUE`/`FALSE` result as extra column. This step can take long.
 
 ```{r check_distributions_on_gbif}
+progress_bar <- progress_estimated(nrow(checklist_taxa))
 checklist_taxa <- checklist_taxa %>%
-  rowwise() %>%
-  do_(interp(~ mutate(as.data.frame(.), 
-                      valid_distribution  = trias::gbif_has_distribution(
-                        taxon_key = .data$key,
-                        country = "BE",
-                        establishmentMeans = c("INTRODUCED", 
-                                               "NATURALISED", 
-                                               "INVASIVE", 
-                                               "ASSISTED COLONISATION"),
-                        status = c("PRESENT", "COMMMON", "RARE", "IRREGULAR"))
-                      ))) %>%
-  ungroup()
+  mutate(valid_distribution = map_lgl(
+    checklist_taxa$key, ~ {
+    progress_bar$tick()$print()
+    trias::gbif_has_distribution(
+      taxon_key = .,
+      country = "BE",
+      establishmentMeans = c("INTRODUCED", "NATURALISED", 
+                             "INVASIVE", "ASSISTED COLONISATION"),
+      status = c("PRESENT", "COMMMON", "RARE", "IRREGULAR"))
+    }))
 ```
 
 Preview results:
@@ -213,17 +212,24 @@ nrow(checklist_taxa)
 
 To make decisions regarding synonyms and higher classification, we need to retrieve GBIF backbone information, if present:
 
+
 ```{r retrieve_taxonomic_info_backbone}
 taxon <- checklist_taxa %>% filter(is.finite(nubKey))
 nub_keys <- checklist_taxa %>% 
   filter(is.finite(nubKey)) %>% 
   distinct(nubKey)
 
-taxon_backbone_info <-  nub_keys %>%
-  rowwise() %>%
-  do_(interp(~ rgbif::name_usage(key = .$nubKey,
-                         return = "data"))) %>%
-  ungroup()
+# taxon_backbone_info <-  nub_keys %>%
+#   rowwise() %>%
+#   do_(interp(~ rgbif::name_usage(key = .$nubKey,
+#                          return = "data"))) %>%
+#   ungroup()
+
+progress_bar <- progress_estimated(nrow(nub_keys))
+taxon_backbone_info <-  map_dfr(nub_keys$nubKey, ~ {
+  progress_bar$tick()$print()
+  rgbif::name_usage(key = ., return = "data")
+  })
 ```
 
 We select taxonomic information we are interested to:
@@ -250,7 +256,7 @@ taxon_backbone_info <- map(cols_to_add,
   reduce(full_join, .init = taxon_backbone_info)
 ```
 
-Next, we unlist column `issues` and we separated them by comma (if multiple issues are present):
+Next, we unlist column `issues` and we separate them by comma (if multiple issues are present):
 
 ```{r unlist_issues}
 taxon_backbone_info <- taxon_backbone_info %>%

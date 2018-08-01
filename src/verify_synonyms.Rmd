@@ -29,6 +29,7 @@ library(dplyr)
 library(readr)
 library(stringr)
 library(tidyr)
+library(purrr)
 # Other packages
 library(rgbif)
 library(trias)
@@ -64,22 +65,23 @@ Preview:
 taxa %>% head(n = 10)
 ```
 
-Load verified taxa from spreadsheet in TrIAS Google Drive:
+Load verified taxa directly from spreadsheet in TrIAS Google Drive:
 
 ```{r load_googlesheet, eval = FALSE}
-my_sheets <- googlesheets::gs_read(ss = "verification_spreadsheet",
-                                   ws = "Sheet1")
+verified_synonyms <- gs_read(ss = "verification_spreadsheet",
+                             ws = "verification_sheet")
 ```
 
 Or via text file:
 
 ```{r load_text_file}
-verified_synonyms_file <- "../data/output/verified_synonyms.tsv"
+verified_synonyms_file <- "../data/output/verified_taxa.tsv"
 verified_synonyms <- read_tsv(verified_synonyms_file, 
                               col_types = cols(
                                 backbone_taxonKey = col_integer(),
                                 backbone_acceptedKey = col_integer(),
-                                date_added = col_date())
+                                date_added = col_date(),
+                                verification_key = col_character())
                               )
 ```
 
@@ -110,9 +112,14 @@ taxa <- taxa %>%
 A summary:
 
 ```{r stats}
-taxa %>% count(with_verification_key = !is.na(verification_key))
+taxa %>% count(verification_key_from_gbif = !is.na(verification_key))
 ```
 
+Number of synonyms or unmatched taxa already verified by experts:
+
+```{r}
+verified_synonyms %>% count(with_verification_key = !is.na(verification_key))
+```
 
 We use function `verify_taxa()` from  `trias` package in order to 
 
@@ -124,19 +131,10 @@ We use function `verify_taxa()` from  `trias` package in order to
 The function reports also unused rows in `verified_synonyms`, but they will not be removed or altered.
 
 ```{r apply_verify_taxa}
-verify <- trias::verify_taxa(taxa = taxa %>%
-                               filter(is.na(verification_key)), 
-                   verified_taxa = verified_synonyms)
-```
-
-## Save verification table
-
-The data.frame `verify$verified_taxa` can be saved as text file and manually transferred to online spreadsheet:
-
-```{r save_verification_df_to_tsv}
-write_tsv(verify$verified_taxa, 
-          path = "../data/output/verified_synonyms.tsv",
-          na = "")
+verify <- trias::verify_taxa(taxa = taxa %>% 
+                               filter(is.na(verification_key)) %>%
+                               select(-verification_key), 
+                             verified_taxa = verified_synonyms)
 ```
 
 ## New synonyms
@@ -171,7 +169,7 @@ verify$updated_scientificName
 
 These backbone accepted names have been updated (but synonym relation stayed the same):
 
-```{r updated_scientific_names}
+```{r updated_accepted_names}
 verify$updated_acceptedName
 ```
 
@@ -191,15 +189,57 @@ These synonym relations are no longer used:
 verify$unused_taxa
 ```
 
+## Check verification keys
+
+We check the verification keys provided by taxonomy experts. In particular, the following checks are performed:
+
+1. `verification_key` is a valid taxon key
+2. `verification_key` refers to a taxon in GBIF Backbone
+3. `verification_key` is not a synonym (is `ACCEPTED` or `DOUBTFUL`)
+
+Summary of the issues found among `verification_key` which should be reported to the experts:
+
+```{r show_invalid_vks_synonym}
+invalid_vks <- trias::gbif_verify_keys(unique(verify$verified_taxa$verification_key)) %>%
+  rename(verification_key = key)
+invalid_vks
+```
+
+## Save verification table
+
+The data.frame `verify$verified_taxa` can be saved as text file and manually transferred to online spreadsheet:
+
+```{r save_verification_df_to_tsv}
+write_tsv(verify$verified_taxa, 
+          path = "../data/output/verified_taxa.tsv",
+          na = "")
+```
+
+
 ## Update taxa
 
-We can now update taxa with verified info:
+We can now add the verification keys (and eventual remarks by experts) to taxa:
 
 ```{r update_taxa}
-taxa <- taxa %>% left_join(verify$verified_taxa %>%
-                             separate_rows(checklists, sep = ",") %>%
-                             rename(checklist_datasetKey = checklists) %>%
-                             select(- c(date_added, remarks)))
+taxa_with_vk_from_gbif <- taxa %>%
+  filter(!is.na(verification_key)) %>%
+  mutate(remarks = NA_character_)
+
+prepare_to_join <- verify$verified_taxa %>%
+  separate_rows(checklists, sep = ",") %>%
+  rename(checklist_datasetKey = checklists) %>%
+  select(-date_added)
+
+taxa_from_verified <- taxa %>%
+  filter(is.na(verification_key)) %>%
+  select(-verification_key)
+taxa_from_verified <- taxa_from_verified %>% 
+  left_join(prepare_to_join,
+            by = intersect(
+              colnames(taxa_from_verified), colnames(prepare_to_join)
+              )
+            )
+taxa <- bind_rows(taxa_with_vk_from_gbif, taxa_from_verified)
 ```
 
 Shows some stats:
@@ -209,15 +249,15 @@ print(paste("Number of accepted taxa: ",
             taxa %>% 
               filter(backbone_taxonomicStatus == "ACCEPTED") %>%
               nrow()))
-print(paste("Number of doubtful taxa (no expert check needed): ", 
+print(paste("Number of doubtful taxa (but no expert check needed): ", 
             taxa %>% 
               filter(backbone_taxonomicStatus == "DOUBTFUL") %>%
               nrow()))
 print(paste("Number of taxa verified by expert: ",
             taxa %>% 
               filter(!is.na(verification_key)) %>%
-              filter(! backbone_taxonomicStatus %in% c("ACCEPTED", "DOUBTFUL") |
-                       is.na(backbone_taxonKey)) %>%
+              filter(verification_key %in% 
+                       verify$verified_taxa$verification_key) %>%
               nrow()))
 print(paste("Number of taxa still to verify: ",
             taxa %>% 
@@ -230,6 +270,7 @@ Saved the updated taxa:
 ```{r save_udpated_taxa}
 # save to csv -> taxa_by_nubKey_verified
 taxa_verified <- write_tsv(taxa, 
-                           path = "../data/output/verified_taxa.tsv",
+                           path = "../data/output/taxa_after_verification.tsv",
                            na = "")
 ```
+ 

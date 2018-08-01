@@ -51,7 +51,7 @@ library(trias)
 Set file paths:
 
 ```{r set_output_file_path}
-taxa_output_file <- "../data/output/checklist_taxa.tsv"
+taxa_output_file <- "../data/interim/checklist_taxa.tsv"
 checklist_metadata_file <- "../data/output/checklist_metadata.tsv"
 ```
 

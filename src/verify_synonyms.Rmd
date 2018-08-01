@@ -55,7 +55,7 @@ checklist_metadata
 Load taxa information as previously wrangled via checklists and GBIF backbone:
 
 ```{r load_taxa}
-taxa_file <- "../data/output/checklist_taxa.tsv"
+taxa_file <- "../data/interim/checklist_taxa.tsv"
 taxa <- read_tsv(taxa_file)
 ```
 
@@ -270,7 +270,7 @@ Saved the updated taxa:
 ```{r save_udpated_taxa}
 # save to csv -> taxa_by_nubKey_verified
 taxa_verified <- write_tsv(taxa, 
-                           path = "../data/output/taxa_after_verification.tsv",
+                           path = "../data/interim/taxa_after_verification.tsv",
                            na = "")
 ```
  

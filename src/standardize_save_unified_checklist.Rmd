@@ -1,0 +1,176 @@
+---
+title: "Standardize vocabularies and save unified checklist"
+author:
+- Damiano Oldoni
+- Peter Desmet
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    toc: true
+    toc_depth: 3
+    toc_float: true
+    number_sections: true
+knit: (function(input_file, encoding) { rmarkdown::render(input_file, encoding = encoding, output_file = paste0("../docs/",sub(".Rmd", ".html", basename(input_file))))})
+---
+
+This document describes how to 
+
+1. Standardize vocabulary of all extensions (distribution, description and species profile).
+2. Export the unified checklist.
+
+# Setup
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+```
+
+Load libraries:
+
+```{r load_libraries}
+# Tidyverse packages
+# library(tidyr)
+# library(dplyr)
+# library(purrr)
+# library(stringr)
+library(readr)
+# GBIF related packages
+# library(rgbif)
+# project package
+# library(trias)
+```
+
+Set file paths (all paths should be relative to this script):
+
+```{r directory_input_data}
+input_data_dir <- "../data/interim/"
+input_distribution <- "unified_checklist_distribution_not_standardized.tsv"
+input_native_range <- "unified_checklist_native_range_not_standardized.tsv"
+input_pathway <- "unified_checklist_pathways_not_standardized.tsv"
+input_invasion_stage <- "unified_checklist_invasion_stage_not_standardized.tsv"
+input_species_profile <- "unified_checklist_species_profile_not_standardized.tsv"
+output_data_dir <- "../data/output/"
+output_distribution <- "unified_checklist_distribution.tsv"
+output_native_range <- "unified_checklist_native_range.tsv"
+output_pathway <- "unified_checklist_pathways.tsv"
+output_invasion_stage <- "unified_checklist_invasion_stage.tsv"
+output_species_profile <- "unified_checklist_species_profile.tsv"
+```
+
+# Get data
+
+We import the not standardized extensions.
+
+## Get distribution
+
+```{r}
+not_st_distribution <- read_tsv(paste0(input_data_dir, input_distribution), 
+                                na = "")
+```
+
+## Get description
+
+### Get native range
+
+```{r get_native_range}
+not_st_native_range <- read_tsv(paste0(input_data_dir, input_native_range),
+                                na = "")
+```
+
+### Get pathway
+
+```{r get_pathway}
+not_st_pathway <- read_tsv(paste0(input_data_dir, input_pathway), 
+                           na = "")
+```
+
+### Get invasion stage
+
+```{r get_invasion_stage}
+not_st_invasion_stage <- read_tsv(paste0(input_data_dir, input_invasion_stage),
+                                  na = "")
+```
+
+## Get species profile
+
+```{r get_species_profile}
+not_st_species_profile <- read_tsv(paste0(input_data_dir, 
+                                          input_species_profile),
+                                   na = "")
+```
+
+# Standardize vocabularies used in descriptions
+
+Different controlled vocabularies might have been used by the checklists, which are better standardized for the unified checklist.
+
+## Standardize native range
+
+Vocabulary used for native range:
+
+```{r vocabulary_native_range}
+native_range_df %>%
+  distinct(native_range, checklist_datasetKey) %>%
+  mutate(presence = TRUE) %>%
+  distinct() %>% 
+  spread(checklist_datasetKey, presence)
+```
+
+## Standardize pathways
+
+### Standardize pathways at first level
+
+Vocabulary used for first level of pathways:
+
+```{r vocabulary_pathway_level1}
+pathways_df %>%
+  distinct(pathway_level1, checklist_datasetKey) %>%
+  mutate(presence = TRUE) %>%
+  distinct() %>% 
+  spread(checklist_datasetKey, presence)
+``` 
+
+### Standardize pathways at second level
+
+Vocabulary used for second level of pathways:
+
+```{r vocabulary_pathway_level2}
+pathways_df %>%
+  distinct(pathway_level2, checklist_datasetKey) %>%
+  mutate(presence = TRUE) %>%
+  distinct() %>% 
+  spread(checklist_datasetKey, presence)
+``` 
+
+## Standardize invasion stage
+
+Vocabulary used for describing invasion stage:
+
+```{r vocabulary_invasion_stage}
+invasion_stages_df %>%
+  distinct(invasion_stage, checklist_datasetKey) %>%
+  mutate(presence = TRUE) %>%
+  distinct() %>% 
+  spread(checklist_datasetKey, presence)
+```
+
+# Save unified checklist extensions
+
+The taxon core has been saved in previous pipeline. Here below we save the extensions of it.
+
+## Save distribution 
+
+```{r save_distribution}
+
+```
+
+## Save description
+
+```{r save_description}
+
+```
+
+## Save species profile
+
+```{r save_species_profile}
+
+```
+

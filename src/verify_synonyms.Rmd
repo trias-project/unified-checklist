@@ -205,6 +205,27 @@ invalid_vks <- trias::gbif_verify_keys(unique(verify$verified_taxa$verification_
 invalid_vks
 ```
 
+Invalid taxon keys:
+
+```{r invalid_taxon_keys}
+invalid_vks %>% 
+  count(valid_taxon_keys = (is_taxonKey == TRUE))
+```
+
+Invalid GBIF backbone keys:
+
+```{r invalid_gbif_backbone_keys}
+invalid_vks %>% 
+  count(valid_GBIF_backbone_keys = (is_from_gbif_backbone == TRUE))
+```
+
+Synonyms:
+
+```{r}
+invalid_vks %>% 
+  count(synonyms = (is_synonym == TRUE))
+```
+
 ## Save verification table
 
 The data.frame `verify$verified_taxa` can be saved as text file and manually transferred to online spreadsheet:
@@ -214,7 +235,6 @@ write_tsv(verify$verified_taxa,
           path = "../data/output/verified_taxa.tsv",
           na = "")
 ```
-
 
 ## Update taxa
 

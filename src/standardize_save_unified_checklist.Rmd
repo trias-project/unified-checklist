@@ -43,12 +43,14 @@ Set file paths (all paths should be relative to this script):
 
 ```{r directory_input_data}
 input_data_dir <- "../data/interim/"
+input_taxon <- "unified_checklist_taxon_full.tsv"
 input_distribution <- "unified_checklist_distribution_not_standardized.tsv"
 input_native_range <- "unified_checklist_native_range_not_standardized.tsv"
 input_pathway <- "unified_checklist_pathways_not_standardized.tsv"
 input_invasion_stage <- "unified_checklist_invasion_stage_not_standardized.tsv"
 input_species_profile <- "unified_checklist_species_profile_not_standardized.tsv"
 output_data_dir <- "../data/output/"
+output_taxon <- "unified_checklist_taxon.tsv"
 output_distribution <- "unified_checklist_distribution.tsv"
 output_native_range <- "unified_checklist_native_range.tsv"
 output_pathway <- "unified_checklist_pathways.tsv"
@@ -58,12 +60,19 @@ output_species_profile <- "unified_checklist_species_profile.tsv"
 
 # Get data
 
-We import the not standardized extensions.
+We import the data relatd to taxa.
+
+## Get taxon core
+
+```{r get_taxa}
+
+```
+
 
 ## Get distribution
 
-```{r}
-not_st_distribution <- read_tsv(paste0(input_data_dir, input_distribution), 
+```{r get_distribution}
+distribution_not_st <- read_tsv(paste0(input_data_dir, input_distribution), 
                                 na = "")
 ```
 
@@ -72,31 +81,156 @@ not_st_distribution <- read_tsv(paste0(input_data_dir, input_distribution),
 ### Get native range
 
 ```{r get_native_range}
-not_st_native_range <- read_tsv(paste0(input_data_dir, input_native_range),
+native_range_not_st <- read_tsv(paste0(input_data_dir, input_native_range),
                                 na = "")
 ```
 
 ### Get pathway
 
 ```{r get_pathway}
-not_st_pathway <- read_tsv(paste0(input_data_dir, input_pathway), 
+pathway_not_st <- read_tsv(paste0(input_data_dir, input_pathway), 
                            na = "")
 ```
 
 ### Get invasion stage
 
 ```{r get_invasion_stage}
-not_st_invasion_stage <- read_tsv(paste0(input_data_dir, input_invasion_stage),
+invasion_stage_not_st <- read_tsv(paste0(input_data_dir, input_invasion_stage),
                                   na = "")
 ```
 
 ## Get species profile
 
 ```{r get_species_profile}
-not_st_species_profile <- read_tsv(paste0(input_data_dir, 
+species_profile_not_st <- read_tsv(paste0(input_data_dir, 
                                           input_species_profile),
                                    na = "")
 ```
+
+# Create taxon core of unified checklist
+
+## Term mapping
+
+Map the data to [Darwin Core Taxon](http://rs.gbif.org/core/dwc_taxon_2015-04-24.xml).
+
+### language
+
+```{r create_language}
+taxa_verified <- taxa_verified %>%
+  mutate(language = "en")
+```
+
+### license
+
+```{r create_language}
+taxa_verified <- taxa_verified %>%
+  mutate(license = "http://creativecommons.org/publicdomain/zero/1.0/")
+```
+
+### rightsholder
+
+```{r create_rightsholder}
+taxa_verified <- taxa_verified %>%
+  mutate(rightsHolder = "INBO")
+```
+
+### accessRights
+
+```{r create_accessRights}
+taxa_verified <- taxa_verified %>%
+  mutate(accessRights = "http://www.inbo.be/en/norms-for-data-use")
+```
+
+### scientificName
+
+```{r create_scientificName}
+taxa_verified <- taxa_verified %>% 
+  mutate(scientificName = backbone_scientificName)
+```
+
+### kingdom
+
+```{r create_kingdom}
+taxa_verified <- taxa_verified %>% 
+  mutate(kingdom = backbone_kingdom)
+```
+
+### phylum
+
+```{r create_phylum}
+taxa_verified <- taxa_verified %>% 
+  mutate(phylum = backbone_phylum)
+```
+
+### class
+
+```{r create_class}
+taxa_verified <- taxa_verified %>% 
+  mutate(class = backbone_class)
+```
+
+### order
+
+```{r create_order}
+taxa_verified <- taxa_verified %>% 
+  mutate(order = backbone_order)
+```
+
+### family
+
+```{r create_family}
+taxa_verified <- taxa_verified %>% 
+  mutate(family = backbone_family)
+```
+
+### genus
+
+```{r create_genus}
+taxa_verified <- taxa_verified %>% 
+  mutate(genus = backbone_genus)
+```
+
+###  taxonRank
+
+```{r create_taxonrank}
+taxa_verified <- taxa_verified %>% 
+  mutate(taxonRank = backbone_rank)
+```
+
+### taxonomicStatus
+
+```{r create_taxonomicStatus}
+taxa_verified <- taxa_verified %>% 
+  mutate(taxonomicStatus = backbone_taxonomicStatus)
+```
+
+### taxonRemarks
+
+```{r create_taxonremarks}
+taxa_verified <- taxa_verified %>% 
+  mutate(taxonRemarks = paste(backbone_issues, remarks, collapse = ","))
+```
+
+## Post-processing
+
+Remove original columns:
+
+```{r remove_original_cols}
+
+```
+
+Preview data:
+
+```{r preview_taxa}
+
+```
+
+Save to TSV:
+
+```{r save_taxa}
+
+```
+
 
 # Standardize vocabularies used in descriptions
 
@@ -107,54 +241,88 @@ Different controlled vocabularies might have been used by the checklists, which 
 Vocabulary used for native range:
 
 ```{r vocabulary_native_range}
-native_range_df %>%
+native_range_not_st %>%
   distinct(native_range, checklist_datasetKey) %>%
   mutate(presence = TRUE) %>%
   distinct() %>% 
   spread(checklist_datasetKey, presence)
 ```
 
-## Standardize pathways
+## Standardize pathway of introduction
 
-### Standardize pathways at first level
+We use the [CBD 2014 pathway vocabulary](https://www.cbd.int/doc/meetings/sbstta/sbstta-18/official/sbstta-18-09-add1-en.pdf) to standardize this information. The vocubulary has [these values](https://github.com/trias-project/vocab/tree/master/vocabulary/pathway).
 
-Vocabulary used for first level of pathways:
+Vocabulary used for first level of pathways across the checklists:
 
 ```{r vocabulary_pathway_level1}
-pathways_df %>%
+pathway_not_st %>%
   distinct(pathway_level1, checklist_datasetKey) %>%
   mutate(presence = TRUE) %>%
   distinct() %>% 
   spread(checklist_datasetKey, presence)
 ``` 
 
-### Standardize pathways at second level
-
 Vocabulary used for second level of pathways:
 
 ```{r vocabulary_pathway_level2}
-pathways_df %>%
+pathway_not_st %>%
   distinct(pathway_level2, checklist_datasetKey) %>%
   mutate(presence = TRUE) %>%
   distinct() %>% 
   spread(checklist_datasetKey, presence)
 ``` 
 
+The pathway vocabulary is standardized:
+
+```{r create_standardized_pathway}
+pathway <- pathway_not_st
+```
+
+Merge first and second level by `_` and add the prefix `cbd_2014_pathway:` to refer to this standard:
+
+```{r merge_pathway_levels}
+pathway <- pathway %>%
+  mutate(description = paste0(pathway_level1, "_", pathway_level2)) %>%
+  mutate(description = paste0("cbd_2014_pathway:",
+                              description))
+```
+
+Create a type field to indicate the type of description:
+
+```{r add_type_pathway}
+pathway <- pathway %>%
+  mutate(type = "pathway")
+```
+
 ## Standardize invasion stage
+
+We use the [invasion stage vocabulary from Blackburn et al. (2011)](https://doc.rero.ch/record/24725/files/bach_puf.pdf) to standardize this information.
 
 Vocabulary used for describing invasion stage:
 
 ```{r vocabulary_invasion_stage}
-invasion_stages_df %>%
+invasion_stage_not_st %>%
   distinct(invasion_stage, checklist_datasetKey) %>%
   mutate(presence = TRUE) %>%
   distinct() %>% 
   spread(checklist_datasetKey, presence)
 ```
 
+Invasion stage vocabulary is standardized:
+
+```{r create_standardized_invasion_stage}
+invasion_stage <- invasion_stage_not_st
+```
+
+Create a `type` field to indicate the type of description:
+
+```{r add_type_invasion_stage}
+invasion_stage <- invasion_stage %<% mutate(type = "invasion stage")
+```
+
 # Save unified checklist extensions
 
-The taxon core has been saved in previous pipeline. Here below we save the extensions of it.
+The taxon core has been saved in previous pipeline. Here below we save the extensions.
 
 ## Save distribution 
 

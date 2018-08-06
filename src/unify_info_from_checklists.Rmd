@@ -13,7 +13,11 @@ output:
 knit: (function(input_file, encoding) { rmarkdown::render(input_file, encoding = encoding, output_file = paste0("../docs/",sub(".Rmd", ".html", basename(input_file))))})
 ---
 
-This document describes how to retrieve all relevant information from the checklists and perform some cleaning.
+This document describes how to 
+
+1. Retrieve all relevant information from the checklists.
+2. Perform some cleaning.
+3. Select the information.
 
 # Setup
 
@@ -103,8 +107,7 @@ checklist_keys <- taxa_verified %>%
 We will now retrieve from GBIF Backbone the taxonomic information related to unique verification keys:
 
 ```{r extract_taxonomic_information}
-vks <- vks[!duplicated(vks)]
-names(vks) <- vks # check! is it needed?
+vks <- unique(vks)
 progress_bar <- progress_estimated(length(vks))
 taxon_backbone_info <-  map_dfr(vks, ~ {
   progress_bar$tick()$print()
@@ -123,7 +126,6 @@ distribution <-  map_dfr(checklist_keys, ~ {
   rgbif::name_usage(key = ., return = "data",
                     data = "distribution")
   })
-# distribution <- distribution %>% select(-source)
 ```
 
 Preview:
@@ -157,6 +159,13 @@ taxa_verified <- taxa_verified %>%
 verification_keys <- unique(taxa_verified$verification_key)
 ```
 
+### Save taxa
+
+```{r save_taxa_with_vks}
+write_tsv(taxa_verified, 
+          path = "../data/interim/unified_checklist_taxon_full.tsv")
+```
+
 ## Description
 
 Extract description information
@@ -168,7 +177,6 @@ description <-  map_dfr(checklist_keys, ~ {
   rgbif::name_usage(key = ., return = "data",
                     data = "description")
   })
-# description <- description %>% select(-c(key, language, source))
 ```
 
 Preview:
@@ -198,7 +206,44 @@ species_profiles %>% head(n = 10)
 
 # Tidy data
 
-## Tidy description extension
+## Split `temporal` in distribution
+
+The column `temporal` of `distribution` contains one or two datums:
+
+```{r example_temporal, echo = FALSE}
+distribution %>% 
+  select(taxonKey, temporal) %>% 
+  distinct() %>% 
+  filter(!is.na(temporal)) %>%
+  head()
+```
+
+In case there are two datums, we split them in `first_observed` and `last_observed`. If only a datum is present, then it is used for both  `first_observed`and `last_observed`:
+
+```{r split_temporal}
+distribution <- distribution %>% 
+  separate(col = temporal,
+           sep = "/",
+           into = c("first_observed", "last_observed"),
+           convert = TRUE,
+           fill = "right",
+           remove = TRUE) %>%
+  mutate(last_observed = ifelse(is.na(last_observed),
+                                first_observed,
+                                last_observed))
+```
+
+As example:
+
+```{r example_split_temporal, echo = FALSE}
+distribution %>% 
+  select(taxonKey, first_observed, last_observed) %>%
+  distinct() %>%
+  filter(!is.na(first_observed) & !is.na(last_observed)) %>%
+  head()
+```
+
+## Tidy description data
 
 Contrarily to distribution and species profile, description extension contains a column `type` with the following descriptors: 
 
@@ -232,45 +277,7 @@ Preview:
 description_tidy %>% head(n = 10)
 ```
 
-## Split `temporal`
-
-The column `temporal` contains one or two datums:
-
-```{r example_temporal, echo = FALSE}
-distribution %>% 
-  select(taxonKey, temporal) %>% 
-  distinct() %>% 
-  filter(!is.na(temporal)) %>%
-  head()
-```
-
-In case there are two datums, we split them in `first_observed` and `last_observed`. If only a datum is present, then it is used for both  `first_observed`and `last_observed`:
-
-```{r split_temporal}
-distribution <- distribution %>% 
-  separate(col = temporal,
-           sep = "/",
-           into = c("first_observed", "last_observed"),
-           convert = TRUE,
-           fill = "right",
-           remove = TRUE) %>%
-  mutate(last_observed = ifelse(is.na(last_observed),
-                                first_observed,
-                                last_observed))
-```
-
-As example:
-
-```{r example_split_temporal, echo = FALSE}
-distribution %>% 
-  filter(locality == "Belgium") %>% 
-  select(taxonKey, first_observed, last_observed) %>%
-  distinct() %>%
-  filter(!is.na(first_observed) & !is.na(last_observed)) %>%
-  head()
-```
-
-## Split `pathway`
+## Split `pathway` in description
 
 The column `pathway` contains a prefix, `cbd_2014_pathway:` and two different pathway levels divided by symbol `_`
 
@@ -310,7 +317,7 @@ description_tidy %>%
   head()
 ```
 
-# Couple information to verification key and checklist key
+# Couple information to verification key
 
 We have to link all retrieved information to verification keys. This is possible by using the link one-to-many between `verification_key` and `checklist_key` in `taxa_verified`:
 
@@ -332,7 +339,7 @@ species_profiles <- species_profiles %>%
             by = c("taxonKey" = "checklist_key"))
 ```
 
-We need also to link such information to the checklist it comes from by adding column `checklist_datasetKey`:
+We need also to link such information to the checklist it comes from. We do it by adding column `checklist_datasetKey` containing the unique checklist identifier assigned by GBIF:
 
 ```{r add_datasetKey_to_extension_dataframes}
 # distribution
@@ -366,7 +373,7 @@ distribution <- distribution %>%
   mutate(rank_checklist = 
     which(.data$checklist_datasetKey == checklist_metadata$datasetKey)) %>%
   ungroup() %>%
-  group_by(taxonKey) %>%
+  group_by(verification_key) %>%
   filter(rank_checklist == min(rank_checklist)) %>%
   ungroup() %>%
   select(-rank_checklist)
@@ -396,7 +403,7 @@ distribution <- distribution %>%
   mutate(rank_locality= 
            which(.data$locality == localities)) %>%
   ungroup() %>%
-  group_by(taxonKey) %>%
+  group_by(verification_key) %>%
   filter(rank_locality == min(rank_locality)) %>%
   ungroup() %>%
   select(-rank_locality)
@@ -404,7 +411,7 @@ distribution <- distribution %>%
 
 ## Get one distribution per verification key
 
-Within the same checklist, we might still end up with multiple distributions because multiple taxa are considered to belong to the same verification key:
+Within the same checklist, we might still end up with multiple distributions per verification key because some taxa share the same verification key:
 
 ```{r show_vks_with_multiple_distributions}
 distribution %>% 
@@ -427,6 +434,25 @@ distribution <- distribution %>%
 distribution %>% head(n = 10)
 ```
 
+At this point no multiple distributions should be present:
+
+```{r show_vks_with_multiple_distributions_after_time_info}
+distribution %>% 
+  group_by(verification_key) %>%
+  count() %>%
+  arrange(desc(n)) %>%
+  filter(n > 1)
+```
+
+## Save distribution
+
+Save to TSV:
+
+```{r save_distribution}
+write_tsv(distribution, 
+                 path = "../data/interim/unified_checklist_distribution_not_standardized.tsv")
+```
+
 # Pick descriptions
 
 To be able to group description information on verification key, decisions need to be taken regarding multiple, possibly conflicting descriptions related to the same verification key.
@@ -437,7 +463,8 @@ Pick first non-NA native ranges (plural) from most trusted checklist by means of
 
 ```{r pick_native_range}
 native_range_df <- description_tidy %>%
-  filter(!is.na(native_range))
+  filter(!is.na(native_range))  %>% 
+  select(-c(key, taxonKey))
 native_range_df <- native_range_df %>%
   rowwise() %>%
   mutate(rank_checklist = 
@@ -446,7 +473,8 @@ native_range_df <- native_range_df %>%
   group_by(verification_key, native_range) %>%
   filter(rank_checklist == min(rank_checklist)) %>%
   ungroup() %>%
-  select(-rank_checklist)
+  select(verification_key, native_range, 
+         source, checklist_datasetKey, language)
 ```
 
 ## Pathways
@@ -462,7 +490,8 @@ pathways_df <- description_tidy %>%
 pathways_df <- pathways_df %>%
   rowwise() %>%
   mutate(rank_checklist = 
-           which(.data$checklist_datasetKey == checklist_metadata$datasetKey)) %>%
+           which(.data$checklist_datasetKey == 
+                   checklist_metadata$datasetKey)) %>%
   ungroup() %>%
   distinct()
 # select highest ranked checklists if equal pathways
@@ -470,14 +499,15 @@ pathways_df <- pathways_df %>%
   group_by(verification_key, pathway_level1, pathway_level2) %>%
   filter(rank_checklist == min(rank_checklist)) %>%
   ungroup()
-# get rid of NA at higher ranked checklist if not NA at lower ranked checklist
+# get rid of NA at higher ranked checklist if info present at lower ranked checklist
 pathways_df <- pathways_df %>%
   left_join(pathways_df %>%
               group_by(verification_key, pathway_level1) %>%
               count(), 
             by = c("verification_key", "pathway_level1")) %>%
   filter(n == 1 | !is.na(pathway_level2)) %>%
-  select(-c(rank_checklist, n))
+  select(verification_key, pathway_level1, pathway_level2, 
+         source, checklist_datasetKey, language)
 ```
 
 ## Invasion stage
@@ -496,7 +526,8 @@ invasion_stages_df <- description_tidy %>%
   group_by(verification_key, native_range) %>%
   filter(rank_checklist == min(rank_checklist)) %>%
   ungroup() %>%
-  select(-rank_checklist)
+  select(verification_key, invasion_stage, 
+         source, checklist_datasetKey, language)
 ```
 
 Verification keys could be associated to more than one invasion stage. This is possible due to the fact that multiple taxa can be associated to the same verification key:
@@ -513,9 +544,38 @@ invasion_stages_df %>%
   arrange(verification_key)
 ```
 
+## Save description
+
+### Save native range
+
+Save to TSV:
+
+```{r save_native_range}
+write_tsv(native_range_df, 
+                 path = "../data/interim/unified_checklist_native_range_not_standardized.tsv")
+```
+
+### Save pathways
+
+Save to TSV:
+
+```{r save_pathways}
+write_tsv(pathways_df, 
+                 path = "../data/interim/unified_checklist_pathways_not_standardized.tsv")
+```
+
+### Save invasion stages
+
+Save to TSV:
+
+```{r save_invasion_stage}
+write_tsv(invasion_stages_df, 
+                 path = "../data/interim/unified_checklist_invasion_stage_not_standardized.tsv")
+```
+
 # Pick species profile
 
-To be able to group species profile (i.e. habitat) on verification key, decisions need to be taken regarding multiple, possibly conflicting species profiles related to the same verification key. Some examples:
+To be able to group species profile (i.e. habitat) on verification key, decisions need to be taken regarding multiple, possibly conflicting, species profiles related to the same verification key. Some examples:
 
 ```{r}
 vks_with_multiple_species_profiles <- species_profiles %>% 
@@ -554,59 +614,14 @@ species_profiles <- species_profiles %>%
          marine, 
          freshwater, 
          terrestrial, 
-         checklist_datasetKey) # do we remove the datasetKey the info comes from?
+         checklist_datasetKey)
 ```
 
-# Standardize vocabularies used in descriptions
+## Save species profile
 
-Different controlled vocabularies might have been used by the checklists, which are better standardized for the unified checklist.
+Save to TSV:
 
-## Standardize native range
-
-Vocabulary used for native range:
-
-```{r vocabulary_native_range}
-native_range_df %>%
-  distinct(native_range, checklist_datasetKey) %>%
-  mutate(presence = TRUE) %>%
-  distinct() %>% 
-  spread(checklist_datasetKey, presence)
-```
-
-## Standardize pathways
-
-### Standardize pathways at first level
-
-Vocabulary used for first level of pathways:
-
-```{r vocabulary_pathway_level1}
-pathways_df %>%
-  distinct(pathway_level1, checklist_datasetKey) %>%
-  mutate(presence = TRUE) %>%
-  distinct() %>% 
-  spread(checklist_datasetKey, presence)
-``` 
-
-### Standardize pathways at second level
-
-Vocabulary used for second level of pathways:
-
-```{r vocabulary_pathway_level2}
-pathways_df %>%
-  distinct(pathway_level2, checklist_datasetKey) %>%
-  mutate(presence = TRUE) %>%
-  distinct() %>% 
-  spread(checklist_datasetKey, presence)
-``` 
-
-## Standardize invasion stage
-
-Vocabulary used for describing invasion stage:
-
-```{r vocabulary_invasion_stage}
-invasion_stages_df %>%
-  distinct(invasion_stage, checklist_datasetKey) %>%
-  mutate(presence = TRUE) %>%
-  distinct() %>% 
-  spread(checklist_datasetKey, presence)
+```{r save_species_profile}
+write_tsv(species_profiles, 
+                 path = "../data/interim/unified_checklist_species_profile_not_standardized.tsv")
 ```

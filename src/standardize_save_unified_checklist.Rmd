@@ -60,14 +60,14 @@ output_species_profile <- "unified_checklist_species_profile.tsv"
 
 # Get data
 
-We import the data relatd to taxa.
+We import the data related to taxa.
 
 ## Get taxon core
 
 ```{r get_taxa}
-
+taxon_full <- read_tsv(paste0(input_data_dir, input_taxon),
+                       na = "")
 ```
-
 
 ## Get distribution
 
@@ -116,98 +116,98 @@ Map the data to [Darwin Core Taxon](http://rs.gbif.org/core/dwc_taxon_2015-04-24
 ### language
 
 ```{r create_language}
-taxa_verified <- taxa_verified %>%
+taxon_full <- taxon_full %>%
   mutate(language = "en")
 ```
 
 ### license
 
 ```{r create_language}
-taxa_verified <- taxa_verified %>%
+taxon_full <- taxon_full %>%
   mutate(license = "http://creativecommons.org/publicdomain/zero/1.0/")
 ```
 
-### rightsholder
+### rightsHolder
 
 ```{r create_rightsholder}
-taxa_verified <- taxa_verified %>%
+taxon_full <- taxon_full %>%
   mutate(rightsHolder = "INBO")
 ```
 
 ### accessRights
 
 ```{r create_accessRights}
-taxa_verified <- taxa_verified %>%
+taxon_full <- taxon_full %>%
   mutate(accessRights = "http://www.inbo.be/en/norms-for-data-use")
 ```
 
 ### scientificName
 
 ```{r create_scientificName}
-taxa_verified <- taxa_verified %>% 
+taxon_full <- taxon_full %>% 
   mutate(scientificName = backbone_scientificName)
 ```
 
 ### kingdom
 
 ```{r create_kingdom}
-taxa_verified <- taxa_verified %>% 
+taxon_full <- taxon_full %>% 
   mutate(kingdom = backbone_kingdom)
 ```
 
 ### phylum
 
 ```{r create_phylum}
-taxa_verified <- taxa_verified %>% 
+taxon_full <- taxon_full %>% 
   mutate(phylum = backbone_phylum)
 ```
 
 ### class
 
 ```{r create_class}
-taxa_verified <- taxa_verified %>% 
+taxon_full <- taxon_full %>% 
   mutate(class = backbone_class)
 ```
 
 ### order
 
 ```{r create_order}
-taxa_verified <- taxa_verified %>% 
+taxon_full <- taxon_full %>% 
   mutate(order = backbone_order)
 ```
 
 ### family
 
 ```{r create_family}
-taxa_verified <- taxa_verified %>% 
+taxon_full <- taxon_full %>% 
   mutate(family = backbone_family)
 ```
 
 ### genus
 
 ```{r create_genus}
-taxa_verified <- taxa_verified %>% 
+taxon_full <- taxon_full %>% 
   mutate(genus = backbone_genus)
 ```
 
 ###  taxonRank
 
 ```{r create_taxonrank}
-taxa_verified <- taxa_verified %>% 
+taxon_full <- taxon_full %>% 
   mutate(taxonRank = backbone_rank)
 ```
 
 ### taxonomicStatus
 
 ```{r create_taxonomicStatus}
-taxa_verified <- taxa_verified %>% 
+taxon_full <- taxon_full %>% 
   mutate(taxonomicStatus = backbone_taxonomicStatus)
 ```
 
 ### taxonRemarks
 
 ```{r create_taxonremarks}
-taxa_verified <- taxa_verified %>% 
+taxon_full <- taxon_full %>% 
   mutate(taxonRemarks = paste(backbone_issues, remarks, collapse = ","))
 ```
 

@@ -195,35 +195,33 @@ We check the verification keys provided by taxonomy experts. In particular, the 
 
 1. `verification_key` is a valid taxon key
 2. `verification_key` refers to a taxon in GBIF Backbone
-3. `verification_key` is not a synonym (is `ACCEPTED` or `DOUBTFUL`)
-
-Summary of the issues found among `verification_key` which should be reported to the experts:
+3. `verification_key` is a synonym (neither `ACCEPTED` nor `DOUBTFUL`)
 
 ```{r show_invalid_vks_synonym}
-invalid_vks <- trias::gbif_verify_keys(unique(verify$verified_taxa$verification_key)) %>%
+vks_status <- trias::gbif_verify_keys(unique(verify$verified_taxa$verification_key)) %>%
   rename(verification_key = key)
-invalid_vks
+vks_status
 ```
 
-Invalid taxon keys:
+Invalid taxon keys (`valid_taxon_keys` is `FALSE`):
 
 ```{r invalid_taxon_keys}
-invalid_vks %>% 
+vks_status %>% 
   count(valid_taxon_keys = (is_taxonKey == TRUE))
 ```
 
-Invalid GBIF backbone keys:
+Invalid GBIF backbone keys (`valid_GBIF_backbone_keys` is `FALSE`):
 
 ```{r invalid_gbif_backbone_keys}
-invalid_vks %>% 
+vks_status %>% 
   count(valid_GBIF_backbone_keys = (is_from_gbif_backbone == TRUE))
 ```
 
-Synonyms:
+Synonyms (`is_synonym` is `TRUE`):
 
 ```{r}
-invalid_vks %>% 
-  count(synonyms = (is_synonym == TRUE))
+vks_status %>% 
+  count(is_synonym = (is_synonym == TRUE))
 ```
 
 ## Save verification table
@@ -285,7 +283,7 @@ print(paste("Number of taxa still to verify: ",
               nrow())) 
 ```
 
-Saved the updated taxa:
+Save the updated taxa:
 
 ```{r save_udpated_taxa}
 # save to csv -> taxa_by_nubKey_verified

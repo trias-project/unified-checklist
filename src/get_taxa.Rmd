@@ -39,13 +39,14 @@ library(purrr)
 library(stringr)
 library(readr)
 library(magrittr)
-
-
-# Other packages
+# GBIF related packages
+library(rgbif)
+# project package
+library(trias)
+# other packages
+library(here)
 library(rlang)
 library(lazyeval)
-library(rgbif)
-library(trias)
 ```
 
 Set file paths:

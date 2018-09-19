@@ -12,7 +12,7 @@ output:
     number_sections: true
     theme: yeti
     df_print: paged
-knit: (function(input_file, encoding) { rmarkdown::render(input_file, encoding = encoding, output_file = paste0("../docs/",sub(".Rmd", ".html", basename(input_file))))})
+knit: (function(input_file, encoding) { rmarkdown::render(input_file, encoding = encoding, output_file = paste0("./docs/",sub(".Rmd", ".html", basename(input_file))))})
 ---
 
 ```{r setup, include=FALSE}
@@ -41,7 +41,7 @@ library(googlesheets)
 Set file path:
 
 ```{r input_file_path}
-checklist_metadata_file <- "../data/output/checklist_metadata.tsv"
+checklist_metadata_file <- here("data", "output", "checklist_metadata.tsv")
 ```
 
 
@@ -57,7 +57,7 @@ checklist_metadata
 Load taxa information as previously wrangled via checklists and GBIF backbone:
 
 ```{r load_taxa}
-taxa_file <- "../data/interim/checklist_taxa.tsv"
+taxa_file <- here("data", "interim", "checklist_taxa.tsv")
 taxa <- read_tsv(taxa_file)
 ```
 
@@ -77,7 +77,7 @@ verified_synonyms <- gs_read(ss = "verification_spreadsheet",
 Or via text file:
 
 ```{r load_text_file}
-verified_synonyms_file <- "../data/output/verified_taxa.tsv"
+verified_synonyms_file <- here("data", "output", "verified_taxa.tsv")
 verified_synonyms <- read_tsv(verified_synonyms_file, 
                               col_types = cols(
                                 backbone_taxonKey = col_integer(),
@@ -232,7 +232,7 @@ The data.frame `verify$verified_taxa` can be saved as text file and manually tra
 
 ```{r save_verification_df_to_tsv}
 write_tsv(verify$verified_taxa, 
-          path = "../data/output/verified_taxa.tsv",
+          path = here("data", "output", "verified_taxa.tsv"),
           na = "")
 ```
 
@@ -290,7 +290,7 @@ Save the updated taxa:
 ```{r save_udpated_taxa}
 # save to csv -> taxa_by_nubKey_verified
 taxa_verified <- write_tsv(taxa, 
-                           path = "../data/interim/taxa_after_verification.tsv",
+                           path = here("data", "interim", "taxa_after_verification.tsv"),
                            na = "")
 ```
  

@@ -10,7 +10,7 @@ output:
     toc_depth: 3
     toc_float: true
     number_sections: true
-knit: (function(input_file, encoding) { rmarkdown::render(input_file, encoding = encoding, output_file = paste0("../docs/",sub(".Rmd", ".html", basename(input_file))))})
+knit: (function(input_file, encoding) { rmarkdown::render(input_file, encoding = encoding, output_file = paste0("./docs/",sub(".Rmd", ".html", basename(input_file))))})
 ---
 
 This document describes how to 
@@ -48,8 +48,16 @@ library(here)
 
 We load taxa information as previously wrangled in pipeline `verify_synonyms.Rmd`.
 
+Set file path:
+
+```{r taxa_with_verification_key_path}
+taxa_verified_file <- here("data", "interim", "taxa_after_verification.tsv")
+```
+
+Load taxa:
+
 ```{r load_taxa_with_verification_key}
-taxa_verified <- read_tsv("../data/interim/taxa_after_verification.tsv")
+taxa_verified <- read_tsv(taxa_verified_file)
 ```
 
 Preview:
@@ -69,8 +77,8 @@ taxa_verified %>%
 
 Set file path:
 
-```{r input_file_path}
-checklist_metadata_file <- "../data/output/checklist_metadata.tsv"
+```{r input_checklist_metadata_file_path}
+checklist_metadata_file <- here("data", "output", "checklist_metadata.tsv")
 ```
 
 Load checklist metadata (ranked by trust):
@@ -165,7 +173,7 @@ verification_keys <- unique(taxa_verified$verification_key)
 
 ```{r save_taxa_with_vks}
 write_tsv(taxa_verified, 
-          path = "../data/interim/unified_checklist_taxon_full.tsv")
+          path = here("data", "interim", "unified_checklist_taxon_full.tsv"))
 ```
 
 ## Description
@@ -452,7 +460,9 @@ Save to TSV:
 
 ```{r save_distribution}
 write_tsv(distribution, 
-                 path = "../data/interim/unified_checklist_distribution_not_standardized.tsv")
+          path = here("data",
+                      "interim", 
+                      "unified_checklist_distribution_not_standardized.tsv"))
 ```
 
 # Pick descriptions
@@ -554,7 +564,9 @@ Save to TSV:
 
 ```{r save_native_range}
 write_tsv(native_range_df, 
-                 path = "../data/interim/unified_checklist_native_range_not_standardized.tsv")
+          path = here("data", 
+                      "interim", 
+                      "unified_checklist_native_range_not_standardized.tsv"))
 ```
 
 ### Save pathways
@@ -563,7 +575,9 @@ Save to TSV:
 
 ```{r save_pathways}
 write_tsv(pathways_df, 
-                 path = "../data/interim/unified_checklist_pathways_not_standardized.tsv")
+          path = here("data", 
+                      "interim", 
+                      "unified_checklist_pathways_not_standardized.tsv"))
 ```
 
 ### Save invasion stages
@@ -572,7 +586,9 @@ Save to TSV:
 
 ```{r save_invasion_stage}
 write_tsv(invasion_stages_df, 
-                 path = "../data/interim/unified_checklist_invasion_stage_not_standardized.tsv")
+          path = here("data", 
+                      "interim", 
+                      "unified_checklist_invasion_stage_not_standardized.tsv"))
 ```
 
 # Pick species profile
@@ -625,5 +641,7 @@ Save to TSV:
 
 ```{r save_species_profile}
 write_tsv(species_profiles, 
-                 path = "../data/interim/unified_checklist_species_profile_not_standardized.tsv")
+          path = here("data", 
+                      "interim", 
+                      "unified_checklist_species_profile_not_standardized.tsv"))
 ```

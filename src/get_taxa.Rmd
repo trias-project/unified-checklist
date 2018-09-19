@@ -12,7 +12,7 @@ output:
     number_sections: true
     theme: yeti
     df_print: paged
-knit: (function(input_file, encoding) { rmarkdown::render(input_file, encoding = encoding, output_file = paste0("../docs/",sub(".Rmd", ".html", basename(input_file))))})
+knit: (function(input_file, encoding) { rmarkdown::render(input_file, encoding = encoding, output_file = paste0("./docs/",sub(".Rmd", ".html", basename(input_file))))})
 ---
 
 This document describes how to retrieve the taxa from our checklists and create a verification spreadsheet.
@@ -52,8 +52,8 @@ library(lazyeval)
 Set file paths:
 
 ```{r set_output_file_path}
-taxa_output_file <- "../data/interim/checklist_taxa.tsv"
-checklist_metadata_file <- "../data/output/checklist_metadata.tsv"
+taxa_output_file <- here("data", "interim", "checklist_taxa.tsv")
+checklist_metadata_file <- here("data", "output", "checklist_metadata.tsv")
 ```
 
 # Select checklist datasets

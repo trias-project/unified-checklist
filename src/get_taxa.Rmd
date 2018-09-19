@@ -219,13 +219,6 @@ taxon <- checklist_taxa %>% filter(is.finite(nubKey))
 nub_keys <- checklist_taxa %>% 
   filter(is.finite(nubKey)) %>% 
   distinct(nubKey)
-
-# taxon_backbone_info <-  nub_keys %>%
-#   rowwise() %>%
-#   do_(interp(~ rgbif::name_usage(key = .$nubKey,
-#                          return = "data"))) %>%
-#   ungroup()
-
 progress_bar <- progress_estimated(nrow(nub_keys))
 taxon_backbone_info <-  map_dfr(nub_keys$nubKey, ~ {
   progress_bar$tick()$print()

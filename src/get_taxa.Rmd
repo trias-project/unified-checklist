@@ -46,7 +46,6 @@ library(trias)
 # other packages
 library(here)
 library(rlang)
-library(lazyeval)
 ```
 
 Set file paths:

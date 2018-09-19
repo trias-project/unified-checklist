@@ -10,7 +10,7 @@ output:
     toc_depth: 3
     toc_float: true
     number_sections: true
-knit: (function(input_file, encoding) { rmarkdown::render(input_file, encoding = encoding, output_file = paste0("../docs/",sub(".Rmd", ".html", basename(input_file))))})
+knit: (function(input_file, encoding) { rmarkdown::render(input_file, encoding = encoding, output_file = paste0("./docs/",sub(".Rmd", ".html", basename(input_file))))})
 ---
 
 This document describes how to 
@@ -37,25 +37,43 @@ library(readr)
 # library(rgbif)
 # project package
 # library(trias)
+#other packages
+library(here)
 ```
 
-Set file paths (all paths should be relative to this script):
+Set input file paths:
 
 ```{r directory_input_data}
-input_data_dir <- "../data/interim/"
-input_taxon <- "unified_checklist_taxon_full.tsv"
-input_distribution <- "unified_checklist_distribution_not_standardized.tsv"
-input_native_range <- "unified_checklist_native_range_not_standardized.tsv"
-input_pathway <- "unified_checklist_pathways_not_standardized.tsv"
-input_invasion_stage <- "unified_checklist_invasion_stage_not_standardized.tsv"
-input_species_profile <- "unified_checklist_species_profile_not_standardized.tsv"
-output_data_dir <- "../data/output/"
-output_taxon <- "unified_checklist_taxon.tsv"
-output_distribution <- "unified_checklist_distribution.tsv"
-output_native_range <- "unified_checklist_native_range.tsv"
-output_pathway <- "unified_checklist_pathways.tsv"
-output_invasion_stage <- "unified_checklist_invasion_stage.tsv"
-output_species_profile <- "unified_checklist_species_profile.tsv"
+input_data_dir <- here("data","interim")
+input_taxon <- here(input_data_dir, "unified_checklist_taxon_full.tsv")
+input_distribution <- here(
+  input_data_dir, "unified_checklist_distribution_not_standardized.tsv")
+input_native_range <- here(
+  input_data_dir, "unified_checklist_native_range_not_standardized.tsv")
+input_pathway <- here(
+  input_data_dir, "unified_checklist_pathways_not_standardized.tsv")
+input_invasion_stage <- here(
+  input_data_dir, "unified_checklist_invasion_stage_not_standardized.tsv")
+input_species_profile <- here(
+  input_data_dir, "unified_checklist_species_profile_not_standardized.tsv")
+```
+
+Set output file paths:
+
+```{r}
+output_data_dir <- here("data", "output")
+output_taxon <- here(
+  output_data_dir, "unified_checklist_taxon.tsv")
+output_distribution <- here(
+  output_data_dir, "unified_checklist_distribution.tsv")
+output_native_range <- here(
+  output_data_dir, "unified_checklist_native_range.tsv")
+output_pathway <- here(
+  output_data_dir, "unified_checklist_pathways.tsv")
+output_invasion_stage <- here(
+  output_data_dir, "unified_checklist_invasion_stage.tsv")
+output_species_profile <- here(
+  output_data_dir, "unified_checklist_species_profile.tsv")
 ```
 
 # Get data
@@ -65,15 +83,13 @@ We import the data related to taxa.
 ## Get taxon core
 
 ```{r get_taxa}
-taxon_full <- read_tsv(paste0(input_data_dir, input_taxon),
-                       na = "")
+taxon_full <- read_tsv(input_taxon, na = "")
 ```
 
 ## Get distribution
 
 ```{r get_distribution}
-distribution_not_st <- read_tsv(paste0(input_data_dir, input_distribution), 
-                                na = "")
+distribution_not_st <- read_tsv(input_distribution, na = "")
 ```
 
 ## Get description
@@ -81,30 +97,25 @@ distribution_not_st <- read_tsv(paste0(input_data_dir, input_distribution),
 ### Get native range
 
 ```{r get_native_range}
-native_range_not_st <- read_tsv(paste0(input_data_dir, input_native_range),
-                                na = "")
+native_range_not_st <- read_tsv(input_native_range, na = "")
 ```
 
 ### Get pathway
 
 ```{r get_pathway}
-pathway_not_st <- read_tsv(paste0(input_data_dir, input_pathway), 
-                           na = "")
+pathway_not_st <- read_tsv(input_pathway, na = "")
 ```
 
 ### Get invasion stage
 
 ```{r get_invasion_stage}
-invasion_stage_not_st <- read_tsv(paste0(input_data_dir, input_invasion_stage),
-                                  na = "")
+invasion_stage_not_st <- read_tsv(input_invasion_stage, na = "")
 ```
 
 ## Get species profile
 
 ```{r get_species_profile}
-species_profile_not_st <- read_tsv(paste0(input_data_dir, 
-                                          input_species_profile),
-                                   na = "")
+species_profile_not_st <- read_tsv(input_species_profile, na = "")
 ```
 
 # Create taxon core of unified checklist

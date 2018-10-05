@@ -80,24 +80,38 @@ write_csv(checklists, here("data", "interim", "checklists.csv"), na = "")
 
 Get taxa from these checklists from GBIF.
 
-**Note**: here we get _checklist taxa_, not _GBIF backbone taxa_.
+**Note**: here we get _checklist taxa_, not _GBIF backbone taxa_. To return _issues_ for the taxa, we also need to use `name_usage()` rather than `name_lookup()`.
 
-checklist_taxa <- rgbif::name_lookup(
-  datasetKey = checklists$datasetKey,
-  origin = "source", # Only source taxa, not denormed higher classification taxa
-  limit = 99999, # Should be more than total taxa for all checklists
-  return = "data"
-)
 ```{r get_checklist_taxa_from_gbif}
+checklist_taxa <- map_df(checklists$datasetKey, function(x) 
+  name_usage(
+    datasetKey = x,
+    limit = 99999, # Should be more than total taxa for all checklists
+    return = "data"
+  )) %>% 
+  filter(origin == "SOURCE") # Keep only source taxa, not denormed higher classification taxa
 ```
 
-Select columns of interest, rename `nubKey` and sort by taxon `key`:
+Select columns of interest and sort by taxon `key`:
 
 ```{r}
 checklist_taxa <- checklist_taxa %>%
-  select(key, scientificName, datasetKey, taxonID, nameType, habitats, nubKey) %>%
   rename(bb_key = nubKey) %>%
+  select(key, scientificName, datasetKey, taxonID, nameType, issues, nubKey) %>%
   arrange(key)
+```
+
+Convert the column `issues` from a list to a concatenated string:
+
+```{r}
+checklist_taxa <- checklist_taxa %>%
+  group_by_at(vars(-issues)) %>%
+  summarize(issues = str_c(issues, collapse = ",")) %>%
+  ungroup() %>%
+  mutate(
+    issues = na_if(issues, "NULL"),
+    issues = na_if(issues, "NA")
+  )
 ```
 
 Preview checklist taxa:

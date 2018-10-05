@@ -173,7 +173,7 @@ Rename `nubKey` to `bb_key` and move to the end:
 
 ```{r}
 checklist_taxa <- checklist_taxa %>%
-  rename(bb_key = nubKey)
+  rename(bb_key = nubKey) %>%
   select(-bb_key, everything())
 ```
 

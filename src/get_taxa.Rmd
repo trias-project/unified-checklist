@@ -117,71 +117,56 @@ head(checklist_taxa)
 
 # Filter on distribution
 
-Our checklists might contain more than alien species in Belgium. We therefore use the `trias::has_distribution()` function to filter on the [distribution](http://rs.gbif.org/extension/gbif/1.0/distribution.xml) information.
+TrIAS checklists can contain more than alien species in Belgium. We therefore need to filter on the associated [distribution](http://rs.gbif.org/extension/gbif/1.0/distribution.xml) information (using the `trias::has_distribution()` function) as follows:
 
-We will filter on:
+1. **In Belgium**: `country`(code) = `BE`
+2. **Present**: [`occurrenceStatus` status](https://gbif.github.io/gbif-api/apidocs/org/gbif/api/vocabulary/OccurrenceStatus.html) = `PRESENT`, `COMMMON`, `RARE` OR `IRREGULAR`
+2. **Introduced**: [`establishmentMeans`](http://gbif.github.io/parsers/apidocs/org/gbif/api/vocabulary/EstablishmentMeans.html) = `INTRODUCED`,  `NATURALISED`, `INVASIVE` OR `ASSISTED COLONISATION`
 
-1. [invasion stage](http://gbif.github.io/parsers/apidocs/org/gbif/api/vocabulary/EstablishmentMeans.html): `establishmentMeans` equal to one of `INTRODUCED`,  `NATURALISED`, `INVASIVE`, `ASSISTED COLONISATION`
-2. [presence status](https://gbif.github.io/gbif-api/apidocs/org/gbif/api/vocabulary/OccurrenceStatus.html): `status` equal to one of `PRESENT`, `COMMMON`, `RARE`, `IRREGULAR`
-3. presence in Belgium (`country` equal to `BE`)
-
-**Note**: we filter on distribution information of our _checklist taxa_, not backbone taxa. That is because backbone taxa contain distribution information from our own checklists _and_ other checklists, which we don't want to consider here.
+**Note**: we filter on distribution information of _checklist taxa_, not _GBIF backbone taxa**. That is because backbone taxa contain distribution information from TrIAS checklists _and_ other checklists, which we don't want to consider here.
 
 E.g. compare:
 
 * Distributions for _checklist_ taxon [Eriocheir sinensis](https://api.gbif.org/v1/species/140563012/distributions) (`140563012`)
 * Distributions for _backbone_ taxon [Eriocheir sinensis](https://api.gbif.org/v1/species/2225776/distributions) (`2225776`)
 
-Get distribution for all taxa and append `TRUE`/`FALSE` result as extra column. This step can take long.
+Get distribution information from GBIF and check if these meet the filter criteria. The result (`TRUE`/`FALSE`) is appended as an extra column `checklist_valid_distribution`:
 
-```{r check_distributions_on_gbif}
+```{r check_distributions_from_gbif}
 progress_bar <- progress_estimated(nrow(checklist_taxa))
-checklist_taxa <- checklist_taxa %>%
-  mutate(valid_distribution = map_lgl(
-    checklist_taxa$key, ~ {
-    progress_bar$tick()$print()
-    trias::gbif_has_distribution(
-      taxon_key = .,
-      country = "BE",
-      establishmentMeans = c("INTRODUCED", "NATURALISED", 
-                             "INVASIVE", "ASSISTED COLONISATION"),
-      status = c("PRESENT", "COMMMON", "RARE", "IRREGULAR"))
-    }))
+
+checklist_taxa <- checklist_taxa %>% mutate(checklist_valid_distribution = map_lgl(
+    checklist_taxa$checklist_taxonKey, function(x) {
+      progress_bar$tick()$print()
+      trias::gbif_has_distribution(
+        taxon_key = x,
+        country = "BE",
+        establishmentMeans = c(
+          "INTRODUCED",
+          "NATURALISED", 
+          "INVASIVE",
+          "ASSISTED COLONISATION"
+        ),
+        status = c(
+          "PRESENT",
+          "COMMMON",
+          "RARE",
+          "IRREGULAR"
+        )
+      )
+    }
+))
 ```
 
-Preview results:
+Preview some taxa with not a single valid distribution (key can be used to verify manually on GBIF):
 
-```{r preview_has_distribution}
+```{r preview_invalid_distribution}
 checklist_taxa %>%
-  select(key, scientificName, valid_distribution) %>%
-  head(20)
+  filter(!checklist_valid_distribution) %>%
+  head()
 ```
 
-Show some stats:
 
-```{r show_distribution_stats_per_checklist}
-checklist_taxa %>%
-  group_by(datasetKey) %>%
-  summarize(
-    taxa = n(),
-    taxa_with_valid_distribution = sum(valid_distribution),
-    taxa_without_valid_distribution = sum(!valid_distribution)
-  )
-```
-
-Only keep taxa with valid distribution:
-
-```{r keep_valid_distribution}
-checklist_taxa <- checklist_taxa %>%
-  filter(valid_distribution == TRUE) %>%
-  select(-valid_distribution)
-```
-
-Total number of taxa with valid distributions:
-
-```{r show_total_valid_distribution_taxa}
-nrow(checklist_taxa)
-```
 
 # Get backbone info
 

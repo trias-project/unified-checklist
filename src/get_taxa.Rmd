@@ -64,7 +64,7 @@ checklists <- checklists %>% map_dfr(function(x) list(
 )
 ```
 
-Preview metadata to ensure we have the correct checklists:
+Show metadata to ensure we have the correct checklists:
 
 ```{r}
 checklists
@@ -96,7 +96,6 @@ Select columns of interest and sort by taxon `key`:
 
 ```{r}
 checklist_taxa <- checklist_taxa %>%
-  rename(bb_key = nubKey) %>%
   select(key, scientificName, datasetKey, taxonID, nameType, issues, nubKey) %>%
   arrange(key)
 ```
@@ -140,28 +139,27 @@ Get distribution information from GBIF and check if these meet the filter criter
 ```{r get_distribution_info_from_gbif}
 progress_bar <- progress_estimated(nrow(checklist_taxa))
 
-checklist_taxa <- checklist_taxa %>%
-  mutate(valid_distribution = map_lgl(
-    checklist_taxa$key, function(x) {
-      progress_bar$tick()$print()
-      trias::gbif_has_distribution(
-        taxon_key = x,
-        country = "BE",
-        establishmentMeans = c(
-          "INTRODUCED",
-          "NATURALISED", 
-          "INVASIVE",
-          "ASSISTED COLONISATION"
-        ),
-        status = c(
-          "PRESENT",
-          "COMMMON",
-          "RARE",
-          "IRREGULAR"
-        )
+checklist_taxa <- checklist_taxa %>% mutate(valid_distribution = map_lgl(
+  checklist_taxa$key, function(x) {
+    progress_bar$tick()$print()
+    trias::gbif_has_distribution(
+      taxon_key = x,
+      country = "BE",
+      establishmentMeans = c(
+        "INTRODUCED",
+        "NATURALISED", 
+        "INVASIVE",
+        "ASSISTED COLONISATION"
+      ),
+      status = c(
+        "PRESENT",
+        "COMMMON",
+        "RARE",
+        "IRREGULAR"
       )
-    })) %>%
-  select(-bb_key, everything()) # Make bb_key the last column
+    )
+  }
+))
 ```
 
 Preview some taxa with not a single valid distribution (key can be used to verify manually on GBIF):
@@ -170,6 +168,14 @@ Preview some taxa with not a single valid distribution (key can be used to verif
 checklist_taxa %>%
   filter(!valid_distribution) %>%
   head()
+```
+
+Rename `nubKey` to `bb_key` and move to the end:
+
+```{r}
+checklist_taxa <- checklist_taxa %>%
+  rename(bb_key = nubKey)
+  select(-bb_key, everything())
 ```
 
 # Get GBIF taxonomy backbone information

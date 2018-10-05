@@ -250,12 +250,13 @@ Show summary per checklist:
 
 ```{r}
 checklist_taxa %>%
-  group_by(datasetKey) %>%
+  left_join(checklists, by = "datasetKey") %>%
+  group_by(title) %>%
   summarize(
     taxa = n(),
-    in_backbone_and_distribution = sum(valid_distribution & !is.na(bb_key)),
-    outside_distribution = sum(!valid_distribution),
-    outside_backbone = sum(valid_distribution & is.na(bb_key))
+    valid_dist_in_backbone = sum(valid_distribution & !is.na(bb_key)),
+    invalid_distribution = sum(!valid_distribution),
+    not_in_backbone = sum(valid_distribution & is.na(bb_key))
   ) %>%
   adorn_totals("row")
 ```

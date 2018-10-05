@@ -489,17 +489,18 @@ backbone_info &lt;- nub_keys %&gt;%
 <h1><span class="header-section-number">5</span> Show summary and save</h1>
 <p>Show summary per checklist:</p>
 <pre class="r"><code>checklist_taxa %&gt;%
-  group_by(datasetKey) %&gt;%
+  left_join(checklists, by = &quot;datasetKey&quot;) %&gt;%
+  group_by(title) %&gt;%
   summarize(
     taxa = n(),
-    in_backbone_and_distribution = sum(valid_distribution &amp; !is.na(bb_key)),
-    outside_distribution = sum(!valid_distribution),
-    outside_backbone = sum(valid_distribution &amp; is.na(bb_key))
+    valid_dist_in_backbone = sum(valid_distribution &amp; !is.na(bb_key)),
+    invalid_distribution = sum(!valid_distribution),
+    not_in_backbone = sum(valid_distribution &amp; is.na(bb_key))
   ) %&gt;%
   adorn_totals(&quot;row&quot;)</code></pre>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
-{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["datasetKey"],"name":[1],"type":["chr"],"align":["left"]},{"label":["taxa"],"name":[2],"type":["int"],"align":["right"]},{"label":["in_backbone_and_distribution"],"name":[3],"type":["int"],"align":["right"]},{"label":["outside_distribution"],"name":[4],"type":["int"],"align":["right"]},{"label":["outside_backbone"],"name":[5],"type":["int"],"align":["right"]}],"data":[{"1":"1738f272-6b5d-4f43-9a92-453a8c5ea50a","2":"360","3":"145","4":"212","5":"3","_rn_":"1"},{"1":"1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2","2":"274","3":"260","4":"3","5":"11","_rn_":"2"},{"1":"289244ee-e1c1-49aa-b2d7-d379391ce265","2":"73","3":"73","4":"0","5":"0","_rn_":"3"},{"1":"3f5e930b-52a5-461d-87ec-26ecd66f14a3","2":"6675","3":"3076","4":"3571","5":"28","_rn_":"4"},{"1":"98940a79-2bf1-46e6-afd6-ba2e85a26f9f","2":"25","3":"25","4":"0","5":"0","_rn_":"5"},{"1":"9ff7d317-609b-4c08-bd86-3bc404b77c42","2":"2577","3":"2481","4":"24","5":"72","_rn_":"6"},{"1":"b043c480-dd36-4f4f-aa82-e188753ff09d","2":"755","3":"13","4":"742","5":"0","_rn_":"7"},{"1":"Total","2":"10739","3":"6073","4":"4552","5":"114","_rn_":"8"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["title"],"name":[1],"type":["chr"],"align":["left"]},{"label":["taxa"],"name":[2],"type":["int"],"align":["right"]},{"label":["valid_dist_in_backbone"],"name":[3],"type":["int"],"align":["right"]},{"label":["invalid_distribution"],"name":[4],"type":["int"],"align":["right"]},{"label":["not_in_backbone"],"name":[5],"type":["int"],"align":["right"]}],"data":[{"1":"Ad hoc checklist of alien species in Belgium","2":"274","3":"260","4":"3","5":"11","_rn_":"1"},{"1":"Catalogue of the Rust Fungi of Belgium","2":"755","3":"13","4":"742","5":"0","_rn_":"2"},{"1":"Checklist of non-native freshwater fishes in Flanders, Belgium","2":"25","3":"25","4":"0","5":"0","_rn_":"3"},{"1":"Inventory of alien macroinvertebrates in Flanders, Belgium","2":"73","3":"73","4":"0","5":"0","_rn_":"4"},{"1":"Manual of the Alien Plants of Belgium","2":"2577","3":"2481","4":"24","5":"72","_rn_":"5"},{"1":"RINSE - Pathways and vectors of biological invasions in Northwest Europe","2":"360","3":"145","4":"212","5":"3","_rn_":"6"},{"1":"RINSE - Registry of non-native species in the Two Seas region countries (Great Britain, France, Belgium and the Netherlands)","2":"6675","3":"3076","4":"3571","5":"28","_rn_":"7"},{"1":"Total","2":"10739","3":"6073","4":"4552","5":"114","_rn_":"8"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
   </script>
 </div>
 <p>Save to CSV:</p>

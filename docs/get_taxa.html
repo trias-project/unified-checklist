@@ -348,7 +348,7 @@ checklists &lt;- checklists %&gt;% map_dfr(function(x) list(
   publisher = x$data$publishingOrganizationKey,
   doi = x$data$doi)
 )</code></pre>
-<p>Preview metadata to ensure we have the correct checklists:</p>
+<p>Show metadata to ensure we have the correct checklists:</p>
 <pre class="r"><code>checklists</code></pre>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
@@ -361,23 +361,32 @@ checklists &lt;- checklists %&gt;% map_dfr(function(x) list(
 <div id="get-taxa" class="section level1">
 <h1><span class="header-section-number">2</span> Get taxa</h1>
 <p>Get taxa from these checklists from GBIF.</p>
-<p><strong>Note</strong>: here we get <em>checklist taxa</em>, not <em>GBIF backbone taxa</em>.</p>
-<pre class="r"><code>checklist_taxa &lt;- rgbif::name_lookup(
-  datasetKey = checklists$datasetKey,
-  origin = &quot;source&quot;, # Only source taxa, not denormed higher classification taxa
-  limit = 99999, # Should be more than total taxa for all checklists
-  return = &quot;data&quot;
-)</code></pre>
-<p>Select columns of interest, rename <code>nubKey</code> and sort by taxon <code>key</code>:</p>
+<p><strong>Note</strong>: here we get <em>checklist taxa</em>, not <em>GBIF backbone taxa</em>. To return <em>issues</em> for the taxa, we also need to use <code>name_usage()</code> rather than <code>name_lookup()</code>.</p>
+<pre class="r"><code>checklist_taxa &lt;- map_df(checklists$datasetKey, function(x) 
+  name_usage(
+    datasetKey = x,
+    limit = 99999, # Should be more than total taxa for all checklists
+    return = &quot;data&quot;
+  )) %&gt;% 
+  filter(origin == &quot;SOURCE&quot;) # Keep only source taxa, not denormed higher classification taxa</code></pre>
+<p>Select columns of interest and sort by taxon <code>key</code>:</p>
 <pre class="r"><code>checklist_taxa &lt;- checklist_taxa %&gt;%
-  select(key, scientificName, datasetKey, taxonID, nameType, habitats, nubKey) %&gt;%
-  rename(bb_key = nubKey) %&gt;%
+  select(key, scientificName, datasetKey, taxonID, nameType, issues, nubKey) %&gt;%
   arrange(key)</code></pre>
+<p>Convert the column <code>issues</code> from a list to a concatenated string:</p>
+<pre class="r"><code>checklist_taxa &lt;- checklist_taxa %&gt;%
+  group_by_at(vars(-issues)) %&gt;%
+  summarize(issues = str_c(issues, collapse = &quot;,&quot;)) %&gt;%
+  ungroup() %&gt;%
+  mutate(
+    issues = na_if(issues, &quot;NULL&quot;),
+    issues = na_if(issues, &quot;NA&quot;)
+  )</code></pre>
 <p>Preview checklist taxa:</p>
 <pre class="r"><code>head(checklist_taxa)</code></pre>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
-{"columns":[{"label":["key"],"name":[1],"type":["int"],"align":["right"]},{"label":["scientificName"],"name":[2],"type":["chr"],"align":["left"]},{"label":["datasetKey"],"name":[3],"type":["chr"],"align":["left"]},{"label":["taxonID"],"name":[4],"type":["chr"],"align":["left"]},{"label":["nameType"],"name":[5],"type":["chr"],"align":["left"]},{"label":["habitats"],"name":[6],"type":["chr"],"align":["left"]},{"label":["bb_key"],"name":[7],"type":["int"],"align":["right"]}],"data":[{"1":"140562891","2":"Hypania invalida","3":"289244ee-e1c1-49aa-b2d7-d379391ce265","4":"alien-macroinvertebrates-checklist:taxon:771544745a06d6420acf65d4caf558d3","5":"SCIENTIFIC","6":"FRESHWATER","7":"5199161"},{"1":"140562894","2":"Bratislavia dadayi","3":"289244ee-e1c1-49aa-b2d7-d379391ce265","4":"alien-macroinvertebrates-checklist:taxon:e290ce86d71a55d91f917e211570869d","5":"SCIENTIFIC","6":"FRESHWATER","7":"9442679"},{"1":"140562895","2":"Branchiodrilus hortensis","3":"289244ee-e1c1-49aa-b2d7-d379391ce265","4":"alien-macroinvertebrates-checklist:taxon:b2bc19dfbc9d3f248921a6e148ffbaaa","5":"SCIENTIFIC","6":"FRESHWATER","7":"4812260"},{"1":"140562897","2":"Quistadrilus multisetosus","3":"289244ee-e1c1-49aa-b2d7-d379391ce265","4":"alien-macroinvertebrates-checklist:taxon:ba6f78baf9a86138db5686bee2268107","5":"SCIENTIFIC","6":"FRESHWATER","7":"4410088"},{"1":"140562898","2":"Branchiura sowerbyi","3":"289244ee-e1c1-49aa-b2d7-d379391ce265","4":"alien-macroinvertebrates-checklist:taxon:b25905a58f0d4cc12455803326d0d7e0","5":"SCIENTIFIC","6":"FRESHWATER","7":"2308574"},{"1":"140562899","2":"Potamothrix vejdovskyi","3":"289244ee-e1c1-49aa-b2d7-d379391ce265","4":"alien-macroinvertebrates-checklist:taxon:85ea227fedd73b5f44e27d7499bed4b3","5":"SCIENTIFIC","6":"FRESHWATER","7":"2308605"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+{"columns":[{"label":["key"],"name":[1],"type":["int"],"align":["right"]},{"label":["scientificName"],"name":[2],"type":["chr"],"align":["left"]},{"label":["datasetKey"],"name":[3],"type":["chr"],"align":["left"]},{"label":["taxonID"],"name":[4],"type":["chr"],"align":["left"]},{"label":["nameType"],"name":[5],"type":["chr"],"align":["left"]},{"label":["nubKey"],"name":[6],"type":["int"],"align":["right"]},{"label":["issues"],"name":[7],"type":["chr"],"align":["left"]}],"data":[{"1":"140562891","2":"Hypania invalida","3":"289244ee-e1c1-49aa-b2d7-d379391ce265","4":"alien-macroinvertebrates-checklist:taxon:771544745a06d6420acf65d4caf558d3","5":"SCIENTIFIC","6":"5199161","7":"NA"},{"1":"140562894","2":"Bratislavia dadayi","3":"289244ee-e1c1-49aa-b2d7-d379391ce265","4":"alien-macroinvertebrates-checklist:taxon:e290ce86d71a55d91f917e211570869d","5":"SCIENTIFIC","6":"9442679","7":"NA"},{"1":"140562895","2":"Branchiodrilus hortensis","3":"289244ee-e1c1-49aa-b2d7-d379391ce265","4":"alien-macroinvertebrates-checklist:taxon:b2bc19dfbc9d3f248921a6e148ffbaaa","5":"SCIENTIFIC","6":"4812260","7":"NA"},{"1":"140562897","2":"Quistadrilus multisetosus","3":"289244ee-e1c1-49aa-b2d7-d379391ce265","4":"alien-macroinvertebrates-checklist:taxon:ba6f78baf9a86138db5686bee2268107","5":"SCIENTIFIC","6":"4410088","7":"NA"},{"1":"140562898","2":"Branchiura sowerbyi","3":"289244ee-e1c1-49aa-b2d7-d379391ce265","4":"alien-macroinvertebrates-checklist:taxon:b25905a58f0d4cc12455803326d0d7e0","5":"SCIENTIFIC","6":"2308574","7":"NA"},{"1":"140562899","2":"Potamothrix vejdovskyi","3":"289244ee-e1c1-49aa-b2d7-d379391ce265","4":"alien-macroinvertebrates-checklist:taxon:85ea227fedd73b5f44e27d7499bed4b3","5":"SCIENTIFIC","6":"2308605","7":"NA"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
   </script>
 </div>
 </div>
@@ -398,37 +407,40 @@ checklists &lt;- checklists %&gt;% map_dfr(function(x) list(
 <p>Get distribution information from GBIF and check if these meet the filter criteria. The result (<code>TRUE</code>/<code>FALSE</code>) is inserted as an extra column <code>valid_distribution</code>:</p>
 <pre class="r"><code>progress_bar &lt;- progress_estimated(nrow(checklist_taxa))
 
-checklist_taxa &lt;- checklist_taxa %&gt;%
-  mutate(valid_distribution = map_lgl(
-    checklist_taxa$key, function(x) {
-      progress_bar$tick()$print()
-      trias::gbif_has_distribution(
-        taxon_key = x,
-        country = &quot;BE&quot;,
-        establishmentMeans = c(
-          &quot;INTRODUCED&quot;,
-          &quot;NATURALISED&quot;, 
-          &quot;INVASIVE&quot;,
-          &quot;ASSISTED COLONISATION&quot;
-        ),
-        status = c(
-          &quot;PRESENT&quot;,
-          &quot;COMMMON&quot;,
-          &quot;RARE&quot;,
-          &quot;IRREGULAR&quot;
-        )
+checklist_taxa &lt;- checklist_taxa %&gt;% mutate(valid_distribution = map_lgl(
+  checklist_taxa$key, function(x) {
+    progress_bar$tick()$print()
+    trias::gbif_has_distribution(
+      taxon_key = x,
+      country = &quot;BE&quot;,
+      establishmentMeans = c(
+        &quot;INTRODUCED&quot;,
+        &quot;NATURALISED&quot;, 
+        &quot;INVASIVE&quot;,
+        &quot;ASSISTED COLONISATION&quot;
+      ),
+      status = c(
+        &quot;PRESENT&quot;,
+        &quot;COMMMON&quot;,
+        &quot;RARE&quot;,
+        &quot;IRREGULAR&quot;
       )
-    })) %&gt;%
-  select(-bb_key, everything()) # Make bb_key the last column</code></pre>
+    )
+  }
+))</code></pre>
 <p>Preview some taxa with not a single valid distribution (key can be used to verify manually on GBIF):</p>
 <pre class="r"><code>checklist_taxa %&gt;%
   filter(!valid_distribution) %&gt;%
   head()</code></pre>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
-{"columns":[{"label":["key"],"name":[1],"type":["int"],"align":["right"]},{"label":["scientificName"],"name":[2],"type":["chr"],"align":["left"]},{"label":["datasetKey"],"name":[3],"type":["chr"],"align":["left"]},{"label":["taxonID"],"name":[4],"type":["chr"],"align":["left"]},{"label":["nameType"],"name":[5],"type":["chr"],"align":["left"]},{"label":["habitats"],"name":[6],"type":["chr"],"align":["left"]},{"label":["valid_distribution"],"name":[7],"type":["lgl"],"align":["right"]},{"label":["bb_key"],"name":[8],"type":["int"],"align":["right"]}],"data":[{"1":"141264687","2":"Myricaria germanica (L.) Desv.","3":"9ff7d317-609b-4c08-bd86-3bc404b77c42","4":"alien-plants-belgium:taxon:8ccd0f80c36557f5388bf04f74e5992e","5":"SCIENTIFIC","6":"TERRESTRIAL","7":"FALSE","8":"3612876"},{"1":"141265296","2":"Centaurea alba L.","3":"9ff7d317-609b-4c08-bd86-3bc404b77c42","4":"alien-plants-belgium:taxon:3080ca6f3e3f59f9aa79858bde4a5a37","5":"SCIENTIFIC","6":"TERRESTRIAL","7":"FALSE","8":"7437845"},{"1":"141265315","2":"Galatella sedifolia (L.) Greuter","3":"9ff7d317-609b-4c08-bd86-3bc404b77c42","4":"alien-plants-belgium:taxon:00bb2bc05d9481b0bc8b5b57117fa799","5":"SCIENTIFIC","6":"TERRESTRIAL","7":"FALSE","8":"3091620"},{"1":"141265335","2":"Pilosella x brachiata (Bertol. ex DC.) F.W. Schultz & Schultz-Bip.","3":"9ff7d317-609b-4c08-bd86-3bc404b77c42","4":"alien-plants-belgium:taxon:117ec57c7e471f2ea79a4018184097ce","5":"SCIENTIFIC","6":"TERRESTRIAL","7":"FALSE","8":"3122897"},{"1":"141265395","2":"Potentilla x semiargentea Borbás","3":"9ff7d317-609b-4c08-bd86-3bc404b77c42","4":"alien-plants-belgium:taxon:bc7ce35dd2e3ad2742533e02bfc7a115","5":"SCIENTIFIC","6":"TERRESTRIAL","7":"FALSE","8":"5368010"},{"1":"141265695","2":"Triticum dicoccon (Schrank) Schübl.","3":"9ff7d317-609b-4c08-bd86-3bc404b77c42","4":"alien-plants-belgium:taxon:9e7ff7e69362eea8bfce94244527bacf","5":"SCIENTIFIC","6":"TERRESTRIAL","7":"FALSE","8":"8168170"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+{"columns":[{"label":["key"],"name":[1],"type":["int"],"align":["right"]},{"label":["scientificName"],"name":[2],"type":["chr"],"align":["left"]},{"label":["datasetKey"],"name":[3],"type":["chr"],"align":["left"]},{"label":["taxonID"],"name":[4],"type":["chr"],"align":["left"]},{"label":["nameType"],"name":[5],"type":["chr"],"align":["left"]},{"label":["nubKey"],"name":[6],"type":["int"],"align":["right"]},{"label":["issues"],"name":[7],"type":["chr"],"align":["left"]},{"label":["valid_distribution"],"name":[8],"type":["lgl"],"align":["right"]}],"data":[{"1":"141264687","2":"Myricaria germanica (L.) Desv.","3":"9ff7d317-609b-4c08-bd86-3bc404b77c42","4":"alien-plants-belgium:taxon:8ccd0f80c36557f5388bf04f74e5992e","5":"SCIENTIFIC","6":"3612876","7":"NA","8":"FALSE"},{"1":"141265296","2":"Centaurea alba L.","3":"9ff7d317-609b-4c08-bd86-3bc404b77c42","4":"alien-plants-belgium:taxon:3080ca6f3e3f59f9aa79858bde4a5a37","5":"SCIENTIFIC","6":"7437845","7":"NA","8":"FALSE"},{"1":"141265315","2":"Galatella sedifolia (L.) Greuter","3":"9ff7d317-609b-4c08-bd86-3bc404b77c42","4":"alien-plants-belgium:taxon:00bb2bc05d9481b0bc8b5b57117fa799","5":"SCIENTIFIC","6":"3091620","7":"DESCRIPTION_INVALID","8":"FALSE"},{"1":"141265335","2":"Pilosella x brachiata (Bertol. ex DC.) F.W. Schultz & Schultz-Bip.","3":"9ff7d317-609b-4c08-bd86-3bc404b77c42","4":"alien-plants-belgium:taxon:117ec57c7e471f2ea79a4018184097ce","5":"SCIENTIFIC","6":"3122897","7":"RANK_INVALID","8":"FALSE"},{"1":"141265395","2":"Potentilla x semiargentea Borbás","3":"9ff7d317-609b-4c08-bd86-3bc404b77c42","4":"alien-plants-belgium:taxon:bc7ce35dd2e3ad2742533e02bfc7a115","5":"SCIENTIFIC","6":"5368010","7":"RANK_INVALID","8":"FALSE"},{"1":"141265695","2":"Triticum dicoccon (Schrank) Schübl.","3":"9ff7d317-609b-4c08-bd86-3bc404b77c42","4":"alien-plants-belgium:taxon:9e7ff7e69362eea8bfce94244527bacf","5":"SCIENTIFIC","6":"8168170","7":"NA","8":"FALSE"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
   </script>
 </div>
+<p>Rename <code>nubKey</code> to <code>bb_key</code> and move to the end:</p>
+<pre class="r"><code>checklist_taxa &lt;- checklist_taxa %&gt;%
+  rename(bb_key = nubKey) %&gt;%
+  select(-bb_key, everything())</code></pre>
 </div>
 <div id="get-gbif-taxonomy-backbone-information" class="section level1">
 <h1><span class="header-section-number">4</span> Get GBIF taxonomy backbone information</h1>
@@ -470,7 +482,7 @@ backbone_info &lt;- map_dfr(nub_keys, function(x) {
 <pre class="r"><code>checklist_taxa %&gt;% head()</code></pre>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
-{"columns":[{"label":["key"],"name":[1],"type":["int"],"align":["right"]},{"label":["scientificName"],"name":[2],"type":["chr"],"align":["left"]},{"label":["datasetKey"],"name":[3],"type":["chr"],"align":["left"]},{"label":["taxonID"],"name":[4],"type":["chr"],"align":["left"]},{"label":["nameType"],"name":[5],"type":["chr"],"align":["left"]},{"label":["habitats"],"name":[6],"type":["chr"],"align":["left"]},{"label":["valid_distribution"],"name":[7],"type":["lgl"],"align":["right"]},{"label":["bb_key"],"name":[8],"type":["int"],"align":["right"]},{"label":["bb_scientificName"],"name":[9],"type":["chr"],"align":["left"]},{"label":["bb_species"],"name":[10],"type":["chr"],"align":["left"]},{"label":["bb_genus"],"name":[11],"type":["chr"],"align":["left"]},{"label":["bb_family"],"name":[12],"type":["chr"],"align":["left"]},{"label":["bb_order"],"name":[13],"type":["chr"],"align":["left"]},{"label":["bb_class"],"name":[14],"type":["chr"],"align":["left"]},{"label":["bb_phylum"],"name":[15],"type":["chr"],"align":["left"]},{"label":["bb_kingdom"],"name":[16],"type":["chr"],"align":["left"]},{"label":["bb_rank"],"name":[17],"type":["chr"],"align":["left"]},{"label":["bb_speciesKey"],"name":[18],"type":["int"],"align":["right"]},{"label":["bb_taxonomicStatus"],"name":[19],"type":["chr"],"align":["left"]},{"label":["bb_acceptedKey"],"name":[20],"type":["int"],"align":["right"]},{"label":["bb_acceptedName"],"name":[21],"type":["chr"],"align":["left"]}],"data":[{"1":"140562891","2":"Hypania invalida","3":"289244ee-e1c1-49aa-b2d7-d379391ce265","4":"alien-macroinvertebrates-checklist:taxon:771544745a06d6420acf65d4caf558d3","5":"SCIENTIFIC","6":"FRESHWATER","7":"TRUE","8":"5199161","9":"Hypania invalida (Grube, 1860)","10":"Hypania invalida","11":"Hypania","12":"Ampharetidae","13":"Terebellida","14":"Polychaeta","15":"Annelida","16":"Animalia","17":"SPECIES","18":"5199161","19":"ACCEPTED","20":"NA","21":"NA"},{"1":"140562894","2":"Bratislavia dadayi","3":"289244ee-e1c1-49aa-b2d7-d379391ce265","4":"alien-macroinvertebrates-checklist:taxon:e290ce86d71a55d91f917e211570869d","5":"SCIENTIFIC","6":"FRESHWATER","7":"TRUE","8":"9442679","9":"Bratislavia dadayi (Michaelsen, 1905)","10":"Bratislavia dadayi","11":"Bratislavia","12":"Naididae","13":"Haplotaxida","14":"Clitellata","15":"Annelida","16":"Animalia","17":"SPECIES","18":"9442679","19":"ACCEPTED","20":"NA","21":"NA"},{"1":"140562895","2":"Branchiodrilus hortensis","3":"289244ee-e1c1-49aa-b2d7-d379391ce265","4":"alien-macroinvertebrates-checklist:taxon:b2bc19dfbc9d3f248921a6e148ffbaaa","5":"SCIENTIFIC","6":"FRESHWATER","7":"TRUE","8":"4812260","9":"Branchiodrilus hortensis (Stephenson, 1910)","10":"Branchiodrilus hortensis","11":"Branchiodrilus","12":"Naididae","13":"Haplotaxida","14":"Clitellata","15":"Annelida","16":"Animalia","17":"SPECIES","18":"4812260","19":"ACCEPTED","20":"NA","21":"NA"},{"1":"140562897","2":"Quistadrilus multisetosus","3":"289244ee-e1c1-49aa-b2d7-d379391ce265","4":"alien-macroinvertebrates-checklist:taxon:ba6f78baf9a86138db5686bee2268107","5":"SCIENTIFIC","6":"FRESHWATER","7":"TRUE","8":"4410088","9":"Quistadrilus multisetosus (Smith, 1900)","10":"Quistadrilus multisetosus","11":"Quistadrilus","12":"Naididae","13":"Haplotaxida","14":"Clitellata","15":"Annelida","16":"Animalia","17":"SPECIES","18":"4410088","19":"ACCEPTED","20":"NA","21":"NA"},{"1":"140562898","2":"Branchiura sowerbyi","3":"289244ee-e1c1-49aa-b2d7-d379391ce265","4":"alien-macroinvertebrates-checklist:taxon:b25905a58f0d4cc12455803326d0d7e0","5":"SCIENTIFIC","6":"FRESHWATER","7":"TRUE","8":"2308574","9":"Branchiura sowerbyi Beddard, 1892","10":"Branchiura sowerbyi","11":"Branchiura","12":"Naididae","13":"Haplotaxida","14":"Clitellata","15":"Annelida","16":"Animalia","17":"SPECIES","18":"2308574","19":"ACCEPTED","20":"NA","21":"NA"},{"1":"140562899","2":"Potamothrix vejdovskyi","3":"289244ee-e1c1-49aa-b2d7-d379391ce265","4":"alien-macroinvertebrates-checklist:taxon:85ea227fedd73b5f44e27d7499bed4b3","5":"SCIENTIFIC","6":"FRESHWATER","7":"TRUE","8":"2308605","9":"Potamothrix vejdovskyi (Hrabĕ, 1941)","10":"Potamothrix vejdovskyi","11":"Potamothrix","12":"Naididae","13":"Haplotaxida","14":"Clitellata","15":"Annelida","16":"Animalia","17":"SPECIES","18":"2308605","19":"ACCEPTED","20":"NA","21":"NA"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+{"columns":[{"label":["key"],"name":[1],"type":["int"],"align":["right"]},{"label":["scientificName"],"name":[2],"type":["chr"],"align":["left"]},{"label":["datasetKey"],"name":[3],"type":["chr"],"align":["left"]},{"label":["taxonID"],"name":[4],"type":["chr"],"align":["left"]},{"label":["nameType"],"name":[5],"type":["chr"],"align":["left"]},{"label":["issues"],"name":[6],"type":["chr"],"align":["left"]},{"label":["valid_distribution"],"name":[7],"type":["lgl"],"align":["right"]},{"label":["bb_key"],"name":[8],"type":["int"],"align":["right"]},{"label":["bb_scientificName"],"name":[9],"type":["chr"],"align":["left"]},{"label":["bb_species"],"name":[10],"type":["chr"],"align":["left"]},{"label":["bb_genus"],"name":[11],"type":["chr"],"align":["left"]},{"label":["bb_family"],"name":[12],"type":["chr"],"align":["left"]},{"label":["bb_order"],"name":[13],"type":["chr"],"align":["left"]},{"label":["bb_class"],"name":[14],"type":["chr"],"align":["left"]},{"label":["bb_phylum"],"name":[15],"type":["chr"],"align":["left"]},{"label":["bb_kingdom"],"name":[16],"type":["chr"],"align":["left"]},{"label":["bb_rank"],"name":[17],"type":["chr"],"align":["left"]},{"label":["bb_speciesKey"],"name":[18],"type":["int"],"align":["right"]},{"label":["bb_taxonomicStatus"],"name":[19],"type":["chr"],"align":["left"]},{"label":["bb_acceptedKey"],"name":[20],"type":["int"],"align":["right"]},{"label":["bb_acceptedName"],"name":[21],"type":["chr"],"align":["left"]}],"data":[{"1":"140562891","2":"Hypania invalida","3":"289244ee-e1c1-49aa-b2d7-d379391ce265","4":"alien-macroinvertebrates-checklist:taxon:771544745a06d6420acf65d4caf558d3","5":"SCIENTIFIC","6":"NA","7":"TRUE","8":"5199161","9":"Hypania invalida (Grube, 1860)","10":"Hypania invalida","11":"Hypania","12":"Ampharetidae","13":"Terebellida","14":"Polychaeta","15":"Annelida","16":"Animalia","17":"SPECIES","18":"5199161","19":"ACCEPTED","20":"NA","21":"NA"},{"1":"140562894","2":"Bratislavia dadayi","3":"289244ee-e1c1-49aa-b2d7-d379391ce265","4":"alien-macroinvertebrates-checklist:taxon:e290ce86d71a55d91f917e211570869d","5":"SCIENTIFIC","6":"NA","7":"TRUE","8":"9442679","9":"Bratislavia dadayi (Michaelsen, 1905)","10":"Bratislavia dadayi","11":"Bratislavia","12":"Naididae","13":"Haplotaxida","14":"Clitellata","15":"Annelida","16":"Animalia","17":"SPECIES","18":"9442679","19":"ACCEPTED","20":"NA","21":"NA"},{"1":"140562895","2":"Branchiodrilus hortensis","3":"289244ee-e1c1-49aa-b2d7-d379391ce265","4":"alien-macroinvertebrates-checklist:taxon:b2bc19dfbc9d3f248921a6e148ffbaaa","5":"SCIENTIFIC","6":"NA","7":"TRUE","8":"4812260","9":"Branchiodrilus hortensis (Stephenson, 1910)","10":"Branchiodrilus hortensis","11":"Branchiodrilus","12":"Naididae","13":"Haplotaxida","14":"Clitellata","15":"Annelida","16":"Animalia","17":"SPECIES","18":"4812260","19":"ACCEPTED","20":"NA","21":"NA"},{"1":"140562897","2":"Quistadrilus multisetosus","3":"289244ee-e1c1-49aa-b2d7-d379391ce265","4":"alien-macroinvertebrates-checklist:taxon:ba6f78baf9a86138db5686bee2268107","5":"SCIENTIFIC","6":"NA","7":"TRUE","8":"4410088","9":"Quistadrilus multisetosus (Smith, 1900)","10":"Quistadrilus multisetosus","11":"Quistadrilus","12":"Naididae","13":"Haplotaxida","14":"Clitellata","15":"Annelida","16":"Animalia","17":"SPECIES","18":"4410088","19":"ACCEPTED","20":"NA","21":"NA"},{"1":"140562898","2":"Branchiura sowerbyi","3":"289244ee-e1c1-49aa-b2d7-d379391ce265","4":"alien-macroinvertebrates-checklist:taxon:b25905a58f0d4cc12455803326d0d7e0","5":"SCIENTIFIC","6":"NA","7":"TRUE","8":"2308574","9":"Branchiura sowerbyi Beddard, 1892","10":"Branchiura sowerbyi","11":"Branchiura","12":"Naididae","13":"Haplotaxida","14":"Clitellata","15":"Annelida","16":"Animalia","17":"SPECIES","18":"2308574","19":"ACCEPTED","20":"NA","21":"NA"},{"1":"140562899","2":"Potamothrix vejdovskyi","3":"289244ee-e1c1-49aa-b2d7-d379391ce265","4":"alien-macroinvertebrates-checklist:taxon:85ea227fedd73b5f44e27d7499bed4b3","5":"SCIENTIFIC","6":"NA","7":"TRUE","8":"2308605","9":"Potamothrix vejdovskyi (Hrabĕ, 1941)","10":"Potamothrix vejdovskyi","11":"Potamothrix","12":"Naididae","13":"Haplotaxida","14":"Clitellata","15":"Annelida","16":"Animalia","17":"SPECIES","18":"2308605","19":"ACCEPTED","20":"NA","21":"NA"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
   </script>
 </div>
 <p>Show summary per checklist:</p>
@@ -489,9 +501,10 @@ backbone_info &lt;- map_dfr(nub_keys, function(x) {
   </script>
 </div>
 </div>
-<div id="save-to-csv" class="section level1">
-<h1><span class="header-section-number">5</span> Save to CSV:</h1>
-<pre class="r"><code>write_csv(checklist_taxa, here(&quot;data&quot;, &quot;interim&quot;, &quot;checklist_taxa_all.csv&quot;), na = &quot;&quot;)</code></pre>
+<div id="save-data" class="section level1">
+<h1><span class="header-section-number">5</span> Save data</h1>
+<p>Save to CSV:</p>
+<pre class="r"><code>write_csv(checklist_taxa, here(&quot;data&quot;, &quot;interim&quot;, &quot;checklist_taxa.csv&quot;), na = &quot;&quot;)</code></pre>
 </div>
 
 

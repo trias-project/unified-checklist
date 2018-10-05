@@ -52,16 +52,15 @@ checklist_keys <- c(
 Get metadata for these checklists from GBIF:
 
 ```{r get_checklist_metadata_from_gbif}
-checklists <- map(checklist_keys, function(x) rgbif::datasets(uuid = x))
-
-# Create dataframe with core information
-checklists <- checklists %>% map_dfr(function(x) list(
-  datasetKey = x$data$key,
-  title = x$data$title,
-  modified = x$data$modified,
-  publisher = x$data$publishingOrganizationKey,
-  doi = x$data$doi)
-)
+checklists <- checklist_keys %>%
+  map(function(x) rgbif::datasets(uuid = x)) %>%
+  map_df(function(x) list(
+    datasetKey = x$data$key,
+    title = x$data$title,
+    modified = x$data$modified,
+    publisher = x$data$publishingOrganizationKey,
+    doi = x$data$doi
+  ))
 ```
 
 Show metadata to ensure we have the correct checklists:
@@ -83,8 +82,8 @@ Get taxa from these checklists from GBIF.
 **Note**: here we get _checklist taxa_, not _GBIF backbone taxa_. To return _issues_ for the taxa, we also need to use `name_usage()` rather than `name_lookup()`.
 
 ```{r get_checklist_taxa_from_gbif}
-checklist_taxa <- map_df(checklists$datasetKey, function(x) 
-  name_usage(
+checklist_taxa <- checklists$datasetKey %>%
+  map_df(function(x) name_usage(
     datasetKey = x,
     limit = 99999, # Should be more than total taxa for all checklists
     return = "data"
@@ -139,8 +138,8 @@ Get distribution information from GBIF and check if these meet the filter criter
 ```{r get_distribution_info_from_gbif}
 progress_bar <- progress_estimated(nrow(checklist_taxa))
 
-checklist_taxa <- checklist_taxa %>% mutate(valid_distribution = map_lgl(
-  checklist_taxa$key, function(x) {
+checklist_taxa <- checklist_taxa %>% mutate(valid_distribution =
+  map_lgl(checklist_taxa$key, function(x) {
     progress_bar$tick()$print()
     trias::gbif_has_distribution(
       taxon_key = x,
@@ -158,8 +157,8 @@ checklist_taxa <- checklist_taxa %>% mutate(valid_distribution = map_lgl(
         "IRREGULAR"
       )
     )
-  }
-))
+  })
+)
 ```
 
 Preview some taxa with not a single valid distribution (key can be used to verify manually on GBIF):
@@ -178,7 +177,7 @@ checklist_taxa <- checklist_taxa %>%
   select(-bb_key, everything())
 ```
 
-# Get GBIF taxonomy backbone information
+# Get GBIF backbone taxonomy information
 
 A taxon can occur on more than one checklist. To identify these duplicates, we cannot rely on the _scientific name_ as there might be spelling variations (e.g. with or without authorship) and it does not account for synonyms that should be lumped with the accepted taxon. To have **unifying taxon identifiers across taxa**, we rely on the [GBIF backbone taxonomy](https://doi.org/10.15468/39omei), to which every checklist taxon (re)published to GBIF is automatically matched. If a match in the backbone is found, the checklist taxon will have a `nubKey`.
 
@@ -198,14 +197,14 @@ Get GBIF backbone taxonomy information:
 ```{r get_backbone_info_from_gbif}
 progress_bar <- progress_estimated(length(nub_keys))
 
-backbone_info <- map_dfr(nub_keys, function(x) {
+backbone_info <- nub_keys %>%
+  map_dfr(function(x) {
     progress_bar$tick()$print()
     rgbif::name_usage(
       key = x,
       return = "data"
     )
-  }
-)
+  })
 ```
 
 Select columns of interest:

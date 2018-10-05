@@ -243,10 +243,8 @@ Preview merged information:
 checklist_taxa %>% head()
 ```
 
-# Save output
+# Save to CSV:
 
-Save the taxonomic information to a tsv file:
-
-```{r}
-write_tsv(combined_taxon_info, path = taxa_output_file, na = "")
+```{r save_checklist_taxa}
+write_csv(checklist_taxa, here("data", "interim", "checklist_taxa.csv"), na = "")
 ```

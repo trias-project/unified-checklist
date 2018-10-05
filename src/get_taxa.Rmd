@@ -26,11 +26,9 @@ library(tidyverse)      # To do data science
 library(magrittr)       # To use %<>% pipes
 library(here)           # To find files
 library(janitor)        # To clean input data
-library(googlesheets)   # To import and read Google spreadsheets 
 library(digest)         # To generate hashes
 library(rgbif)          # To use GBIF services
 library(trias)          # To use functions developed for TrIAS
-library(rlang)
 ```
 
 # Choose checklists
@@ -40,7 +38,7 @@ The unified checklist is compiled from [species checklists published to GBIF und
 Choose checklists:
 
 ```{r choose_checklists}
-checklists <- c(
+checklist_keys <- c(
   "9ff7d317-609b-4c08-bd86-3bc404b77c42", # alien-plants-belgium
   "289244ee-e1c1-49aa-b2d7-d379391ce265", # alien-macroinvertebrates
   "98940a79-2bf1-46e6-afd6-ba2e85a26f9f"  # alien-fished-checklist
@@ -51,11 +49,13 @@ checklists <- c(
 )
 ```
 
-Get metadata of these checklists from GBIF:
+Get metadata for these checklists from GBIF:
 
-```{r get_checklist_metadata}
-checklists_metadata <- map(checklists, function(x) rgbif::datasets(uuid = x))
-checklists_metadata <- map_dfr(checklists_metadata, function(x) list(
+```{r get_checklist_metadata_from_gbif}
+checklists <- map(checklist_keys, function(x) rgbif::datasets(uuid = x))
+
+# Create dataframe with core information
+checklists <- checklists %>% map_dfr(function(x) list(
   datasetKey = x$data$key,
   title = x$data$title,
   modified = x$data$modified,
@@ -67,59 +67,52 @@ checklists_metadata <- map_dfr(checklists_metadata, function(x) list(
 Preview metadata to ensure we have the correct checklists:
 
 ```{r preview_metadata}
-checklists_metadata
+checklists
 ```
 
 Save to CSV:
 
 ```{r save_checklist_metadata}
-write_csv(checklists_metadata, here("data", "interim", "checklists.csv"), na = "")
+write_csv(checklists, here("data", "interim", "checklists.csv"), na = "")
 ```
-
 
 # Get taxa
 
-For each checklist, get the taxa from GBIF.
+Get taxa from these checklists from GBIF.
 
-**Note**: here we return checklist taxa, not backbone taxa.
+**Note**: here we get _checklist taxa_, not _GBIF backbone taxa_.
 
 ```{r get_taxa_from_gbif}
-checklist_taxa_all_fields <- rgbif::name_lookup(
-  datasetKey = checklists_metadata$datasetKey,
-  origin = "source",# Only source taxa, not denormed higher classification taxa
-  limit = 99999,
-  return = "data")
+checklist_taxa <- rgbif::name_lookup(
+  datasetKey = checklists$datasetKey,
+  origin = "source", # Only source taxa, not denormed higher classification taxa
+  limit = 99999, # Should be more than total taxa for all checklists
+  return = "data"
+)
 ```
 
-Preview data:
-
-```{r preview_taxa}
-head(checklist_taxa_all_fields, 20)
-```
-
-Create a data frame with the information we want for each taxon, sorted by taxon key:
+Select columns of interest and sort by taxon `key`:
 
 ```{r select_columns}
-checklist_taxa <- checklist_taxa_all_fields %>%
+checklist_taxa <- checklist_taxa %>%
   select(key, scientificName, datasetKey, nubKey) %>%
   arrange(key)
 ```
 
-Show some stats:
+Rename columns:
 
-```{r show_taxa_stats_per_checklist}
-checklist_taxa %>%
-  group_by(datasetKey) %>%
-  summarize(
-    taxa = n(),
-    taxa_not_in_backbone = sum(is.na(nubKey))
-  )
+```{r rename_columns}
+checklist_taxa <- checklist_taxa %>% rename(
+  checklist_taxonKey = key,
+  checklist_scientificName = scientificName,
+  checklist_datasetKey = datasetKey
+)
 ```
 
-Total number of taxa:
+Preview checklist taxa:
 
-```{r show_total_taxa}
-nrow(checklist_taxa)
+```{r preview_taxa}
+head(checklist_taxa)
 ```
 
 # Filter on distribution

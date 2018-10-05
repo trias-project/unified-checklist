@@ -79,7 +79,7 @@ write_csv(checklists, here("data", "interim", "checklists.csv"), na = "")
 
 Get taxa from these checklists from GBIF.
 
-**Note**: here we get _checklist taxa_, not _GBIF backbone taxa_. To return _issues_ for the taxa, we also need to use `name_usage()` rather than `name_lookup()`.
+**Note**: here we get _checklist taxa_, not _GBIF backbone taxa_.
 
 ```{r get_checklist_taxa_from_gbif}
 checklist_taxa <- checklists$datasetKey %>%
@@ -126,7 +126,7 @@ TrIAS checklists can contain more than alien species in Belgium. We therefore ne
 2. **Present**: [`occurrenceStatus` status](https://gbif.github.io/gbif-api/apidocs/org/gbif/api/vocabulary/OccurrenceStatus.html) = `PRESENT`, `COMMMON`, `RARE` OR `IRREGULAR`
 2. **Introduced**: [`establishmentMeans`](http://gbif.github.io/parsers/apidocs/org/gbif/api/vocabulary/EstablishmentMeans.html) = `INTRODUCED`,  `NATURALISED`, `INVASIVE` OR `ASSISTED COLONISATION`
 
-**Note**: we filter on distribution information of _checklist taxa_, not _GBIF backbone taxa**. That is because backbone taxa contain distribution information from TrIAS checklists _and_ other checklists, which we don't want to consider here.
+**Note**: we filter on distribution information of _checklist taxa_, not _GBIF backbone taxa_. That is because backbone taxa contain distribution information from TrIAS checklists _and_ other checklists, which we don't want to consider here.
 
 E.g. compare:
 
@@ -244,6 +244,8 @@ Preview merged information:
 checklist_taxa %>% head()
 ```
 
+# Show summary and save
+
 Show summary per checklist:
 
 ```{r}
@@ -257,8 +259,6 @@ checklist_taxa %>%
   ) %>%
   adorn_totals("row")
 ```
-
-# Save data
 
 Save to CSV:
 

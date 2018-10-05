@@ -62,38 +62,45 @@ verification_file <- read_tsv(
 
 # Detect taxa to verify
 
+We rely on the [GBIF backbone taxonomy](https://doi.org/10.15468/39omei) to detect duplicate taxa between checklists (same `nubKey`) and to lump synonyms with accepted taxa (same `acceptedKey`). Some of this information requires manual verification however:
 
-# Assign verified key(s) to taxa
+**No backbone match**
 
-We need to verify synonyms and solve unmatches to GBIF backbone. Experts should verify taxa if one of the following conditions holds true:
+* Detection: `bb_key` is `NA`
+* Includes: checklist taxa that could not be matched to the GBIF backbone taxonomy for a variety of reasons. All these will also have [`BACKBONE_MATCH_NONE`](http://gbif.github.io/parsers/apidocs/org/gbif/api/vocabulary/NameUsageIssue.html) in `issues`.
+* Verification action: try to manually find a matching taxon in the GBIF backbone taxonomy and add its `key` to `lump_key`. The match could consist of multiple `key`s  for e.g. hybrid formulas.
 
-1. no match with GBIF Backbone (`backbone_taxonKey` is not present)
-2. taxonomic status not available or a synonym (`backbone_taxonomicStatus` not `ACCEPTED` or `DOUBTFUL`, see [GBIF taxonomic status page](http://rs.gbif.org/vocabulary/gbif/taxonomic_status.xml) for more details)
+**Synonyms**
 
-In all other cases, we can accept the `backbone_taxonKey` as provided by GBIF backbone:
+* Detection: `bb_acceptedKey` is not `NA`
+* Includes: checklist taxa that are considered synonyms of accepted taxa by the GBIF backbone taxonomy. This lumping is often correct, but it is good to verify if we agree.
+* Verification action: If we agree with the lumping, copy `bb_acceptedKey` to `lump_key`. If we do not agree with the lumping, copy the taxon `bb_key` to `lump_key` (i.e. that taxon is considered its own entity).
 
-```{r set_verified_key_equal_to_nubKey_or_NULL}
-taxa <- taxa %>% 
-  mutate(verification_key = if_else(is.finite(backbone_taxonKey) & 
-                                  backbone_taxonomicStatus %in% 
-                                  c("ACCEPTED", "DOUBTFUL"),
-                                as.character(.data$backbone_taxonKey),
-                                NULL))
-```
+In all other cases, we can accept the information returned by the GBIF backbone taxonomy (i.e. we consider the `bb_key` as the `lump_key`).
 
-A summary:
-
-```{r stats}
-taxa %>% count(verification_key_from_gbif = !is.na(verification_key))
-```
-
-Number of synonyms or unmatched taxa already verified by experts:
+Add and set `lump_key`:
 
 ```{r}
-verified_synonyms %>% count(with_verification_key = !is.na(verification_key))
+checklist_taxa <- checklist_taxa %>% mutate(lump_key = case_when(
+  is.na(bb_key) ~ NA_character_,          # No backbone match (no bb_key)
+  !is.na(bb_acceptedKey) ~ NA_character_, # Synonyms (have bb_acceptedKey)
+  TRUE ~ as.character(bb_key)             # In all other cases, use the bb_key
+))
 ```
 
-We use function `verify_taxa()` from  `trias` package in order to 
+Number of taxa to verify:
+
+```{r}
+checklist_taxa %>%
+  filter(is.na(lump_key)) %>%
+  nrow()
+```
+
+# Update verification file
+
+We use `trias::verify_taxa` to update the `verification_file`:
+
+
 
 1. retrieve verified keys which have been already assigned (stored in `verified_synonyms`)
 2. update `verified_synonyms`. Updates include:

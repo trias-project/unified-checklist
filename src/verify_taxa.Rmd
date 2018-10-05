@@ -1,47 +1,33 @@
 ---
-title: "Verify synonyms"
+title: "Verification"
 author:
 - Peter Desmet
 - Damiano Oldoni
 date: "`r Sys.Date()`"
 output:
   html_document:
+    df_print: paged
+    number_sections: true
     toc: true
     toc_depth: 3
     toc_float: true
-    number_sections: true
-    theme: yeti
-    df_print: paged
-knit: (function(input_file, encoding) { rmarkdown::render(input_file, encoding = encoding, output_file = paste0("./docs/",sub(".Rmd", ".html", basename(input_file))))})
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+In this document we report and update taxa that require manual verification.
 
-# Setup
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+```
 
 Load libraries:
 
-```{r load_libraries}
-# Tidyverse packages
-library(dplyr)
-library(readr)
-library(stringr)
-library(tidyr)
-library(purrr)
-
-# Other packages
-library(here)
-library(rgbif)
-library(trias)
-library(googlesheets)
-```
-
-Set file path:
-
-```{r input_file_path}
-checklist_metadata_file <- here("data", "output", "checklist_metadata.tsv")
+```{r}
+library(tidyverse)      # To do data science
+library(here)           # To find files
+library(janitor)        # To clean input data
+library(digest)         # To generate hashes
+library(rgbif)          # To use GBIF services
+library(trias)          # To use functions developed for TrIAS
 ```
 
 

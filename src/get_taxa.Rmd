@@ -166,98 +166,81 @@ checklist_taxa %>%
   head()
 ```
 
+# Get GBIF taxonomy backbone information
 
+A taxon can occur on more than one checklist. To identify these duplicates, we cannot rely on the _scientific name_ as there might be spelling variations (e.g. with or without authorship) and it does not account for synonyms that should be lumped with the accepted taxon. To have **unifying taxon identifiers across taxa**, we rely on the [GBIF backbone taxonomy](https://doi.org/10.15468/39omei), to which every checklist taxon (re)published to GBIF is automatically matched. If a match in the backbone is found, the checklist taxon will have a `nubKey`.
 
-# Get backbone info
-
-To make decisions regarding synonyms and higher classification, we need to retrieve GBIF backbone information, if present:
-
-
-```{r retrieve_taxonomic_info_backbone}
-taxon <- checklist_taxa %>% filter(is.finite(nubKey))
-nub_keys <- checklist_taxa %>% 
-  filter(is.finite(nubKey)) %>% 
-  distinct(nubKey)
-progress_bar <- progress_estimated(nrow(nub_keys))
-taxon_backbone_info <-  map_dfr(nub_keys$nubKey, ~ {
-  progress_bar$tick()$print()
-  rgbif::name_usage(key = ., return = "data")
-  })
-```
-
-We select taxonomic information we are interested to:
-
-```{r select_cols_backbone}
-taxon_info <- c("key", "scientificName", "species", "genus", "family", "order",
-                "class", "phylum", "kingdom",
-                "rank", "speciesKey", "taxonomicStatus", 
-                "acceptedKey", "accepted", "issues")
-
-taxon_backbone_info <- taxon_backbone_info %>%
-  select(one_of(taxon_info))
-```
-
-In case some information misses, add empty column(s):
+Filter taxa on having valid distribution and `nubKey` and create vector of unique `nubKey`s:
 
 ```{r}
-cols_to_add <- taxon_info[!which(taxon_info %in% 
-           colnames(taxon_backbone_info))]
-
-taxon_backbone_info <- map(cols_to_add, 
-                           function(x) taxon_backbone_info %>% 
-                             mutate(!! sym(x) := NA)) %>% 
-  reduce(full_join, .init = taxon_backbone_info)
+nub_keys <- checklist_taxa %>%
+  filter(checklist_valid_distribution) %>%
+  filter(is.finite(nubKey)) %>%
+  select(nubKey) %>%
+  distinct(nubKey) %>%
+  pull()
 ```
 
-Next, we unlist column `issues` and we separate them by comma (if multiple issues are present):
+Get GBIF backbone taxonomy information:
 
-```{r unlist_issues}
-taxon_backbone_info <- taxon_backbone_info %>%
+```{r get_backbone_info_from_gbif}
+progress_bar <- progress_estimated(length(nub_keys))
+
+backbone_info <- map_dfr(nub_keys, function(x) {
+    progress_bar$tick()$print()
+    rgbif::name_usage(
+      key = x,
+      return = "data"
+    )
+  }
+)
+```
+
+Select columns of interest:
+
+```{r select_backbone_columns}
+columns <- c("key", "scientificName", "species", "genus", "family", "order",
+             "class", "phylum", "kingdom", "rank", "speciesKey", 
+             "taxonomicStatus", "acceptedKey", "accepted", "issues")
+
+backbone_info <- backbone_info %>% select(one_of(columns))
+```
+
+Convert the column `issues` from a list to a concatenated string and replace `"NULL"` by `NA`:
+
+```{r convert_column_issues}
+backbone_info <- backbone_info %>%
   group_by_at(vars(-issues)) %>%
   summarize(issues = str_c(issues, collapse = ",")) %>%
   ungroup() %>%
-  mutate(issues = ifelse(
-    issues != "NULL",
-    issues,
-    NA
-  ))
+  mutate(issues = na_if(issues, "NULL"))
 ```
 
-All possible combinations of GBIF backbone issues present in our data frame:
+Show all issues present:
 
-```{r preview issues}
-taxon_backbone_info %>% distinct(issues)
+```{r show_issues}
+backbone_info %>% distinct(issues)
 ```
 
-For improving readibility we rename the column `accepted` to `acceptedName` and add prefix `backbone_` or `checklist_` to all columns containing information from GBIF backbone or checklist respectively:
+Rename column `accepted` to `acceptedName` to improve readability:
 
-```{r add_prefix_backbone}
-taxon_backbone_info <- taxon_backbone_info %>% rename(acceptedName = accepted)
-colnames(taxon_backbone_info) <- paste0("backbone_", 
-                                        colnames(taxon_backbone_info))
-colnames(checklist_taxa) <- paste0("checklist_", 
-                                        colnames(checklist_taxa))
+```{r rename_column}
+backbone_info <- backbone_info %>% rename(acceptedName = accepted)
 ```
 
-We merge the information from checklists and GBIF backbone:
+Merge backbone information with checklist taxa:
 
-```{r}
-combined_taxon_info <- checklist_taxa %>%
-  left_join(taxon_backbone_info, 
-            by = c("checklist_nubKey" = "backbone_key"))
+```{r merge_backbone_info}
+checklist_taxa <- checklist_taxa %>% left_join(
+  backbone_info, 
+  by = c("nubKey" = "key"),
+)
 ```
 
-For readibility we rename `checklist_nubKey` (tendency of GBIF to deprecate the word _nubKey_) to `backbone_taxonKey`.
+Preview merged information:
 
-```{r checklist_nubKey_to_backbone_taxonKey}
-combined_taxon_info <- combined_taxon_info %>%
-  rename(backbone_taxonKey = checklist_nubKey)
-```
-
-Preview:
-
-```{r preview_merged_final}
-combined_taxon_info %>% head()
+```{r preview_merged}
+checklist_taxa %>% head()
 ```
 
 # Save output

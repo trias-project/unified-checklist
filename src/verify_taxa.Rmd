@@ -30,54 +30,38 @@ library(rgbif)          # To use GBIF services
 library(trias)          # To use functions developed for TrIAS
 ```
 
+# Read and filter checklist taxa
 
-# Load data
-
-Load checklist metadata (ranked by trust):
-
-```{r load_checklist_metadata}
-checklist_metadata <- read_tsv(checklist_metadata_file)
-checklist_metadata
-```
-
-Load taxa information as previously wrangled via checklists and GBIF backbone:
-
-```{r load_taxa}
-taxa_file <- here("data", "interim", "checklist_taxa.tsv")
-taxa <- read_tsv(taxa_file)
-```
-
-Preview:
+Read checklist taxa:
 
 ```{r}
-taxa %>% head(n = 10)
+checklist_taxa <- read_csv(here("data", "interim", "checklist_taxa_subset.csv"))
 ```
 
-Load verified taxa directly from spreadsheet in TrIAS Google Drive:
-
-```{r load_googlesheet, eval = FALSE}
-verified_synonyms <- gs_read(ss = "verification_spreadsheet",
-                             ws = "verification_sheet")
-```
-
-Or via text file:
-
-```{r load_text_file}
-verified_synonyms_file <- here("data", "output", "verified_taxa.tsv")
-verified_synonyms <- read_tsv(verified_synonyms_file, 
-                              col_types = cols(
-                                backbone_taxonKey = col_integer(),
-                                backbone_acceptedKey = col_integer(),
-                                date_added = col_date(),
-                                verification_key = col_character())
-                              )
-```
-
-Preview:
+Filter taxa on those with a valid distribution
 
 ```{r}
-verified_synonyms %>% head(n = 10)
+checklist_taxa <- checklist_taxa %>% filter(valid_distribution)
 ```
+
+# Read verification file
+
+This file is created/updated in previous runs of this document and manually verified by humans who add a `lump_key`.
+
+```{r}
+verification_file <- read_tsv(
+  here("data", "interim", "verification_file.csv"),
+  col_types = cols(
+    bb_key = col_integer(),
+    bb_acceptedKey = col_integer(),
+    date_added = col_date(),
+    lump_key = col_character()
+  )
+)
+```
+
+# Detect taxa to verify
+
 
 # Assign verified key(s) to taxa
 

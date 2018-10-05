@@ -189,27 +189,14 @@ backbone_info <- map_dfr(nub_keys, function(x) {
 Select columns of interest:
 
 ```{r select_backbone_columns}
-columns <- c("key", "scientificName", "species", "genus", "family", "order",
-             "class", "phylum", "kingdom", "rank", "speciesKey", 
-             "taxonomicStatus", "acceptedKey", "accepted", "issues")
-
-backbone_info <- backbone_info %>% select(one_of(columns))
+backbone_info <- backbone_info %>% select(
+  "key", "scientificName", "species", "genus", "family", "order", "class",
+  "phylum", "kingdom", "rank", "speciesKey", "taxonomicStatus", "acceptedKey", 
+  "accepted"
+)
 ```
 
-Convert the column `issues` from a list to a concatenated string and replace `"NULL"` by `NA`:
 
-```{r convert_column_issues}
-backbone_info <- backbone_info %>%
-  group_by_at(vars(-issues)) %>%
-  summarize(issues = str_c(issues, collapse = ",")) %>%
-  ungroup() %>%
-  mutate(issues = na_if(issues, "NULL"))
-```
-
-Show all issues present:
-
-```{r show_issues}
-backbone_info %>% distinct(issues)
 ```
 
 Rename column `accepted` to `acceptedName` to improve readability:

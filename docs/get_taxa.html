@@ -338,16 +338,15 @@ library(trias)          # To use functions developed for TrIAS</code></pre>
 #  &quot;3f5e930b-52a5-461d-87ec-26ecd66f14a3&quot;  # rinse-registry-checklist
 )</code></pre>
 <p>Get metadata for these checklists from GBIF:</p>
-<pre class="r"><code>checklists &lt;- map(checklist_keys, function(x) rgbif::datasets(uuid = x))
-
-# Create dataframe with core information
-checklists &lt;- checklists %&gt;% map_dfr(function(x) list(
-  datasetKey = x$data$key,
-  title = x$data$title,
-  modified = x$data$modified,
-  publisher = x$data$publishingOrganizationKey,
-  doi = x$data$doi)
-)</code></pre>
+<pre class="r"><code>checklists &lt;- checklist_keys %&gt;%
+  map(function(x) rgbif::datasets(uuid = x)) %&gt;%
+  map_df(function(x) list(
+    datasetKey = x$data$key,
+    title = x$data$title,
+    modified = x$data$modified,
+    publisher = x$data$publishingOrganizationKey,
+    doi = x$data$doi
+  ))</code></pre>
 <p>Show metadata to ensure we have the correct checklists:</p>
 <pre class="r"><code>checklists</code></pre>
 <div data-pagedtable="false">
@@ -362,8 +361,8 @@ checklists &lt;- checklists %&gt;% map_dfr(function(x) list(
 <h1><span class="header-section-number">2</span> Get taxa</h1>
 <p>Get taxa from these checklists from GBIF.</p>
 <p><strong>Note</strong>: here we get <em>checklist taxa</em>, not <em>GBIF backbone taxa</em>. To return <em>issues</em> for the taxa, we also need to use <code>name_usage()</code> rather than <code>name_lookup()</code>.</p>
-<pre class="r"><code>checklist_taxa &lt;- map_df(checklists$datasetKey, function(x) 
-  name_usage(
+<pre class="r"><code>checklist_taxa &lt;- checklists$datasetKey %&gt;%
+  map_df(function(x) name_usage(
     datasetKey = x,
     limit = 99999, # Should be more than total taxa for all checklists
     return = &quot;data&quot;
@@ -407,8 +406,8 @@ checklists &lt;- checklists %&gt;% map_dfr(function(x) list(
 <p>Get distribution information from GBIF and check if these meet the filter criteria. The result (<code>TRUE</code>/<code>FALSE</code>) is inserted as an extra column <code>valid_distribution</code>:</p>
 <pre class="r"><code>progress_bar &lt;- progress_estimated(nrow(checklist_taxa))
 
-checklist_taxa &lt;- checklist_taxa %&gt;% mutate(valid_distribution = map_lgl(
-  checklist_taxa$key, function(x) {
+checklist_taxa &lt;- checklist_taxa %&gt;% mutate(valid_distribution =
+  map_lgl(checklist_taxa$key, function(x) {
     progress_bar$tick()$print()
     trias::gbif_has_distribution(
       taxon_key = x,
@@ -426,8 +425,8 @@ checklist_taxa &lt;- checklist_taxa %&gt;% mutate(valid_distribution = map_lgl(
         &quot;IRREGULAR&quot;
       )
     )
-  }
-))</code></pre>
+  })
+)</code></pre>
 <p>Preview some taxa with not a single valid distribution (key can be used to verify manually on GBIF):</p>
 <pre class="r"><code>checklist_taxa %&gt;%
   filter(!valid_distribution) %&gt;%
@@ -442,8 +441,8 @@ checklist_taxa &lt;- checklist_taxa %&gt;% mutate(valid_distribution = map_lgl(
   rename(bb_key = nubKey) %&gt;%
   select(-bb_key, everything())</code></pre>
 </div>
-<div id="get-gbif-taxonomy-backbone-information" class="section level1">
-<h1><span class="header-section-number">4</span> Get GBIF taxonomy backbone information</h1>
+<div id="get-gbif-backbone-taxonomy-information" class="section level1">
+<h1><span class="header-section-number">4</span> Get GBIF backbone taxonomy information</h1>
 <p>A taxon can occur on more than one checklist. To identify these duplicates, we cannot rely on the <em>scientific name</em> as there might be spelling variations (e.g. with or without authorship) and it does not account for synonyms that should be lumped with the accepted taxon. To have <strong>unifying taxon identifiers across taxa</strong>, we rely on the <a href="https://doi.org/10.15468/39omei">GBIF backbone taxonomy</a>, to which every checklist taxon (re)published to GBIF is automatically matched. If a match in the backbone is found, the checklist taxon will have a <code>nubKey</code>.</p>
 <p>Filter taxa on having valid distribution and <code>nubKey</code> and create vector of unique <code>nubKey</code>s:</p>
 <pre class="r"><code>nub_keys &lt;- checklist_taxa %&gt;%
@@ -455,14 +454,14 @@ checklist_taxa &lt;- checklist_taxa %&gt;% mutate(valid_distribution = map_lgl(
 <p>Get GBIF backbone taxonomy information:</p>
 <pre class="r"><code>progress_bar &lt;- progress_estimated(length(nub_keys))
 
-backbone_info &lt;- map_dfr(nub_keys, function(x) {
+backbone_info &lt;- nub_keys %&gt;%
+  map_dfr(function(x) {
     progress_bar$tick()$print()
     rgbif::name_usage(
       key = x,
       return = &quot;data&quot;
     )
-  }
-)</code></pre>
+  })</code></pre>
 <p>Select columns of interest:</p>
 <pre class="r"><code>backbone_info &lt;- backbone_info %&gt;% select(
   &quot;key&quot;, &quot;scientificName&quot;, &quot;species&quot;, &quot;genus&quot;, &quot;family&quot;, &quot;order&quot;, &quot;class&quot;,

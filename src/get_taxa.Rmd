@@ -225,6 +225,20 @@ Preview merged information:
 checklist_taxa %>% head()
 ```
 
+Show summary per checklist:
+
+```{r show_summary}
+checklist_taxa %>%
+  group_by(datasetKey) %>%
+  summarize(
+    taxa = n(),
+    in_backbone_and_distribution = sum(valid_distribution & !is.na(bb_key)),
+    outside_distribution = sum(!valid_distribution),
+    outside_backbone = sum(valid_distribution & is.na(bb_key))
+  ) %>%
+  adorn_totals("row")
+```
+
 # Save to CSV:
 
 ```{r save_checklist_taxa}

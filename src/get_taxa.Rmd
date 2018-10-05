@@ -95,18 +95,8 @@ Select columns of interest and sort by taxon `key`:
 
 ```{r select_columns}
 checklist_taxa <- checklist_taxa %>%
-  select(key, scientificName, datasetKey, nubKey) %>%
+  select(key, scientificName, datasetKey, taxonID, nameType, habitats, nubKey) %>%
   arrange(key)
-```
-
-Rename columns:
-
-```{r rename_columns}
-checklist_taxa <- checklist_taxa %>% rename(
-  checklist_taxonKey = key,
-  checklist_scientificName = scientificName,
-  checklist_datasetKey = datasetKey
-)
 ```
 
 Preview checklist taxa:
@@ -135,8 +125,8 @@ Get distribution information from GBIF and check if these meet the filter criter
 ```{r check_distributions_from_gbif}
 progress_bar <- progress_estimated(nrow(checklist_taxa))
 
-checklist_taxa <- checklist_taxa %>% mutate(checklist_valid_distribution = map_lgl(
-    checklist_taxa$checklist_taxonKey, function(x) {
+checklist_taxa <- checklist_taxa %>% mutate(valid_distribution = map_lgl(
+    checklist_taxa$key, function(x) {
       progress_bar$tick()$print()
       trias::gbif_has_distribution(
         taxon_key = x,
@@ -162,7 +152,7 @@ Preview some taxa with not a single valid distribution (key can be used to verif
 
 ```{r preview_invalid_distribution}
 checklist_taxa %>%
-  filter(!checklist_valid_distribution) %>%
+  filter(!valid_distribution) %>%
   head()
 ```
 
@@ -174,7 +164,7 @@ Filter taxa on having valid distribution and `nubKey` and create vector of uniqu
 
 ```{r}
 nub_keys <- checklist_taxa %>%
-  filter(checklist_valid_distribution) %>%
+  filter(valid_distribution) %>%
   filter(is.finite(nubKey)) %>%
   select(nubKey) %>%
   distinct(nubKey) %>%

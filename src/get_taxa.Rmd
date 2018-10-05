@@ -23,7 +23,6 @@ Load libraries:
 
 ```{r}
 library(tidyverse)      # To do data science
-library(magrittr)       # To use %<>% pipes
 library(here)           # To find files
 library(janitor)        # To clean input data
 library(digest)         # To generate hashes
@@ -115,7 +114,7 @@ checklist_taxa <- checklist_taxa %>%
 Preview checklist taxa:
 
 ```{r}
-head(checklist_taxa)
+checklist_taxa %>% head()
 ```
 
 # Filter on distribution
@@ -215,6 +214,12 @@ backbone_info <- backbone_info %>% select(
   "phylum", "kingdom", "rank", "speciesKey", "taxonomicStatus", "acceptedKey", 
   "accepted"
 )
+```
+
+Remove duplicates (caused by [this bug](https://github.com/ropensci/rgbif/issues/324)):
+
+```{r}
+backbone_info <- backbone_info %>% distinct()
 ```
 
 Rename `accepted` to `acceptedName`:

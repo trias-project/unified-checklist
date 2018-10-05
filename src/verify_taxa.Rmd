@@ -46,7 +46,7 @@ checklist_taxa <- checklist_taxa %>% filter(valid_distribution)
 
 # Read verification file
 
-This file is created/updated in previous runs of this document and manually verified by humans who add a `lump_key`.
+This file is created/updated in previous runs of this document and manually verified by humans who add a `verification_key`.
 
 ```{r}
 verification_file <- read_tsv(
@@ -55,7 +55,7 @@ verification_file <- read_tsv(
     bb_key = col_integer(),
     bb_acceptedKey = col_integer(),
     date_added = col_date(),
-    lump_key = col_character()
+    verification_key = col_character()
   )
 )
 ```
@@ -68,20 +68,20 @@ We rely on the [GBIF backbone taxonomy](https://doi.org/10.15468/39omei) to dete
 
 * Detection: `bb_key` is `NA`
 * Includes: checklist taxa that could not be matched to the GBIF backbone taxonomy for a variety of reasons. All these will also have [`BACKBONE_MATCH_NONE`](http://gbif.github.io/parsers/apidocs/org/gbif/api/vocabulary/NameUsageIssue.html) in `issues`.
-* Verification action: try to manually find a matching taxon in the GBIF backbone taxonomy and add its `key` to `lump_key`. The match could consist of multiple `key`s  for e.g. hybrid formulas.
+* Verification action: try to manually find a matching taxon in the GBIF backbone taxonomy and add its `key` to `verification_key`. The match could consist of multiple `key`s  for e.g. hybrid formulas.
 
 **Synonyms**
 
 * Detection: `bb_acceptedKey` is not `NA`
 * Includes: checklist taxa that are considered synonyms of accepted taxa by the GBIF backbone taxonomy. This lumping is often correct, but it is good to verify if we agree.
-* Verification action: If we agree with the lumping, copy `bb_acceptedKey` to `lump_key`. If we do not agree with the lumping, copy the taxon `bb_key` to `lump_key` (i.e. that taxon is considered its own entity).
+* Verification action: If we agree with the lumping, copy `bb_acceptedKey` to `verification_key`. If we do not agree with the lumping, copy the taxon `bb_key` to `verification_key` (i.e. that taxon is considered its own entity).
 
-In all other cases, we can accept the information returned by the GBIF backbone taxonomy (i.e. we consider the `bb_key` as the `lump_key`).
+In all other cases, we can accept the information returned by the GBIF backbone taxonomy (i.e. we consider the `bb_key` as the `verification_key`).
 
-Add and set `lump_key`:
+Add and set `verification_key`:
 
 ```{r}
-checklist_taxa <- checklist_taxa %>% mutate(lump_key = case_when(
+checklist_taxa <- checklist_taxa %>% mutate(verification_key = case_when(
   is.na(bb_key) ~ NA_character_,          # No backbone match (no bb_key)
   !is.na(bb_acceptedKey) ~ NA_character_, # Synonyms (have bb_acceptedKey)
   TRUE ~ as.character(bb_key)             # In all other cases, use the bb_key
@@ -92,7 +92,7 @@ Number of taxa to verify:
 
 ```{r}
 checklist_taxa %>%
-  filter(is.na(lump_key)) %>%
+  filter(is.na(verification_key)) %>%
   nrow()
 ```
 

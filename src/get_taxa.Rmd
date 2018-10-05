@@ -23,6 +23,7 @@ Load libraries:
 
 ```{r}
 library(tidyverse)      # To do data science
+library(magrittr)       # To use %<>% pipes
 library(here)           # To find files
 library(janitor)        # To clean input data
 library(digest)         # To generate hashes
@@ -51,8 +52,7 @@ checklist_keys <- c(
 Get metadata for these checklists from GBIF:
 
 ```{r get_checklist_metadata_from_gbif}
-checklists <- checklist_keys %>%
-  map(function(x) rgbif::datasets(uuid = x)) %>%
+checklists <- map(checklist_keys, function(x) rgbif::datasets(uuid = x)) %>%
   map_df(function(x) list(
     datasetKey = x$data$key,
     title = x$data$title,
@@ -81,8 +81,7 @@ Get taxa from these checklists from GBIF.
 **Note**: here we get _checklist taxa_, not _GBIF backbone taxa_.
 
 ```{r get_checklist_taxa_from_gbif}
-checklist_taxa <- checklists$datasetKey %>%
-  map_df(function(x) name_usage(
+checklist_taxa <- map_df(checklists$datasetKey, function(x) name_usage(
     datasetKey = x,
     limit = 99999, # Should be more than total taxa for all checklists
     return = "data"
@@ -93,7 +92,7 @@ checklist_taxa <- checklists$datasetKey %>%
 Select columns of interest and sort by taxon `key`:
 
 ```{r}
-checklist_taxa <- checklist_taxa %>%
+checklist_taxa %<>%
   select(key, scientificName, datasetKey, taxonID, nameType, issues, nubKey) %>%
   arrange(key)
 ```
@@ -101,7 +100,7 @@ checklist_taxa <- checklist_taxa %>%
 Convert the column `issues` from a list to a concatenated string:
 
 ```{r}
-checklist_taxa <- checklist_taxa %>%
+checklist_taxa %<>%
   group_by_at(vars(-issues)) %>%
   summarize(issues = str_c(issues, collapse = ",")) %>%
   ungroup() %>%
@@ -137,27 +136,16 @@ Get distribution information from GBIF and check if these meet the filter criter
 ```{r get_distribution_info_from_gbif}
 progress_bar <- progress_estimated(nrow(checklist_taxa))
 
-checklist_taxa <- checklist_taxa %>% mutate(valid_distribution =
-  map_lgl(checklist_taxa$key, function(x) {
+checklist_taxa %<>%
+  mutate(valid_distribution = map_lgl(checklist_taxa$key, function(x) {
     progress_bar$tick()$print()
     trias::gbif_has_distribution(
       taxon_key = x,
       country = "BE",
-      establishmentMeans = c(
-        "INTRODUCED",
-        "NATURALISED", 
-        "INVASIVE",
-        "ASSISTED COLONISATION"
-      ),
-      status = c(
-        "PRESENT",
-        "COMMMON",
-        "RARE",
-        "IRREGULAR"
-      )
+      establishmentMeans = c("INTRODUCED", "NATURALISED", "INVASIVE", "ASSISTED COLONISATION"),
+      status = c("PRESENT", "COMMMON", "RARE", "IRREGULAR")
     )
-  })
-)
+  }))
 ```
 
 Preview some taxa with not a single valid distribution (key can be used to verify manually on GBIF):
@@ -171,7 +159,7 @@ checklist_taxa %>%
 Rename `nubKey` to `bb_key` and move to the end:
 
 ```{r}
-checklist_taxa <- checklist_taxa %>%
+checklist_taxa %<>%
   rename(bb_key = nubKey) %>%
   select(-bb_key, everything())
 ```
@@ -196,8 +184,7 @@ Get GBIF backbone taxonomy information:
 ```{r get_backbone_info_from_gbif}
 progress_bar <- progress_estimated(length(nub_keys))
 
-backbone_info <- nub_keys %>%
-  map_dfr(function(x) {
+backbone_info <- map_dfr(nub_keys, function(x) {
     progress_bar$tick()$print()
     rgbif::name_usage(
       key = x,
@@ -209,23 +196,24 @@ backbone_info <- nub_keys %>%
 Select columns of interest:
 
 ```{r}
-backbone_info <- backbone_info %>% select(
-  "key", "scientificName", "species", "genus", "family", "order", "class",
-  "phylum", "kingdom", "rank", "speciesKey", "taxonomicStatus", "acceptedKey", 
-  "accepted"
-)
+backbone_info %<>%
+  select(
+    "key", "scientificName", "species", "genus", "family", "order", "class",
+    "phylum", "kingdom", "rank", "speciesKey", "taxonomicStatus", "acceptedKey", 
+    "accepted"
+  )
 ```
 
 Remove duplicates (caused by [this bug](https://github.com/ropensci/rgbif/issues/324)):
 
 ```{r}
-backbone_info <- backbone_info %>% distinct()
+backbone_info %<>% distinct()
 ```
 
 Rename `accepted` to `acceptedName`:
 
 ```{r}
-backbone_info <- backbone_info %>% rename(acceptedName = accepted)
+backbone_info %<>% rename(acceptedName = accepted)
 ```
 
 Add prefix `bb_` to column names:
@@ -237,10 +225,11 @@ colnames(backbone_info) <- paste0("bb_", colnames(backbone_info))
 Merge backbone information with checklist taxa:
 
 ```{r}
-checklist_taxa <- checklist_taxa %>% left_join(
-  backbone_info, 
-  by = "bb_key"
-)
+checklist_taxa %<>%
+  left_join(
+    backbone_info, 
+    by = "bb_key"
+  )
 ```
 
 Preview merged information:

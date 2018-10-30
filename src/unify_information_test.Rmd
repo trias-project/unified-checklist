@@ -83,7 +83,7 @@ distribution_unified <- distribution_unified %>%
   summarize(
     startYear = min(startYear, na.rm = TRUE),
     endYear = max(endYear, na.rm = TRUE),
-    taxonID = paste(sort(unique(taxonID)), collapse = ",")
+    source_taxonID = paste(sort(unique(taxonID)), collapse = ",")
   )
 ```
 
@@ -103,9 +103,9 @@ distribution_unified <- distribution_unified %>%
   summarize(
     startYear = first(startYear),
     lastYear = first(endYear),
-    checklist = first(checklist),
-    taxonID = first(taxonID)
   ) 
+    source_checklist = first(checklist),
+    source_taxonID = first(source_taxonID)
 ```
 
 Save to CSV:
@@ -151,7 +151,7 @@ species_profile_unified <- species_profile_unified %>%
     isMarine = first(isMarine),
     isFreshwater = first(isFreshwater),
     isTerrestrial = first(isTerrestrial),
-    taxonID = first(taxonID)
+    source_taxonID = first(taxonID)
   )
 ```
 
@@ -172,7 +172,8 @@ species_profile_unified <- species_profile_unified %>%
     isMarine = first(isMarine),
     isFreshwater = first(isFreshwater),
     isTerrestrial = first(isTerrestrial),
-    taxonID = first(taxonID)
+    source_checklist = first(checklist),
+    source_taxonID = first(source_taxonID)
   )
 ```
 

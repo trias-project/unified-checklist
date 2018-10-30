@@ -1,4 +1,4 @@
-verifiedKey,startYear,lastYear,checklist,taxonID
+verifiedKey,startYear,lastYear,source_checklist,source_taxonID
 A,2008,2011,X,"1,3"
 B,2004,2010,X,2
 C,2006,2010,Y,5

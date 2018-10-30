@@ -183,6 +183,12 @@ species_profile_unified <- species_profile_unified %>%
   arrange(verifiedKey)
 ```
 
+Save to CSV:
+
+```{r}
+write_csv(species_profile_unified, here("data", "test", "output", "species_profile_unified.csv"), na = "")
+```
+
   )
 ```
 

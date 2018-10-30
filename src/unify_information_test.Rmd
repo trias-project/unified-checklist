@@ -189,6 +189,75 @@ Save to CSV:
 write_csv(species_profile_unified, here("data", "test", "output", "species_profile_unified.csv"), na = "")
 ```
 
+# Unify descriptions
+
+Filter descriptions:
+
+```{r}
+descriptions_unified <- description %>%
+  
+  # Filter on non-NA values
+  filter(
+    !is.na(value)
   )
 ```
 
+Select unique descriptions (within their type) within a checklist:
+
+```{r}
+descriptions_unified <- descriptions_unified %>%
+
+  # Join species profile with taxon to get verifiedKey and checklist order
+  left_join(taxon, on = taxonID) %>%
+  
+  # Group by type and verifiedKey within checklist
+  group_by(
+    checklist,
+    checklist_order,
+    type,
+    verifiedKey
+  ) %>%
+  
+  # Choose distinct value for that type and verifiedKey
+  # If identical values exist within that grouping, distinct() will take 
+  # most trustworthy (first one)
+  distinct(
+    value
+  )
+```
+
+Select unique descriptions (within their type) across checklists:
+
+```{r}
+descriptions_unified <- descriptions_unified %>%
+  
+  # Sort by checklist order (trustworthiness)
+  arrange(checklist_order) %>%
+  
+  # Group by type and verifiedKey across checklists
+  group_by(
+    type,
+    verifiedKey
+  ) %>%
+  
+  # Choose distinct value for that type and verifiedKey
+  distinct(
+    value,
+    .keep_all = TRUE
+  ) %>%
+
+  # Move verifiedKey to beginning and drop checklist_order
+  select(verifiedKey, everything(), -checklist_order) %>%
+  
+  # Rename checklist
+  rename(source_checklist = checklist) %>%
+  
+  # Sort by verifiedKey and type
+  arrange(verifiedKey, type)
+```
+
+Save to CSV:
+
+```{r}
+write_csv(descriptions_unified, here("data", "test", "output", "descriptions_unified.csv"), na = "")
+```

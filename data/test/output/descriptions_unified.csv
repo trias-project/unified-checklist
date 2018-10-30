@@ -1,0 +1,10 @@
+verifiedKey,type,value,source_checklist
+A,native range,AZ,X
+A,native range,EU,X
+A,pathway,X:B,X
+A,pathway,Y,X
+A,pathway,X,X
+A,pathway,Z:A,Y
+A,pathway,Z:B,Y
+B,native range,AZ,X
+B,pathway,X,X

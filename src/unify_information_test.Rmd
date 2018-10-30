@@ -58,8 +58,8 @@ distribution_unified <- distribution %>%
   
   # Filter on non-native species present in (at least part of) Belgium
   filter(
-    # country = "BE",
-    establishmentMeans %in% c("INTRODUCED", "NATURALISED", "INVASIVE", "ASSISTED COLONISATION"),
+    # country = "BE" &
+    establishmentMeans %in% c("INTRODUCED", "NATURALISED", "INVASIVE", "ASSISTED COLONISATION")
     # status %in% c("PRESENT", "COMMON", "RARE", "IRREGULAR")
   )
 ```
@@ -125,8 +125,8 @@ species_profile_unified <- species_profile %>%
   # This is rare: normally all attributes are populated or there just isn't a
   # species profile for that species
   filter(
-    !is.na(isMarine),
-    !is.na(isFreshwater),
+    !is.na(isMarine) &
+    !is.na(isFreshwater) &
     !is.na(isTerrestrial)
   )
 ```

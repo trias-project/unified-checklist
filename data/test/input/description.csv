@@ -1,11 +1,11 @@
 taxonID,type,value
 1,native range,AZ
 1,native range,EU
-1,pathway,X
+1,pathway,X:B
 1,pathway,Y
 2,native range,AZ
 2,pathway,X
 3,pathway,X
 4,pathway,X
-4,pathway,Z
-4,pathway,Z
+4,pathway,Z:A
+4,pathway,Z:B

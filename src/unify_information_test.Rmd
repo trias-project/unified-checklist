@@ -35,7 +35,7 @@ library(trias)          # To use functions developed for TrIAS
 ```{r}
 taxon <- read_csv(here("data", "test", "input", "taxon.csv"))
 distribution <- read_csv(here("data", "test", "input", "distribution.csv"))
-speciesprofile <- read_csv(here("data", "test", "input", "speciesprofile.csv"))
+species_profile <- read_csv(here("data", "test", "input", "speciesprofile.csv"))
 description <- read_csv(here("data", "test", "input", "description.csv"))
 ```
 
@@ -114,5 +114,65 @@ Save to CSV:
 write_csv(distribution_unified, here("data", "test", "output", "distribution_unified.csv"), na = "")
 ```
 
+# Unify species profile
+
+Filter species profiles:
+
+```{r}
+species_profile_unified <- species_profile %>%
+  
+  # Remove species profiles that contain NA for any of the attributes
+  # This is rare: normally all attributes are populated or there just isn't a
+  # species profile for that species
+  filter(
+    !is.na(isMarine),
+    !is.na(isFreshwater),
+    !is.na(isTerrestrial)
+  )
+```
+
+Choose a single species profile within a checklist:
+
+```{r}
+species_profile_unified <- species_profile_unified %>%
+
+  # Join species profile with taxon to get verifiedKey and checklist order
+  left_join(taxon, on = taxonID) %>%
+  
+  # Group by verifiedKey within checklist
+  group_by(
+    checklist,
+    checklist_order,
+    verifiedKey
+  ) %>%
+  
+  # Take first species profile and note taxonID
+  summarize(
+    isMarine = first(isMarine),
+    isFreshwater = first(isFreshwater),
+    isTerrestrial = first(isTerrestrial),
+    taxonID = first(taxonID)
+  )
+```
+
+Choose a single species profile across checklists:
+
+```{r}
+species_profile_unified <- species_profile_unified %>%
+  
+  # Sort by checklist order (trustworthiness)
+  arrange(checklist_order) %>%
+  
+  # Group by verifiedKey (across checklists)
+  group_by(verifiedKey) %>%
+  
+  # Select species profile of most trustworthy checklist (first one)
+  # and note that checklist and its taxonID
+  summarize(
+    isMarine = first(isMarine),
+    isFreshwater = first(isFreshwater),
+    isTerrestrial = first(isTerrestrial),
+    taxonID = first(taxonID)
+  )
 ```
 

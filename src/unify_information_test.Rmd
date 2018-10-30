@@ -95,7 +95,7 @@ distribution_unified <- distribution_unified %>%
   # Sort by checklist order (trustworthiness)
   arrange(checklist_order) %>%
   
-  # Group by verifiedKey (across checklists)
+  # Group by verifiedKey across checklists
   group_by(verifiedKey) %>%
   
   # Select year of most trustworthy checklist (first one)
@@ -103,9 +103,12 @@ distribution_unified <- distribution_unified %>%
   summarize(
     startYear = first(startYear),
     lastYear = first(endYear),
-  ) 
     source_checklist = first(checklist),
     source_taxonID = first(source_taxonID)
+  ) %>%
+
+  # Sort by verifiedKey
+  arrange(verifiedKey)
 ```
 
 Save to CSV:
@@ -163,7 +166,7 @@ species_profile_unified <- species_profile_unified %>%
   # Sort by checklist order (trustworthiness)
   arrange(checklist_order) %>%
   
-  # Group by verifiedKey (across checklists)
+  # Group by verifiedKey across checklists
   group_by(verifiedKey) %>%
   
   # Select species profile of most trustworthy checklist (first one)
@@ -174,6 +177,12 @@ species_profile_unified <- species_profile_unified %>%
     isTerrestrial = first(isTerrestrial),
     source_checklist = first(checklist),
     source_taxonID = first(source_taxonID)
+  ) %>%
+
+  # Sort by verifiedKey
+  arrange(verifiedKey)
+```
+
   )
 ```
 

@@ -51,13 +51,26 @@ taxon <- taxon %>%
 
 # Unify distribution
 
-Choose a single distribution within a checklist (min/max year):
+Filter distributions:
 
 ```{r}
-unified_distribution <- distribution %>%
+distribution_unified <- distribution %>%
+  
+  # Filter on non-native species present in (at least part of) Belgium
+  filter(
+    # country = "BE",
+    establishmentMeans %in% c("INTRODUCED", "NATURALISED", "INVASIVE", "ASSISTED COLONISATION"),
+    # status %in% c("PRESENT", "COMMON", "RARE", "IRREGULAR")
+  )
+```
+
+Choose a single distribution within a checklist:
+
+```{r}
+distribution_unified <- distribution_unified %>%
 
   # Join distribution with taxon to get verifiedKey and checklist order
-  right_join(taxon, on = taxonID) %>%
+  left_join(taxon, on = taxonID) %>%
   
   # Group by verifiedKey within checklist
   group_by(
@@ -74,10 +87,10 @@ unified_distribution <- distribution %>%
   )
 ```
 
-Choose a single distribution from the checklists (first):
+Choose a single distribution across checklists:
 
 ```{r}
-unified_distribution <- unified_distribution %>%
+distribution_unified <- distribution_unified %>%
   
   # Sort by checklist order (trustworthiness)
   arrange(checklist_order) %>%
@@ -85,7 +98,8 @@ unified_distribution <- unified_distribution %>%
   # Group by verifiedKey (across checklists)
   group_by(verifiedKey) %>%
   
-  # Take year of most trustworthy checklist, note checklist and taken taxonID(s)
+  # Select year of most trustworthy checklist (first one)
+  # and note that checklist and its taxonID(s)
   summarize(
     startYear = first(startYear),
     lastYear = first(endYear),
@@ -97,6 +111,8 @@ unified_distribution <- unified_distribution %>%
 Save to CSV:
 
 ```{r}
-write_csv(unified_distribution, here("data", "test", "output", "distribution_unified.csv"), na = "")
+write_csv(distribution_unified, here("data", "test", "output", "distribution_unified.csv"), na = "")
+```
+
 ```
 

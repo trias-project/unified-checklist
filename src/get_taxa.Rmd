@@ -143,7 +143,7 @@ checklist_taxa %<>%
       taxon_key = x,
       country = "BE",
       establishmentMeans = c("INTRODUCED", "NATURALISED", "INVASIVE", "ASSISTED COLONISATION"),
-      status = c("PRESENT", "COMMMON", "RARE", "IRREGULAR")
+      status = c("PRESENT", "COMMON", "RARE", "IRREGULAR")
     )
   }))
 ```

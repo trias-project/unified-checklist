@@ -1,0 +1,102 @@
+---
+title: "Unify taxa"
+author:
+- Peter Desmet
+- Damiano Oldoni
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    df_print: paged
+    number_sections: true
+    toc: true
+    toc_depth: 3
+    toc_float: true
+---
+
+In this document we unify information for each verified taxon.
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+```
+
+Load libraries:
+
+```{r}
+library(tidyverse)      # To do data science
+library(here)           # To find files
+library(janitor)        # To clean input data
+library(digest)         # To generate hashes
+library(rgbif)          # To use GBIF services
+library(trias)          # To use functions developed for TrIAS
+```
+
+# Read data
+
+```{r}
+taxon <- read_csv(here("data", "test", "input", "taxon.csv"))
+distribution <- read_csv(here("data", "test", "input", "distribution.csv"))
+speciesprofile <- read_csv(here("data", "test", "input", "speciesprofile.csv"))
+description <- read_csv(here("data", "test", "input", "description.csv"))
+```
+
+# Assign checklist order
+
+```{r}
+checklist_keys <- c("X", "Y")
+
+taxon <- taxon %>%
+  rowwise() %>%
+  mutate(checklist_order = which(checklist_keys == checklist)[1])
+```
+
+# Unify distribution
+
+Choose a single distribution within a checklist (min/max year):
+
+```{r}
+unified_distribution <- distribution %>%
+
+  # Join distribution with taxon to get verifiedKey and checklist order
+  right_join(taxon, on = taxonID) %>%
+  
+  # Group by verifiedKey within checklist
+  group_by(
+    checklist,
+    checklist_order,
+    verifiedKey
+  ) %>%
+  
+  # Take earliest year, latest year and note taxonIDs
+  summarize(
+    startYear = min(startYear, na.rm = TRUE),
+    endYear = max(endYear, na.rm = TRUE),
+    taxonID = paste(sort(unique(taxonID)), collapse = ",")
+  )
+```
+
+Choose a single distribution from the checklists (first):
+
+```{r}
+unified_distribution <- unified_distribution %>%
+  
+  # Sort by checklist order (trustworthiness)
+  arrange(checklist_order) %>%
+  
+  # Group by verifiedKey (across checklists)
+  group_by(verifiedKey) %>%
+  
+  # Take year of most trustworthy checklist, note checklist and taken taxonID(s)
+  summarize(
+    startYear = first(startYear),
+    lastYear = first(endYear),
+    checklist = first(checklist),
+    taxonID = first(taxonID)
+  ) 
+```
+
+Save to CSV:
+
+```{r}
+write_csv(unified_distribution, here("data", "test", "output", "distribution_unified.csv"), na = "")
+```
+

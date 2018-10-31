@@ -52,7 +52,7 @@ taxon_keys <- taxa %>%
 ```{r get_distributions_from_gbif}
 progress_bar <- progress_estimated(length(taxon_keys))
 
-distribution <- map_dfr(checklist_taxon_keys, function(x) {
+distributions <- map_dfr(taxon_keys, function(x) {
   progress_bar$tick()$print()
   rgbif::name_usage(
     key = x,
@@ -65,7 +65,7 @@ distribution <- map_dfr(checklist_taxon_keys, function(x) {
 Save to CSV:
 
 ```{r}
-write_csv(distribution, here("data", "interim", "distribution.csv"), na = "")
+write_csv(distributions, here("data", "interim", "distributions.csv"), na = "")
 ```
 
 # Get species profiles
@@ -73,7 +73,7 @@ write_csv(distribution, here("data", "interim", "distribution.csv"), na = "")
 ```{r get_speciesprofiles_from_gbif}
 progress_bar <- progress_estimated(length(taxon_keys))
 
-speciesprofile <- map_dfr(checklist_taxon_keys, function(x) {
+speciesprofiles <- map_dfr(taxon_keys, function(x) {
   progress_bar$tick()$print()
   rgbif::name_usage(
     key = x,
@@ -86,7 +86,7 @@ speciesprofile <- map_dfr(checklist_taxon_keys, function(x) {
 Save to CSV:
 
 ```{r}
-write_csv(speciesprofile, here("data", "interim", "speciesprofile.csv"), na = "")
+write_csv(speciesprofiles, here("data", "interim", "speciesprofiles.csv"), na = "")
 ```
 
 # Get descriptions
@@ -94,7 +94,7 @@ write_csv(speciesprofile, here("data", "interim", "speciesprofile.csv"), na = ""
 ```{r get_descriptions_from_gbif}
 progress_bar <- progress_estimated(length(taxon_keys))
 
-description <- map_dfr(checklist_taxon_keys, function(x) {
+descriptions <- map_dfr(taxon_keys, function(x) {
   progress_bar$tick()$print()
   rgbif::name_usage(
     key = x,
@@ -107,5 +107,5 @@ description <- map_dfr(checklist_taxon_keys, function(x) {
 Save to CSV:
 
 ```{r}
-write_csv(description, here("data", "interim", "description.csv"), na = "")
+write_csv(descriptions, here("data", "interim", "descriptions.csv"), na = "")
 ```

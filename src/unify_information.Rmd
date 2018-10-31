@@ -1,5 +1,5 @@
 ---
-title: "Unify taxa"
+title: "Unify related information"
 author:
 - Peter Desmet
 - Damiano Oldoni
@@ -13,7 +13,7 @@ output:
     toc_float: true
 ---
 
-In this document we unify information for each verified taxon.
+In this document we unify related information for each verified taxon.
 
 ```{r setup, include = FALSE}
 knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)

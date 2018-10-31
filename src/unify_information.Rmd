@@ -33,11 +33,11 @@ library(trias)          # To use functions developed for TrIAS
 # Read data
 
 ```{r}
-distribution <- read_csv(here("data", "test", "input", "distribution.csv"))
 speciesprofile <- read_csv(here("data", "test", "input", "speciesprofile.csv"))
 description <- read_csv(here("data", "test", "input", "description.csv"))
 checklists <- read_csv(here("data", "raw", "checklists.csv"))
 taxa <- read_csv(here("data", "raw", "taxa.csv"))
+distributions <- read_csv(here("data", "raw", "distributions.csv"))
 ```
 
 # Assign checklist order
@@ -71,10 +71,34 @@ taxa <- taxa %>%
 
 # Unify distribution
 
-Filter distributions:
+Parse `temporal` (eventDate) information:
 
 ```{r}
 distributions_unified <- distributions %>%
+  
+  # Split temporal on "/" into startYear and endYear
+  # If temporal only contains a single year, then endYear will be empty
+  separate(
+    temporal,
+    into = c("startYear", "endYear"),
+    sep = "/",
+    remove = FALSE,
+    convert = TRUE,
+    extra = "drop",
+    fill = "right"
+  ) %>%
+  
+  # Only keep the first 4 characters: 1968-11-21 -> 1968
+  mutate(startYear = str_sub(startYear, 1, 4), endYear = str_sub(endYear, 1, 4)) %>%
+  
+  # If endYear is empty (no range), populate it with startYear: 2018 & 2018
+  mutate(endYear = if_else(is.na(endYear), startYear, endYear))
+```
+
+Filter distributions:
+
+```{r}
+distributions_unified <- distributions_unified %>%
   
   # Filter on non-native species present in (at least part of) Belgium
   filter(
@@ -89,13 +113,16 @@ Choose a single distribution within a checklist:
 ```{r}
 distributions_unified <- distributions_unified %>%
 
-  # Join distribution with taxon to get verifiedKey and checklist order
-  left_join(taxon, on = taxonID) %>%
+  # Join distribution with taxon to get verifiedKey and checklistOrder
+  left_join(taxa, on = taxonKey) %>%
+  
+  # Remove records that have no verifiedKey (e.g. one wasn't assigned yet)
+  filter(!is.na(verifiedKey)) %>%
   
   # Group by verifiedKey within checklist
   group_by(
-    checklist,
-    checklist_order,
+    datasetKey,
+    checklistOrder,
     verifiedKey
   ) %>%
   
@@ -103,7 +130,7 @@ distributions_unified <- distributions_unified %>%
   summarize(
     startYear = min(startYear, na.rm = TRUE),
     endYear = max(endYear, na.rm = TRUE),
-    source_taxonID = paste(sort(unique(taxonID)), collapse = ",")
+    sourceTaxa = paste(sort(unique(taxonKey)), collapse = ",")
   )
 ```
 
@@ -113,18 +140,18 @@ Choose a single distribution across checklists:
 distributions_unified <- distributions_unified %>%
   
   # Sort by checklist order (trustworthiness)
-  arrange(checklist_order) %>%
+  arrange(checklistOrder) %>%
   
   # Group by verifiedKey across checklists
   group_by(verifiedKey) %>%
   
   # Select year of most trustworthy checklist (first one)
-  # and note that checklist and its taxonID(s)
+  # and note that checklist and its taxonKey(s)
   summarize(
     startYear = first(startYear),
     lastYear = first(endYear),
-    source_checklist = first(checklist),
-    source_taxonID = first(source_taxonID)
+    sourceChecklist = first(datasetKey),
+    sourceTaxa = first(sourceTaxa)
   ) %>%
 
   # Sort by verifiedKey
@@ -134,7 +161,7 @@ distributions_unified <- distributions_unified %>%
 Save to CSV:
 
 ```{r}
-write_csv(distributions_unified, here("data", "test", "output", "distributions_unified.csv"), na = "")
+write_csv(distributions_unified, here("data", "unified", "distributions.csv"), na = "")
 ```
 
 # Unify species profile

@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>National, unified checklist of alien species in Belgium</title>
+  <meta name="description" content="National, unified checklist of alien species in Belgium">
+  <meta name="generator" content="bookdown 0.7 and GitBook 2.6.7">
+
+  <meta property="og:title" content="National, unified checklist of alien species in Belgium" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  <meta name="github-repo" content="enram/vp-processing" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="National, unified checklist of alien species in Belgium" />
+  
+  
+  
+
+<meta name="author" content="Peter Desmet, Damiano Oldoni">
+
+
+<meta name="date" content="2018-10-31">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="get_information.html">
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+<link href="libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
+<script src="libs/pagedtable-1.1/js/pagedtable.js"></script>
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Intro</a></li>
+<li class="chapter" data-level="2" data-path="get_taxa.html"><a href="get_taxa.html"><i class="fa fa-check"></i><b>2</b> Get taxa from checklists</a><ul>
+<li class="chapter" data-level="2.1" data-path="get_taxa.html"><a href="get_taxa.html#choose-checklists"><i class="fa fa-check"></i><b>2.1</b> Choose checklists</a></li>
+<li class="chapter" data-level="2.2" data-path="get_taxa.html"><a href="get_taxa.html#get-taxa"><i class="fa fa-check"></i><b>2.2</b> Get taxa</a></li>
+<li class="chapter" data-level="2.3" data-path="get_taxa.html"><a href="get_taxa.html#filter-on-distribution"><i class="fa fa-check"></i><b>2.3</b> Filter on distribution</a></li>
+<li class="chapter" data-level="2.4" data-path="get_taxa.html"><a href="get_taxa.html#get-gbif-backbone-taxonomy-information"><i class="fa fa-check"></i><b>2.4</b> Get GBIF backbone taxonomy information</a></li>
+<li class="chapter" data-level="2.5" data-path="get_taxa.html"><a href="get_taxa.html#show-summary-and-save"><i class="fa fa-check"></i><b>2.5</b> Show summary and save</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="get_information.html"><a href="get_information.html"><i class="fa fa-check"></i><b>3</b> Get related information</a><ul>
+<li class="chapter" data-level="3.1" data-path="get_information.html"><a href="get_information.html#read-data"><i class="fa fa-check"></i><b>3.1</b> Read data</a></li>
+<li class="chapter" data-level="3.2" data-path="get_information.html"><a href="get_information.html#filter-checklist-taxa"><i class="fa fa-check"></i><b>3.2</b> Filter checklist taxa</a></li>
+<li class="chapter" data-level="3.3" data-path="get_information.html"><a href="get_information.html#get-distributions"><i class="fa fa-check"></i><b>3.3</b> Get distributions</a></li>
+<li class="chapter" data-level="3.4" data-path="get_information.html"><a href="get_information.html#get-species-profiles"><i class="fa fa-check"></i><b>3.4</b> Get species profiles</a></li>
+<li class="chapter" data-level="3.5" data-path="get_information.html"><a href="get_information.html#get-descriptions"><i class="fa fa-check"></i><b>3.5</b> Get descriptions</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="unify_information.html"><a href="unify_information.html"><i class="fa fa-check"></i><b>4</b> Unify related information</a><ul>
+<li class="chapter" data-level="4.1" data-path="unify_information.html"><a href="unify_information.html#read-data-1"><i class="fa fa-check"></i><b>4.1</b> Read data</a></li>
+<li class="chapter" data-level="4.2" data-path="unify_information.html"><a href="unify_information.html#assign-checklist-order"><i class="fa fa-check"></i><b>4.2</b> Assign checklist order</a></li>
+<li class="chapter" data-level="4.3" data-path="unify_information.html"><a href="unify_information.html#unify-distribution"><i class="fa fa-check"></i><b>4.3</b> Unify distribution</a></li>
+<li class="chapter" data-level="4.4" data-path="unify_information.html"><a href="unify_information.html#unify-species-profiles"><i class="fa fa-check"></i><b>4.4</b> Unify species profiles</a></li>
+<li class="chapter" data-level="4.5" data-path="unify_information.html"><a href="unify_information.html#unify-descriptions"><i class="fa fa-check"></i><b>4.5</b> Unify descriptions</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">National, unified checklist of alien species in Belgium</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="unify-related-information" class="section level1">
+<h1><span class="header-section-number">4</span> Unify related information</h1>
+<p>In this chapter we unify related information for each verified taxon.</p>
+<p>Load libraries:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(tidyverse)      <span class="co"># To do data science</span>
+<span class="kw">library</span>(here)           <span class="co"># To find files</span>
+<span class="kw">library</span>(janitor)        <span class="co"># To clean input data</span>
+<span class="kw">library</span>(digest)         <span class="co"># To generate hashes</span>
+<span class="kw">library</span>(rgbif)          <span class="co"># To use GBIF services</span>
+<span class="kw">library</span>(trias)          <span class="co"># To use functions developed for TrIAS</span></code></pre></div>
+<div id="read-data-1" class="section level2">
+<h2><span class="header-section-number">4.1</span> Read data</h2>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">checklists &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="kw">here</span>(<span class="st">&quot;data&quot;</span>, <span class="st">&quot;raw&quot;</span>, <span class="st">&quot;checklists.csv&quot;</span>))
+taxa &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="kw">here</span>(<span class="st">&quot;data&quot;</span>, <span class="st">&quot;raw&quot;</span>, <span class="st">&quot;taxa.csv&quot;</span>))
+distributions &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="kw">here</span>(<span class="st">&quot;data&quot;</span>, <span class="st">&quot;raw&quot;</span>, <span class="st">&quot;distributions.csv&quot;</span>))
+speciesprofiles &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="kw">here</span>(<span class="st">&quot;data&quot;</span>, <span class="st">&quot;raw&quot;</span>, <span class="st">&quot;speciesprofiles.csv&quot;</span>))
+descriptions &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="kw">here</span>(<span class="st">&quot;data&quot;</span>, <span class="st">&quot;raw&quot;</span>, <span class="st">&quot;descriptions.csv&quot;</span>))</code></pre></div>
+</div>
+<div id="assign-checklist-order" class="section level2">
+<h2><span class="header-section-number">4.2</span> Assign checklist order</h2>
+<p>Get checklist keys (in order):</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">checklist_keys &lt;-<span class="st"> </span>checklists <span class="op">%&gt;%</span>
+<span class="st">  </span><span class="kw">pull</span>(datasetKey)</code></pre></div>
+<p>Assign checklist order column to taxa:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">taxa &lt;-<span class="st"> </span>taxa <span class="op">%&gt;%</span>
+<span class="st">  </span><span class="kw">rowwise</span>() <span class="op">%&gt;%</span>
+<span class="st">  </span><span class="kw">mutate</span>(<span class="dt">checklistOrder =</span> <span class="kw">which</span>(checklist_keys <span class="op">==</span><span class="st"> </span>datasetKey)[<span class="dv">1</span>])</code></pre></div>
+<hr />
+<p><strong>TO REMOVE</strong></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Temporarily use the bb_key as a unifying key</span>
+taxa &lt;-<span class="st"> </span>taxa <span class="op">%&gt;%</span>
+<span class="st">  </span><span class="kw">rename</span>(<span class="dt">verifiedKey =</span> bb_key)</code></pre></div>
+<hr />
+</div>
+<div id="unify-distribution" class="section level2">
+<h2><span class="header-section-number">4.3</span> Unify distribution</h2>
+<p>Parse <code>temporal</code> (eventDate) information:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">distributions_unified &lt;-<span class="st"> </span>distributions <span class="op">%&gt;%</span>
+<span class="st">  </span>
+<span class="st">  </span><span class="co"># Split temporal on &quot;/&quot; into startYear and endYear</span>
+<span class="st">  </span><span class="co"># If temporal only contains a single year, then endYear will be empty</span>
+<span class="st">  </span><span class="kw">separate</span>(
+    temporal,
+    <span class="dt">into =</span> <span class="kw">c</span>(<span class="st">&quot;startYear&quot;</span>, <span class="st">&quot;endYear&quot;</span>),
+    <span class="dt">sep =</span> <span class="st">&quot;/&quot;</span>,
+    <span class="dt">remove =</span> <span class="ot">FALSE</span>,
+    <span class="dt">convert =</span> <span class="ot">TRUE</span>,
+    <span class="dt">extra =</span> <span class="st">&quot;drop&quot;</span>,
+    <span class="dt">fill =</span> <span class="st">&quot;right&quot;</span>
+  ) <span class="op">%&gt;%</span>
+<span class="st">  </span>
+<span class="st">  </span><span class="co"># Only keep the first 4 characters: 1968-11-21 -&gt; 1968</span>
+<span class="st">  </span><span class="kw">mutate</span>(<span class="dt">startYear =</span> <span class="kw">str_sub</span>(startYear, <span class="dv">1</span>, <span class="dv">4</span>), <span class="dt">endYear =</span> <span class="kw">str_sub</span>(endYear, <span class="dv">1</span>, <span class="dv">4</span>)) <span class="op">%&gt;%</span>
+<span class="st">  </span>
+<span class="st">  </span><span class="co"># If endYear is empty (no range), populate it with startYear: 2018 &amp; 2018</span>
+<span class="st">  </span><span class="kw">mutate</span>(<span class="dt">endYear =</span> <span class="kw">if_else</span>(<span class="kw">is.na</span>(endYear), startYear, endYear))</code></pre></div>
+<p>Filter distributions:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">distributions_unified &lt;-<span class="st"> </span>distributions_unified <span class="op">%&gt;%</span>
+<span class="st">  </span>
+<span class="st">  </span><span class="co"># Filter on non-native species present in (at least part of) Belgium</span>
+<span class="st">  </span><span class="kw">filter</span>(
+    country <span class="op">==</span><span class="st"> &quot;BE&quot;</span> <span class="op">&amp;</span>
+<span class="st">    </span>establishmentMeans <span class="op">%in%</span><span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;INTRODUCED&quot;</span>, <span class="st">&quot;NATURALISED&quot;</span>, <span class="st">&quot;INVASIVE&quot;</span>, <span class="st">&quot;ASSISTED COLONISATION&quot;</span>) <span class="op">&amp;</span>
+<span class="st">    </span>status <span class="op">%in%</span><span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;PRESENT&quot;</span>, <span class="st">&quot;COMMON&quot;</span>, <span class="st">&quot;RARE&quot;</span>, <span class="st">&quot;IRREGULAR&quot;</span>)
+  )</code></pre></div>
+<p>Choose a single distribution within a checklist:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">distributions_unified &lt;-<span class="st"> </span>distributions_unified <span class="op">%&gt;%</span>
+
+<span class="st">  </span><span class="co"># Join distribution with taxon to get verifiedKey and checklistOrder</span>
+<span class="st">  </span><span class="kw">left_join</span>(taxa, <span class="dt">on =</span> taxonKey) <span class="op">%&gt;%</span>
+<span class="st">  </span>
+<span class="st">  </span><span class="co"># Remove records that have no verifiedKey (e.g. one wasn&#39;t assigned yet)</span>
+<span class="st">  </span><span class="kw">filter</span>(<span class="op">!</span><span class="kw">is.na</span>(verifiedKey)) <span class="op">%&gt;%</span>
+<span class="st">  </span>
+<span class="st">  </span><span class="co"># Group by verifiedKey within checklist</span>
+<span class="st">  </span><span class="kw">group_by</span>(
+    datasetKey,
+    checklistOrder,
+    verifiedKey
+  ) <span class="op">%&gt;%</span>
+<span class="st">  </span>
+<span class="st">  </span><span class="co"># Take earliest year, latest year and note taxonIDs</span>
+<span class="st">  </span><span class="kw">summarize</span>(
+    <span class="dt">startYear =</span> <span class="kw">min</span>(startYear, <span class="dt">na.rm =</span> <span class="ot">TRUE</span>),
+    <span class="dt">endYear =</span> <span class="kw">max</span>(endYear, <span class="dt">na.rm =</span> <span class="ot">TRUE</span>),
+    <span class="dt">sourceTaxa =</span> <span class="kw">paste</span>(<span class="kw">sort</span>(<span class="kw">unique</span>(taxonKey)), <span class="dt">collapse =</span> <span class="st">&quot;,&quot;</span>)
+  )</code></pre></div>
+<p>Choose a single distribution across checklists:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">distributions_unified &lt;-<span class="st"> </span>distributions_unified <span class="op">%&gt;%</span>
+<span class="st">  </span>
+<span class="st">  </span><span class="co"># Sort by checklist order (trustworthiness)</span>
+<span class="st">  </span><span class="kw">arrange</span>(checklistOrder) <span class="op">%&gt;%</span>
+<span class="st">  </span>
+<span class="st">  </span><span class="co"># Group by verifiedKey across checklists</span>
+<span class="st">  </span><span class="kw">group_by</span>(verifiedKey) <span class="op">%&gt;%</span>
+<span class="st">  </span>
+<span class="st">  </span><span class="co"># Select year of most trustworthy checklist (first one)</span>
+<span class="st">  </span><span class="co"># and note that checklist and its taxonKey(s)</span>
+<span class="st">  </span><span class="kw">summarize</span>(
+    <span class="dt">startYear =</span> <span class="kw">first</span>(startYear),
+    <span class="dt">lastYear =</span> <span class="kw">first</span>(endYear),
+    <span class="dt">sourceChecklist =</span> <span class="kw">first</span>(datasetKey),
+    <span class="dt">sourceTaxa =</span> <span class="kw">first</span>(sourceTaxa)
+  ) <span class="op">%&gt;%</span>
+
+<span class="st">  </span><span class="co"># Sort by verifiedKey</span>
+<span class="st">  </span><span class="kw">arrange</span>(verifiedKey)</code></pre></div>
+<p>Save to CSV:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">write_csv</span>(distributions_unified, <span class="kw">here</span>(<span class="st">&quot;data&quot;</span>, <span class="st">&quot;unified&quot;</span>, <span class="st">&quot;distributions.csv&quot;</span>), <span class="dt">na =</span> <span class="st">&quot;&quot;</span>)</code></pre></div>
+</div>
+<div id="unify-species-profiles" class="section level2">
+<h2><span class="header-section-number">4.4</span> Unify species profiles</h2>
+<p>Filter species profiles:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">speciesprofiles_unified &lt;-<span class="st"> </span>speciesprofiles <span class="op">%&gt;%</span>
+<span class="st">  </span>
+<span class="st">  </span><span class="co"># Remove species profiles that contain NA for any of the attributes</span>
+<span class="st">  </span><span class="co"># This is rare: normally all attributes are populated or there just isn&#39;t a</span>
+<span class="st">  </span><span class="co"># species profile for that species</span>
+<span class="st">  </span><span class="kw">filter</span>(
+    <span class="op">!</span><span class="kw">is.na</span>(marine) <span class="op">&amp;</span>
+<span class="st">    </span><span class="op">!</span><span class="kw">is.na</span>(freshwater) <span class="op">&amp;</span>
+<span class="st">    </span><span class="op">!</span><span class="kw">is.na</span>(terrestrial)
+  )</code></pre></div>
+<p>Choose a single species profile within a checklist:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">speciesprofiles_unified &lt;-<span class="st"> </span>speciesprofiles_unified <span class="op">%&gt;%</span>
+
+<span class="st">  </span><span class="co"># Join species profile with taxon to get verifiedKey and checklist order</span>
+<span class="st">  </span><span class="kw">left_join</span>(taxa, <span class="dt">on =</span> taxonID) <span class="op">%&gt;%</span>
+<span class="st">  </span>
+<span class="st">  </span><span class="co"># Remove records that have no verifiedKey (e.g. one wasn&#39;t assigned yet)</span>
+<span class="st">  </span><span class="kw">filter</span>(<span class="op">!</span><span class="kw">is.na</span>(verifiedKey)) <span class="op">%&gt;%</span>
+<span class="st">  </span>
+<span class="st">  </span><span class="co"># Group by verifiedKey within checklist</span>
+<span class="st">  </span><span class="kw">group_by</span>(
+    datasetKey,
+    checklistOrder,
+    verifiedKey
+  ) <span class="op">%&gt;%</span>
+<span class="st">  </span>
+<span class="st">  </span><span class="co"># Take first species profile and note taxonKey</span>
+<span class="st">  </span><span class="kw">summarize</span>(
+    <span class="dt">marine =</span> <span class="kw">first</span>(marine),
+    <span class="dt">freshwater =</span> <span class="kw">first</span>(freshwater),
+    <span class="dt">terrestrial =</span> <span class="kw">first</span>(terrestrial),
+    <span class="dt">sourceTaxon =</span> <span class="kw">first</span>(taxonKey)
+  )</code></pre></div>
+<p>Choose a single species profile across checklists:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">speciesprofiles_unified &lt;-<span class="st"> </span>speciesprofiles_unified <span class="op">%&gt;%</span>
+<span class="st">  </span>
+<span class="st">  </span><span class="co"># Sort by checklist order (trustworthiness)</span>
+<span class="st">  </span><span class="kw">arrange</span>(checklistOrder) <span class="op">%&gt;%</span>
+<span class="st">  </span>
+<span class="st">  </span><span class="co"># Group by verifiedKey across checklists</span>
+<span class="st">  </span><span class="kw">group_by</span>(verifiedKey) <span class="op">%&gt;%</span>
+<span class="st">  </span>
+<span class="st">  </span><span class="co"># Select species profile of most trustworthy checklist (first one)</span>
+<span class="st">  </span><span class="co"># and note that checklist and its taxonID</span>
+<span class="st">  </span><span class="kw">summarize</span>(
+    <span class="dt">marine =</span> <span class="kw">first</span>(marine),
+    <span class="dt">freshwater =</span> <span class="kw">first</span>(freshwater),
+    <span class="dt">terrestrial =</span> <span class="kw">first</span>(terrestrial),
+    <span class="dt">sourceChecklist =</span> <span class="kw">first</span>(datasetKey),
+    <span class="dt">sourceTaxon =</span> <span class="kw">first</span>(sourceTaxon)
+  ) <span class="op">%&gt;%</span>
+
+<span class="st">  </span><span class="co"># Sort by verifiedKey</span>
+<span class="st">  </span><span class="kw">arrange</span>(verifiedKey)</code></pre></div>
+<p>Save to CSV:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">write_csv</span>(speciesprofiles_unified, <span class="kw">here</span>(<span class="st">&quot;data&quot;</span>, <span class="st">&quot;unified&quot;</span>, <span class="st">&quot;speciesprofiles.csv&quot;</span>), <span class="dt">na =</span> <span class="st">&quot;&quot;</span>)</code></pre></div>
+</div>
+<div id="unify-descriptions" class="section level2">
+<h2><span class="header-section-number">4.5</span> Unify descriptions</h2>
+<p>Filter descriptions:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">descriptions_unified &lt;-<span class="st"> </span>descriptions <span class="op">%&gt;%</span>
+<span class="st">  </span>
+<span class="st">  </span><span class="co"># Filter on non-NA descriptions</span>
+<span class="st">  </span><span class="kw">filter</span>(
+    <span class="op">!</span><span class="kw">is.na</span>(description)
+  )</code></pre></div>
+<p>Select unique descriptions (within their type) within a checklist:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">descriptions_unified &lt;-<span class="st"> </span>descriptions_unified <span class="op">%&gt;%</span>
+
+<span class="st">  </span><span class="co"># Join species profile with taxon to get verifiedKey and checklist order</span>
+<span class="st">  </span><span class="kw">left_join</span>(taxa, <span class="dt">on =</span> taxonKey) <span class="op">%&gt;%</span>
+<span class="st">  </span>
+<span class="st">  </span><span class="co"># Remove records that have no verifiedKey (e.g. one wasn&#39;t assigned yet)</span>
+<span class="st">  </span><span class="kw">filter</span>(<span class="op">!</span><span class="kw">is.na</span>(verifiedKey)) <span class="op">%&gt;%</span>
+<span class="st">  </span>
+<span class="st">  </span><span class="co"># Group by type and verifiedKey within checklist</span>
+<span class="st">  </span><span class="kw">group_by</span>(
+    datasetKey,
+    checklistOrder,
+    verifiedKey,
+    type
+  ) <span class="op">%&gt;%</span>
+<span class="st">  </span>
+<span class="st">  </span><span class="co"># Choose distinct value for that type and verifiedKey</span>
+<span class="st">  </span><span class="co"># If identical values exist within that grouping, distinct() will take </span>
+<span class="st">  </span><span class="co"># most trustworthy (first one)</span>
+<span class="st">  </span>
+<span class="st">  </span><span class="co"># Note: since we use distinct we can&#39;t keep a sourceTaxon (taxonKey)</span>
+<span class="st">  </span><span class="kw">distinct</span>(
+    description
+  )</code></pre></div>
+<p>Select unique descriptions (within their type) across checklists:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">descriptions_unified &lt;-<span class="st"> </span>descriptions_unified <span class="op">%&gt;%</span>
+<span class="st">  </span>
+<span class="st">  </span><span class="co"># Sort by checklist order (trustworthiness)</span>
+<span class="st">  </span><span class="kw">arrange</span>(checklistOrder) <span class="op">%&gt;%</span>
+<span class="st">  </span>
+<span class="st">  </span><span class="co"># Group by type and verifiedKey across checklists</span>
+<span class="st">  </span><span class="kw">group_by</span>(
+    type,
+    verifiedKey
+  ) <span class="op">%&gt;%</span>
+<span class="st">  </span>
+<span class="st">  </span><span class="co"># Choose distinct value for that type and verifiedKey</span>
+<span class="st">  </span><span class="kw">distinct</span>(
+    description,
+    <span class="dt">.keep_all =</span> <span class="ot">TRUE</span>
+  ) <span class="op">%&gt;%</span>
+
+<span class="st">  </span><span class="co"># Move verifiedKey to beginning and drop checklist_order</span>
+<span class="st">  </span><span class="kw">select</span>(verifiedKey, <span class="kw">everything</span>(), <span class="op">-</span>checklistOrder) <span class="op">%&gt;%</span>
+<span class="st">  </span>
+<span class="st">  </span><span class="co"># Rename checklist</span>
+<span class="st">  </span><span class="kw">rename</span>(<span class="dt">sourceChecklist =</span> datasetKey) <span class="op">%&gt;%</span>
+<span class="st">  </span>
+<span class="st">  </span><span class="co"># Sort by verifiedKey and type</span>
+<span class="st">  </span><span class="kw">arrange</span>(verifiedKey, type)</code></pre></div>
+<p>Save to CSV:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">write_csv</span>(descriptions_unified, <span class="kw">here</span>(<span class="st">&quot;data&quot;</span>, <span class="st">&quot;unified&quot;</span>, <span class="st">&quot;descriptions.csv&quot;</span>), <span class="dt">na =</span> <span class="st">&quot;&quot;</span>)</code></pre></div>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="get_information.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": false,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": {}
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/trias-project/unified-checklist/blob/master/src/src/unify_information.Rmd",
+"text": "Edit"
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+},
+"search": false
+});
+});
+</script>
+
+</body>
+
+</html>

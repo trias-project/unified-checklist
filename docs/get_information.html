@@ -32,8 +32,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
-
-<link rel="next" href="get_taxa.html">
+<link rel="prev" href="get_taxa.html">
+<link rel="next" href="unify_information.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -140,23 +140,81 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">National, unified checklist of alien species in Belgium</h1>
-<h4 class="author"><em>Peter Desmet, Damiano Oldoni</em></h4>
-<h4 class="date"><em>2018-10-31</em></h4>
+<div id="get-related-information" class="section level1">
+<h1><span class="header-section-number">3</span> Get related information</h1>
+<p>In this chapter we retrieve related information for taxa on the checklists (with a valid distribution).</p>
+<p>Load libraries:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(tidyverse)      <span class="co"># To do data science</span>
+<span class="kw">library</span>(here)           <span class="co"># To find files</span>
+<span class="kw">library</span>(janitor)        <span class="co"># To clean input data</span>
+<span class="kw">library</span>(digest)         <span class="co"># To generate hashes</span>
+<span class="kw">library</span>(rgbif)          <span class="co"># To use GBIF services</span>
+<span class="kw">library</span>(trias)          <span class="co"># To use functions developed for TrIAS</span></code></pre></div>
+<div id="read-data" class="section level2">
+<h2><span class="header-section-number">3.1</span> Read data</h2>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">taxa &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="kw">here</span>(<span class="st">&quot;data&quot;</span>, <span class="st">&quot;raw&quot;</span>, <span class="st">&quot;taxa.csv&quot;</span>))</code></pre></div>
 </div>
-<div id="intro" class="section level1">
-<h1><span class="header-section-number">1</span> Intro</h1>
-<p>…</p>
+<div id="filter-checklist-taxa" class="section level2">
+<h2><span class="header-section-number">3.2</span> Filter checklist taxa</h2>
+<p>Important: if a checklist has related information for a taxon, but not a valid distribution, that related information will NOT be included in the unified checklist. This is to exclude related information about a taxon for which the checklist did not even consider a Belgian scope (e.g. pathway).</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">taxon_keys &lt;-<span class="st"> </span>taxa <span class="op">%&gt;%</span>
+<span class="st">  </span><span class="kw">filter</span>(validDistribution) <span class="op">%&gt;%</span>
+<span class="st">  </span><span class="kw">pull</span>(taxonKey)</code></pre></div>
+</div>
+<div id="get-distributions" class="section level2">
+<h2><span class="header-section-number">3.3</span> Get distributions</h2>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">progress_bar &lt;-<span class="st"> </span><span class="kw">progress_estimated</span>(<span class="kw">length</span>(taxon_keys))
 
+distributions &lt;-<span class="st"> </span><span class="kw">map_dfr</span>(taxon_keys, <span class="cf">function</span>(x) {
+  progress_bar<span class="op">$</span><span class="kw">tick</span>()<span class="op">$</span><span class="kw">print</span>()
+  rgbif<span class="op">::</span><span class="kw">name_usage</span>(
+    <span class="dt">key =</span> x,
+    <span class="dt">return =</span> <span class="st">&quot;data&quot;</span>,
+    <span class="dt">data =</span> <span class="st">&quot;distribution&quot;</span>
+  )
+})</code></pre></div>
+<p>Save to CSV:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">write_csv</span>(distributions, <span class="kw">here</span>(<span class="st">&quot;data&quot;</span>, <span class="st">&quot;raw&quot;</span>, <span class="st">&quot;distributions.csv&quot;</span>), <span class="dt">na =</span> <span class="st">&quot;&quot;</span>)</code></pre></div>
+</div>
+<div id="get-species-profiles" class="section level2">
+<h2><span class="header-section-number">3.4</span> Get species profiles</h2>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">progress_bar &lt;-<span class="st"> </span><span class="kw">progress_estimated</span>(<span class="kw">length</span>(taxon_keys))
+
+speciesprofiles &lt;-<span class="st"> </span><span class="kw">map_dfr</span>(taxon_keys, <span class="cf">function</span>(x) {
+  progress_bar<span class="op">$</span><span class="kw">tick</span>()<span class="op">$</span><span class="kw">print</span>()
+  rgbif<span class="op">::</span><span class="kw">name_usage</span>(
+    <span class="dt">key =</span> x,
+    <span class="dt">return =</span> <span class="st">&quot;data&quot;</span>,
+    <span class="dt">data =</span> <span class="st">&quot;speciesProfiles&quot;</span>
+  )
+})</code></pre></div>
+<p>Save to CSV:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">write_csv</span>(speciesprofiles, <span class="kw">here</span>(<span class="st">&quot;data&quot;</span>, <span class="st">&quot;raw&quot;</span>, <span class="st">&quot;speciesprofiles.csv&quot;</span>), <span class="dt">na =</span> <span class="st">&quot;&quot;</span>)</code></pre></div>
+</div>
+<div id="get-descriptions" class="section level2">
+<h2><span class="header-section-number">3.5</span> Get descriptions</h2>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">progress_bar &lt;-<span class="st"> </span><span class="kw">progress_estimated</span>(<span class="kw">length</span>(taxon_keys))
+
+descriptions &lt;-<span class="st"> </span><span class="kw">map_dfr</span>(taxon_keys, <span class="cf">function</span>(x) {
+  progress_bar<span class="op">$</span><span class="kw">tick</span>()<span class="op">$</span><span class="kw">print</span>()
+  rgbif<span class="op">::</span><span class="kw">name_usage</span>(
+    <span class="dt">key =</span> x,
+    <span class="dt">return =</span> <span class="st">&quot;data&quot;</span>,
+    <span class="dt">data =</span> <span class="st">&quot;description&quot;</span>
+  )
+})</code></pre></div>
+<p>Save to CSV:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">write_csv</span>(descriptions, <span class="kw">here</span>(<span class="st">&quot;data&quot;</span>, <span class="st">&quot;raw&quot;</span>, <span class="st">&quot;descriptions.csv&quot;</span>), <span class="dt">na =</span> <span class="st">&quot;&quot;</span>)</code></pre></div>
+
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
-<a href="get_taxa.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="get_taxa.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="unify_information.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -186,7 +244,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/trias-project/unified-checklist/blob/master/src/index.Rmd",
+"link": "https://github.com/trias-project/unified-checklist/blob/master/src/src/get_information.Rmd",
 "text": "Edit"
 },
 "download": null,

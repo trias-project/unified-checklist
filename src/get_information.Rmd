@@ -1,0 +1,49 @@
+---
+title: "Get related information"
+author:
+- Peter Desmet
+- Damiano Oldoni
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    df_print: paged
+    number_sections: true
+    toc: true
+    toc_depth: 3
+    toc_float: true
+---
+
+In this document we retrieve related information for each taxon.
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+```
+
+Load libraries:
+
+```{r}
+library(tidyverse)      # To do data science
+library(here)           # To find files
+library(janitor)        # To clean input data
+library(digest)         # To generate hashes
+library(rgbif)          # To use GBIF services
+library(trias)          # To use functions developed for TrIAS
+```
+
+# Read data
+
+```{r}
+checklist_taxa <- read_csv(here("data", "interim", "checklist_taxa.csv"))
+```
+
+# Filter checklist taxa
+
+Important: if a checklist has related information for a taxon, but not a valid distribution, that related information will NOT be included in the unified checklist. This is to exclude related information about a taxon for which the checklist did not even consider a Belgian scope (e.g. pathway).
+
+```{r}
+checklist_taxon_keys <- checklist_taxa %>%
+  filter(valid_distribution) %>%
+  top_n(10, key) %>%
+  pull(key)
+```
+

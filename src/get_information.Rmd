@@ -33,7 +33,7 @@ library(trias)          # To use functions developed for TrIAS
 # Read data
 
 ```{r}
-taxa <- read_csv(here("data", "interim", "taxa.csv"))
+taxa <- read_csv(here("data", "raw", "taxa.csv"))
 ```
 
 # Filter checklist taxa
@@ -65,7 +65,7 @@ distributions <- map_dfr(taxon_keys, function(x) {
 Save to CSV:
 
 ```{r}
-write_csv(distributions, here("data", "interim", "distributions.csv"), na = "")
+write_csv(distributions, here("data", "raw", "distributions.csv"), na = "")
 ```
 
 # Get species profiles
@@ -86,7 +86,7 @@ speciesprofiles <- map_dfr(taxon_keys, function(x) {
 Save to CSV:
 
 ```{r}
-write_csv(speciesprofiles, here("data", "interim", "speciesprofiles.csv"), na = "")
+write_csv(speciesprofiles, here("data", "raw", "speciesprofiles.csv"), na = "")
 ```
 
 # Get descriptions
@@ -107,5 +107,5 @@ descriptions <- map_dfr(taxon_keys, function(x) {
 Save to CSV:
 
 ```{r}
-write_csv(descriptions, here("data", "interim", "descriptions.csv"), na = "")
+write_csv(descriptions, here("data", "raw", "descriptions.csv"), na = "")
 ```

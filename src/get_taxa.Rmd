@@ -70,7 +70,7 @@ checklists
 Save to CSV:
 
 ```{r}
-write_csv(checklists, here("data", "interim", "checklists.csv"), na = "")
+write_csv(checklists, here("data", "raw", "checklists.csv"), na = "")
 ```
 
 # Get taxa
@@ -259,5 +259,5 @@ taxa %>%
 Save to CSV:
 
 ```{r}
-write_csv(taxa, here("data", "interim", "taxa.csv"), na = "")
+write_csv(taxa, here("data", "raw", "taxa.csv"), na = "")
 ```

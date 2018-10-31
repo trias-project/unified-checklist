@@ -58,9 +58,9 @@ distributions_unified <- distributions %>%
   
   # Filter on non-native species present in (at least part of) Belgium
   filter(
-    # country = "BE" &
-    establishmentMeans %in% c("INTRODUCED", "NATURALISED", "INVASIVE", "ASSISTED COLONISATION")
-    # status %in% c("PRESENT", "COMMON", "RARE", "IRREGULAR")
+    country == "BE" &
+    establishmentMeans %in% c("INTRODUCED", "NATURALISED", "INVASIVE", "ASSISTED COLONISATION") &
+    status %in% c("PRESENT", "COMMON", "RARE", "IRREGULAR")
   )
 ```
 

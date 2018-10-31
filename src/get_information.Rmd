@@ -68,3 +68,23 @@ Save to CSV:
 write_csv(distribution, here("data", "interim", "distribution.csv"), na = "")
 ```
 
+# Get species profiles
+
+```{r get_species_profiles_from_gbif}
+progress_bar <- progress_estimated(length(checklist_taxon_keys))
+
+speciesprofile <- map_dfr(checklist_taxon_keys, function(x) {
+  progress_bar$tick()$print()
+  rgbif::name_usage(
+    key = x,
+    return = "data",
+    data = "speciesProfiles"
+  )
+})
+```
+
+Save to CSV:
+
+```{r}
+write_csv(speciesprofile, here("data", "interim", "speciesprofile.csv"), na = "")
+```

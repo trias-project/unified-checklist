@@ -1,6 +1,6 @@
 # Verify taxa
 
-In this document we report and update taxa that require manual verification.
+In this chapter we report and update taxa that require manual verification.
 
 ```{r setup_verify_taxa, include = FALSE}
 knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)

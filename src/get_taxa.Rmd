@@ -1,6 +1,6 @@
 # Get taxa from checklists
 
-In this document we choose species checklists and download and filter the taxa they contain.
+In this chapter we select species checklists and retrieve the taxa they contain.
 
 ```{r setup_get_taxa, include = FALSE}
 knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)

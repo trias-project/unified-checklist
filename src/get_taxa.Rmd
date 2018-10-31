@@ -1,21 +1,8 @@
----
-title: "Get taxa from checklists"
-author:
-- Peter Desmet
-- Damiano Oldoni
-date: "`r Sys.Date()`"
-output:
-  html_document:
-    df_print: paged
-    number_sections: true
-    toc: true
-    toc_depth: 3
-    toc_float: true
----
+# Get taxa from checklists
 
 In this document we choose species checklists and download and filter the taxa they contain.
 
-```{r setup, include = FALSE}
+```{r setup_get_taxa, include = FALSE}
 knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
 ```
 
@@ -30,7 +17,7 @@ library(rgbif)          # To use GBIF services
 library(trias)          # To use functions developed for TrIAS
 ```
 
-# Choose checklists
+## Choose checklists
 
 The unified checklist is compiled from [species checklists published to GBIF under the TrIAS project](https://www.gbif.org/dataset/search?type=CHECKLIST&project_id=trias). Here we choose the checklists we want to include and rank them by trust (most trustworthy first). The ranking will help to choose between duplicate taxa in later steps.
 
@@ -73,7 +60,7 @@ Save to CSV:
 write_csv(checklists, here("data", "raw", "checklists.csv"), na = "")
 ```
 
-# Get taxa
+## Get taxa
 
 Get taxa from these checklists from GBIF.
 
@@ -116,7 +103,7 @@ Preview checklist taxa:
 taxa %>% head()
 ```
 
-# Filter on distribution
+## Filter on distribution
 
 TrIAS checklists can contain more than alien species in Belgium. We therefore need to filter on the associated [distribution](http://rs.gbif.org/extension/gbif/1.0/distribution.xml) information (using the `trias::has_distribution()` function) as follows:
 
@@ -164,7 +151,7 @@ taxa <- taxa %>%
   select(-bb_key, everything())
 ```
 
-# Get GBIF backbone taxonomy information
+## Get GBIF backbone taxonomy information
 
 A taxon can occur on more than one checklist. To identify these duplicates, we cannot rely on the _scientific name_ as there might be spelling variations (e.g. with or without authorship) and it does not account for synonyms that should be lumped with the accepted taxon. To have **unifying taxon identifiers across taxa**, we rely on the [GBIF backbone taxonomy](https://doi.org/10.15468/39omei), to which every checklist taxon (re)published to GBIF is automatically matched. If a match in the backbone is found, the checklist taxon will have a `nubKey`.
 
@@ -240,7 +227,7 @@ Preview merged information:
 taxa %>% head()
 ```
 
-# Show summary and save
+## Show summary and save
 
 Show summary per checklist:
 

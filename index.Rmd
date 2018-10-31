@@ -1,0 +1,22 @@
+---
+title: "National, unified checklist of alien species in Belgium"
+author: Peter Desmet, Damiano Oldoni
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output:
+  bookdown::gitbook:
+    split_by: rmd
+    df_print: paged
+    config:
+      edit: https://github.com/trias-project/unified-checklist/blob/master/src/%s
+      search: no
+      sharing:
+        facebook: no
+        twitter: yes
+        all: []
+github-repo: enram/vp-processing
+---
+
+# Intro
+
+...

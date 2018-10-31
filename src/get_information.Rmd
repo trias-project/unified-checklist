@@ -1,21 +1,8 @@
----
-title: "Get related information"
-author:
-- Peter Desmet
-- Damiano Oldoni
-date: "`r Sys.Date()`"
-output:
-  html_document:
-    df_print: paged
-    number_sections: true
-    toc: true
-    toc_depth: 3
-    toc_float: true
----
+# Get related information
 
 In this document we retrieve related information for each taxon.
 
-```{r setup, include = FALSE}
+```{r setup_get_information, include = FALSE}
 knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
 ```
 
@@ -30,13 +17,13 @@ library(rgbif)          # To use GBIF services
 library(trias)          # To use functions developed for TrIAS
 ```
 
-# Read data
+## Read data
 
 ```{r}
 taxa <- read_csv(here("data", "raw", "taxa.csv"))
 ```
 
-# Filter checklist taxa
+## Filter checklist taxa
 
 Important: if a checklist has related information for a taxon, but not a valid distribution, that related information will NOT be included in the unified checklist. This is to exclude related information about a taxon for which the checklist did not even consider a Belgian scope (e.g. pathway).
 
@@ -46,7 +33,7 @@ taxon_keys <- taxa %>%
   pull(taxonKey)
 ```
 
-# Get distributions
+## Get distributions
 
 ```{r get_distributions_from_gbif}
 progress_bar <- progress_estimated(length(taxon_keys))
@@ -67,7 +54,7 @@ Save to CSV:
 write_csv(distributions, here("data", "raw", "distributions.csv"), na = "")
 ```
 
-# Get species profiles
+## Get species profiles
 
 ```{r get_speciesprofiles_from_gbif}
 progress_bar <- progress_estimated(length(taxon_keys))
@@ -88,7 +75,7 @@ Save to CSV:
 write_csv(speciesprofiles, here("data", "raw", "speciesprofiles.csv"), na = "")
 ```
 
-# Get descriptions
+## Get descriptions
 
 ```{r get_descriptions_from_gbif}
 progress_bar <- progress_estimated(length(taxon_keys))

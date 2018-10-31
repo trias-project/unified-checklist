@@ -1,21 +1,8 @@
----
-title: "Unify related information"
-author:
-- Peter Desmet
-- Damiano Oldoni
-date: "`r Sys.Date()`"
-output:
-  html_document:
-    df_print: paged
-    number_sections: true
-    toc: true
-    toc_depth: 3
-    toc_float: true
----
+# Unify related information
 
 In this document we unify related information for each verified taxon.
 
-```{r setup, include = FALSE}
+```{r setup_unify_information, include = FALSE}
 knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
 ```
 
@@ -30,7 +17,7 @@ library(rgbif)          # To use GBIF services
 library(trias)          # To use functions developed for TrIAS
 ```
 
-# Read data
+## Read data
 
 ```{r}
 checklists <- read_csv(here("data", "raw", "checklists.csv"))
@@ -40,7 +27,7 @@ speciesprofiles <- read_csv(here("data", "raw", "speciesprofiles.csv"))
 descriptions <- read_csv(here("data", "raw", "descriptions.csv"))
 ```
 
-# Assign checklist order
+## Assign checklist order
 
 Get checklist keys (in order):
 
@@ -69,7 +56,7 @@ taxa <- taxa %>%
 
 ---
 
-# Unify distribution
+## Unify distribution
 
 Parse `temporal` (eventDate) information:
 
@@ -164,7 +151,7 @@ Save to CSV:
 write_csv(distributions_unified, here("data", "unified", "distributions.csv"), na = "")
 ```
 
-# Unify species profile
+## Unify species profiles
 
 Filter species profiles:
 
@@ -239,7 +226,7 @@ Save to CSV:
 write_csv(speciesprofiles_unified, here("data", "unified", "speciesprofiles.csv"), na = "")
 ```
 
-# Unify descriptions
+## Unify descriptions
 
 Filter descriptions:
 

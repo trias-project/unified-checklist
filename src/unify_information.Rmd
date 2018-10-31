@@ -33,21 +33,41 @@ library(trias)          # To use functions developed for TrIAS
 # Read data
 
 ```{r}
-taxon <- read_csv(here("data", "test", "input", "taxon.csv"))
 distribution <- read_csv(here("data", "test", "input", "distribution.csv"))
 speciesprofile <- read_csv(here("data", "test", "input", "speciesprofile.csv"))
 description <- read_csv(here("data", "test", "input", "description.csv"))
+checklists <- read_csv(here("data", "raw", "checklists.csv"))
+taxa <- read_csv(here("data", "raw", "taxa.csv"))
 ```
 
 # Assign checklist order
 
-```{r}
-checklist_keys <- c("X", "Y")
+Get checklist keys (in order):
 
-taxon <- taxon %>%
-  rowwise() %>%
-  mutate(checklist_order = which(checklist_keys == checklist)[1])
+```{r}
+checklist_keys <- checklists %>%
+  pull(datasetKey)
 ```
+
+Assign checklist order column to taxa:
+
+```{r}
+taxa <- taxa %>%
+  rowwise() %>%
+  mutate(checklistOrder = which(checklist_keys == datasetKey)[1])
+```
+
+---
+
+**TO REMOVE**
+
+```{r}
+# Temporarily use the bb_key as a unifying key
+taxa <- taxa %>%
+  rename(verifiedKey = bb_key)
+```
+
+---
 
 # Unify distribution
 

@@ -135,7 +135,7 @@ Get distribution information from GBIF and check if these meet the filter criter
 ```{r get_distribution_info_from_gbif}
 progress_bar <- progress_estimated(nrow(taxa))
 
-taxa %<>%
+taxa <- taxa %>%
   mutate(validDistribution = map_lgl(taxa$key, function(x) {
     progress_bar$tick()$print()
     trias::gbif_has_distribution(
@@ -158,7 +158,7 @@ taxa %>%
 Rename `nubKey` to `bb_key` and move to the end:
 
 ```{r}
-taxa %<>%
+taxa <- taxa %>%
   rename(bb_key = nubKey) %>%
   select(-bb_key, everything())
 ```

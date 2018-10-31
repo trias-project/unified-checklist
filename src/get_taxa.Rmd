@@ -88,12 +88,13 @@ taxa <- map_df(checklists$datasetKey, function(x) name_usage(
   filter(origin == "SOURCE") # Keep only source taxa, not denormed higher classification taxa
 ```
 
-Select columns of interest and sort by taxon `key`:
+Select columns of interest, rename `key` to `taxonKey` and sort by `taxonKey`:
 
 ```{r}
 taxa <- taxa %>%
   select(key, scientificName, taxonID, datasetKey, nameType, issues, nubKey) %>%
-  arrange(key)
+  rename(taxonKey = key) %>%
+  arrange(taxonKey)
 ```
 
 Convert the column `issues` from a list to a concatenated string:
@@ -136,7 +137,7 @@ Get distribution information from GBIF and check if these meet the filter criter
 progress_bar <- progress_estimated(nrow(taxa))
 
 taxa <- taxa %>%
-  mutate(validDistribution = map_lgl(taxa$key, function(x) {
+  mutate(validDistribution = map_lgl(taxa$taxonKey, function(x) {
     progress_bar$tick()$print()
     trias::gbif_has_distribution(
       taxon_key = x,
@@ -147,7 +148,7 @@ taxa <- taxa %>%
   }))
 ```
 
-Preview some taxa with not a single valid distribution (key can be used to verify manually on GBIF):
+Preview some taxa with not a single valid distribution (`taxonKey` can be used to verify manually on GBIF):
 
 ```{r}
 taxa %>%

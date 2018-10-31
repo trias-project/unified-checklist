@@ -43,7 +43,7 @@ Important: if a checklist has related information for a taxon, but not a valid d
 ```{r}
 taxon_keys <- taxa %>%
   filter(validDistribution) %>%
-  pull(key)
+  pull(taxonKey)
 ```
 
 # Get distributions

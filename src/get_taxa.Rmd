@@ -23,7 +23,6 @@ Load libraries:
 
 ```{r}
 library(tidyverse)      # To do data science
-library(magrittr)       # To use %<>% pipes
 library(here)           # To find files
 library(janitor)        # To clean input data
 library(digest)         # To generate hashes
@@ -81,7 +80,7 @@ Get taxa from these checklists from GBIF.
 **Note**: here we get _checklist taxa_, not _GBIF backbone taxa_.
 
 ```{r get_checklist_taxa_from_gbif}
-checklist_taxa <- map_df(checklists$datasetKey, function(x) name_usage(
+taxa <- map_df(checklists$datasetKey, function(x) name_usage(
     datasetKey = x,
     limit = 99999, # Should be more than total taxa for all checklists
     return = "data"
@@ -92,7 +91,7 @@ checklist_taxa <- map_df(checklists$datasetKey, function(x) name_usage(
 Select columns of interest and sort by taxon `key`:
 
 ```{r}
-checklist_taxa %<>%
+taxa <- taxa %>%
   select(key, scientificName, datasetKey, taxonID, nameType, issues, nubKey) %>%
   arrange(key)
 ```
@@ -100,7 +99,7 @@ checklist_taxa %<>%
 Convert the column `issues` from a list to a concatenated string:
 
 ```{r}
-checklist_taxa %<>%
+taxa <- taxa %>%
   group_by_at(vars(-issues)) %>%
   summarize(issues = str_c(issues, collapse = ",")) %>%
   ungroup() %>%
@@ -113,7 +112,7 @@ checklist_taxa %<>%
 Preview checklist taxa:
 
 ```{r}
-checklist_taxa %>% head()
+taxa %>% head()
 ```
 
 # Filter on distribution
@@ -134,10 +133,10 @@ E.g. compare:
 Get distribution information from GBIF and check if these meet the filter criteria. The result (`TRUE`/`FALSE`) is inserted as an extra column `valid_distribution`:
 
 ```{r get_distribution_info_from_gbif}
-progress_bar <- progress_estimated(nrow(checklist_taxa))
+progress_bar <- progress_estimated(nrow(taxa))
 
-checklist_taxa %<>%
-  mutate(valid_distribution = map_lgl(checklist_taxa$key, function(x) {
+taxa %<>%
+  mutate(valid_distribution = map_lgl(taxa$key, function(x) {
     progress_bar$tick()$print()
     trias::gbif_has_distribution(
       taxon_key = x,
@@ -151,7 +150,7 @@ checklist_taxa %<>%
 Preview some taxa with not a single valid distribution (key can be used to verify manually on GBIF):
 
 ```{r}
-checklist_taxa %>%
+taxa %>%
   filter(!valid_distribution) %>%
   head()
 ```
@@ -159,7 +158,7 @@ checklist_taxa %>%
 Rename `nubKey` to `bb_key` and move to the end:
 
 ```{r}
-checklist_taxa %<>%
+taxa %<>%
   rename(bb_key = nubKey) %>%
   select(-bb_key, everything())
 ```
@@ -171,7 +170,7 @@ A taxon can occur on more than one checklist. To identify these duplicates, we c
 Filter taxa on having valid distribution and `nubKey` and create vector of unique `nubKey`s:
 
 ```{r}
-nub_keys <- checklist_taxa %>%
+nub_keys <- taxa %>%
   filter(valid_distribution) %>%
   filter(is.finite(bb_key)) %>%
   select(bb_key) %>%
@@ -185,18 +184,18 @@ Get GBIF backbone taxonomy information:
 progress_bar <- progress_estimated(length(nub_keys))
 
 backbone_info <- map_dfr(nub_keys, function(x) {
-    progress_bar$tick()$print()
-    rgbif::name_usage(
-      key = x,
-      return = "data"
-    )
-  })
+  progress_bar$tick()$print()
+  rgbif::name_usage(
+    key = x,
+    return = "data"
+  )
+})
 ```
 
 Select columns of interest:
 
 ```{r}
-backbone_info %<>%
+backbone_info <- backbone_info %>%
   select(
     "key", "scientificName", "species", "genus", "family", "order", "class",
     "phylum", "kingdom", "rank", "speciesKey", "taxonomicStatus", "acceptedKey", 
@@ -207,13 +206,15 @@ backbone_info %<>%
 Remove duplicates (caused by [this bug](https://github.com/ropensci/rgbif/issues/324)):
 
 ```{r}
-backbone_info %<>% distinct()
+backbone_info <- backbone_info %>%
+  distinct()
 ```
 
 Rename `accepted` to `acceptedName`:
 
 ```{r}
-backbone_info %<>% rename(acceptedName = accepted)
+backbone_info <- backbone_info %>%
+  rename(acceptedName = accepted)
 ```
 
 Add prefix `bb_` to column names:
@@ -225,7 +226,7 @@ colnames(backbone_info) <- paste0("bb_", colnames(backbone_info))
 Merge backbone information with checklist taxa:
 
 ```{r}
-checklist_taxa %<>%
+taxa <- taxa %>%
   left_join(
     backbone_info, 
     by = "bb_key"
@@ -235,7 +236,7 @@ checklist_taxa %<>%
 Preview merged information:
 
 ```{r}
-checklist_taxa %>% head()
+taxa %>% head()
 ```
 
 # Show summary and save
@@ -243,7 +244,7 @@ checklist_taxa %>% head()
 Show summary per checklist:
 
 ```{r}
-checklist_taxa %>%
+taxa %>%
   left_join(checklists, by = "datasetKey") %>%
   group_by(title) %>%
   summarize(
@@ -258,5 +259,5 @@ checklist_taxa %>%
 Save to CSV:
 
 ```{r}
-write_csv(checklist_taxa, here("data", "interim", "checklist_taxa.csv"), na = "")
+write_csv(taxa, here("data", "interim", "taxa.csv"), na = "")
 ```

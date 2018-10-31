@@ -47,3 +47,24 @@ checklist_taxon_keys <- checklist_taxa %>%
   pull(key)
 ```
 
+# Get distributions
+
+```{r get_distributions_from_gbif}
+progress_bar <- progress_estimated(length(checklist_taxon_keys))
+
+distribution <- map_dfr(checklist_taxon_keys, function(x) {
+  progress_bar$tick()$print()
+  rgbif::name_usage(
+    key = x,
+    return = "data",
+    data = "distribution"
+  )
+})
+```
+
+Save to CSV:
+
+```{r}
+write_csv(distribution, here("data", "interim", "distribution.csv"), na = "")
+```
+

@@ -274,6 +274,8 @@ descriptions_unified <- descriptions_unified %>%
   # Choose distinct value for that type and verifiedKey
   # If identical values exist within that grouping, distinct() will take 
   # most trustworthy (first one)
+  
+  # Note: since we use distinct we can't keep a sourceTaxon (taxonKey)
   distinct(
     description
   )

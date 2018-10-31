@@ -33,11 +33,11 @@ library(trias)          # To use functions developed for TrIAS
 # Read data
 
 ```{r}
-speciesprofile <- read_csv(here("data", "test", "input", "speciesprofile.csv"))
 description <- read_csv(here("data", "test", "input", "description.csv"))
 checklists <- read_csv(here("data", "raw", "checklists.csv"))
 taxa <- read_csv(here("data", "raw", "taxa.csv"))
 distributions <- read_csv(here("data", "raw", "distributions.csv"))
+speciesprofiles <- read_csv(here("data", "raw", "speciesprofiles.csv"))
 ```
 
 # Assign checklist order
@@ -175,9 +175,9 @@ speciesprofiles_unified <- speciesprofiles %>%
   # This is rare: normally all attributes are populated or there just isn't a
   # species profile for that species
   filter(
-    !is.na(isMarine) &
-    !is.na(isFreshwater) &
-    !is.na(isTerrestrial)
+    !is.na(marine) &
+    !is.na(freshwater) &
+    !is.na(terrestrial)
   )
 ```
 
@@ -187,21 +187,24 @@ Choose a single species profile within a checklist:
 speciesprofiles_unified <- speciesprofiles_unified %>%
 
   # Join species profile with taxon to get verifiedKey and checklist order
-  left_join(taxon, on = taxonID) %>%
+  left_join(taxa, on = taxonID) %>%
+  
+  # Remove records that have no verifiedKey (e.g. one wasn't assigned yet)
+  filter(!is.na(verifiedKey)) %>%
   
   # Group by verifiedKey within checklist
   group_by(
-    checklist,
-    checklist_order,
+    datasetKey,
+    checklistOrder,
     verifiedKey
   ) %>%
   
-  # Take first species profile and note taxonID
+  # Take first species profile and note taxonKey
   summarize(
-    isMarine = first(isMarine),
-    isFreshwater = first(isFreshwater),
-    isTerrestrial = first(isTerrestrial),
-    source_taxonID = first(taxonID)
+    marine = first(marine),
+    freshwater = first(freshwater),
+    terrestrial = first(terrestrial),
+    sourceTaxon = first(taxonKey)
   )
 ```
 
@@ -211,7 +214,7 @@ Choose a single species profile across checklists:
 speciesprofiles_unified <- speciesprofiles_unified %>%
   
   # Sort by checklist order (trustworthiness)
-  arrange(checklist_order) %>%
+  arrange(checklistOrder) %>%
   
   # Group by verifiedKey across checklists
   group_by(verifiedKey) %>%
@@ -219,11 +222,11 @@ speciesprofiles_unified <- speciesprofiles_unified %>%
   # Select species profile of most trustworthy checklist (first one)
   # and note that checklist and its taxonID
   summarize(
-    isMarine = first(isMarine),
-    isFreshwater = first(isFreshwater),
-    isTerrestrial = first(isTerrestrial),
-    source_checklist = first(checklist),
-    source_taxonID = first(source_taxonID)
+    marine = first(marine),
+    freshwater = first(freshwater),
+    terrestrial = first(terrestrial),
+    sourceChecklist = first(datasetKey),
+    sourceTaxon = first(sourceTaxon)
   ) %>%
 
   # Sort by verifiedKey
@@ -233,7 +236,7 @@ speciesprofiles_unified <- speciesprofiles_unified %>%
 Save to CSV:
 
 ```{r}
-write_csv(speciesprofiles_unified, here("data", "test", "output", "speciesprofiles_unified.csv"), na = "")
+write_csv(speciesprofiles_unified, here("data", "unified", "speciesprofiles.csv"), na = "")
 ```
 
 # Unify descriptions

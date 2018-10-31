@@ -35,7 +35,7 @@ library(trias)          # To use functions developed for TrIAS
 ```{r}
 taxon <- read_csv(here("data", "test", "input", "taxon.csv"))
 distribution <- read_csv(here("data", "test", "input", "distribution.csv"))
-species_profile <- read_csv(here("data", "test", "input", "speciesprofile.csv"))
+speciesprofile <- read_csv(here("data", "test", "input", "speciesprofile.csv"))
 description <- read_csv(here("data", "test", "input", "description.csv"))
 ```
 
@@ -122,7 +122,7 @@ write_csv(distribution_unified, here("data", "test", "output", "distribution_uni
 Filter species profiles:
 
 ```{r}
-species_profile_unified <- species_profile %>%
+speciesprofile_unified <- speciesprofile %>%
   
   # Remove species profiles that contain NA for any of the attributes
   # This is rare: normally all attributes are populated or there just isn't a
@@ -137,7 +137,7 @@ species_profile_unified <- species_profile %>%
 Choose a single species profile within a checklist:
 
 ```{r}
-species_profile_unified <- species_profile_unified %>%
+speciesprofile_unified <- speciesprofile_unified %>%
 
   # Join species profile with taxon to get verifiedKey and checklist order
   left_join(taxon, on = taxonID) %>%
@@ -161,7 +161,7 @@ species_profile_unified <- species_profile_unified %>%
 Choose a single species profile across checklists:
 
 ```{r}
-species_profile_unified <- species_profile_unified %>%
+speciesprofile_unified <- speciesprofile_unified %>%
   
   # Sort by checklist order (trustworthiness)
   arrange(checklist_order) %>%
@@ -186,7 +186,7 @@ species_profile_unified <- species_profile_unified %>%
 Save to CSV:
 
 ```{r}
-write_csv(species_profile_unified, here("data", "test", "output", "species_profile_unified.csv"), na = "")
+write_csv(speciesprofile_unified, here("data", "test", "output", "speciesprofile_unified.csv"), na = "")
 ```
 
 # Unify descriptions

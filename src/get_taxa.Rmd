@@ -6,304 +6,259 @@ author:
 date: "`r Sys.Date()`"
 output:
   html_document:
+    df_print: paged
+    number_sections: true
     toc: true
     toc_depth: 3
     toc_float: true
-    number_sections: true
-    theme: yeti
-    df_print: paged
-knit: (function(input_file, encoding) { rmarkdown::render(input_file, encoding = encoding, output_file = paste0("./docs/",sub(".Rmd", ".html", basename(input_file))))})
 ---
 
-This document describes how to retrieve the taxa from our checklists and create a verification spreadsheet.
+In this document we choose species checklists and download and filter the taxa they contain.
 
-# Setup
-
-```{r setup, include=FALSE}
+```{r setup, include = FALSE}
 knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
-```
-
-Install packages:
-
-```{r install_packages}
-devtools::install_github("trias-project/trias")
 ```
 
 Load libraries:
 
-```{r load_libraries}
-# Tidyverse packages
-library(dplyr)
-library(tidyr)
-library(purrr)
-library(stringr)
-library(readr)
-library(magrittr)
-# GBIF related packages
-library(rgbif)
-# project package
-library(trias)
-# other packages
-library(here)
-library(rlang)
+```{r}
+library(tidyverse)      # To do data science
+library(here)           # To find files
+library(janitor)        # To clean input data
+library(digest)         # To generate hashes
+library(rgbif)          # To use GBIF services
+library(trias)          # To use functions developed for TrIAS
 ```
 
-Set file paths:
+# Choose checklists
 
-```{r set_output_file_path}
-taxa_output_file <- here("data", "interim", "checklist_taxa.tsv")
-checklist_metadata_file <- here("data", "output", "checklist_metadata.tsv")
-```
+The unified checklist is compiled from [species checklists published to GBIF under the TrIAS project](https://www.gbif.org/dataset/search?type=CHECKLIST&project_id=trias). Here we choose the checklists we want to include and rank them by trust (most trustworthy first). The ranking will help to choose between duplicate taxa in later steps.
 
-# Select checklist datasets
+Choose checklists:
 
-These are the alien species checklist datasets we want to use and combine, ranked by trust (by experts):
-
-```{r define_checklists}
-checklists <- c(
-  "9ff7d317-609b-4c08-bd86-3bc404b77c42", # Manual of the Alien Plants of Belgium
-  "289244ee-e1c1-49aa-b2d7-d379391ce265", # Inventory of alien macroinvertebrates in Flanders, Belgium
-  "98940a79-2bf1-46e6-afd6-ba2e85a26f9f"  # Checklist of non-native freshwater fishes in Flanders, Belgium
-  # "b043c480-dd36-4f4f-aa82-e188753ff09d", # Catalogue of the Rust Fungi of Belgium
-  # "3f5e930b-52a5-461d-87ec-26ecd66f14a3" # RINSE - Registry of non-native species in the Two Seas region countries (Great Britain, France, Belgium and the Netherlands)
+```{r}
+checklist_keys <- c(
+  "9ff7d317-609b-4c08-bd86-3bc404b77c42", # alien-plants-belgium
+  "289244ee-e1c1-49aa-b2d7-d379391ce265", # alien-macroinvertebrates
+  "98940a79-2bf1-46e6-afd6-ba2e85a26f9f", # alien-fishes-checklist
+  "b043c480-dd36-4f4f-aa82-e188753ff09d", # uredinales-belgium-checklist
+  "1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2", # ad-hoc-checklist
+  "1738f272-6b5d-4f43-9a92-453a8c5ea50a", # rinse-pathways-checklist
+  "3f5e930b-52a5-461d-87ec-26ecd66f14a3"  # rinse-registry-checklist
 )
 ```
 
-Get metadata of these checklists from GBIF:
+Get metadata for these checklists from GBIF:
 
 ```{r get_checklist_metadata_from_gbif}
-checklists_metadata <- map(checklists, function(x) rgbif::datasets(uuid = x))
-checklists_metadata <- map_dfr(checklists_metadata, function(x) list(
-  datasetKey = x$data$key,
-  title = x$data$title,
-  modified = x$data$modified,
-  publisher = x$data$publishingOrganizationKey,
-  doi = x$data$doi)
-)
+checklists <- map(checklist_keys, function(x) rgbif::datasets(uuid = x)) %>%
+  map_df(function(x) list(
+    datasetKey = x$data$key,
+    title = x$data$title,
+    modified = x$data$modified,
+    publisher = x$data$publishingOrganizationKey,
+    doi = x$data$doi
+  ))
 ```
 
-Preview metadata to ensure we have the correct checklists:
+Show metadata to ensure we have the correct checklists:
 
-```{r preview_metadata}
-checklists_metadata
+```{r}
+checklists
 ```
 
-We save the checklist details and order.
+Save to CSV:
 
-```{r save_checklist_info}
-write_tsv(checklists_metadata, path = checklist_metadata_file)
+```{r}
+write_csv(checklists, here("data", "raw", "checklists.csv"), na = "")
 ```
-
 
 # Get taxa
 
-For each checklist, get the taxa from GBIF.
+Get taxa from these checklists from GBIF.
 
-**Note**: here we return checklist taxa, not backbone taxa.
+**Note**: here we get _checklist taxa_, not _GBIF backbone taxa_.
 
-```{r get_taxa_from_gbif}
-checklist_taxa_all_fields <- rgbif::name_lookup(
-  datasetKey = checklists_metadata$datasetKey,
-  origin = "source",# Only source taxa, not denormed higher classification taxa
-  limit = 99999,
-  return = "data")
+```{r get_checklist_taxa_from_gbif}
+taxa <- map_df(checklists$datasetKey, function(x) name_usage(
+    datasetKey = x,
+    limit = 99999, # Should be more than total taxa for all checklists
+    return = "data"
+  )) %>% 
+  filter(origin == "SOURCE") # Keep only source taxa, not denormed higher classification taxa
 ```
 
-Preview data:
+Select columns of interest, rename `key` to `taxonKey` and sort by `taxonKey`:
 
-```{r preview_taxa}
-head(checklist_taxa_all_fields, 20)
+```{r}
+taxa <- taxa %>%
+  select(key, scientificName, taxonID, datasetKey, nameType, issues, nubKey) %>%
+  rename(taxonKey = key) %>%
+  arrange(taxonKey)
 ```
 
-Create a data frame with the information we want for each taxon, sorted by taxon key:
+Convert the column `issues` from a list to a concatenated string:
 
-```{r select_columns}
-checklist_taxa <- checklist_taxa_all_fields %>%
-  select(key, scientificName, datasetKey, nubKey) %>%
-  arrange(key)
-```
-
-Show some stats:
-
-```{r show_taxa_stats_per_checklist}
-checklist_taxa %>%
-  group_by(datasetKey) %>%
-  summarize(
-    taxa = n(),
-    taxa_not_in_backbone = sum(is.na(nubKey))
+```{r}
+taxa <- taxa %>%
+  group_by_at(vars(-issues)) %>%
+  summarize(issues = str_c(issues, collapse = ",")) %>%
+  ungroup() %>%
+  mutate(
+    issues = na_if(issues, "NULL"),
+    issues = na_if(issues, "NA")
   )
 ```
 
-Total number of taxa:
+Preview checklist taxa:
 
-```{r show_total_taxa}
-nrow(checklist_taxa)
+```{r}
+taxa %>% head()
 ```
 
 # Filter on distribution
 
-Our checklists might contain more than alien species in Belgium. We therefore use the `trias::has_distribution()` function to filter on the [distribution](http://rs.gbif.org/extension/gbif/1.0/distribution.xml) information.
+TrIAS checklists can contain more than alien species in Belgium. We therefore need to filter on the associated [distribution](http://rs.gbif.org/extension/gbif/1.0/distribution.xml) information (using the `trias::has_distribution()` function) as follows:
 
-We will filter on:
+1. **In Belgium**: `country`(code) = `BE`
+2. **Present**: [`occurrenceStatus` status](https://gbif.github.io/gbif-api/apidocs/org/gbif/api/vocabulary/OccurrenceStatus.html) = `PRESENT`, `COMMMON`, `RARE` OR `IRREGULAR`
+2. **Introduced**: [`establishmentMeans`](http://gbif.github.io/parsers/apidocs/org/gbif/api/vocabulary/EstablishmentMeans.html) = `INTRODUCED`,  `NATURALISED`, `INVASIVE` OR `ASSISTED COLONISATION`
 
-1. [invasion stage](http://gbif.github.io/parsers/apidocs/org/gbif/api/vocabulary/EstablishmentMeans.html): `establishmentMeans` equal to one of `INTRODUCED`,  `NATURALISED`, `INVASIVE`, `ASSISTED COLONISATION`
-2. [presence status](https://gbif.github.io/gbif-api/apidocs/org/gbif/api/vocabulary/OccurrenceStatus.html): `status` equal to one of `PRESENT`, `COMMMON`, `RARE`, `IRREGULAR`
-3. presence in Belgium (`country` equal to `BE`)
-
-**Note**: we filter on distribution information of our _checklist taxa_, not backbone taxa. That is because backbone taxa contain distribution information from our own checklists _and_ other checklists, which we don't want to consider here.
+**Note**: we filter on distribution information of _checklist taxa_, not _GBIF backbone taxa_. That is because backbone taxa contain distribution information from TrIAS checklists _and_ other checklists, which we don't want to consider here.
 
 E.g. compare:
 
 * Distributions for _checklist_ taxon [Eriocheir sinensis](https://api.gbif.org/v1/species/140563012/distributions) (`140563012`)
 * Distributions for _backbone_ taxon [Eriocheir sinensis](https://api.gbif.org/v1/species/2225776/distributions) (`2225776`)
 
-Get distribution for all taxa and append `TRUE`/`FALSE` result as extra column. This step can take long.
+Get distribution information from GBIF and check if these meet the filter criteria. The result (`TRUE`/`FALSE`) is inserted as an extra column `validDistribution`:
 
-```{r check_distributions_on_gbif}
-progress_bar <- progress_estimated(nrow(checklist_taxa))
-checklist_taxa <- checklist_taxa %>%
-  mutate(valid_distribution = map_lgl(
-    checklist_taxa$key, ~ {
+```{r get_distribution_info_from_gbif}
+progress_bar <- progress_estimated(nrow(taxa))
+
+taxa <- taxa %>%
+  mutate(validDistribution = map_lgl(taxa$taxonKey, function(x) {
     progress_bar$tick()$print()
     trias::gbif_has_distribution(
-      taxon_key = .,
+      taxon_key = x,
       country = "BE",
-      establishmentMeans = c("INTRODUCED", "NATURALISED", 
-                             "INVASIVE", "ASSISTED COLONISATION"),
-      status = c("PRESENT", "COMMMON", "RARE", "IRREGULAR"))
-    }))
+      establishmentMeans = c("INTRODUCED", "NATURALISED", "INVASIVE", "ASSISTED COLONISATION"),
+      status = c("PRESENT", "COMMON", "RARE", "IRREGULAR")
+    )
+  }))
 ```
 
-Preview results:
+Preview some taxa with not a single valid distribution (`taxonKey` can be used to verify manually on GBIF):
 
-```{r preview_has_distribution}
-checklist_taxa %>%
-  select(key, scientificName, valid_distribution) %>%
-  head(20)
+```{r}
+taxa %>%
+  filter(!validDistribution) %>%
+  head()
 ```
 
-Show some stats:
+Rename `nubKey` to `bb_key` and move to the end:
 
-```{r show_distribution_stats_per_checklist}
-checklist_taxa %>%
-  group_by(datasetKey) %>%
-  summarize(
-    taxa = n(),
-    taxa_with_valid_distribution = sum(valid_distribution),
-    taxa_without_valid_distribution = sum(!valid_distribution)
+```{r}
+taxa <- taxa %>%
+  rename(bb_key = nubKey) %>%
+  select(-bb_key, everything())
+```
+
+# Get GBIF backbone taxonomy information
+
+A taxon can occur on more than one checklist. To identify these duplicates, we cannot rely on the _scientific name_ as there might be spelling variations (e.g. with or without authorship) and it does not account for synonyms that should be lumped with the accepted taxon. To have **unifying taxon identifiers across taxa**, we rely on the [GBIF backbone taxonomy](https://doi.org/10.15468/39omei), to which every checklist taxon (re)published to GBIF is automatically matched. If a match in the backbone is found, the checklist taxon will have a `nubKey`.
+
+Filter taxa on having valid distribution and `nubKey` and create vector of unique `nubKey`s:
+
+```{r}
+nub_keys <- taxa %>%
+  filter(validDistribution) %>%
+  filter(is.finite(bb_key)) %>%
+  select(bb_key) %>%
+  distinct(bb_key) %>%
+  pull()
+```
+
+Get GBIF backbone taxonomy information:
+
+```{r get_backbone_info_from_gbif}
+progress_bar <- progress_estimated(length(nub_keys))
+
+backbone_info <- map_dfr(nub_keys, function(x) {
+  progress_bar$tick()$print()
+  rgbif::name_usage(
+    key = x,
+    return = "data"
+  )
+})
+```
+
+Select columns of interest:
+
+```{r}
+backbone_info <- backbone_info %>%
+  select(
+    "key", "scientificName", "species", "genus", "family", "order", "class",
+    "phylum", "kingdom", "rank", "speciesKey", "taxonomicStatus", "acceptedKey", 
+    "accepted"
   )
 ```
 
-Only keep taxa with valid distribution:
-
-```{r keep_valid_distribution}
-checklist_taxa <- checklist_taxa %>%
-  filter(valid_distribution == TRUE) %>%
-  select(-valid_distribution)
-```
-
-Total number of taxa with valid distributions:
-
-```{r show_total_valid_distribution_taxa}
-nrow(checklist_taxa)
-```
-
-# Get backbone info
-
-To make decisions regarding synonyms and higher classification, we need to retrieve GBIF backbone information, if present:
-
-
-```{r retrieve_taxonomic_info_backbone}
-taxon <- checklist_taxa %>% filter(is.finite(nubKey))
-nub_keys <- checklist_taxa %>% 
-  filter(is.finite(nubKey)) %>% 
-  distinct(nubKey)
-progress_bar <- progress_estimated(nrow(nub_keys))
-taxon_backbone_info <-  map_dfr(nub_keys$nubKey, ~ {
-  progress_bar$tick()$print()
-  rgbif::name_usage(key = ., return = "data")
-  })
-```
-
-We select taxonomic information we are interested to:
-
-```{r select_cols_backbone}
-taxon_info <- c("key", "scientificName", "species", "genus", "family", "order",
-                "class", "phylum", "kingdom",
-                "rank", "speciesKey", "taxonomicStatus", 
-                "acceptedKey", "accepted", "issues")
-
-taxon_backbone_info <- taxon_backbone_info %>%
-  select(one_of(taxon_info))
-```
-
-In case some information misses, add empty column(s):
+Remove duplicates (caused by [this bug](https://github.com/ropensci/rgbif/issues/324)):
 
 ```{r}
-cols_to_add <- taxon_info[!which(taxon_info %in% 
-           colnames(taxon_backbone_info))]
-
-taxon_backbone_info <- map(cols_to_add, 
-                           function(x) taxon_backbone_info %>% 
-                             mutate(!! sym(x) := NA)) %>% 
-  reduce(full_join, .init = taxon_backbone_info)
+backbone_info <- backbone_info %>%
+  distinct()
 ```
 
-Next, we unlist column `issues` and we separate them by comma (if multiple issues are present):
-
-```{r unlist_issues}
-taxon_backbone_info <- taxon_backbone_info %>%
-  group_by_at(vars(-issues)) %>%
-  summarize(issues = str_c(issues, collapse = ",")) %>%
-  ungroup() %>%
-  mutate(issues = ifelse(
-    issues != "NULL",
-    issues,
-    NA
-  ))
-```
-
-All possible combinations of GBIF backbone issues present in our data frame:
-
-```{r preview issues}
-taxon_backbone_info %>% distinct(issues)
-```
-
-For improving readibility we rename the column `accepted` to `acceptedName` and add prefix `backbone_` or `checklist_` to all columns containing information from GBIF backbone or checklist respectively:
-
-```{r add_prefix_backbone}
-taxon_backbone_info <- taxon_backbone_info %>% rename(acceptedName = accepted)
-colnames(taxon_backbone_info) <- paste0("backbone_", 
-                                        colnames(taxon_backbone_info))
-colnames(checklist_taxa) <- paste0("checklist_", 
-                                        colnames(checklist_taxa))
-```
-
-We merge the information from checklists and GBIF backbone:
+Rename `accepted` to `acceptedName`:
 
 ```{r}
-combined_taxon_info <- checklist_taxa %>%
-  left_join(taxon_backbone_info, 
-            by = c("checklist_nubKey" = "backbone_key"))
+backbone_info <- backbone_info %>%
+  rename(acceptedName = accepted)
 ```
 
-For readibility we rename `checklist_nubKey` (tendency of GBIF to deprecate the word _nubKey_) to `backbone_taxonKey`.
-
-```{r checklist_nubKey_to_backbone_taxonKey}
-combined_taxon_info <- combined_taxon_info %>%
-  rename(backbone_taxonKey = checklist_nubKey)
-```
-
-Preview:
-
-```{r preview_merged_final}
-combined_taxon_info %>% head()
-```
-
-# Save output
-
-Save the taxonomic information to a tsv file:
+Add prefix `bb_` to column names:
 
 ```{r}
-write_tsv(combined_taxon_info, path = taxa_output_file, na = "")
+colnames(backbone_info) <- paste0("bb_", colnames(backbone_info))
+```
+
+Merge backbone information with checklist taxa:
+
+```{r}
+taxa <- taxa %>%
+  left_join(
+    backbone_info, 
+    by = "bb_key"
+  )
+```
+
+Preview merged information:
+
+```{r}
+taxa %>% head()
+```
+
+# Show summary and save
+
+Show summary per checklist:
+
+```{r}
+taxa %>%
+  left_join(checklists, by = "datasetKey") %>%
+  group_by(title) %>%
+  summarize(
+    taxa = n(),
+    valid_dist_in_backbone = sum(validDistribution & !is.na(bb_key)),
+    invalid_distribution = sum(!validDistribution),
+    not_in_backbone = sum(validDistribution & is.na(bb_key))
+  ) %>%
+  adorn_totals("row")
+```
+
+Save to CSV:
+
+```{r}
+write_csv(taxa, here("data", "raw", "taxa.csv"), na = "")
 ```

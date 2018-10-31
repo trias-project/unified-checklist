@@ -92,7 +92,7 @@ Select columns of interest and sort by taxon `key`:
 
 ```{r}
 taxa <- taxa %>%
-  select(key, scientificName, datasetKey, taxonID, nameType, issues, nubKey) %>%
+  select(key, scientificName, taxonID, datasetKey, nameType, issues, nubKey) %>%
   arrange(key)
 ```
 
@@ -130,13 +130,13 @@ E.g. compare:
 * Distributions for _checklist_ taxon [Eriocheir sinensis](https://api.gbif.org/v1/species/140563012/distributions) (`140563012`)
 * Distributions for _backbone_ taxon [Eriocheir sinensis](https://api.gbif.org/v1/species/2225776/distributions) (`2225776`)
 
-Get distribution information from GBIF and check if these meet the filter criteria. The result (`TRUE`/`FALSE`) is inserted as an extra column `valid_distribution`:
+Get distribution information from GBIF and check if these meet the filter criteria. The result (`TRUE`/`FALSE`) is inserted as an extra column `validDistribution`:
 
 ```{r get_distribution_info_from_gbif}
 progress_bar <- progress_estimated(nrow(taxa))
 
 taxa %<>%
-  mutate(valid_distribution = map_lgl(taxa$key, function(x) {
+  mutate(validDistribution = map_lgl(taxa$key, function(x) {
     progress_bar$tick()$print()
     trias::gbif_has_distribution(
       taxon_key = x,
@@ -151,7 +151,7 @@ Preview some taxa with not a single valid distribution (key can be used to verif
 
 ```{r}
 taxa %>%
-  filter(!valid_distribution) %>%
+  filter(!validDistribution) %>%
   head()
 ```
 
@@ -171,7 +171,7 @@ Filter taxa on having valid distribution and `nubKey` and create vector of uniqu
 
 ```{r}
 nub_keys <- taxa %>%
-  filter(valid_distribution) %>%
+  filter(validDistribution) %>%
   filter(is.finite(bb_key)) %>%
   select(bb_key) %>%
   distinct(bb_key) %>%
@@ -249,9 +249,9 @@ taxa %>%
   group_by(title) %>%
   summarize(
     taxa = n(),
-    valid_dist_in_backbone = sum(valid_distribution & !is.na(bb_key)),
-    invalid_distribution = sum(!valid_distribution),
-    not_in_backbone = sum(valid_distribution & is.na(bb_key))
+    valid_dist_in_backbone = sum(validDistribution & !is.na(bb_key)),
+    invalid_distribution = sum(!validDistribution),
+    not_in_backbone = sum(validDistribution & is.na(bb_key))
   ) %>%
   adorn_totals("row")
 ```

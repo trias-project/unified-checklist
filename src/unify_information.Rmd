@@ -33,11 +33,11 @@ library(trias)          # To use functions developed for TrIAS
 # Read data
 
 ```{r}
-description <- read_csv(here("data", "test", "input", "description.csv"))
 checklists <- read_csv(here("data", "raw", "checklists.csv"))
 taxa <- read_csv(here("data", "raw", "taxa.csv"))
 distributions <- read_csv(here("data", "raw", "distributions.csv"))
 speciesprofiles <- read_csv(here("data", "raw", "speciesprofiles.csv"))
+descriptions <- read_csv(here("data", "raw", "descriptions.csv"))
 ```
 
 # Assign checklist order
@@ -246,9 +246,9 @@ Filter descriptions:
 ```{r}
 descriptions_unified <- descriptions %>%
   
-  # Filter on non-NA values
+  # Filter on non-NA descriptions
   filter(
-    !is.na(value)
+    !is.na(description)
   )
 ```
 
@@ -258,21 +258,24 @@ Select unique descriptions (within their type) within a checklist:
 descriptions_unified <- descriptions_unified %>%
 
   # Join species profile with taxon to get verifiedKey and checklist order
-  left_join(taxon, on = taxonID) %>%
+  left_join(taxa, on = taxonKey) %>%
+  
+  # Remove records that have no verifiedKey (e.g. one wasn't assigned yet)
+  filter(!is.na(verifiedKey)) %>%
   
   # Group by type and verifiedKey within checklist
   group_by(
-    checklist,
-    checklist_order,
-    type,
-    verifiedKey
+    datasetKey,
+    checklistOrder,
+    verifiedKey,
+    type
   ) %>%
   
   # Choose distinct value for that type and verifiedKey
   # If identical values exist within that grouping, distinct() will take 
   # most trustworthy (first one)
   distinct(
-    value
+    description
   )
 ```
 
@@ -282,7 +285,7 @@ Select unique descriptions (within their type) across checklists:
 descriptions_unified <- descriptions_unified %>%
   
   # Sort by checklist order (trustworthiness)
-  arrange(checklist_order) %>%
+  arrange(checklistOrder) %>%
   
   # Group by type and verifiedKey across checklists
   group_by(
@@ -292,15 +295,15 @@ descriptions_unified <- descriptions_unified %>%
   
   # Choose distinct value for that type and verifiedKey
   distinct(
-    value,
+    description,
     .keep_all = TRUE
   ) %>%
 
   # Move verifiedKey to beginning and drop checklist_order
-  select(verifiedKey, everything(), -checklist_order) %>%
+  select(verifiedKey, everything(), -checklistOrder) %>%
   
   # Rename checklist
-  rename(source_checklist = checklist) %>%
+  rename(sourceChecklist = datasetKey) %>%
   
   # Sort by verifiedKey and type
   arrange(verifiedKey, type)
@@ -309,5 +312,5 @@ descriptions_unified <- descriptions_unified %>%
 Save to CSV:
 
 ```{r}
-write_csv(descriptions_unified, here("data", "test", "output", "descriptions_unified.csv"), na = "")
+write_csv(descriptions_unified, here("data", "unified", "descriptions.csv"), na = "")
 ```

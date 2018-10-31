@@ -1,4 +1,4 @@
-taxonID,type,value
+taxonKey,type,description
 1,native range,AZ
 1,native range,EU
 1,pathway,X:B

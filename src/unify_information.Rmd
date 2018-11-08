@@ -2,10 +2,6 @@
 
 In this chapter we unify related information for each verified taxon.
 
-```{r setup_unify_information, include = FALSE}
-knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
-```
-
 ## Read data
 
 ```{r}

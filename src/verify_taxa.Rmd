@@ -2,10 +2,6 @@
 
 In this chapter we report and update taxa that require manual verification.
 
-```{r setup_verify_taxa, include = FALSE}
-knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
-```
-
 ## Read and filter checklist taxa
 
 Read checklist taxa:

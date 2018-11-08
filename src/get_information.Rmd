@@ -2,10 +2,6 @@
 
 In this chapter we retrieve related information for taxa on the checklists (with a valid distribution).
 
-```{r setup_get_information, include = FALSE}
-knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
-```
-
 ## Read data
 
 ```{r}

@@ -24,7 +24,7 @@ taxon_keys <- taxa %>%
 
 1. Get distributions for our taxa from GBIF.
 
-```{r get_information-get_distributions_from_gbif}
+```{r get_information-get_distributions_from_gbif, cache = TRUE}
 progress_bar <- progress_estimated(length(taxon_keys))
 
 distributions <- map_dfr(taxon_keys, function(x) {
@@ -47,7 +47,7 @@ write_csv(distributions, here("data", "raw", "distributions.csv"), na = "")
 
 1. Get species profiles for our taxa from GBIF.
 
-```{r get_information-get_speciesprofiles_from_gbif}
+```{r get_information-get_speciesprofiles_from_gbif, cache = TRUE}
 progress_bar <- progress_estimated(length(taxon_keys))
 
 speciesprofiles <- map_dfr(taxon_keys, function(x) {
@@ -70,7 +70,7 @@ write_csv(speciesprofiles, here("data", "raw", "speciesprofiles.csv"), na = "")
 
 1. Get descriptions for our taxa from GBIF.
 
-```{r get_information-get_descriptions_from_gbif}
+```{r get_information-get_descriptions_from_gbif, cache = TRUE}
 progress_bar <- progress_estimated(length(taxon_keys))
 
 descriptions <- map_dfr(taxon_keys, function(x) {

@@ -4,7 +4,7 @@ In this chapter we retrieve related information for taxa on the checklists (with
 
 ## Read data
 
-1. Read data from [`data/raw/taxa.csv`](https://github.com/trias-project/unified-checklist/blob/master/data/raw/taxa.csv).
+Read data from [`data/raw/taxa.csv`](https://github.com/trias-project/unified-checklist/blob/master/data/raw/taxa.csv).
 
 ```{r}
 taxa <- read_csv(here("data", "raw", "taxa.csv"))
@@ -12,9 +12,7 @@ taxa <- read_csv(here("data", "raw", "taxa.csv"))
 
 ## Filter checklist taxa
 
-Important: if a checklist has related information for a taxon, but not a valid distribution, that related information will NOT be included in the unified checklist. This is to exclude related information about a taxon for which the checklist did not even consider a Belgian scope (e.g. pathway).
-
-1. Filter on taxa with valid distribution.
+1. Filter on taxa with valid distribution. **Note**: if a checklist has related information for a taxon, but not a valid distribution, that related information will NOT be included in the unified checklist. This is to exclude related information about a taxon for which the checklist did not even consider a Belgian scope (e.g. pathway).
 
 ```{r}
 taxon_keys <- taxa %>%

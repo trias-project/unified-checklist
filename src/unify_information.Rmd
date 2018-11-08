@@ -14,14 +14,14 @@ descriptions <- read_csv(here("data", "raw", "descriptions.csv"))
 
 ## Assign checklist order
 
-1. Get checklist keys (in order).
+1. Get checklist keys as (ordered) vector.
 
 ```{r}
 checklist_keys <- checklists %>%
   pull(datasetKey)
 ```
 
-2. Assign checklist order (= index of checklist keys) as extra column to taxa.
+2. Assign the checklist order (= index of checklist keys) as an extra column to taxa.
 
 ```{r}
 taxa <- taxa %>%
@@ -33,7 +33,7 @@ taxa <- taxa %>%
 
 **TO REMOVE**
 
-```{r}
+```{r echo = TRUE}
 # Temporarily use the bb_key as a unifying key
 taxa <- taxa %>%
   rename(verifiedKey = bb_key)

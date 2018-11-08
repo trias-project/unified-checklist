@@ -17,7 +17,8 @@ output:
 ---
 
 ```{r index-setup, include = FALSE}
-knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+# Note that chunk code is excluded from the output by default
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
 ```
 
 # Intro
@@ -26,7 +27,7 @@ knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
 
 Load libraries:
 
-```{r}
+```{r echo = TRUE}
 library(tidyverse)      # To do data science
 library(here)           # To find files
 library(janitor)        # To clean input data

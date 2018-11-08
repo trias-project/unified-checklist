@@ -14,7 +14,7 @@
   
   
   
-  <meta name="github-repo" content="enram/vp-processing" />
+  <meta name="github-repo" content="trias-project/unified-checklist" />
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="National, unified checklist of alien species in Belgium" />
@@ -25,7 +25,7 @@
 <meta name="author" content="Peter Desmet, Damiano Oldoni">
 
 
-<meta name="date" content="2018-10-31">
+<meta name="date" content="2018-11-08">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -143,13 +143,6 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <div id="unify-related-information" class="section level1">
 <h1><span class="header-section-number">4</span> Unify related information</h1>
 <p>In this chapter we unify related information for each verified taxon.</p>
-<p>Load libraries:</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(tidyverse)      <span class="co"># To do data science</span>
-<span class="kw">library</span>(here)           <span class="co"># To find files</span>
-<span class="kw">library</span>(janitor)        <span class="co"># To clean input data</span>
-<span class="kw">library</span>(digest)         <span class="co"># To generate hashes</span>
-<span class="kw">library</span>(rgbif)          <span class="co"># To use GBIF services</span>
-<span class="kw">library</span>(trias)          <span class="co"># To use functions developed for TrIAS</span></code></pre></div>
 <div id="read-data-1" class="section level2">
 <h2><span class="header-section-number">4.1</span> Read data</h2>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">checklists &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="kw">here</span>(<span class="st">&quot;data&quot;</span>, <span class="st">&quot;raw&quot;</span>, <span class="st">&quot;checklists.csv&quot;</span>))
@@ -160,13 +153,10 @@ descriptions &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<spa
 </div>
 <div id="assign-checklist-order" class="section level2">
 <h2><span class="header-section-number">4.2</span> Assign checklist order</h2>
-<p>Get checklist keys (in order):</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">checklist_keys &lt;-<span class="st"> </span>checklists <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw">pull</span>(datasetKey)</code></pre></div>
-<p>Assign checklist order column to taxa:</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">taxa &lt;-<span class="st"> </span>taxa <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw">rowwise</span>() <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw">mutate</span>(<span class="dt">checklistOrder =</span> <span class="kw">which</span>(checklist_keys <span class="op">==</span><span class="st"> </span>datasetKey)[<span class="dv">1</span>])</code></pre></div>
+<ol style="list-style-type: decimal">
+<li><p>Get checklist keys as (ordered) vector.</p></li>
+<li><p>Assign the checklist order (= index of checklist keys) as an extra column to taxa.</p></li>
+</ol>
 <hr />
 <p><strong>TO REMOVE</strong></p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Temporarily use the bb_key as a unifying key</span>
@@ -176,7 +166,9 @@ taxa &lt;-<span class="st"> </span>taxa <span class="op">%&gt;%</span>
 </div>
 <div id="unify-distribution" class="section level2">
 <h2><span class="header-section-number">4.3</span> Unify distribution</h2>
-<p>Parse <code>temporal</code> (eventDate) information:</p>
+<ol style="list-style-type: decimal">
+<li>Parse <code>temporal</code> (eventDate) information.</li>
+</ol>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">distributions_unified &lt;-<span class="st"> </span>distributions <span class="op">%&gt;%</span>
 <span class="st">  </span>
 <span class="st">  </span><span class="co"># Split temporal on &quot;/&quot; into startYear and endYear</span>
@@ -196,7 +188,9 @@ taxa &lt;-<span class="st"> </span>taxa <span class="op">%&gt;%</span>
 <span class="st">  </span>
 <span class="st">  </span><span class="co"># If endYear is empty (no range), populate it with startYear: 2018 &amp; 2018</span>
 <span class="st">  </span><span class="kw">mutate</span>(<span class="dt">endYear =</span> <span class="kw">if_else</span>(<span class="kw">is.na</span>(endYear), startYear, endYear))</code></pre></div>
-<p>Filter distributions:</p>
+<ol start="2" style="list-style-type: decimal">
+<li>Filter distributions.</li>
+</ol>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">distributions_unified &lt;-<span class="st"> </span>distributions_unified <span class="op">%&gt;%</span>
 <span class="st">  </span>
 <span class="st">  </span><span class="co"># Filter on non-native species present in (at least part of) Belgium</span>
@@ -205,7 +199,9 @@ taxa &lt;-<span class="st"> </span>taxa <span class="op">%&gt;%</span>
 <span class="st">    </span>establishmentMeans <span class="op">%in%</span><span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;INTRODUCED&quot;</span>, <span class="st">&quot;NATURALISED&quot;</span>, <span class="st">&quot;INVASIVE&quot;</span>, <span class="st">&quot;ASSISTED COLONISATION&quot;</span>) <span class="op">&amp;</span>
 <span class="st">    </span>status <span class="op">%in%</span><span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;PRESENT&quot;</span>, <span class="st">&quot;COMMON&quot;</span>, <span class="st">&quot;RARE&quot;</span>, <span class="st">&quot;IRREGULAR&quot;</span>)
   )</code></pre></div>
-<p>Choose a single distribution within a checklist:</p>
+<ol start="3" style="list-style-type: decimal">
+<li>Choose a single distribution within a checklist.</li>
+</ol>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">distributions_unified &lt;-<span class="st"> </span>distributions_unified <span class="op">%&gt;%</span>
 
 <span class="st">  </span><span class="co"># Join distribution with taxon to get verifiedKey and checklistOrder</span>
@@ -227,32 +223,16 @@ taxa &lt;-<span class="st"> </span>taxa <span class="op">%&gt;%</span>
     <span class="dt">endYear =</span> <span class="kw">max</span>(endYear, <span class="dt">na.rm =</span> <span class="ot">TRUE</span>),
     <span class="dt">sourceTaxa =</span> <span class="kw">paste</span>(<span class="kw">sort</span>(<span class="kw">unique</span>(taxonKey)), <span class="dt">collapse =</span> <span class="st">&quot;,&quot;</span>)
   )</code></pre></div>
-<p>Choose a single distribution across checklists:</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">distributions_unified &lt;-<span class="st"> </span>distributions_unified <span class="op">%&gt;%</span>
-<span class="st">  </span>
-<span class="st">  </span><span class="co"># Sort by checklist order (trustworthiness)</span>
-<span class="st">  </span><span class="kw">arrange</span>(checklistOrder) <span class="op">%&gt;%</span>
-<span class="st">  </span>
-<span class="st">  </span><span class="co"># Group by verifiedKey across checklists</span>
-<span class="st">  </span><span class="kw">group_by</span>(verifiedKey) <span class="op">%&gt;%</span>
-<span class="st">  </span>
-<span class="st">  </span><span class="co"># Select year of most trustworthy checklist (first one)</span>
-<span class="st">  </span><span class="co"># and note that checklist and its taxonKey(s)</span>
-<span class="st">  </span><span class="kw">summarize</span>(
-    <span class="dt">startYear =</span> <span class="kw">first</span>(startYear),
-    <span class="dt">lastYear =</span> <span class="kw">first</span>(endYear),
-    <span class="dt">sourceChecklist =</span> <span class="kw">first</span>(datasetKey),
-    <span class="dt">sourceTaxa =</span> <span class="kw">first</span>(sourceTaxa)
-  ) <span class="op">%&gt;%</span>
-
-<span class="st">  </span><span class="co"># Sort by verifiedKey</span>
-<span class="st">  </span><span class="kw">arrange</span>(verifiedKey)</code></pre></div>
-<p>Save to CSV:</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">write_csv</span>(distributions_unified, <span class="kw">here</span>(<span class="st">&quot;data&quot;</span>, <span class="st">&quot;unified&quot;</span>, <span class="st">&quot;distributions.csv&quot;</span>), <span class="dt">na =</span> <span class="st">&quot;&quot;</span>)</code></pre></div>
+<ol start="4" style="list-style-type: decimal">
+<li><p>Choose a single distribution across checklists.</p></li>
+<li><p>Save to <a href="https://github.com/trias-project/unified-checklist/blob/master/data/unified/distributions.csv">CSV</a>.</p></li>
+</ol>
 </div>
 <div id="unify-species-profiles" class="section level2">
 <h2><span class="header-section-number">4.4</span> Unify species profiles</h2>
-<p>Filter species profiles:</p>
+<ol style="list-style-type: decimal">
+<li>Filter species profiles.</li>
+</ol>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">speciesprofiles_unified &lt;-<span class="st"> </span>speciesprofiles <span class="op">%&gt;%</span>
 <span class="st">  </span>
 <span class="st">  </span><span class="co"># Remove species profiles that contain NA for any of the attributes</span>
@@ -263,7 +243,9 @@ taxa &lt;-<span class="st"> </span>taxa <span class="op">%&gt;%</span>
 <span class="st">    </span><span class="op">!</span><span class="kw">is.na</span>(freshwater) <span class="op">&amp;</span>
 <span class="st">    </span><span class="op">!</span><span class="kw">is.na</span>(terrestrial)
   )</code></pre></div>
-<p>Choose a single species profile within a checklist:</p>
+<ol start="2" style="list-style-type: decimal">
+<li>Choose a single species profile within a checklist.</li>
+</ol>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">speciesprofiles_unified &lt;-<span class="st"> </span>speciesprofiles_unified <span class="op">%&gt;%</span>
 
 <span class="st">  </span><span class="co"># Join species profile with taxon to get verifiedKey and checklist order</span>
@@ -286,7 +268,9 @@ taxa &lt;-<span class="st"> </span>taxa <span class="op">%&gt;%</span>
     <span class="dt">terrestrial =</span> <span class="kw">first</span>(terrestrial),
     <span class="dt">sourceTaxon =</span> <span class="kw">first</span>(taxonKey)
   )</code></pre></div>
-<p>Choose a single species profile across checklists:</p>
+<ol start="3" style="list-style-type: decimal">
+<li>Choose a single species profile across checklists.</li>
+</ol>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">speciesprofiles_unified &lt;-<span class="st"> </span>speciesprofiles_unified <span class="op">%&gt;%</span>
 <span class="st">  </span>
 <span class="st">  </span><span class="co"># Sort by checklist order (trustworthiness)</span>
@@ -307,19 +291,16 @@ taxa &lt;-<span class="st"> </span>taxa <span class="op">%&gt;%</span>
 
 <span class="st">  </span><span class="co"># Sort by verifiedKey</span>
 <span class="st">  </span><span class="kw">arrange</span>(verifiedKey)</code></pre></div>
-<p>Save to CSV:</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">write_csv</span>(speciesprofiles_unified, <span class="kw">here</span>(<span class="st">&quot;data&quot;</span>, <span class="st">&quot;unified&quot;</span>, <span class="st">&quot;speciesprofiles.csv&quot;</span>), <span class="dt">na =</span> <span class="st">&quot;&quot;</span>)</code></pre></div>
+<ol start="4" style="list-style-type: decimal">
+<li>Save to <a href="https://github.com/trias-project/unified-checklist/blob/master/data/unified/speciesprofiles.csv">CSV</a>.</li>
+</ol>
 </div>
 <div id="unify-descriptions" class="section level2">
 <h2><span class="header-section-number">4.5</span> Unify descriptions</h2>
-<p>Filter descriptions:</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">descriptions_unified &lt;-<span class="st"> </span>descriptions <span class="op">%&gt;%</span>
-<span class="st">  </span>
-<span class="st">  </span><span class="co"># Filter on non-NA descriptions</span>
-<span class="st">  </span><span class="kw">filter</span>(
-    <span class="op">!</span><span class="kw">is.na</span>(description)
-  )</code></pre></div>
-<p>Select unique descriptions (within their type) within a checklist:</p>
+<ol style="list-style-type: decimal">
+<li><p>Filter non <code>NA</code> descriptions.</p></li>
+<li><p>Select unique descriptions (within their type) within a checklist.</p></li>
+</ol>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">descriptions_unified &lt;-<span class="st"> </span>descriptions_unified <span class="op">%&gt;%</span>
 
 <span class="st">  </span><span class="co"># Join species profile with taxon to get verifiedKey and checklist order</span>
@@ -344,7 +325,9 @@ taxa &lt;-<span class="st"> </span>taxa <span class="op">%&gt;%</span>
 <span class="st">  </span><span class="kw">distinct</span>(
     description
   )</code></pre></div>
-<p>Select unique descriptions (within their type) across checklists:</p>
+<ol start="3" style="list-style-type: decimal">
+<li>Select unique descriptions (within their type) across checklists.</li>
+</ol>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">descriptions_unified &lt;-<span class="st"> </span>descriptions_unified <span class="op">%&gt;%</span>
 <span class="st">  </span>
 <span class="st">  </span><span class="co"># Sort by checklist order (trustworthiness)</span>
@@ -370,8 +353,9 @@ taxa &lt;-<span class="st"> </span>taxa <span class="op">%&gt;%</span>
 <span class="st">  </span>
 <span class="st">  </span><span class="co"># Sort by verifiedKey and type</span>
 <span class="st">  </span><span class="kw">arrange</span>(verifiedKey, type)</code></pre></div>
-<p>Save to CSV:</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">write_csv</span>(descriptions_unified, <span class="kw">here</span>(<span class="st">&quot;data&quot;</span>, <span class="st">&quot;unified&quot;</span>, <span class="st">&quot;descriptions.csv&quot;</span>), <span class="dt">na =</span> <span class="st">&quot;&quot;</span>)</code></pre></div>
+<ol start="4" style="list-style-type: decimal">
+<li>Save to <a href="https://github.com/trias-project/unified-checklist/blob/master/data/unified/descriptions.csv">CSV</a>.</li>
+</ol>
 
 </div>
 </div>

@@ -14,7 +14,7 @@
   
   
   
-  <meta name="github-repo" content="enram/vp-processing" />
+  <meta name="github-repo" content="trias-project/unified-checklist" />
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="National, unified checklist of alien species in Belgium" />
@@ -25,7 +25,7 @@
 <meta name="author" content="Peter Desmet, Damiano Oldoni">
 
 
-<meta name="date" content="2018-10-31">
+<meta name="date" content="2018-11-08">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -143,11 +143,18 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <div id="header">
 <h1 class="title">National, unified checklist of alien species in Belgium</h1>
 <h4 class="author"><em>Peter Desmet, Damiano Oldoni</em></h4>
-<h4 class="date"><em>2018-10-31</em></h4>
+<h4 class="date"><em>2018-11-08</em></h4>
 </div>
 <div id="intro" class="section level1">
 <h1><span class="header-section-number">1</span> Intro</h1>
 <p>…</p>
+<p>Load libraries:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(tidyverse)      <span class="co"># To do data science</span>
+<span class="kw">library</span>(here)           <span class="co"># To find files</span>
+<span class="kw">library</span>(janitor)        <span class="co"># To clean input data</span>
+<span class="kw">library</span>(digest)         <span class="co"># To generate hashes</span>
+<span class="kw">library</span>(rgbif)          <span class="co"># To use GBIF services</span>
+<span class="kw">library</span>(trias)          <span class="co"># To use functions developed for TrIAS</span></code></pre></div>
 
 </div>
             </section>

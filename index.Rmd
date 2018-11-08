@@ -14,9 +14,19 @@ output:
         facebook: no
         twitter: yes
         all: []
-github-repo: enram/vp-processing
 ---
 
 # Intro
 
 ...
+
+Load libraries:
+
+```{r}
+library(tidyverse)      # To do data science
+library(here)           # To find files
+library(janitor)        # To clean input data
+library(digest)         # To generate hashes
+library(rgbif)          # To use GBIF services
+library(trias)          # To use functions developed for TrIAS
+```

@@ -6,17 +6,6 @@ In this chapter we unify related information for each verified taxon.
 knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
 ```
 
-Load libraries:
-
-```{r}
-library(tidyverse)      # To do data science
-library(here)           # To find files
-library(janitor)        # To clean input data
-library(digest)         # To generate hashes
-library(rgbif)          # To use GBIF services
-library(trias)          # To use functions developed for TrIAS
-```
-
 ## Read data
 
 ```{r}

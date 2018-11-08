@@ -4,6 +4,8 @@ In this chapter we retrieve related information for taxa on the checklists (with
 
 ## Read data
 
+1. Read data from [`data/raw/taxa.csv`](https://github.com/trias-project/unified-checklist/blob/master/data/raw/taxa.csv).
+
 ```{r}
 taxa <- read_csv(here("data", "raw", "taxa.csv"))
 ```
@@ -11,6 +13,8 @@ taxa <- read_csv(here("data", "raw", "taxa.csv"))
 ## Filter checklist taxa
 
 Important: if a checklist has related information for a taxon, but not a valid distribution, that related information will NOT be included in the unified checklist. This is to exclude related information about a taxon for which the checklist did not even consider a Belgian scope (e.g. pathway).
+
+1. Filter on taxa with valid distribution.
 
 ```{r}
 taxon_keys <- taxa %>%
@@ -20,7 +24,9 @@ taxon_keys <- taxa %>%
 
 ## Get distributions
 
-```{r get_distributions_from_gbif}
+1. Get distributions for our taxa from GBIF.
+
+```{r get_information-get_distributions_from_gbif}
 progress_bar <- progress_estimated(length(taxon_keys))
 
 distributions <- map_dfr(taxon_keys, function(x) {
@@ -33,7 +39,7 @@ distributions <- map_dfr(taxon_keys, function(x) {
 })
 ```
 
-Save to CSV:
+2. Save to [CSV](https://github.com/trias-project/unified-checklist/blob/master/data/raw/distributions.csv).
 
 ```{r}
 write_csv(distributions, here("data", "raw", "distributions.csv"), na = "")
@@ -41,7 +47,9 @@ write_csv(distributions, here("data", "raw", "distributions.csv"), na = "")
 
 ## Get species profiles
 
-```{r get_speciesprofiles_from_gbif}
+1. Get species profiles for our taxa from GBIF.
+
+```{r get_information-get_speciesprofiles_from_gbif}
 progress_bar <- progress_estimated(length(taxon_keys))
 
 speciesprofiles <- map_dfr(taxon_keys, function(x) {
@@ -54,7 +62,7 @@ speciesprofiles <- map_dfr(taxon_keys, function(x) {
 })
 ```
 
-Save to CSV:
+2. Save to [CSV](https://github.com/trias-project/unified-checklist/blob/master/data/raw/speciesprofiles.csv).
 
 ```{r}
 write_csv(speciesprofiles, here("data", "raw", "speciesprofiles.csv"), na = "")
@@ -62,7 +70,9 @@ write_csv(speciesprofiles, here("data", "raw", "speciesprofiles.csv"), na = "")
 
 ## Get descriptions
 
-```{r get_descriptions_from_gbif}
+1. Get descriptions for our taxa from GBIF.
+
+```{r get_information-get_descriptions_from_gbif}
 progress_bar <- progress_estimated(length(taxon_keys))
 
 descriptions <- map_dfr(taxon_keys, function(x) {
@@ -75,7 +85,7 @@ descriptions <- map_dfr(taxon_keys, function(x) {
 })
 ```
 
-Save to CSV:
+2. Save to [CSV](https://github.com/trias-project/unified-checklist/blob/master/data/raw/descriptions.csv).
 
 ```{r}
 write_csv(descriptions, here("data", "raw", "descriptions.csv"), na = "")

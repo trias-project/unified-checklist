@@ -121,7 +121,7 @@ distributions_unified <- distributions_unified %>%
   # and note that checklist and its taxonKey(s)
   summarize(
     startYear = first(startYear),
-    lastYear = first(endYear),
+    endYear = first(endYear),
     sourceChecklist = first(datasetKey),
     sourceTaxa = first(sourceTaxa)
   ) %>%

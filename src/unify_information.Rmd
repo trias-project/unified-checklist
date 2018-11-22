@@ -17,14 +17,16 @@ descriptions <- read_csv(here("data", "raw", "descriptions.csv"))
 1. Get checklist keys as (ordered) vector.
 
 ```{r}
-checklist_keys <- checklists %>%
+checklist_keys <-
+  checklists %>%
   pull(datasetKey)
 ```
 
 2. Assign the checklist order (= index of checklist keys) as an extra column to taxa.
 
 ```{r}
-taxa <- taxa %>%
+taxa <-
+  taxa %>%
   rowwise() %>%
   mutate(checklistOrder = which(checklist_keys == datasetKey)[1])
 ```
@@ -35,7 +37,8 @@ taxa <- taxa %>%
 
 ```{r echo = TRUE}
 # Temporarily use the bb_key as a unifying key
-taxa <- taxa %>%
+taxa <-
+  taxa %>%
   rename(verifiedKey = bb_key)
 ```
 
@@ -46,7 +49,8 @@ taxa <- taxa %>%
 1. Parse `temporal` (eventDate) information.
 
 ```{r echo = TRUE}
-distributions_unified <- distributions %>%
+distributions_unified <-
+  distributions %>%
   
   # Split temporal on "/" into startYear and endYear
   # If temporal only contains a single year, then endYear will be empty
@@ -70,7 +74,8 @@ distributions_unified <- distributions %>%
 2. Filter distributions.
 
 ```{r echo = TRUE}
-distributions_unified <- distributions_unified %>%
+distributions_unified <-
+  distributions_unified %>%
   
   # Filter on non-native species present in (at least part of) Belgium
   filter(
@@ -83,7 +88,8 @@ distributions_unified <- distributions_unified %>%
 3. Choose a single distribution within a checklist.
 
 ```{r echo = TRUE}
-distributions_unified <- distributions_unified %>%
+distributions_unified <-
+  distributions_unified %>%
 
   # Join distribution with taxon to get verifiedKey and checklistOrder
   left_join(taxa, on = taxonKey) %>%
@@ -109,7 +115,8 @@ distributions_unified <- distributions_unified %>%
 4. Choose a single distribution across checklists.
 
 ```{r}
-distributions_unified <- distributions_unified %>%
+distributions_unified <-
+  distributions_unified %>%
   
   # Sort by checklist order (trustworthiness)
   arrange(checklistOrder) %>%
@@ -141,7 +148,8 @@ write_csv(distributions_unified, here("data", "unified", "distributions.csv"), n
 1. Filter species profiles.
 
 ```{r echo = TRUE}
-speciesprofiles_unified <- speciesprofiles %>%
+speciesprofiles_unified <-
+  speciesprofiles %>%
   
   # Remove species profiles that contain NA for any of the attributes
   # This is rare: normally all attributes are populated or there just isn't a
@@ -156,7 +164,8 @@ speciesprofiles_unified <- speciesprofiles %>%
 2. Choose a single species profile within a checklist.
 
 ```{r echo = TRUE}
-speciesprofiles_unified <- speciesprofiles_unified %>%
+speciesprofiles_unified <-
+  speciesprofiles_unified %>%
 
   # Join species profile with taxon to get verifiedKey and checklist order
   left_join(taxa, on = taxonID) %>%
@@ -183,7 +192,8 @@ speciesprofiles_unified <- speciesprofiles_unified %>%
 3. Choose a single species profile across checklists.
 
 ```{r echo = TRUE}
-speciesprofiles_unified <- speciesprofiles_unified %>%
+speciesprofiles_unified <-
+  speciesprofiles_unified %>%
   
   # Sort by checklist order (trustworthiness)
   arrange(checklistOrder) %>%
@@ -216,7 +226,8 @@ write_csv(speciesprofiles_unified, here("data", "unified", "speciesprofiles.csv"
 1. Filter non `NA` descriptions.
 
 ```{r}
-descriptions_unified <- descriptions %>%
+descriptions_unified <-
+  descriptions %>%
   
   # Filter on non-NA descriptions
   filter(
@@ -227,7 +238,8 @@ descriptions_unified <- descriptions %>%
 2. Select unique descriptions (within their type) within a checklist.
 
 ```{r echo = TRUE}
-descriptions_unified <- descriptions_unified %>%
+descriptions_unified <-
+  descriptions_unified %>%
 
   # Join species profile with taxon to get verifiedKey and checklist order
   left_join(taxa, on = taxonKey) %>%
@@ -256,7 +268,8 @@ descriptions_unified <- descriptions_unified %>%
 3. Select unique descriptions (within their type) across checklists.
 
 ```{r echo = TRUE}
-descriptions_unified <- descriptions_unified %>%
+descriptions_unified <-
+  descriptions_unified %>%
   
   # Sort by checklist order (trustworthiness)
   arrange(checklistOrder) %>%

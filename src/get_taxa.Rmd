@@ -23,7 +23,8 @@ checklist_keys <- c(
 2. Get metadata for these checklists from GBIF and display the result.
 
 ```{r get_taxa-get_checklist_metadata_from_gbif, cache = TRUE}
-checklists <- map(checklist_keys, function(x) rgbif::datasets(uuid = x)) %>%
+checklists <-
+  map(checklist_keys, function(x) rgbif::datasets(uuid = x)) %>%
   map_df(function(x) list(
     datasetKey = x$data$key,
     title = x$data$title,
@@ -45,7 +46,8 @@ write_csv(checklists, here("data", "raw", "checklists.csv"), na = "")
 1. Get taxa from these checklists from GBIF. **Note**: here we get _checklist taxa_, not _GBIF backbone taxa_.
 
 ```{r get_taxa-get_checklist_taxa_from_gbif, cache = TRUE}
-taxa <- map_df(checklists$datasetKey, function(x) name_usage(
+taxa <-
+  map_df(checklists$datasetKey, function(x) name_usage(
     datasetKey = x,
     limit = 99999, # Should be more than total taxa for all checklists
     return = "data"
@@ -56,7 +58,8 @@ taxa <- map_df(checklists$datasetKey, function(x) name_usage(
 2. Select columns of interest, rename `key` to `taxonKey` and sort by `taxonKey`.
 
 ```{r}
-taxa <- taxa %>%
+taxa <-
+  taxa %>%
   select(key, scientificName, taxonID, datasetKey, nameType, issues, nubKey) %>%
   rename(taxonKey = key) %>%
   arrange(taxonKey)
@@ -65,7 +68,8 @@ taxa <- taxa %>%
 3. Convert the column `issues` from a list to a concatenated string.
 
 ```{r}
-taxa <- taxa %>%
+taxa <-
+  taxa %>%
   group_by_at(vars(-issues)) %>%
   summarize(issues = str_c(issues, collapse = ",")) %>%
   ungroup() %>%
@@ -101,7 +105,8 @@ E.g. compare:
 ```{r get_taxa-get_distribution_info_from_gbif, cache = TRUE}
 progress_bar <- progress_estimated(nrow(taxa))
 
-taxa <- taxa %>%
+taxa <-
+  taxa %>%
   mutate(validDistribution = map_lgl(taxa$taxonKey, function(x) {
     progress_bar$tick()$print()
     trias::gbif_has_distribution(
@@ -124,7 +129,8 @@ taxa %>%
 3. Rename `nubKey` to `bb_key` and move to the end.
 
 ```{r}
-taxa <- taxa %>%
+taxa <-
+  taxa %>%
   rename(bb_key = nubKey) %>%
   select(-bb_key, everything())
 ```
@@ -136,7 +142,8 @@ A taxon can occur on more than one checklist. To identify these duplicates, we c
 1. Filter taxa on having valid distribution and `nubKey` and create vector of unique `nubKey`s.
 
 ```{r}
-nub_keys <- taxa %>%
+nub_keys <-
+  taxa %>%
   filter(validDistribution) %>%
   filter(is.finite(bb_key)) %>%
   select(bb_key) %>%
@@ -149,19 +156,21 @@ nub_keys <- taxa %>%
 ```{r get_taxa-get_backbone_info_from_gbif, cache = TRUE}
 progress_bar <- progress_estimated(length(nub_keys))
 
-backbone_info <- map_dfr(nub_keys, function(x) {
-  progress_bar$tick()$print()
-  rgbif::name_usage(
-    key = x,
-    return = "data"
-  )
-})
+backbone_info <-
+  map_dfr(nub_keys, function(x) {
+    progress_bar$tick()$print()
+    rgbif::name_usage(
+      key = x,
+      return = "data"
+    )
+  })
 ```
 
 3. Select columns of interest.
 
 ```{r}
-backbone_info <- backbone_info %>%
+backbone_info <-
+  backbone_info %>%
   select(
     "key", "scientificName", "species", "genus", "family", "order", "class",
     "phylum", "kingdom", "rank", "speciesKey", "taxonomicStatus", "acceptedKey", 
@@ -172,14 +181,16 @@ backbone_info <- backbone_info %>%
 4. Remove duplicates (caused by [this bug](https://github.com/ropensci/rgbif/issues/324)).
 
 ```{r}
-backbone_info <- backbone_info %>%
+backbone_info <-
+  backbone_info %>%
   distinct()
 ```
 
 5. Rename `accepted` to `acceptedName`.
 
 ```{r}
-backbone_info <- backbone_info %>%
+backbone_info <-
+  backbone_info %>%
   rename(acceptedName = accepted)
 ```
 
@@ -192,7 +203,8 @@ colnames(backbone_info) <- paste0("bb_", colnames(backbone_info))
 7. Merge backbone information with checklist taxa.
 
 ```{r}
-taxa <- taxa %>%
+taxa <-
+  taxa %>%
   left_join(
     backbone_info, 
     by = "bb_key"

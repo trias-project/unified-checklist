@@ -15,7 +15,8 @@ taxa <- read_csv(here("data", "raw", "taxa.csv"))
 1. Filter on taxa with valid distribution. **Note**: if a checklist has related information for a taxon, but not a valid distribution, that related information will NOT be included in the unified checklist. This is to exclude related information about a taxon for which the checklist did not even consider a Belgian scope (e.g. pathway).
 
 ```{r}
-taxon_keys <- taxa %>%
+taxon_keys <-
+  taxa %>%
   filter(validDistribution) %>%
   pull(taxonKey)
 ```
@@ -27,7 +28,8 @@ taxon_keys <- taxa %>%
 ```{r get_information-get_distributions_from_gbif, cache = TRUE}
 progress_bar <- progress_estimated(length(taxon_keys))
 
-distributions <- map_dfr(taxon_keys, function(x) {
+distributions <-
+  map_dfr(taxon_keys, function(x) {
   progress_bar$tick()$print()
   rgbif::name_usage(
     key = x,
@@ -50,14 +52,15 @@ write_csv(distributions, here("data", "raw", "distributions.csv"), na = "")
 ```{r get_information-get_speciesprofiles_from_gbif, cache = TRUE}
 progress_bar <- progress_estimated(length(taxon_keys))
 
-speciesprofiles <- map_dfr(taxon_keys, function(x) {
-  progress_bar$tick()$print()
-  rgbif::name_usage(
-    key = x,
-    return = "data",
-    data = "speciesProfiles"
-  )
-})
+speciesprofiles <-
+  map_dfr(taxon_keys, function(x) {
+    progress_bar$tick()$print()
+    rgbif::name_usage(
+      key = x,
+      return = "data",
+      data = "speciesProfiles"
+    )
+  })
 ```
 
 2. Save to [CSV](https://github.com/trias-project/unified-checklist/blob/master/data/raw/speciesprofiles.csv).
@@ -73,14 +76,15 @@ write_csv(speciesprofiles, here("data", "raw", "speciesprofiles.csv"), na = "")
 ```{r get_information-get_descriptions_from_gbif, cache = TRUE}
 progress_bar <- progress_estimated(length(taxon_keys))
 
-descriptions <- map_dfr(taxon_keys, function(x) {
-  progress_bar$tick()$print()
-  rgbif::name_usage(
-    key = x,
-    return = "data",
-    data = "description"
-  )
-})
+descriptions <-
+  map_dfr(taxon_keys, function(x) {
+    progress_bar$tick()$print()
+    rgbif::name_usage(
+      key = x,
+      return = "data",
+      data = "description"
+    )
+  })
 ```
 
 2. Save to [CSV](https://github.com/trias-project/unified-checklist/blob/master/data/raw/descriptions.csv).

@@ -13,7 +13,9 @@ checklist_taxa <- read_csv(here("data", "interim", "checklist_taxa_subset.csv"))
 Filter taxa on those with a valid distribution
 
 ```{r}
-checklist_taxa <- checklist_taxa %>% filter(valid_distribution)
+checklist_taxa <-
+  checklist_taxa %>%
+  filter(valid_distribution)
 ```
 
 ## Read verification file
@@ -21,15 +23,16 @@ checklist_taxa <- checklist_taxa %>% filter(valid_distribution)
 This file is created/updated in previous runs of this document and manually verified by humans who add a `verification_key`.
 
 ```{r}
-verification_file <- read_tsv(
-  here("data", "interim", "verification_file.csv"),
-  col_types = cols(
-    bb_key = col_integer(),
-    bb_acceptedKey = col_integer(),
-    date_added = col_date(),
-    verification_key = col_character()
+verification_file <-
+  read_tsv(
+    here("data", "interim", "verification_file.csv"),
+    col_types = cols(
+      bb_key = col_integer(),
+      bb_acceptedKey = col_integer(),
+      date_added = col_date(),
+      verification_key = col_character()
+    )
   )
-)
 ```
 
 ## Detect taxa to verify
@@ -53,11 +56,13 @@ In all other cases, we can accept the information returned by the GBIF backbone 
 Add and set `verification_key`:
 
 ```{r}
-checklist_taxa <- checklist_taxa %>% mutate(verification_key = case_when(
-  is.na(bb_key) ~ NA_character_,          # No backbone match (no bb_key)
-  !is.na(bb_acceptedKey) ~ NA_character_, # Synonyms (have bb_acceptedKey)
-  TRUE ~ as.character(bb_key)             # In all other cases, use the bb_key
-))
+checklist_taxa <-
+  checklist_taxa %>%
+  mutate(verification_key = case_when(
+    is.na(bb_key) ~ NA_character_,          # No backbone match (no bb_key)
+    !is.na(bb_acceptedKey) ~ NA_character_, # Synonyms (have bb_acceptedKey)
+    TRUE ~ as.character(bb_key)             # In all other cases, use the bb_key
+  ))
 ```
 
 Number of taxa to verify:
@@ -80,10 +85,11 @@ We use `trias::verify_taxa` to update the `verification_file`:
 The function reports also unused rows in `verified_synonyms`, but they will not be removed or altered.
 
 ```{r apply_verify_taxa}
-verify <- trias::verify_taxa(taxa = taxa %>% 
-                               filter(is.na(verification_key)) %>%
-                               select(-verification_key), 
-                             verified_taxa = verified_synonyms)
+verify <-
+  trias::verify_taxa(
+    taxa = taxa %>% filter(is.na(verification_key)) %>% select(-verification_key), 
+    verified_taxa = verified_synonyms
+  )
 ```
 
 ### New synonyms
@@ -147,7 +153,8 @@ We check the verification keys provided by taxonomy experts. In particular, the 
 3. `verification_key` is a synonym (neither `ACCEPTED` nor `DOUBTFUL`)
 
 ```{r show_invalid_vks_synonym}
-vks_status <- trias::gbif_verify_keys(unique(verify$verified_taxa$verification_key)) %>%
+vks_status <-
+  trias::gbif_verify_keys(unique(verify$verified_taxa$verification_key)) %>%
   rename(verification_key = key)
 vks_status
 ```
@@ -178,9 +185,7 @@ vks_status %>%
 The data.frame `verify$verified_taxa` can be saved as text file and manually transferred to online spreadsheet:
 
 ```{r save_verification_df_to_tsv}
-write_tsv(verify$verified_taxa, 
-          path = here("data", "output", "verified_taxa.tsv"),
-          na = "")
+write_tsv(verify$verified_taxa, path = here("data", "output", "verified_taxa.tsv"), na = "")
 ```
 
 ### Update taxa
@@ -188,25 +193,31 @@ write_tsv(verify$verified_taxa,
 We can now add the verification keys (and eventual remarks by experts) to taxa:
 
 ```{r update_taxa}
-taxa_with_vk_from_gbif <- taxa %>%
+taxa_with_vk_from_gbif <-
+  taxa %>%
   filter(!is.na(verification_key)) %>%
   mutate(remarks = NA_character_)
 
-prepare_to_join <- verify$verified_taxa %>%
+prepare_to_join <-
+  verify$verified_taxa %>%
   separate_rows(checklists, sep = ",") %>%
   rename(checklist_datasetKey = checklists) %>%
   select(-date_added)
 
-taxa_from_verified <- taxa %>%
+taxa_from_verified <-
+  taxa %>%
   filter(is.na(verification_key)) %>%
   select(-verification_key)
-taxa_from_verified <- taxa_from_verified %>% 
-  left_join(prepare_to_join,
-            by = intersect(
-              colnames(taxa_from_verified), colnames(prepare_to_join)
-              )
-            )
-taxa <- bind_rows(taxa_with_vk_from_gbif, taxa_from_verified)
+
+taxa_from_verified <-
+  taxa_from_verified %>% 
+  left_join(
+    prepare_to_join,
+    by = intersect(colnames(taxa_from_verified), colnames(prepare_to_join))
+  )
+
+taxa <-
+  bind_rows(taxa_with_vk_from_gbif, taxa_from_verified)
 ```
 
 Shows some stats:
@@ -236,8 +247,6 @@ Save the updated taxa:
 
 ```{r save_udpated_taxa}
 # save to csv -> taxa_by_nubKey_verified
-taxa_verified <- write_tsv(taxa, 
-                           path = here("data", "interim", "taxa_after_verification.tsv"),
-                           na = "")
+taxa_verified <- write_tsv(taxa, path = here("data", "interim", "taxa_after_verification.tsv"), na = "")
 ```
  

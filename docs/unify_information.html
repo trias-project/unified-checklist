@@ -25,7 +25,7 @@
 <meta name="author" content="Peter Desmet, Damiano Oldoni">
 
 
-<meta name="date" content="2018-11-08">
+<meta name="date" content="2018-11-22">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -160,7 +160,8 @@ descriptions &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<spa
 <hr />
 <p><strong>TO REMOVE</strong></p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Temporarily use the bb_key as a unifying key</span>
-taxa &lt;-<span class="st"> </span>taxa <span class="op">%&gt;%</span>
+taxa &lt;-
+<span class="st">  </span>taxa <span class="op">%&gt;%</span>
 <span class="st">  </span><span class="kw">rename</span>(<span class="dt">verifiedKey =</span> bb_key)</code></pre></div>
 <hr />
 </div>
@@ -169,7 +170,8 @@ taxa &lt;-<span class="st"> </span>taxa <span class="op">%&gt;%</span>
 <ol style="list-style-type: decimal">
 <li>Parse <code>temporal</code> (eventDate) information.</li>
 </ol>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">distributions_unified &lt;-<span class="st"> </span>distributions <span class="op">%&gt;%</span>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">distributions_unified &lt;-
+<span class="st">  </span>distributions <span class="op">%&gt;%</span>
 <span class="st">  </span>
 <span class="st">  </span><span class="co"># Split temporal on &quot;/&quot; into startYear and endYear</span>
 <span class="st">  </span><span class="co"># If temporal only contains a single year, then endYear will be empty</span>
@@ -191,7 +193,8 @@ taxa &lt;-<span class="st"> </span>taxa <span class="op">%&gt;%</span>
 <ol start="2" style="list-style-type: decimal">
 <li>Filter distributions.</li>
 </ol>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">distributions_unified &lt;-<span class="st"> </span>distributions_unified <span class="op">%&gt;%</span>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">distributions_unified &lt;-
+<span class="st">  </span>distributions_unified <span class="op">%&gt;%</span>
 <span class="st">  </span>
 <span class="st">  </span><span class="co"># Filter on non-native species present in (at least part of) Belgium</span>
 <span class="st">  </span><span class="kw">filter</span>(
@@ -202,7 +205,8 @@ taxa &lt;-<span class="st"> </span>taxa <span class="op">%&gt;%</span>
 <ol start="3" style="list-style-type: decimal">
 <li>Choose a single distribution within a checklist.</li>
 </ol>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">distributions_unified &lt;-<span class="st"> </span>distributions_unified <span class="op">%&gt;%</span>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">distributions_unified &lt;-
+<span class="st">  </span>distributions_unified <span class="op">%&gt;%</span>
 
 <span class="st">  </span><span class="co"># Join distribution with taxon to get verifiedKey and checklistOrder</span>
 <span class="st">  </span><span class="kw">left_join</span>(taxa, <span class="dt">on =</span> taxonKey) <span class="op">%&gt;%</span>
@@ -233,7 +237,8 @@ taxa &lt;-<span class="st"> </span>taxa <span class="op">%&gt;%</span>
 <ol style="list-style-type: decimal">
 <li>Filter species profiles.</li>
 </ol>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">speciesprofiles_unified &lt;-<span class="st"> </span>speciesprofiles <span class="op">%&gt;%</span>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">speciesprofiles_unified &lt;-
+<span class="st">  </span>speciesprofiles <span class="op">%&gt;%</span>
 <span class="st">  </span>
 <span class="st">  </span><span class="co"># Remove species profiles that contain NA for any of the attributes</span>
 <span class="st">  </span><span class="co"># This is rare: normally all attributes are populated or there just isn&#39;t a</span>
@@ -246,7 +251,8 @@ taxa &lt;-<span class="st"> </span>taxa <span class="op">%&gt;%</span>
 <ol start="2" style="list-style-type: decimal">
 <li>Choose a single species profile within a checklist.</li>
 </ol>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">speciesprofiles_unified &lt;-<span class="st"> </span>speciesprofiles_unified <span class="op">%&gt;%</span>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">speciesprofiles_unified &lt;-
+<span class="st">  </span>speciesprofiles_unified <span class="op">%&gt;%</span>
 
 <span class="st">  </span><span class="co"># Join species profile with taxon to get verifiedKey and checklist order</span>
 <span class="st">  </span><span class="kw">left_join</span>(taxa, <span class="dt">on =</span> taxonID) <span class="op">%&gt;%</span>
@@ -271,7 +277,8 @@ taxa &lt;-<span class="st"> </span>taxa <span class="op">%&gt;%</span>
 <ol start="3" style="list-style-type: decimal">
 <li>Choose a single species profile across checklists.</li>
 </ol>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">speciesprofiles_unified &lt;-<span class="st"> </span>speciesprofiles_unified <span class="op">%&gt;%</span>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">speciesprofiles_unified &lt;-
+<span class="st">  </span>speciesprofiles_unified <span class="op">%&gt;%</span>
 <span class="st">  </span>
 <span class="st">  </span><span class="co"># Sort by checklist order (trustworthiness)</span>
 <span class="st">  </span><span class="kw">arrange</span>(checklistOrder) <span class="op">%&gt;%</span>
@@ -301,7 +308,8 @@ taxa &lt;-<span class="st"> </span>taxa <span class="op">%&gt;%</span>
 <li><p>Filter non <code>NA</code> descriptions.</p></li>
 <li><p>Select unique descriptions (within their type) within a checklist.</p></li>
 </ol>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">descriptions_unified &lt;-<span class="st"> </span>descriptions_unified <span class="op">%&gt;%</span>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">descriptions_unified &lt;-
+<span class="st">  </span>descriptions_unified <span class="op">%&gt;%</span>
 
 <span class="st">  </span><span class="co"># Join species profile with taxon to get verifiedKey and checklist order</span>
 <span class="st">  </span><span class="kw">left_join</span>(taxa, <span class="dt">on =</span> taxonKey) <span class="op">%&gt;%</span>
@@ -328,7 +336,8 @@ taxa &lt;-<span class="st"> </span>taxa <span class="op">%&gt;%</span>
 <ol start="3" style="list-style-type: decimal">
 <li>Select unique descriptions (within their type) across checklists.</li>
 </ol>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">descriptions_unified &lt;-<span class="st"> </span>descriptions_unified <span class="op">%&gt;%</span>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">descriptions_unified &lt;-
+<span class="st">  </span>descriptions_unified <span class="op">%&gt;%</span>
 <span class="st">  </span>
 <span class="st">  </span><span class="co"># Sort by checklist order (trustworthiness)</span>
 <span class="st">  </span><span class="kw">arrange</span>(checklistOrder) <span class="op">%&gt;%</span>

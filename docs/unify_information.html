@@ -25,7 +25,7 @@
 <meta name="author" content="Peter Desmet, Damiano Oldoni">
 
 
-<meta name="date" content="2018-11-22">
+<meta name="date" content="2018-12-10">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -228,8 +228,30 @@ taxa &lt;-
     <span class="dt">sourceTaxa =</span> <span class="kw">paste</span>(<span class="kw">sort</span>(<span class="kw">unique</span>(taxonKey)), <span class="dt">collapse =</span> <span class="st">&quot;,&quot;</span>)
   )</code></pre></div>
 <ol start="4" style="list-style-type: decimal">
-<li><p>Choose a single distribution across checklists.</p></li>
-<li><p>Save to <a href="https://github.com/trias-project/unified-checklist/blob/master/data/unified/distributions.csv">CSV</a>.</p></li>
+<li>Choose a single distribution across checklists.</li>
+</ol>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">distributions_unified &lt;-
+<span class="st">  </span>distributions_unified <span class="op">%&gt;%</span>
+<span class="st">  </span>
+<span class="st">  </span><span class="co"># Sort by checklist order (trustworthiness)</span>
+<span class="st">  </span><span class="kw">arrange</span>(checklistOrder) <span class="op">%&gt;%</span>
+<span class="st">  </span>
+<span class="st">  </span><span class="co"># Group by verifiedKey across checklists</span>
+<span class="st">  </span><span class="kw">group_by</span>(verifiedKey) <span class="op">%&gt;%</span>
+<span class="st">  </span>
+<span class="st">  </span><span class="co"># Select year of most trustworthy checklist (first one)</span>
+<span class="st">  </span><span class="co"># and note that checklist and its taxonKey(s)</span>
+<span class="st">  </span><span class="kw">summarize</span>(
+    <span class="dt">startYear =</span> <span class="kw">first</span>(startYear),
+    <span class="dt">endYear =</span> <span class="kw">first</span>(endYear),
+    <span class="dt">sourceChecklist =</span> <span class="kw">first</span>(datasetKey),
+    <span class="dt">sourceTaxa =</span> <span class="kw">first</span>(sourceTaxa)
+  ) <span class="op">%&gt;%</span>
+
+<span class="st">  </span><span class="co"># Sort by verifiedKey</span>
+<span class="st">  </span><span class="kw">arrange</span>(verifiedKey)</code></pre></div>
+<ol start="5" style="list-style-type: decimal">
+<li>Save to <a href="https://github.com/trias-project/unified-checklist/blob/master/data/unified/distributions.csv">CSV</a>.</li>
 </ol>
 </div>
 <div id="unify-species-profiles" class="section level2">

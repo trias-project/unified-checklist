@@ -114,7 +114,7 @@ distributions_unified <-
 
 4. Choose a single distribution across checklists.
 
-```{r}
+```{r echo = TRUE}
 distributions_unified <-
   distributions_unified %>%
   

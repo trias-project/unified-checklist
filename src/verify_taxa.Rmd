@@ -6,7 +6,7 @@ In this chapter we verify taxonomic information returned by the [GBIF Backbone T
 
 Read taxa from [`data/interim/taxa_with_verification.csv`](https://github.com/trias-project/unified-checklist/blob/master/data/interim/taxa_with_verification.csv).
 
-```{r}
+```{r verify_taxa-1}
 taxa <-
   read_csv(
     here("data", "interim", "taxa_with_verification.csv"),
@@ -21,7 +21,7 @@ taxa <-
 
 Verification information consists of a manually assigned `verificationKey` for taxa the backbone does not recognize (no backbone match) or will lump under another name (synonyms). Those `checklist/backbone/accepted` taxon combinations are stored in [`data/interim/verification.tsv`](https://github.com/trias-project/unified-checklist/blob/master/data/interim/verification.tsv), which was created/updated in previous runs of this chapter and then manually annoted with a `verificationKey`.
 
-```{r}
+```{r verify_taxa-2}
 verification <- read_tsv(
   here("data", "interim", "verification.tsv"),
   col_types = cols(
@@ -38,7 +38,7 @@ verification <- read_tsv(
 
 1. Use the existing verification information to verify taxa with the function `trias::verify_taxa`:
 
-```{r echo = TRUE}
+```{r verify_taxa-run_verification, echo = TRUE}
 verification <- trias::verify_taxa(taxa, verification)
 ```
 
@@ -46,7 +46,7 @@ verification <- trias::verify_taxa(taxa, verification)
 
 2. Save taxa with populated `verificationKey` back to [`data/interim/taxa_with_verification.csv`](https://github.com/trias-project/unified-checklist/blob/master/data/interim/taxa_with_verification.csv).
 
-```{r}
+```{r verify_taxa-3}
 verification$taxa %>%
   # Select columns in same order as originally provided
   select(
@@ -71,7 +71,7 @@ verification$taxa %>%
 
 3. Save updated verification back to [`data/interim/verification.tsv`](https://github.com/trias-project/unified-checklist/blob/master/data/interim/verification.tsv) (sorted on `scientificName`)
 
-```{r}
+```{r verify_taxa-4}
 verification$verification %>%
   arrange(scientificName) %>%
   write_tsv(here("data", "interim", "verification.tsv"), na = "")
@@ -124,7 +124,7 @@ No verification is required for these: `verificationKey` is automatically set to
 
 Provided verification keys that were not found in the GBIF backbone:
 
-```{r}
+```{r verify_taxa-5}
 verification$taxa$check_verificationKey
 ```
 
@@ -134,7 +134,7 @@ Additional information regarding the verification information that is of no furt
 
 * Duplicate taxa (having same `bb_key` and `bb_acceptedKey`) that are quick wins to verify:
 
-```{r}
+```{r verify_taxa-6}
 verification$info$duplicates %>%
   ungroup() %>%
   group_by(n) %>%
@@ -145,12 +145,12 @@ verification$info$duplicates %>%
 
 * Previously listed synonyms for which the scientific name was updated in the backbone:
 
-```{r}
+```{r verify_taxa-7}
 verification$info$updated_scientificName
 ```
 
 * Previously listed synonyms for which the _accepted_ scientific name was updated in the backbone:
 
-```{r}
+```{r verify_taxa-8}
 verification$info$updated_acceptedName
 ```

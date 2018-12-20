@@ -6,7 +6,7 @@ In this chapter we unify related information for each verified taxon.
 
 ```{r echo = TRUE}
 checklists <- read_csv(here("data", "raw", "checklists.csv"))
-taxa <- read_csv(here("data", "raw", "taxa.csv"))
+taxa <- read_csv(here("data", "interim", "taxa_with_verification.csv"))
 distributions <- read_csv(here("data", "raw", "distributions.csv"))
 speciesprofiles <- read_csv(here("data", "raw", "speciesprofiles.csv"))
 descriptions <- read_csv(here("data", "raw", "descriptions.csv"))

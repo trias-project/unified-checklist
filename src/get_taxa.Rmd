@@ -6,7 +6,7 @@ In this chapter we select species checklists and retrieve the taxa they contain.
 
 The unified checklist is compiled from [species checklists published to GBIF under the TrIAS project](https://www.gbif.org/dataset/search?type=CHECKLIST&project_id=trias). Here we choose the checklists we want to include and rank them by trust (most trustworthy first). The ranking will help to choose between duplicate taxa in later steps.
 
-1. Choose checklists.
+1. Choose checklists:
 
 ```{r echo = TRUE}
 checklist_keys <- c(
@@ -20,7 +20,7 @@ checklist_keys <- c(
 )
 ```
 
-2. Get metadata for these checklists from GBIF and display the result.
+2. Get metadata for these checklists from GBIF and display the result:
 
 ```{r get_taxa-get_checklist_metadata_from_gbif, cache = TRUE}
 checklists <-
@@ -79,7 +79,7 @@ taxa <-
   )
 ```
 
-4. Preview checklist taxa.
+4. Preview checklist taxa:
 
 ```{r}
 taxa %>% head()
@@ -100,6 +100,8 @@ E.g. compare:
 * Distributions for _checklist_ taxon [Eriocheir sinensis](https://api.gbif.org/v1/species/140563012/distributions) (`140563012`)
 * Distributions for _backbone_ taxon [Eriocheir sinensis](https://api.gbif.org/v1/species/2225776/distributions) (`2225776`)
 
+**Note**: if a checklist has related information for a taxon, but not a valid distribution, that related information will NOT be included in the unified checklist. This is to exclude related information about a taxon for which the checklist did not even consider a Belgian scope (e.g. pathway).
+
 1. Get distribution information from GBIF and check if these meet the filter criteria. The result (`TRUE`/`FALSE`) is inserted as an extra column `validDistribution`.
 
 ```{r get_taxa-get_distribution_info_from_gbif, cache = TRUE}
@@ -118,7 +120,7 @@ taxa <-
   }))
 ```
 
-2. Preview some taxa with not a single valid distribution (`taxonKey` can be used to verify manually on GBIF).
+2. Preview some taxa with not a single valid distribution (`taxonKey` can be used to verify manually on GBIF):
 
 ```{r}
 taxa %>%
@@ -200,7 +202,7 @@ backbone_info <-
 colnames(backbone_info) <- paste0("bb_", colnames(backbone_info))
 ```
 
-7. Merge backbone information with checklist taxa.
+7. Merge backbone information with checklist taxa. **Note**: this can attach information to taxa with `validDistribution = FALSE` that share a `bb_key` with other taxa.
 
 ```{r}
 taxa <-
@@ -211,7 +213,7 @@ taxa <-
   )
 ```
 
-8. Preview merged information.
+8. Preview merged information:
 
 ```{r}
 taxa %>% head()
@@ -219,7 +221,7 @@ taxa %>% head()
 
 ## Show summary and save
 
-Show summary per checklist.
+Show summary per checklist:
 
 ```{r}
 taxa %>%
@@ -227,15 +229,26 @@ taxa %>%
   group_by(title) %>%
   summarize(
     taxa = n(),
-    valid_dist_in_backbone = sum(validDistribution & !is.na(bb_key)),
-    invalid_distribution = sum(!validDistribution),
-    not_in_backbone = sum(validDistribution & is.na(bb_key))
+    invalid_dist = sum(!validDistribution),
+    valid_dist = sum(validDistribution),
+    valid_dist_not_in_backbone = sum(validDistribution & is.na(bb_key))
   ) %>%
   adorn_totals("row")
 ```
 
-Save to [CSV](https://github.com/trias-project/unified-checklist/blob/master/data/raw/taxa.csv).
+Save to two CSVs:
 
 ```{r}
+* [`data/raw/taxa.csv`](https://github.com/trias-project/unified-checklist/blob/master/data/raw/taxa.csv): all checklist taxa
+
 write_csv(taxa, here("data", "raw", "taxa.csv"), na = "")
+```
+
+* [`data/interim/taxa_with_verification.csv`](https://github.com/trias-project/unified-checklist/blob/master/data/interim/taxa_with_verification.csv.csv): subset of checklist taxa with a valid distribution and an empty column `verificationKey`. This file will be used in later steps.
+
+```{r}
+taxa %>%
+  mutate(verificationKey = NA) %>%
+  filter(validDistribution) %>%
+  write_csv(here("data", "interim", "taxa_with_verification.csv"), na = "")
 ```

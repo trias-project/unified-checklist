@@ -258,20 +258,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><p>Get GBIF backbone taxonomy information.</p></li>
 <li><p>Rename <code>accepted</code> to <code>acceptedName</code>.</p></li>
 <li><p>Add prefix <code>bb_</code> to column names.</p></li>
-<li><p>Select columns of interest:</p></li>
-</ol>
-<pre class="sourceCode r"><code class="sourceCode r">backbone_info &lt;-
-<span class="st">  </span>backbone_info <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw">select</span>(
-    <span class="st">&quot;bb_key&quot;</span>,
-    <span class="st">&quot;bb_scientificName&quot;</span>,
-    <span class="st">&quot;bb_kingdom&quot;</span>,
-    <span class="st">&quot;bb_rank&quot;</span>,
-    <span class="st">&quot;bb_taxonomicStatus&quot;</span>,
-    <span class="st">&quot;bb_acceptedKey&quot;</span>, 
-    <span class="st">&quot;bb_acceptedName&quot;</span>
-  )</code></pre>
-<ol start="6" style="list-style-type: decimal">
+<li><p>Select columns of interest.</p></li>
 <li><p>Remove duplicates (caused by <a href="https://github.com/ropensci/rgbif/issues/324">this bug</a>).</p></li>
 <li><p>Merge backbone information with checklist taxa. <strong>Note</strong>: this can attach information to taxa with <code>validDistribution = FALSE</code> that share a <code>bb_key</code> with other taxa.</p></li>
 <li><p>Preview merged information:</p></li>

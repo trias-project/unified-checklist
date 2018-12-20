@@ -39,7 +39,7 @@ verification <- read_tsv(
 1. Use the existing verification information to verify taxa with the function `trias::verify_taxa`:
 
 ```{r echo = TRUE}
-verification <- trias::verify_taxa(taxa)
+verification <- trias::verify_taxa(taxa, verification)
 ```
 
   **Note**: to start a verification from scratch, use `trias::verify_taxa(taxa)`.

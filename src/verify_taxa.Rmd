@@ -69,10 +69,12 @@ verification$taxa %>%
   write_csv(here("data", "interim", "taxa_with_verification.csv"), na = "")
 ```
 
-3. Save updated verification back to [`data/interim/verification.tsv`](https://github.com/trias-project/unified-checklist/blob/master/data/interim/verification.tsv)
+3. Save updated verification back to [`data/interim/verification.tsv`](https://github.com/trias-project/unified-checklist/blob/master/data/interim/verification.tsv) (sorted on `scientificName`)
 
 ```{r}
-write_tsv(verification$verification, here("data", "interim", "verification.tsv"), na = "")
+verification$verification %>%
+  arrange(scientificName) %>%
+  write_tsv(here("data", "interim", "verification.tsv"), na = "")
 ```
 
 ## Show verification status

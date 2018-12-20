@@ -195,13 +195,6 @@ descriptions &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<spa
 <li><p>Get checklist keys as (ordered) vector.</p></li>
 <li><p>Assign the checklist order (= index of checklist keys) as an extra column to taxa.</p></li>
 </ol>
-<hr />
-<p><strong>TO REMOVE</strong></p>
-<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Temporarily use the bb_key as a unifying key</span>
-taxa &lt;-
-<span class="st">  </span>taxa <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw">rename</span>(<span class="dt">verifiedKey =</span> bb_key)</code></pre>
-<hr />
 </div>
 <div id="unify-distribution" class="section level2">
 <h2><span class="header-section-number">5.3</span> Unify distribution</h2>
@@ -246,17 +239,17 @@ taxa &lt;-
 <pre class="sourceCode r"><code class="sourceCode r">distributions_unified &lt;-
 <span class="st">  </span>distributions_unified <span class="op">%&gt;%</span>
 
-<span class="st">  </span><span class="co"># Join distribution with taxon to get verifiedKey and checklistOrder</span>
+<span class="st">  </span><span class="co"># Join distribution with taxon to get verificationKey and checklistOrder</span>
 <span class="st">  </span><span class="kw">left_join</span>(taxa, <span class="dt">on =</span> taxonKey) <span class="op">%&gt;%</span>
 <span class="st">  </span>
-<span class="st">  </span><span class="co"># Remove records that have no verifiedKey (e.g. one wasn&#39;t assigned yet)</span>
-<span class="st">  </span><span class="kw">filter</span>(<span class="op">!</span><span class="kw">is.na</span>(verifiedKey)) <span class="op">%&gt;%</span>
+<span class="st">  </span><span class="co"># Remove records that have no verificationKey (e.g. one wasn&#39;t assigned yet)</span>
+<span class="st">  </span><span class="kw">filter</span>(<span class="op">!</span><span class="kw">is.na</span>(verificationKey)) <span class="op">%&gt;%</span>
 <span class="st">  </span>
-<span class="st">  </span><span class="co"># Group by verifiedKey within checklist</span>
+<span class="st">  </span><span class="co"># Group by verificationKey within checklist</span>
 <span class="st">  </span><span class="kw">group_by</span>(
     datasetKey,
     checklistOrder,
-    verifiedKey
+    verificationKey
   ) <span class="op">%&gt;%</span>
 <span class="st">  </span>
 <span class="st">  </span><span class="co"># Take earliest year, latest year and note taxonIDs</span>
@@ -274,8 +267,8 @@ taxa &lt;-
 <span class="st">  </span><span class="co"># Sort by checklist order (trustworthiness)</span>
 <span class="st">  </span><span class="kw">arrange</span>(checklistOrder) <span class="op">%&gt;%</span>
 <span class="st">  </span>
-<span class="st">  </span><span class="co"># Group by verifiedKey across checklists</span>
-<span class="st">  </span><span class="kw">group_by</span>(verifiedKey) <span class="op">%&gt;%</span>
+<span class="st">  </span><span class="co"># Group by verificationKey across checklists</span>
+<span class="st">  </span><span class="kw">group_by</span>(verificationKey) <span class="op">%&gt;%</span>
 <span class="st">  </span>
 <span class="st">  </span><span class="co"># Select year of most trustworthy checklist (first one)</span>
 <span class="st">  </span><span class="co"># and note that checklist and its taxonKey(s)</span>
@@ -286,8 +279,8 @@ taxa &lt;-
     <span class="dt">sourceTaxa =</span> <span class="kw">first</span>(sourceTaxa)
   ) <span class="op">%&gt;%</span>
 
-<span class="st">  </span><span class="co"># Sort by verifiedKey</span>
-<span class="st">  </span><span class="kw">arrange</span>(verifiedKey)</code></pre>
+<span class="st">  </span><span class="co"># Sort by verificationKey</span>
+<span class="st">  </span><span class="kw">arrange</span>(verificationKey)</code></pre>
 <ol start="5" style="list-style-type: decimal">
 <li>Save to <a href="https://github.com/trias-project/unified-checklist/blob/master/data/unified/distributions.csv">CSV</a>.</li>
 </ol>
@@ -314,17 +307,17 @@ taxa &lt;-
 <pre class="sourceCode r"><code class="sourceCode r">speciesprofiles_unified &lt;-
 <span class="st">  </span>speciesprofiles_unified <span class="op">%&gt;%</span>
 
-<span class="st">  </span><span class="co"># Join species profile with taxon to get verifiedKey and checklist order</span>
+<span class="st">  </span><span class="co"># Join species profile with taxon to get verificationKey and checklist order</span>
 <span class="st">  </span><span class="kw">left_join</span>(taxa, <span class="dt">on =</span> taxonID) <span class="op">%&gt;%</span>
 <span class="st">  </span>
-<span class="st">  </span><span class="co"># Remove records that have no verifiedKey (e.g. one wasn&#39;t assigned yet)</span>
-<span class="st">  </span><span class="kw">filter</span>(<span class="op">!</span><span class="kw">is.na</span>(verifiedKey)) <span class="op">%&gt;%</span>
+<span class="st">  </span><span class="co"># Remove records that have no verificationKey (e.g. one wasn&#39;t assigned yet)</span>
+<span class="st">  </span><span class="kw">filter</span>(<span class="op">!</span><span class="kw">is.na</span>(verificationKey)) <span class="op">%&gt;%</span>
 <span class="st">  </span>
-<span class="st">  </span><span class="co"># Group by verifiedKey within checklist</span>
+<span class="st">  </span><span class="co"># Group by verificationKey within checklist</span>
 <span class="st">  </span><span class="kw">group_by</span>(
     datasetKey,
     checklistOrder,
-    verifiedKey
+    verificationKey
   ) <span class="op">%&gt;%</span>
 <span class="st">  </span>
 <span class="st">  </span><span class="co"># Take first species profile and note taxonKey</span>
@@ -343,8 +336,8 @@ taxa &lt;-
 <span class="st">  </span><span class="co"># Sort by checklist order (trustworthiness)</span>
 <span class="st">  </span><span class="kw">arrange</span>(checklistOrder) <span class="op">%&gt;%</span>
 <span class="st">  </span>
-<span class="st">  </span><span class="co"># Group by verifiedKey across checklists</span>
-<span class="st">  </span><span class="kw">group_by</span>(verifiedKey) <span class="op">%&gt;%</span>
+<span class="st">  </span><span class="co"># Group by verificationKey across checklists</span>
+<span class="st">  </span><span class="kw">group_by</span>(verificationKey) <span class="op">%&gt;%</span>
 <span class="st">  </span>
 <span class="st">  </span><span class="co"># Select species profile of most trustworthy checklist (first one)</span>
 <span class="st">  </span><span class="co"># and note that checklist and its taxonID</span>
@@ -356,8 +349,8 @@ taxa &lt;-
     <span class="dt">sourceTaxon =</span> <span class="kw">first</span>(sourceTaxon)
   ) <span class="op">%&gt;%</span>
 
-<span class="st">  </span><span class="co"># Sort by verifiedKey</span>
-<span class="st">  </span><span class="kw">arrange</span>(verifiedKey)</code></pre>
+<span class="st">  </span><span class="co"># Sort by verificationKey</span>
+<span class="st">  </span><span class="kw">arrange</span>(verificationKey)</code></pre>
 <ol start="4" style="list-style-type: decimal">
 <li>Save to <a href="https://github.com/trias-project/unified-checklist/blob/master/data/unified/speciesprofiles.csv">CSV</a>.</li>
 </ol>
@@ -371,21 +364,21 @@ taxa &lt;-
 <pre class="sourceCode r"><code class="sourceCode r">descriptions_unified &lt;-
 <span class="st">  </span>descriptions_unified <span class="op">%&gt;%</span>
 
-<span class="st">  </span><span class="co"># Join species profile with taxon to get verifiedKey and checklist order</span>
+<span class="st">  </span><span class="co"># Join species profile with taxon to get verificationKey and checklist order</span>
 <span class="st">  </span><span class="kw">left_join</span>(taxa, <span class="dt">on =</span> taxonKey) <span class="op">%&gt;%</span>
 <span class="st">  </span>
-<span class="st">  </span><span class="co"># Remove records that have no verifiedKey (e.g. one wasn&#39;t assigned yet)</span>
-<span class="st">  </span><span class="kw">filter</span>(<span class="op">!</span><span class="kw">is.na</span>(verifiedKey)) <span class="op">%&gt;%</span>
+<span class="st">  </span><span class="co"># Remove records that have no verificationKey (e.g. one wasn&#39;t assigned yet)</span>
+<span class="st">  </span><span class="kw">filter</span>(<span class="op">!</span><span class="kw">is.na</span>(verificationKey)) <span class="op">%&gt;%</span>
 <span class="st">  </span>
-<span class="st">  </span><span class="co"># Group by type and verifiedKey within checklist</span>
+<span class="st">  </span><span class="co"># Group by type and verificationKey within checklist</span>
 <span class="st">  </span><span class="kw">group_by</span>(
     datasetKey,
     checklistOrder,
-    verifiedKey,
+    verificationKey,
     type
   ) <span class="op">%&gt;%</span>
 <span class="st">  </span>
-<span class="st">  </span><span class="co"># Choose distinct value for that type and verifiedKey</span>
+<span class="st">  </span><span class="co"># Choose distinct value for that type and verificationKey</span>
 <span class="st">  </span><span class="co"># If identical values exist within that grouping, distinct() will take </span>
 <span class="st">  </span><span class="co"># most trustworthy (first one)</span>
 <span class="st">  </span>
@@ -402,26 +395,26 @@ taxa &lt;-
 <span class="st">  </span><span class="co"># Sort by checklist order (trustworthiness)</span>
 <span class="st">  </span><span class="kw">arrange</span>(checklistOrder) <span class="op">%&gt;%</span>
 <span class="st">  </span>
-<span class="st">  </span><span class="co"># Group by type and verifiedKey across checklists</span>
+<span class="st">  </span><span class="co"># Group by type and verificationKey across checklists</span>
 <span class="st">  </span><span class="kw">group_by</span>(
     type,
-    verifiedKey
+    verificationKey
   ) <span class="op">%&gt;%</span>
 <span class="st">  </span>
-<span class="st">  </span><span class="co"># Choose distinct value for that type and verifiedKey</span>
+<span class="st">  </span><span class="co"># Choose distinct value for that type and verificationKey</span>
 <span class="st">  </span><span class="kw">distinct</span>(
     description,
     <span class="dt">.keep_all =</span> <span class="ot">TRUE</span>
   ) <span class="op">%&gt;%</span>
 
-<span class="st">  </span><span class="co"># Move verifiedKey to beginning and drop checklist_order</span>
-<span class="st">  </span><span class="kw">select</span>(verifiedKey, <span class="kw">everything</span>(), <span class="op">-</span>checklistOrder) <span class="op">%&gt;%</span>
+<span class="st">  </span><span class="co"># Move verificationKey to beginning and drop checklist_order</span>
+<span class="st">  </span><span class="kw">select</span>(verificationKey, <span class="kw">everything</span>(), <span class="op">-</span>checklistOrder) <span class="op">%&gt;%</span>
 <span class="st">  </span>
 <span class="st">  </span><span class="co"># Rename checklist</span>
 <span class="st">  </span><span class="kw">rename</span>(<span class="dt">sourceChecklist =</span> datasetKey) <span class="op">%&gt;%</span>
 <span class="st">  </span>
-<span class="st">  </span><span class="co"># Sort by verifiedKey and type</span>
-<span class="st">  </span><span class="kw">arrange</span>(verifiedKey, type)</code></pre>
+<span class="st">  </span><span class="co"># Sort by verificationKey and type</span>
+<span class="st">  </span><span class="kw">arrange</span>(verificationKey, type)</code></pre>
 <ol start="4" style="list-style-type: decimal">
 <li>Save to <a href="https://github.com/trias-project/unified-checklist/blob/master/data/unified/descriptions.csv">CSV</a>.</li>
 </ol>

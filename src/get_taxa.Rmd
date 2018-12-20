@@ -198,17 +198,9 @@ backbone_info <-
   )
 ```
 
-6. Remove duplicates (caused by [this bug](https://github.com/ropensci/rgbif/issues/324)).
+6. Join backbone information with checklist taxa. **Note**: this can attach information to taxa with `validDistribution = FALSE` that share a `bb_key` with other taxa.
 
 ```{r get_taxa-12}
-backbone_info <-
-  backbone_info %>%
-  distinct()
-```
-
-7. Merge backbone information with checklist taxa. **Note**: this can attach information to taxa with `validDistribution = FALSE` that share a `bb_key` with other taxa.
-
-```{r get_taxa-13}
 taxa <-
   taxa %>%
   left_join(
@@ -217,9 +209,9 @@ taxa <-
   )
 ```
 
-8. Preview merged information:
+7. Preview merged information:
 
-```{r get_taxa-14}
+```{r get_taxa-13}
 taxa %>% head()
 ```
 
@@ -227,7 +219,7 @@ taxa %>% head()
 
 Show summary per checklist:
 
-```{r get_taxa-15}
+```{r get_taxa-14}
 taxa %>%
   left_join(checklists, by = "datasetKey") %>%
   group_by(title) %>%
@@ -244,13 +236,13 @@ Save to two CSVs:
 
 * [`data/raw/taxa.csv`](https://github.com/trias-project/unified-checklist/blob/master/data/raw/taxa.csv): all checklist taxa
 
-```{r get_taxa-16}
+```{r get_taxa-15}
 write_csv(taxa, here("data", "raw", "taxa.csv"), na = "")
 ```
 
 * [`data/interim/taxa_with_verification.csv`](https://github.com/trias-project/unified-checklist/blob/master/data/interim/taxa_with_verification.csv.csv): subset of checklist taxa with a valid distribution and an empty column `verificationKey`. This file will be used in later steps.
 
-```{r}
+```{r get_taxa-16}
 taxa %>%
   mutate(verificationKey = NA) %>%
   filter(validDistribution) %>%

@@ -182,9 +182,9 @@ backbone_info <-
 colnames(backbone_info) <- paste0("bb_", colnames(backbone_info))
 ```
 
-5. Select columns of interest:
+5. Select columns of interest.
 
-```{r get_taxa-11, echo = TRUE}
+```{r get_taxa-11}
 backbone_info <-
   backbone_info %>%
   select(

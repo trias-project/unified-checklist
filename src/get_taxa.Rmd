@@ -168,38 +168,42 @@ backbone_info <-
   })
 ```
 
-3. Select columns of interest.
+3. Rename `accepted` to `acceptedName`.
 
 ```{r get_taxa-9}
-backbone_info <-
-  backbone_info %>%
-  select(
-    "key", "scientificName", "species", "genus", "family", "order", "class",
-    "phylum", "kingdom", "rank", "speciesKey", "taxonomicStatus", "acceptedKey", 
-    "accepted"
-  )
-```
-
-4. Remove duplicates (caused by [this bug](https://github.com/ropensci/rgbif/issues/324)).
-
-```{r get_taxa-10}
-backbone_info <-
-  backbone_info %>%
-  distinct()
-```
-
-5. Rename `accepted` to `acceptedName`.
-
-```{r get_taxa-11}
 backbone_info <-
   backbone_info %>%
   rename(acceptedName = accepted)
 ```
 
-6. Add prefix `bb_` to column names.
+4. Add prefix `bb_` to column names.
+
+```{r get_taxa-10}
+colnames(backbone_info) <- paste0("bb_", colnames(backbone_info))
+```
+
+5. Select columns of interest:
+
+```{r get_taxa-11, echo = TRUE}
+backbone_info <-
+  backbone_info %>%
+  select(
+    "bb_key",
+    "bb_scientificName",
+    "bb_kingdom",
+    "bb_rank",
+    "bb_taxonomicStatus",
+    "bb_acceptedKey", 
+    "bb_acceptedName"
+  )
+```
+
+6. Remove duplicates (caused by [this bug](https://github.com/ropensci/rgbif/issues/324)).
 
 ```{r get_taxa-12}
-colnames(backbone_info) <- paste0("bb_", colnames(backbone_info))
+backbone_info <-
+  backbone_info %>%
+  distinct()
 ```
 
 7. Merge backbone information with checklist taxa. **Note**: this can attach information to taxa with `validDistribution = FALSE` that share a `bb_key` with other taxa.

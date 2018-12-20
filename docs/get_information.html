@@ -25,7 +25,7 @@
 <meta name="author" content="Peter Desmet, Damiano Oldoni">
 
 
-<meta name="date" content="2018-12-20">
+<meta name="date" content="2018-12-21">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -154,12 +154,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="4.4.5" data-path="verify_taxa.html"><a href="verify_taxa.html#additional-information"><i class="fa fa-check"></i><b>4.4.5</b> Additional information</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="unify_information.html"><a href="unify_information.html"><i class="fa fa-check"></i><b>5</b> Unify related information</a><ul>
-<li class="chapter" data-level="5.1" data-path="unify_information.html"><a href="unify_information.html#read-data"><i class="fa fa-check"></i><b>5.1</b> Read data</a></li>
-<li class="chapter" data-level="5.2" data-path="unify_information.html"><a href="unify_information.html#assign-checklist-order"><i class="fa fa-check"></i><b>5.2</b> Assign checklist order</a></li>
-<li class="chapter" data-level="5.3" data-path="unify_information.html"><a href="unify_information.html#unify-distribution"><i class="fa fa-check"></i><b>5.3</b> Unify distribution</a></li>
-<li class="chapter" data-level="5.4" data-path="unify_information.html"><a href="unify_information.html#unify-species-profiles"><i class="fa fa-check"></i><b>5.4</b> Unify species profiles</a></li>
-<li class="chapter" data-level="5.5" data-path="unify_information.html"><a href="unify_information.html#unify-descriptions"><i class="fa fa-check"></i><b>5.5</b> Unify descriptions</a></li>
+<li class="chapter" data-level="5" data-path="unify_taxa.html"><a href="unify_taxa.html"><i class="fa fa-check"></i><b>5</b> Unify taxa</a><ul>
+<li class="chapter" data-level="5.1" data-path="unify_taxa.html"><a href="unify_taxa.html#read-data"><i class="fa fa-check"></i><b>5.1</b> Read data</a></li>
+<li class="chapter" data-level="5.2" data-path="unify_taxa.html"><a href="unify_taxa.html#unify-taxa-1"><i class="fa fa-check"></i><b>5.2</b> Unify taxa</a></li>
+<li class="chapter" data-level="5.3" data-path="unify_taxa.html"><a href="unify_taxa.html#get-gbif-backbone-taxonomy-information-1"><i class="fa fa-check"></i><b>5.3</b> Get GBIF backbone taxonomy information</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="unify_information.html"><a href="unify_information.html"><i class="fa fa-check"></i><b>6</b> Unify related information</a><ul>
+<li class="chapter" data-level="6.1" data-path="unify_information.html"><a href="unify_information.html#read-data-1"><i class="fa fa-check"></i><b>6.1</b> Read data</a></li>
+<li class="chapter" data-level="6.2" data-path="unify_information.html"><a href="unify_information.html#assign-checklist-order"><i class="fa fa-check"></i><b>6.2</b> Assign checklist order</a></li>
+<li class="chapter" data-level="6.3" data-path="unify_information.html"><a href="unify_information.html#unify-distribution"><i class="fa fa-check"></i><b>6.3</b> Unify distribution</a></li>
+<li class="chapter" data-level="6.4" data-path="unify_information.html"><a href="unify_information.html#unify-species-profiles"><i class="fa fa-check"></i><b>6.4</b> Unify species profiles</a></li>
+<li class="chapter" data-level="6.5" data-path="unify_information.html"><a href="unify_information.html#unify-descriptions"><i class="fa fa-check"></i><b>6.5</b> Unify descriptions</a></li>
 </ul></li>
 </ul>
 
@@ -183,7 +188,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>In this chapter we retrieve related information for taxa on the checklists (with a valid distribution).</p>
 <div id="read-taxa" class="section level2">
 <h2><span class="header-section-number">3.1</span> Read taxa</h2>
-<p>Read taxa from <a href="https://github.com/trias-project/unified-checklist/blob/master/data/interim/taxa_with_verification.csv"><code>data/interim/taxa_with_verification.csv</code></a> and save <code>taxonKeys</code> as a vector.</p>
+<ol style="list-style-type: decimal">
+<li><p>Read taxa from <a href="https://github.com/trias-project/unified-checklist/blob/master/data/interim/taxa_with_verification.csv"><code>data/interim/taxa_with_verification.csv</code></a>.</p></li>
+<li><p>Extract <code>taxonKeys</code> as a vector.</p></li>
+</ol>
 </div>
 <div id="get-distributions" class="section level2">
 <h2><span class="header-section-number">3.2</span> Get distributions</h2>

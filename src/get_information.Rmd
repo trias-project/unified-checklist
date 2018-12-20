@@ -4,11 +4,13 @@ In this chapter we retrieve related information for taxa on the checklists (with
 
 ## Read taxa
 
-Read taxa from [`data/interim/taxa_with_verification.csv`](https://github.com/trias-project/unified-checklist/blob/master/data/interim/taxa_with_verification.csv) and save `taxonKeys` as a vector.
+1. Read taxa from [`data/interim/taxa_with_verification.csv`](https://github.com/trias-project/unified-checklist/blob/master/data/interim/taxa_with_verification.csv).
 
 ```{r get_information-1}
 taxa <- read_csv(here("data", "raw", "taxa.csv"))
 ```
+
+2. Extract `taxonKeys` as a vector.
 
 ```{r get_information-2}
 taxon_keys <-

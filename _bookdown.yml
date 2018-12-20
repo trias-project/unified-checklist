@@ -13,6 +13,7 @@ rmd_files: [
   src/get_taxa.Rmd,
   src/get_information.Rmd,
   src/verify_taxa.Rmd,
+  src/unify_taxa.Rmd,
   src/unify_information.Rmd
 ]
 

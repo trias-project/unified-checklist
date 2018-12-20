@@ -38,6 +38,6 @@ library(janitor)        # To clean input data
 library(digest)         # To generate hashes
 library(rgbif)          # To use GBIF services
 
-# devtools::install_github("trias-project/trias#21")
+# devtools::install_github("trias-project/trias")
 library(trias)          # To use functions developed for TrIAS
 ```

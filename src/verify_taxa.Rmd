@@ -1,252 +1,133 @@
 # Verify taxa
 
-In this chapter we report and update taxa that require manual verification.
+In this chapter we verify taxonomic information returned by the [GBIF Backbone Taxonomy](https://doi.org/10.15468/39omei). We do this because we want to use the backbone information to unify taxa that can be considered the same within or across checklists. This is straightforward for (accepted) taxa with the same backbone key (`bb_key`), but requires verification for taxa the backbone does not recognize (no backbone match) or will lump under another name (synonyms). See \@ref(verification).
 
-## Read and filter checklist taxa
+## Read taxa
 
-Read checklist taxa:
+Read taxa from [`data/interim/taxa_with_verification.csv`](https://github.com/trias-project/unified-checklist/blob/master/data/interim/taxa_with_verification.csv).
 
 ```{r}
-checklist_taxa <- read_csv(here("data", "interim", "checklist_taxa_subset.csv"))
+taxa <- read_csv(
+  here("data", "interim", "taxa_with_verification.csv"),
+  col_types = cols(
+    verificationKey = col_character() # Cast empty column
+  )
+)
 ```
 
-Filter taxa on those with a valid distribution
+## Read verification information {#verification}
+
+Verification information consists of a manually assigned `verificationKey` for taxa the backbone does not recognize (no backbone match) or will lump under another name (synonyms). Those `checklist/backbone/accepted` taxon combinations are stored in [`data/interim/verification.tsv`](https://github.com/trias-project/unified-checklist/blob/master/data/interim/verification.tsv), which was created/updated in previous runs of this chapter and then manually annoted with a `verificationKey`.
 
 ```{r}
-checklist_taxa <-
-  checklist_taxa %>%
-  filter(valid_distribution)
+verification <- read_tsv(
+  here("data", "interim", "verification.tsv"),
+  col_types = cols(
+    taxonKey = col_double(),
+    bb_key = col_double(),
+    bb_acceptedKey = col_double(),
+    dateAdded = col_date(),
+    outdated = col_logical()
+  )
+)
 ```
 
-## Read verification file
+## Run verification
 
-This file is created/updated in previous runs of this document and manually verified by humans who add a `verification_key`.
+1. Use the existing verification information to verify taxa with the function `trias::verify_taxa`:
+
+```{r echo = TRUE}
+verification <- trias::verify_taxa(taxa)
+```
+
+  **Note**: to start a verification from scratch, use `trias::verify_taxa(taxa)`.
+
+2. Save taxa with populated `verificationKey` back to [`data/interim/taxa_with_verification.csv`](https://github.com/trias-project/unified-checklist/blob/master/data/interim/taxa_with_verification.csv).
 
 ```{r}
-verification_file <-
-  read_tsv(
-    here("data", "interim", "verification_file.csv"),
-    col_types = cols(
-      bb_key = col_integer(),
-      bb_acceptedKey = col_integer(),
-      date_added = col_date(),
-      verification_key = col_character()
-    )
+write_csv(verification$taxa, here("data", "interim", "taxa_with_verification.csv"), na = "")
+```
+
+3. Save updated verification back to [`data/interim/verification.tsv`](https://github.com/trias-project/unified-checklist/blob/master/data/interim/verification.tsv)
+
+```{r}
+write_tsv(verification$verification, here("data", "interim", "verification.tsv"), na = "")
+```
+
+## Show verification status
+
+### Unmatched taxa
+
+Status | Number of taxa
+--- | ---
+Verified | `r verification$taxa %>% filter(is.na(bb_key) & !is.na(verificationKey)) %>% nrow()`
+Unverified | `r verification$taxa %>% filter(is.na(bb_key) & is.na(verificationKey)) %>% nrow()`
+New in this run | `r verification$info$new_unmatched_taxa %>% nrow()`
+No longer used (TODO: for unmatched only) | `r verification$info$outdated_taxa %>% nrow()`
+
+Unmatched taxa are those for which the automatic backbone matching on the scientific name failed (have [`BACKBONE_MATCH_NONE`](http://gbif.github.io/parsers/apidocs/org/gbif/api/vocabulary/NameUsageIssue.html) in `issues`), either because the scientific name could not be parsed or because it is not listed in the backbone.
+
+Verification (see \@ref(verification)) involves setting the `verificationKey` to a manually found `bb_key`. One could even set multiple `bb_key`s, e.g. to split a hybrid formula into its hybrid parents.
+
+### Synonyms
+
+Status | Number of taxa
+--- | ---
+Previously verified | `r verification$taxa %>% filter(!is.na(bb_acceptedKey) & !is.na(verificationKey)) %>% nrow()`
+Unverified | `r verification$taxa %>% filter(!is.na(bb_acceptedKey) & is.na(verificationKey)) %>% nrow()`
+New in this run | `r verification$info$new_synonyms %>% nrow()`
+No longer used (TODO: for synonyms only) | `r verification$info$outdated_taxa %>% nrow()`
+
+Synonyms are taxa that the backbone will lump under an accepted taxon (`taxonomicStatus` = `SYNONYM` or similar). This lumping is often correct, but should be verified.
+
+Verification (see \@ref(verification)) involves setting the `verifiedKey` to one of the following:
+
+* **accepted `bb_key` suggested by GBIF**: backbone synonymy is accepted and taxon will be lumped.
+* **another accepted `bb_key`**: backbone synonymy is rejected, but taxon will be lumped under another name.
+* **`bb_key` of taxon itself**: backbone synonymy is rejected, taxon will be considered as separate taxon.
+
+### Accepted taxa
+
+Status | Number of taxa
+--- | ---
+Verified (automatic) | `r verification$taxa %>% filter(bb_taxonomicStatus %in% c("ACCEPTED", "DOUBTFUL") & !is.na(verificationKey)) %>% nrow()`
+Unverified |`r verification$taxa %>% filter(bb_taxonomicStatus %in% c("ACCEPTED", "DOUBTFUL") & is.na(verificationKey)) %>% nrow()`
+
+Accepted taxa are those the backbone considers own entities (`taxonomicStatus` = `ACCEPTED` or `DOUBTFUL`) that won't be lumped.
+
+No verification is required for these: `verificationKey` is automatically set to their `bb_key`.
+
+### Erroneous verificationKeys
+
+Provided verification keys that were not found in the GBIF backbone:
+
+```{r}
+verification$taxa$check_verificationKey
+```
+
+### Additional information
+
+Additional information regarding the verification information that is of no further consequence.
+
+* Duplicate taxa (having same `bb_key` and `bb_acceptedKey`) that are quick wins to verify:
+
+```{r}
+verification$info$duplicates %>%
+  ungroup() %>%
+  group_by(n) %>%
+  summarize(
+    taxa = n()
   )
 ```
 
-## Detect taxa to verify
-
-We rely on the [GBIF backbone taxonomy](https://doi.org/10.15468/39omei) to detect duplicate taxa between checklists (same `nubKey`) and to lump synonyms with accepted taxa (same `acceptedKey`). Some of this information requires manual verification however:
-
-**No backbone match**
-
-* Detection: `bb_key` is `NA`
-* Includes: checklist taxa that could not be matched to the GBIF backbone taxonomy for a variety of reasons. All these will also have [`BACKBONE_MATCH_NONE`](http://gbif.github.io/parsers/apidocs/org/gbif/api/vocabulary/NameUsageIssue.html) in `issues`.
-* Verification action: try to manually find a matching taxon in the GBIF backbone taxonomy and add its `key` to `verification_key`. The match could consist of multiple `key`s  for e.g. hybrid formulas.
-
-**Synonyms**
-
-* Detection: `bb_acceptedKey` is not `NA`
-* Includes: checklist taxa that are considered synonyms of accepted taxa by the GBIF backbone taxonomy. This lumping is often correct, but it is good to verify if we agree.
-* Verification action: If we agree with the lumping, copy `bb_acceptedKey` to `verification_key`. If we do not agree with the lumping, copy the taxon `bb_key` to `verification_key` (i.e. that taxon is considered its own entity).
-
-In all other cases, we can accept the information returned by the GBIF backbone taxonomy (i.e. we consider the `bb_key` as the `verification_key`).
-
-Add and set `verification_key`:
+* Previously listed synonyms for which the scientific name was updated in the backbone:
 
 ```{r}
-checklist_taxa <-
-  checklist_taxa %>%
-  mutate(verification_key = case_when(
-    is.na(bb_key) ~ NA_character_,          # No backbone match (no bb_key)
-    !is.na(bb_acceptedKey) ~ NA_character_, # Synonyms (have bb_acceptedKey)
-    TRUE ~ as.character(bb_key)             # In all other cases, use the bb_key
-  ))
+verification$info$updated_scientificName
 ```
 
-Number of taxa to verify:
+* Previously listed synonyms for which the _accepted_ scientific name was updated in the backbone:
 
 ```{r}
-checklist_taxa %>%
-  filter(is.na(verification_key)) %>%
-  nrow()
+verification$info$updated_acceptedName
 ```
-
-## Update verification file
-
-We use `trias::verify_taxa` to update the `verification_file`:
-
-1. retrieve verified keys which have been already assigned (stored in `verified_synonyms`)
-2. update `verified_synonyms`. Updates include:
-  - Updates from GBIF in the scientific names (`checklist_scientificName`, `backbone_scientificName` or `backbone_acceptedName`): those mostly consider slight spelling variations and will be updated in `verified_synonyms` authomatically (a message is returned).
-  - New synonyms or no matches to GBIF backbone will be added to `verified_synonyms`.
-
-The function reports also unused rows in `verified_synonyms`, but they will not be removed or altered.
-
-```{r apply_verify_taxa}
-verify <-
-  trias::verify_taxa(
-    taxa = taxa %>% filter(is.na(verification_key)) %>% select(-verification_key), 
-    verified_taxa = verified_synonyms
-  )
-```
-
-### New synonyms
-
-The following synonyms are new and should be verified:
-
-```{r new_synonyms}
-verify$new_synonyms
-```
-
-### New unmatched taxa
-
-The following taxa are not matched to GBIF backbone:
-
-```{r new_unmatched_taxa}
-verify$new_unmatched_taxa
-```
-
-### Updated names
-
-Consequences of updates in GBIF backbone with no consequences in synonym relation.
-
-#### Updated backbone scientific names 
-
-These backbone scientific names have been updated (but synonym relation stayed the same):
-
-```{r updated_scientific_names}
-verify$updated_scientificName
-```
-
-#### Updated backbone accepted scientific names 
-
-These backbone accepted names have been updated (but synonym relation stayed the same):
-
-```{r updated_accepted_names}
-verify$updated_acceptedName
-```
-
-#### Updated issues
-
-The backbone issues related to these taxa have been udpated:
-
-```{r update_backbone_issues}
-verify$updated_backbone_issues
-```
-
-### Unused taxa
-
-These synonym relations are no longer used:
-
-```{r}
-verify$unused_taxa
-```
-
-### Check verification keys
-
-We check the verification keys provided by taxonomy experts. In particular, the following checks are performed:
-
-1. `verification_key` is a valid taxon key
-2. `verification_key` refers to a taxon in GBIF Backbone
-3. `verification_key` is a synonym (neither `ACCEPTED` nor `DOUBTFUL`)
-
-```{r show_invalid_vks_synonym}
-vks_status <-
-  trias::gbif_verify_keys(unique(verify$verified_taxa$verification_key)) %>%
-  rename(verification_key = key)
-vks_status
-```
-
-Invalid taxon keys (`valid_taxon_keys` is `FALSE`):
-
-```{r invalid_taxon_keys}
-vks_status %>% 
-  count(valid_taxon_keys = (is_taxonKey == TRUE))
-```
-
-Invalid GBIF backbone keys (`valid_GBIF_backbone_keys` is `FALSE`):
-
-```{r invalid_gbif_backbone_keys}
-vks_status %>% 
-  count(valid_GBIF_backbone_keys = (is_from_gbif_backbone == TRUE))
-```
-
-Synonyms (`is_synonym` is `TRUE`):
-
-```{r}
-vks_status %>% 
-  count(is_synonym = (is_synonym == TRUE))
-```
-
-### Save verification table
-
-The data.frame `verify$verified_taxa` can be saved as text file and manually transferred to online spreadsheet:
-
-```{r save_verification_df_to_tsv}
-write_tsv(verify$verified_taxa, path = here("data", "output", "verified_taxa.tsv"), na = "")
-```
-
-### Update taxa
-
-We can now add the verification keys (and eventual remarks by experts) to taxa:
-
-```{r update_taxa}
-taxa_with_vk_from_gbif <-
-  taxa %>%
-  filter(!is.na(verification_key)) %>%
-  mutate(remarks = NA_character_)
-
-prepare_to_join <-
-  verify$verified_taxa %>%
-  separate_rows(checklists, sep = ",") %>%
-  rename(checklist_datasetKey = checklists) %>%
-  select(-date_added)
-
-taxa_from_verified <-
-  taxa %>%
-  filter(is.na(verification_key)) %>%
-  select(-verification_key)
-
-taxa_from_verified <-
-  taxa_from_verified %>% 
-  left_join(
-    prepare_to_join,
-    by = intersect(colnames(taxa_from_verified), colnames(prepare_to_join))
-  )
-
-taxa <-
-  bind_rows(taxa_with_vk_from_gbif, taxa_from_verified)
-```
-
-Shows some stats:
-
-```{r}
-print(paste("Number of accepted taxa: ", 
-            taxa %>% 
-              filter(backbone_taxonomicStatus == "ACCEPTED") %>%
-              nrow()))
-print(paste("Number of doubtful taxa (but no expert check needed): ", 
-            taxa %>% 
-              filter(backbone_taxonomicStatus == "DOUBTFUL") %>%
-              nrow()))
-print(paste("Number of taxa verified by expert: ",
-            taxa %>% 
-              filter(!is.na(verification_key)) %>%
-              filter(verification_key %in% 
-                       verify$verified_taxa$verification_key) %>%
-              nrow()))
-print(paste("Number of taxa still to verify: ",
-            taxa %>% 
-              filter(is.na(verification_key)) %>%
-              nrow())) 
-```
-
-Save the updated taxa:
-
-```{r save_udpated_taxa}
-# save to csv -> taxa_by_nubKey_verified
-taxa_verified <- write_tsv(taxa, path = here("data", "interim", "taxa_after_verification.tsv"), na = "")
-```
- 

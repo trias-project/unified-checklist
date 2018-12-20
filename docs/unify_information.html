@@ -5,11 +5,11 @@
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>National, unified checklist of alien species in Belgium</title>
-  <meta name="description" content="National, unified checklist of alien species in Belgium">
-  <meta name="generator" content="bookdown 0.7 and GitBook 2.6.7">
+  <title>5 Unify related information | National, unified checklist of alien species in Belgium</title>
+  <meta name="description" content="5 Unify related information | National, unified checklist of alien species in Belgium>
+  <meta name="generator" content="bookdown  and GitBook 2.6.7">
 
-  <meta property="og:title" content="National, unified checklist of alien species in Belgium" />
+  <meta property="og:title" content="5 Unify related information | National, unified checklist of alien species in Belgium />
   <meta property="og:type" content="book" />
   
   
@@ -17,7 +17,7 @@
   <meta name="github-repo" content="trias-project/unified-checklist" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="National, unified checklist of alien species in Belgium" />
+  <meta name="twitter:title" content="5 Unify related information | National, unified checklist of alien species in Belgium />
   
   
   
@@ -25,17 +25,18 @@
 <meta name="author" content="Peter Desmet, Damiano Oldoni">
 
 
-<meta name="date" content="2018-12-10">
+<meta name="date" content="2018-12-20">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
-<link rel="prev" href="get_information.html">
+<link rel="prev" href="verify_taxa.html">
 
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
@@ -52,41 +53,67 @@
 
 
 <style type="text/css">
-div.sourceCode { overflow-x: auto; }
-table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
-  margin: 0; padding: 0; vertical-align: baseline; border: none; }
-table.sourceCode { width: 100%; line-height: 100%; }
-td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
-td.sourceCode { padding-left: 5px; }
-code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code > span.dt { color: #902000; } /* DataType */
-code > span.dv { color: #40a070; } /* DecVal */
-code > span.bn { color: #40a070; } /* BaseN */
-code > span.fl { color: #40a070; } /* Float */
-code > span.ch { color: #4070a0; } /* Char */
-code > span.st { color: #4070a0; } /* String */
-code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code > span.ot { color: #007020; } /* Other */
-code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code > span.fu { color: #06287e; } /* Function */
-code > span.er { color: #ff0000; font-weight: bold; } /* Error */
-code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-code > span.cn { color: #880000; } /* Constant */
-code > span.sc { color: #4070a0; } /* SpecialChar */
-code > span.vs { color: #4070a0; } /* VerbatimString */
-code > span.ss { color: #bb6688; } /* SpecialString */
-code > span.im { } /* Import */
-code > span.va { color: #19177c; } /* Variable */
-code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code > span.op { color: #666666; } /* Operator */
-code > span.bu { } /* BuiltIn */
-code > span.ex { } /* Extension */
-code > span.pp { color: #bc7a00; } /* Preprocessor */
-code > span.at { color: #7d9029; } /* Attribute */
-code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
 </head>
@@ -110,18 +137,29 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="2.5" data-path="get_taxa.html"><a href="get_taxa.html#show-summary-and-save"><i class="fa fa-check"></i><b>2.5</b> Show summary and save</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="get_information.html"><a href="get_information.html"><i class="fa fa-check"></i><b>3</b> Get related information</a><ul>
-<li class="chapter" data-level="3.1" data-path="get_information.html"><a href="get_information.html#read-data"><i class="fa fa-check"></i><b>3.1</b> Read data</a></li>
-<li class="chapter" data-level="3.2" data-path="get_information.html"><a href="get_information.html#filter-checklist-taxa"><i class="fa fa-check"></i><b>3.2</b> Filter checklist taxa</a></li>
-<li class="chapter" data-level="3.3" data-path="get_information.html"><a href="get_information.html#get-distributions"><i class="fa fa-check"></i><b>3.3</b> Get distributions</a></li>
-<li class="chapter" data-level="3.4" data-path="get_information.html"><a href="get_information.html#get-species-profiles"><i class="fa fa-check"></i><b>3.4</b> Get species profiles</a></li>
-<li class="chapter" data-level="3.5" data-path="get_information.html"><a href="get_information.html#get-descriptions"><i class="fa fa-check"></i><b>3.5</b> Get descriptions</a></li>
+<li class="chapter" data-level="3.1" data-path="get_information.html"><a href="get_information.html#read-taxa"><i class="fa fa-check"></i><b>3.1</b> Read taxa</a></li>
+<li class="chapter" data-level="3.2" data-path="get_information.html"><a href="get_information.html#get-distributions"><i class="fa fa-check"></i><b>3.2</b> Get distributions</a></li>
+<li class="chapter" data-level="3.3" data-path="get_information.html"><a href="get_information.html#get-species-profiles"><i class="fa fa-check"></i><b>3.3</b> Get species profiles</a></li>
+<li class="chapter" data-level="3.4" data-path="get_information.html"><a href="get_information.html#get-descriptions"><i class="fa fa-check"></i><b>3.4</b> Get descriptions</a></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="unify_information.html"><a href="unify_information.html"><i class="fa fa-check"></i><b>4</b> Unify related information</a><ul>
-<li class="chapter" data-level="4.1" data-path="unify_information.html"><a href="unify_information.html#read-data-1"><i class="fa fa-check"></i><b>4.1</b> Read data</a></li>
-<li class="chapter" data-level="4.2" data-path="unify_information.html"><a href="unify_information.html#assign-checklist-order"><i class="fa fa-check"></i><b>4.2</b> Assign checklist order</a></li>
-<li class="chapter" data-level="4.3" data-path="unify_information.html"><a href="unify_information.html#unify-distribution"><i class="fa fa-check"></i><b>4.3</b> Unify distribution</a></li>
-<li class="chapter" data-level="4.4" data-path="unify_information.html"><a href="unify_information.html#unify-species-profiles"><i class="fa fa-check"></i><b>4.4</b> Unify species profiles</a></li>
-<li class="chapter" data-level="4.5" data-path="unify_information.html"><a href="unify_information.html#unify-descriptions"><i class="fa fa-check"></i><b>4.5</b> Unify descriptions</a></li>
+<li class="chapter" data-level="4" data-path="verify_taxa.html"><a href="verify_taxa.html"><i class="fa fa-check"></i><b>4</b> Verify taxa</a><ul>
+<li class="chapter" data-level="4.1" data-path="verify_taxa.html"><a href="verify_taxa.html#read-taxa-1"><i class="fa fa-check"></i><b>4.1</b> Read taxa</a></li>
+<li class="chapter" data-level="4.2" data-path="verify_taxa.html"><a href="verify_taxa.html#verification"><i class="fa fa-check"></i><b>4.2</b> Read verification information</a></li>
+<li class="chapter" data-level="4.3" data-path="verify_taxa.html"><a href="verify_taxa.html#run-and-save-verification"><i class="fa fa-check"></i><b>4.3</b> Run and save verification</a></li>
+<li class="chapter" data-level="4.4" data-path="verify_taxa.html"><a href="verify_taxa.html#show-verification-status"><i class="fa fa-check"></i><b>4.4</b> Show verification status</a><ul>
+<li class="chapter" data-level="4.4.1" data-path="verify_taxa.html"><a href="verify_taxa.html#unmatched-taxa"><i class="fa fa-check"></i><b>4.4.1</b> Unmatched taxa</a></li>
+<li class="chapter" data-level="4.4.2" data-path="verify_taxa.html"><a href="verify_taxa.html#synonyms"><i class="fa fa-check"></i><b>4.4.2</b> Synonyms</a></li>
+<li class="chapter" data-level="4.4.3" data-path="verify_taxa.html"><a href="verify_taxa.html#accepted-taxa"><i class="fa fa-check"></i><b>4.4.3</b> Accepted taxa</a></li>
+<li class="chapter" data-level="4.4.4" data-path="verify_taxa.html"><a href="verify_taxa.html#erroneous-verificationkeys"><i class="fa fa-check"></i><b>4.4.4</b> Erroneous verificationKeys</a></li>
+<li class="chapter" data-level="4.4.5" data-path="verify_taxa.html"><a href="verify_taxa.html#additional-information"><i class="fa fa-check"></i><b>4.4.5</b> Additional information</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="unify_information.html"><a href="unify_information.html"><i class="fa fa-check"></i><b>5</b> Unify related information</a><ul>
+<li class="chapter" data-level="5.1" data-path="unify_information.html"><a href="unify_information.html#read-data"><i class="fa fa-check"></i><b>5.1</b> Read data</a></li>
+<li class="chapter" data-level="5.2" data-path="unify_information.html"><a href="unify_information.html#assign-checklist-order"><i class="fa fa-check"></i><b>5.2</b> Assign checklist order</a></li>
+<li class="chapter" data-level="5.3" data-path="unify_information.html"><a href="unify_information.html#unify-distribution"><i class="fa fa-check"></i><b>5.3</b> Unify distribution</a></li>
+<li class="chapter" data-level="5.4" data-path="unify_information.html"><a href="unify_information.html#unify-species-profiles"><i class="fa fa-check"></i><b>5.4</b> Unify species profiles</a></li>
+<li class="chapter" data-level="5.5" data-path="unify_information.html"><a href="unify_information.html#unify-descriptions"><i class="fa fa-check"></i><b>5.5</b> Unify descriptions</a></li>
 </ul></li>
 </ul>
 
@@ -141,36 +179,36 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 
             <section class="normal" id="section-">
 <div id="unify-related-information" class="section level1">
-<h1><span class="header-section-number">4</span> Unify related information</h1>
+<h1><span class="header-section-number">5</span> Unify related information</h1>
 <p>In this chapter we unify related information for each verified taxon.</p>
-<div id="read-data-1" class="section level2">
-<h2><span class="header-section-number">4.1</span> Read data</h2>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">checklists &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="kw">here</span>(<span class="st">&quot;data&quot;</span>, <span class="st">&quot;raw&quot;</span>, <span class="st">&quot;checklists.csv&quot;</span>))
-taxa &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="kw">here</span>(<span class="st">&quot;data&quot;</span>, <span class="st">&quot;raw&quot;</span>, <span class="st">&quot;taxa.csv&quot;</span>))
+<div id="read-data" class="section level2">
+<h2><span class="header-section-number">5.1</span> Read data</h2>
+<pre class="sourceCode r"><code class="sourceCode r">checklists &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="kw">here</span>(<span class="st">&quot;data&quot;</span>, <span class="st">&quot;raw&quot;</span>, <span class="st">&quot;checklists.csv&quot;</span>))
+taxa &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="kw">here</span>(<span class="st">&quot;data&quot;</span>, <span class="st">&quot;interim&quot;</span>, <span class="st">&quot;taxa_with_verification.csv&quot;</span>))
 distributions &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="kw">here</span>(<span class="st">&quot;data&quot;</span>, <span class="st">&quot;raw&quot;</span>, <span class="st">&quot;distributions.csv&quot;</span>))
 speciesprofiles &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="kw">here</span>(<span class="st">&quot;data&quot;</span>, <span class="st">&quot;raw&quot;</span>, <span class="st">&quot;speciesprofiles.csv&quot;</span>))
-descriptions &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="kw">here</span>(<span class="st">&quot;data&quot;</span>, <span class="st">&quot;raw&quot;</span>, <span class="st">&quot;descriptions.csv&quot;</span>))</code></pre></div>
+descriptions &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="kw">here</span>(<span class="st">&quot;data&quot;</span>, <span class="st">&quot;raw&quot;</span>, <span class="st">&quot;descriptions.csv&quot;</span>))</code></pre>
 </div>
 <div id="assign-checklist-order" class="section level2">
-<h2><span class="header-section-number">4.2</span> Assign checklist order</h2>
+<h2><span class="header-section-number">5.2</span> Assign checklist order</h2>
 <ol style="list-style-type: decimal">
 <li><p>Get checklist keys as (ordered) vector.</p></li>
 <li><p>Assign the checklist order (= index of checklist keys) as an extra column to taxa.</p></li>
 </ol>
 <hr />
 <p><strong>TO REMOVE</strong></p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Temporarily use the bb_key as a unifying key</span>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Temporarily use the bb_key as a unifying key</span>
 taxa &lt;-
 <span class="st">  </span>taxa <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw">rename</span>(<span class="dt">verifiedKey =</span> bb_key)</code></pre></div>
+<span class="st">  </span><span class="kw">rename</span>(<span class="dt">verifiedKey =</span> bb_key)</code></pre>
 <hr />
 </div>
 <div id="unify-distribution" class="section level2">
-<h2><span class="header-section-number">4.3</span> Unify distribution</h2>
+<h2><span class="header-section-number">5.3</span> Unify distribution</h2>
 <ol style="list-style-type: decimal">
 <li>Parse <code>temporal</code> (eventDate) information.</li>
 </ol>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">distributions_unified &lt;-
+<pre class="sourceCode r"><code class="sourceCode r">distributions_unified &lt;-
 <span class="st">  </span>distributions <span class="op">%&gt;%</span>
 <span class="st">  </span>
 <span class="st">  </span><span class="co"># Split temporal on &quot;/&quot; into startYear and endYear</span>
@@ -189,11 +227,11 @@ taxa &lt;-
 <span class="st">  </span><span class="kw">mutate</span>(<span class="dt">startYear =</span> <span class="kw">str_sub</span>(startYear, <span class="dv">1</span>, <span class="dv">4</span>), <span class="dt">endYear =</span> <span class="kw">str_sub</span>(endYear, <span class="dv">1</span>, <span class="dv">4</span>)) <span class="op">%&gt;%</span>
 <span class="st">  </span>
 <span class="st">  </span><span class="co"># If endYear is empty (no range), populate it with startYear: 2018 &amp; 2018</span>
-<span class="st">  </span><span class="kw">mutate</span>(<span class="dt">endYear =</span> <span class="kw">if_else</span>(<span class="kw">is.na</span>(endYear), startYear, endYear))</code></pre></div>
+<span class="st">  </span><span class="kw">mutate</span>(<span class="dt">endYear =</span> <span class="kw">if_else</span>(<span class="kw">is.na</span>(endYear), startYear, endYear))</code></pre>
 <ol start="2" style="list-style-type: decimal">
 <li>Filter distributions.</li>
 </ol>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">distributions_unified &lt;-
+<pre class="sourceCode r"><code class="sourceCode r">distributions_unified &lt;-
 <span class="st">  </span>distributions_unified <span class="op">%&gt;%</span>
 <span class="st">  </span>
 <span class="st">  </span><span class="co"># Filter on non-native species present in (at least part of) Belgium</span>
@@ -201,11 +239,11 @@ taxa &lt;-
     country <span class="op">==</span><span class="st"> &quot;BE&quot;</span> <span class="op">&amp;</span>
 <span class="st">    </span>establishmentMeans <span class="op">%in%</span><span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;INTRODUCED&quot;</span>, <span class="st">&quot;NATURALISED&quot;</span>, <span class="st">&quot;INVASIVE&quot;</span>, <span class="st">&quot;ASSISTED COLONISATION&quot;</span>) <span class="op">&amp;</span>
 <span class="st">    </span>status <span class="op">%in%</span><span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;PRESENT&quot;</span>, <span class="st">&quot;COMMON&quot;</span>, <span class="st">&quot;RARE&quot;</span>, <span class="st">&quot;IRREGULAR&quot;</span>)
-  )</code></pre></div>
+  )</code></pre>
 <ol start="3" style="list-style-type: decimal">
 <li>Choose a single distribution within a checklist.</li>
 </ol>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">distributions_unified &lt;-
+<pre class="sourceCode r"><code class="sourceCode r">distributions_unified &lt;-
 <span class="st">  </span>distributions_unified <span class="op">%&gt;%</span>
 
 <span class="st">  </span><span class="co"># Join distribution with taxon to get verifiedKey and checklistOrder</span>
@@ -226,11 +264,11 @@ taxa &lt;-
     <span class="dt">startYear =</span> <span class="kw">min</span>(startYear, <span class="dt">na.rm =</span> <span class="ot">TRUE</span>),
     <span class="dt">endYear =</span> <span class="kw">max</span>(endYear, <span class="dt">na.rm =</span> <span class="ot">TRUE</span>),
     <span class="dt">sourceTaxa =</span> <span class="kw">paste</span>(<span class="kw">sort</span>(<span class="kw">unique</span>(taxonKey)), <span class="dt">collapse =</span> <span class="st">&quot;,&quot;</span>)
-  )</code></pre></div>
+  )</code></pre>
 <ol start="4" style="list-style-type: decimal">
 <li>Choose a single distribution across checklists.</li>
 </ol>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">distributions_unified &lt;-
+<pre class="sourceCode r"><code class="sourceCode r">distributions_unified &lt;-
 <span class="st">  </span>distributions_unified <span class="op">%&gt;%</span>
 <span class="st">  </span>
 <span class="st">  </span><span class="co"># Sort by checklist order (trustworthiness)</span>
@@ -249,17 +287,17 @@ taxa &lt;-
   ) <span class="op">%&gt;%</span>
 
 <span class="st">  </span><span class="co"># Sort by verifiedKey</span>
-<span class="st">  </span><span class="kw">arrange</span>(verifiedKey)</code></pre></div>
+<span class="st">  </span><span class="kw">arrange</span>(verifiedKey)</code></pre>
 <ol start="5" style="list-style-type: decimal">
 <li>Save to <a href="https://github.com/trias-project/unified-checklist/blob/master/data/unified/distributions.csv">CSV</a>.</li>
 </ol>
 </div>
 <div id="unify-species-profiles" class="section level2">
-<h2><span class="header-section-number">4.4</span> Unify species profiles</h2>
+<h2><span class="header-section-number">5.4</span> Unify species profiles</h2>
 <ol style="list-style-type: decimal">
 <li>Filter species profiles.</li>
 </ol>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">speciesprofiles_unified &lt;-
+<pre class="sourceCode r"><code class="sourceCode r">speciesprofiles_unified &lt;-
 <span class="st">  </span>speciesprofiles <span class="op">%&gt;%</span>
 <span class="st">  </span>
 <span class="st">  </span><span class="co"># Remove species profiles that contain NA for any of the attributes</span>
@@ -269,11 +307,11 @@ taxa &lt;-
     <span class="op">!</span><span class="kw">is.na</span>(marine) <span class="op">&amp;</span>
 <span class="st">    </span><span class="op">!</span><span class="kw">is.na</span>(freshwater) <span class="op">&amp;</span>
 <span class="st">    </span><span class="op">!</span><span class="kw">is.na</span>(terrestrial)
-  )</code></pre></div>
+  )</code></pre>
 <ol start="2" style="list-style-type: decimal">
 <li>Choose a single species profile within a checklist.</li>
 </ol>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">speciesprofiles_unified &lt;-
+<pre class="sourceCode r"><code class="sourceCode r">speciesprofiles_unified &lt;-
 <span class="st">  </span>speciesprofiles_unified <span class="op">%&gt;%</span>
 
 <span class="st">  </span><span class="co"># Join species profile with taxon to get verifiedKey and checklist order</span>
@@ -295,11 +333,11 @@ taxa &lt;-
     <span class="dt">freshwater =</span> <span class="kw">first</span>(freshwater),
     <span class="dt">terrestrial =</span> <span class="kw">first</span>(terrestrial),
     <span class="dt">sourceTaxon =</span> <span class="kw">first</span>(taxonKey)
-  )</code></pre></div>
+  )</code></pre>
 <ol start="3" style="list-style-type: decimal">
 <li>Choose a single species profile across checklists.</li>
 </ol>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">speciesprofiles_unified &lt;-
+<pre class="sourceCode r"><code class="sourceCode r">speciesprofiles_unified &lt;-
 <span class="st">  </span>speciesprofiles_unified <span class="op">%&gt;%</span>
 <span class="st">  </span>
 <span class="st">  </span><span class="co"># Sort by checklist order (trustworthiness)</span>
@@ -319,18 +357,18 @@ taxa &lt;-
   ) <span class="op">%&gt;%</span>
 
 <span class="st">  </span><span class="co"># Sort by verifiedKey</span>
-<span class="st">  </span><span class="kw">arrange</span>(verifiedKey)</code></pre></div>
+<span class="st">  </span><span class="kw">arrange</span>(verifiedKey)</code></pre>
 <ol start="4" style="list-style-type: decimal">
 <li>Save to <a href="https://github.com/trias-project/unified-checklist/blob/master/data/unified/speciesprofiles.csv">CSV</a>.</li>
 </ol>
 </div>
 <div id="unify-descriptions" class="section level2">
-<h2><span class="header-section-number">4.5</span> Unify descriptions</h2>
+<h2><span class="header-section-number">5.5</span> Unify descriptions</h2>
 <ol style="list-style-type: decimal">
 <li><p>Filter non <code>NA</code> descriptions.</p></li>
 <li><p>Select unique descriptions (within their type) within a checklist.</p></li>
 </ol>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">descriptions_unified &lt;-
+<pre class="sourceCode r"><code class="sourceCode r">descriptions_unified &lt;-
 <span class="st">  </span>descriptions_unified <span class="op">%&gt;%</span>
 
 <span class="st">  </span><span class="co"># Join species profile with taxon to get verifiedKey and checklist order</span>
@@ -354,11 +392,11 @@ taxa &lt;-
 <span class="st">  </span><span class="co"># Note: since we use distinct we can&#39;t keep a sourceTaxon (taxonKey)</span>
 <span class="st">  </span><span class="kw">distinct</span>(
     description
-  )</code></pre></div>
+  )</code></pre>
 <ol start="3" style="list-style-type: decimal">
 <li>Select unique descriptions (within their type) across checklists.</li>
 </ol>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">descriptions_unified &lt;-
+<pre class="sourceCode r"><code class="sourceCode r">descriptions_unified &lt;-
 <span class="st">  </span>descriptions_unified <span class="op">%&gt;%</span>
 <span class="st">  </span>
 <span class="st">  </span><span class="co"># Sort by checklist order (trustworthiness)</span>
@@ -383,7 +421,7 @@ taxa &lt;-
 <span class="st">  </span><span class="kw">rename</span>(<span class="dt">sourceChecklist =</span> datasetKey) <span class="op">%&gt;%</span>
 <span class="st">  </span>
 <span class="st">  </span><span class="co"># Sort by verifiedKey and type</span>
-<span class="st">  </span><span class="kw">arrange</span>(verifiedKey, type)</code></pre></div>
+<span class="st">  </span><span class="kw">arrange</span>(verifiedKey, type)</code></pre>
 <ol start="4" style="list-style-type: decimal">
 <li>Save to <a href="https://github.com/trias-project/unified-checklist/blob/master/data/unified/descriptions.csv">CSV</a>.</li>
 </ol>
@@ -395,7 +433,7 @@ taxa &lt;-
           </div>
         </div>
       </div>
-<a href="get_information.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="verify_taxa.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 
     </div>
   </div>
@@ -416,7 +454,7 @@ gitbook.start({
 "google": false,
 "linkedin": false,
 "weibo": false,
-"instapper": false,
+"instapaper": false,
 "vk": false,
 "all": {}
 },
@@ -428,6 +466,10 @@ gitbook.start({
 "edit": {
 "link": "https://github.com/trias-project/unified-checklist/blob/master/src/src/unify_information.Rmd",
 "text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
 },
 "download": null,
 "toc": {

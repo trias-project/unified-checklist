@@ -5,11 +5,11 @@
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>National, unified checklist of alien species in Belgium</title>
-  <meta name="description" content="National, unified checklist of alien species in Belgium">
+  <title>4 Verify taxa | National, unified checklist of alien species in Belgium</title>
+  <meta name="description" content="4 Verify taxa | National, unified checklist of alien species in Belgium>
   <meta name="generator" content="bookdown  and GitBook 2.6.7">
 
-  <meta property="og:title" content="National, unified checklist of alien species in Belgium" />
+  <meta property="og:title" content="4 Verify taxa | National, unified checklist of alien species in Belgium />
   <meta property="og:type" content="book" />
   
   
@@ -17,7 +17,7 @@
   <meta name="github-repo" content="trias-project/unified-checklist" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="National, unified checklist of alien species in Belgium" />
+  <meta name="twitter:title" content="4 Verify taxa | National, unified checklist of alien species in Belgium />
   
   
   
@@ -32,8 +32,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
-
-<link rel="next" href="get_taxa.html">
+<link rel="prev" href="get_information.html">
+<link rel="next" href="unify_information.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -178,32 +178,156 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">National, unified checklist of alien species in Belgium</h1>
-<p class="author"><em>Peter Desmet, Damiano Oldoni</em></p>
-<p class="date"><em>2018-12-20</em></p>
+<div id="verify-taxa" class="section level1">
+<h1><span class="header-section-number">4</span> Verify taxa</h1>
+<p>In this chapter we verify taxonomic information returned by the <a href="https://doi.org/10.15468/39omei">GBIF Backbone Taxonomy</a>. We do this because we want to use the backbone information to unify taxa that can be considered the same within or across checklists. This is straightforward for (accepted) taxa with the same backbone key (<code>bb_key</code>), but requires verification for taxa the backbone does not recognize (no backbone match) or will lump under another name (synonyms). See <a href="verify_taxa.html#verification">4.2</a>.</p>
+<div id="read-taxa-1" class="section level2">
+<h2><span class="header-section-number">4.1</span> Read taxa</h2>
+<p>Read taxa from <a href="https://github.com/trias-project/unified-checklist/blob/master/data/interim/taxa_with_verification.csv"><code>data/interim/taxa_with_verification.csv</code></a>.</p>
 </div>
-<div id="intro" class="section level1">
-<h1><span class="header-section-number">1</span> Intro</h1>
-<p>…</p>
-<p>Load libraries:</p>
-<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(tidyverse)      <span class="co"># To do data science</span>
-<span class="kw">library</span>(here)           <span class="co"># To find files</span>
-<span class="kw">library</span>(janitor)        <span class="co"># To clean input data</span>
-<span class="kw">library</span>(digest)         <span class="co"># To generate hashes</span>
-<span class="kw">library</span>(rgbif)          <span class="co"># To use GBIF services</span>
+<div id="verification" class="section level2">
+<h2><span class="header-section-number">4.2</span> Read verification information</h2>
+<p>Verification information consists of a manually assigned <code>verificationKey</code> for taxa the backbone does not recognize (no backbone match) or will lump under another name (synonyms). Those <code>checklist/backbone/accepted</code> taxon combinations are stored in <a href="https://github.com/trias-project/unified-checklist/blob/master/data/interim/verification.tsv"><code>data/interim/verification.tsv</code></a>, which was created/updated in previous runs of this chapter and then manually annoted with a <code>verificationKey</code>.</p>
+</div>
+<div id="run-and-save-verification" class="section level2">
+<h2><span class="header-section-number">4.3</span> Run and save verification</h2>
+<ol style="list-style-type: decimal">
+<li>Use the existing verification information to verify taxa with the function <code>trias::verify_taxa</code>:</li>
+</ol>
+<pre class="sourceCode r"><code class="sourceCode r">verification &lt;-<span class="st"> </span>trias<span class="op">::</span><span class="kw">verify_taxa</span>(taxa)</code></pre>
+<p><strong>Note</strong>: to start a verification from scratch, use <code>trias::verify_taxa(taxa)</code>.</p>
+<ol start="2" style="list-style-type: decimal">
+<li><p>Save taxa with populated <code>verificationKey</code> back to <a href="https://github.com/trias-project/unified-checklist/blob/master/data/interim/taxa_with_verification.csv"><code>data/interim/taxa_with_verification.csv</code></a>.</p></li>
+<li><p>Save updated verification back to <a href="https://github.com/trias-project/unified-checklist/blob/master/data/interim/verification.tsv"><code>data/interim/verification.tsv</code></a></p></li>
+</ol>
+</div>
+<div id="show-verification-status" class="section level2">
+<h2><span class="header-section-number">4.4</span> Show verification status</h2>
+<div id="unmatched-taxa" class="section level3">
+<h3><span class="header-section-number">4.4.1</span> Unmatched taxa</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Status</th>
+<th>Number of taxa</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Verified</td>
+<td>0</td>
+</tr>
+<tr class="even">
+<td>Unverified</td>
+<td>114</td>
+</tr>
+<tr class="odd">
+<td>New in this run</td>
+<td>114</td>
+</tr>
+<tr class="even">
+<td>No longer used (TODO: for unmatched only)</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Unmatched taxa are those for which the automatic backbone matching on the scientific name failed (have <a href="http://gbif.github.io/parsers/apidocs/org/gbif/api/vocabulary/NameUsageIssue.html"><code>BACKBONE_MATCH_NONE</code></a> in <code>issues</code>), either because the scientific name could not be parsed or because it is not listed in the backbone.</p>
+<p>Verification (see <a href="verify_taxa.html#verification">4.2</a>) involves setting the <code>verificationKey</code> to a manually found <code>bb_key</code>. One could even set multiple <code>bb_key</code>s, e.g. to split a hybrid formula into its hybrid parents.</p>
+</div>
+<div id="synonyms" class="section level3">
+<h3><span class="header-section-number">4.4.2</span> Synonyms</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Status</th>
+<th>Number of taxa</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Previously verified</td>
+<td>0</td>
+</tr>
+<tr class="even">
+<td>Unverified</td>
+<td>985</td>
+</tr>
+<tr class="odd">
+<td>New in this run</td>
+<td>985</td>
+</tr>
+<tr class="even">
+<td>No longer used (TODO: for synonyms only)</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Synonyms are taxa that the backbone will lump under an accepted taxon (<code>taxonomicStatus</code> = <code>SYNONYM</code> or similar). This lumping is often correct, but should be verified.</p>
+<p>Verification (see <a href="verify_taxa.html#verification">4.2</a>) involves setting the <code>verifiedKey</code> to one of the following:</p>
+<ul>
+<li><strong>accepted <code>bb_key</code> suggested by GBIF</strong>: backbone synonymy is accepted and taxon will be lumped.</li>
+<li><strong>another accepted <code>bb_key</code></strong>: backbone synonymy is rejected, but taxon will be lumped under another name.</li>
+<li><strong><code>bb_key</code> of taxon itself</strong>: backbone synonymy is rejected, taxon will be considered as separate taxon.</li>
+</ul>
+</div>
+<div id="accepted-taxa" class="section level3">
+<h3><span class="header-section-number">4.4.3</span> Accepted taxa</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Status</th>
+<th>Number of taxa</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Verified (automatic)</td>
+<td>5008</td>
+</tr>
+<tr class="even">
+<td>Unverified</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<p>Accepted taxa are those the backbone considers own entities (<code>taxonomicStatus</code> = <code>ACCEPTED</code> or <code>DOUBTFUL</code>) that won’t be lumped.</p>
+<p>No verification is required for these: <code>verificationKey</code> is automatically set to their <code>bb_key</code>.</p>
+</div>
+<div id="erroneous-verificationkeys" class="section level3">
+<h3><span class="header-section-number">4.4.4</span> Erroneous verificationKeys</h3>
+<p>Provided verification keys that were not found in the GBIF backbone:</p>
+<pre><code>## NULL</code></pre>
+</div>
+<div id="additional-information" class="section level3">
+<h3><span class="header-section-number">4.4.5</span> Additional information</h3>
+<p>Additional information regarding the verification information that is of no further consequence.</p>
+<ul>
+<li>Duplicate taxa (having same <code>bb_key</code> and <code>bb_acceptedKey</code>) that are quick wins to verify:</li>
+</ul>
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["n"],"name":[1],"type":["int"],"align":["right"]},{"label":["taxa"],"name":[2],"type":["int"],"align":["right"]}],"data":[{"1":"2","2":"292"},{"1":"3","2":"24"},{"1":"4","2":"4"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+<ul>
+<li>Previously listed synonyms for which the scientific name was updated in the backbone:</li>
+</ul>
+<pre><code>## NULL</code></pre>
+<ul>
+<li>Previously listed synonyms for which the <em>accepted</em> scientific name was updated in the backbone:</li>
+</ul>
+<pre><code>## NULL</code></pre>
 
-<span class="co"># devtools::install_github(&quot;trias-project/trias&quot;)</span>
-<span class="kw">library</span>(trias)          <span class="co"># To use functions developed for TrIAS</span></code></pre>
-
+</div>
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
-<a href="get_taxa.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="get_information.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="unify_information.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -233,7 +357,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/trias-project/unified-checklist/blob/master/src/index.Rmd",
+"link": "https://github.com/trias-project/unified-checklist/blob/master/src/src/verify_taxa.Rmd",
 "text": "Edit"
 },
 "history": {

@@ -7,12 +7,14 @@ In this chapter we verify taxonomic information returned by the [GBIF Backbone T
 Read taxa from [`data/interim/taxa_with_verification.csv`](https://github.com/trias-project/unified-checklist/blob/master/data/interim/taxa_with_verification.csv).
 
 ```{r}
-taxa <- read_csv(
-  here("data", "interim", "taxa_with_verification.csv"),
-  col_types = cols(
-    verificationKey = col_character() # Cast empty column
-  )
-)
+taxa <-
+  read_csv(
+    here("data", "interim", "taxa_with_verification.csv"),
+    col_types = cols(
+      verificationKey = col_character() # Cast empty column
+    )
+  ) %>%
+  select(-verificationKey)
 ```
 
 ## Read verification information {#verification}
@@ -32,7 +34,7 @@ verification <- read_tsv(
 )
 ```
 
-## Run verification
+## Run and save verification
 
 1. Use the existing verification information to verify taxa with the function `trias::verify_taxa`:
 
@@ -45,7 +47,26 @@ verification <- trias::verify_taxa(taxa)
 2. Save taxa with populated `verificationKey` back to [`data/interim/taxa_with_verification.csv`](https://github.com/trias-project/unified-checklist/blob/master/data/interim/taxa_with_verification.csv).
 
 ```{r}
-write_csv(verification$taxa, here("data", "interim", "taxa_with_verification.csv"), na = "")
+verification$taxa %>%
+  # Select columns in same order as originally provided
+  select(
+    taxonKey,
+    scientificName,
+    taxonID,
+    datasetKey,
+    nameType,
+    issues,
+    validDistribution,
+    bb_key,
+    bb_scientificName,
+    bb_kingdom,
+    bb_rank,
+    bb_taxonomicStatus,
+    bb_acceptedKey,
+    bb_acceptedName,
+    verificationKey
+  ) %>%
+  write_csv(here("data", "interim", "taxa_with_verification.csv"), na = "")
 ```
 
 3. Save updated verification back to [`data/interim/verification.tsv`](https://github.com/trias-project/unified-checklist/blob/master/data/interim/verification.tsv)

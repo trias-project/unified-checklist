@@ -4,7 +4,7 @@ In this chapter we unify related information for each verified taxon.
 
 ## Read data
 
-```{r echo = TRUE}
+```{r unify_information-1, echo = TRUE}
 checklists <- read_csv(here("data", "raw", "checklists.csv"))
 taxa <- read_csv(here("data", "interim", "taxa_with_verification.csv"))
 distributions <- read_csv(here("data", "raw", "distributions.csv"))
@@ -16,7 +16,7 @@ descriptions <- read_csv(here("data", "raw", "descriptions.csv"))
 
 1. Get checklist keys as (ordered) vector.
 
-```{r}
+```{r unify_information-2}
 checklist_keys <-
   checklists %>%
   pull(datasetKey)
@@ -24,7 +24,7 @@ checklist_keys <-
 
 2. Assign the checklist order (= index of checklist keys) as an extra column to taxa.
 
-```{r}
+```{r unify_information-3}
 taxa <-
   taxa %>%
   rowwise() %>%
@@ -35,7 +35,7 @@ taxa <-
 
 **TO REMOVE**
 
-```{r echo = TRUE}
+```{r unify_information-4, echo = TRUE}
 # Temporarily use the bb_key as a unifying key
 taxa <-
   taxa %>%
@@ -48,7 +48,7 @@ taxa <-
 
 1. Parse `temporal` (eventDate) information.
 
-```{r echo = TRUE}
+```{r unify_information-5, echo = TRUE}
 distributions_unified <-
   distributions %>%
   
@@ -73,7 +73,7 @@ distributions_unified <-
 
 2. Filter distributions.
 
-```{r echo = TRUE}
+```{r unify_information-6, echo = TRUE}
 distributions_unified <-
   distributions_unified %>%
   
@@ -87,7 +87,7 @@ distributions_unified <-
 
 3. Choose a single distribution within a checklist.
 
-```{r echo = TRUE}
+```{r unify_information-7, echo = TRUE}
 distributions_unified <-
   distributions_unified %>%
 
@@ -114,7 +114,7 @@ distributions_unified <-
 
 4. Choose a single distribution across checklists.
 
-```{r echo = TRUE}
+```{r unify_information-8, echo = TRUE}
 distributions_unified <-
   distributions_unified %>%
   
@@ -139,7 +139,7 @@ distributions_unified <-
 
 5. Save to [CSV](https://github.com/trias-project/unified-checklist/blob/master/data/unified/distributions.csv).
 
-```{r}
+```{r unify_information-9}
 write_csv(distributions_unified, here("data", "unified", "distributions.csv"), na = "")
 ```
 
@@ -147,7 +147,7 @@ write_csv(distributions_unified, here("data", "unified", "distributions.csv"), n
 
 1. Filter species profiles.
 
-```{r echo = TRUE}
+```{r unify_information-10, echo = TRUE}
 speciesprofiles_unified <-
   speciesprofiles %>%
   
@@ -163,7 +163,7 @@ speciesprofiles_unified <-
 
 2. Choose a single species profile within a checklist.
 
-```{r echo = TRUE}
+```{r unify_information-11, echo = TRUE}
 speciesprofiles_unified <-
   speciesprofiles_unified %>%
 
@@ -191,7 +191,7 @@ speciesprofiles_unified <-
 
 3. Choose a single species profile across checklists.
 
-```{r echo = TRUE}
+```{r unify_information-12, echo = TRUE}
 speciesprofiles_unified <-
   speciesprofiles_unified %>%
   
@@ -217,7 +217,7 @@ speciesprofiles_unified <-
 
 4. Save to [CSV](https://github.com/trias-project/unified-checklist/blob/master/data/unified/speciesprofiles.csv).
 
-```{r}
+```{r unify_information-13}
 write_csv(speciesprofiles_unified, here("data", "unified", "speciesprofiles.csv"), na = "")
 ```
 
@@ -225,7 +225,7 @@ write_csv(speciesprofiles_unified, here("data", "unified", "speciesprofiles.csv"
 
 1. Filter non `NA` descriptions.
 
-```{r}
+```{r unify_information-14}
 descriptions_unified <-
   descriptions %>%
   
@@ -237,7 +237,7 @@ descriptions_unified <-
 
 2. Select unique descriptions (within their type) within a checklist.
 
-```{r echo = TRUE}
+```{r unify_information-15, echo = TRUE}
 descriptions_unified <-
   descriptions_unified %>%
 
@@ -267,7 +267,7 @@ descriptions_unified <-
 
 3. Select unique descriptions (within their type) across checklists.
 
-```{r echo = TRUE}
+```{r unify_information-16, echo = TRUE}
 descriptions_unified <-
   descriptions_unified %>%
   
@@ -298,6 +298,6 @@ descriptions_unified <-
 
 4. Save to [CSV](https://github.com/trias-project/unified-checklist/blob/master/data/unified/descriptions.csv).
 
-```{r}
+```{r unify_information-17}
 write_csv(descriptions_unified, here("data", "unified", "descriptions.csv"), na = "")
 ```

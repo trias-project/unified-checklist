@@ -37,5 +37,7 @@ library(here)           # To find files
 library(janitor)        # To clean input data
 library(digest)         # To generate hashes
 library(rgbif)          # To use GBIF services
+
+# devtools::install_github("trias-project/trias#21")
 library(trias)          # To use functions developed for TrIAS
 ```

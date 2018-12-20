@@ -6,11 +6,11 @@ In this chapter we retrieve related information for taxa on the checklists (with
 
 Read taxa from [`data/interim/taxa_with_verification.csv`](https://github.com/trias-project/unified-checklist/blob/master/data/interim/taxa_with_verification.csv) and save `taxonKeys` as a vector.
 
-```{r}
+```{r get_information-1}
 taxa <- read_csv(here("data", "raw", "taxa.csv"))
 ```
 
-```{r}
+```{r get_information-2}
 taxon_keys <-
   taxa %>%
   pull(taxonKey)
@@ -36,7 +36,7 @@ distributions <-
 
 2. Save to [CSV](https://github.com/trias-project/unified-checklist/blob/master/data/raw/distributions.csv).
 
-```{r}
+```{r get_information-3}
 write_csv(distributions, here("data", "raw", "distributions.csv"), na = "")
 ```
 
@@ -60,7 +60,7 @@ speciesprofiles <-
 
 2. Save to [CSV](https://github.com/trias-project/unified-checklist/blob/master/data/raw/speciesprofiles.csv).
 
-```{r}
+```{r get_information-4}
 write_csv(speciesprofiles, here("data", "raw", "speciesprofiles.csv"), na = "")
 ```
 
@@ -84,6 +84,6 @@ descriptions <-
 
 2. Save to [CSV](https://github.com/trias-project/unified-checklist/blob/master/data/raw/descriptions.csv).
 
-```{r}
+```{r get_information-5}
 write_csv(descriptions, here("data", "raw", "descriptions.csv"), na = "")
 ```

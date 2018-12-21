@@ -2,9 +2,9 @@
 
 In this chapter we unify taxa on their `verificationKey`.
 
-## Read data
+## Read taxa
 
-1. Read taxa from [`data/interim/taxa_with_verification.csv`](https://github.com/trias-project/unified-checklist/blob/master/data/interim/taxa_with_verification.csv).
+Read taxa from [`data/interim/taxa_with_verification.csv`](https://github.com/trias-project/unified-checklist/blob/master/data/interim/taxa_with_verification.csv).
 
 ```{r unify_taxa-1}
 taxa <- read_csv(here("data", "interim", "taxa_with_verification.csv"))
@@ -12,11 +12,19 @@ taxa <- read_csv(here("data", "interim", "taxa_with_verification.csv"))
 
 ## Unify taxa
 
-1. Separate multiple `verificationKey`s (if any) for single taxa.
+1. Remove taxa without verificationKey.
 
 ```{r unify_taxa-2}
-taxa <-
+taxa_unified <-
   taxa %>%
+  filter(!is.na(verificationKey))
+```
+
+2. Separate multiple `verificationKey`s (if any) for single taxa.
+
+```{r unify_taxa-3}
+taxa_unified <-
+  taxa_unified %>%
   
   # Separate multiple verification keys on pipe character in max 5 columns
   separate(
@@ -41,11 +49,11 @@ taxa <-
   select(-field)
 ```
 
-2. Group by unique `verificationKey` to create unique/unified taxa:
+3. Group taxa by `verificationKey` (saving `sourceChecklists` and `sourceTaxa` bundled per key).
 
-```{r unify_taxa-3, echo = TRUE}
-taxa_unify <-
-  taxa %>%
+```{r unify_taxa-4}
+taxa_unified <-
+  taxa_unified %>%
   # Group by verificationKey across and within checklists
   group_by(verificationKey) %>%
   
@@ -56,15 +64,15 @@ taxa_unify <-
   )
 ```
 
-3. Extract `verificationKey` as a vector.
+5. Extract `verificationKey` as a vector.
 
-```{r unify_taxa-4}
+```{r unify_taxa-5}
 verification_keys <-
-  taxa_unify %>%
+  taxa_unified %>%
   pull(verificationKey)
 ```
 
-4. Number of taxa: `r length(verification_keys)`
+6. Number of unique taxa: `r length(verification_keys)`
 
 ## Get GBIF backbone taxonomy information
 
@@ -87,7 +95,7 @@ backbone_info <-
 
 2. Rename `accepted` to `acceptedName`.
 
-```{r unify_taxa-5}
+```{r unify_taxa-6}
 backbone_info <-
   backbone_info %>%
   rename(acceptedName = accepted)
@@ -95,7 +103,7 @@ backbone_info <-
 
 3. Select columns of interest.
 
-```{r unify_taxa-6}
+```{r unify_taxa-7}
 backbone_info <-
   backbone_info %>%
   select(
@@ -125,9 +133,9 @@ backbone_info <-
 
 4. Join backbone information with our unified taxa, so we keep `sourceChecklists` and `sourceTaxa`.
 
-```{r unify_taxa-7}
-taxa_unify <-
-  taxa_unify %>%
+```{r unify_taxa-8}
+taxa_unified <-
+  taxa_unified %>%
   left_join(
     backbone_info, 
     by = c("verificationKey" = "key")
@@ -136,21 +144,23 @@ taxa_unify <-
 
 5. Move columns `sourceChecklists` and `sourceTaxa` to the end.
 
-```{r unify_taxa-8}
-taxa_unify <-
-  taxa_unify %>%
+```{r unify_taxa-9}
+taxa_unified <-
+  taxa_unified %>%
   select(-sourceChecklists,everything()) %>%
   select(-sourceTaxa,everything())
 ```
 
 6. Preview merged information:
 
-```{r unify_taxa-9}
-taxa_unify %>% head()
+```{r unify_taxa-10}
+taxa_unified %>% head()
 ```
 
-7. Save to [CSV](https://github.com/trias-project/unified-checklist/blob/master/data/unified/taxa.csv).
+7. Number of taxa: `r nrow(taxa_unified)`
+
+8. Save to [CSV](https://github.com/trias-project/unified-checklist/blob/master/data/unified/taxa.csv).
 
 ```{r unify_taxa-11}
-write_csv(taxa_unify, here("data", "unified", "taxa.csv"), na = "")
+write_csv(taxa_unified, here("data", "unified", "taxa.csv"), na = "")
 ```

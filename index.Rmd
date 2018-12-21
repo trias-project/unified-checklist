@@ -27,7 +27,7 @@ knitr::opts_chunk$set(
 
 # Intro
 
-...
+This document contains and describes all the steps in creating a unified checklist of alien species in Belgium and was developed for the [Tracking Invasive Alien Species (TrIAS) project](http://trias-project.be). By running this document in R, it will create all the necessary data files for the unified checklist.
 
 Load libraries:
 

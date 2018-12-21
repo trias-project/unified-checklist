@@ -24,7 +24,8 @@ taxa <-
     into = c("verKey_1", "verKey_2", "verKey_3", "verKey_4", "verKey_5"),
     sep = "\\|",
     convert = TRUE,
-    extra = "drop"
+    extra = "drop",
+    fill = "right"
   ) %>%
   
   # Gather those 5 columns back to one (removing NA)

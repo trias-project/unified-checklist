@@ -4,9 +4,9 @@ In this chapter we unify related information for each verified taxon.
 
 ## Read data
 
-```{r echo = TRUE}
+```{r unify_information-1, echo = TRUE}
 checklists <- read_csv(here("data", "raw", "checklists.csv"))
-taxa <- read_csv(here("data", "raw", "taxa.csv"))
+taxa <- read_csv(here("data", "interim", "taxa_with_verification.csv"))
 distributions <- read_csv(here("data", "raw", "distributions.csv"))
 speciesprofiles <- read_csv(here("data", "raw", "speciesprofiles.csv"))
 descriptions <- read_csv(here("data", "raw", "descriptions.csv"))
@@ -16,7 +16,7 @@ descriptions <- read_csv(here("data", "raw", "descriptions.csv"))
 
 1. Get checklist keys as (ordered) vector.
 
-```{r}
+```{r unify_information-2}
 checklist_keys <-
   checklists %>%
   pull(datasetKey)
@@ -24,31 +24,18 @@ checklist_keys <-
 
 2. Assign the checklist order (= index of checklist keys) as an extra column to taxa.
 
-```{r}
+```{r unify_information-3}
 taxa <-
   taxa %>%
   rowwise() %>%
   mutate(checklistOrder = which(checklist_keys == datasetKey)[1])
 ```
 
----
-
-**TO REMOVE**
-
-```{r echo = TRUE}
-# Temporarily use the bb_key as a unifying key
-taxa <-
-  taxa %>%
-  rename(verifiedKey = bb_key)
-```
-
----
-
 ## Unify distribution
 
 1. Parse `temporal` (eventDate) information.
 
-```{r echo = TRUE}
+```{r unify_information-5, echo = TRUE}
 distributions_unified <-
   distributions %>%
   
@@ -73,7 +60,7 @@ distributions_unified <-
 
 2. Filter distributions.
 
-```{r echo = TRUE}
+```{r unify_information-6, echo = TRUE}
 distributions_unified <-
   distributions_unified %>%
   
@@ -87,21 +74,21 @@ distributions_unified <-
 
 3. Choose a single distribution within a checklist.
 
-```{r echo = TRUE}
+```{r unify_information-7, echo = TRUE}
 distributions_unified <-
   distributions_unified %>%
 
-  # Join distribution with taxon to get verifiedKey and checklistOrder
+  # Join distribution with taxon to get verificationKey and checklistOrder
   left_join(taxa, on = taxonKey) %>%
   
-  # Remove records that have no verifiedKey (e.g. one wasn't assigned yet)
-  filter(!is.na(verifiedKey)) %>%
+  # Remove records that have no verificationKey (e.g. one wasn't assigned yet)
+  filter(!is.na(verificationKey)) %>%
   
-  # Group by verifiedKey within checklist
+  # Group by verificationKey within checklist
   group_by(
     datasetKey,
     checklistOrder,
-    verifiedKey
+    verificationKey
   ) %>%
   
   # Take earliest year, latest year and note taxonIDs
@@ -114,15 +101,15 @@ distributions_unified <-
 
 4. Choose a single distribution across checklists.
 
-```{r echo = TRUE}
+```{r unify_information-8, echo = TRUE}
 distributions_unified <-
   distributions_unified %>%
   
   # Sort by checklist order (trustworthiness)
   arrange(checklistOrder) %>%
   
-  # Group by verifiedKey across checklists
-  group_by(verifiedKey) %>%
+  # Group by verificationKey across checklists
+  group_by(verificationKey) %>%
   
   # Select year of most trustworthy checklist (first one)
   # and note that checklist and its taxonKey(s)
@@ -133,13 +120,13 @@ distributions_unified <-
     sourceTaxa = first(sourceTaxa)
   ) %>%
 
-  # Sort by verifiedKey
-  arrange(verifiedKey)
+  # Sort by verificationKey
+  arrange(verificationKey)
 ```
 
 5. Save to [CSV](https://github.com/trias-project/unified-checklist/blob/master/data/unified/distributions.csv).
 
-```{r}
+```{r unify_information-9}
 write_csv(distributions_unified, here("data", "unified", "distributions.csv"), na = "")
 ```
 
@@ -147,7 +134,7 @@ write_csv(distributions_unified, here("data", "unified", "distributions.csv"), n
 
 1. Filter species profiles.
 
-```{r echo = TRUE}
+```{r unify_information-10, echo = TRUE}
 speciesprofiles_unified <-
   speciesprofiles %>%
   
@@ -163,21 +150,21 @@ speciesprofiles_unified <-
 
 2. Choose a single species profile within a checklist.
 
-```{r echo = TRUE}
+```{r unify_information-11, echo = TRUE}
 speciesprofiles_unified <-
   speciesprofiles_unified %>%
 
-  # Join species profile with taxon to get verifiedKey and checklist order
+  # Join species profile with taxon to get verificationKey and checklist order
   left_join(taxa, on = taxonID) %>%
   
-  # Remove records that have no verifiedKey (e.g. one wasn't assigned yet)
-  filter(!is.na(verifiedKey)) %>%
+  # Remove records that have no verificationKey (e.g. one wasn't assigned yet)
+  filter(!is.na(verificationKey)) %>%
   
-  # Group by verifiedKey within checklist
+  # Group by verificationKey within checklist
   group_by(
     datasetKey,
     checklistOrder,
-    verifiedKey
+    verificationKey
   ) %>%
   
   # Take first species profile and note taxonKey
@@ -191,15 +178,15 @@ speciesprofiles_unified <-
 
 3. Choose a single species profile across checklists.
 
-```{r echo = TRUE}
+```{r unify_information-12, echo = TRUE}
 speciesprofiles_unified <-
   speciesprofiles_unified %>%
   
   # Sort by checklist order (trustworthiness)
   arrange(checklistOrder) %>%
   
-  # Group by verifiedKey across checklists
-  group_by(verifiedKey) %>%
+  # Group by verificationKey across checklists
+  group_by(verificationKey) %>%
   
   # Select species profile of most trustworthy checklist (first one)
   # and note that checklist and its taxonID
@@ -211,13 +198,13 @@ speciesprofiles_unified <-
     sourceTaxon = first(sourceTaxon)
   ) %>%
 
-  # Sort by verifiedKey
-  arrange(verifiedKey)
+  # Sort by verificationKey
+  arrange(verificationKey)
 ```
 
 4. Save to [CSV](https://github.com/trias-project/unified-checklist/blob/master/data/unified/speciesprofiles.csv).
 
-```{r}
+```{r unify_information-13}
 write_csv(speciesprofiles_unified, here("data", "unified", "speciesprofiles.csv"), na = "")
 ```
 
@@ -225,7 +212,7 @@ write_csv(speciesprofiles_unified, here("data", "unified", "speciesprofiles.csv"
 
 1. Filter non `NA` descriptions.
 
-```{r}
+```{r unify_information-14}
 descriptions_unified <-
   descriptions %>%
   
@@ -237,25 +224,25 @@ descriptions_unified <-
 
 2. Select unique descriptions (within their type) within a checklist.
 
-```{r echo = TRUE}
+```{r unify_information-15, echo = TRUE}
 descriptions_unified <-
   descriptions_unified %>%
 
-  # Join species profile with taxon to get verifiedKey and checklist order
+  # Join species profile with taxon to get verificationKey and checklist order
   left_join(taxa, on = taxonKey) %>%
   
-  # Remove records that have no verifiedKey (e.g. one wasn't assigned yet)
-  filter(!is.na(verifiedKey)) %>%
+  # Remove records that have no verificationKey (e.g. one wasn't assigned yet)
+  filter(!is.na(verificationKey)) %>%
   
-  # Group by type and verifiedKey within checklist
+  # Group by type and verificationKey within checklist
   group_by(
     datasetKey,
     checklistOrder,
-    verifiedKey,
+    verificationKey,
     type
   ) %>%
   
-  # Choose distinct value for that type and verifiedKey
+  # Choose distinct value for that type and verificationKey
   # If identical values exist within that grouping, distinct() will take 
   # most trustworthy (first one)
   
@@ -267,37 +254,37 @@ descriptions_unified <-
 
 3. Select unique descriptions (within their type) across checklists.
 
-```{r echo = TRUE}
+```{r unify_information-16, echo = TRUE}
 descriptions_unified <-
   descriptions_unified %>%
   
   # Sort by checklist order (trustworthiness)
   arrange(checklistOrder) %>%
   
-  # Group by type and verifiedKey across checklists
+  # Group by type and verificationKey across checklists
   group_by(
     type,
-    verifiedKey
+    verificationKey
   ) %>%
   
-  # Choose distinct value for that type and verifiedKey
+  # Choose distinct value for that type and verificationKey
   distinct(
     description,
     .keep_all = TRUE
   ) %>%
 
-  # Move verifiedKey to beginning and drop checklist_order
-  select(verifiedKey, everything(), -checklistOrder) %>%
+  # Move verificationKey to beginning and drop checklist_order
+  select(verificationKey, everything(), -checklistOrder) %>%
   
   # Rename checklist
   rename(sourceChecklist = datasetKey) %>%
   
-  # Sort by verifiedKey and type
-  arrange(verifiedKey, type)
+  # Sort by verificationKey and type
+  arrange(verificationKey, type)
 ```
 
 4. Save to [CSV](https://github.com/trias-project/unified-checklist/blob/master/data/unified/descriptions.csv).
 
-```{r}
+```{r unify_information-17}
 write_csv(descriptions_unified, here("data", "unified", "descriptions.csv"), na = "")
 ```

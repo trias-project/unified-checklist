@@ -17,13 +17,17 @@ output:
 ---
 
 ```{r index-setup, include = FALSE}
-# Note that chunk code is excluded from the output by default
-knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+knitr::opts_chunk$set(
+  echo = FALSE, # Exclude code from output by default
+  warning = FALSE,
+  message = FALSE,
+  rownames.print = FALSE # Option for df_print = paged
+)
 ```
 
 # Intro
 
-...
+This document contains and describes all the steps in creating a unified checklist of alien species in Belgium and was developed for the [Tracking Invasive Alien Species (TrIAS) project](http://trias-project.be). By running this document in R, it will create all the necessary data files for the unified checklist.
 
 Load libraries:
 
@@ -33,5 +37,7 @@ library(here)           # To find files
 library(janitor)        # To clean input data
 library(digest)         # To generate hashes
 library(rgbif)          # To use GBIF services
+
+# devtools::install_github("trias-project/trias")
 library(trias)          # To use functions developed for TrIAS
 ```

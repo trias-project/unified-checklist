@@ -6,9 +6,9 @@ In this chapter we select species checklists and retrieve the taxa they contain.
 
 The unified checklist is compiled from [species checklists published to GBIF under the TrIAS project](https://www.gbif.org/dataset/search?type=CHECKLIST&project_id=trias). Here we choose the checklists we want to include and rank them by trust (most trustworthy first). The ranking will help to choose between duplicate taxa in later steps.
 
-1. Choose checklists.
+1. Choose checklists:
 
-```{r echo = TRUE}
+```{r get_taxa-1, echo = TRUE}
 checklist_keys <- c(
   "9ff7d317-609b-4c08-bd86-3bc404b77c42", # alien-plants-belgium
   "289244ee-e1c1-49aa-b2d7-d379391ce265", # alien-macroinvertebrates
@@ -20,7 +20,7 @@ checklist_keys <- c(
 )
 ```
 
-2. Get metadata for these checklists from GBIF and display the result.
+2. Get metadata for these checklists from GBIF and display the result:
 
 ```{r get_taxa-get_checklist_metadata_from_gbif, cache = TRUE}
 checklists <-
@@ -37,7 +37,7 @@ checklists
 
 3. Save to [CSV](https://github.com/trias-project/unified-checklist/blob/master/data/raw/checklists.csv).
 
-```{r}
+```{r get_taxa-2}
 write_csv(checklists, here("data", "raw", "checklists.csv"), na = "")
 ```
 
@@ -57,7 +57,7 @@ taxa <-
 
 2. Select columns of interest, rename `key` to `taxonKey` and sort by `taxonKey`.
 
-```{r}
+```{r get_taxa-3}
 taxa <-
   taxa %>%
   select(key, scientificName, taxonID, datasetKey, nameType, issues, nubKey) %>%
@@ -67,7 +67,7 @@ taxa <-
 
 3. Convert the column `issues` from a list to a concatenated string.
 
-```{r}
+```{r get_taxa-4}
 taxa <-
   taxa %>%
   group_by_at(vars(-issues)) %>%
@@ -79,9 +79,9 @@ taxa <-
   )
 ```
 
-4. Preview checklist taxa.
+4. Preview checklist taxa:
 
-```{r}
+```{r get_taxa-5}
 taxa %>% head()
 ```
 
@@ -99,6 +99,8 @@ E.g. compare:
 
 * Distributions for _checklist_ taxon [Eriocheir sinensis](https://api.gbif.org/v1/species/140563012/distributions) (`140563012`)
 * Distributions for _backbone_ taxon [Eriocheir sinensis](https://api.gbif.org/v1/species/2225776/distributions) (`2225776`)
+
+**Note**: if a checklist has related information for a taxon, but not a valid distribution, that related information will NOT be included in the unified checklist. This is to exclude related information about a taxon for which the checklist did not even consider a Belgian scope (e.g. pathway).
 
 1. Get distribution information from GBIF and check if these meet the filter criteria. The result (`TRUE`/`FALSE`) is inserted as an extra column `validDistribution`.
 
@@ -118,9 +120,9 @@ taxa <-
   }))
 ```
 
-2. Preview some taxa with not a single valid distribution (`taxonKey` can be used to verify manually on GBIF).
+2. Preview some taxa with not a single valid distribution (`taxonKey` can be used to verify manually on GBIF):
 
-```{r}
+```{r get_taxa-6}
 taxa %>%
   filter(!validDistribution) %>%
   head()
@@ -128,7 +130,7 @@ taxa %>%
 
 3. Rename `nubKey` to `bb_key` and move to the end.
 
-```{r}
+```{r get_taxa-7}
 taxa <-
   taxa %>%
   rename(bb_key = nubKey) %>%
@@ -141,7 +143,7 @@ A taxon can occur on more than one checklist. To identify these duplicates, we c
 
 1. Filter taxa on having valid distribution and `nubKey` and create vector of unique `nubKey`s.
 
-```{r}
+```{r get_taxa-8}
 nub_keys <-
   taxa %>%
   filter(validDistribution) %>%
@@ -166,43 +168,39 @@ backbone_info <-
   })
 ```
 
-3. Select columns of interest.
+3. Rename `accepted` to `acceptedName`.
 
-```{r}
-backbone_info <-
-  backbone_info %>%
-  select(
-    "key", "scientificName", "species", "genus", "family", "order", "class",
-    "phylum", "kingdom", "rank", "speciesKey", "taxonomicStatus", "acceptedKey", 
-    "accepted"
-  )
-```
-
-4. Remove duplicates (caused by [this bug](https://github.com/ropensci/rgbif/issues/324)).
-
-```{r}
-backbone_info <-
-  backbone_info %>%
-  distinct()
-```
-
-5. Rename `accepted` to `acceptedName`.
-
-```{r}
+```{r get_taxa-9}
 backbone_info <-
   backbone_info %>%
   rename(acceptedName = accepted)
 ```
 
-6. Add prefix `bb_` to column names.
+4. Add prefix `bb_` to column names.
 
-```{r}
+```{r get_taxa-10}
 colnames(backbone_info) <- paste0("bb_", colnames(backbone_info))
 ```
 
-7. Merge backbone information with checklist taxa.
+5. Select columns of interest.
 
-```{r}
+```{r get_taxa-11}
+backbone_info <-
+  backbone_info %>%
+  select(
+    "bb_key",
+    "bb_scientificName",
+    "bb_kingdom",
+    "bb_rank",
+    "bb_taxonomicStatus",
+    "bb_acceptedKey", 
+    "bb_acceptedName"
+  )
+```
+
+6. Join backbone information with checklist taxa. **Note**: this can attach information to taxa with `validDistribution = FALSE` that share a `bb_key` with other taxa.
+
+```{r get_taxa-12}
 taxa <-
   taxa %>%
   left_join(
@@ -211,31 +209,42 @@ taxa <-
   )
 ```
 
-8. Preview merged information.
+7. Preview merged information:
 
-```{r}
+```{r get_taxa-13}
 taxa %>% head()
 ```
 
 ## Show summary and save
 
-Show summary per checklist.
+Show summary per checklist:
 
-```{r}
+```{r get_taxa-14}
 taxa %>%
   left_join(checklists, by = "datasetKey") %>%
   group_by(title) %>%
   summarize(
     taxa = n(),
-    valid_dist_in_backbone = sum(validDistribution & !is.na(bb_key)),
-    invalid_distribution = sum(!validDistribution),
-    not_in_backbone = sum(validDistribution & is.na(bb_key))
+    invalid_dist = sum(!validDistribution),
+    valid_dist = sum(validDistribution),
+    valid_dist_not_in_backbone = sum(validDistribution & is.na(bb_key))
   ) %>%
   adorn_totals("row")
 ```
 
-Save to [CSV](https://github.com/trias-project/unified-checklist/blob/master/data/raw/taxa.csv).
+Save to two CSVs:
 
-```{r}
+* [`data/raw/taxa.csv`](https://github.com/trias-project/unified-checklist/blob/master/data/raw/taxa.csv): all checklist taxa
+
+```{r get_taxa-15}
 write_csv(taxa, here("data", "raw", "taxa.csv"), na = "")
+```
+
+* [`data/interim/taxa_with_verification.csv`](https://github.com/trias-project/unified-checklist/blob/master/data/interim/taxa_with_verification.csv.csv): subset of checklist taxa with a valid distribution and an empty column `verificationKey`. This file will be used in later steps.
+
+```{r get_taxa-16}
+taxa %>%
+  mutate(verificationKey = NA) %>%
+  filter(validDistribution) %>%
+  write_csv(here("data", "interim", "taxa_with_verification.csv"), na = "")
 ```

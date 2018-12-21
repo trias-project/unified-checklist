@@ -5,11 +5,11 @@
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>National, unified checklist of alien species in Belgium</title>
-  <meta name="description" content="National, unified checklist of alien species in Belgium">
-  <meta name="generator" content="bookdown 0.7 and GitBook 2.6.7">
+  <title>2 Get taxa from checklists | National, unified checklist of alien species in Belgium</title>
+  <meta name="description" content="2 Get taxa from checklists | National, unified checklist of alien species in Belgium>
+  <meta name="generator" content="bookdown  and GitBook 2.6.7">
 
-  <meta property="og:title" content="National, unified checklist of alien species in Belgium" />
+  <meta property="og:title" content="2 Get taxa from checklists | National, unified checklist of alien species in Belgium />
   <meta property="og:type" content="book" />
   
   
@@ -17,7 +17,7 @@
   <meta name="github-repo" content="trias-project/unified-checklist" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="National, unified checklist of alien species in Belgium" />
+  <meta name="twitter:title" content="2 Get taxa from checklists | National, unified checklist of alien species in Belgium />
   
   
   
@@ -25,7 +25,7 @@
 <meta name="author" content="Peter Desmet, Damiano Oldoni">
 
 
-<meta name="date" content="2018-12-10">
+<meta name="date" content="2018-12-21">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -36,6 +36,7 @@
 <link rel="next" href="get_information.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
@@ -52,41 +53,67 @@
 
 
 <style type="text/css">
-div.sourceCode { overflow-x: auto; }
-table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
-  margin: 0; padding: 0; vertical-align: baseline; border: none; }
-table.sourceCode { width: 100%; line-height: 100%; }
-td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
-td.sourceCode { padding-left: 5px; }
-code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code > span.dt { color: #902000; } /* DataType */
-code > span.dv { color: #40a070; } /* DecVal */
-code > span.bn { color: #40a070; } /* BaseN */
-code > span.fl { color: #40a070; } /* Float */
-code > span.ch { color: #4070a0; } /* Char */
-code > span.st { color: #4070a0; } /* String */
-code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code > span.ot { color: #007020; } /* Other */
-code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code > span.fu { color: #06287e; } /* Function */
-code > span.er { color: #ff0000; font-weight: bold; } /* Error */
-code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-code > span.cn { color: #880000; } /* Constant */
-code > span.sc { color: #4070a0; } /* SpecialChar */
-code > span.vs { color: #4070a0; } /* VerbatimString */
-code > span.ss { color: #bb6688; } /* SpecialString */
-code > span.im { } /* Import */
-code > span.va { color: #19177c; } /* Variable */
-code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code > span.op { color: #666666; } /* Operator */
-code > span.bu { } /* BuiltIn */
-code > span.ex { } /* Extension */
-code > span.pp { color: #bc7a00; } /* Preprocessor */
-code > span.at { color: #7d9029; } /* Attribute */
-code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
 </head>
@@ -110,18 +137,34 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="2.5" data-path="get_taxa.html"><a href="get_taxa.html#show-summary-and-save"><i class="fa fa-check"></i><b>2.5</b> Show summary and save</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="get_information.html"><a href="get_information.html"><i class="fa fa-check"></i><b>3</b> Get related information</a><ul>
-<li class="chapter" data-level="3.1" data-path="get_information.html"><a href="get_information.html#read-data"><i class="fa fa-check"></i><b>3.1</b> Read data</a></li>
-<li class="chapter" data-level="3.2" data-path="get_information.html"><a href="get_information.html#filter-checklist-taxa"><i class="fa fa-check"></i><b>3.2</b> Filter checklist taxa</a></li>
-<li class="chapter" data-level="3.3" data-path="get_information.html"><a href="get_information.html#get-distributions"><i class="fa fa-check"></i><b>3.3</b> Get distributions</a></li>
-<li class="chapter" data-level="3.4" data-path="get_information.html"><a href="get_information.html#get-species-profiles"><i class="fa fa-check"></i><b>3.4</b> Get species profiles</a></li>
-<li class="chapter" data-level="3.5" data-path="get_information.html"><a href="get_information.html#get-descriptions"><i class="fa fa-check"></i><b>3.5</b> Get descriptions</a></li>
+<li class="chapter" data-level="3.1" data-path="get_information.html"><a href="get_information.html#read-taxa"><i class="fa fa-check"></i><b>3.1</b> Read taxa</a></li>
+<li class="chapter" data-level="3.2" data-path="get_information.html"><a href="get_information.html#get-distributions"><i class="fa fa-check"></i><b>3.2</b> Get distributions</a></li>
+<li class="chapter" data-level="3.3" data-path="get_information.html"><a href="get_information.html#get-species-profiles"><i class="fa fa-check"></i><b>3.3</b> Get species profiles</a></li>
+<li class="chapter" data-level="3.4" data-path="get_information.html"><a href="get_information.html#get-descriptions"><i class="fa fa-check"></i><b>3.4</b> Get descriptions</a></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="unify_information.html"><a href="unify_information.html"><i class="fa fa-check"></i><b>4</b> Unify related information</a><ul>
-<li class="chapter" data-level="4.1" data-path="unify_information.html"><a href="unify_information.html#read-data-1"><i class="fa fa-check"></i><b>4.1</b> Read data</a></li>
-<li class="chapter" data-level="4.2" data-path="unify_information.html"><a href="unify_information.html#assign-checklist-order"><i class="fa fa-check"></i><b>4.2</b> Assign checklist order</a></li>
-<li class="chapter" data-level="4.3" data-path="unify_information.html"><a href="unify_information.html#unify-distribution"><i class="fa fa-check"></i><b>4.3</b> Unify distribution</a></li>
-<li class="chapter" data-level="4.4" data-path="unify_information.html"><a href="unify_information.html#unify-species-profiles"><i class="fa fa-check"></i><b>4.4</b> Unify species profiles</a></li>
-<li class="chapter" data-level="4.5" data-path="unify_information.html"><a href="unify_information.html#unify-descriptions"><i class="fa fa-check"></i><b>4.5</b> Unify descriptions</a></li>
+<li class="chapter" data-level="4" data-path="verify_taxa.html"><a href="verify_taxa.html"><i class="fa fa-check"></i><b>4</b> Verify taxa</a><ul>
+<li class="chapter" data-level="4.1" data-path="verify_taxa.html"><a href="verify_taxa.html#read-taxa-1"><i class="fa fa-check"></i><b>4.1</b> Read taxa</a></li>
+<li class="chapter" data-level="4.2" data-path="verify_taxa.html"><a href="verify_taxa.html#verification"><i class="fa fa-check"></i><b>4.2</b> Read verification information</a></li>
+<li class="chapter" data-level="4.3" data-path="verify_taxa.html"><a href="verify_taxa.html#run-and-save-verification"><i class="fa fa-check"></i><b>4.3</b> Run and save verification</a></li>
+<li class="chapter" data-level="4.4" data-path="verify_taxa.html"><a href="verify_taxa.html#show-verification-status"><i class="fa fa-check"></i><b>4.4</b> Show verification status</a><ul>
+<li class="chapter" data-level="4.4.1" data-path="verify_taxa.html"><a href="verify_taxa.html#unmatched-taxa"><i class="fa fa-check"></i><b>4.4.1</b> Unmatched taxa</a></li>
+<li class="chapter" data-level="4.4.2" data-path="verify_taxa.html"><a href="verify_taxa.html#synonyms"><i class="fa fa-check"></i><b>4.4.2</b> Synonyms</a></li>
+<li class="chapter" data-level="4.4.3" data-path="verify_taxa.html"><a href="verify_taxa.html#accepted-taxa"><i class="fa fa-check"></i><b>4.4.3</b> Accepted taxa</a></li>
+<li class="chapter" data-level="4.4.4" data-path="verify_taxa.html"><a href="verify_taxa.html#erroneous-verificationkeys"><i class="fa fa-check"></i><b>4.4.4</b> Erroneous verificationKeys</a></li>
+<li class="chapter" data-level="4.4.5" data-path="verify_taxa.html"><a href="verify_taxa.html#additional-information"><i class="fa fa-check"></i><b>4.4.5</b> Additional information</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="unify_taxa.html"><a href="unify_taxa.html"><i class="fa fa-check"></i><b>5</b> Unify taxa</a><ul>
+<li class="chapter" data-level="5.1" data-path="unify_taxa.html"><a href="unify_taxa.html#read-taxa-2"><i class="fa fa-check"></i><b>5.1</b> Read taxa</a></li>
+<li class="chapter" data-level="5.2" data-path="unify_taxa.html"><a href="unify_taxa.html#unify-taxa-1"><i class="fa fa-check"></i><b>5.2</b> Unify taxa</a></li>
+<li class="chapter" data-level="5.3" data-path="unify_taxa.html"><a href="unify_taxa.html#get-gbif-backbone-taxonomy-information-1"><i class="fa fa-check"></i><b>5.3</b> Get GBIF backbone taxonomy information</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="unify_information.html"><a href="unify_information.html"><i class="fa fa-check"></i><b>6</b> Unify related information</a><ul>
+<li class="chapter" data-level="6.1" data-path="unify_information.html"><a href="unify_information.html#read-data"><i class="fa fa-check"></i><b>6.1</b> Read data</a></li>
+<li class="chapter" data-level="6.2" data-path="unify_information.html"><a href="unify_information.html#assign-checklist-order"><i class="fa fa-check"></i><b>6.2</b> Assign checklist order</a></li>
+<li class="chapter" data-level="6.3" data-path="unify_information.html"><a href="unify_information.html#unify-distribution"><i class="fa fa-check"></i><b>6.3</b> Unify distribution</a></li>
+<li class="chapter" data-level="6.4" data-path="unify_information.html"><a href="unify_information.html#unify-species-profiles"><i class="fa fa-check"></i><b>6.4</b> Unify species profiles</a></li>
+<li class="chapter" data-level="6.5" data-path="unify_information.html"><a href="unify_information.html#unify-descriptions"><i class="fa fa-check"></i><b>6.5</b> Unify descriptions</a></li>
 </ul></li>
 </ul>
 
@@ -147,9 +190,9 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <h2><span class="header-section-number">2.1</span> Choose checklists</h2>
 <p>The unified checklist is compiled from <a href="https://www.gbif.org/dataset/search?type=CHECKLIST&amp;project_id=trias">species checklists published to GBIF under the TrIAS project</a>. Here we choose the checklists we want to include and rank them by trust (most trustworthy first). The ranking will help to choose between duplicate taxa in later steps.</p>
 <ol style="list-style-type: decimal">
-<li>Choose checklists.</li>
+<li>Choose checklists:</li>
 </ol>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">checklist_keys &lt;-<span class="st"> </span><span class="kw">c</span>(
+<pre class="sourceCode r"><code class="sourceCode r">checklist_keys &lt;-<span class="st"> </span><span class="kw">c</span>(
   <span class="st">&quot;9ff7d317-609b-4c08-bd86-3bc404b77c42&quot;</span>, <span class="co"># alien-plants-belgium</span>
   <span class="st">&quot;289244ee-e1c1-49aa-b2d7-d379391ce265&quot;</span>, <span class="co"># alien-macroinvertebrates</span>
   <span class="st">&quot;98940a79-2bf1-46e6-afd6-ba2e85a26f9f&quot;</span>, <span class="co"># alien-fishes-checklist</span>
@@ -157,9 +200,9 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
   <span class="st">&quot;1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2&quot;</span>, <span class="co"># ad-hoc-checklist</span>
   <span class="st">&quot;1738f272-6b5d-4f43-9a92-453a8c5ea50a&quot;</span>, <span class="co"># rinse-pathways-checklist</span>
   <span class="st">&quot;3f5e930b-52a5-461d-87ec-26ecd66f14a3&quot;</span>  <span class="co"># rinse-registry-checklist</span>
-)</code></pre></div>
+)</code></pre>
 <ol start="2" style="list-style-type: decimal">
-<li>Get metadata for these checklists from GBIF and display the result.</li>
+<li>Get metadata for these checklists from GBIF and display the result:</li>
 </ol>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
@@ -176,7 +219,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li><p>Get taxa from these checklists from GBIF. <strong>Note</strong>: here we get <em>checklist taxa</em>, not <em>GBIF backbone taxa</em>.</p></li>
 <li><p>Select columns of interest, rename <code>key</code> to <code>taxonKey</code> and sort by <code>taxonKey</code>.</p></li>
 <li><p>Convert the column <code>issues</code> from a list to a concatenated string.</p></li>
-<li><p>Preview checklist taxa.</p></li>
+<li><p>Preview checklist taxa:</p></li>
 </ol>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
@@ -198,9 +241,10 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li>Distributions for <em>checklist</em> taxon <a href="https://api.gbif.org/v1/species/140563012/distributions">Eriocheir sinensis</a> (<code>140563012</code>)</li>
 <li>Distributions for <em>backbone</em> taxon <a href="https://api.gbif.org/v1/species/2225776/distributions">Eriocheir sinensis</a> (<code>2225776</code>)</li>
 </ul>
+<p><strong>Note</strong>: if a checklist has related information for a taxon, but not a valid distribution, that related information will NOT be included in the unified checklist. This is to exclude related information about a taxon for which the checklist did not even consider a Belgian scope (e.g. pathway).</p>
 <ol style="list-style-type: decimal">
 <li><p>Get distribution information from GBIF and check if these meet the filter criteria. The result (<code>TRUE</code>/<code>FALSE</code>) is inserted as an extra column <code>validDistribution</code>.</p></li>
-<li><p>Preview some taxa with not a single valid distribution (<code>taxonKey</code> can be used to verify manually on GBIF).</p></li>
+<li><p>Preview some taxa with not a single valid distribution (<code>taxonKey</code> can be used to verify manually on GBIF):</p></li>
 </ol>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
@@ -217,28 +261,31 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <ol style="list-style-type: decimal">
 <li><p>Filter taxa on having valid distribution and <code>nubKey</code> and create vector of unique <code>nubKey</code>s.</p></li>
 <li><p>Get GBIF backbone taxonomy information.</p></li>
-<li><p>Select columns of interest.</p></li>
-<li><p>Remove duplicates (caused by <a href="https://github.com/ropensci/rgbif/issues/324">this bug</a>).</p></li>
 <li><p>Rename <code>accepted</code> to <code>acceptedName</code>.</p></li>
 <li><p>Add prefix <code>bb_</code> to column names.</p></li>
-<li><p>Merge backbone information with checklist taxa.</p></li>
-<li><p>Preview merged information.</p></li>
+<li><p>Select columns of interest.</p></li>
+<li><p>Join backbone information with checklist taxa. <strong>Note</strong>: this can attach information to taxa with <code>validDistribution = FALSE</code> that share a <code>bb_key</code> with other taxa.</p></li>
+<li><p>Preview merged information:</p></li>
 </ol>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
-{"columns":[{"label":["taxonKey"],"name":[1],"type":["int"],"align":["right"]},{"label":["scientificName"],"name":[2],"type":["chr"],"align":["left"]},{"label":["taxonID"],"name":[3],"type":["chr"],"align":["left"]},{"label":["datasetKey"],"name":[4],"type":["chr"],"align":["left"]},{"label":["nameType"],"name":[5],"type":["chr"],"align":["left"]},{"label":["issues"],"name":[6],"type":["chr"],"align":["left"]},{"label":["validDistribution"],"name":[7],"type":["lgl"],"align":["right"]},{"label":["bb_key"],"name":[8],"type":["int"],"align":["right"]},{"label":["bb_scientificName"],"name":[9],"type":["chr"],"align":["left"]},{"label":["bb_species"],"name":[10],"type":["chr"],"align":["left"]},{"label":["bb_genus"],"name":[11],"type":["chr"],"align":["left"]},{"label":["bb_family"],"name":[12],"type":["chr"],"align":["left"]},{"label":["bb_order"],"name":[13],"type":["chr"],"align":["left"]},{"label":["bb_class"],"name":[14],"type":["chr"],"align":["left"]},{"label":["bb_phylum"],"name":[15],"type":["chr"],"align":["left"]},{"label":["bb_kingdom"],"name":[16],"type":["chr"],"align":["left"]},{"label":["bb_rank"],"name":[17],"type":["chr"],"align":["left"]},{"label":["bb_speciesKey"],"name":[18],"type":["int"],"align":["right"]},{"label":["bb_taxonomicStatus"],"name":[19],"type":["chr"],"align":["left"]},{"label":["bb_acceptedKey"],"name":[20],"type":["int"],"align":["right"]},{"label":["bb_acceptedName"],"name":[21],"type":["chr"],"align":["left"]}],"data":[{"1":"140562891","2":"Hypania invalida","3":"alien-macroinvertebrates-checklist:taxon:771544745a06d6420acf65d4caf558d3","4":"289244ee-e1c1-49aa-b2d7-d379391ce265","5":"SCIENTIFIC","6":"NA","7":"TRUE","8":"5199161","9":"Hypania invalida (Grube, 1860)","10":"Hypania invalida","11":"Hypania","12":"Ampharetidae","13":"Terebellida","14":"Polychaeta","15":"Annelida","16":"Animalia","17":"SPECIES","18":"5199161","19":"ACCEPTED","20":"NA","21":"NA"},{"1":"140562894","2":"Bratislavia dadayi","3":"alien-macroinvertebrates-checklist:taxon:e290ce86d71a55d91f917e211570869d","4":"289244ee-e1c1-49aa-b2d7-d379391ce265","5":"SCIENTIFIC","6":"NA","7":"TRUE","8":"9442679","9":"Bratislavia dadayi (Michaelsen, 1905)","10":"Bratislavia dadayi","11":"Bratislavia","12":"Naididae","13":"Haplotaxida","14":"Clitellata","15":"Annelida","16":"Animalia","17":"SPECIES","18":"9442679","19":"ACCEPTED","20":"NA","21":"NA"},{"1":"140562895","2":"Branchiodrilus hortensis","3":"alien-macroinvertebrates-checklist:taxon:b2bc19dfbc9d3f248921a6e148ffbaaa","4":"289244ee-e1c1-49aa-b2d7-d379391ce265","5":"SCIENTIFIC","6":"NA","7":"TRUE","8":"4812260","9":"Branchiodrilus hortensis (Stephenson, 1910)","10":"Branchiodrilus hortensis","11":"Branchiodrilus","12":"Naididae","13":"Haplotaxida","14":"Clitellata","15":"Annelida","16":"Animalia","17":"SPECIES","18":"4812260","19":"ACCEPTED","20":"NA","21":"NA"},{"1":"140562897","2":"Quistadrilus multisetosus","3":"alien-macroinvertebrates-checklist:taxon:ba6f78baf9a86138db5686bee2268107","4":"289244ee-e1c1-49aa-b2d7-d379391ce265","5":"SCIENTIFIC","6":"NA","7":"TRUE","8":"4410088","9":"Quistadrilus multisetosus (Smith, 1900)","10":"Quistadrilus multisetosus","11":"Quistadrilus","12":"Naididae","13":"Haplotaxida","14":"Clitellata","15":"Annelida","16":"Animalia","17":"SPECIES","18":"4410088","19":"ACCEPTED","20":"NA","21":"NA"},{"1":"140562898","2":"Branchiura sowerbyi","3":"alien-macroinvertebrates-checklist:taxon:b25905a58f0d4cc12455803326d0d7e0","4":"289244ee-e1c1-49aa-b2d7-d379391ce265","5":"SCIENTIFIC","6":"NA","7":"TRUE","8":"2308574","9":"Branchiura sowerbyi Beddard, 1892","10":"Branchiura sowerbyi","11":"Branchiura","12":"Naididae","13":"Haplotaxida","14":"Clitellata","15":"Annelida","16":"Animalia","17":"SPECIES","18":"2308574","19":"ACCEPTED","20":"NA","21":"NA"},{"1":"140562899","2":"Potamothrix vejdovskyi","3":"alien-macroinvertebrates-checklist:taxon:85ea227fedd73b5f44e27d7499bed4b3","4":"289244ee-e1c1-49aa-b2d7-d379391ce265","5":"SCIENTIFIC","6":"NA","7":"TRUE","8":"2308605","9":"Potamothrix vejdovskyi (Hrabĕ, 1941)","10":"Potamothrix vejdovskyi","11":"Potamothrix","12":"Naididae","13":"Haplotaxida","14":"Clitellata","15":"Annelida","16":"Animalia","17":"SPECIES","18":"2308605","19":"ACCEPTED","20":"NA","21":"NA"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+{"columns":[{"label":["taxonKey"],"name":[1],"type":["int"],"align":["right"]},{"label":["scientificName"],"name":[2],"type":["chr"],"align":["left"]},{"label":["taxonID"],"name":[3],"type":["chr"],"align":["left"]},{"label":["datasetKey"],"name":[4],"type":["chr"],"align":["left"]},{"label":["nameType"],"name":[5],"type":["chr"],"align":["left"]},{"label":["issues"],"name":[6],"type":["chr"],"align":["left"]},{"label":["validDistribution"],"name":[7],"type":["lgl"],"align":["right"]},{"label":["bb_key"],"name":[8],"type":["int"],"align":["right"]},{"label":["bb_scientificName"],"name":[9],"type":["chr"],"align":["left"]},{"label":["bb_kingdom"],"name":[10],"type":["chr"],"align":["left"]},{"label":["bb_rank"],"name":[11],"type":["chr"],"align":["left"]},{"label":["bb_taxonomicStatus"],"name":[12],"type":["chr"],"align":["left"]},{"label":["bb_acceptedKey"],"name":[13],"type":["int"],"align":["right"]},{"label":["bb_acceptedName"],"name":[14],"type":["chr"],"align":["left"]}],"data":[{"1":"140562891","2":"Hypania invalida","3":"alien-macroinvertebrates-checklist:taxon:771544745a06d6420acf65d4caf558d3","4":"289244ee-e1c1-49aa-b2d7-d379391ce265","5":"SCIENTIFIC","6":"NA","7":"TRUE","8":"5199161","9":"Hypania invalida (Grube, 1860)","10":"Animalia","11":"SPECIES","12":"ACCEPTED","13":"NA","14":"NA"},{"1":"140562894","2":"Bratislavia dadayi","3":"alien-macroinvertebrates-checklist:taxon:e290ce86d71a55d91f917e211570869d","4":"289244ee-e1c1-49aa-b2d7-d379391ce265","5":"SCIENTIFIC","6":"NA","7":"TRUE","8":"9442679","9":"Bratislavia dadayi (Michaelsen, 1905)","10":"Animalia","11":"SPECIES","12":"ACCEPTED","13":"NA","14":"NA"},{"1":"140562895","2":"Branchiodrilus hortensis","3":"alien-macroinvertebrates-checklist:taxon:b2bc19dfbc9d3f248921a6e148ffbaaa","4":"289244ee-e1c1-49aa-b2d7-d379391ce265","5":"SCIENTIFIC","6":"NA","7":"TRUE","8":"4812260","9":"Branchiodrilus hortensis (Stephenson, 1910)","10":"Animalia","11":"SPECIES","12":"ACCEPTED","13":"NA","14":"NA"},{"1":"140562897","2":"Quistadrilus multisetosus","3":"alien-macroinvertebrates-checklist:taxon:ba6f78baf9a86138db5686bee2268107","4":"289244ee-e1c1-49aa-b2d7-d379391ce265","5":"SCIENTIFIC","6":"NA","7":"TRUE","8":"4410088","9":"Quistadrilus multisetosus (Smith, 1900)","10":"Animalia","11":"SPECIES","12":"ACCEPTED","13":"NA","14":"NA"},{"1":"140562898","2":"Branchiura sowerbyi","3":"alien-macroinvertebrates-checklist:taxon:b25905a58f0d4cc12455803326d0d7e0","4":"289244ee-e1c1-49aa-b2d7-d379391ce265","5":"SCIENTIFIC","6":"NA","7":"TRUE","8":"2308574","9":"Branchiura sowerbyi Beddard, 1892","10":"Animalia","11":"SPECIES","12":"ACCEPTED","13":"NA","14":"NA"},{"1":"140562899","2":"Potamothrix vejdovskyi","3":"alien-macroinvertebrates-checklist:taxon:85ea227fedd73b5f44e27d7499bed4b3","4":"289244ee-e1c1-49aa-b2d7-d379391ce265","5":"SCIENTIFIC","6":"NA","7":"TRUE","8":"2308605","9":"Potamothrix vejdovskyi (Hrabĕ, 1941)","10":"Animalia","11":"SPECIES","12":"ACCEPTED","13":"NA","14":"NA"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
   </script>
 </div>
 </div>
 <div id="show-summary-and-save" class="section level2">
 <h2><span class="header-section-number">2.5</span> Show summary and save</h2>
-<p>Show summary per checklist.</p>
+<p>Show summary per checklist:</p>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
-{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["title"],"name":[1],"type":["chr"],"align":["left"]},{"label":["taxa"],"name":[2],"type":["int"],"align":["right"]},{"label":["valid_dist_in_backbone"],"name":[3],"type":["int"],"align":["right"]},{"label":["invalid_distribution"],"name":[4],"type":["int"],"align":["right"]},{"label":["not_in_backbone"],"name":[5],"type":["int"],"align":["right"]}],"data":[{"1":"Ad hoc checklist of alien species in Belgium","2":"270","3":"256","4":"3","5":"11","_rn_":"1"},{"1":"Catalogue of the Rust Fungi of Belgium","2":"755","3":"13","4":"742","5":"0","_rn_":"2"},{"1":"Checklist of non-native freshwater fishes in Flanders, Belgium","2":"25","3":"25","4":"0","5":"0","_rn_":"3"},{"1":"Inventory of alien macroinvertebrates in Flanders, Belgium","2":"73","3":"73","4":"0","5":"0","_rn_":"4"},{"1":"Manual of the Alien Plants of Belgium","2":"2531","3":"2436","4":"23","5":"72","_rn_":"5"},{"1":"RINSE - Pathways and vectors of biological invasions in Northwest Europe","2":"359","3":"144","4":"212","5":"3","_rn_":"6"},{"1":"RINSE - Registry of non-native species in the Two Seas region countries (Great Britain, France, Belgium and the Netherlands)","2":"6643","3":"3046","4":"3569","5":"28","_rn_":"7"},{"1":"Total","2":"10656","3":"5993","4":"4549","5":"114","_rn_":"8"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+{"columns":[{"label":["title"],"name":[1],"type":["chr"],"align":["left"]},{"label":["taxa"],"name":[2],"type":["int"],"align":["right"]},{"label":["invalid_dist"],"name":[3],"type":["int"],"align":["right"]},{"label":["valid_dist"],"name":[4],"type":["int"],"align":["right"]},{"label":["valid_dist_not_in_backbone"],"name":[5],"type":["int"],"align":["right"]}],"data":[{"1":"Ad hoc checklist of alien species in Belgium","2":"270","3":"3","4":"267","5":"11"},{"1":"Catalogue of the Rust Fungi of Belgium","2":"755","3":"742","4":"13","5":"0"},{"1":"Checklist of non-native freshwater fishes in Flanders, Belgium","2":"25","3":"0","4":"25","5":"0"},{"1":"Inventory of alien macroinvertebrates in Flanders, Belgium","2":"73","3":"0","4":"73","5":"0"},{"1":"Manual of the Alien Plants of Belgium","2":"2531","3":"23","4":"2508","5":"72"},{"1":"RINSE - Pathways and vectors of biological invasions in Northwest Europe","2":"359","3":"212","4":"147","5":"3"},{"1":"RINSE - Registry of non-native species in the Two Seas region countries (Great Britain, France, Belgium and the Netherlands)","2":"6643","3":"3569","4":"3074","5":"28"},{"1":"Total","2":"10656","3":"4549","4":"6107","5":"114"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
   </script>
 </div>
-<p>Save to <a href="https://github.com/trias-project/unified-checklist/blob/master/data/raw/taxa.csv">CSV</a>.</p>
+<p>Save to two CSVs:</p>
+<ul>
+<li><p><a href="https://github.com/trias-project/unified-checklist/blob/master/data/raw/taxa.csv"><code>data/raw/taxa.csv</code></a>: all checklist taxa</p></li>
+<li><p><a href="https://github.com/trias-project/unified-checklist/blob/master/data/interim/taxa_with_verification.csv.csv"><code>data/interim/taxa_with_verification.csv</code></a>: subset of checklist taxa with a valid distribution and an empty column <code>verificationKey</code>. This file will be used in later steps.</p></li>
+</ul>
 
 </div>
 </div>
@@ -268,7 +315,7 @@ gitbook.start({
 "google": false,
 "linkedin": false,
 "weibo": false,
-"instapper": false,
+"instapaper": false,
 "vk": false,
 "all": {}
 },
@@ -280,6 +327,10 @@ gitbook.start({
 "edit": {
 "link": "https://github.com/trias-project/unified-checklist/blob/master/src/src/get_taxa.Rmd",
 "text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
 },
 "download": null,
 "toc": {

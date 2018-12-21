@@ -155,12 +155,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="unify_taxa.html"><a href="unify_taxa.html"><i class="fa fa-check"></i><b>5</b> Unify taxa</a><ul>
-<li class="chapter" data-level="5.1" data-path="unify_taxa.html"><a href="unify_taxa.html#read-data"><i class="fa fa-check"></i><b>5.1</b> Read data</a></li>
+<li class="chapter" data-level="5.1" data-path="unify_taxa.html"><a href="unify_taxa.html#read-taxa-2"><i class="fa fa-check"></i><b>5.1</b> Read taxa</a></li>
 <li class="chapter" data-level="5.2" data-path="unify_taxa.html"><a href="unify_taxa.html#unify-taxa-1"><i class="fa fa-check"></i><b>5.2</b> Unify taxa</a></li>
 <li class="chapter" data-level="5.3" data-path="unify_taxa.html"><a href="unify_taxa.html#get-gbif-backbone-taxonomy-information-1"><i class="fa fa-check"></i><b>5.3</b> Get GBIF backbone taxonomy information</a></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="unify_information.html"><a href="unify_information.html"><i class="fa fa-check"></i><b>6</b> Unify related information</a><ul>
-<li class="chapter" data-level="6.1" data-path="unify_information.html"><a href="unify_information.html#read-data-1"><i class="fa fa-check"></i><b>6.1</b> Read data</a></li>
+<li class="chapter" data-level="6.1" data-path="unify_information.html"><a href="unify_information.html#read-data"><i class="fa fa-check"></i><b>6.1</b> Read data</a></li>
 <li class="chapter" data-level="6.2" data-path="unify_information.html"><a href="unify_information.html#assign-checklist-order"><i class="fa fa-check"></i><b>6.2</b> Assign checklist order</a></li>
 <li class="chapter" data-level="6.3" data-path="unify_information.html"><a href="unify_information.html#unify-distribution"><i class="fa fa-check"></i><b>6.3</b> Unify distribution</a></li>
 <li class="chapter" data-level="6.4" data-path="unify_information.html"><a href="unify_information.html#unify-species-profiles"><i class="fa fa-check"></i><b>6.4</b> Unify species profiles</a></li>
@@ -186,31 +186,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="unify-taxa" class="section level1">
 <h1><span class="header-section-number">5</span> Unify taxa</h1>
 <p>In this chapter we unify taxa on their <code>verificationKey</code>.</p>
-<div id="read-data" class="section level2">
-<h2><span class="header-section-number">5.1</span> Read data</h2>
-<ol style="list-style-type: decimal">
-<li>Read taxa from <a href="https://github.com/trias-project/unified-checklist/blob/master/data/interim/taxa_with_verification.csv"><code>data/interim/taxa_with_verification.csv</code></a>.</li>
-</ol>
+<div id="read-taxa-2" class="section level2">
+<h2><span class="header-section-number">5.1</span> Read taxa</h2>
+<p>Read taxa from <a href="https://github.com/trias-project/unified-checklist/blob/master/data/interim/taxa_with_verification.csv"><code>data/interim/taxa_with_verification.csv</code></a>.</p>
 </div>
 <div id="unify-taxa-1" class="section level2">
 <h2><span class="header-section-number">5.2</span> Unify taxa</h2>
 <ol style="list-style-type: decimal">
+<li><p>Remove taxa without verificationKey.</p></li>
 <li><p>Separate multiple <code>verificationKey</code>s (if any) for single taxa.</p></li>
-<li><p>Group by unique <code>verificationKey</code> to create unique/unified taxa:</p></li>
-</ol>
-<pre class="sourceCode r"><code class="sourceCode r">taxa_unify &lt;-
-<span class="st">  </span>taxa <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="co"># Group by verificationKey across and within checklists</span>
-<span class="st">  </span><span class="kw">group_by</span>(verificationKey) <span class="op">%&gt;%</span>
-<span class="st">  </span>
-<span class="st">  </span><span class="co"># Note contained checklists and taxa</span>
-<span class="st">  </span><span class="kw">summarize</span>(
-    <span class="dt">sourceChecklists =</span> <span class="kw">paste</span>(<span class="kw">sort</span>(<span class="kw">unique</span>(datasetKey)), <span class="dt">collapse =</span> <span class="st">&quot;,&quot;</span>),
-    <span class="dt">sourceTaxa =</span> <span class="kw">paste</span>(<span class="kw">sort</span>(<span class="kw">unique</span>(taxonKey)), <span class="dt">collapse =</span> <span class="st">&quot;,&quot;</span>)
-  )</code></pre>
-<ol start="3" style="list-style-type: decimal">
+<li><p>Group taxa by <code>verificationKey</code> (saving <code>sourceChecklists</code> and <code>sourceTaxa</code> bundled per key).</p></li>
 <li><p>Extract <code>verificationKey</code> as a vector.</p></li>
-<li><p>Number of taxa: 3488</p></li>
+<li><p>Number of unique taxa: 3488</p></li>
 </ol>
 </div>
 <div id="get-gbif-backbone-taxonomy-information-1" class="section level2">
@@ -230,7 +217,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   </script>
 </div>
 <ol start="7" style="list-style-type: decimal">
-<li>Save to <a href="https://github.com/trias-project/unified-checklist/blob/master/data/unified/taxa.csv">CSV</a>.</li>
+<li><p>Number of taxa: 3488</p></li>
+<li><p>Save to <a href="https://github.com/trias-project/unified-checklist/blob/master/data/unified/taxa.csv">CSV</a>.</p></li>
 </ol>
 
 </div>

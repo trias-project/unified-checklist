@@ -7,13 +7,7 @@ In this chapter we verify taxonomic information returned by the [GBIF Backbone T
 Read taxa from [`data/interim/taxa_with_verification.csv`](https://github.com/trias-project/unified-checklist/blob/master/data/interim/taxa_with_verification.csv).
 
 ```{r verify_taxa-1}
-taxa <-
-  read_csv(
-    here("data", "interim", "taxa_with_verification.csv"),
-    col_types = cols(
-      verificationKey = col_character() # Cast column
-    )
-  )
+taxa <- read_csv(here("data", "interim", "taxa_with_verification.csv"))
 ```
 
 ## Read verification information {#verification}
@@ -21,16 +15,7 @@ taxa <-
 Verification information consists of a manually assigned `verificationKey` for taxa the backbone does not recognize (no backbone match) or will lump under another name (synonyms). Those `checklist/backbone/accepted` taxon combinations are stored in [`data/interim/verification.tsv`](https://github.com/trias-project/unified-checklist/blob/master/data/interim/verification.tsv), which was created/updated in previous runs of this chapter and then manually annoted with a `verificationKey`.
 
 ```{r verify_taxa-2}
-verification <- read_tsv(
-  here("data", "interim", "verification.tsv"),
-  col_types = cols(
-    taxonKey = col_double(),
-    bb_key = col_double(),
-    bb_acceptedKey = col_double(),
-    dateAdded = col_date(),
-    outdated = col_logical()
-  )
-)
+verification <- read_tsv(here("data", "interim", "verification.tsv"))
 ```
 
 ## Run and save verification

@@ -7,14 +7,7 @@ In this chapter we verify taxonomic information returned by the [GBIF Backbone T
 Read taxa from [`data/interim/taxa_with_verification.csv`](https://github.com/trias-project/unified-checklist/blob/master/data/interim/taxa_with_verification.csv).
 
 ```{r verify_taxa-1}
-taxa <-
-  read_csv(
-    here("data", "interim", "taxa_with_verification.csv"),
-    col_types = cols(
-      verificationKey = col_character() # Cast empty column
-    )
-  ) %>%
-  select(-verificationKey)
+taxa <- read_csv(here("data", "interim", "taxa_with_verification.csv"))
 ```
 
 ## Read verification information {#verification}
@@ -22,16 +15,7 @@ taxa <-
 Verification information consists of a manually assigned `verificationKey` for taxa the backbone does not recognize (no backbone match) or will lump under another name (synonyms). Those `checklist/backbone/accepted` taxon combinations are stored in [`data/interim/verification.tsv`](https://github.com/trias-project/unified-checklist/blob/master/data/interim/verification.tsv), which was created/updated in previous runs of this chapter and then manually annoted with a `verificationKey`.
 
 ```{r verify_taxa-2}
-verification <- read_tsv(
-  here("data", "interim", "verification.tsv"),
-  col_types = cols(
-    taxonKey = col_double(),
-    bb_key = col_double(),
-    bb_acceptedKey = col_double(),
-    dateAdded = col_date(),
-    outdated = col_logical()
-  )
-)
+verification <- read_tsv(here("data", "interim", "verification.tsv"))
 ```
 
 ## Run and save verification
@@ -86,7 +70,7 @@ Status | Number of taxa
 Verified | `r verification$taxa %>% filter(is.na(bb_key) & !is.na(verificationKey)) %>% nrow()`
 Unverified | `r verification$taxa %>% filter(is.na(bb_key) & is.na(verificationKey)) %>% nrow()`
 New in this run | `r verification$info$new_unmatched_taxa %>% nrow()`
-No longer used (TODO: for unmatched only) | `r verification$info$outdated_taxa %>% nrow()`
+No longer used | `r verification$info$outdated_unmatched_taxa %>% nrow()`
 
 Unmatched taxa are those for which the automatic backbone matching on the scientific name failed (have [`BACKBONE_MATCH_NONE`](http://gbif.github.io/parsers/apidocs/org/gbif/api/vocabulary/NameUsageIssue.html) in `issues`), either because the scientific name could not be parsed or because it is not listed in the backbone.
 
@@ -99,7 +83,7 @@ Status | Number of taxa
 Previously verified | `r verification$taxa %>% filter(!is.na(bb_acceptedKey) & !is.na(verificationKey)) %>% nrow()`
 Unverified | `r verification$taxa %>% filter(!is.na(bb_acceptedKey) & is.na(verificationKey)) %>% nrow()`
 New in this run | `r verification$info$new_synonyms %>% nrow()`
-No longer used (TODO: for synonyms only) | `r verification$info$outdated_taxa %>% nrow()`
+No longer used | `r verification$info$outdated_synonyms %>% nrow()`
 
 Synonyms are taxa that the backbone will lump under an accepted taxon (`taxonomicStatus` = `SYNONYM` or similar). This lumping is often correct, but should be verified.
 
@@ -122,10 +106,13 @@ No verification is required for these: `verificationKey` is automatically set to
 
 ### Erroneous verificationKeys
 
-Provided verification keys that were not found in the GBIF backbone:
+Provided verification keys that are not found in the GBIF backbone:
 
 ```{r verify_taxa-5}
-verification$taxa$check_verificationKey
+verification$info$check_verificationKey %>%
+  filter(!is_from_gbif_backbone) %>%
+  distinct(key) %>%
+  select(key)
 ```
 
 ### Additional information
@@ -136,7 +123,6 @@ Additional information regarding the verification information that is of no furt
 
 ```{r verify_taxa-6}
 verification$info$duplicates %>%
-  ungroup() %>%
   group_by(n) %>%
   summarize(
     taxa = n()
@@ -146,11 +132,11 @@ verification$info$duplicates %>%
 * Previously listed synonyms for which the scientific name was updated in the backbone:
 
 ```{r verify_taxa-7}
-verification$info$updated_scientificName
+verification$info$updated_bb_scientificName
 ```
 
 * Previously listed synonyms for which the _accepted_ scientific name was updated in the backbone:
 
 ```{r verify_taxa-8}
-verification$info$updated_acceptedName
+verification$info$updated_bb_acceptedName
 ```

@@ -449,6 +449,10 @@ verificationKey,type,description,sourceChecklist
 2394563,pathway,cbd_2014_pathway:escape,1738f272-6b5d-4f43-9a92-453a8c5ea50a
 2394563,pathway,cbd_2014_pathway:natural_dispersal,1738f272-6b5d-4f43-9a92-453a8c5ea50a
 2394563,pathway,cbd_2014_pathway:release,1738f272-6b5d-4f43-9a92-453a8c5ea50a
+2402129,invasion stage,casual,98940a79-2bf1-46e6-afd6-ba2e85a26f9f
+2402129,native range,Eastern Europe,98940a79-2bf1-46e6-afd6-ba2e85a26f9f
+2402129,pathway,cbd_2014_pathway:escape_aquaculture,98940a79-2bf1-46e6-afd6-ba2e85a26f9f
+2402129,pathway,cbd_2014_pathway:escape_ornamental,98940a79-2bf1-46e6-afd6-ba2e85a26f9f
 2402168,invasion stage,casual,98940a79-2bf1-46e6-afd6-ba2e85a26f9f
 2402168,native range,Eastern Europe,98940a79-2bf1-46e6-afd6-ba2e85a26f9f
 2402168,pathway,cbd_2014_pathway:escape_aquaculture,98940a79-2bf1-46e6-afd6-ba2e85a26f9f
@@ -1770,6 +1774,10 @@ verificationKey,type,description,sourceChecklist
 2891664,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42
 2891664,native range,Southern America (WGSRPD:8),9ff7d317-609b-4c08-bd86-3bc404b77c42
 2891664,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42
+2891666,invasion stage,established,9ff7d317-609b-4c08-bd86-3bc404b77c42
+2891666,native range,Northern America (WGSRPD:7),9ff7d317-609b-4c08-bd86-3bc404b77c42
+2891666,native range,temperate Asia (WGSRPD:3),9ff7d317-609b-4c08-bd86-3bc404b77c42
+2891666,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42
 2891677,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42
 2891677,native range,Northern America (WGSRPD:7),9ff7d317-609b-4c08-bd86-3bc404b77c42
 2891677,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42
@@ -4043,7 +4051,12 @@ verificationKey,type,description,sourceChecklist
 3142208,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42
 3142208,native range,Europe (WGSRPD:1),9ff7d317-609b-4c08-bd86-3bc404b77c42
 3142208,native range,temperate Asia (WGSRPD:3),9ff7d317-609b-4c08-bd86-3bc404b77c42
+3142208,native range,Asia,1738f272-6b5d-4f43-9a92-453a8c5ea50a
 3142208,pathway,cbd_2014_pathway:contaminant_seed,9ff7d317-609b-4c08-bd86-3bc404b77c42
+3142208,pathway,cbd_2014_pathway:contaminant,1738f272-6b5d-4f43-9a92-453a8c5ea50a
+3142208,pathway,cbd_2014_pathway:corridor,1738f272-6b5d-4f43-9a92-453a8c5ea50a
+3142208,pathway,cbd_2014_pathway:natural_dispersal,1738f272-6b5d-4f43-9a92-453a8c5ea50a
+3142208,pathway,cbd_2014_pathway:stowaway,1738f272-6b5d-4f43-9a92-453a8c5ea50a
 3142974,invasion stage,established,9ff7d317-609b-4c08-bd86-3bc404b77c42
 3142974,native range,cultivated origin,9ff7d317-609b-4c08-bd86-3bc404b77c42
 3142974,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42
@@ -4694,6 +4707,9 @@ verificationKey,type,description,sourceChecklist
 3921611,native range,Europe (WGSRPD:1),9ff7d317-609b-4c08-bd86-3bc404b77c42
 3921611,native range,temperate Asia (WGSRPD:3),9ff7d317-609b-4c08-bd86-3bc404b77c42
 3921611,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42
+3922770,invasion stage,established,9ff7d317-609b-4c08-bd86-3bc404b77c42
+3922770,native range,Europe (WGSRPD:1),9ff7d317-609b-4c08-bd86-3bc404b77c42
+3922770,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42
 3922888,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42
 3922888,native range,Europe (WGSRPD:1),9ff7d317-609b-4c08-bd86-3bc404b77c42
 3922888,native range,temperate Asia (WGSRPD:3),9ff7d317-609b-4c08-bd86-3bc404b77c42
@@ -4712,6 +4728,9 @@ verificationKey,type,description,sourceChecklist
 3935421,native range,Europe (WGSRPD:1),9ff7d317-609b-4c08-bd86-3bc404b77c42
 3935421,pathway,cbd_2014_pathway:contaminant_seed,9ff7d317-609b-4c08-bd86-3bc404b77c42
 3935421,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42
+3937506,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42
+3937506,native range,cultivated origin,9ff7d317-609b-4c08-bd86-3bc404b77c42
+3937506,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42
 3940423,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42
 3940423,native range,Europe (WGSRPD:1),9ff7d317-609b-4c08-bd86-3bc404b77c42
 3940423,native range,temperate Asia (WGSRPD:3),9ff7d317-609b-4c08-bd86-3bc404b77c42
@@ -7628,6 +7647,10 @@ verificationKey,type,description,sourceChecklist
 7190901,native range,North America,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2
 7190901,pathway,cbd_2014_pathway:escape_pet,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2
 7190901,pathway,cbd_2014_pathway:release_other,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2
+7222196,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42
+7222196,native range,Europe (WGSRPD:1),9ff7d317-609b-4c08-bd86-3bc404b77c42
+7222196,native range,temperate Asia (WGSRPD:3),9ff7d317-609b-4c08-bd86-3bc404b77c42
+7222196,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42
 7223276,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42
 7223276,native range,Africa (WGSRPD:2),9ff7d317-609b-4c08-bd86-3bc404b77c42
 7223276,native range,Europe (WGSRPD:1),9ff7d317-609b-4c08-bd86-3bc404b77c42
@@ -8342,6 +8365,9 @@ verificationKey,type,description,sourceChecklist
 8005391,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42
 8005391,native range,Southern America (WGSRPD:8),9ff7d317-609b-4c08-bd86-3bc404b77c42
 8005391,pathway,cbd_2014_pathway:contaminant_on_animals,9ff7d317-609b-4c08-bd86-3bc404b77c42
+8010851,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42
+8010851,native range,temperate Asia (WGSRPD:3),9ff7d317-609b-4c08-bd86-3bc404b77c42
+8010851,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42
 8012084,invasion stage,established,9ff7d317-609b-4c08-bd86-3bc404b77c42
 8012084,native range,Europe (WGSRPD:1),9ff7d317-609b-4c08-bd86-3bc404b77c42
 8012084,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42
@@ -8502,6 +8528,9 @@ verificationKey,type,description,sourceChecklist
 8257546,native range,pan-American,9ff7d317-609b-4c08-bd86-3bc404b77c42
 8257546,pathway,cbd_2014_pathway:contaminant_on_animals,9ff7d317-609b-4c08-bd86-3bc404b77c42
 8257546,pathway,cbd_2014_pathway:contaminant_seed,9ff7d317-609b-4c08-bd86-3bc404b77c42
+8259811,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42
+8259811,native range,Europe (WGSRPD:1),9ff7d317-609b-4c08-bd86-3bc404b77c42
+8259811,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42
 8279669,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42
 8279669,native range,Europe (WGSRPD:1),9ff7d317-609b-4c08-bd86-3bc404b77c42
 8279669,pathway,cbd_2014_pathway:contaminant_on_animals,9ff7d317-609b-4c08-bd86-3bc404b77c42
@@ -8556,6 +8585,12 @@ verificationKey,type,description,sourceChecklist
 8346536,native range,Southern America (WGSRPD:8),9ff7d317-609b-4c08-bd86-3bc404b77c42
 8346536,pathway,cbd_2014_pathway:contaminant_on_animals,9ff7d317-609b-4c08-bd86-3bc404b77c42
 8346536,pathway,cbd_2014_pathway:contaminant_seed,9ff7d317-609b-4c08-bd86-3bc404b77c42
+8355821,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42
+8355821,native range,Africa (WGSRPD:2),9ff7d317-609b-4c08-bd86-3bc404b77c42
+8355821,native range,Europe (WGSRPD:1),9ff7d317-609b-4c08-bd86-3bc404b77c42
+8355821,native range,temperate Asia (WGSRPD:3),9ff7d317-609b-4c08-bd86-3bc404b77c42
+8355821,pathway,cbd_2014_pathway:contaminant_on_animals,9ff7d317-609b-4c08-bd86-3bc404b77c42
+8355821,pathway,cbd_2014_pathway:contaminant_seed,9ff7d317-609b-4c08-bd86-3bc404b77c42
 8358048,invasion stage,established,9ff7d317-609b-4c08-bd86-3bc404b77c42
 8358048,native range,Europe (WGSRPD:1),9ff7d317-609b-4c08-bd86-3bc404b77c42
 8358048,native range,temperate Asia (WGSRPD:3),9ff7d317-609b-4c08-bd86-3bc404b77c42
@@ -8638,6 +8673,9 @@ verificationKey,type,description,sourceChecklist
 8690876,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42
 8690876,native range,Northern America (WGSRPD:7),9ff7d317-609b-4c08-bd86-3bc404b77c42
 8690876,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42
+8720751,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42
+8720751,native range,temperate Asia (WGSRPD:3),9ff7d317-609b-4c08-bd86-3bc404b77c42
+8720751,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42
 8740315,native range,New Zealand (WGSRPD:51),1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2
 8740315,pathway,cbd_2014_pathway:contaminant_habitat_material,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2
 8745918,native range,Europe (WGSRPD:1),1738f272-6b5d-4f43-9a92-453a8c5ea50a
@@ -8645,6 +8683,9 @@ verificationKey,type,description,sourceChecklist
 8765358,invasion stage,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2
 8765358,native range,Canary Islands (WGSRPD:21_CNY),1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2
 8765358,pathway,cbd_2014_pathway:stowaway_people_luggage,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2
+8773480,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42
+8773480,native range,cultivated origin,9ff7d317-609b-4c08-bd86-3bc404b77c42
+8773480,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42
 8911082,invasion stage,established,9ff7d317-609b-4c08-bd86-3bc404b77c42
 8911082,native range,Africa (WGSRPD:2),9ff7d317-609b-4c08-bd86-3bc404b77c42
 8911082,native range,Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42
@@ -8672,6 +8713,9 @@ verificationKey,type,description,sourceChecklist
 8994150,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42
 8994150,native range,Northern America (WGSRPD:7),9ff7d317-609b-4c08-bd86-3bc404b77c42
 8994150,pathway,cbd_2014_pathway:contaminant_habitat_material,9ff7d317-609b-4c08-bd86-3bc404b77c42
+9018536,invasion stage,established,9ff7d317-609b-4c08-bd86-3bc404b77c42
+9018536,native range,temperate Asia (WGSRPD:3),9ff7d317-609b-4c08-bd86-3bc404b77c42
+9018536,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42
 9073641,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42
 9073641,native range,Europe (WGSRPD:1),9ff7d317-609b-4c08-bd86-3bc404b77c42
 9073641,native range,temperate Asia (WGSRPD:3),9ff7d317-609b-4c08-bd86-3bc404b77c42

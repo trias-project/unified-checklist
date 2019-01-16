@@ -159,8 +159,8 @@ taxa_unified %>% head()
 
 7. Number of taxa: `r nrow(taxa_unified)`
 
-8. Save to [CSV](https://github.com/trias-project/unified-checklist/blob/master/data/unified/taxa.csv).
+8. Save to [CSV](https://github.com/trias-project/unified-checklist/blob/master/data/interim/taxa_unified.csv).
 
 ```{r unify_taxa-11}
-write_csv(taxa_unified, here("data", "unified", "taxa.csv"), na = "")
+write_csv(taxa_unified, here("data", "interim", "taxa_unified.csv"), na = "")
 ```

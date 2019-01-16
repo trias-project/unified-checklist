@@ -33,6 +33,7 @@ Load libraries:
 
 ```{r echo = TRUE}
 library(tidyverse)      # To do data science
+library(magrittr)       # To use %<>% pipes
 library(here)           # To find files
 library(janitor)        # To clean input data
 library(digest)         # To generate hashes

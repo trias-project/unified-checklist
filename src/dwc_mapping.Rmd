@@ -47,7 +47,7 @@ input_speciesprofiles <- read_csv(here("data", "interim", "speciesprofiles_unifi
 input_descriptions <- read_csv(here("data", "interim", "descriptions_unified.csv"))
 ```
 
-## Process data
+# Process data
 
 Add prefix `input_` to all column names to avoid name clashes with Darwin Core terms:
 
@@ -58,7 +58,7 @@ colnames(input_speciesprofiles) <- paste0("input_", colnames(input_speciesprofil
 colnames(input_descriptions) <- paste0("input_", colnames(input_descriptions))
 ```
 
-## Preview data
+# Preview data
 
 1. Number of rows:
 

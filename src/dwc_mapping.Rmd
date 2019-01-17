@@ -127,17 +127,17 @@ taxon %<>% separate(
 )
 ```
 
-### Term mapping
+## Term mapping
 
 Map the data to [Darwin Core Taxon](http://rs.gbif.org/core/dwc_taxon_2015-04-24.xml).
 
-#### language
+### language
 
 ```{r}
 taxon %<>% mutate(language = "en")
 ```
 
-#### license
+### license
 
 ```{r}
 # TODO: Taxa info comes from backbone (CC-BY), rest from datasets 
@@ -145,7 +145,7 @@ taxon %<>% mutate(language = "en")
 taxon %<>% mutate(license = "http://creativecommons.org/publicdomain/zero/1.0/")
 ```
 
-#### rightsHolder
+### rightsHolder
 
 ```{r}
 # TODO: Could be publisher of this dataset (INBO), publisher of taxa (GBIF) 
@@ -153,80 +153,80 @@ taxon %<>% mutate(license = "http://creativecommons.org/publicdomain/zero/1.0/")
 taxon %<>% mutate(rightsHolder = "Public Domain Dedication")
 ```
 
-#### accessRights
+### accessRights
 
 ```{r}
 # TODO: Depends on rightsHolder
 ```
 
-#### datasetID
+### datasetID
 
 ```{r}
 taxon %<>% mutate(datasetID = "")
 ```
 
-#### institutionCode
+### institutionCode
 
 ```{r}
 taxon %<>% mutate(institutionCode = "INBO")
 ```
 
-#### datasetName
+### datasetName
 
 ```{r}
 taxon %<>% mutate(datasetName = "Unified checklist of alien species in Belgium")
 ```
 
-#### references
+### references
 
 ```{r}
 taxon %<>% mutate(references = paste0("https://www.gbif.org/species/", input_verificationKey))
 ```
 
-#### taxonID
+### taxonID
 
 ```{r}
 # TODO: Could also be gbif:input_verificationKey
 taxon %<>% mutate(taxonID = paste0("https://www.gbif.org/species/", input_verificationKey))
 ```
 
-#### scientificName
+### scientificName
 
 ```{r}
 taxon %<>% mutate(scientificName = input_scientificName)
 ```
 
-#### kingdom
+### kingdom
 
 ```{r}
 taxon %<>% mutate(kingdom = input_kingdom)
 ```
 
-#### phylum
+### phylum
 
 ```{r}
 taxon %<>% mutate(phylum = input_phylum)
 ```
 
-#### class
+### class
 
 ```{r}
 taxon %<>% mutate(phylum = input_class)
 ```
 
-#### order
+### order
 
 ```{r}
 taxon %<>% mutate(order = input_order)
 ```
 
-#### family
+### family
 
 ```{r}
 taxon %<>% mutate(family = input_family)
 ```
 
-#### genus
+### genus
 
 Inspect differences between `input_genus` and `input_canonicalName_genus`:
 
@@ -242,19 +242,19 @@ The `input_genus` under which the GBIF Backbone Taxonomy has classified a taxon 
 taxon %<>% mutate(genus = input_canonicalName_genus)
 ```
 
-#### specificEpithet
+### specificEpithet
 
 ```{r}
 taxon %<>% mutate(specificEpithet = input_canonicalName_species)
 ```
 
-#### infraspecificEpithet
+### infraspecificEpithet
 
 ```{r}
 taxon %<>% mutate(infraspecificEpithet = input_canonicalName_infraspecific)
 ```
 
-#### taxonRank
+### taxonRank
 
 Inspect values:
 
@@ -270,19 +270,19 @@ Map values to lowercase:
 taxon %<>% mutate(taxonRank = str_to_lower(input_rank))
 ```
 
-#### scientificNameAuthorship
+### scientificNameAuthorship
 
 ```{r}
 taxon %<>% mutate(scientificNameAuthorship = input_authorship)
 ```
 
-#### taxonRemarks
+### taxonRemarks
 
 ```{r}
 # TODO: This taxon bundles data from checklists and taxa?
 ```
 
-### Post-processing
+## Post-processing
 
 Remove the original columns:
 
@@ -302,55 +302,55 @@ Save to CSV:
 write_csv(taxon, here("data", "processed", "taxon.csv"), na = "")
 ```
 
-## Literature reference extension
+# Literature reference extension
 
 TODO: this looks like the best way to capture the checklists that contributed to the information unified here. Note, to know actual contribution, it is best to join `distributions`, `descriptions` and `speciesProfiles` and get `sourceChecklist` rather than using `sourceChecklists` in `taxa`.
 
-### Pre-processing
+## Pre-processing
 
 ...
 
 Map the data to [Literature References](http://rs.gbif.org/extension/gbif/1.0/references.xml).
 
-### Term mapping
+## Term mapping
 
-#### identifier
+### identifier
 
 ```{r}
 # TODO: DOI of sourceChecklist (is internal identifier)
 ```
 
-#### bibliographicCitation
+### bibliographicCitation
 
 ```{r}
 # TODO: See checklist metadata from GBIF
 ```
 
-#### Date
+### Date
 
 ```{r}
 # TODO: Last publication date
 ```
 
-#### Subject
+### Subject
 
 ```{r}
 # TODO: concatenated list with: "distribution, speciesProfile, description"
 ```
 
-#### DatasetID
+### DatasetID
 
 ```{r}
 # TODO: maybe repeat DOI here??
 ```
 
-### Post-processing
+## Post-processing
 
 ...
 
-## Distribution extension
+# Distribution extension
 
-### Pre-processing
+## Pre-processing
 
 Create a dataframe with all data:
 
@@ -360,26 +360,26 @@ distribution <- input_distributions
 
 Map the data to [Species Distribution](http://rs.gbif.org/extension/gbif/1.0/distribution.xml).
 
-### Term mapping
+## Term mapping
 
 ...
 
-### Post-processing
+## Post-processing
 
 ...
 
-## Description extension
+# Description extension
 
-### Pre-processing
+## Pre-processing
 
 ...
 
 Map the data to ...
 
-### Term mapping
+## Term mapping
 
 ...
 
-### Post-processing
+## Post-processing
 
 ...

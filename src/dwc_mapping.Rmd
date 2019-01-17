@@ -91,9 +91,9 @@ input_descriptions %>%
   adorn_totals("row")
 ```
 
-## Taxon core
+# Taxon core
 
-### Pre-processing
+## Pre-processing
 
 1. Create a dataframe from the source taxa:
 

@@ -1,6 +1,6 @@
 ---
 title: "Darwin Core mapping"
-subtitle: "For: National, unified checklist of alien species in Belgium"
+subtitle: "For: Unified checklist of alien species in Belgium"
 author:
 - Lien Reyserhove
 - Peter Desmet

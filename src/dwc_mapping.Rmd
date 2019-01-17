@@ -127,8 +127,6 @@ taxon %<>% separate(
 )
 ```
 
-3. Merge data with
-
 ### Term mapping
 
 Map the data to [Darwin Core Taxon](http://rs.gbif.org/core/dwc_taxon_2015-04-24.xml).

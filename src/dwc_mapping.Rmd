@@ -20,13 +20,24 @@ output:
 #    toc_depth: 3
 ---
 
-# Darwin Core mapping
+# Setup 
 
 ```{r}
 knitr::opts_chunk$set(echo = TRUE) # Include code chunks for this document
 ```
 
-## Read data
+Load libraries:
+
+```{r}
+library(tidyverse)      # To do data science
+library(magrittr)       # To use %<>% pipes
+library(here)           # To find files
+library(janitor)        # To clean input data
+```
+
+# Read source data
+
+Create data frame `input_data` from the raw and interim data:
 
 ```{r}
 checklists <- read_csv(here("data", "raw", "checklists.csv"))

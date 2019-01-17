@@ -101,15 +101,23 @@ input_descriptions %>%
 taxon <- input_taxa
 ```
 
-2. Separate `input_canonicalName` in 3 parts:
+2. Tidy data
+
+Have lowercase column names:
+
+```{r}
+taxon %<>% clean_names()       
+```
+
+3. Separate `input_canonical_name` in 3 parts:
 
 ```{r}
 taxon %<>% separate(
-  input_canonicalName,
+  input_canonical_name,
   into = c(
-    "input_canonicalName_genus",
-    "input_canonicalName_species",
-    "input_canonicalName_infraspecific"
+    "input_canonical_name_genus",
+    "input_canonical_name_species",
+    "input_canonical_name_infraspecific"
   ),
   sep = "\\s+",
   remove = FALSE,

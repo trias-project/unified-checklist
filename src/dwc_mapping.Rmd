@@ -355,6 +355,50 @@ Map the data to [Species Distribution](http://rs.gbif.org/extension/gbif/1.0/dis
 ## Term mapping
 
 ...
+### taxonID
+
+```{r}
+distribution %<>% mutate(taxonID = paste0("https://www.gbif.org/species/", input_verificationKey))
+```
+
+### locationID
+
+```{r}
+distribution %<>% mutate(locationID = "ISO_3166-2:BE") 
+```
+
+### locality
+
+```{r}
+distribution %<>% mutate(locatlity = "Belgium") 
+```
+
+### countryCode
+
+```{r}
+distribution %<>% mutate(countryCode = "BE") 
+```
+
+### occurrenceStatus
+
+```{r}
+distribution %<>% mutate(occurrenceStatus = "present") 
+```
+
+### eventDate 
+
+The distribution information applies to a certain date range, which we will express here as an ISO 8601 date `yyyy/yyyy` (`input_startYear/input_endYear`). How the information for `input_startYear` and `input_endYear` is extracted from the TrIAS species checklists, is described [here](https://trias-project.github.io/unified-checklist/unify_information.html#unify-distribution).As a result, each taxon in `input_distribution` has *or* an `input_startYear` and an `input_endYear` *or* no eventDate information at all.
+
+ Note to self: illustrate this with a table
+ 
+```{r}
+distribution  %<>% mutate(eventDate = case_when(
+  is.na(input_startYear) & is.na(input_endYear) ~ "",
+  TRUE ~ paste(input_startYear, input_endYear, sep = "/")))
+``` 
+ 
+
+### source
 
 ## Post-processing
 

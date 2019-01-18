@@ -52,7 +52,10 @@ distributions_unified <-
   ) %>%
   
   # Only keep the first 4 characters: 1968-11-21 -> 1968
-  mutate(startYear = str_sub(startYear, 1, 4), endYear = str_sub(endYear, 1, 4)) %>%
+  mutate(
+    startYear = as.integer(str_sub(startYear, 1, 4)), 
+    endYear = as.integer(str_sub(endYear, 1, 4))
+  ) %>%
   
   # If endYear is empty (no range), populate it with startYear: 2018 & 2018
   mutate(endYear = if_else(is.na(endYear), startYear, endYear))
@@ -79,7 +82,7 @@ distributions_unified <-
   distributions_unified %>%
 
   # Join distribution with taxon to get verificationKey and checklistOrder
-  left_join(taxa, on = taxonKey) %>%
+  left_join(taxa, by = "taxonKey") %>%
   
   # Remove records that have no verificationKey (e.g. one wasn't assigned yet)
   filter(!is.na(verificationKey)) %>%
@@ -93,8 +96,8 @@ distributions_unified <-
   
   # Take earliest year, latest year and note taxonIDs
   summarize(
-    startYear = min(startYear, na.rm = TRUE),
-    endYear = max(endYear, na.rm = TRUE),
+    startYear = as.integer(min(startYear, na.rm = TRUE)),
+    endYear = as.integer(max(endYear, na.rm = TRUE)),
     sourceTaxa = paste(sort(unique(taxonKey)), collapse = ",")
   )
 ```

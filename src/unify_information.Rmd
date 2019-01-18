@@ -96,8 +96,8 @@ distributions_unified <-
   
   # Take earliest year, latest year and note taxonIDs
   summarize(
-    startYear = min(startYear, na.rm = TRUE),
-    endYear = max(endYear, na.rm = TRUE),
+    startYear = as.integer(min(startYear, na.rm = TRUE)),
+    endYear = as.integer(max(endYear, na.rm = TRUE)),
     sourceTaxa = paste(sort(unique(taxonKey)), collapse = ",")
   )
 ```

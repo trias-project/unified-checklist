@@ -318,19 +318,19 @@ Map the data to [Literature References](http://rs.gbif.org/extension/gbif/1.0/re
 # TODO: See checklist metadata from GBIF
 ```
 
-### Date
+### date
 
 ```{r}
 # TODO: Last publication date
 ```
 
-### Subject
+### subject
 
 ```{r}
 # TODO: concatenated list with: "distribution, speciesProfile, description"
 ```
 
-### DatasetID
+### datasetID
 
 ```{r}
 # TODO: maybe repeat DOI here??

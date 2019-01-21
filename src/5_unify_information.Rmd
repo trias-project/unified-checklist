@@ -177,7 +177,7 @@ speciesprofiles_unified <-
     marine = first(marine),
     freshwater = first(freshwater),
     terrestrial = first(terrestrial),
-    sourceTaxon = first(taxonKey)
+    taxonKey = first(taxonKey),
     scientificName = first(scientificName)
   )
 ```
@@ -200,8 +200,8 @@ speciesprofiles_unified <-
     marine = first(marine),
     freshwater = first(freshwater),
     terrestrial = first(terrestrial),
-    sourceChecklist = first(datasetKey),
-    sourceTaxon = first(sourceTaxon)
+    datasetKey = first(datasetKey),
+    taxonKey = first(taxonKey),
     scientificName = first(scientificName)
   ) %>%
 

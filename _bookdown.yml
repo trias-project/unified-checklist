@@ -10,11 +10,11 @@ output_dir: docs
 # Order of the chapters (= which Rmd files to include):
 rmd_files: [
   index.Rmd,
-  src/get_taxa.Rmd,
-  src/get_information.Rmd,
-  src/verify_taxa.Rmd,
-  src/unify_taxa.Rmd,
-  src/unify_information.Rmd,
+  src/1_get_taxa.Rmd,
+  src/2_get_information.Rmd,
+  src/3_verify_taxa.Rmd,
+  src/4_unify_taxa.Rmd,
+  src/5_unify_information.Rmd,
   src/dwc_mapping.Rmd
 ]
 

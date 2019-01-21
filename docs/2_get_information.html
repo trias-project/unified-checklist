@@ -5,11 +5,11 @@
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>National, unified checklist of alien species in Belgium</title>
-  <meta name="description" content="National, unified checklist of alien species in Belgium">
+  <title>3 Get related information | National, unified checklist of alien species in Belgium</title>
+  <meta name="description" content="3 Get related information | National, unified checklist of alien species in Belgium>
   <meta name="generator" content="bookdown  and GitBook 2.6.7">
 
-  <meta property="og:title" content="National, unified checklist of alien species in Belgium" />
+  <meta property="og:title" content="3 Get related information | National, unified checklist of alien species in Belgium />
   <meta property="og:type" content="book" />
   
   
@@ -17,7 +17,7 @@
   <meta name="github-repo" content="trias-project/unified-checklist" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="National, unified checklist of alien species in Belgium" />
+  <meta name="twitter:title" content="3 Get related information | National, unified checklist of alien species in Belgium />
   
   
   
@@ -32,8 +32,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
-
-<link rel="next" href="1_get_taxa.html">
+<link rel="prev" href="1_get_taxa.html">
+<link rel="next" href="3_verify_taxa.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -208,33 +208,46 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">National, unified checklist of alien species in Belgium</h1>
-<p class="author"><em>Peter Desmet, Damiano Oldoni</em></p>
-<p class="date"><em>2019-01-18</em></p>
+<div id="get-related-information" class="section level1">
+<h1><span class="header-section-number">3</span> Get related information</h1>
+<p>In this chapter we retrieve related information for taxa on the checklists (with a valid distribution).</p>
+<div id="read-taxa" class="section level2">
+<h2><span class="header-section-number">3.1</span> Read taxa</h2>
+<ol style="list-style-type: decimal">
+<li><p>Read taxa from <a href="https://github.com/trias-project/unified-checklist/blob/master/data/interim/taxa_with_verification.csv"><code>data/interim/taxa_with_verification.csv</code></a>.</p></li>
+<li><p>Extract <code>taxonKeys</code> as a vector.</p></li>
+</ol>
 </div>
-<div id="intro" class="section level1">
-<h1><span class="header-section-number">1</span> Intro</h1>
-<p>This document contains and describes all the steps in creating a unified checklist of alien species in Belgium and was developed for the <a href="http://trias-project.be">Tracking Invasive Alien Species (TrIAS) project</a>. By running this document in R, it will create all the necessary data files for the unified checklist.</p>
-<p>Load libraries:</p>
-<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(tidyverse)      <span class="co"># To do data science</span>
-<span class="kw">library</span>(magrittr)       <span class="co"># To use %&lt;&gt;% pipes</span>
-<span class="kw">library</span>(here)           <span class="co"># To find files</span>
-<span class="kw">library</span>(janitor)        <span class="co"># To clean input data</span>
-<span class="kw">library</span>(digest)         <span class="co"># To generate hashes</span>
-<span class="kw">library</span>(rgbif)          <span class="co"># To use GBIF services</span>
+<div id="get-distributions" class="section level2">
+<h2><span class="header-section-number">3.2</span> Get distributions</h2>
+<ol style="list-style-type: decimal">
+<li><p>Get distributions for our taxa from GBIF.</p></li>
+<li><p>Save to <a href="https://github.com/trias-project/unified-checklist/blob/master/data/raw/distributions.csv">CSV</a>.</p></li>
+</ol>
+</div>
+<div id="get-species-profiles" class="section level2">
+<h2><span class="header-section-number">3.3</span> Get species profiles</h2>
+<ol style="list-style-type: decimal">
+<li><p>Get species profiles for our taxa from GBIF.</p></li>
+<li><p>Save to <a href="https://github.com/trias-project/unified-checklist/blob/master/data/raw/speciesprofiles.csv">CSV</a>.</p></li>
+</ol>
+</div>
+<div id="get-descriptions" class="section level2">
+<h2><span class="header-section-number">3.4</span> Get descriptions</h2>
+<ol style="list-style-type: decimal">
+<li><p>Get descriptions for our taxa from GBIF.</p></li>
+<li><p>Save to <a href="https://github.com/trias-project/unified-checklist/blob/master/data/raw/descriptions.csv">CSV</a>.</p></li>
+</ol>
 
-<span class="co"># devtools::install_github(&quot;trias-project/trias&quot;)</span>
-<span class="kw">library</span>(trias)          <span class="co"># To use functions developed for TrIAS</span></code></pre>
-
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
-<a href="1_get_taxa.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="1_get_taxa.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="3_verify_taxa.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -264,7 +277,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/trias-project/unified-checklist/blob/master/src/index.Rmd",
+"link": "https://github.com/trias-project/unified-checklist/blob/master/src/src/2_get_information.Rmd",
 "text": "Edit"
 },
 "history": {

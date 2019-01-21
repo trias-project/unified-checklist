@@ -5,11 +5,11 @@
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>National, unified checklist of alien species in Belgium</title>
-  <meta name="description" content="National, unified checklist of alien species in Belgium">
+  <title>5 Unify taxa | National, unified checklist of alien species in Belgium</title>
+  <meta name="description" content="5 Unify taxa | National, unified checklist of alien species in Belgium>
   <meta name="generator" content="bookdown  and GitBook 2.6.7">
 
-  <meta property="og:title" content="National, unified checklist of alien species in Belgium" />
+  <meta property="og:title" content="5 Unify taxa | National, unified checklist of alien species in Belgium />
   <meta property="og:type" content="book" />
   
   
@@ -17,7 +17,7 @@
   <meta name="github-repo" content="trias-project/unified-checklist" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="National, unified checklist of alien species in Belgium" />
+  <meta name="twitter:title" content="5 Unify taxa | National, unified checklist of alien species in Belgium />
   
   
   
@@ -32,8 +32,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
-
-<link rel="next" href="1_get_taxa.html">
+<link rel="prev" href="3_verify_taxa.html">
+<link rel="next" href="5_unify_information.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -208,33 +208,53 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">National, unified checklist of alien species in Belgium</h1>
-<p class="author"><em>Peter Desmet, Damiano Oldoni</em></p>
-<p class="date"><em>2019-01-18</em></p>
+<div id="unify-taxa" class="section level1">
+<h1><span class="header-section-number">5</span> Unify taxa</h1>
+<p>In this chapter we unify taxa on their <code>verificationKey</code>.</p>
+<div id="read-taxa-2" class="section level2">
+<h2><span class="header-section-number">5.1</span> Read taxa</h2>
+<p>Read taxa from <a href="https://github.com/trias-project/unified-checklist/blob/master/data/interim/taxa_with_verification.csv"><code>data/interim/taxa_with_verification.csv</code></a>.</p>
 </div>
-<div id="intro" class="section level1">
-<h1><span class="header-section-number">1</span> Intro</h1>
-<p>This document contains and describes all the steps in creating a unified checklist of alien species in Belgium and was developed for the <a href="http://trias-project.be">Tracking Invasive Alien Species (TrIAS) project</a>. By running this document in R, it will create all the necessary data files for the unified checklist.</p>
-<p>Load libraries:</p>
-<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(tidyverse)      <span class="co"># To do data science</span>
-<span class="kw">library</span>(magrittr)       <span class="co"># To use %&lt;&gt;% pipes</span>
-<span class="kw">library</span>(here)           <span class="co"># To find files</span>
-<span class="kw">library</span>(janitor)        <span class="co"># To clean input data</span>
-<span class="kw">library</span>(digest)         <span class="co"># To generate hashes</span>
-<span class="kw">library</span>(rgbif)          <span class="co"># To use GBIF services</span>
+<div id="unify-taxa-1" class="section level2">
+<h2><span class="header-section-number">5.2</span> Unify taxa</h2>
+<ol style="list-style-type: decimal">
+<li><p>Remove taxa without verificationKey.</p></li>
+<li><p>Separate multiple <code>verificationKey</code>s (if any) for single taxa.</p></li>
+<li><p>Group taxa by <code>verificationKey</code> (saving <code>sourceChecklists</code> and <code>sourceTaxa</code> bundled per key).</p></li>
+<li><p>Extract <code>verificationKey</code> as a vector.</p></li>
+<li><p>Number of unique taxa: 3502</p></li>
+</ol>
+</div>
+<div id="get-gbif-backbone-taxonomy-information-1" class="section level2">
+<h2><span class="header-section-number">5.3</span> Get GBIF backbone taxonomy information</h2>
+<p>Even though we stored some backbone information for most of our taxa in the previous steps, we want to start from scratch here and retrieve it from GBIF again, as 1) some taxon keys in <code>verificationKey</code>s will be new and 2) we want to store more attributes per taxon this time.</p>
+<ol style="list-style-type: decimal">
+<li><p>Get GBIF backbone taxonomy information.</p></li>
+<li><p>Rename <code>accepted</code> to <code>acceptedName</code>.</p></li>
+<li><p>Select columns of interest.</p></li>
+<li><p>Join backbone information with our unified taxa, so we keep <code>sourceChecklists</code> and <code>sourceTaxa</code>.</p></li>
+<li><p>Move columns <code>sourceChecklists</code> and <code>sourceTaxa</code> to the end.</p></li>
+<li><p>Preview merged information:</p></li>
+</ol>
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["verificationKey"],"name":[1],"type":["int"],"align":["right"]},{"label":["scientificName"],"name":[2],"type":["chr"],"align":["left"]},{"label":["nameKey"],"name":[3],"type":["int"],"align":["right"]},{"label":["taxonID"],"name":[4],"type":["chr"],"align":["left"]},{"label":["kingdom"],"name":[5],"type":["chr"],"align":["left"]},{"label":["phylum"],"name":[6],"type":["chr"],"align":["left"]},{"label":["class"],"name":[7],"type":["chr"],"align":["left"]},{"label":["order"],"name":[8],"type":["chr"],"align":["left"]},{"label":["family"],"name":[9],"type":["chr"],"align":["left"]},{"label":["genus"],"name":[10],"type":["chr"],"align":["left"]},{"label":["species"],"name":[11],"type":["chr"],"align":["left"]},{"label":["datasetKey"],"name":[12],"type":["chr"],"align":["left"]},{"label":["parentKey"],"name":[13],"type":["int"],"align":["right"]},{"label":["parent"],"name":[14],"type":["chr"],"align":["left"]},{"label":["canonicalName"],"name":[15],"type":["chr"],"align":["left"]},{"label":["authorship"],"name":[16],"type":["chr"],"align":["left"]},{"label":["nameType"],"name":[17],"type":["chr"],"align":["left"]},{"label":["rank"],"name":[18],"type":["chr"],"align":["left"]},{"label":["taxonomicStatus"],"name":[19],"type":["chr"],"align":["left"]},{"label":["acceptedKey"],"name":[20],"type":["int"],"align":["right"]},{"label":["acceptedName"],"name":[21],"type":["chr"],"align":["left"]},{"label":["sourceChecklists"],"name":[22],"type":["chr"],"align":["left"]},{"label":["sourceTaxa"],"name":[23],"type":["chr"],"align":["left"]}],"data":[{"1":"1002621","2":"Keratella tropica (Apstein, 1907)","3":"5863009","4":"gbif:1002621","5":"Animalia","6":"Rotifera","7":"Eurotatoria","8":"Ploima","9":"Brachionidae","10":"Keratella","11":"Keratella tropica","12":"d7dddbf4-2cf0-4f39-9b2a-bb099caae36c","13":"1002582","14":"Keratella","15":"Keratella tropica","16":"(Apstein, 1907)","17":"SCIENTIFIC","18":"SPECIES","19":"ACCEPTED","20":"NA","21":"NA","22":"3f5e930b-52a5-461d-87ec-26ecd66f14a3","23":"145953348"},{"1":"1005581","2":"Scruparia ambigua (d'Orbigny, 1841)","3":"10231695","4":"gbif:1005581","5":"Animalia","6":"Bryozoa","7":"Gymnolaemata","8":"Cheilostomatida","9":"Scrupariidae","10":"Scruparia","11":"Scruparia ambigua","12":"d7dddbf4-2cf0-4f39-9b2a-bb099caae36c","13":"1005579","14":"Scruparia","15":"Scruparia ambigua","16":"(d'Orbigny, 1841)","17":"SCIENTIFIC","18":"SPECIES","19":"ACCEPTED","20":"NA","21":"NA","22":"3f5e930b-52a5-461d-87ec-26ecd66f14a3","23":"145953611"},{"1":"1005677","2":"Watersipora subtorquata (d'Orbigny, 1852)","3":"11836667","4":"gbif:1005677","5":"Animalia","6":"Bryozoa","7":"Gymnolaemata","8":"Cheilostomatida","9":"Watersiporidae","10":"Watersipora","11":"Watersipora subtorquata","12":"d7dddbf4-2cf0-4f39-9b2a-bb099caae36c","13":"1005669","14":"Watersipora","15":"Watersipora subtorquata","16":"(d'Orbigny, 1852)","17":"SCIENTIFIC","18":"SPECIES","19":"ACCEPTED","20":"NA","21":"NA","22":"3f5e930b-52a5-461d-87ec-26ecd66f14a3","23":"145953642"},{"1":"1007770","2":"Membranipora membranacea (Linnaeus, 1767)","3":"6860008","4":"gbif:1007770","5":"Animalia","6":"Bryozoa","7":"Gymnolaemata","8":"Cheilostomatida","9":"Membraniporidae","10":"Membranipora","11":"Membranipora membranacea","12":"d7dddbf4-2cf0-4f39-9b2a-bb099caae36c","13":"1006457","14":"Membranipora","15":"Membranipora membranacea","16":"(Linnaeus, 1767)","17":"SCIENTIFIC","18":"SPECIES","19":"ACCEPTED","20":"NA","21":"NA","22":"3f5e930b-52a5-461d-87ec-26ecd66f14a3","23":"145953650"},{"1":"1008955","2":"Fenestrulina delicia Winston, Hayward & Craig, 2000","3":"4419528","4":"gbif:1008955","5":"Animalia","6":"Bryozoa","7":"Gymnolaemata","8":"Cheilostomatida","9":"Microporellidae","10":"Fenestrulina","11":"Fenestrulina delicia","12":"d7dddbf4-2cf0-4f39-9b2a-bb099caae36c","13":"1008901","14":"Fenestrulina","15":"Fenestrulina delicia","16":"Winston, Hayward & Craig, 2000","17":"SCIENTIFIC","18":"SPECIES","19":"ACCEPTED","20":"NA","21":"NA","22":"3f5e930b-52a5-461d-87ec-26ecd66f14a3","23":"145953656"},{"1":"1010644","2":"Hanseniella caldaria (Hansen, 1903)","3":"4986413","4":"gbif:1010644","5":"Animalia","6":"Arthropoda","7":"Symphyla","8":"NA","9":"Scutigerellidae","10":"Hanseniella","11":"Hanseniella caldaria","12":"d7dddbf4-2cf0-4f39-9b2a-bb099caae36c","13":"1010637","14":"Hanseniella","15":"Hanseniella caldaria","16":"(Hansen, 1903)","17":"SCIENTIFIC","18":"SPECIES","19":"ACCEPTED","20":"NA","21":"NA","22":"1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2","23":"148437977"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+<ol start="7" style="list-style-type: decimal">
+<li><p>Number of taxa: 3502</p></li>
+<li><p>Save to <a href="https://github.com/trias-project/unified-checklist/blob/master/data/interim/taxa_unified.csv">CSV</a>.</p></li>
+</ol>
 
-<span class="co"># devtools::install_github(&quot;trias-project/trias&quot;)</span>
-<span class="kw">library</span>(trias)          <span class="co"># To use functions developed for TrIAS</span></code></pre>
-
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
-<a href="1_get_taxa.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="3_verify_taxa.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="5_unify_information.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -264,7 +284,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/trias-project/unified-checklist/blob/master/src/index.Rmd",
+"link": "https://github.com/trias-project/unified-checklist/blob/master/src/src/4_unify_taxa.Rmd",
 "text": "Edit"
 },
 "history": {

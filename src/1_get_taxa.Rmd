@@ -1,3 +1,13 @@
+# Load libraries
+
+```{r}
+library(tidyverse)      # To do data science
+library(magrittr)       # To use %<>% pipes
+library(here)           # To find files
+library(rgbif)
+```
+
+
 # Get taxa from checklists
 
 In this chapter we select species checklists and retrieve the taxa they contain.
@@ -24,7 +34,7 @@ checklist_keys <- c(
 
 ```{r get_taxa-get_checklist_metadata_from_gbif, cache = TRUE}
 checklists <-
-  map(checklist_keys, function(x) rgbif::datasets(uuid = x)) %>%
+  map(checklist_keys, function(x) datasets(uuid = x)) %>%
   map_df(function(x) list(
     datasetKey = x$data$key,
     title = x$data$title,

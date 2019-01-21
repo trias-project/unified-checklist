@@ -178,6 +178,7 @@ speciesprofiles_unified <-
     freshwater = first(freshwater),
     terrestrial = first(terrestrial),
     sourceTaxon = first(taxonKey)
+    scientificName = first(scientificName)
   )
 ```
 
@@ -201,6 +202,7 @@ speciesprofiles_unified <-
     terrestrial = first(terrestrial),
     sourceChecklist = first(datasetKey),
     sourceTaxon = first(sourceTaxon)
+    scientificName = first(scientificName)
   ) %>%
 
   # Sort by verificationKey

@@ -94,11 +94,12 @@ distributions_unified <-
     verificationKey
   ) %>%
   
-  # Take earliest year, latest year and note taxonIDs
+  # Take earliest year, latest year and note taxonKeys and scientificName:
   summarize(
     startYear = as.integer(min(startYear, na.rm = TRUE)),
     endYear = as.integer(max(endYear, na.rm = TRUE)),
-    sourceTaxa = paste(sort(unique(taxonKey)), collapse = ",")
+    taxonKey = paste(sort(unique(taxonKey)), collapse = ","),
+    scientificName = paste(sort(unique(scientificName)), collapse = ",")
   )
 ```
 
@@ -119,8 +120,9 @@ distributions_unified <-
   summarize(
     startYear = first(startYear),
     endYear = first(endYear),
-    sourceChecklist = first(datasetKey),
-    sourceTaxa = first(sourceTaxa)
+    datasetKey = first(datasetKey),
+    taxonKey = first(taxonKey),
+    
   ) %>%
 
   # Sort by verificationKey

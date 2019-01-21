@@ -194,7 +194,7 @@ speciesprofiles_unified <-
   group_by(verificationKey) %>%
   
   # Select species profile of most trustworthy checklist (first one)
-  # and note that checklist and its taxonID
+  # and note that checklist and its taxonKey
   summarize(
     marine = first(marine),
     freshwater = first(freshwater),

@@ -30,8 +30,7 @@ checklists <-
     title = x$data$title,
     modified = x$data$modified,
     publisher = x$data$publishingOrganizationKey,
-    doi = x$data$doi,
-    citation = x$data$citation$text
+    doi = x$data$doi
   ))
 checklists
 ```

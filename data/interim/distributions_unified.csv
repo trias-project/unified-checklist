@@ -927,7 +927,7 @@ verificationKey,startYear,endYear,datasetKey,taxonKey,scientificName
 2781103,2016,2016,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266997,Hemerocallis lilioasphodelus L.
 2784401,1812,1812,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264834,Traunsteinera globosa (L.) Reichenb.
 2840931,1902,2018,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264832,Goodyera repens (L.) R. Brown
-2855356,1939,2018,9ff7d317-609b-4c08-bd86-3bc404b77c42,"141267243,141267246","Galanthus nivalis L. var. scharlockii Caspary,Galanthus x warei J. Allen"
+2855356,1939,2018,9ff7d317-609b-4c08-bd86-3bc404b77c42,"141267243,141267246","Galanthus x warei J. Allen,Galanthus nivalis L. var. scharlockii Caspary"
 2855374,1984,1984,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267248,Galanthus ikariae Baker
 2855439,2015,2017,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267233,Galanthus woronowii Losinsk.
 2855705,2018,2018,9ff7d317-609b-4c08-bd86-3bc404b77c42,148437475,Allium lusitanicum Lam.
@@ -1605,7 +1605,7 @@ verificationKey,startYear,endYear,datasetKey,taxonKey,scientificName
 3088310,1989,2018,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265163,Petasites japonicus (Siebold & Zucc.) Maxim.
 3088405,1928,1955,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265096,Leucanthemella serotina (L.) Tzvelev
 3088481,1880,2008,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265349,Tagetes minuta L.
-3088488,1953,2017,9ff7d317-609b-4c08-bd86-3bc404b77c42,"141265127,141265237","Tagetes erecta L.,Tagetes patula L."
+3088488,1953,2017,9ff7d317-609b-4c08-bd86-3bc404b77c42,"141265127,141265237","Tagetes patula L.,Tagetes erecta L."
 3088652,2015,2015,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265232,"Guizotia scabra (Vis,) Chiov. subsp. schimperi (Sch. Bip.) J. Baagøe"
 3089146,1824,2018,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265106,Xanthium orientale L. s.l.
 3089150,1848,2015,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265242,Xanthium spinosum L.

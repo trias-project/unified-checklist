@@ -98,8 +98,8 @@ distributions_unified <-
   summarize(
     startYear = as.integer(min(startYear, na.rm = TRUE)),
     endYear = as.integer(max(endYear, na.rm = TRUE)),
-    taxonKey = paste(sort(unique(taxonKey)), collapse = ","),
-    scientificName = paste(sort(unique(scientificName)), collapse = ",")
+    taxonKey = paste(unique(taxonKey), collapse = ","),
+    scientificName = paste(unique(scientificName), collapse = ",")
   )
 ```
 
@@ -246,7 +246,8 @@ descriptions_unified <-
     datasetKey,
     checklistOrder,
     verificationKey,
-    type
+    type,
+    description
   ) %>%
   
   # Choose distinct value for that type and verificationKey
@@ -254,9 +255,11 @@ descriptions_unified <-
   # most trustworthy (first one)
   
   # Note: since we use distinct we can't keep a sourceTaxon (taxonKey)
-  distinct(
-    description
-  )
+  summarize(
+    description_2 = first(description) 
+#    taxonKey = first(taxonKey)
+  ) %>% 
+  select(-description)
 ```
 
 3. Select unique descriptions (within their type) across checklists.

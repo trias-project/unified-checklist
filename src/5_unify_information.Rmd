@@ -94,11 +94,12 @@ distributions_unified <-
     verificationKey
   ) %>%
   
-  # Take earliest year, latest year and note taxonIDs
+  # Take earliest year, latest year and note taxonKeys and scientificName:
   summarize(
     startYear = as.integer(min(startYear, na.rm = TRUE)),
     endYear = as.integer(max(endYear, na.rm = TRUE)),
-    sourceTaxa = paste(sort(unique(taxonKey)), collapse = ",")
+    taxonKey = paste(unique(taxonKey), collapse = ","),
+    scientificName = paste(unique(scientificName), collapse = ",")
   )
 ```
 
@@ -119,8 +120,9 @@ distributions_unified <-
   summarize(
     startYear = first(startYear),
     endYear = first(endYear),
-    sourceChecklist = first(datasetKey),
-    sourceTaxa = first(sourceTaxa)
+    datasetKey = first(datasetKey),
+    taxonKey = first(taxonKey),
+    scientificName = first(scientificName)
   ) %>%
 
   # Sort by verificationKey
@@ -158,7 +160,7 @@ speciesprofiles_unified <-
   speciesprofiles_unified %>%
 
   # Join species profile with taxon to get verificationKey and checklist order
-  left_join(taxa, on = taxonID) %>%
+  left_join(taxa, on = taxonKey) %>%
   
   # Remove records that have no verificationKey (e.g. one wasn't assigned yet)
   filter(!is.na(verificationKey)) %>%
@@ -175,7 +177,8 @@ speciesprofiles_unified <-
     marine = first(marine),
     freshwater = first(freshwater),
     terrestrial = first(terrestrial),
-    sourceTaxon = first(taxonKey)
+    taxonKey = first(taxonKey),
+    scientificName = first(scientificName)
   )
 ```
 
@@ -192,13 +195,14 @@ speciesprofiles_unified <-
   group_by(verificationKey) %>%
   
   # Select species profile of most trustworthy checklist (first one)
-  # and note that checklist and its taxonID
+  # and note that checklist and its taxonKey
   summarize(
     marine = first(marine),
     freshwater = first(freshwater),
     terrestrial = first(terrestrial),
-    sourceChecklist = first(datasetKey),
-    sourceTaxon = first(sourceTaxon)
+    datasetKey = first(datasetKey),
+    taxonKey = first(taxonKey),
+    scientificName = first(scientificName)
   ) %>%
 
   # Sort by verificationKey
@@ -242,16 +246,14 @@ descriptions_unified <-
     datasetKey,
     checklistOrder,
     verificationKey,
-    type
+    type,
+    description
   ) %>%
   
-  # Choose distinct value for that type and verificationKey
-  # If identical values exist within that grouping, distinct() will take 
-  # most trustworthy (first one)
-  
-  # Note: since we use distinct we can't keep a sourceTaxon (taxonKey)
-  distinct(
-    description
+  # Take first taxonKey and scientificName
+  summarize(
+    taxonKey = first(taxonKey),
+    scientificName = first(scientificName)
   )
 ```
 
@@ -267,20 +269,19 @@ descriptions_unified <-
   # Group by type and verificationKey across checklists
   group_by(
     type,
+    description,
     verificationKey
   ) %>%
   
-  # Choose distinct value for that type and verificationKey
-  distinct(
-    description,
-    .keep_all = TRUE
+  # Select first datasetKey, taxonKey and scientificName
+  summarize(
+    datasetKey = first(datasetKey),
+    taxonKey = first(taxonKey),
+    scientificName = first(scientificName)
   ) %>%
 
   # Move verificationKey to beginning and drop checklist_order
-  select(verificationKey, everything(), -checklistOrder) %>%
-  
-  # Rename checklist
-  rename(sourceChecklist = datasetKey) %>%
+  select(verificationKey, everything()) %>%
   
   # Sort by verificationKey and type
   arrange(verificationKey, type)

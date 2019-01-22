@@ -123,7 +123,7 @@ distributions_unified <-
     datasetKey = first(datasetKey),
     taxonKey = first(taxonKey),
     scientificName = first(scientificName)
-    )%>%
+  ) %>%
 
   # Sort by verificationKey
   arrange(verificationKey)

@@ -270,8 +270,61 @@ taxon %<>% mutate(scientificNameAuthorship = input_authorship)
 
 ### taxonRemarks
 
+Here, we integrate the reference (doi) of the *source* of the taxon information (contained in `input_sourceChecklists`), i.e. the link to the specific taxon in the specific checklist.
+
+`input_sourceChecklist` now integrates all keys of the original checklists (sources) that include the specific taxon, separated by a comma. We need to split these keys and transform `taxon` such that one row contains only one sourceChecklist:
+
 ```{r}
-# TODO: This taxon bundles data from checklists and taxa?
+# Split `input_sourceChecklist` based on ",". The maximal amount of generated columns equals the total amount of source checklists in `checklists:
+
+taxon %<>% separate(input_sourceChecklists, 
+                    into = c(paste("source", 1:nrow(checklists), sep = "_")), 
+                    sep =",", 
+                    fill = "right") 
+
+# Create `taxon` with one row containing only one sourceChecklist:
+
+taxon %<>% gather(
+  key = source, 
+  value = key,
+  paste("source", 1:nrow(checklists), sep = "_"),
+  na.rm = TRUE, 
+  convert = FALSE)
+
+# Order by `input_verificationKey`:
+
+taxon %<>% arrange(input_verificationKey)
+```
+  
+Next, We combine the keys of the original sources with their respective doi's using `checklists`:
+
+```{r}
+taxon %<>% left_join(
+  select(checklists, datasetKey, doi),
+  by = c("key" = "datasetKey"))
+```
+
+Transform `taxon` to wide dataset, with one row containing the information from one `verificationKey`:
+
+```{r}
+# First remove column `key` (information is now in `doi`)
+taxon %<>% select(-key)
+
+# Transform taxon to wide dataset, with one column containing one doi of the source checklist:
+taxon %<>% spread(source, doi)
+```
+
+Generate `taxonRemarks` by combining information in the source columns:
+
+```{r}
+# Combine source information in one column:
+taxon %<>% unite(col = "source", starts_with("source_"), sep = ",")
+
+# Delete "NA":
+taxon %<>% mutate(source = str_remove_all(source,"(,NA)"))
+
+# Add "Sources considered for unifying information: "
+taxon %<>% mutate(taxonRemarks = paste("Sources considered for unifying information:", source, sep = " "))
 ```
 
 ## Post-processing

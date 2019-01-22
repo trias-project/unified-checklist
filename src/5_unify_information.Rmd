@@ -250,16 +250,10 @@ descriptions_unified <-
     description
   ) %>%
   
-  # Choose distinct value for that type and verificationKey
-  # If identical values exist within that grouping, distinct() will take 
-  # most trustworthy (first one)
-  
-  # Note: since we use distinct we can't keep a sourceTaxon (taxonKey)
-  summarize(
-    description_2 = first(description) 
-#    taxonKey = first(taxonKey)
-  ) %>% 
-  select(-description)
+  # Take first taxonKey and scientificName
+  summarize(taxonKey = first(taxonKey),
+            scientificName = first(scientificName)
+  )
 ```
 
 3. Select unique descriptions (within their type) across checklists.
@@ -274,20 +268,19 @@ descriptions_unified <-
   # Group by type and verificationKey across checklists
   group_by(
     type,
+    description,
     verificationKey
   ) %>%
   
-  # Choose distinct value for that type and verificationKey
-  distinct(
-    description,
-    .keep_all = TRUE
+  # Select first datasetKey, taxonKey and scientificName
+  summarize(
+    datasetKey = first(datasetKey),
+    taxonKey = first(taxonKey),
+    scientificName = first(scientificName)
   ) %>%
 
   # Move verificationKey to beginning and drop checklist_order
-  select(verificationKey, everything(), -checklistOrder) %>%
-  
-  # Rename checklist
-  rename(sourceChecklist = datasetKey) %>%
+  select(verificationKey, everything()) %>%
   
   # Sort by verificationKey and type
   arrange(verificationKey, type)

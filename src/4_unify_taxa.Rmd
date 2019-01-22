@@ -49,7 +49,7 @@ taxa_unified <-
   select(-field)
 ```
 
-3. Group taxa by `verificationKey` (saving `sourceChecklists` and `sourceTaxa` bundled per key).
+3. Group taxa by `verificationKey` (saving `datasetKey` and `taxonKey` bundled per key).
 
 ```{r unify_taxa-4}
 taxa_unified <-
@@ -59,8 +59,8 @@ taxa_unified <-
   
   # Note contained checklists and taxa
   summarize(
-    sourceChecklists = paste(sort(unique(datasetKey)), collapse = ","),
-    sourceTaxa = paste(sort(unique(taxonKey)), collapse = ",")
+    datasetKey = paste(sort(unique(datasetKey)), collapse = ","),
+    taxonKey = paste(sort(unique(taxonKey)), collapse = ",")
   )
 ```
 
@@ -131,7 +131,7 @@ backbone_info <-
   )
 ```
 
-4. Join backbone information with our unified taxa, so we keep `sourceChecklists` and `sourceTaxa`.
+4. Join backbone information with our unified taxa, so we keep `datasetKey` and `taxonKey`.
 
 ```{r unify_taxa-8}
 taxa_unified <-
@@ -142,13 +142,15 @@ taxa_unified <-
   )
 ```
 
-5. Move columns `sourceChecklists` and `sourceTaxa` to the end.
+5. Move columns `datasetKey` and `taxonKey` to the end and rename:
 
 ```{r unify_taxa-9}
 taxa_unified <-
   taxa_unified %>%
-  select(-sourceChecklists,everything()) %>%
-  select(-sourceTaxa,everything())
+  select(-datasetKey.x,everything()) %>%
+  select(-taxonKey,everything()) %>% 
+  select(-datasetKey.y) %>% 
+  rename(datasetKey = datsetKey.x)
 ```
 
 6. Preview merged information:

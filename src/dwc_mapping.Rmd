@@ -332,7 +332,7 @@ taxon %<>% mutate(taxonRemarks = paste("Sources considered for unifying informat
 Remove the original columns:
 
 ```{r}
-taxon %<>% select(-starts_with("input_"))
+taxon %<>% select(-starts_with("input_"), -source)
 ```
 
 Preview data:
@@ -381,17 +381,6 @@ Map the data to [Literature References](http://rs.gbif.org/extension/gbif/1.0/re
 
 ```{r}
 # TODO: concatenated list with: "distribution, speciesProfile, description"
-```
-
-### datasetID
-
-```{r}
-# TODO: maybe repeat DOI here??
-```
-
-## Post-processing
-
-...
 
 # Distribution extension
 

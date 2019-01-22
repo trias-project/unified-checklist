@@ -253,7 +253,7 @@ descriptions_unified <-
   # Take first taxonKey and scientificName
   summarize(
     taxonKey = first(taxonKey),
-            scientificName = first(scientificName)
+    scientificName = first(scientificName)
   )
 ```
 

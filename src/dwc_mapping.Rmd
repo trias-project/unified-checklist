@@ -347,40 +347,7 @@ Save to CSV:
 write_csv(taxon, here("data", "processed", "taxon.csv"), na = "")
 ```
 
-# Literature reference extension
 
-TODO: this looks like the best way to capture the checklists that contributed to the information unified here. Note, to know actual contribution, it is best to join `distributions`, `descriptions` and `speciesProfiles` and get `sourceChecklist` rather than using `sourceChecklists` in `taxa`.
-
-## Pre-processing
-
-...
-
-Map the data to [Literature References](http://rs.gbif.org/extension/gbif/1.0/references.xml).
-
-## Term mapping
-
-### identifier
-
-```{r}
-# TODO: DOI of sourceChecklist (is internal identifier)
-```
-
-### bibliographicCitation
-
-```{r}
-# TODO: See checklist metadata from GBIF
-```
-
-### date
-
-```{r}
-# TODO: Last publication date
-```
-
-### subject
-
-```{r}
-# TODO: concatenated list with: "distribution, speciesProfile, description"
 
 # Distribution extension
 

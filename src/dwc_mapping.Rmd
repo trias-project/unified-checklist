@@ -444,3 +444,75 @@ Map the data to ...
 ## Post-processing
 
 ...
+
+# Create species profile extension
+
+In this extension will express broad habitat characteristics of the species.
+
+```{r}
+species_profile <- input_speciesprofiles
+```
+
+## Term mapping
+
+Map the data to [Species Profile](http://rs.gbif.org/extension/gbif/1.0/speciesprofile.xml).
+
+### taxonID
+
+```{r}
+species_profile %<>% mutate(taxonID = paste0("https://www.gbif.org/species/", input_verificationKey))
+```
+
+### isMarine
+```{r}
+species_profile %<>% mutate(isMarine = input_marine)
+```
+
+### isFreshwater
+
+```{r}
+species_profile %<>% mutate(isFreshwater = input_freshwater)
+```
+
+### isTerrestrial
+
+```{r}
+species_profile %<>% mutate(isTerrestrial = input_terrestrial)
+```
+
+### source
+
+```{r}
+species_profile %<>% mutate(source = )   # use build_source_citation function
+```
+
+## Post-processing
+
+Remove the original columns:
+
+```{r}
+species_profile %<>% select(-starts_with("raw_"))
+```
+
+Sort on `taxonID`:
+
+```{r}
+species_profile %<>% arrange(taxonID)
+```
+
+Preview data:
+
+```{r}
+species_profile %>% head()
+```
+
+Save to CSV:
+
+```{r}
+write.csv(species_profile, file = dwc_profile_file, na = "", row.names = FALSE, fileEncoding = "UTF-8")
+```
+
+
+
+
+

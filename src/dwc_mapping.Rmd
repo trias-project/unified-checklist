@@ -374,12 +374,12 @@ build_source_citation <- function(extension, datasetKey_extension){
   
   extension <-
     extension %>% 
-    mutate(source = paste(
+    mutate(source = paste0(
       "https://www.gbif.org/species/",
       input_taxonKey,
-      ":",
+      ": ",
       input_scientificName,
-      "in",
+      "in  ",
       citation,
       sep = " "
     ))

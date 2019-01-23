@@ -358,7 +358,7 @@ write_csv(taxon, here("data", "processed", "taxon.csv"), na = "")
 All records in the extensions will be documented with a source, i.e. the link to the specific checklist taxon that was used for the specific piece of information. We build this function here first.
 
 ```{r}
-build_source_citation <- function(extension){
+build_source_citation <- function(extension, checklists){
   
   # Join the extension and source_citation by their datasetKey:
   

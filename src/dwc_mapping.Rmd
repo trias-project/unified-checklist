@@ -360,19 +360,13 @@ All records in the extensions will be documented with a source, i.e. the link to
 ```{r}
 build_source_citation <- function(extension, datasetKey_extension){
   
-  # Select the citation of the source checlist: 
-  
-  checklist_citation <- 
-    checklists %>% 
-    select(datasetKey, citation)
-  
   # Join the extension and source_citation by their datasetKey:
   
   extension <-
     extension %>% 
     left_join(
-      checklist_citation,
       by = setNames("datasetKey", datasetKey_extension)
+      select(checklists, datasetKey, citation),
     ) 
   
   # Generate the field `source` by combining `taxonKey`, `scientificName` and `citation`. This is an example of how the final source should look like: 

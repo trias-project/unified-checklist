@@ -95,24 +95,22 @@ taxon %<>% mutate(language = "en")
 ### license
 
 ```{r}
-# TODO: Taxa info comes from backbone (CC-BY), rest from datasets 
-# (might not always be CC0)
 taxon %<>% mutate(license = "http://creativecommons.org/publicdomain/zero/1.0/")
 ```
 
 ### rightsHolder
 
 ```{r}
-# TODO: Could be publisher of this dataset (INBO), publisher of taxa (GBIF) 
-# or publishers of info (checklist datasets)
-taxon %<>% mutate(rightsHolder = "Public Domain Dedication")
+taxon %<>% mutate(rightsHolder = "")
 ```
 
 ### accessRights
 
 ```{r}
-# TODO: Depends on rightsHolder
+taxon %<>% mutate(accessRights = "") 
 ```
+
+### bibliographicCitation ?
 
 ### datasetID
 
@@ -123,7 +121,7 @@ taxon %<>% mutate(datasetID = "")
 ### institutionCode
 
 ```{r}
-taxon %<>% mutate(institutionCode = "INBO")
+taxon %<>% mutate(institutionCode = "")
 ```
 
 ### datasetName
@@ -141,7 +139,6 @@ taxon %<>% mutate(references = paste0("https://www.gbif.org/species/", input_ver
 ### taxonID
 
 ```{r}
-# TODO: Could also be gbif:input_verificationKey
 taxon %<>% mutate(taxonID = paste0("https://www.gbif.org/species/", input_verificationKey))
 ```
 
@@ -385,6 +382,12 @@ distribution %<>% mutate(countryCode = "BE")
 
 ```{r}
 distribution %<>% mutate(occurrenceStatus = "present") 
+```
+
+### establishmentMeans
+
+```{r}
+distribution %<>% mutate(establishmentMeans = "introduced") 
 ```
 
 ### eventDate 

@@ -378,7 +378,7 @@ build_source_citation <- function(extension, checklists){
       input_taxonKey,
       ": ",
       input_scientificName,
-      "in  ",
+      " in ",
       citation,
       sep = " "
     ))

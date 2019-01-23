@@ -375,8 +375,8 @@ build_source_citation <- function(extension, checklists){
       " in ",
       citation,
       sep = " "
-    ))
-  }
+    )) %>% 
+    select(-citation)           # Remove citation from the dataframe
     }
 ```
 

@@ -372,7 +372,6 @@ build_source_citation <- function(extension){
   # Generate the field `source` by combining `taxonKey`, `scientificName` and `citation`. This is an example of how the final source should look like: 
   # https://www.gbif.org/species/141264581: Nymphaea marliacea Marliac in Verloove F, Groom Q, Brosens D, Desmet P, Reyserhove L (2018). Manual of the Alien Plants of Belgium. Version 1.7. Botanic Garden Meise. Checklist dataset https://doi.org/10.15468/wtda1m
   
-  extension <-
     extension %>% 
     mutate(source = paste0(
       "https://www.gbif.org/species/",

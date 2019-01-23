@@ -348,6 +348,55 @@ write_csv(taxon, here("data", "processed", "taxon.csv"), na = "")
 ```
 
 
+```{r}
+
+```
+
+
+# Create source citation function
+
+All records in the extensions will be documented with a source, i.e. the link to the specific checklist taxon that was used for the specific piece of information. We build this function here first.
+
+```{r}
+build_source_citation <- function(extension, datasetKey_extension){
+  
+  # Select the citation of the source checlist: 
+  
+  checklist_citation <- 
+    checklists %>% 
+    select(datasetKey, citation)
+  
+  # Join the extension and source_citation by their datasetKey:
+  
+  extension <-
+    extension %>% 
+    left_join(
+      checklist_citation,
+      by = setNames("datasetKey", datasetKey_extension)
+    ) 
+  
+  # Generate the field `source` by combining `taxonKey`, `scientificName` and `citation`. This is an example of how the final source should look like: 
+  # https://www.gbif.org/species/141264581: Nymphaea marliacea Marliac in Verloove F, Groom Q, Brosens D, Desmet P, Reyserhove L (2018). Manual of the Alien Plants of Belgium. Version 1.7. Botanic Garden Meise. Checklist dataset https://doi.org/10.15468/wtda1m
+  
+  extension <-
+    extension %>% 
+    mutate(source = paste(
+      "https://www.gbif.org/species/",
+      input_taxonKey,
+      ":",
+      input_scientificName,
+      "in",
+      citation,
+      sep = " "
+    ))
+  }
+```
+
+
+```{r}
+a <- "input_datasetKey"
+input_distributions <- build_source_citation(input_distributions, a)
+```
 
 # Distribution extension
 

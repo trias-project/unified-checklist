@@ -385,11 +385,6 @@ build_source_citation <- function(extension, checklists){
   }
 ```
 
-
-```{r}
-input_distributions <- build_source_citation(input_distributions, a)
-```
-
 # Distribution extension
 
 ## Pre-processing

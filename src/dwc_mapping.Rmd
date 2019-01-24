@@ -94,8 +94,44 @@ taxon %<>% mutate(language = "en")
 
 ### license
 
+The license of the unified checklist equals the least open license of the source checklists. In the TrIAS project, the checklists can be published under the following licenses, ranked from most open (1) to most restricive (3):
+
 ```{r}
-taxon %<>% mutate(license = "http://creativecommons.org/publicdomain/zero/1.0/")
+legal_licenses <- tibble::tibble(
+  license = c(
+    "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+    "http://creativecommons.org/licenses/by/4.0/legalcode",
+    "https://creativecommons.org/licenses/by-nc/4.0/legalcode"
+    ),
+  ranking = c(1:3)
+)
+```
+
+Extract all unique licenses from the source checklists:
+
+```{r}
+checklists_licenses <- checklists %>% distinct(license)
+checklists_licenses
+```
+
+We need to consider the license of the [gbif backbone taxonomy](https://www.gbif.org/dataset/d7dddbf4-2cf0-4f39-9b2a-bb099caae36c) as well, which is a CC-BY license:
+
+```{r}
+checklists_licenses %<>% add_row(license = "http://creativecommons.org/licenses/by/4.0/legalcode")
+```
+
+We add the ranking to these licenses and extract the most restrictive one by its highest ranking:
+
+```{r}
+most_restrictive_license <- checklists_licenses %>% 
+  left_join(legal_licenses, by = "license") %>% 
+  filter(ranking == max(ranking)) %>% 
+  select(license)
+```
+
+
+```{r}
+taxon %<>% mutate(license = sQuote(most_restrictive_license))
 ```
 
 ### rightsHolder

@@ -31,7 +31,8 @@ checklists <-
     modified = x$data$modified,
     publisher = x$data$publishingOrganizationKey,
     doi = paste0("https://doi.org/", x$data$doi),
-    citation = x$data$citation$text
+    citation = x$data$citation$text,
+    license = x$data$license
   ))
 checklists
 ```

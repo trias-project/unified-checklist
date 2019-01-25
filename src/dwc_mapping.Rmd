@@ -94,7 +94,7 @@ taxon %<>% mutate(language = "en")
 
 ### license
 
-The license of the unified checklist equals the least open license of the source checklists. In the TrIAS project, the checklists can be published under the following licenses, ranked from most open (1) to more restricive (3):
+The license under which the unified checklist will be published equals the least open license of the source checklists. In the TrIAS project, the source checklists may be published under the following licenses, ranked from most open (1) to more restricive (3):
 
 ```{r}
 legal_licenses <- tibble::tibble(
@@ -115,13 +115,13 @@ checklists_licenses <- checklists %>% distinct(license)
 checklists_licenses
 ```
 
-We need to consider the license of the [gbif backbone taxonomy](https://www.gbif.org/dataset/d7dddbf4-2cf0-4f39-9b2a-bb099caae36c) as well, which is a CC-BY license:
+We need to take the license of the [gbif backbone taxonomy](https://www.gbif.org/dataset/d7dddbf4-2cf0-4f39-9b2a-bb099caae36c) into consideration as well, which is a CC-BY license:
 
 ```{r}
 checklists_licenses %<>% add_row(license = "http://creativecommons.org/licenses/by/4.0/legalcode")
 ```
 
-We add the ranking to the checklist licenses and extract the most restrictive one by its highest ranking:
+We add the ranking from `legal_licenses` to the checklist licenses and extract the most restrictive one by filtering on the highest ranking:
 
 ```{r}
 most_restrictive_license <- checklists_licenses %>% 
@@ -131,13 +131,15 @@ most_restrictive_license <- checklists_licenses %>%
 most_restrictive_license
 ```
 
-Add this to the taxon core:
+We add this to the taxon core:
 
 ```{r}
 taxon %<>% mutate(license = sQuote(most_restrictive_license))
 ```
 
 ### rightsHolder
+
+We do not set `rightsHolder` as the taxon and its related information is based on different source checklists (which in turn are based on other sources), published by different organizations, and mostly released under CC0. We make effort to credit the source in `references` (taxon core) and `source` (in the extensions).
 
 ```{r}
 taxon %<>% mutate(rightsHolder = NA)
@@ -168,6 +170,8 @@ taxon %<>% mutate(datasetName = "Unified checklist of alien species in Belgium")
 ```
 
 ### references
+
+This is the link to the taxon according to the GBIF backbone taxonomy:
 
 ```{r}
 taxon %<>% mutate(references = paste0("https://www.gbif.org/species/", input_verificationKey))
@@ -267,9 +271,9 @@ taxon %<>% mutate(scientificNameAuthorship = input_authorship)
 
 ### taxonRemarks
 
-Here, we integrate the reference (doi) of the *source* of the taxon information (contained in `input_sourceChecklists`), i.e. the link to the specific taxon in the specific checklist.
+Here, we integrate the reference (doi) of the *source* of the taxon information (contained in `input_sourceChecklists`), i.e. the link to the specific taxon in the specific checklist(s).
 
-`input_sourceChecklist` now integrates all keys of the original checklists (sources) that include the specific taxon, separated by a comma. We need to split these keys and transform `taxon` such that one row contains only one sourceChecklist:
+`input_sourceChecklist` now integrates all datasetKeys of the source checklists that include the specific taxon, separated by a comma. We need to split these keys and transform `taxon` such that one row contains only one sourceChecklist per taxon:
 
 ```{r}
 # Split `input_sourceChecklist` based on ",". The maximal amount of generated columns equals the total amount of source checklists in `checklists:
@@ -279,7 +283,7 @@ taxon %<>% separate(input_sourceChecklists,
                     sep =",", 
                     fill = "right") 
 
-# Create `taxon` with one row containing only one sourceChecklist:
+# Create `taxon` with one row containing only one sourceChecklist per taxon:
 
 taxon %<>% gather(
   key = source, 
@@ -293,7 +297,7 @@ taxon %<>% gather(
 taxon %<>% arrange(input_verificationKey)
 ```
   
-Next, We combine the keys of the original sources with their respective doi's using `checklists`:
+Next, We combine the datasetKeys of the original sources with their respective doi's using the dataframe `checklists`:
 
 ```{r}
 taxon %<>% left_join(
@@ -301,17 +305,17 @@ taxon %<>% left_join(
   by = c("key" = "datasetKey"))
 ```
 
-Transform `taxon` to wide dataset, with one row containing the information from one `verificationKey`:
+Then, we transform `taxon` to wide dataset again, with all information for one taxon bundled in one row and one doi per column:
 
 ```{r}
-# First remove column `key` (information is now in `doi`)
+# First remove column `key`:
 taxon %<>% select(-key)
 
-# Transform taxon to wide dataset, with one column containing one doi of the source checklist:
+# Transform taxon to wide dataset, with one column containing only one doi (column name starting with `source_`):
 taxon %<>% spread(source, doi)
 ```
 
-Generate `taxonRemarks` by combining information in the source columns:
+Generate `taxonRemarks` by combining information in the `source_` columns:
 
 ```{r}
 # Combine source information in one column:
@@ -320,7 +324,7 @@ taxon %<>% unite(col = "source", starts_with("source_"), sep = ",")
 # Delete "NA":
 taxon %<>% mutate(source = str_remove_all(source,"(,NA)"))
 
-# Add "Sources considered for unifying information: "
+# Add prefix "Sources considered for unifying information: "
 taxon %<>% mutate(taxonRemarks = paste("Sources considered for unifying information:", source, sep = " "))
 ```
 
@@ -346,12 +350,22 @@ write_csv(taxon, here("data", "processed", "taxon.csv"), na = "")
 
 # Create source citation function
 
-All records in the extensions will be documented with a source, i.e. the link to the specific checklist taxon that was used for the specific piece of information. We build this function here first.
+Each piece of information in the distribution, species profile or description extension will be documented with the specific source. This source is the full reference to the taxon as it is published in the source checklist on GBIF For instance, the full reference to the **distribution** of _Nymphea marliacea Marliac_ according to the Manual of alien plants is:
+
+> https://www.gbif.org/species/141264581: Nymphaea marliacea Marliac in Verloove F, Groom Q, Brosens D, Desmet P, Reyserhove L (2018). Manual of the Alien Plants of Belgium. Version 1.7. Botanic Garden Meise. Checklist dataset https://doi.org/10.15468/wtda1m. 
+
+This information is a combination of: 
+
+- `input_taxonKey`: e.g. `1412645812` (contained in `input_distributions.csv`),
+- `input_schientificName`: e.g. `Nymphaea marliacea Marliac` (contained in `input_distributions.csv`),
+- `citation`: e.g. `Verloove F, Groom Q, Brosens D, Desmet P, Reyserhove L (2018). Manual of the Alien Plants of Belgium. Version 1.7. Botanic Garden Meise. Checklist dataset https://doi.org/10.15468/wtda1m.` (contained in `checklist.csv`)
+
+To generate this full references, we need to (1) join two datasets and (2) paste the required information together in one field `source`. This process will be repeated three times (one time for each extension). To make the generation of this full reference repeatable, we here build a function `build_source_citation()`.
 
 ```{r}
 build_source_citation <- function(extension, checklists){
   
-  # Join the extension and source_citation by their datasetKey:
+  # Join the extension and citation by their datasetKey:
   
   extension <-
     extension %>% 
@@ -360,8 +374,7 @@ build_source_citation <- function(extension, checklists){
       by = setNames("datasetKey", "input_datasetKey")
     ) 
   
-  # Generate the field `source` by combining `taxonKey`, `scientificName` and `citation`. This is an example of how the final source should look like: 
-  # https://www.gbif.org/species/141264581: Nymphaea marliacea Marliac in Verloove F, Groom Q, Brosens D, Desmet P, Reyserhove L (2018). Manual of the Alien Plants of Belgium. Version 1.7. Botanic Garden Meise. Checklist dataset https://doi.org/10.15468/wtda1m
+  # Generate the field `source` by combining `taxonKey`, `scientificName` and `citation`. 
   
     extension %>% 
     mutate(source = paste0(
@@ -429,7 +442,7 @@ distribution %<>% mutate(establishmentMeans = "introduced")
 
 ### eventDate 
 
-The distribution information applies to a certain date range, which we will express here as an ISO 8601 date `yyyy/yyyy` (`input_startYear/input_endYear`). How the information for `input_startYear` and `input_endYear` is extracted from the TrIAS species checklists, is described [here](https://trias-project.github.io/unified-checklist/unify_information.html#unify-distribution). As a result, each taxon in `input_distribution` has *or* an `input_startYear` and an `input_endYear` *or* no eventDate information at all.
+The distribution information applies to a certain date range, which we will express here as an ISO 8601 date `yyyy/yyyy` (`input_startYear/input_endYear`). How the information for `input_startYear` and `input_endYear` is extracted from the source checklists, is described [here](https://trias-project.github.io/unified-checklist/unify_information.html#unify-distribution). As a result, each taxon in `input_distribution` has *or* an `input_startYear` and an `input_endYear` *or* no eventDate information at all.
 
 ```{r}
 distribution  %<>% mutate(eventDate = case_when(

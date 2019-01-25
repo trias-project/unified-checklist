@@ -160,7 +160,7 @@ taxon %<>% mutate(datasetID = "")
 ### institutionCode
 
 ```{r}
-taxon %<>% mutate(institutionCode = "")
+taxon %<>% mutate(institutionCode = "ISSG")
 ```
 
 ### datasetName

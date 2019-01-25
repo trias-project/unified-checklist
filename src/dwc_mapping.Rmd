@@ -140,16 +140,14 @@ taxon %<>% mutate(license = sQuote(most_restrictive_license))
 ### rightsHolder
 
 ```{r}
-taxon %<>% mutate(rightsHolder = "")
+taxon %<>% mutate(rightsHolder = NA)
 ```
 
-### accessRights
+### bibliographicCitation
 
 ```{r}
-taxon %<>% mutate(accessRights = "") 
+#include?
 ```
-
-### bibliographicCitation ?
 
 ### datasetID
 
@@ -547,6 +545,7 @@ species_profile %<>% mutate(taxonID = paste0("https://www.gbif.org/species/", in
 ```
 
 ### isMarine
+
 ```{r}
 species_profile %<>% mutate(isMarine = input_marine)
 ```

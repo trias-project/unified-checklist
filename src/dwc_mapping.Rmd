@@ -568,6 +568,39 @@ species_profile %<>% mutate(isTerrestrial = input_terrestrial)
 species_profile <- build_source_citation(species_profile, checklists)
 ```
 
+## habitat
+
+`habitat` summarizes all information contained in `isMarine`, `isFreshwater` and `isTerrestrial`. 
+
+```{r}
+species_profile %>% 
+  group_by(isMarine, isFreshwater, isTerrestrial) %>% 
+  summarize(records = n()) %>% 
+  arrange(isMarine, isFreshwater, isTerrestrial)
+```
+
+Map `habitat`:
+
+```{r}
+species_profile %<>% mutate(habitat = case_when(
+  isMarine == "FALSE" & isFreshwater == "FALSE" & isTerrestrial == "TRUE"  ~ "terrestrial",
+  isMarine == "FALSE" & isFreshwater == "TRUE"  & isTerrestrial == "FALSE" ~ "freshwater",
+  isMarine == "FALSE" & isFreshwater == "TRUE"  & isTerrestrial == "TRUE"  ~ "freshwater|terrestrial",
+  isMarine == "TRUE"  & isFreshwater == "FALSE" & isTerrestrial == "FALSE" ~ "marine",
+  isMarine == "TRUE"  & isFreshwater == "FALSE" & isTerrestrial == "TRUE"  ~ "marine|terrestrial",
+  isMarine == "TRUE"  & isFreshwater == "TRUE"  & isTerrestrial == "FALSE" ~ "marine|freshwater",
+  isMarine == "TRUE"  & isFreshwater == "TRUE"  & isTerrestrial == "TRUE"  ~ "marine|freshwater|terrestrial"
+))
+```
+
+Show mapping:
+
+```{r}
+species_profile %>% 
+  group_by(isMarine, isFreshwater, isTerrestrial, habitat) %>% 
+  summarize(records = n()) 
+```
+
 ## Post-processing
 
 Remove the original columns:

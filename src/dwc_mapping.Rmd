@@ -169,33 +169,32 @@ legal_licenses <- tibble::tibble(
 legal_licenses
 ```
 
-Extract all unique licenses from the source checklists:
+The **actual licenses** of the source checklists _and_ the [GBIF Backbone Taxonomy](https://doi.org/10.15468/39omei) (which we use for the taxon core) are:
 
-```{r}
-checklists_licenses <- checklists %>% distinct(license)
-checklists_licenses
+```{r echo = FALSE}
+checklist_licenses <-
+  checklists %>%
+  group_by(license) %>%
+  count() %>%
+  ungroup()
+checklist_licenses
 ```
 
-We need to take the license of the [gbif backbone taxonomy](https://www.gbif.org/dataset/d7dddbf4-2cf0-4f39-9b2a-bb099caae36c) into consideration as well, which is a CC-BY license:
+Based on the above `ranking`, the most restrictive license is:
 
-```{r}
-checklists_licenses %<>% add_row(license = "http://creativecommons.org/licenses/by/4.0/legalcode")
-```
-
-We add the ranking from `legal_licenses` to the checklist licenses and extract the most restrictive one by filtering on the highest ranking:
-
-```{r}
-most_restrictive_license <- checklists_licenses %>% 
-  left_join(legal_licenses, by = "license") %>% 
-  filter(ranking == max(ranking)) %>% 
-  select(license)
+```{r echo = FALSE}
+most_restrictive_license <-
+  checklist_licenses %>%
+  left_join(legal_licenses, by = "license") %>%
+  filter(ranking == max(ranking)) %>%
+  pull(license)
 most_restrictive_license
 ```
 
-We add this to the taxon core:
+Which we use for our `license`:
 
 ```{r}
-taxon %<>% mutate(license = sQuote(most_restrictive_license))
+taxon %<>% mutate(license = most_restrictive_license)
 ```
 
 #### rightsHolder

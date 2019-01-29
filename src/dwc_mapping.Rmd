@@ -342,61 +342,67 @@ taxon %<>% mutate(scientificNameAuthorship = input_authorship)
 
 #### taxonRemarks
 
-Here, we integrate the reference (doi) of the *source* of the taxon information (contained in `input_sourceChecklists`), i.e. the link to the specific taxon in the specific checklist(s).
+Here we list the checklists that were _considered_ for unifying information about a taxon, i.e. the checklists we selected (see \@ref(choose-checklists)) in which the taxon appeared and got through verification (see \@ref(verification)). In the case of multiple considered checklists, it is possible that not all of them are selected as a source (see \@ref(citing-sources)) when unifying information.
 
-`input_sourceChecklist` now integrates all datasetKeys of the source checklists that include the specific taxon, separated by a comma. We need to split these keys and transform `taxon` such that one row contains only one sourceChecklist per taxon:
+The `datasetKey`s of the considered checklists are listed in `input_sourceChecklists`. Since we want the DOI instead, we will separate this information into columns, gather to rows and join with the DOI, and spread and combine again into a single column.
 
 ```{r}
-# Split `input_sourceChecklist` based on ",". The maximal amount of generated columns equals the total amount of source checklists in `checklists:
+taxon <-
+  taxon %>%
+  
+  # Separate input_sourceChecklist on "," in as many columns as there are checklists
+  separate(
+    input_sourceChecklists,
+    into = c(paste("source", 1:nrow(checklists), sep = "_")),
+    sep = ",",
+    remove = FALSE,
+    fill = "right"
+  ) %>%
 
-taxon %<>% separate(input_sourceChecklists, 
-                    into = c(paste("source", 1:nrow(checklists), sep = "_")), 
-                    sep =",", 
-                    fill = "right") 
+  # Gather to one row per sourceChecklist (multiple rows)
+  gather(
+    key = source,
+    value = key,
+    paste("source", 1:nrow(checklists), sep = "_"),
+    na.rm = TRUE,
+    convert = FALSE
+  ) %>%
 
-# Create `taxon` with one row containing only one sourceChecklist per taxon:
-
-taxon %<>% gather(
-  key = source, 
-  value = key,
-  paste("source", 1:nrow(checklists), sep = "_"),
-  na.rm = TRUE, 
-  convert = FALSE)
-
-# Order by `input_verificationKey`:
-
-taxon %<>% arrange(input_verificationKey)
+  # Join with checklists
+  left_join(
+    select(checklists, datasetKey, doi),
+    by = c("key" = "datasetKey")
+  ) %>%
+  
+  # Remove column "key"
+  select(-key) %>%
+  
+  # Spread back to one row per taxon (multiple columns)
+  spread(source, doi) %>%
+  
+  # Combine source columns into one column "input_datasetDOI"
+  unite(
+    col = "input_datasetDOI",
+    starts_with("source_"),
+    sep = ", ",
+    remove = TRUE
+  ) %>%
+  
+  # Delete "NA" string values
+  mutate(input_datasetDOI = str_remove_all(input_datasetDOI, "(, NA)"))
 ```
   
-Next, We combine the datasetKeys of the original sources with their respective doi's using the dataframe `checklists`:
+Map to `taxonRemarks`:
 
 ```{r}
-taxon %<>% left_join(
-  select(checklists, datasetKey, doi),
-  by = c("key" = "datasetKey"))
+taxon %<>% mutate(taxonRemarks = paste(
+  "Sources considered for unifying information: ", input_datasetDOI
+))
 ```
 
-Then, we transform `taxon` to wide dataset again, with all information for one taxon bundled in one row and one doi per column:
+
 
 ```{r}
-# First remove column `key`:
-taxon %<>% select(-key)
-
-# Transform taxon to wide dataset, with one column containing only one doi (column name starting with `source_`):
-taxon %<>% spread(source, doi)
-```
-
-Generate `taxonRemarks` by combining information in the `source_` columns:
-
-```{r}
-# Combine source information in one column:
-taxon %<>% unite(col = "source", starts_with("source_"), sep = ",")
-
-# Delete "NA":
-taxon %<>% mutate(source = str_remove_all(source,"(,NA)"))
-
-# Add prefix "Sources considered for unifying information: "
-taxon %<>% mutate(taxonRemarks = paste("Sources considered for unifying information:", source, sep = " "))
 ```
 
 ### Post-processing

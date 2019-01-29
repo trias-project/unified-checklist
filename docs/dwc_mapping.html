@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>7 Darwin Core mapping | National, unified checklist of alien species in Belgium</title>
+  <meta name="description" content="7 Darwin Core mapping | National, unified checklist of alien species in Belgium>
+  <meta name="generator" content="bookdown  and GitBook 2.6.7">
+
+  <meta property="og:title" content="7 Darwin Core mapping | National, unified checklist of alien species in Belgium />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  <meta name="github-repo" content="trias-project/unified-checklist" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="7 Darwin Core mapping | National, unified checklist of alien species in Belgium />
+  
+  
+  
+
+<meta name="author" content="Peter Desmet, Damiano Oldoni">
+
+
+<meta name="date" content="2019-01-29">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="5_unify_information.html">
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+<link href="libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
+<script src="libs/pagedtable-1.1/js/pagedtable.js"></script>
+
+
+<style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Intro</a></li>
+<li class="chapter" data-level="2" data-path="1_get_taxa.html"><a href="1_get_taxa.html"><i class="fa fa-check"></i><b>2</b> Get taxa from checklists</a><ul>
+<li class="chapter" data-level="2.1" data-path="1_get_taxa.html"><a href="1_get_taxa.html#choose-checklists"><i class="fa fa-check"></i><b>2.1</b> Choose checklists</a></li>
+<li class="chapter" data-level="2.2" data-path="1_get_taxa.html"><a href="1_get_taxa.html#get-taxa"><i class="fa fa-check"></i><b>2.2</b> Get taxa</a></li>
+<li class="chapter" data-level="2.3" data-path="1_get_taxa.html"><a href="1_get_taxa.html#filter-on-distribution"><i class="fa fa-check"></i><b>2.3</b> Filter on distribution</a></li>
+<li class="chapter" data-level="2.4" data-path="1_get_taxa.html"><a href="1_get_taxa.html#get-gbif-backbone-taxonomy-information"><i class="fa fa-check"></i><b>2.4</b> Get GBIF backbone taxonomy information</a></li>
+<li class="chapter" data-level="2.5" data-path="1_get_taxa.html"><a href="1_get_taxa.html#show-summary-and-save"><i class="fa fa-check"></i><b>2.5</b> Show summary and save</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="2_get_information.html"><a href="2_get_information.html"><i class="fa fa-check"></i><b>3</b> Get related information</a><ul>
+<li class="chapter" data-level="3.1" data-path="2_get_information.html"><a href="2_get_information.html#read-taxa"><i class="fa fa-check"></i><b>3.1</b> Read taxa</a></li>
+<li class="chapter" data-level="3.2" data-path="2_get_information.html"><a href="2_get_information.html#get-distributions"><i class="fa fa-check"></i><b>3.2</b> Get distributions</a></li>
+<li class="chapter" data-level="3.3" data-path="2_get_information.html"><a href="2_get_information.html#get-species-profiles"><i class="fa fa-check"></i><b>3.3</b> Get species profiles</a></li>
+<li class="chapter" data-level="3.4" data-path="2_get_information.html"><a href="2_get_information.html#get-descriptions"><i class="fa fa-check"></i><b>3.4</b> Get descriptions</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="3_verify_taxa.html"><a href="3_verify_taxa.html"><i class="fa fa-check"></i><b>4</b> Verify taxa</a><ul>
+<li class="chapter" data-level="4.1" data-path="3_verify_taxa.html"><a href="3_verify_taxa.html#read-taxa-1"><i class="fa fa-check"></i><b>4.1</b> Read taxa</a></li>
+<li class="chapter" data-level="4.2" data-path="3_verify_taxa.html"><a href="3_verify_taxa.html#verification"><i class="fa fa-check"></i><b>4.2</b> Read verification information</a></li>
+<li class="chapter" data-level="4.3" data-path="3_verify_taxa.html"><a href="3_verify_taxa.html#run-and-save-verification"><i class="fa fa-check"></i><b>4.3</b> Run and save verification</a></li>
+<li class="chapter" data-level="4.4" data-path="3_verify_taxa.html"><a href="3_verify_taxa.html#show-verification-status"><i class="fa fa-check"></i><b>4.4</b> Show verification status</a><ul>
+<li class="chapter" data-level="4.4.1" data-path="3_verify_taxa.html"><a href="3_verify_taxa.html#unmatched-taxa"><i class="fa fa-check"></i><b>4.4.1</b> Unmatched taxa</a></li>
+<li class="chapter" data-level="4.4.2" data-path="3_verify_taxa.html"><a href="3_verify_taxa.html#synonyms"><i class="fa fa-check"></i><b>4.4.2</b> Synonyms</a></li>
+<li class="chapter" data-level="4.4.3" data-path="3_verify_taxa.html"><a href="3_verify_taxa.html#accepted-taxa"><i class="fa fa-check"></i><b>4.4.3</b> Accepted taxa</a></li>
+<li class="chapter" data-level="4.4.4" data-path="3_verify_taxa.html"><a href="3_verify_taxa.html#erroneous-verificationkeys"><i class="fa fa-check"></i><b>4.4.4</b> Erroneous verificationKeys</a></li>
+<li class="chapter" data-level="4.4.5" data-path="3_verify_taxa.html"><a href="3_verify_taxa.html#additional-information"><i class="fa fa-check"></i><b>4.4.5</b> Additional information</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="4_unify_taxa.html"><a href="4_unify_taxa.html"><i class="fa fa-check"></i><b>5</b> Unify taxa</a><ul>
+<li class="chapter" data-level="5.1" data-path="4_unify_taxa.html"><a href="4_unify_taxa.html#read-taxa-2"><i class="fa fa-check"></i><b>5.1</b> Read taxa</a></li>
+<li class="chapter" data-level="5.2" data-path="4_unify_taxa.html"><a href="4_unify_taxa.html#unify-taxa-1"><i class="fa fa-check"></i><b>5.2</b> Unify taxa</a></li>
+<li class="chapter" data-level="5.3" data-path="4_unify_taxa.html"><a href="4_unify_taxa.html#get-gbif-backbone-taxonomy-information-1"><i class="fa fa-check"></i><b>5.3</b> Get GBIF backbone taxonomy information</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="5_unify_information.html"><a href="5_unify_information.html"><i class="fa fa-check"></i><b>6</b> Unify related information</a><ul>
+<li class="chapter" data-level="6.1" data-path="5_unify_information.html"><a href="5_unify_information.html#read-data"><i class="fa fa-check"></i><b>6.1</b> Read data</a></li>
+<li class="chapter" data-level="6.2" data-path="5_unify_information.html"><a href="5_unify_information.html#assign-checklist-order"><i class="fa fa-check"></i><b>6.2</b> Assign checklist order</a></li>
+<li class="chapter" data-level="6.3" data-path="5_unify_information.html"><a href="5_unify_information.html#unify-distribution"><i class="fa fa-check"></i><b>6.3</b> Unify distribution</a></li>
+<li class="chapter" data-level="6.4" data-path="5_unify_information.html"><a href="5_unify_information.html#unify-species-profiles"><i class="fa fa-check"></i><b>6.4</b> Unify species profiles</a></li>
+<li class="chapter" data-level="6.5" data-path="5_unify_information.html"><a href="5_unify_information.html#unify-descriptions"><i class="fa fa-check"></i><b>6.5</b> Unify descriptions</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="dwc_mapping.html"><a href="dwc_mapping.html"><i class="fa fa-check"></i><b>7</b> Darwin Core mapping</a><ul>
+<li class="chapter" data-level="7.1" data-path="dwc_mapping.html"><a href="dwc_mapping.html#read-unified-data"><i class="fa fa-check"></i><b>7.1</b> Read unified data</a></li>
+<li class="chapter" data-level="7.2" data-path="dwc_mapping.html"><a href="dwc_mapping.html#process-data"><i class="fa fa-check"></i><b>7.2</b> Process data</a></li>
+<li class="chapter" data-level="7.3" data-path="dwc_mapping.html"><a href="dwc_mapping.html#preview-data"><i class="fa fa-check"></i><b>7.3</b> Preview data</a></li>
+<li class="chapter" data-level="7.4" data-path="dwc_mapping.html"><a href="dwc_mapping.html#citing-sources"><i class="fa fa-check"></i><b>7.4</b> How we cite our sources</a></li>
+<li class="chapter" data-level="7.5" data-path="dwc_mapping.html"><a href="dwc_mapping.html#taxon-core"><i class="fa fa-check"></i><b>7.5</b> Taxon core</a><ul>
+<li class="chapter" data-level="7.5.1" data-path="dwc_mapping.html"><a href="dwc_mapping.html#pre-processing"><i class="fa fa-check"></i><b>7.5.1</b> Pre-processing</a></li>
+<li class="chapter" data-level="7.5.2" data-path="dwc_mapping.html"><a href="dwc_mapping.html#term-mapping"><i class="fa fa-check"></i><b>7.5.2</b> Term mapping</a></li>
+<li class="chapter" data-level="7.5.3" data-path="dwc_mapping.html"><a href="dwc_mapping.html#post-processing"><i class="fa fa-check"></i><b>7.5.3</b> Post-processing</a></li>
+</ul></li>
+<li class="chapter" data-level="7.6" data-path="dwc_mapping.html"><a href="dwc_mapping.html#distribution-extension"><i class="fa fa-check"></i><b>7.6</b> Distribution extension</a><ul>
+<li class="chapter" data-level="7.6.1" data-path="dwc_mapping.html"><a href="dwc_mapping.html#pre-processing-1"><i class="fa fa-check"></i><b>7.6.1</b> Pre-processing</a></li>
+<li class="chapter" data-level="7.6.2" data-path="dwc_mapping.html"><a href="dwc_mapping.html#term-mapping-1"><i class="fa fa-check"></i><b>7.6.2</b> Term mapping</a></li>
+<li class="chapter" data-level="7.6.3" data-path="dwc_mapping.html"><a href="dwc_mapping.html#post-processing-1"><i class="fa fa-check"></i><b>7.6.3</b> Post-processing</a></li>
+</ul></li>
+<li class="chapter" data-level="7.7" data-path="dwc_mapping.html"><a href="dwc_mapping.html#species-profile-extension"><i class="fa fa-check"></i><b>7.7</b> Species profile extension</a><ul>
+<li class="chapter" data-level="7.7.1" data-path="dwc_mapping.html"><a href="dwc_mapping.html#term-mapping-2"><i class="fa fa-check"></i><b>7.7.1</b> Term mapping</a></li>
+<li class="chapter" data-level="7.7.2" data-path="dwc_mapping.html"><a href="dwc_mapping.html#post-processing-2"><i class="fa fa-check"></i><b>7.7.2</b> Post-processing</a></li>
+</ul></li>
+<li class="chapter" data-level="7.8" data-path="dwc_mapping.html"><a href="dwc_mapping.html#description-extension"><i class="fa fa-check"></i><b>7.8</b> Description extension</a><ul>
+<li class="chapter" data-level="7.8.1" data-path="dwc_mapping.html"><a href="dwc_mapping.html#pre-processing-2"><i class="fa fa-check"></i><b>7.8.1</b> Pre-processing</a></li>
+<li class="chapter" data-level="7.8.2" data-path="dwc_mapping.html"><a href="dwc_mapping.html#term-mapping-3"><i class="fa fa-check"></i><b>7.8.2</b> Term mapping</a></li>
+<li class="chapter" data-level="7.8.3" data-path="dwc_mapping.html"><a href="dwc_mapping.html#post-processing-3"><i class="fa fa-check"></i><b>7.8.3</b> Post-processing</a></li>
+</ul></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">National, unified checklist of alien species in Belgium</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="darwin-core-mapping" class="section level1">
+<h1><span class="header-section-number">7</span> Darwin Core mapping</h1>
+<p>In this chapter we standardize the unified information to a Darwin Core checklist that can be harvested by GBIF.</p>
+<div id="read-unified-data" class="section level2">
+<h2><span class="header-section-number">7.1</span> Read unified data</h2>
+<pre class="sourceCode r"><code class="sourceCode r">checklists &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="kw">here</span>(<span class="st">&quot;data&quot;</span>, <span class="st">&quot;raw&quot;</span>, <span class="st">&quot;checklists.csv&quot;</span>))
+input_taxa &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="kw">here</span>(<span class="st">&quot;data&quot;</span>, <span class="st">&quot;interim&quot;</span>, <span class="st">&quot;taxa_unified.csv&quot;</span>))
+input_distributions &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="kw">here</span>(<span class="st">&quot;data&quot;</span>, <span class="st">&quot;interim&quot;</span>, <span class="st">&quot;distributions_unified.csv&quot;</span>))
+input_speciesprofiles &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="kw">here</span>(<span class="st">&quot;data&quot;</span>, <span class="st">&quot;interim&quot;</span>, <span class="st">&quot;speciesprofiles_unified.csv&quot;</span>))
+input_descriptions &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="kw">here</span>(<span class="st">&quot;data&quot;</span>, <span class="st">&quot;interim&quot;</span>, <span class="st">&quot;descriptions_unified.csv&quot;</span>))</code></pre>
+</div>
+<div id="process-data" class="section level2">
+<h2><span class="header-section-number">7.2</span> Process data</h2>
+<p>Add prefix <code>input_</code> to all column names to avoid name clashes with Darwin Core terms.</p>
+</div>
+<div id="preview-data" class="section level2">
+<h2><span class="header-section-number">7.3</span> Preview data</h2>
+<ol style="list-style-type: decimal">
+<li>Number of rows per file and corresponding mapping section in this chapter:</li>
+</ol>
+<table>
+<thead>
+<tr class="header">
+<th>File</th>
+<th>Number of rows</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>taxa</td>
+<td>3502</td>
+</tr>
+<tr class="even">
+<td>distributions</td>
+<td>3502</td>
+</tr>
+<tr class="odd">
+<td>speciesprofiles</td>
+<td>3489</td>
+</tr>
+<tr class="even">
+<td>descriptions</td>
+<td>8834</td>
+</tr>
+</tbody>
+</table>
+<ol start="2" style="list-style-type: decimal">
+<li>Number of taxa per kingdom and rank:</li>
+</ol>
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["input_kingdom"],"name":[1],"type":["chr"],"align":["left"]},{"label":["input_rank"],"name":[2],"type":["chr"],"align":["left"]},{"label":["taxa"],"name":[3],"type":["int"],"align":["right"]}],"data":[{"1":"Animalia","2":"GENUS","3":"12"},{"1":"Animalia","2":"SPECIES","3":"941"},{"1":"Animalia","2":"SUBSPECIES","3":"5"},{"1":"Bacteria","2":"SPECIES","3":"1"},{"1":"Chromista","2":"SPECIES","3":"20"},{"1":"Fungi","2":"SPECIES","3":"62"},{"1":"Plantae","2":"FORM","3":"2"},{"1":"Plantae","2":"GENUS","3":"3"},{"1":"Plantae","2":"SPECIES","3":"2326"},{"1":"Plantae","2":"SUBSPECIES","3":"104"},{"1":"Plantae","2":"VARIETY","3":"26"},{"1":"Total","2":"-","3":"3502"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+<ol start="3" style="list-style-type: decimal">
+<li>Number of taxa and descriptions per type:</li>
+</ol>
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["input_type"],"name":[1],"type":["chr"],"align":["left"]},{"label":["taxa"],"name":[2],"type":["int"],"align":["right"]},{"label":["unique taxa"],"name":[3],"type":["int"],"align":["right"]},{"label":["unique descriptions"],"name":[4],"type":["int"],"align":["right"]}],"data":[{"1":"invasion stage","2":"2399","3":"2398","4":"4"},{"1":"native range","2":"3674","3":"2420","4":"85"},{"1":"pathway","2":"2761","3":"2204","4":"37"},{"1":"Total","2":"8834","3":"7022","4":"126"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+</div>
+<div id="citing-sources" class="section level2">
+<h2><span class="header-section-number">7.4</span> How we cite our sources</h2>
+<p>Each row of information in the Taxon core and the extensions is based on a specific source:</p>
+<table>
+<colgroup>
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>File</th>
+<th>Source</th>
+<th>Field for citation</th>
+<th>Mapping section</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Taxon core</td>
+<td>a taxon in the <a href="https://doi.org/10.15468/39omei">GBIF Backbone Taxonomy</a></td>
+<td><code>bibliographicCitation</code></td>
+<td><a href="dwc_mapping.html#taxon-core">7.5</a></td>
+</tr>
+<tr class="even">
+<td>Distribution extension</td>
+<td>a taxon in a source checklist</td>
+<td><code>source</code></td>
+<td><a href="dwc_mapping.html#distribution-extension">7.6</a></td>
+</tr>
+<tr class="odd">
+<td>Species profile extension</td>
+<td>a taxon in a source checklist</td>
+<td><code>source</code></td>
+<td><a href="dwc_mapping.html#species-profile-extension">7.7</a></td>
+</tr>
+<tr class="even">
+<td>Description extension</td>
+<td>a taxon in a source checklist</td>
+<td><code>source</code></td>
+<td><a href="dwc_mapping.html#description-extension">7.8</a></td>
+</tr>
+</tbody>
+</table>
+<p>To reference this source, we will use the <strong>GBIF citation format for species pages</strong>, prefixed with the URL of that page. E.g. for the distribution of <em>Nymphea marliacea Marliac</em> this would be:</p>
+<blockquote>
+<p><a href="https://www.gbif.org/species/141264581" class="uri">https://www.gbif.org/species/141264581</a>: Nymphaea marliacea Marliac in Verloove F, Groom Q, Brosens D, Desmet P, Reyserhove L (2018). Manual of the Alien Plants of Belgium. Version 1.7. Botanic Garden Meise. Checklist dataset <a href="https://doi.org/10.15468/wtda1m" class="uri">https://doi.org/10.15468/wtda1m</a>.</p>
+</blockquote>
+<p>This information is a combination of:</p>
+<ul>
+<li><code>input_taxonKey</code>: e.g. <code>1412645812</code> (contained in <code>input_distributions.csv</code>),</li>
+<li><code>input_scientificName</code>: e.g. <code>Nymphaea marliacea Marliac</code> (contained in <code>input_distributions.csv</code>),</li>
+<li><code>citation</code>: e.g. <code>Verloove F, Groom Q, Brosens D, Desmet P, Reyserhove L (2018). Manual of the Alien Plants of Belgium. Version 1.7. Botanic Garden Meise. Checklist dataset https://doi.org/10.15468/wtda1m.</code> (contained in <code>checklists.csv</code>)</li>
+</ul>
+<p>To generate this full citation, we create a helper function <code>add_source_citation(df, new_column, dataset_info)</code>.</p>
+</div>
+<div id="taxon-core" class="section level2">
+<h2><span class="header-section-number">7.5</span> Taxon core</h2>
+<div id="pre-processing" class="section level3">
+<h3><span class="header-section-number">7.5.1</span> Pre-processing</h3>
+<ol style="list-style-type: decimal">
+<li><p>Create a dataframe <code>taxon</code> from the unified taxa.</p></li>
+<li><p>Separate <code>input_canonicalName</code> in <code>input_canonicalName_genus</code>, <code>input_canonicalName_species</code> and <code>input_canonicalName_infraspecific</code> (on whitespace).</p></li>
+</ol>
+</div>
+<div id="term-mapping" class="section level3">
+<h3><span class="header-section-number">7.5.2</span> Term mapping</h3>
+<p>Map the data to <a href="http://rs.gbif.org/core/dwc_taxon_2015-04-24.xml">Darwin Core Taxon</a>.</p>
+<div id="language" class="section level4">
+<h4><span class="header-section-number">7.5.2.1</span> language</h4>
+<pre class="sourceCode r"><code class="sourceCode r">taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">language =</span> <span class="st">&quot;en&quot;</span>)</code></pre>
+</div>
+<div id="license" class="section level4">
+<h4><span class="header-section-number">7.5.2.2</span> license</h4>
+<p>The license under which (each record of) the unified checklist will be published should be the most restrictive license of the source checklists. The <strong>potential licenses</strong> are the three Creative Commons licenses <a href="https://www.gbif.org/terms">supported by GBIF</a> (ordered from least to most restrictive):</p>
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["license"],"name":[1],"type":["chr"],"align":["left"]},{"label":["ranking"],"name":[2],"type":["int"],"align":["right"]}],"data":[{"1":"http://creativecommons.org/publicdomain/zero/1.0/legalcode","2":"1"},{"1":"http://creativecommons.org/licenses/by/4.0/legalcode","2":"2"},{"1":"http://creativecommons.org/licenses/by-nc/4.0/legalcode","2":"3"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+<p>The <strong>actual licenses</strong> of the source checklists <em>and</em> the <a href="https://doi.org/10.15468/39omei">GBIF Backbone Taxonomy</a> (which we use for the taxon core) are:</p>
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["license"],"name":[1],"type":["chr"],"align":["left"]},{"label":["n"],"name":[2],"type":["int"],"align":["right"]}],"data":[{"1":"http://creativecommons.org/licenses/by/4.0/legalcode","2":"1"},{"1":"http://creativecommons.org/publicdomain/zero/1.0/legalcode","2":"7"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+<p>Based on the above <code>ranking</code>, the most restrictive license is:</p>
+<pre><code>## [1] &quot;http://creativecommons.org/licenses/by/4.0/legalcode&quot;</code></pre>
+<p>Which we use for our <code>license</code>:</p>
+<pre class="sourceCode r"><code class="sourceCode r">taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">license =</span> most_restrictive_license)</code></pre>
+</div>
+<div id="rightsholder" class="section level4">
+<h4><span class="header-section-number">7.5.2.3</span> rightsHolder</h4>
+<p>We do not set <code>rightsHolder</code> as the taxon and its related information is based on different source checklists (which in turn are based on other sources), published by different organizations, and mostly released under CC0. Instead, we make an effort to cite the sources (see <a href="dwc_mapping.html#citing-sources">7.4</a>).</p>
+<pre class="sourceCode r"><code class="sourceCode r">taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">rightsHolder =</span> <span class="ot">NA</span>)</code></pre>
+</div>
+<div id="bibliographiccitation" class="section level4">
+<h4><span class="header-section-number">7.5.2.4</span> bibliographicCitation</h4>
+<p>See <a href="dwc_mapping.html#citing-sources">7.4</a>:</p>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Add temporary field with datasetKey of GBIF Backbone Taxonomy</span>
+taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">input_datasetKey =</span> <span class="st">&quot;d7dddbf4-2cf0-4f39-9b2a-bb099caae36c&quot;</span>)
+
+taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">add_source_citation</span>(
+  <span class="dt">new_column =</span> <span class="st">&quot;bibliographicCitation&quot;</span>,
+  <span class="dt">dataset_info =</span> checklists,
+  <span class="dt">taxon_key =</span> <span class="st">&quot;input_verificationKey&quot;</span>
+)</code></pre>
+</div>
+<div id="datasetid" class="section level4">
+<h4><span class="header-section-number">7.5.2.5</span> datasetID</h4>
+<pre class="sourceCode r"><code class="sourceCode r">taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">datasetID =</span> <span class="st">&quot;&quot;</span>)</code></pre>
+</div>
+<div id="institutioncode" class="section level4">
+<h4><span class="header-section-number">7.5.2.6</span> institutionCode</h4>
+<pre class="sourceCode r"><code class="sourceCode r">taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">institutionCode =</span> <span class="st">&quot;ISSG&quot;</span>) <span class="co"># Invasive Species Specialist Group ISSG</span></code></pre>
+</div>
+<div id="datasetname" class="section level4">
+<h4><span class="header-section-number">7.5.2.7</span> datasetName</h4>
+<pre class="sourceCode r"><code class="sourceCode r">taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">datasetName =</span> <span class="st">&quot;Unified checklist of alien species in Belgium&quot;</span>)</code></pre>
+</div>
+<div id="references" class="section level4">
+<h4><span class="header-section-number">7.5.2.8</span> references</h4>
+<p>URL of the GBIF Backbone Taxonomy taxon on gbif.org:</p>
+<pre class="sourceCode r"><code class="sourceCode r">taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">references =</span> <span class="kw">paste0</span>(<span class="st">&quot;https://www.gbif.org/species/&quot;</span>, input_verificationKey))</code></pre>
+</div>
+<div id="taxonid" class="section level4">
+<h4><span class="header-section-number">7.5.2.9</span> taxonID</h4>
+<p>URL of the GBIF Backbone Taxonomy taxon on gbif.org:</p>
+<pre class="sourceCode r"><code class="sourceCode r">taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">taxonID =</span> <span class="kw">paste0</span>(<span class="st">&quot;https://www.gbif.org/species/&quot;</span>, input_verificationKey))</code></pre>
+</div>
+<div id="scientificname" class="section level4">
+<h4><span class="header-section-number">7.5.2.10</span> scientificName</h4>
+<pre class="sourceCode r"><code class="sourceCode r">taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">scientificName =</span> input_scientificName)</code></pre>
+</div>
+<div id="kingdom" class="section level4">
+<h4><span class="header-section-number">7.5.2.11</span> kingdom</h4>
+<pre class="sourceCode r"><code class="sourceCode r">taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">kingdom =</span> input_kingdom)</code></pre>
+</div>
+<div id="phylum" class="section level4">
+<h4><span class="header-section-number">7.5.2.12</span> phylum</h4>
+<pre class="sourceCode r"><code class="sourceCode r">taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">phylum =</span> input_phylum)</code></pre>
+</div>
+<div id="class" class="section level4">
+<h4><span class="header-section-number">7.5.2.13</span> class</h4>
+<pre class="sourceCode r"><code class="sourceCode r">taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">phylum =</span> input_class)</code></pre>
+</div>
+<div id="order" class="section level4">
+<h4><span class="header-section-number">7.5.2.14</span> order</h4>
+<pre class="sourceCode r"><code class="sourceCode r">taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">order =</span> input_order)</code></pre>
+</div>
+<div id="family" class="section level4">
+<h4><span class="header-section-number">7.5.2.15</span> family</h4>
+<pre class="sourceCode r"><code class="sourceCode r">taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">family =</span> input_family)</code></pre>
+</div>
+<div id="genus" class="section level4">
+<h4><span class="header-section-number">7.5.2.16</span> genus</h4>
+<p>Inspect differences between <code>input_genus</code> and <code>input_canonicalName_genus</code>:</p>
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["input_verificationKey"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["input_scientificName"],"name":[2],"type":["chr"],"align":["left"]},{"label":["input_genus"],"name":[3],"type":["chr"],"align":["left"]},{"label":["input_canonicalName_genus"],"name":[4],"type":["chr"],"align":["left"]},{"label":["input_taxonomicStatus"],"name":[5],"type":["chr"],"align":["left"]}],"data":[{"1":"5356481","2":"Lathyrus cicera L.","3":"Astragalus","4":"Lathyrus","5":"SYNONYM"},{"1":"5386028","2":"Cyanus triumfettii (All.) Dostal ex A. & D.Love","3":"Centaurea","4":"Cyanus","5":"SYNONYM"},{"1":"7331240","2":"Halimium alyssoides K.Koch","3":"Cistus","4":"Halimium","5":"ACCEPTED"},{"1":"8011979","2":"Chaenorrhinum origanifolium (L.) Kostel., 1844","3":"Chaenorhinum","4":"Chaenorrhinum","5":"DOUBTFUL"},{"1":"8180804","2":"Brachycome heterodonta DC.","3":"Vittadinia","4":"Brachycome","5":"DOUBTFUL"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+<p>The <code>input_genus</code> under which the GBIF Backbone Taxonomy has classified a taxon can differ from the genus in the scientific name. Since we consider all our taxa as accepted taxa, we take the genus from the scientific name (i.e. the <code>input_canonicalName_genus</code>).</p>
+<pre class="sourceCode r"><code class="sourceCode r">taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">genus =</span> input_canonicalName_genus)</code></pre>
+</div>
+<div id="specificepithet" class="section level4">
+<h4><span class="header-section-number">7.5.2.17</span> specificEpithet</h4>
+<pre class="sourceCode r"><code class="sourceCode r">taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">specificEpithet =</span> input_canonicalName_species)</code></pre>
+</div>
+<div id="infraspecificepithet" class="section level4">
+<h4><span class="header-section-number">7.5.2.18</span> infraspecificEpithet</h4>
+<pre class="sourceCode r"><code class="sourceCode r">taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">infraspecificEpithet =</span> input_canonicalName_infraspecific)</code></pre>
+</div>
+<div id="taxonrank" class="section level4">
+<h4><span class="header-section-number">7.5.2.19</span> taxonRank</h4>
+<p>Inspect values:</p>
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["input_rank"],"name":[1],"type":["chr"],"align":["left"]},{"label":["n"],"name":[2],"type":["int"],"align":["right"]}],"data":[{"1":"FORM","2":"2"},{"1":"GENUS","2":"15"},{"1":"SPECIES","2":"3350"},{"1":"SUBSPECIES","2":"109"},{"1":"VARIETY","2":"26"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+<p>Map values to lowercase:</p>
+<pre class="sourceCode r"><code class="sourceCode r">taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">taxonRank =</span> <span class="kw">str_to_lower</span>(input_rank))</code></pre>
+</div>
+<div id="scientificnameauthorship" class="section level4">
+<h4><span class="header-section-number">7.5.2.20</span> scientificNameAuthorship</h4>
+<pre class="sourceCode r"><code class="sourceCode r">taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">scientificNameAuthorship =</span> input_authorship)</code></pre>
+</div>
+<div id="taxonremarks" class="section level4">
+<h4><span class="header-section-number">7.5.2.21</span> taxonRemarks</h4>
+<p>Here we list the checklists that were <em>considered</em> for unifying information about a taxon, i.e. the checklists we selected (see <a href="1_get_taxa.html#choose-checklists">2.1</a>) in which the taxon appeared and got through verification (see <a href="3_verify_taxa.html#verification">4.2</a>). In the case of multiple considered checklists, it is possible that not all of them are selected as a source (see <a href="dwc_mapping.html#citing-sources">7.4</a>) when unifying information.</p>
+<p>The <code>datasetKey</code>s of the considered checklists are listed in <code>input_sourceChecklists</code>. Since we want the DOI instead, we will separate this information into columns, gather to rows and join with the DOI, and spread and combine again into a single column.</p>
+<p>Map to <code>taxonRemarks</code>:</p>
+<pre class="sourceCode r"><code class="sourceCode r">taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">taxonRemarks =</span> <span class="kw">paste</span>(
+  <span class="st">&quot;Sources considered for unifying information: &quot;</span>, input_datasetDOI
+))</code></pre>
+</div>
+</div>
+<div id="post-processing" class="section level3">
+<h3><span class="header-section-number">7.5.3</span> Post-processing</h3>
+<ol style="list-style-type: decimal">
+<li><p>Remove the original columns.</p></li>
+<li><p>Sort on <code>taxonID</code>.</p></li>
+<li><p>Preview data:</p></li>
+</ol>
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["language"],"name":[1],"type":["chr"],"align":["left"]},{"label":["license"],"name":[2],"type":["chr"],"align":["left"]},{"label":["rightsHolder"],"name":[3],"type":["lgl"],"align":["right"]},{"label":["bibliographicCitation"],"name":[4],"type":["chr"],"align":["left"]},{"label":["datasetID"],"name":[5],"type":["chr"],"align":["left"]},{"label":["institutionCode"],"name":[6],"type":["chr"],"align":["left"]},{"label":["datasetName"],"name":[7],"type":["chr"],"align":["left"]},{"label":["references"],"name":[8],"type":["chr"],"align":["left"]},{"label":["taxonID"],"name":[9],"type":["chr"],"align":["left"]},{"label":["scientificName"],"name":[10],"type":["chr"],"align":["left"]},{"label":["kingdom"],"name":[11],"type":["chr"],"align":["left"]},{"label":["phylum"],"name":[12],"type":["chr"],"align":["left"]},{"label":["order"],"name":[13],"type":["chr"],"align":["left"]},{"label":["family"],"name":[14],"type":["chr"],"align":["left"]},{"label":["genus"],"name":[15],"type":["chr"],"align":["left"]},{"label":["specificEpithet"],"name":[16],"type":["chr"],"align":["left"]},{"label":["infraspecificEpithet"],"name":[17],"type":["chr"],"align":["left"]},{"label":["taxonRank"],"name":[18],"type":["chr"],"align":["left"]},{"label":["scientificNameAuthorship"],"name":[19],"type":["chr"],"align":["left"]},{"label":["taxonRemarks"],"name":[20],"type":["chr"],"align":["left"]}],"data":[{"1":"en","2":"http://creativecommons.org/licenses/by/4.0/legalcode","3":"NA","4":"https://www.gbif.org/species/1002621: Keratella tropica (Apstein, 1907) in GBIF Secretariat (2017). GBIF Backbone Taxonomy. Checklist dataset https://doi.org/10.15468/39omei","5":"","6":"ISSG","7":"Unified checklist of alien species in Belgium","8":"https://www.gbif.org/species/1002621","9":"https://www.gbif.org/species/1002621","10":"Keratella tropica (Apstein, 1907)","11":"Animalia","12":"Eurotatoria","13":"Ploima","14":"Brachionidae","15":"Keratella","16":"tropica","17":"NA","18":"species","19":"(Apstein, 1907)","20":"Sources considered for unifying information:  https://doi.org/10.15468/focajn"},{"1":"en","2":"http://creativecommons.org/licenses/by/4.0/legalcode","3":"NA","4":"https://www.gbif.org/species/1005581: Scruparia ambigua (d'Orbigny, 1841) in GBIF Secretariat (2017). GBIF Backbone Taxonomy. Checklist dataset https://doi.org/10.15468/39omei","5":"","6":"ISSG","7":"Unified checklist of alien species in Belgium","8":"https://www.gbif.org/species/1005581","9":"https://www.gbif.org/species/1005581","10":"Scruparia ambigua (d'Orbigny, 1841)","11":"Animalia","12":"Gymnolaemata","13":"Cheilostomatida","14":"Scrupariidae","15":"Scruparia","16":"ambigua","17":"NA","18":"species","19":"(d'Orbigny, 1841)","20":"Sources considered for unifying information:  https://doi.org/10.15468/focajn"},{"1":"en","2":"http://creativecommons.org/licenses/by/4.0/legalcode","3":"NA","4":"https://www.gbif.org/species/1005677: Watersipora subtorquata (d'Orbigny, 1852) in GBIF Secretariat (2017). GBIF Backbone Taxonomy. Checklist dataset https://doi.org/10.15468/39omei","5":"","6":"ISSG","7":"Unified checklist of alien species in Belgium","8":"https://www.gbif.org/species/1005677","9":"https://www.gbif.org/species/1005677","10":"Watersipora subtorquata (d'Orbigny, 1852)","11":"Animalia","12":"Gymnolaemata","13":"Cheilostomatida","14":"Watersiporidae","15":"Watersipora","16":"subtorquata","17":"NA","18":"species","19":"(d'Orbigny, 1852)","20":"Sources considered for unifying information:  https://doi.org/10.15468/focajn"},{"1":"en","2":"http://creativecommons.org/licenses/by/4.0/legalcode","3":"NA","4":"https://www.gbif.org/species/1007770: Membranipora membranacea (Linnaeus, 1767) in GBIF Secretariat (2017). GBIF Backbone Taxonomy. Checklist dataset https://doi.org/10.15468/39omei","5":"","6":"ISSG","7":"Unified checklist of alien species in Belgium","8":"https://www.gbif.org/species/1007770","9":"https://www.gbif.org/species/1007770","10":"Membranipora membranacea (Linnaeus, 1767)","11":"Animalia","12":"Gymnolaemata","13":"Cheilostomatida","14":"Membraniporidae","15":"Membranipora","16":"membranacea","17":"NA","18":"species","19":"(Linnaeus, 1767)","20":"Sources considered for unifying information:  https://doi.org/10.15468/focajn"},{"1":"en","2":"http://creativecommons.org/licenses/by/4.0/legalcode","3":"NA","4":"https://www.gbif.org/species/1008955: Fenestrulina delicia Winston, Hayward & Craig, 2000 in GBIF Secretariat (2017). GBIF Backbone Taxonomy. Checklist dataset https://doi.org/10.15468/39omei","5":"","6":"ISSG","7":"Unified checklist of alien species in Belgium","8":"https://www.gbif.org/species/1008955","9":"https://www.gbif.org/species/1008955","10":"Fenestrulina delicia Winston, Hayward & Craig, 2000","11":"Animalia","12":"Gymnolaemata","13":"Cheilostomatida","14":"Microporellidae","15":"Fenestrulina","16":"delicia","17":"NA","18":"species","19":"Winston, Hayward & Craig, 2000","20":"Sources considered for unifying information:  https://doi.org/10.15468/focajn"},{"1":"en","2":"http://creativecommons.org/licenses/by/4.0/legalcode","3":"NA","4":"https://www.gbif.org/species/1010644: Hanseniella caldaria (Hansen, 1903) in GBIF Secretariat (2017). GBIF Backbone Taxonomy. Checklist dataset https://doi.org/10.15468/39omei","5":"","6":"ISSG","7":"Unified checklist of alien species in Belgium","8":"https://www.gbif.org/species/1010644","9":"https://www.gbif.org/species/1010644","10":"Hanseniella caldaria (Hansen, 1903)","11":"Animalia","12":"Symphyla","13":"NA","14":"Scutigerellidae","15":"Hanseniella","16":"caldaria","17":"NA","18":"species","19":"(Hansen, 1903)","20":"Sources considered for unifying information:  https://doi.org/10.15468/3pmlxs"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+<ol start="4" style="list-style-type: decimal">
+<li>Save to <a href="https://github.com/trias-project/unified-checklist/blob/master/data/processed/taxon.csv">CSV</a>.</li>
+</ol>
+</div>
+</div>
+<div id="distribution-extension" class="section level2">
+<h2><span class="header-section-number">7.6</span> Distribution extension</h2>
+<div id="pre-processing-1" class="section level3">
+<h3><span class="header-section-number">7.6.1</span> Pre-processing</h3>
+<p>Create a dataframe <code>distribution</code> from the unified distributions.</p>
+</div>
+<div id="term-mapping-1" class="section level3">
+<h3><span class="header-section-number">7.6.2</span> Term mapping</h3>
+<p>Map the data to <a href="http://rs.gbif.org/extension/gbif/1.0/distribution.xml">Species Distribution</a>. Because of the scope (see <a href="1_get_taxa.html#filter-on-distribution">2.3</a>) of the dataset, we can set all distributions to <code>occurrenceStatus:present</code> and <code>establishmentMeans:introduced</code> in <code>Belgium</code>.</p>
+<div id="taxonid-1" class="section level4">
+<h4><span class="header-section-number">7.6.2.1</span> taxonID</h4>
+<pre class="sourceCode r"><code class="sourceCode r">distribution <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">taxonID =</span> <span class="kw">paste0</span>(<span class="st">&quot;https://www.gbif.org/species/&quot;</span>, input_verificationKey))</code></pre>
+</div>
+<div id="locationid" class="section level4">
+<h4><span class="header-section-number">7.6.2.2</span> locationID</h4>
+<pre class="sourceCode r"><code class="sourceCode r">distribution <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">locationID =</span> <span class="st">&quot;ISO_3166-2:BE&quot;</span>) </code></pre>
+</div>
+<div id="locality" class="section level4">
+<h4><span class="header-section-number">7.6.2.3</span> locality</h4>
+<pre class="sourceCode r"><code class="sourceCode r">distribution <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">locality =</span> <span class="st">&quot;Belgium&quot;</span>) </code></pre>
+</div>
+<div id="countrycode" class="section level4">
+<h4><span class="header-section-number">7.6.2.4</span> countryCode</h4>
+<pre class="sourceCode r"><code class="sourceCode r">distribution <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">countryCode =</span> <span class="st">&quot;BE&quot;</span>) </code></pre>
+</div>
+<div id="occurrencestatus" class="section level4">
+<h4><span class="header-section-number">7.6.2.5</span> occurrenceStatus</h4>
+<pre class="sourceCode r"><code class="sourceCode r">distribution <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">occurrenceStatus =</span> <span class="st">&quot;present&quot;</span>) </code></pre>
+</div>
+<div id="establishmentmeans" class="section level4">
+<h4><span class="header-section-number">7.6.2.6</span> establishmentMeans</h4>
+<pre class="sourceCode r"><code class="sourceCode r">distribution <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">establishmentMeans =</span> <span class="st">&quot;introduced&quot;</span>) </code></pre>
+</div>
+<div id="eventdate" class="section level4">
+<h4><span class="header-section-number">7.6.2.7</span> eventDate</h4>
+<p>The distribution information applies to a certain date range, which we will express here as an ISO 8601 date <code>yyyy/yyyy</code> (<code>input_startYear/input_endYear</code>). How the information for <code>input_startYear</code> and <code>input_endYear</code> is extracted from the source checklists, is described in <a href="5_unify_information.html#unify-distribution">6.3</a>. As a result, each taxon in <code>input_distribution</code> has <em>or</em> an <code>input_startYear</code> and an <code>input_endYear</code> <em>or</em> no <code>eventDate</code> information at all.</p>
+<pre class="sourceCode r"><code class="sourceCode r">distribution <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">eventDate =</span> <span class="kw">case_when</span>(
+  <span class="kw">is.na</span>(input_startYear) <span class="op">&amp;</span><span class="st"> </span><span class="kw">is.na</span>(input_endYear) <span class="op">~</span><span class="st"> &quot;&quot;</span>,
+  <span class="ot">TRUE</span> <span class="op">~</span><span class="st"> </span><span class="kw">paste</span>(input_startYear, input_endYear, <span class="dt">sep =</span> <span class="st">&quot;/&quot;</span>)
+))</code></pre>
+</div>
+<div id="source" class="section level4">
+<h4><span class="header-section-number">7.6.2.8</span> source</h4>
+<p>See <a href="dwc_mapping.html#citing-sources">7.4</a>:</p>
+<pre class="sourceCode r"><code class="sourceCode r">distribution <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">add_source_citation</span>(
+  <span class="dt">new_column =</span> <span class="st">&quot;source&quot;</span>,
+  <span class="dt">dataset_info =</span> checklists
+)</code></pre>
+</div>
+</div>
+<div id="post-processing-1" class="section level3">
+<h3><span class="header-section-number">7.6.3</span> Post-processing</h3>
+<ol style="list-style-type: decimal">
+<li><p>Remove the original columns.</p></li>
+<li><p>Sort on <code>taxonID</code>.</p></li>
+<li><p>Preview data:</p></li>
+</ol>
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["taxonID"],"name":[1],"type":["chr"],"align":["left"]},{"label":["locationID"],"name":[2],"type":["chr"],"align":["left"]},{"label":["locality"],"name":[3],"type":["chr"],"align":["left"]},{"label":["countryCode"],"name":[4],"type":["chr"],"align":["left"]},{"label":["occurrenceStatus"],"name":[5],"type":["chr"],"align":["left"]},{"label":["establishmentMeans"],"name":[6],"type":["chr"],"align":["left"]},{"label":["eventDate"],"name":[7],"type":["chr"],"align":["left"]},{"label":["source"],"name":[8],"type":["chr"],"align":["left"]}],"data":[{"1":"https://www.gbif.org/species/1002621","2":"ISO_3166-2:BE","3":"Belgium","4":"BE","5":"present","6":"introduced","7":"","8":"https://www.gbif.org/species/145953348: Keratella tropica in Zieritz A, Gallardo Armas B, Aldridge D, Desmet P, Reyserhove L (2018). RINSE - Registry of non-native species in the Two Seas region countries (Great Britain, France, Belgium and the Netherlands). Version 1.5. Research Institute for Nature and Forest (INBO). Checklist dataset https://doi.org/10.15468/focajn"},{"1":"https://www.gbif.org/species/1005581","2":"ISO_3166-2:BE","3":"Belgium","4":"BE","5":"present","6":"introduced","7":"","8":"https://www.gbif.org/species/145953611: Scruparia ambigua in Zieritz A, Gallardo Armas B, Aldridge D, Desmet P, Reyserhove L (2018). RINSE - Registry of non-native species in the Two Seas region countries (Great Britain, France, Belgium and the Netherlands). Version 1.5. Research Institute for Nature and Forest (INBO). Checklist dataset https://doi.org/10.15468/focajn"},{"1":"https://www.gbif.org/species/1005677","2":"ISO_3166-2:BE","3":"Belgium","4":"BE","5":"present","6":"introduced","7":"","8":"https://www.gbif.org/species/145953642: Watersipora subtorquata in Zieritz A, Gallardo Armas B, Aldridge D, Desmet P, Reyserhove L (2018). RINSE - Registry of non-native species in the Two Seas region countries (Great Britain, France, Belgium and the Netherlands). Version 1.5. Research Institute for Nature and Forest (INBO). Checklist dataset https://doi.org/10.15468/focajn"},{"1":"https://www.gbif.org/species/1007770","2":"ISO_3166-2:BE","3":"Belgium","4":"BE","5":"present","6":"introduced","7":"","8":"https://www.gbif.org/species/145953650: Membranipora membranacea in Zieritz A, Gallardo Armas B, Aldridge D, Desmet P, Reyserhove L (2018). RINSE - Registry of non-native species in the Two Seas region countries (Great Britain, France, Belgium and the Netherlands). Version 1.5. Research Institute for Nature and Forest (INBO). Checklist dataset https://doi.org/10.15468/focajn"},{"1":"https://www.gbif.org/species/1008955","2":"ISO_3166-2:BE","3":"Belgium","4":"BE","5":"present","6":"introduced","7":"","8":"https://www.gbif.org/species/145953656: Fenestrulina delicia in Zieritz A, Gallardo Armas B, Aldridge D, Desmet P, Reyserhove L (2018). RINSE - Registry of non-native species in the Two Seas region countries (Great Britain, France, Belgium and the Netherlands). Version 1.5. Research Institute for Nature and Forest (INBO). Checklist dataset https://doi.org/10.15468/focajn"},{"1":"https://www.gbif.org/species/1010644","2":"ISO_3166-2:BE","3":"Belgium","4":"BE","5":"present","6":"introduced","7":"2018/2018","8":"https://www.gbif.org/species/148437977: Hanseniella caldaria (Hansen, 1903) in Reyserhove L, Groom Q, Adriaens T, Desmet P, Dekoninck W, Van Keer K, Lock K (2018). Ad hoc checklist of alien species in Belgium. Version 1.2. Research Institute for Nature and Forest (INBO). Checklist dataset https://doi.org/10.15468/3pmlxs"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+<ol start="4" style="list-style-type: decimal">
+<li>Save to <a href="https://github.com/trias-project/unified-checklist/blob/master/data/processed/distribution.csv">CSV</a>.</li>
+</ol>
+</div>
+</div>
+<div id="species-profile-extension" class="section level2">
+<h2><span class="header-section-number">7.7</span> Species profile extension</h2>
+<p>Create a dataframe <code>species_profile</code> from the unified species profiles.</p>
+<div id="term-mapping-2" class="section level3">
+<h3><span class="header-section-number">7.7.1</span> Term mapping</h3>
+<p>Map the data to <a href="http://rs.gbif.org/extension/gbif/1.0/speciesprofile.xml">Species Profile</a>.</p>
+<div id="taxonid-2" class="section level4">
+<h4><span class="header-section-number">7.7.1.1</span> taxonID</h4>
+<pre class="sourceCode r"><code class="sourceCode r">species_profile <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">taxonID =</span> <span class="kw">paste0</span>(<span class="st">&quot;https://www.gbif.org/species/&quot;</span>, input_verificationKey))</code></pre>
+</div>
+<div id="ismarine" class="section level4">
+<h4><span class="header-section-number">7.7.1.2</span> isMarine</h4>
+<pre class="sourceCode r"><code class="sourceCode r">species_profile <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">isMarine =</span> input_marine)</code></pre>
+</div>
+<div id="isfreshwater" class="section level4">
+<h4><span class="header-section-number">7.7.1.3</span> isFreshwater</h4>
+<pre class="sourceCode r"><code class="sourceCode r">species_profile <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">isFreshwater =</span> input_freshwater)</code></pre>
+</div>
+<div id="isterrestrial" class="section level4">
+<h4><span class="header-section-number">7.7.1.4</span> isTerrestrial</h4>
+<pre class="sourceCode r"><code class="sourceCode r">species_profile <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">isTerrestrial =</span> input_terrestrial)</code></pre>
+</div>
+<div id="habitat" class="section level4">
+<h4><span class="header-section-number">7.7.1.5</span> habitat</h4>
+<p>ISSG also used the field <code>habitat</code>, in which we will summarize the information from <code>isMarine</code>, <code>isFreshwater</code> and <code>isTerrestrial</code>.</p>
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["isMarine"],"name":[1],"type":["lgl"],"align":["right"]},{"label":["isFreshwater"],"name":[2],"type":["lgl"],"align":["right"]},{"label":["isTerrestrial"],"name":[3],"type":["lgl"],"align":["right"]},{"label":["records"],"name":[4],"type":["int"],"align":["right"]}],"data":[{"1":"FALSE","2":"FALSE","3":"TRUE","4":"3142"},{"1":"FALSE","2":"TRUE","3":"FALSE","4":"149"},{"1":"FALSE","2":"TRUE","3":"TRUE","4":"71"},{"1":"TRUE","2":"FALSE","3":"FALSE","4":"98"},{"1":"TRUE","2":"FALSE","3":"TRUE","4":"1"},{"1":"TRUE","2":"TRUE","3":"FALSE","4":"17"},{"1":"TRUE","2":"TRUE","3":"TRUE","4":"11"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+<p>Map <code>habitat</code>:</p>
+<pre class="sourceCode r"><code class="sourceCode r">species_profile <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">habitat =</span> <span class="kw">case_when</span>(
+  isMarine <span class="op">==</span><span class="st"> &quot;FALSE&quot;</span> <span class="op">&amp;</span><span class="st"> </span>isFreshwater <span class="op">==</span><span class="st"> &quot;FALSE&quot;</span> <span class="op">&amp;</span><span class="st"> </span>isTerrestrial <span class="op">==</span><span class="st"> &quot;TRUE&quot;</span>  <span class="op">~</span><span class="st"> &quot;terrestrial&quot;</span>,
+  isMarine <span class="op">==</span><span class="st"> &quot;FALSE&quot;</span> <span class="op">&amp;</span><span class="st"> </span>isFreshwater <span class="op">==</span><span class="st"> &quot;TRUE&quot;</span>  <span class="op">&amp;</span><span class="st"> </span>isTerrestrial <span class="op">==</span><span class="st"> &quot;FALSE&quot;</span> <span class="op">~</span><span class="st"> &quot;freshwater&quot;</span>,
+  isMarine <span class="op">==</span><span class="st"> &quot;FALSE&quot;</span> <span class="op">&amp;</span><span class="st"> </span>isFreshwater <span class="op">==</span><span class="st"> &quot;TRUE&quot;</span>  <span class="op">&amp;</span><span class="st"> </span>isTerrestrial <span class="op">==</span><span class="st"> &quot;TRUE&quot;</span>  <span class="op">~</span><span class="st"> &quot;freshwater|terrestrial&quot;</span>,
+  isMarine <span class="op">==</span><span class="st"> &quot;TRUE&quot;</span>  <span class="op">&amp;</span><span class="st"> </span>isFreshwater <span class="op">==</span><span class="st"> &quot;FALSE&quot;</span> <span class="op">&amp;</span><span class="st"> </span>isTerrestrial <span class="op">==</span><span class="st"> &quot;FALSE&quot;</span> <span class="op">~</span><span class="st"> &quot;marine&quot;</span>,
+  isMarine <span class="op">==</span><span class="st"> &quot;TRUE&quot;</span>  <span class="op">&amp;</span><span class="st"> </span>isFreshwater <span class="op">==</span><span class="st"> &quot;FALSE&quot;</span> <span class="op">&amp;</span><span class="st"> </span>isTerrestrial <span class="op">==</span><span class="st"> &quot;TRUE&quot;</span>  <span class="op">~</span><span class="st"> &quot;marine|terrestrial&quot;</span>,
+  isMarine <span class="op">==</span><span class="st"> &quot;TRUE&quot;</span>  <span class="op">&amp;</span><span class="st"> </span>isFreshwater <span class="op">==</span><span class="st"> &quot;TRUE&quot;</span>  <span class="op">&amp;</span><span class="st"> </span>isTerrestrial <span class="op">==</span><span class="st"> &quot;FALSE&quot;</span> <span class="op">~</span><span class="st"> &quot;marine|freshwater&quot;</span>,
+  isMarine <span class="op">==</span><span class="st"> &quot;TRUE&quot;</span>  <span class="op">&amp;</span><span class="st"> </span>isFreshwater <span class="op">==</span><span class="st"> &quot;TRUE&quot;</span>  <span class="op">&amp;</span><span class="st"> </span>isTerrestrial <span class="op">==</span><span class="st"> &quot;TRUE&quot;</span>  <span class="op">~</span><span class="st"> &quot;marine|freshwater|terrestrial&quot;</span>
+))</code></pre>
+<p>Show mapping:</p>
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["isMarine"],"name":[1],"type":["lgl"],"align":["right"]},{"label":["isFreshwater"],"name":[2],"type":["lgl"],"align":["right"]},{"label":["isTerrestrial"],"name":[3],"type":["lgl"],"align":["right"]},{"label":["habitat"],"name":[4],"type":["chr"],"align":["left"]},{"label":["records"],"name":[5],"type":["int"],"align":["right"]}],"data":[{"1":"FALSE","2":"FALSE","3":"TRUE","4":"terrestrial","5":"3142"},{"1":"FALSE","2":"TRUE","3":"FALSE","4":"freshwater","5":"149"},{"1":"FALSE","2":"TRUE","3":"TRUE","4":"freshwater|terrestrial","5":"71"},{"1":"TRUE","2":"FALSE","3":"FALSE","4":"marine","5":"98"},{"1":"TRUE","2":"FALSE","3":"TRUE","4":"marine|terrestrial","5":"1"},{"1":"TRUE","2":"TRUE","3":"FALSE","4":"marine|freshwater","5":"17"},{"1":"TRUE","2":"TRUE","3":"TRUE","4":"marine|freshwater|terrestrial","5":"11"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+</div>
+<div id="source-1" class="section level4">
+<h4><span class="header-section-number">7.7.1.6</span> source</h4>
+<p>See <a href="dwc_mapping.html#citing-sources">7.4</a>:</p>
+<pre class="sourceCode r"><code class="sourceCode r">species_profile <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">add_source_citation</span>(
+  <span class="dt">new_column =</span> <span class="st">&quot;source&quot;</span>,
+  <span class="dt">dataset_info =</span> checklists
+)</code></pre>
+</div>
+</div>
+<div id="post-processing-2" class="section level3">
+<h3><span class="header-section-number">7.7.2</span> Post-processing</h3>
+<ol style="list-style-type: decimal">
+<li><p>Remove the original columns.</p></li>
+<li><p>Sort on <code>taxonID</code>.</p></li>
+<li><p>Preview data:</p></li>
+</ol>
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["taxonID"],"name":[1],"type":["chr"],"align":["left"]},{"label":["isMarine"],"name":[2],"type":["lgl"],"align":["right"]},{"label":["isFreshwater"],"name":[3],"type":["lgl"],"align":["right"]},{"label":["isTerrestrial"],"name":[4],"type":["lgl"],"align":["right"]},{"label":["habitat"],"name":[5],"type":["chr"],"align":["left"]},{"label":["source"],"name":[6],"type":["chr"],"align":["left"]}],"data":[{"1":"https://www.gbif.org/species/1002621","2":"TRUE","3":"FALSE","4":"FALSE","5":"marine","6":"https://www.gbif.org/species/145953348: Keratella tropica in Zieritz A, Gallardo Armas B, Aldridge D, Desmet P, Reyserhove L (2018). RINSE - Registry of non-native species in the Two Seas region countries (Great Britain, France, Belgium and the Netherlands). Version 1.5. Research Institute for Nature and Forest (INBO). Checklist dataset https://doi.org/10.15468/focajn"},{"1":"https://www.gbif.org/species/1005581","2":"TRUE","3":"FALSE","4":"FALSE","5":"marine","6":"https://www.gbif.org/species/145953611: Scruparia ambigua in Zieritz A, Gallardo Armas B, Aldridge D, Desmet P, Reyserhove L (2018). RINSE - Registry of non-native species in the Two Seas region countries (Great Britain, France, Belgium and the Netherlands). Version 1.5. Research Institute for Nature and Forest (INBO). Checklist dataset https://doi.org/10.15468/focajn"},{"1":"https://www.gbif.org/species/1005677","2":"TRUE","3":"FALSE","4":"FALSE","5":"marine","6":"https://www.gbif.org/species/145953642: Watersipora subtorquata in Zieritz A, Gallardo Armas B, Aldridge D, Desmet P, Reyserhove L (2018). RINSE - Registry of non-native species in the Two Seas region countries (Great Britain, France, Belgium and the Netherlands). Version 1.5. Research Institute for Nature and Forest (INBO). Checklist dataset https://doi.org/10.15468/focajn"},{"1":"https://www.gbif.org/species/1007770","2":"TRUE","3":"FALSE","4":"FALSE","5":"marine","6":"https://www.gbif.org/species/145953650: Membranipora membranacea in Zieritz A, Gallardo Armas B, Aldridge D, Desmet P, Reyserhove L (2018). RINSE - Registry of non-native species in the Two Seas region countries (Great Britain, France, Belgium and the Netherlands). Version 1.5. Research Institute for Nature and Forest (INBO). Checklist dataset https://doi.org/10.15468/focajn"},{"1":"https://www.gbif.org/species/1008955","2":"TRUE","3":"FALSE","4":"FALSE","5":"marine","6":"https://www.gbif.org/species/145953656: Fenestrulina delicia in Zieritz A, Gallardo Armas B, Aldridge D, Desmet P, Reyserhove L (2018). RINSE - Registry of non-native species in the Two Seas region countries (Great Britain, France, Belgium and the Netherlands). Version 1.5. Research Institute for Nature and Forest (INBO). Checklist dataset https://doi.org/10.15468/focajn"},{"1":"https://www.gbif.org/species/1010644","2":"FALSE","3":"FALSE","4":"TRUE","5":"terrestrial","6":"https://www.gbif.org/species/148437977: Hanseniella caldaria (Hansen, 1903) in Reyserhove L, Groom Q, Adriaens T, Desmet P, Dekoninck W, Van Keer K, Lock K (2018). Ad hoc checklist of alien species in Belgium. Version 1.2. Research Institute for Nature and Forest (INBO). Checklist dataset https://doi.org/10.15468/3pmlxs"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+<ol start="4" style="list-style-type: decimal">
+<li>Save to <a href="https://github.com/trias-project/unified-checklist/blob/master/data/processed/speciesprofile.csv">CSV</a>.</li>
+</ol>
+</div>
+</div>
+<div id="description-extension" class="section level2">
+<h2><span class="header-section-number">7.8</span> Description extension</h2>
+<div id="pre-processing-2" class="section level3">
+<h3><span class="header-section-number">7.8.1</span> Pre-processing</h3>
+<p>Create a dataframe <code>description</code> from the unified descriptions.</p>
+</div>
+<div id="term-mapping-3" class="section level3">
+<h3><span class="header-section-number">7.8.2</span> Term mapping</h3>
+<p>Map the data to <a href="http://rs.gbif.org/extension/gbif/1.0/description.xml">Taxon Description</a>.</p>
+<div id="taxonid-3" class="section level4">
+<h4><span class="header-section-number">7.8.2.1</span> taxonID</h4>
+<pre class="sourceCode r"><code class="sourceCode r">description <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">taxonID =</span> <span class="kw">paste0</span>(<span class="st">&quot;https://www.gbif.org/species/&quot;</span>, input_verificationKey)) </code></pre>
+</div>
+<div id="description" class="section level4">
+<h4><span class="header-section-number">7.8.2.2</span> description</h4>
+<pre class="sourceCode r"><code class="sourceCode r">description <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">description =</span> input_description)</code></pre>
+</div>
+<div id="type" class="section level4">
+<h4><span class="header-section-number">7.8.2.3</span> type</h4>
+<pre class="sourceCode r"><code class="sourceCode r">description <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">type =</span> input_type)</code></pre>
+</div>
+<div id="language-1" class="section level4">
+<h4><span class="header-section-number">7.8.2.4</span> language</h4>
+<pre class="sourceCode r"><code class="sourceCode r">description <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">language =</span> <span class="st">&quot;en&quot;</span>)</code></pre>
+</div>
+<div id="source-2" class="section level4">
+<h4><span class="header-section-number">7.8.2.5</span> source</h4>
+<p>See <a href="dwc_mapping.html#citing-sources">7.4</a>:</p>
+<pre class="sourceCode r"><code class="sourceCode r">description <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">add_source_citation</span>(
+  <span class="dt">new_column =</span> <span class="st">&quot;source&quot;</span>,
+  <span class="dt">dataset_info =</span> checklists
+)</code></pre>
+</div>
+</div>
+<div id="post-processing-3" class="section level3">
+<h3><span class="header-section-number">7.8.3</span> Post-processing</h3>
+<ol style="list-style-type: decimal">
+<li><p>Remove the original columns.</p></li>
+<li><p>Sort on <code>taxonID</code>.</p></li>
+<li><p>Preview data:</p></li>
+</ol>
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["taxonID"],"name":[1],"type":["chr"],"align":["left"]},{"label":["description"],"name":[2],"type":["chr"],"align":["left"]},{"label":["type"],"name":[3],"type":["chr"],"align":["left"]},{"label":["language"],"name":[4],"type":["chr"],"align":["left"]},{"label":["source"],"name":[5],"type":["chr"],"align":["left"]}],"data":[{"1":"https://www.gbif.org/species/1032262","2":"established","3":"invasion stage","4":"en","5":"https://www.gbif.org/species/148438155: Enderleinellus kumadai Kaneko, 1954 in Reyserhove L, Groom Q, Adriaens T, Desmet P, Dekoninck W, Van Keer K, Lock K (2018). Ad hoc checklist of alien species in Belgium. Version 1.2. Research Institute for Nature and Forest (INBO). Checklist dataset https://doi.org/10.15468/3pmlxs"},{"1":"https://www.gbif.org/species/1032262","2":"Southern Asia","3":"native range","4":"en","5":"https://www.gbif.org/species/148438155: Enderleinellus kumadai Kaneko, 1954 in Reyserhove L, Groom Q, Adriaens T, Desmet P, Dekoninck W, Van Keer K, Lock K (2018). Ad hoc checklist of alien species in Belgium. Version 1.2. Research Institute for Nature and Forest (INBO). Checklist dataset https://doi.org/10.15468/3pmlxs"},{"1":"https://www.gbif.org/species/1032262","2":"cbd_2014_pathway:contaminant_animal_parasite","3":"pathway","4":"en","5":"https://www.gbif.org/species/148438155: Enderleinellus kumadai Kaneko, 1954 in Reyserhove L, Groom Q, Adriaens T, Desmet P, Dekoninck W, Van Keer K, Lock K (2018). Ad hoc checklist of alien species in Belgium. Version 1.2. Research Institute for Nature and Forest (INBO). Checklist dataset https://doi.org/10.15468/3pmlxs"},{"1":"https://www.gbif.org/species/1032377","2":"established","3":"invasion stage","4":"en","5":"https://www.gbif.org/species/148438158: Hoplopleura erismata Ferris, 1921 in Reyserhove L, Groom Q, Adriaens T, Desmet P, Dekoninck W, Van Keer K, Lock K (2018). Ad hoc checklist of alien species in Belgium. Version 1.2. Research Institute for Nature and Forest (INBO). Checklist dataset https://doi.org/10.15468/3pmlxs"},{"1":"https://www.gbif.org/species/1032377","2":"Southern Asia","3":"native range","4":"en","5":"https://www.gbif.org/species/148438158: Hoplopleura erismata Ferris, 1921 in Reyserhove L, Groom Q, Adriaens T, Desmet P, Dekoninck W, Van Keer K, Lock K (2018). Ad hoc checklist of alien species in Belgium. Version 1.2. Research Institute for Nature and Forest (INBO). Checklist dataset https://doi.org/10.15468/3pmlxs"},{"1":"https://www.gbif.org/species/1032377","2":"cbd_2014_pathway:contaminant_animal_parasite","3":"pathway","4":"en","5":"https://www.gbif.org/species/148438158: Hoplopleura erismata Ferris, 1921 in Reyserhove L, Groom Q, Adriaens T, Desmet P, Dekoninck W, Van Keer K, Lock K (2018). Ad hoc checklist of alien species in Belgium. Version 1.2. Research Institute for Nature and Forest (INBO). Checklist dataset https://doi.org/10.15468/3pmlxs"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+<ol start="4" style="list-style-type: decimal">
+<li>Save to <a href="https://github.com/trias-project/unified-checklist/blob/master/data/processed/description.csv">CSV</a>.</li>
+</ol>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="5_unify_information.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": false,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": {}
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/trias-project/unified-checklist/blob/master/src/dwc_mapping.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+},
+"search": false
+});
+});
+</script>
+
+</body>
+
+</html>

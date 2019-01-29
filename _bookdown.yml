@@ -15,7 +15,7 @@ rmd_files: [
   src/3_verify_taxa.Rmd,
   src/4_unify_taxa.Rmd,
   src/5_unify_information.Rmd,
-  src/dwc_mapping.Rmd
+  src/6_dwc_mapping.Rmd
 ]
 
 # Where Rmd files are kept:

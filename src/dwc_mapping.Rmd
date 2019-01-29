@@ -1,6 +1,12 @@
-# Read source data
+# Darwin Core mapping
 
-Create data frame `input_data` from the raw and interim data:
+In this chapter we standardize the unified information to a Darwin Core checklist that can be harvested by GBIF.
+
+```{r}
+knitr::opts_chunk$set(echo = TRUE) # Include code chunks for this document
+```
+
+## Read unified data
 
 ```{r}
 checklists <- read_csv(here("data", "raw", "checklists.csv"))
@@ -10,7 +16,7 @@ input_speciesprofiles <- read_csv(here("data", "interim", "speciesprofiles_unifi
 input_descriptions <- read_csv(here("data", "interim", "descriptions_unified.csv"))
 ```
 
-# Process data
+## Process data
 
 Add prefix `input_` to all column names to avoid name clashes with Darwin Core terms:
 
@@ -21,7 +27,7 @@ colnames(input_speciesprofiles) <- paste0("input_", colnames(input_speciesprofil
 colnames(input_descriptions) <- paste0("input_", colnames(input_descriptions))
 ```
 
-# Preview data
+## Preview data
 
 1. Number of rows:
 
@@ -54,9 +60,9 @@ input_descriptions %>%
   adorn_totals("row")
 ```
 
-# Taxon core
+## Taxon core {#taxon-core}
 
-## Pre-processing
+### Pre-processing
 
 1. Create a dataframe from the source taxa:
 
@@ -82,17 +88,17 @@ taxon %<>% separate(
 )
 ```
 
-## Term mapping
+### Term mapping
 
 Map the data to [Darwin Core Taxon](http://rs.gbif.org/core/dwc_taxon_2015-04-24.xml).
 
-### language
+#### language
 
 ```{r}
 taxon %<>% mutate(language = "en")
 ```
 
-### license
+#### license
 
 The license under which the unified checklist will be published equals the least open license of the source checklists. In the TrIAS project, the source checklists may be published under the following licenses, ranked from most open (1) to more restricive (3):
 
@@ -137,7 +143,7 @@ We add this to the taxon core:
 taxon %<>% mutate(license = sQuote(most_restrictive_license))
 ```
 
-### rightsHolder
+#### rightsHolder
 
 We do not set `rightsHolder` as the taxon and its related information is based on different source checklists (which in turn are based on other sources), published by different organizations, and mostly released under CC0. We make effort to credit the source in `references` (taxon core) and `source` (in the extensions).
 
@@ -145,31 +151,31 @@ We do not set `rightsHolder` as the taxon and its related information is based o
 taxon %<>% mutate(rightsHolder = NA)
 ```
 
-### bibliographicCitation
+#### bibliographicCitation
 
 ```{r}
 #include?
 ```
 
-### datasetID
+#### datasetID
 
 ```{r}
 taxon %<>% mutate(datasetID = "")
 ```
 
-### institutionCode
+#### institutionCode
 
 ```{r}
 taxon %<>% mutate(institutionCode = "ISSG")
 ```
 
-### datasetName
+#### datasetName
 
 ```{r}
 taxon %<>% mutate(datasetName = "Unified checklist of alien species in Belgium")
 ```
 
-### references
+#### references
 
 This is the link to the taxon according to the GBIF backbone taxonomy:
 
@@ -177,49 +183,49 @@ This is the link to the taxon according to the GBIF backbone taxonomy:
 taxon %<>% mutate(references = paste0("https://www.gbif.org/species/", input_verificationKey))
 ```
 
-### taxonID
+#### taxonID
 
 ```{r}
 taxon %<>% mutate(taxonID = paste0("https://www.gbif.org/species/", input_verificationKey))
 ```
 
-### scientificName
+#### scientificName
 
 ```{r}
 taxon %<>% mutate(scientificName = input_scientificName)
 ```
 
-### kingdom
+#### kingdom
 
 ```{r}
 taxon %<>% mutate(kingdom = input_kingdom)
 ```
 
-### phylum
+#### phylum
 
 ```{r}
 taxon %<>% mutate(phylum = input_phylum)
 ```
 
-### class
+#### class
 
 ```{r}
 taxon %<>% mutate(phylum = input_class)
 ```
 
-### order
+#### order
 
 ```{r}
 taxon %<>% mutate(order = input_order)
 ```
 
-### family
+#### family
 
 ```{r}
 taxon %<>% mutate(family = input_family)
 ```
 
-### genus
+#### genus
 
 Inspect differences between `input_genus` and `input_canonicalName_genus`:
 
@@ -235,19 +241,19 @@ The `input_genus` under which the GBIF Backbone Taxonomy has classified a taxon 
 taxon %<>% mutate(genus = input_canonicalName_genus)
 ```
 
-### specificEpithet
+#### specificEpithet
 
 ```{r}
 taxon %<>% mutate(specificEpithet = input_canonicalName_species)
 ```
 
-### infraspecificEpithet
+#### infraspecificEpithet
 
 ```{r}
 taxon %<>% mutate(infraspecificEpithet = input_canonicalName_infraspecific)
 ```
 
-### taxonRank
+#### taxonRank
 
 Inspect values:
 
@@ -263,13 +269,13 @@ Map values to lowercase:
 taxon %<>% mutate(taxonRank = str_to_lower(input_rank))
 ```
 
-### scientificNameAuthorship
+#### scientificNameAuthorship
 
 ```{r}
 taxon %<>% mutate(scientificNameAuthorship = input_authorship)
 ```
 
-### taxonRemarks
+#### taxonRemarks
 
 Here, we integrate the reference (doi) of the *source* of the taxon information (contained in `input_sourceChecklists`), i.e. the link to the specific taxon in the specific checklist(s).
 
@@ -328,7 +334,7 @@ taxon %<>% mutate(source = str_remove_all(source,"(,NA)"))
 taxon %<>% mutate(taxonRemarks = paste("Sources considered for unifying information:", source, sep = " "))
 ```
 
-## Post-processing
+### Post-processing
 
 Remove the original columns:
 
@@ -390,9 +396,9 @@ build_source_citation <- function(extension, checklists){
     }
 ```
 
-# Distribution extension
+## Distribution extension {#distribution-extension}
 
-## Pre-processing
+### Pre-processing
 
 Create a dataframe with all data:
 
@@ -402,45 +408,45 @@ distribution <- input_distributions
 
 Map the data to [Species Distribution](http://rs.gbif.org/extension/gbif/1.0/distribution.xml).
 
-## Term mapping
+### Term mapping
 
-### taxonID
+#### taxonID
 
 ```{r}
 distribution %<>% mutate(taxonID = paste0("https://www.gbif.org/species/", input_verificationKey))
 ```
 
-### locationID
+#### locationID
 
 ```{r}
 distribution %<>% mutate(locationID = "ISO_3166-2:BE") 
 ```
 
-### locality
+#### locality
 
 ```{r}
 distribution %<>% mutate(locatlity = "Belgium") 
 ```
 
-### countryCode
+#### countryCode
 
 ```{r}
 distribution %<>% mutate(countryCode = "BE") 
 ```
 
-### occurrenceStatus
+#### occurrenceStatus
 
 ```{r}
 distribution %<>% mutate(occurrenceStatus = "present") 
 ```
 
-### establishmentMeans
+#### establishmentMeans
 
 ```{r}
 distribution %<>% mutate(establishmentMeans = "introduced") 
 ```
 
-### eventDate 
+#### eventDate 
 
 The distribution information applies to a certain date range, which we will express here as an ISO 8601 date `yyyy/yyyy` (`input_startYear/input_endYear`). How the information for `input_startYear` and `input_endYear` is extracted from the source checklists, is described [here](https://trias-project.github.io/unified-checklist/unify_information.html#unify-distribution). As a result, each taxon in `input_distribution` has *or* an `input_startYear` and an `input_endYear` *or* no eventDate information at all.
 
@@ -450,13 +456,13 @@ distribution  %<>% mutate(eventDate = case_when(
   TRUE ~ paste(input_startYear, input_endYear, sep = "/")))
 ``` 
  
-### source
+#### source
 
 ```{r}
 distribution <- build_source_citation(distribution, checklists)
 ```
 
-## Post-processing
+### Post-processing
 
 Remove the original columns:
 
@@ -476,10 +482,9 @@ Save to CSV:
 write_csv(distribution, here("data", "processed", "distribution.csv"), na = "")
 ```
 
+## Description extension {#description-extension}
 
-# Description extension
-
-## Pre-processing
+### Pre-processing
 
 ```{r}
 description <- input_descriptions
@@ -487,39 +492,39 @@ description <- input_descriptions
 
 Map the data to [Taxon Description](http://rs.gbif.org/extension/gbif/1.0/description.xml).
 
-## Term mapping
+### Term mapping
 
-### taxonID
+#### taxonID
 
 ```{r}
 description %<>% mutate(taxonID = paste0("https://www.gbif.org/species/", input_verificationKey)) 
 ```
 
-### description
+#### description
 
 ```{r}
 description %<>% mutate(description = input_description)
 ```
 
-### type
+#### type
 
 ```{r}
 description %<>% mutate(type = input_type)
 ```
 
-### language
+#### language
 
 ```{r}
 description %<>% mutate(language = "en")
 ```
 
-### source
+#### source
 
 ```{r}
 description <- build_source_citation(description, checklists)
 ```
 
-## Post-processing
+### Post-processing
 
 Remove the original columns:
 
@@ -539,7 +544,7 @@ Save to CSV:
 write_csv(description, here("data", "processed", "description.csv"), na = "")
 ```
 
-# Create species profile extension
+## Species profile extension {#species-profile-extension}
 
 In this extension will express broad habitat characteristics of the species.
 
@@ -547,41 +552,41 @@ In this extension will express broad habitat characteristics of the species.
 species_profile <- input_speciesprofiles
 ```
 
-## Term mapping
+### Term mapping
 
 Map the data to [Species Profile](http://rs.gbif.org/extension/gbif/1.0/speciesprofile.xml).
 
-### taxonID
+#### taxonID
 
 ```{r}
 species_profile %<>% mutate(taxonID = paste0("https://www.gbif.org/species/", input_verificationKey))
 ```
 
-### isMarine
+#### isMarine
 
 ```{r}
 species_profile %<>% mutate(isMarine = input_marine)
 ```
 
-### isFreshwater
+#### isFreshwater
 
 ```{r}
 species_profile %<>% mutate(isFreshwater = input_freshwater)
 ```
 
-### isTerrestrial
+#### isTerrestrial
 
 ```{r}
 species_profile %<>% mutate(isTerrestrial = input_terrestrial)
 ```
 
-### source
+#### source
 
 ```{r}
 species_profile <- build_source_citation(species_profile, checklists)
 ```
 
-## habitat
+#### habitat
 
 `habitat` summarizes all information contained in `isMarine`, `isFreshwater` and `isTerrestrial`. 
 
@@ -614,7 +619,7 @@ species_profile %>%
   summarize(records = n()) 
 ```
 
-## Post-processing
+### Post-processing
 
 Remove the original columns:
 
@@ -639,8 +644,3 @@ Save to CSV:
 ```{r}
 write.csv(species_profile, here("data", "processed", "speciesprofile.csv"), na = "")
 ```
-
-
-
-
-

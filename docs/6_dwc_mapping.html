@@ -463,7 +463,7 @@ taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw
 <div id="taxonremarks" class="section level4">
 <h4><span class="header-section-number">7.5.2.21</span> taxonRemarks</h4>
 <p>Here we list the checklists that were <em>considered</em> for unifying information about a taxon, i.e. the checklists we selected (see <a href="1_get_taxa.html#choose-checklists">2.1</a>) in which the taxon appeared and got through verification (see <a href="3_verify_taxa.html#verification">4.2</a>). In the case of multiple considered checklists, it is possible that not all of them are selected as a source (see <a href="6_dwc_mapping.html#citing-sources">7.4</a>) when unifying information.</p>
-<p>The <code>datasetKey</code>s of the considered checklists are listed in <code>input_sourceChecklists</code>. Since we want the DOI instead, we will separate this information into columns, gather to rows and join with the DOI, and spread and combine again into a single column.</p>
+<p>The <code>datasetKey</code>s of the considered checklists are listed in <code>input_datasetKeys</code>. Since we want the DOI instead, we will separate this information into columns, gather to rows and join with the DOI, and spread and combine again into a single column.</p>
 <p>Map to <code>taxonRemarks</code>:</p>
 <pre class="sourceCode r"><code class="sourceCode r">taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">taxonRemarks =</span> <span class="kw">paste</span>(
   <span class="st">&quot;Sources considered for unifying information: &quot;</span>, input_datasetDOI

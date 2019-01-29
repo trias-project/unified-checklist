@@ -338,22 +338,22 @@ taxon %<>% mutate(scientificNameAuthorship = input_authorship)
 
 Here we list the checklists that were _considered_ for unifying information about a taxon, i.e. the checklists we selected (see \@ref(choose-checklists)) in which the taxon appeared and got through verification (see \@ref(verification)). In the case of multiple considered checklists, it is possible that not all of them are selected as a source (see \@ref(citing-sources)) when unifying information.
 
-The `datasetKey`s of the considered checklists are listed in `input_sourceChecklists`. Since we want the DOI instead, we will separate this information into columns, gather to rows and join with the DOI, and spread and combine again into a single column.
+The `datasetKey`s of the considered checklists are listed in `input_datasetKeys`. Since we want the DOI instead, we will separate this information into columns, gather to rows and join with the DOI, and spread and combine again into a single column.
 
 ```{r}
 taxon <-
   taxon %>%
   
-  # Separate input_sourceChecklist on "," in as many columns as there are checklists
+  # Separate input_datasetKeys on "," in as many columns as there are checklists
   separate(
-    input_sourceChecklists,
+    input_datasetKeys,
     into = c(paste("source", 1:nrow(checklists), sep = "_")),
     sep = ",",
     remove = FALSE,
     fill = "right"
   ) %>%
 
-  # Gather to one row per sourceChecklist (multiple rows)
+  # Gather to one row per source (multiple rows)
   gather(
     key = source,
     value = key,

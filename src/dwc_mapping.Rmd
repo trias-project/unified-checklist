@@ -90,14 +90,12 @@ add_source_citation <- function(df, new_field, dataset_info,
                                 dataset_key = "input_datasetKey",
                                 taxon_key = "input_taxonKey",
                                 scientific_name = "input_scientificName") {
-  
-  # Rename df[["dataset_key"]] to "datasetKey"
-  rename(df, datasetKey = dataset_key) %>%
+  df %>%
   
   # Join df with dataset_info
   left_join(
     select(dataset_info, datasetKey, citation),
-    by = "datasetKey"
+    by = setNames("datasetKey", dataset_key)
   ) %>%
 
   # Build full citation in new_field (requires !! to bypass nse)

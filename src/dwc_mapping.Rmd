@@ -400,17 +400,18 @@ taxon %<>% mutate(taxonRemarks = paste(
 ))
 ```
 
-
-
-```{r}
-```
-
 ### Post-processing
 
 Remove the original columns:
 
 ```{r}
-taxon %<>% select(-starts_with("input_"), -source)
+taxon %<>% select(-starts_with("input_"))
+```
+
+Sort on `taxonID`:
+
+```{r}
+taxon %<>% arrange(taxonID)
 ```
 
 Preview data:
@@ -505,6 +506,12 @@ Remove the original columns:
 distribution %<>% select(-starts_with("input_"))
 ```
 
+Sort on `taxonID`:
+
+```{r}
+distribution %<>% arrange(taxonID)
+```
+
 Preview data:
 
 ```{r}
@@ -572,6 +579,12 @@ Remove the original columns:
 
 ```{r}
 description %<>% select(-starts_with("input_"))
+```
+
+Sort on `taxonID`:
+
+```{r}
+description %<>% arrange(taxonID)
 ```
 
 Preview data:

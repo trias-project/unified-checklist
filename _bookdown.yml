@@ -19,6 +19,6 @@ rmd_files: [
 ]
 
 # Where Rmd files are kept:
-edit: https://github.com/trias-project/unified-checklist/blob/master/src/%s
+edit: https://github.com/trias-project/unified-checklist/blob/master/%s
 
 # All other settings are defined in index.Rmd

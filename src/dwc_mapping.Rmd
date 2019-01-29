@@ -83,10 +83,10 @@ This information is a combination of:
 - `input_scientificName`: e.g. `Nymphaea marliacea Marliac` (contained in `input_distributions.csv`),
 - `citation`: e.g. `Verloove F, Groom Q, Brosens D, Desmet P, Reyserhove L (2018). Manual of the Alien Plants of Belgium. Version 1.7. Botanic Garden Meise. Checklist dataset https://doi.org/10.15468/wtda1m.` (contained in `checklists.csv`)
 
-To generate this full citation, we create a helper function `add_source_citation(df, new_field, dataset_info)`.
+To generate this full citation, we create a helper function `add_source_citation(df, new_column, dataset_info)`.
 
 ```{r echo = FALSE}
-add_source_citation <- function(df, new_field, dataset_info,
+add_source_citation <- function(df, new_column, dataset_info,
                                 dataset_key = "input_datasetKey",
                                 taxon_key = "input_taxonKey",
                                 scientific_name = "input_scientificName") {
@@ -98,8 +98,8 @@ add_source_citation <- function(df, new_field, dataset_info,
     by = setNames("datasetKey", dataset_key)
   ) %>%
 
-  # Build full citation in new_field (requires !! to bypass nse)
-  mutate(!!new_field := paste0(
+  # Build full citation in new_column (requires !! to bypass nse)
+  mutate(!!new_column := paste0(
     "https://www.gbif.org/species/",
     df[[taxon_key]],
     ": ",
@@ -212,7 +212,7 @@ See \@ref(citing-sources).
 taxon %<>% mutate(input_datasetKey = "d7dddbf4-2cf0-4f39-9b2a-bb099caae36c")
 
 taxon %<>% add_source_citation(
-  new_field = "bibliographicCitation",
+  new_column = "bibliographicCitation",
   dataset_info = checklists,
   taxon_key = "input_verificationKey"
 )
@@ -491,7 +491,7 @@ See \@ref(citing-sources).
 
 ```{r}
 distribution %<>% add_source_citation(
-  new_field = "source",
+  new_column = "source",
   dataset_info = checklists
 )
 ```
@@ -566,7 +566,7 @@ See \@ref(citing-sources).
 
 ```{r}
 description %<>% add_source_citation(
-  new_field = "source",
+  new_column = "source",
   dataset_info = checklists
 )
 ```
@@ -672,7 +672,7 @@ See \@ref(citing-sources).
 
 ```{r}
 species_profile %<>% add_source_citation(
-  new_field = "source",
+  new_column = "source",
   dataset_info = checklists
 )
 ```

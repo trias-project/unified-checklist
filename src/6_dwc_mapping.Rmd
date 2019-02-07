@@ -70,18 +70,29 @@ input_taxa %>%
   adorn_totals("row")
 ```
 
-3. Number of taxa per kingdom and rank:
+3. Number of taxa per kingdom:
 
 ```{r}
 input_taxa %>%
-  group_by(kingdom, rank) %>%
+  group_by(kingdom) %>%
   summarize(
     `taxa` = n()
   ) %>%
   adorn_totals("row")
 ```
 
-4. Number of taxa and descriptions per type:
+4. Number of taxa per rank:
+
+```{r}
+input_taxa %>%
+  group_by(rank) %>%
+  summarize(
+    `taxa` = n()
+  ) %>%
+  adorn_totals("row")
+```
+
+5. Number of taxa and descriptions per type:
 
 ```{r}
 input_descriptions %>%

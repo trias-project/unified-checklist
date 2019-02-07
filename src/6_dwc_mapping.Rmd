@@ -218,7 +218,7 @@ taxon %<>% mutate(dwc_institutionCode = "ISSG") # Invasive Species Specialist Gr
 #### datasetName
 
 ```{r echo = TRUE}
-taxon %<>% mutate(dwc_datasetName = "Unified checklist of alien species in Belgium")
+taxon %<>% mutate(dwc_datasetName = "Global Register of Introduced and Invasive Species - Belgium")
 ```
 
 #### references

@@ -327,16 +327,32 @@ taxon %>%
   count()
 ```
 
-Map values to lowercase:
+Map values as is, in UPPERCASE, so it is clearer this information comes from the GBIF Backbone Taxonomy:
 
 ```{r echo = TRUE}
-taxon %<>% mutate(dwc_taxonRank = str_to_lower(rank))
+taxon %<>% mutate(dwc_taxonRank = rank)
 ```
 
 #### scientificNameAuthorship
 
 ```{r echo = TRUE}
 taxon %<>% mutate(dwc_scientificNameAuthorship = authorship)
+```
+
+#### taxonomicStatus
+
+Inspect values:
+
+```{r}
+taxon %>%
+  group_by(taxonomicStatus) %>%
+  count()
+```
+
+Map values as is, in UPPERCASE, so it is clearer this information comes from the GBIF Backbone Taxonomy:
+
+```{r echo = TRUE}
+taxon %<>% mutate(dwc_taxonomicStatus = taxonomicStatus)
 ```
 
 #### taxonRemarks

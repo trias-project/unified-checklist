@@ -77,6 +77,15 @@ distributions_unified <-
 
 3. Choose a single distribution within a checklist.
 
+**Note**: In contrast to the other extensions, the distribution information can come from multiple taxa within the same checklist. For example:
+
+scientific name | eventDate
+--- | ---
+[https://www.gbif.org/species/141266662/verbatim](Medicago monantha subsp. incisa (Benth.) Verloove & Lambinon) | 1885/1901
+[Medicago monantha subsp. noeana (Boiss.) Greuter & Burdet](https://www.gbif.org/species/141266791/verbatim) | 1886/1955
+
+Both are considered (verified) synonyms of [Medicago monantha Trautv.](https://www.gbif.org/species/2965226), so their distribution information is merged to `1885/1955`. We note both in `taxonKeys` and `scientificNames`.
+
 ```{r unify_information-7, echo = TRUE}
 distributions_unified <-
   distributions_unified %>%
@@ -94,12 +103,12 @@ distributions_unified <-
     verificationKey
   ) %>%
   
-  # Take earliest year, latest year and note taxonKeys and scientificName:
+  # Take earliest year, latest year and note taxonKey(s) and scientificName(s):
   summarize(
     startYear = as.integer(min(startYear, na.rm = TRUE)),
     endYear = as.integer(max(endYear, na.rm = TRUE)),
-    taxonKey = paste(unique(taxonKey), collapse = ","),
-    scientificName = paste(unique(scientificName), collapse = ",")
+    taxonKeys = paste(unique(taxonKey), collapse = "|"),
+    scientificNames = paste(unique(scientificName), collapse = "|")
   )
 ```
 
@@ -116,13 +125,13 @@ distributions_unified <-
   group_by(verificationKey) %>%
   
   # Select year of most trustworthy checklist (first one)
-  # and note that checklist and its taxonKey(s)
+  # and note that checklist and its taxonKey(s) and scientificName(s)
   summarize(
     startYear = first(startYear),
     endYear = first(endYear),
     datasetKey = first(datasetKey),
-    taxonKey = first(taxonKey),
-    scientificName = first(scientificName)
+    taxonKeys = first(taxonKeys),
+    scientificNames = first(scientificNames)
   ) %>%
 
   # Sort by verificationKey

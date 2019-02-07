@@ -54,7 +54,7 @@ Each row of information in the Taxon core and the extensions is based on a speci
 File | Source | Field for citation | Mapping section
 --- | --- | --- | ---
 Taxon core | a taxon in the [GBIF Backbone Taxonomy](https://doi.org/10.15468/39omei) | `bibliographicCitation`| \@ref(taxon-core)
-Distribution extension | a taxon in a source checklist | `source` | \@ref(distribution-extension)
+Distribution extension | one or more taxa in a source checklist | `source` | \@ref(distribution-extension)
 Species profile extension | a taxon in a source checklist | `source` | \@ref(species-profile-extension)
 Description extension | a taxon in a source checklist | `source` | \@ref(description-extension)
 
@@ -82,15 +82,20 @@ add_source_citation <- function(df, new_column, dataset_info,
     select(dataset_info, datasetKey, citation),
     by = setNames("datasetKey", dataset_key)
   ) %>%
-
+  
   # Build full citation in new_column (requires !! to bypass nse)
-  mutate(!!new_column := paste0(
-    "https://www.gbif.org/species/",
-    df[[taxon_key]],
-    ": ",
-    df[[scientific_name]],
-    " in ",
-    citation
+  mutate(!!new_column := case_when(
+    is.na(df[[taxon_key]]) ~ NA_character_,
+    is.na(df[[scientific_name]]) ~ NA_character_,
+    is.na(citation) ~ NA_character_,
+    TRUE ~ paste0(
+            "https://www.gbif.org/species/",
+            df[[taxon_key]],
+            ": ",
+            df[[scientific_name]],
+            " in ",
+            citation
+          )
   )) %>%
   
   # Remove added citation field
@@ -510,12 +515,61 @@ distribution %<>% mutate(dwc_eventDate = case_when(
  
 #### source
 
-See \@ref(citing-sources):
+A distribution can have multiple source taxa (i.e. two verified synonyms from the same checklist). We therefore separate `datasetKeys` and `scientificNames` in a maximum of three columns and build a source (see \@ref(citing-sources)) for each.
+
+```{r}
+distribution <-
+  distribution %>%
+  
+  # Separate taxonKeys on "|" in 3 columns
+  separate(
+    taxonKeys,
+    into = c("taxonKey_1", "taxonKey_2", "taxonKey_3"),
+    sep = "\\|",
+    remove = FALSE,
+    convert = TRUE,
+    extra = "drop",
+    fill = "right") %>%
+  
+  # Do the same with scientificNames
+  separate(
+    scientificNames,
+    into = c("scientificName_1", "scientificName_2", "scientificName_3"),
+    sep = "\\|",
+    remove = FALSE,
+    convert = TRUE,
+    extra = "drop",
+    fill = "right"
+  ) %>%
+  
+  # Add source citations
+  add_source_citation(
+    new_column = "source_1",
+    dataset_info = checklists,
+    taxon_key = "taxonKey_1",
+    scientific_name = "scientificName_1"
+  ) %>%
+  
+  add_source_citation(
+    new_column = "source_2",
+    dataset_info = checklists,
+    taxon_key = "taxonKey_2",
+    scientific_name = "scientificName_2"
+  ) %>%
+  
+  add_source_citation(
+    new_column = "source_3",
+    dataset_info = checklists,
+    taxon_key = "taxonKey_3",
+    scientific_name = "scientificName_3"
+  )
+```
+
 
 ```{r echo = TRUE}
-distribution %<>% add_source_citation(
-  new_column = "dwc_source",
-  dataset_info = checklists
+distribution %<>% mutate(dwc_source = 
+  paste(source_1, source_2, source_3, sep = ", ") %>%
+  str_remove_all(", NA")
 )
 ```
 

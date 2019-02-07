@@ -1,4 +1,4 @@
-verificationKey,startYear,endYear,datasetKey,taxonKey,scientificName
+verificationKey,startYear,endYear,datasetKey,taxonKeys,scientificNames
 1002621,,,3f5e930b-52a5-461d-87ec-26ecd66f14a3,145953348,Keratella tropica
 1005581,,,3f5e930b-52a5-461d-87ec-26ecd66f14a3,145953611,Scruparia ambigua
 1005677,,,3f5e930b-52a5-461d-87ec-26ecd66f14a3,145953642,Watersipora subtorquata
@@ -927,7 +927,7 @@ verificationKey,startYear,endYear,datasetKey,taxonKey,scientificName
 2781103,2016,2016,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266997,Hemerocallis lilioasphodelus L.
 2784401,1812,1812,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264834,Traunsteinera globosa (L.) Reichenb.
 2840931,1902,2018,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264832,Goodyera repens (L.) R. Brown
-2855356,1939,2018,9ff7d317-609b-4c08-bd86-3bc404b77c42,"141267243,141267246","Galanthus x warei J. Allen,Galanthus nivalis L. var. scharlockii Caspary"
+2855356,1939,2018,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267243|141267246,Galanthus x warei J. Allen|Galanthus nivalis L. var. scharlockii Caspary
 2855374,1984,1984,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267248,Galanthus ikariae Baker
 2855439,2015,2017,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267233,Galanthus woronowii Losinsk.
 2855705,2018,2018,9ff7d317-609b-4c08-bd86-3bc404b77c42,148437475,Allium lusitanicum Lam.
@@ -1207,7 +1207,7 @@ verificationKey,startYear,endYear,datasetKey,taxonKey,scientificName
 2964355,1882,2018,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266690,Lupinus polyphyllus Lindl.
 2965209,1923,1995,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266744,Medicago murex Willd.
 2965221,1891,2015,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266657,Medicago laciniata (L.) Mill.
-2965226,1885,1955,9ff7d317-609b-4c08-bd86-3bc404b77c42,"141266662,141266791","Medicago monantha (C.A. Mey.) Trautv. subsp. incisa (Benth.) Verloove & Lambinon,Medicago monantha (C.A. Mey.) Trautv. subsp. noeana (Boiss.) Greuter & Burdet"
+2965226,1885,1955,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266662|141266791,Medicago monantha (C.A. Mey.) Trautv. subsp. incisa (Benth.) Verloove & Lambinon|Medicago monantha (C.A. Mey.) Trautv. subsp. noeana (Boiss.) Greuter & Burdet
 2965232,1896,1896,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266701,Medicago carstiensis Wulfen
 2965233,1902,1904,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266801,Medicago fischeriana (Seringe) Trautv.
 2965250,,,3f5e930b-52a5-461d-87ec-26ecd66f14a3,145959398,Medicago tornata
@@ -1605,7 +1605,7 @@ verificationKey,startYear,endYear,datasetKey,taxonKey,scientificName
 3088310,1989,2018,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265163,Petasites japonicus (Siebold & Zucc.) Maxim.
 3088405,1928,1955,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265096,Leucanthemella serotina (L.) Tzvelev
 3088481,1880,2008,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265349,Tagetes minuta L.
-3088488,1953,2017,9ff7d317-609b-4c08-bd86-3bc404b77c42,"141265127,141265237","Tagetes patula L.,Tagetes erecta L."
+3088488,1953,2017,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265127|141265237,Tagetes patula L.|Tagetes erecta L.
 3088652,2015,2015,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265232,"Guizotia scabra (Vis,) Chiov. subsp. schimperi (Sch. Bip.) J. Baagøe"
 3089146,1824,2018,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265106,Xanthium orientale L. s.l.
 3089150,1848,2015,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265242,Xanthium spinosum L.
@@ -1958,7 +1958,7 @@ verificationKey,startYear,endYear,datasetKey,taxonKey,scientificName
 3753098,1977,1977,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265006,Saxifraga cymbalaria L.
 3754353,1908,2014,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265018,Saxifraga x urbium D.A. Webb
 3754587,2016,2016,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265009,Rodgersia podophylla A. Gray
-3755928,,,3f5e930b-52a5-461d-87ec-26ecd66f14a3,"145956882,145962699","Chenopodium album x missouriense,Chenopodium missouriense"
+3755928,,,3f5e930b-52a5-461d-87ec-26ecd66f14a3,145956882|145962699,Chenopodium album x missouriense|Chenopodium missouriense
 3756077,1947,2005,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266141,Chenopodium giganteum D. Don
 3756650,2015,2017,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266132,Chenopodium x reynieri Ludwig & Aellen
 3757050,,,3f5e930b-52a5-461d-87ec-26ecd66f14a3,145962711,Chenopodium bushianum

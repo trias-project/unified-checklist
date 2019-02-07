@@ -587,6 +587,14 @@ species_profile %<>% mutate(dwc_isFreshwater = freshwater)
 species_profile %<>% mutate(dwc_isTerrestrial = terrestrial)
 ```
 
+#### isInvasive
+
+The source checklists currently do not include information on the invasive nature of the taxa. We plan to add that information in an update of the dataset.
+
+```{r echo = TRUE}
+species_profile %<>% mutate(dwc_isInvasive = "")
+```
+
 #### habitat
 
 ISSG also used the field `habitat`, in which we will summarize the information from `isMarine`, `isFreshwater` and `isTerrestrial`. 

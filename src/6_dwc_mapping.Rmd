@@ -411,7 +411,7 @@ Map to `taxonRemarks`:
 
 ```{r echo = TRUE}
 taxon %<>% mutate(dwc_taxonRemarks = paste(
-  "Sources considered for unifying information: ", datasetDOIs
+  "Sources considered for this taxon:", datasetDOIs
 ))
 ```
 
@@ -688,7 +688,7 @@ Map the data to [Taxon Description](http://rs.gbif.org/extension/gbif/1.0/descri
 #### taxonID
 
 ```{r echo = TRUE}
-description %<>% mutate(dwc_taxonID = paste0("https://www.gbif.org/species/", verificationKey)) 
+description %<>% mutate(dwc_taxonID = paste0("https://www.gbif.org/species/", verificationKey))
 ```
 
 #### description

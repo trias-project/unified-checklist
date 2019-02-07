@@ -370,11 +370,11 @@ The `datasetKey`s of the considered checklists are listed in `datasetKeys`. Sinc
 taxon <-
   taxon %>%
   
-  # Separate _datasetKeys on "," in as many columns as there are checklists
+  # Separate datasetKeys on "|" in as many columns as there are checklists
   separate(
     datasetKeys,
     into = c(paste("source", 1:nrow(checklists), sep = "_")),
-    sep = ",",
+    sep = "\\|",
     remove = FALSE,
     fill = "right"
   ) %>%
@@ -565,6 +565,7 @@ distribution <-
   )
 ```
 
+Combine three source columns and remove `NA`:
 
 ```{r echo = TRUE}
 distribution %<>% mutate(dwc_source = 

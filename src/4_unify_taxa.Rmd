@@ -26,7 +26,7 @@ taxa_unified <-
 taxa_unified <-
   taxa_unified %>%
   
-  # Separate multiple verification keys on pipe character in max 5 columns
+  # Separate multiple verification keys on | character in max 5 columns
   separate(
     verificationKey,
     into = c("verKey_1", "verKey_2", "verKey_3", "verKey_4", "verKey_5"),
@@ -59,8 +59,8 @@ taxa_unified <-
   
   # Note contained checklists and taxa
   summarize(
-    datasetKeys = paste(sort(unique(datasetKey)), collapse = ","),
-    taxonKeys = paste(sort(unique(taxonKey)), collapse = ",")
+    datasetKeys = paste(unique(datasetKey), collapse = "|"),
+    taxonKeys = paste(unique(taxonKey), collapse = "|")
   )
 ```
 

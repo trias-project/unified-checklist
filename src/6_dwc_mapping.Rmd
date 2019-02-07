@@ -237,10 +237,28 @@ URL of the GBIF Backbone Taxonomy taxon on gbif.org:
 taxon %<>% mutate(dwc_taxonID = paste0("https://www.gbif.org/species/", verificationKey))
 ```
 
+#### acceptedNameUsageID
+
+```{r echo = TRUE}
+taxon %<>% mutate(dwc_acceptedNameUsageID = case_when(
+  is.na(acceptedKey) ~ paste0("https://www.gbif.org/species/", verificationKey), # If empty acceptedKey, use verificationKey
+  TRUE ~ paste0("https://www.gbif.org/species/", acceptedKey)
+))
+```
+
 #### scientificName
 
 ```{r echo = TRUE}
 taxon %<>% mutate(dwc_scientificName = scientificName)
+```
+
+#### acceptedNameUsage
+
+```{r echo = TRUE}
+taxon %<>% mutate(dwc_acceptedNameUsage = case_when(
+  is.na(acceptedName) ~ scientificName, # If empty acceptedName, use scientificName
+  TRUE ~ acceptedName
+))
 ```
 
 #### kingdom

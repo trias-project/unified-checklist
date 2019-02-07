@@ -25,7 +25,7 @@
 <meta name="author" content="Peter Desmet, Damiano Oldoni, Lien Reyserhove">
 
 
-<meta name="date" content="2019-01-30">
+<meta name="date" content="2019-02-07">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -268,6 +268,26 @@ descriptions &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<spa
 <ol start="3" style="list-style-type: decimal">
 <li>Choose a single distribution within a checklist.</li>
 </ol>
+<p><strong>Note</strong>: In contrast to the other extensions, the distribution information can come from multiple taxa within the same checklist. For example:</p>
+<table>
+<thead>
+<tr class="header">
+<th>scientific name</th>
+<th>eventDate</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="Medicago%20monantha%20subsp.%20incisa%20(Benth.)%20Verloove%20&amp;%20Lambinon">https://www.gbif.org/species/141266662/verbatim</a></td>
+<td>1885/1901</td>
+</tr>
+<tr class="even">
+<td><a href="https://www.gbif.org/species/141266791/verbatim">Medicago monantha subsp. noeana (Boiss.) Greuter &amp; Burdet</a></td>
+<td>1886/1955</td>
+</tr>
+</tbody>
+</table>
+<p>Both are considered (verified) synonyms of <a href="https://www.gbif.org/species/2965226">Medicago monantha Trautv.</a>, so their distribution information is merged to <code>1885/1955</code>. We note both in <code>taxonKeys</code> and <code>scientificNames</code>.</p>
 <pre class="sourceCode r"><code class="sourceCode r">distributions_unified &lt;-
 <span class="st">  </span>distributions_unified <span class="op">%&gt;%</span>
 
@@ -284,12 +304,12 @@ descriptions &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<spa
     verificationKey
   ) <span class="op">%&gt;%</span>
 <span class="st">  </span>
-<span class="st">  </span><span class="co"># Take earliest year, latest year and note taxonKeys and scientificName:</span>
+<span class="st">  </span><span class="co"># Take earliest year, latest year and note taxonKey(s) and scientificName(s):</span>
 <span class="st">  </span><span class="kw">summarize</span>(
     <span class="dt">startYear =</span> <span class="kw">as.integer</span>(<span class="kw">min</span>(startYear, <span class="dt">na.rm =</span> <span class="ot">TRUE</span>)),
     <span class="dt">endYear =</span> <span class="kw">as.integer</span>(<span class="kw">max</span>(endYear, <span class="dt">na.rm =</span> <span class="ot">TRUE</span>)),
-    <span class="dt">taxonKey =</span> <span class="kw">paste</span>(<span class="kw">unique</span>(taxonKey), <span class="dt">collapse =</span> <span class="st">&quot;,&quot;</span>),
-    <span class="dt">scientificName =</span> <span class="kw">paste</span>(<span class="kw">unique</span>(scientificName), <span class="dt">collapse =</span> <span class="st">&quot;,&quot;</span>)
+    <span class="dt">taxonKeys =</span> <span class="kw">paste</span>(<span class="kw">unique</span>(taxonKey), <span class="dt">collapse =</span> <span class="st">&quot;|&quot;</span>),
+    <span class="dt">scientificNames =</span> <span class="kw">paste</span>(<span class="kw">unique</span>(scientificName), <span class="dt">collapse =</span> <span class="st">&quot;|&quot;</span>)
   )</code></pre>
 <ol start="4" style="list-style-type: decimal">
 <li>Choose a single distribution across checklists.</li>
@@ -304,13 +324,13 @@ descriptions &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<spa
 <span class="st">  </span><span class="kw">group_by</span>(verificationKey) <span class="op">%&gt;%</span>
 <span class="st">  </span>
 <span class="st">  </span><span class="co"># Select year of most trustworthy checklist (first one)</span>
-<span class="st">  </span><span class="co"># and note that checklist and its taxonKey(s)</span>
+<span class="st">  </span><span class="co"># and note that checklist and its taxonKey(s) and scientificName(s)</span>
 <span class="st">  </span><span class="kw">summarize</span>(
     <span class="dt">startYear =</span> <span class="kw">first</span>(startYear),
     <span class="dt">endYear =</span> <span class="kw">first</span>(endYear),
     <span class="dt">datasetKey =</span> <span class="kw">first</span>(datasetKey),
-    <span class="dt">taxonKey =</span> <span class="kw">first</span>(taxonKey),
-    <span class="dt">scientificName =</span> <span class="kw">first</span>(scientificName)
+    <span class="dt">taxonKeys =</span> <span class="kw">first</span>(taxonKeys),
+    <span class="dt">scientificNames =</span> <span class="kw">first</span>(scientificNames)
   ) <span class="op">%&gt;%</span>
 
 <span class="st">  </span><span class="co"># Sort by verificationKey</span>

@@ -25,7 +25,7 @@
 <meta name="author" content="Peter Desmet, Damiano Oldoni, Lien Reyserhove">
 
 
-<meta name="date" content="2019-01-30">
+<meta name="date" content="2019-02-07">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -293,7 +293,7 @@ input_descriptions &lt;-<span class="st"> </span><span class="kw">read_csv</span
 </tr>
 <tr class="even">
 <td>Distribution extension</td>
-<td>a taxon in a source checklist</td>
+<td>one or more taxa in a source checklist</td>
 <td><code>source</code></td>
 <td><a href="6_dwc_mapping.html#distribution-extension">7.5</a></td>
 </tr>
@@ -385,7 +385,7 @@ taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw
 </div>
 <div id="datasetname" class="section level4">
 <h4><span class="header-section-number">7.4.2.7</span> datasetName</h4>
-<pre class="sourceCode r"><code class="sourceCode r">taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_datasetName =</span> <span class="st">&quot;Unified checklist of alien species in Belgium&quot;</span>)</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r">taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_datasetName =</span> <span class="st">&quot;Global Register of Introduced and Invasive Species - Belgium&quot;</span>)</code></pre>
 </div>
 <div id="references" class="section level4">
 <h4><span class="header-section-number">7.4.2.8</span> references</h4>
@@ -397,71 +397,95 @@ taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw
 <p>URL of the GBIF Backbone Taxonomy taxon on gbif.org:</p>
 <pre class="sourceCode r"><code class="sourceCode r">taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_taxonID =</span> <span class="kw">paste0</span>(<span class="st">&quot;https://www.gbif.org/species/&quot;</span>, verificationKey))</code></pre>
 </div>
+<div id="acceptednameusageid" class="section level4">
+<h4><span class="header-section-number">7.4.2.10</span> acceptedNameUsageID</h4>
+<pre class="sourceCode r"><code class="sourceCode r">taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_acceptedNameUsageID =</span> <span class="kw">case_when</span>(
+  <span class="kw">is.na</span>(acceptedKey) <span class="op">~</span><span class="st"> </span><span class="kw">paste0</span>(<span class="st">&quot;https://www.gbif.org/species/&quot;</span>, verificationKey), <span class="co"># If empty acceptedKey, use verificationKey</span>
+  <span class="ot">TRUE</span> <span class="op">~</span><span class="st"> </span><span class="kw">paste0</span>(<span class="st">&quot;https://www.gbif.org/species/&quot;</span>, acceptedKey)
+))</code></pre>
+</div>
 <div id="scientificname" class="section level4">
-<h4><span class="header-section-number">7.4.2.10</span> scientificName</h4>
+<h4><span class="header-section-number">7.4.2.11</span> scientificName</h4>
 <pre class="sourceCode r"><code class="sourceCode r">taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_scientificName =</span> scientificName)</code></pre>
 </div>
+<div id="acceptednameusage" class="section level4">
+<h4><span class="header-section-number">7.4.2.12</span> acceptedNameUsage</h4>
+<pre class="sourceCode r"><code class="sourceCode r">taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_acceptedNameUsage =</span> <span class="kw">case_when</span>(
+  <span class="kw">is.na</span>(acceptedName) <span class="op">~</span><span class="st"> </span>scientificName, <span class="co"># If empty acceptedName, use scientificName</span>
+  <span class="ot">TRUE</span> <span class="op">~</span><span class="st"> </span><span class="kw">as.character</span>(acceptedName)
+))</code></pre>
+</div>
 <div id="kingdom" class="section level4">
-<h4><span class="header-section-number">7.4.2.11</span> kingdom</h4>
+<h4><span class="header-section-number">7.4.2.13</span> kingdom</h4>
 <pre class="sourceCode r"><code class="sourceCode r">taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_kingdom =</span> kingdom)</code></pre>
 </div>
 <div id="phylum" class="section level4">
-<h4><span class="header-section-number">7.4.2.12</span> phylum</h4>
+<h4><span class="header-section-number">7.4.2.14</span> phylum</h4>
 <pre class="sourceCode r"><code class="sourceCode r">taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_phylum =</span> phylum)</code></pre>
 </div>
 <div id="class" class="section level4">
-<h4><span class="header-section-number">7.4.2.13</span> class</h4>
+<h4><span class="header-section-number">7.4.2.15</span> class</h4>
 <pre class="sourceCode r"><code class="sourceCode r">taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_phylum =</span> class)</code></pre>
 </div>
 <div id="order" class="section level4">
-<h4><span class="header-section-number">7.4.2.14</span> order</h4>
+<h4><span class="header-section-number">7.4.2.16</span> order</h4>
 <pre class="sourceCode r"><code class="sourceCode r">taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_order =</span> order)</code></pre>
 </div>
 <div id="family" class="section level4">
-<h4><span class="header-section-number">7.4.2.15</span> family</h4>
+<h4><span class="header-section-number">7.4.2.17</span> family</h4>
 <pre class="sourceCode r"><code class="sourceCode r">taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_family =</span> family)</code></pre>
 </div>
 <div id="genus" class="section level4">
-<h4><span class="header-section-number">7.4.2.16</span> genus</h4>
-<p>Inspect differences between <code>genus</code> and <code>canonicalName_genus</code>:</p>
+<h4><span class="header-section-number">7.4.2.18</span> genus</h4>
+<p><code>genus</code> is part of the higher classification, which is provided by the GBIF Backbone Taxonomy. We will use that, but note that for some synonyms it might differ from the genus in the scientific name:</p>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
 {"columns":[{"label":["verificationKey"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["scientificName"],"name":[2],"type":["chr"],"align":["left"]},{"label":["genus"],"name":[3],"type":["chr"],"align":["left"]},{"label":["canonicalName_genus"],"name":[4],"type":["chr"],"align":["left"]},{"label":["taxonomicStatus"],"name":[5],"type":["chr"],"align":["left"]}],"data":[{"1":"5356481","2":"Lathyrus cicera L.","3":"Astragalus","4":"Lathyrus","5":"SYNONYM"},{"1":"5386028","2":"Cyanus triumfettii (All.) Dostal ex A. & D.Love","3":"Centaurea","4":"Cyanus","5":"SYNONYM"},{"1":"7331240","2":"Halimium alyssoides K.Koch","3":"Cistus","4":"Halimium","5":"ACCEPTED"},{"1":"8011979","2":"Chaenorrhinum origanifolium (L.) Kostel., 1844","3":"Chaenorhinum","4":"Chaenorrhinum","5":"DOUBTFUL"},{"1":"8180804","2":"Brachycome heterodonta DC.","3":"Vittadinia","4":"Brachycome","5":"DOUBTFUL"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
   </script>
 </div>
-<p>The <code>genus</code> under which the GBIF Backbone Taxonomy has classified a taxon can differ from the genus in the scientific name. Since we consider all our taxa as accepted taxa, we take the genus from the scientific name (i.e. the <code>canonicalName_genus</code>).</p>
-<pre class="sourceCode r"><code class="sourceCode r">taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_genus =</span> canonicalName_genus)</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r">taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_genus =</span> genus)</code></pre>
 </div>
 <div id="specificepithet" class="section level4">
-<h4><span class="header-section-number">7.4.2.17</span> specificEpithet</h4>
+<h4><span class="header-section-number">7.4.2.19</span> specificEpithet</h4>
 <pre class="sourceCode r"><code class="sourceCode r">taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_specificEpithet =</span> canonicalName_species)</code></pre>
 </div>
 <div id="infraspecificepithet" class="section level4">
-<h4><span class="header-section-number">7.4.2.18</span> infraspecificEpithet</h4>
+<h4><span class="header-section-number">7.4.2.20</span> infraspecificEpithet</h4>
 <pre class="sourceCode r"><code class="sourceCode r">taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_infraspecificEpithet =</span> canonicalName_infraspecific)</code></pre>
 </div>
 <div id="taxonrank" class="section level4">
-<h4><span class="header-section-number">7.4.2.19</span> taxonRank</h4>
+<h4><span class="header-section-number">7.4.2.21</span> taxonRank</h4>
 <p>Inspect values:</p>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
 {"columns":[{"label":["rank"],"name":[1],"type":["chr"],"align":["left"]},{"label":["n"],"name":[2],"type":["int"],"align":["right"]}],"data":[{"1":"FORM","2":"2"},{"1":"GENUS","2":"15"},{"1":"SPECIES","2":"3350"},{"1":"SUBSPECIES","2":"109"},{"1":"VARIETY","2":"26"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
   </script>
 </div>
-<p>Map values to lowercase:</p>
-<pre class="sourceCode r"><code class="sourceCode r">taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_taxonRank =</span> <span class="kw">str_to_lower</span>(rank))</code></pre>
+<p>Map values as is, in UPPERCASE, so it is clearer this information comes from the GBIF Backbone Taxonomy:</p>
+<pre class="sourceCode r"><code class="sourceCode r">taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_taxonRank =</span> rank)</code></pre>
 </div>
 <div id="scientificnameauthorship" class="section level4">
-<h4><span class="header-section-number">7.4.2.20</span> scientificNameAuthorship</h4>
+<h4><span class="header-section-number">7.4.2.22</span> scientificNameAuthorship</h4>
 <pre class="sourceCode r"><code class="sourceCode r">taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_scientificNameAuthorship =</span> authorship)</code></pre>
 </div>
+<div id="taxonomicstatus" class="section level4">
+<h4><span class="header-section-number">7.4.2.23</span> taxonomicStatus</h4>
+<p>Inspect values:</p>
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["taxonomicStatus"],"name":[1],"type":["chr"],"align":["left"]},{"label":["n"],"name":[2],"type":["int"],"align":["right"]}],"data":[{"1":"ACCEPTED","2":"3376"},{"1":"DOUBTFUL","2":"113"},{"1":"PROPARTE_SYNONYM","2":"1"},{"1":"SYNONYM","2":"12"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+<p>Map values as is, in UPPERCASE, so it is clearer this information comes from the GBIF Backbone Taxonomy:</p>
+<pre class="sourceCode r"><code class="sourceCode r">taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_taxonomicStatus =</span> taxonomicStatus)</code></pre>
+</div>
 <div id="taxonremarks" class="section level4">
-<h4><span class="header-section-number">7.4.2.21</span> taxonRemarks</h4>
+<h4><span class="header-section-number">7.4.2.24</span> taxonRemarks</h4>
 <p>Here we list the checklists that were <em>considered</em> for unifying information about a taxon, i.e. the checklists we selected (see <a href="1_get_taxa.html#choose-checklists">2.1</a>) in which the taxon appeared and got through verification (see <a href="3_verify_taxa.html#verification">4.2</a>). In the case of multiple considered checklists, it is possible that not all of them are selected as a source (see <a href="6_dwc_mapping.html#citing-sources">7.3</a>) when unifying information.</p>
 <p>The <code>datasetKey</code>s of the considered checklists are listed in <code>datasetKeys</code>. Since we want the DOI instead, we will separate this information into columns, gather to rows and join with the DOI, and spread and combine again into a single column.</p>
 <p>Map to <code>taxonRemarks</code>:</p>
 <pre class="sourceCode r"><code class="sourceCode r">taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_taxonRemarks =</span> <span class="kw">paste</span>(
-  <span class="st">&quot;Sources considered for unifying information: &quot;</span>, datasetDOIs
+  <span class="st">&quot;Sources considered for this taxon:&quot;</span>, datasetDOIs
 ))</code></pre>
 </div>
 </div>
@@ -475,7 +499,7 @@ taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw
 </ol>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
-{"columns":[{"label":["language"],"name":[1],"type":["chr"],"align":["left"]},{"label":["license"],"name":[2],"type":["chr"],"align":["left"]},{"label":["rightsHolder"],"name":[3],"type":["lgl"],"align":["right"]},{"label":["bibliographicCitation"],"name":[4],"type":["chr"],"align":["left"]},{"label":["datasetID"],"name":[5],"type":["chr"],"align":["left"]},{"label":["institutionCode"],"name":[6],"type":["chr"],"align":["left"]},{"label":["datasetName"],"name":[7],"type":["chr"],"align":["left"]},{"label":["references"],"name":[8],"type":["chr"],"align":["left"]},{"label":["taxonID"],"name":[9],"type":["chr"],"align":["left"]},{"label":["scientificName"],"name":[10],"type":["chr"],"align":["left"]},{"label":["kingdom"],"name":[11],"type":["chr"],"align":["left"]},{"label":["phylum"],"name":[12],"type":["chr"],"align":["left"]},{"label":["order"],"name":[13],"type":["chr"],"align":["left"]},{"label":["family"],"name":[14],"type":["chr"],"align":["left"]},{"label":["genus"],"name":[15],"type":["chr"],"align":["left"]},{"label":["specificEpithet"],"name":[16],"type":["chr"],"align":["left"]},{"label":["infraspecificEpithet"],"name":[17],"type":["chr"],"align":["left"]},{"label":["taxonRank"],"name":[18],"type":["chr"],"align":["left"]},{"label":["scientificNameAuthorship"],"name":[19],"type":["chr"],"align":["left"]},{"label":["taxonRemarks"],"name":[20],"type":["chr"],"align":["left"]}],"data":[{"1":"en","2":"http://creativecommons.org/licenses/by/4.0/legalcode","3":"NA","4":"https://www.gbif.org/species/1002621: Keratella tropica (Apstein, 1907) in GBIF Secretariat (2017). GBIF Backbone Taxonomy. Checklist dataset https://doi.org/10.15468/39omei","5":"","6":"ISSG","7":"Unified checklist of alien species in Belgium","8":"https://www.gbif.org/species/1002621","9":"https://www.gbif.org/species/1002621","10":"Keratella tropica (Apstein, 1907)","11":"Animalia","12":"Eurotatoria","13":"Ploima","14":"Brachionidae","15":"Keratella","16":"tropica","17":"NA","18":"species","19":"(Apstein, 1907)","20":"Sources considered for unifying information:  https://doi.org/10.15468/focajn"},{"1":"en","2":"http://creativecommons.org/licenses/by/4.0/legalcode","3":"NA","4":"https://www.gbif.org/species/1005581: Scruparia ambigua (d'Orbigny, 1841) in GBIF Secretariat (2017). GBIF Backbone Taxonomy. Checklist dataset https://doi.org/10.15468/39omei","5":"","6":"ISSG","7":"Unified checklist of alien species in Belgium","8":"https://www.gbif.org/species/1005581","9":"https://www.gbif.org/species/1005581","10":"Scruparia ambigua (d'Orbigny, 1841)","11":"Animalia","12":"Gymnolaemata","13":"Cheilostomatida","14":"Scrupariidae","15":"Scruparia","16":"ambigua","17":"NA","18":"species","19":"(d'Orbigny, 1841)","20":"Sources considered for unifying information:  https://doi.org/10.15468/focajn"},{"1":"en","2":"http://creativecommons.org/licenses/by/4.0/legalcode","3":"NA","4":"https://www.gbif.org/species/1005677: Watersipora subtorquata (d'Orbigny, 1852) in GBIF Secretariat (2017). GBIF Backbone Taxonomy. Checklist dataset https://doi.org/10.15468/39omei","5":"","6":"ISSG","7":"Unified checklist of alien species in Belgium","8":"https://www.gbif.org/species/1005677","9":"https://www.gbif.org/species/1005677","10":"Watersipora subtorquata (d'Orbigny, 1852)","11":"Animalia","12":"Gymnolaemata","13":"Cheilostomatida","14":"Watersiporidae","15":"Watersipora","16":"subtorquata","17":"NA","18":"species","19":"(d'Orbigny, 1852)","20":"Sources considered for unifying information:  https://doi.org/10.15468/focajn"},{"1":"en","2":"http://creativecommons.org/licenses/by/4.0/legalcode","3":"NA","4":"https://www.gbif.org/species/1007770: Membranipora membranacea (Linnaeus, 1767) in GBIF Secretariat (2017). GBIF Backbone Taxonomy. Checklist dataset https://doi.org/10.15468/39omei","5":"","6":"ISSG","7":"Unified checklist of alien species in Belgium","8":"https://www.gbif.org/species/1007770","9":"https://www.gbif.org/species/1007770","10":"Membranipora membranacea (Linnaeus, 1767)","11":"Animalia","12":"Gymnolaemata","13":"Cheilostomatida","14":"Membraniporidae","15":"Membranipora","16":"membranacea","17":"NA","18":"species","19":"(Linnaeus, 1767)","20":"Sources considered for unifying information:  https://doi.org/10.15468/focajn"},{"1":"en","2":"http://creativecommons.org/licenses/by/4.0/legalcode","3":"NA","4":"https://www.gbif.org/species/1008955: Fenestrulina delicia Winston, Hayward & Craig, 2000 in GBIF Secretariat (2017). GBIF Backbone Taxonomy. Checklist dataset https://doi.org/10.15468/39omei","5":"","6":"ISSG","7":"Unified checklist of alien species in Belgium","8":"https://www.gbif.org/species/1008955","9":"https://www.gbif.org/species/1008955","10":"Fenestrulina delicia Winston, Hayward & Craig, 2000","11":"Animalia","12":"Gymnolaemata","13":"Cheilostomatida","14":"Microporellidae","15":"Fenestrulina","16":"delicia","17":"NA","18":"species","19":"Winston, Hayward & Craig, 2000","20":"Sources considered for unifying information:  https://doi.org/10.15468/focajn"},{"1":"en","2":"http://creativecommons.org/licenses/by/4.0/legalcode","3":"NA","4":"https://www.gbif.org/species/1010644: Hanseniella caldaria (Hansen, 1903) in GBIF Secretariat (2017). GBIF Backbone Taxonomy. Checklist dataset https://doi.org/10.15468/39omei","5":"","6":"ISSG","7":"Unified checklist of alien species in Belgium","8":"https://www.gbif.org/species/1010644","9":"https://www.gbif.org/species/1010644","10":"Hanseniella caldaria (Hansen, 1903)","11":"Animalia","12":"Symphyla","13":"NA","14":"Scutigerellidae","15":"Hanseniella","16":"caldaria","17":"NA","18":"species","19":"(Hansen, 1903)","20":"Sources considered for unifying information:  https://doi.org/10.15468/3pmlxs"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+{"columns":[{"label":["language"],"name":[1],"type":["chr"],"align":["left"]},{"label":["license"],"name":[2],"type":["chr"],"align":["left"]},{"label":["rightsHolder"],"name":[3],"type":["lgl"],"align":["right"]},{"label":["bibliographicCitation"],"name":[4],"type":["chr"],"align":["left"]},{"label":["datasetID"],"name":[5],"type":["chr"],"align":["left"]},{"label":["institutionCode"],"name":[6],"type":["chr"],"align":["left"]},{"label":["datasetName"],"name":[7],"type":["chr"],"align":["left"]},{"label":["references"],"name":[8],"type":["chr"],"align":["left"]},{"label":["taxonID"],"name":[9],"type":["chr"],"align":["left"]},{"label":["acceptedNameUsageID"],"name":[10],"type":["chr"],"align":["left"]},{"label":["scientificName"],"name":[11],"type":["chr"],"align":["left"]},{"label":["acceptedNameUsage"],"name":[12],"type":["chr"],"align":["left"]},{"label":["kingdom"],"name":[13],"type":["chr"],"align":["left"]},{"label":["phylum"],"name":[14],"type":["chr"],"align":["left"]},{"label":["order"],"name":[15],"type":["chr"],"align":["left"]},{"label":["family"],"name":[16],"type":["chr"],"align":["left"]},{"label":["genus"],"name":[17],"type":["chr"],"align":["left"]},{"label":["specificEpithet"],"name":[18],"type":["chr"],"align":["left"]},{"label":["infraspecificEpithet"],"name":[19],"type":["chr"],"align":["left"]},{"label":["taxonRank"],"name":[20],"type":["chr"],"align":["left"]},{"label":["scientificNameAuthorship"],"name":[21],"type":["chr"],"align":["left"]},{"label":["taxonomicStatus"],"name":[22],"type":["chr"],"align":["left"]},{"label":["taxonRemarks"],"name":[23],"type":["chr"],"align":["left"]}],"data":[{"1":"en","2":"http://creativecommons.org/licenses/by/4.0/legalcode","3":"NA","4":"https://www.gbif.org/species/1002621: Keratella tropica (Apstein, 1907) in GBIF Secretariat (2017). GBIF Backbone Taxonomy. Checklist dataset https://doi.org/10.15468/39omei","5":"","6":"ISSG","7":"Global Register of Introduced and Invasive Species - Belgium","8":"https://www.gbif.org/species/1002621","9":"https://www.gbif.org/species/1002621","10":"https://www.gbif.org/species/1002621","11":"Keratella tropica (Apstein, 1907)","12":"Keratella tropica (Apstein, 1907)","13":"Animalia","14":"Eurotatoria","15":"Ploima","16":"Brachionidae","17":"Keratella","18":"tropica","19":"NA","20":"SPECIES","21":"(Apstein, 1907)","22":"ACCEPTED","23":"Sources considered for this taxon: https://doi.org/10.15468/focajn"},{"1":"en","2":"http://creativecommons.org/licenses/by/4.0/legalcode","3":"NA","4":"https://www.gbif.org/species/1005581: Scruparia ambigua (d'Orbigny, 1841) in GBIF Secretariat (2017). GBIF Backbone Taxonomy. Checklist dataset https://doi.org/10.15468/39omei","5":"","6":"ISSG","7":"Global Register of Introduced and Invasive Species - Belgium","8":"https://www.gbif.org/species/1005581","9":"https://www.gbif.org/species/1005581","10":"https://www.gbif.org/species/1005581","11":"Scruparia ambigua (d'Orbigny, 1841)","12":"Scruparia ambigua (d'Orbigny, 1841)","13":"Animalia","14":"Gymnolaemata","15":"Cheilostomatida","16":"Scrupariidae","17":"Scruparia","18":"ambigua","19":"NA","20":"SPECIES","21":"(d'Orbigny, 1841)","22":"ACCEPTED","23":"Sources considered for this taxon: https://doi.org/10.15468/focajn"},{"1":"en","2":"http://creativecommons.org/licenses/by/4.0/legalcode","3":"NA","4":"https://www.gbif.org/species/1005677: Watersipora subtorquata (d'Orbigny, 1852) in GBIF Secretariat (2017). GBIF Backbone Taxonomy. Checklist dataset https://doi.org/10.15468/39omei","5":"","6":"ISSG","7":"Global Register of Introduced and Invasive Species - Belgium","8":"https://www.gbif.org/species/1005677","9":"https://www.gbif.org/species/1005677","10":"https://www.gbif.org/species/1005677","11":"Watersipora subtorquata (d'Orbigny, 1852)","12":"Watersipora subtorquata (d'Orbigny, 1852)","13":"Animalia","14":"Gymnolaemata","15":"Cheilostomatida","16":"Watersiporidae","17":"Watersipora","18":"subtorquata","19":"NA","20":"SPECIES","21":"(d'Orbigny, 1852)","22":"ACCEPTED","23":"Sources considered for this taxon: https://doi.org/10.15468/focajn"},{"1":"en","2":"http://creativecommons.org/licenses/by/4.0/legalcode","3":"NA","4":"https://www.gbif.org/species/1007770: Membranipora membranacea (Linnaeus, 1767) in GBIF Secretariat (2017). GBIF Backbone Taxonomy. Checklist dataset https://doi.org/10.15468/39omei","5":"","6":"ISSG","7":"Global Register of Introduced and Invasive Species - Belgium","8":"https://www.gbif.org/species/1007770","9":"https://www.gbif.org/species/1007770","10":"https://www.gbif.org/species/1007770","11":"Membranipora membranacea (Linnaeus, 1767)","12":"Membranipora membranacea (Linnaeus, 1767)","13":"Animalia","14":"Gymnolaemata","15":"Cheilostomatida","16":"Membraniporidae","17":"Membranipora","18":"membranacea","19":"NA","20":"SPECIES","21":"(Linnaeus, 1767)","22":"ACCEPTED","23":"Sources considered for this taxon: https://doi.org/10.15468/focajn"},{"1":"en","2":"http://creativecommons.org/licenses/by/4.0/legalcode","3":"NA","4":"https://www.gbif.org/species/1008955: Fenestrulina delicia Winston, Hayward & Craig, 2000 in GBIF Secretariat (2017). GBIF Backbone Taxonomy. Checklist dataset https://doi.org/10.15468/39omei","5":"","6":"ISSG","7":"Global Register of Introduced and Invasive Species - Belgium","8":"https://www.gbif.org/species/1008955","9":"https://www.gbif.org/species/1008955","10":"https://www.gbif.org/species/1008955","11":"Fenestrulina delicia Winston, Hayward & Craig, 2000","12":"Fenestrulina delicia Winston, Hayward & Craig, 2000","13":"Animalia","14":"Gymnolaemata","15":"Cheilostomatida","16":"Microporellidae","17":"Fenestrulina","18":"delicia","19":"NA","20":"SPECIES","21":"Winston, Hayward & Craig, 2000","22":"ACCEPTED","23":"Sources considered for this taxon: https://doi.org/10.15468/focajn"},{"1":"en","2":"http://creativecommons.org/licenses/by/4.0/legalcode","3":"NA","4":"https://www.gbif.org/species/1010644: Hanseniella caldaria (Hansen, 1903) in GBIF Secretariat (2017). GBIF Backbone Taxonomy. Checklist dataset https://doi.org/10.15468/39omei","5":"","6":"ISSG","7":"Global Register of Introduced and Invasive Species - Belgium","8":"https://www.gbif.org/species/1010644","9":"https://www.gbif.org/species/1010644","10":"https://www.gbif.org/species/1010644","11":"Hanseniella caldaria (Hansen, 1903)","12":"Hanseniella caldaria (Hansen, 1903)","13":"Animalia","14":"Symphyla","15":"NA","16":"Scutigerellidae","17":"Hanseniella","18":"caldaria","19":"NA","20":"SPECIES","21":"(Hansen, 1903)","22":"ACCEPTED","23":"Sources considered for this taxon: https://doi.org/10.15468/3pmlxs"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
   </script>
 </div>
 <ol start="5" style="list-style-type: decimal">
@@ -526,10 +550,11 @@ taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw
 </div>
 <div id="source" class="section level4">
 <h4><span class="header-section-number">7.5.2.8</span> source</h4>
-<p>See <a href="6_dwc_mapping.html#citing-sources">7.3</a>:</p>
-<pre class="sourceCode r"><code class="sourceCode r">distribution <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">add_source_citation</span>(
-  <span class="dt">new_column =</span> <span class="st">&quot;dwc_source&quot;</span>,
-  <span class="dt">dataset_info =</span> checklists
+<p>A distribution can have multiple source taxa (i.e. two verified synonyms from the same checklist). We therefore separate <code>datasetKeys</code> and <code>scientificNames</code> in a maximum of three columns and build a source (see <a href="6_dwc_mapping.html#citing-sources">7.3</a>) for each.</p>
+<p>Combine three source columns and remove <code>NA</code>:</p>
+<pre class="sourceCode r"><code class="sourceCode r">distribution <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_source =</span> 
+  <span class="kw">paste</span>(source_<span class="dv">1</span>, source_<span class="dv">2</span>, source_<span class="dv">3</span>, <span class="dt">sep =</span> <span class="st">&quot; | &quot;</span>) <span class="op">%&gt;%</span>
+<span class="st">  </span><span class="kw">str_remove_all</span>(<span class="st">&quot; </span><span class="ch">\\</span><span class="st">| NA&quot;</span>)
 )</code></pre>
 </div>
 </div>
@@ -573,8 +598,13 @@ taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw
 <h4><span class="header-section-number">7.6.1.4</span> isTerrestrial</h4>
 <pre class="sourceCode r"><code class="sourceCode r">species_profile <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_isTerrestrial =</span> terrestrial)</code></pre>
 </div>
+<div id="isinvasive" class="section level4">
+<h4><span class="header-section-number">7.6.1.5</span> isInvasive</h4>
+<p>The source checklists currently do not include information on the invasive nature of the taxa. We plan to add that information in an update of the dataset.</p>
+<pre class="sourceCode r"><code class="sourceCode r">species_profile <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_isInvasive =</span> <span class="st">&quot;&quot;</span>)</code></pre>
+</div>
 <div id="habitat" class="section level4">
-<h4><span class="header-section-number">7.6.1.5</span> habitat</h4>
+<h4><span class="header-section-number">7.6.1.6</span> habitat</h4>
 <p>ISSG also used the field <code>habitat</code>, in which we will summarize the information from <code>isMarine</code>, <code>isFreshwater</code> and <code>isTerrestrial</code>.</p>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
@@ -599,7 +629,7 @@ taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw
 </div>
 </div>
 <div id="source-1" class="section level4">
-<h4><span class="header-section-number">7.6.1.6</span> source</h4>
+<h4><span class="header-section-number">7.6.1.7</span> source</h4>
 <p>See <a href="6_dwc_mapping.html#citing-sources">7.3</a>:</p>
 <pre class="sourceCode r"><code class="sourceCode r">species_profile <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">add_source_citation</span>(
   <span class="dt">new_column =</span> <span class="st">&quot;dwc_source&quot;</span>,
@@ -617,7 +647,7 @@ taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw
 </ol>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
-{"columns":[{"label":["taxonID"],"name":[1],"type":["chr"],"align":["left"]},{"label":["isMarine"],"name":[2],"type":["lgl"],"align":["right"]},{"label":["isFreshwater"],"name":[3],"type":["lgl"],"align":["right"]},{"label":["isTerrestrial"],"name":[4],"type":["lgl"],"align":["right"]},{"label":["habitat"],"name":[5],"type":["chr"],"align":["left"]},{"label":["source"],"name":[6],"type":["chr"],"align":["left"]}],"data":[{"1":"https://www.gbif.org/species/1002621","2":"TRUE","3":"FALSE","4":"FALSE","5":"marine","6":"https://www.gbif.org/species/145953348: Keratella tropica in Zieritz A, Gallardo Armas B, Aldridge D, Desmet P, Reyserhove L (2018). RINSE - Registry of non-native species in the Two Seas region countries (Great Britain, France, Belgium and the Netherlands). Version 1.5. Research Institute for Nature and Forest (INBO). Checklist dataset https://doi.org/10.15468/focajn"},{"1":"https://www.gbif.org/species/1005581","2":"TRUE","3":"FALSE","4":"FALSE","5":"marine","6":"https://www.gbif.org/species/145953611: Scruparia ambigua in Zieritz A, Gallardo Armas B, Aldridge D, Desmet P, Reyserhove L (2018). RINSE - Registry of non-native species in the Two Seas region countries (Great Britain, France, Belgium and the Netherlands). Version 1.5. Research Institute for Nature and Forest (INBO). Checklist dataset https://doi.org/10.15468/focajn"},{"1":"https://www.gbif.org/species/1005677","2":"TRUE","3":"FALSE","4":"FALSE","5":"marine","6":"https://www.gbif.org/species/145953642: Watersipora subtorquata in Zieritz A, Gallardo Armas B, Aldridge D, Desmet P, Reyserhove L (2018). RINSE - Registry of non-native species in the Two Seas region countries (Great Britain, France, Belgium and the Netherlands). Version 1.5. Research Institute for Nature and Forest (INBO). Checklist dataset https://doi.org/10.15468/focajn"},{"1":"https://www.gbif.org/species/1007770","2":"TRUE","3":"FALSE","4":"FALSE","5":"marine","6":"https://www.gbif.org/species/145953650: Membranipora membranacea in Zieritz A, Gallardo Armas B, Aldridge D, Desmet P, Reyserhove L (2018). RINSE - Registry of non-native species in the Two Seas region countries (Great Britain, France, Belgium and the Netherlands). Version 1.5. Research Institute for Nature and Forest (INBO). Checklist dataset https://doi.org/10.15468/focajn"},{"1":"https://www.gbif.org/species/1008955","2":"TRUE","3":"FALSE","4":"FALSE","5":"marine","6":"https://www.gbif.org/species/145953656: Fenestrulina delicia in Zieritz A, Gallardo Armas B, Aldridge D, Desmet P, Reyserhove L (2018). RINSE - Registry of non-native species in the Two Seas region countries (Great Britain, France, Belgium and the Netherlands). Version 1.5. Research Institute for Nature and Forest (INBO). Checklist dataset https://doi.org/10.15468/focajn"},{"1":"https://www.gbif.org/species/1010644","2":"FALSE","3":"FALSE","4":"TRUE","5":"terrestrial","6":"https://www.gbif.org/species/148437977: Hanseniella caldaria (Hansen, 1903) in Reyserhove L, Groom Q, Adriaens T, Desmet P, Dekoninck W, Van Keer K, Lock K (2018). Ad hoc checklist of alien species in Belgium. Version 1.2. Research Institute for Nature and Forest (INBO). Checklist dataset https://doi.org/10.15468/3pmlxs"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+{"columns":[{"label":["taxonID"],"name":[1],"type":["chr"],"align":["left"]},{"label":["isMarine"],"name":[2],"type":["lgl"],"align":["right"]},{"label":["isFreshwater"],"name":[3],"type":["lgl"],"align":["right"]},{"label":["isTerrestrial"],"name":[4],"type":["lgl"],"align":["right"]},{"label":["isInvasive"],"name":[5],"type":["chr"],"align":["left"]},{"label":["habitat"],"name":[6],"type":["chr"],"align":["left"]},{"label":["source"],"name":[7],"type":["chr"],"align":["left"]}],"data":[{"1":"https://www.gbif.org/species/1002621","2":"TRUE","3":"FALSE","4":"FALSE","5":"","6":"marine","7":"https://www.gbif.org/species/145953348: Keratella tropica in Zieritz A, Gallardo Armas B, Aldridge D, Desmet P, Reyserhove L (2018). RINSE - Registry of non-native species in the Two Seas region countries (Great Britain, France, Belgium and the Netherlands). Version 1.5. Research Institute for Nature and Forest (INBO). Checklist dataset https://doi.org/10.15468/focajn"},{"1":"https://www.gbif.org/species/1005581","2":"TRUE","3":"FALSE","4":"FALSE","5":"","6":"marine","7":"https://www.gbif.org/species/145953611: Scruparia ambigua in Zieritz A, Gallardo Armas B, Aldridge D, Desmet P, Reyserhove L (2018). RINSE - Registry of non-native species in the Two Seas region countries (Great Britain, France, Belgium and the Netherlands). Version 1.5. Research Institute for Nature and Forest (INBO). Checklist dataset https://doi.org/10.15468/focajn"},{"1":"https://www.gbif.org/species/1005677","2":"TRUE","3":"FALSE","4":"FALSE","5":"","6":"marine","7":"https://www.gbif.org/species/145953642: Watersipora subtorquata in Zieritz A, Gallardo Armas B, Aldridge D, Desmet P, Reyserhove L (2018). RINSE - Registry of non-native species in the Two Seas region countries (Great Britain, France, Belgium and the Netherlands). Version 1.5. Research Institute for Nature and Forest (INBO). Checklist dataset https://doi.org/10.15468/focajn"},{"1":"https://www.gbif.org/species/1007770","2":"TRUE","3":"FALSE","4":"FALSE","5":"","6":"marine","7":"https://www.gbif.org/species/145953650: Membranipora membranacea in Zieritz A, Gallardo Armas B, Aldridge D, Desmet P, Reyserhove L (2018). RINSE - Registry of non-native species in the Two Seas region countries (Great Britain, France, Belgium and the Netherlands). Version 1.5. Research Institute for Nature and Forest (INBO). Checklist dataset https://doi.org/10.15468/focajn"},{"1":"https://www.gbif.org/species/1008955","2":"TRUE","3":"FALSE","4":"FALSE","5":"","6":"marine","7":"https://www.gbif.org/species/145953656: Fenestrulina delicia in Zieritz A, Gallardo Armas B, Aldridge D, Desmet P, Reyserhove L (2018). RINSE - Registry of non-native species in the Two Seas region countries (Great Britain, France, Belgium and the Netherlands). Version 1.5. Research Institute for Nature and Forest (INBO). Checklist dataset https://doi.org/10.15468/focajn"},{"1":"https://www.gbif.org/species/1010644","2":"FALSE","3":"FALSE","4":"TRUE","5":"","6":"terrestrial","7":"https://www.gbif.org/species/148437977: Hanseniella caldaria (Hansen, 1903) in Reyserhove L, Groom Q, Adriaens T, Desmet P, Dekoninck W, Van Keer K, Lock K (2018). Ad hoc checklist of alien species in Belgium. Version 1.2. Research Institute for Nature and Forest (INBO). Checklist dataset https://doi.org/10.15468/3pmlxs"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
   </script>
 </div>
 <ol start="5" style="list-style-type: decimal">
@@ -636,7 +666,7 @@ taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw
 <p>Map the data to <a href="http://rs.gbif.org/extension/gbif/1.0/description.xml">Taxon Description</a>.</p>
 <div id="taxonid-3" class="section level4">
 <h4><span class="header-section-number">7.7.2.1</span> taxonID</h4>
-<pre class="sourceCode r"><code class="sourceCode r">description <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_taxonID =</span> <span class="kw">paste0</span>(<span class="st">&quot;https://www.gbif.org/species/&quot;</span>, verificationKey)) </code></pre>
+<pre class="sourceCode r"><code class="sourceCode r">description <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_taxonID =</span> <span class="kw">paste0</span>(<span class="st">&quot;https://www.gbif.org/species/&quot;</span>, verificationKey))</code></pre>
 </div>
 <div id="description" class="section level4">
 <h4><span class="header-section-number">7.7.2.2</span> description</h4>

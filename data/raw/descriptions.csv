@@ -1,329 +1,4 @@
 key,taxonKey,type,language,description,source
-57575160,140562891,native range,eng,Ponto-Caspian,"Vercauteren T, De Smedt S, Warmoes T, Goddeeris B, Wouters K (2005) Drie nieuwe Ponto-Kaspische inwijkelingen dringen door tot in kanalen in de provincie Antwerpen: de zoetwaterpolychaet Hypania invalida (Grube, 1860) en, voor het eerst in België, de platworm Dendrocoelum romanodanubiale (Codreanu, 1949) en de Donaupissebed Jaera istri Veuille, 1979. In: Nieuwborg H (ed), Natuurstudie in de provincie Antwerpen. Antwerpse Koepel voor Natuurstudie (ANKONA) Jaarboek 2003, pp 83–97"
-57575161,140562891,pathway,eng,cbd_2014_pathway:stowaway_hull_fouling,"Vercauteren T, De Smedt S, Warmoes T, Goddeeris B, Wouters K (2005) Drie nieuwe Ponto-Kaspische inwijkelingen dringen door tot in kanalen in de provincie Antwerpen: de zoetwaterpolychaet Hypania invalida (Grube, 1860) en, voor het eerst in België, de platworm Dendrocoelum romanodanubiale (Codreanu, 1949) en de Donaupissebed Jaera istri Veuille, 1979. In: Nieuwborg H (ed), Natuurstudie in de provincie Antwerpen. Antwerpse Koepel voor Natuurstudie (ANKONA) Jaarboek 2003, pp 83–97"
-57575162,140562891,invasion stage,eng,established,"Vercauteren T, De Smedt S, Warmoes T, Goddeeris B, Wouters K (2005) Drie nieuwe Ponto-Kaspische inwijkelingen dringen door tot in kanalen in de provincie Antwerpen: de zoetwaterpolychaet Hypania invalida (Grube, 1860) en, voor het eerst in België, de platworm Dendrocoelum romanodanubiale (Codreanu, 1949) en de Donaupissebed Jaera istri Veuille, 1979. In: Nieuwborg H (ed), Natuurstudie in de provincie Antwerpen. Antwerpse Koepel voor Natuurstudie (ANKONA) Jaarboek 2003, pp 83–97"
-57575274,140562894,native range,eng,China,"Soors J, van Haaren T, Timm T, Speybroeck J (2013) Bratislavia dadayi (Michaelsen, 1905) (Annelida: Clitellata: Naididae): a new non-indigenous species for Europe, and other non-native annelids in the Schelde estuary. Aquatic Invasions 8: 37–44, https://doi.org/10.3391/ai.2013.8.1.04"
-57575275,140562894,native range,eng,Southern Hemisphere,"Soors J, van Haaren T, Timm T, Speybroeck J (2013) Bratislavia dadayi (Michaelsen, 1905) (Annelida: Clitellata: Naididae): a new non-indigenous species for Europe, and other non-native annelids in the Schelde estuary. Aquatic Invasions 8: 37–44, https://doi.org/10.3391/ai.2013.8.1.04"
-57575276,140562894,native range,eng,United States,"Soors J, van Haaren T, Timm T, Speybroeck J (2013) Bratislavia dadayi (Michaelsen, 1905) (Annelida: Clitellata: Naididae): a new non-indigenous species for Europe, and other non-native annelids in the Schelde estuary. Aquatic Invasions 8: 37–44, https://doi.org/10.3391/ai.2013.8.1.04"
-57575277,140562894,pathway,eng,cbd_2014_pathway:stowaway_ballast_water,"Soors J, van Haaren T, Timm T, Speybroeck J (2013) Bratislavia dadayi (Michaelsen, 1905) (Annelida: Clitellata: Naididae): a new non-indigenous species for Europe, and other non-native annelids in the Schelde estuary. Aquatic Invasions 8: 37–44, https://doi.org/10.3391/ai.2013.8.1.04"
-57575278,140562894,invasion stage,eng,established,"Soors J, van Haaren T, Timm T, Speybroeck J (2013) Bratislavia dadayi (Michaelsen, 1905) (Annelida: Clitellata: Naididae): a new non-indigenous species for Europe, and other non-native annelids in the Schelde estuary. Aquatic Invasions 8: 37–44, https://doi.org/10.3391/ai.2013.8.1.04"
-57575205,140562895,native range,eng,Africa,"Soors J, van Haaren T, Timm T, Speybroeck J (2013) Bratislavia dadayi (Michaelsen, 1905) (Annelida: Clitellata: Naididae): a new non-indigenous species for Europe, and other non-native annelids in the Schelde estuary. Aquatic Invasions 8: 37–44, https://doi.org/10.3391/ai.2013.8.1.04"
-57575206,140562895,native range,eng,Asia,"Soors J, van Haaren T, Timm T, Speybroeck J (2013) Bratislavia dadayi (Michaelsen, 1905) (Annelida: Clitellata: Naididae): a new non-indigenous species for Europe, and other non-native annelids in the Schelde estuary. Aquatic Invasions 8: 37–44, https://doi.org/10.3391/ai.2013.8.1.04"
-57575207,140562895,native range,eng,Australia,"Soors J, van Haaren T, Timm T, Speybroeck J (2013) Bratislavia dadayi (Michaelsen, 1905) (Annelida: Clitellata: Naididae): a new non-indigenous species for Europe, and other non-native annelids in the Schelde estuary. Aquatic Invasions 8: 37–44, https://doi.org/10.3391/ai.2013.8.1.04"
-57575208,140562895,pathway,eng,cbd_2014_pathway:stowaway_ballast_water,"Soors J, van Haaren T, Timm T, Speybroeck J (2013) Bratislavia dadayi (Michaelsen, 1905) (Annelida: Clitellata: Naididae): a new non-indigenous species for Europe, and other non-native annelids in the Schelde estuary. Aquatic Invasions 8: 37–44, https://doi.org/10.3391/ai.2013.8.1.04"
-57575209,140562895,invasion stage,eng,established,"Soors J, van Haaren T, Timm T, Speybroeck J (2013) Bratislavia dadayi (Michaelsen, 1905) (Annelida: Clitellata: Naididae): a new non-indigenous species for Europe, and other non-native annelids in the Schelde estuary. Aquatic Invasions 8: 37–44, https://doi.org/10.3391/ai.2013.8.1.04"
-57575228,140562897,native range,eng,Northern America,"Seys J, Vincx M, Meire P (1999) Spatial distribution of oligochaetes (Clitellata) in the tidal freshwater and brackish parts of the Schelde estuary (Belgium). In: Aquatic Oligochaetes, Springer Netherlands, pp 119–132"
-57575229,140562897,pathway,eng,cbd_2014_pathway:stowaway_ballast_water,"Seys J, Vincx M, Meire P (1999) Spatial distribution of oligochaetes (Clitellata) in the tidal freshwater and brackish parts of the Schelde estuary (Belgium). In: Aquatic Oligochaetes, Springer Netherlands, pp 119–132"
-57575230,140562897,invasion stage,eng,established,"Seys J, Vincx M, Meire P (1999) Spatial distribution of oligochaetes (Clitellata) in the tidal freshwater and brackish parts of the Schelde estuary (Belgium). In: Aquatic Oligochaetes, Springer Netherlands, pp 119–132"
-57575202,140562898,native range,eng,East Asia,"Damas H (1938) Sur la presence dans la Meuse belge de Branchiura sowerbyi, Craspedacusta sowerbyi, et Urnatella gracilis. Annalles de Societé Zoologique Belge 69: 293–310"
-57575203,140562898,pathway,eng,cbd_2014_pathway:stowaway_ballast_water,"Damas H (1938) Sur la presence dans la Meuse belge de Branchiura sowerbyi, Craspedacusta sowerbyi, et Urnatella gracilis. Annalles de Societé Zoologique Belge 69: 293–310"
-57575204,140562898,invasion stage,eng,established,"Damas H (1938) Sur la presence dans la Meuse belge de Branchiura sowerbyi, Craspedacusta sowerbyi, et Urnatella gracilis. Annalles de Societé Zoologique Belge 69: 293–310"
-57575169,140562899,native range,eng,Ponto-Caspian,"Soors J, van Haaren T, Timm T, Speybroeck J (2013) Bratislavia dadayi (Michaelsen, 1905) (Annelida: Clitellata: Naididae): a new non-indigenous species for Europe, and other non-native annelids in the Schelde estuary. Aquatic Invasions 8: 37–44, https://doi.org/10.3391/ai.2013.8.1.04"
-57575170,140562899,pathway,eng,cbd_2014_pathway:stowaway_ballast_water,"Soors J, van Haaren T, Timm T, Speybroeck J (2013) Bratislavia dadayi (Michaelsen, 1905) (Annelida: Clitellata: Naididae): a new non-indigenous species for Europe, and other non-native annelids in the Schelde estuary. Aquatic Invasions 8: 37–44, https://doi.org/10.3391/ai.2013.8.1.04"
-57575171,140562899,invasion stage,eng,established,"Soors J, van Haaren T, Timm T, Speybroeck J (2013) Bratislavia dadayi (Michaelsen, 1905) (Annelida: Clitellata: Naididae): a new non-indigenous species for Europe, and other non-native annelids in the Schelde estuary. Aquatic Invasions 8: 37–44, https://doi.org/10.3391/ai.2013.8.1.04"
-57575166,140562900,native range,eng,Northern America,"Soors J, van Haaren T, Timm T, Speybroeck J (2013) Bratislavia dadayi (Michaelsen, 1905) (Annelida: Clitellata: Naididae): a new non-indigenous species for Europe, and other non-native annelids in the Schelde estuary. Aquatic Invasions 8: 37–44, https://doi.org/10.3391/ai.2013.8.1.04"
-57575167,140562900,pathway,eng,cbd_2014_pathway:stowaway_ballast_water,"Soors J, van Haaren T, Timm T, Speybroeck J (2013) Bratislavia dadayi (Michaelsen, 1905) (Annelida: Clitellata: Naididae): a new non-indigenous species for Europe, and other non-native annelids in the Schelde estuary. Aquatic Invasions 8: 37–44, https://doi.org/10.3391/ai.2013.8.1.04"
-57575168,140562900,invasion stage,eng,established,"Soors J, van Haaren T, Timm T, Speybroeck J (2013) Bratislavia dadayi (Michaelsen, 1905) (Annelida: Clitellata: Naididae): a new non-indigenous species for Europe, and other non-native annelids in the Schelde estuary. Aquatic Invasions 8: 37–44, https://doi.org/10.3391/ai.2013.8.1.04"
-57575157,140562901,native range,eng,Ponto-Caspian,"Soors J, van Haaren T, Timm T, Speybroeck J (2013) Bratislavia dadayi (Michaelsen, 1905) (Annelida: Clitellata: Naididae): a new non-indigenous species for Europe, and other non-native annelids in the Schelde estuary. Aquatic Invasions 8: 37–44, https://doi.org/10.3391/ai.2013.8.1.04"
-57575158,140562901,pathway,eng,cbd_2014_pathway:stowaway_ballast_water,"Soors J, van Haaren T, Timm T, Speybroeck J (2013) Bratislavia dadayi (Michaelsen, 1905) (Annelida: Clitellata: Naididae): a new non-indigenous species for Europe, and other non-native annelids in the Schelde estuary. Aquatic Invasions 8: 37–44, https://doi.org/10.3391/ai.2013.8.1.04"
-57575159,140562901,invasion stage,eng,established,"Soors J, van Haaren T, Timm T, Speybroeck J (2013) Bratislavia dadayi (Michaelsen, 1905) (Annelida: Clitellata: Naididae): a new non-indigenous species for Europe, and other non-native annelids in the Schelde estuary. Aquatic Invasions 8: 37–44, https://doi.org/10.3391/ai.2013.8.1.04"
-57575148,140562902,native range,eng,Northern America,"Soors J, van Haaren T, Timm T, Speybroeck J (2013) Bratislavia dadayi (Michaelsen, 1905) (Annelida: Clitellata: Naididae): a new non-indigenous species for Europe, and other non-native annelids in the Schelde estuary. Aquatic Invasions 8: 37–44, https://doi.org/10.3391/ai.2013.8.1.04"
-57575149,140562902,pathway,eng,cbd_2014_pathway:stowaway_ballast_water,"Soors J, van Haaren T, Timm T, Speybroeck J (2013) Bratislavia dadayi (Michaelsen, 1905) (Annelida: Clitellata: Naididae): a new non-indigenous species for Europe, and other non-native annelids in the Schelde estuary. Aquatic Invasions 8: 37–44, https://doi.org/10.3391/ai.2013.8.1.04"
-57575150,140562902,invasion stage,eng,established,"Soors J, van Haaren T, Timm T, Speybroeck J (2013) Bratislavia dadayi (Michaelsen, 1905) (Annelida: Clitellata: Naididae): a new non-indigenous species for Europe, and other non-native annelids in the Schelde estuary. Aquatic Invasions 8: 37–44, https://doi.org/10.3391/ai.2013.8.1.04"
-57575136,140562903,native range,eng,Asia,"Soors J, van Haaren T, Timm T, Speybroeck J (2013) Bratislavia dadayi (Michaelsen, 1905) (Annelida: Clitellata: Naididae): a new non-indigenous species for Europe, and other non-native annelids in the Schelde estuary. Aquatic Invasions 8: 37–44, https://doi.org/10.3391/ai.2013.8.1.04"
-57575137,140562903,pathway,eng,cbd_2014_pathway:stowaway_ballast_water,"Soors J, van Haaren T, Timm T, Speybroeck J (2013) Bratislavia dadayi (Michaelsen, 1905) (Annelida: Clitellata: Naididae): a new non-indigenous species for Europe, and other non-native annelids in the Schelde estuary. Aquatic Invasions 8: 37–44, https://doi.org/10.3391/ai.2013.8.1.04"
-57575138,140562903,invasion stage,eng,established,"Soors J, van Haaren T, Timm T, Speybroeck J (2013) Bratislavia dadayi (Michaelsen, 1905) (Annelida: Clitellata: Naididae): a new non-indigenous species for Europe, and other non-native annelids in the Schelde estuary. Aquatic Invasions 8: 37–44, https://doi.org/10.3391/ai.2013.8.1.04"
-57575279,140562906,native range,eng,Northern America,"Ysebaert T, Meire P, De Block M, De Regge N, Soors J (1997) A first record of Marenzelleria viridis (Verril, 1873) (Polychaeta, Spionidae) in the Schelde estuary (Belgium). Biologisch Jaarboek (Dodonaea) 64: 176–181"
-57575280,140562906,pathway,eng,cbd_2014_pathway:stowaway_ballast_water,"Ysebaert T, Meire P, De Block M, De Regge N, Soors J (1997) A first record of Marenzelleria viridis (Verril, 1873) (Polychaeta, Spionidae) in the Schelde estuary (Belgium). Biologisch Jaarboek (Dodonaea) 64: 176–181"
-57575281,140562906,invasion stage,eng,established,"Ysebaert T, Meire P, De Block M, De Regge N, Soors J (1997) A first record of Marenzelleria viridis (Verril, 1873) (Polychaeta, Spionidae) in the Schelde estuary (Belgium). Biologisch Jaarboek (Dodonaea) 64: 176–181"
-57575109,140562907,native range,eng,Northern America,"Soors J, van Haaren T, Timm T, Speybroeck J (2013) Bratislavia dadayi (Michaelsen, 1905) (Annelida: Clitellata: Naididae): a new non-indigenous species for Europe, and other non-native annelids in the Schelde estuary. Aquatic Invasions 8: 37–44, https://doi.org/10.3391/ai.2013.8.1.04"
-57575110,140562907,pathway,eng,cbd_2014_pathway:stowaway_ballast_water,"Soors J, van Haaren T, Timm T, Speybroeck J (2013) Bratislavia dadayi (Michaelsen, 1905) (Annelida: Clitellata: Naididae): a new non-indigenous species for Europe, and other non-native annelids in the Schelde estuary. Aquatic Invasions 8: 37–44, https://doi.org/10.3391/ai.2013.8.1.04"
-57575111,140562907,invasion stage,eng,established,"Soors J, van Haaren T, Timm T, Speybroeck J (2013) Bratislavia dadayi (Michaelsen, 1905) (Annelida: Clitellata: Naididae): a new non-indigenous species for Europe, and other non-native annelids in the Schelde estuary. Aquatic Invasions 8: 37–44, https://doi.org/10.3391/ai.2013.8.1.04"
-57575189,140562910,native range,eng,Asia,"Leloup E, Lefevere S (1952) Sur la présence dans les eaux de la côte belge du cirripède, Elminius modestus Darwin, 1854, du copepode parasite, Mytilicola intestinalis Steuer, 1902, et du polychète, Mercierella enigmatica Fauvel, 1922. Mededelingen Koninklijk Belgisch Instituut voor Natuur Wetenschappen 28: 1–12"
-57575190,140562910,pathway,eng,cbd_2014_pathway:stowaway_ballast_water,"Leloup E, Lefevere S (1952) Sur la présence dans les eaux de la côte belge du cirripède, Elminius modestus Darwin, 1854, du copepode parasite, Mytilicola intestinalis Steuer, 1902, et du polychète, Mercierella enigmatica Fauvel, 1922. Mededelingen Koninklijk Belgisch Instituut voor Natuur Wetenschappen 28: 1–12"
-57575191,140562910,pathway,eng,cbd_2014_pathway:stowaway_hull_fouling,"Leloup E, Lefevere S (1952) Sur la présence dans les eaux de la côte belge du cirripède, Elminius modestus Darwin, 1854, du copepode parasite, Mytilicola intestinalis Steuer, 1902, et du polychète, Mercierella enigmatica Fauvel, 1922. Mededelingen Koninklijk Belgisch Instituut voor Natuur Wetenschappen 28: 1–12"
-57575192,140562910,invasion stage,eng,established,"Leloup E, Lefevere S (1952) Sur la présence dans les eaux de la côte belge du cirripède, Elminius modestus Darwin, 1854, du copepode parasite, Mytilicola intestinalis Steuer, 1902, et du polychète, Mercierella enigmatica Fauvel, 1922. Mededelingen Koninklijk Belgisch Instituut voor Natuur Wetenschappen 28: 1–12"
-57575106,140562912,native range,eng,Australia,"Boets P, Brosens D, Lock K, Adriaens T, Aelterman B, Mertens J & Goethals P. 2016. Alien macroinvertebrates in Flanders (Belgium). Aquatic Invasions 11 (2): 131–144. https://doi.org/10.3391/ai.2016.11.2.03"
-57575107,140562912,pathway,eng,cbd_2014_pathway:stowaway_ballast_water,"Boets P, Brosens D, Lock K, Adriaens T, Aelterman B, Mertens J & Goethals P. 2016. Alien macroinvertebrates in Flanders (Belgium). Aquatic Invasions 11 (2): 131–144. https://doi.org/10.3391/ai.2016.11.2.03"
-57575108,140562912,invasion stage,eng,established,"Boets P, Brosens D, Lock K, Adriaens T, Aelterman B, Mertens J & Goethals P. 2016. Alien macroinvertebrates in Flanders (Belgium). Aquatic Invasions 11 (2): 131–144. https://doi.org/10.3391/ai.2016.11.2.03"
-57575193,140562916,native range,eng,Northern America,"Vercauteren T, Sablon S, Wouters K (2006) Exotische ongewervelden in vijvers en grachten van het Provinciaal Groendomein ‘Prinsenpark’. In: Retie: een eerste bilan. In: Nieuwborg H, Rijvers T (eds), Natuurstudie in de provincie Antwerpen. Antwerpse Koepel voor Natuurstudie (ANKONA) Jaarboek 2004–2005, pp 27–39"
-57575194,140562916,pathway,eng,cbd_2014_pathway:stowaway_other,"Vercauteren T, Sablon S, Wouters K (2006) Exotische ongewervelden in vijvers en grachten van het Provinciaal Groendomein ‘Prinsenpark’. In: Retie: een eerste bilan. In: Nieuwborg H, Rijvers T (eds), Natuurstudie in de provincie Antwerpen. Antwerpse Koepel voor Natuurstudie (ANKONA) Jaarboek 2004–2005, pp 27–39"
-57575195,140562916,invasion stage,eng,established,"Vercauteren T, Sablon S, Wouters K (2006) Exotische ongewervelden in vijvers en grachten van het Provinciaal Groendomein ‘Prinsenpark’. In: Retie: een eerste bilan. In: Nieuwborg H, Rijvers T (eds), Natuurstudie in de provincie Antwerpen. Antwerpse Koepel voor Natuurstudie (ANKONA) Jaarboek 2004–2005, pp 27–39"
-57575090,140562918,native range,eng,Ponto-Caspian,"Vercauteren T, De Smedt S, Warmoes T, Goddeeris B, Wouters K (2005) Drie nieuwe Ponto-Kaspische inwijkelingen dringen door tot in kanalen in de provincie Antwerpen: de zoetwaterpolychaet Hypania invalida (Grube, 1860) en, voor het eerst in België, de platworm Dendrocoelum romanodanubiale (Codreanu, 1949) en de Donaupissebed Jaera istri Veuille, 1979. In: Nieuwborg H (ed), Natuurstudie in de provincie Antwerpen. Antwerpse Koepel voor Natuurstudie (ANKONA) Jaarboek 2003, pp 83–97"
-57575091,140562918,pathway,eng,cbd_2014_pathway:corridor_water,"Vercauteren T, De Smedt S, Warmoes T, Goddeeris B, Wouters K (2005) Drie nieuwe Ponto-Kaspische inwijkelingen dringen door tot in kanalen in de provincie Antwerpen: de zoetwaterpolychaet Hypania invalida (Grube, 1860) en, voor het eerst in België, de platworm Dendrocoelum romanodanubiale (Codreanu, 1949) en de Donaupissebed Jaera istri Veuille, 1979. In: Nieuwborg H (ed), Natuurstudie in de provincie Antwerpen. Antwerpse Koepel voor Natuurstudie (ANKONA) Jaarboek 2003, pp 83–97"
-57575092,140562918,invasion stage,eng,established,"Vercauteren T, De Smedt S, Warmoes T, Goddeeris B, Wouters K (2005) Drie nieuwe Ponto-Kaspische inwijkelingen dringen door tot in kanalen in de provincie Antwerpen: de zoetwaterpolychaet Hypania invalida (Grube, 1860) en, voor het eerst in België, de platworm Dendrocoelum romanodanubiale (Codreanu, 1949) en de Donaupissebed Jaera istri Veuille, 1979. In: Nieuwborg H (ed), Natuurstudie in de provincie Antwerpen. Antwerpse Koepel voor Natuurstudie (ANKONA) Jaarboek 2003, pp 83–97"
-57575298,140562922,native range,eng,Northern America,"Kerckhof F, Dumoulin E (1987) Eerste vondsten van de Amerikaanse zwaardschede Ensis directus (Conrad, 1843) langs de Belgische kust. De Strandvlo 7: 51–52"
-57575299,140562922,pathway,eng,cbd_2014_pathway:stowaway_ballast_water,"Kerckhof F, Dumoulin E (1987) Eerste vondsten van de Amerikaanse zwaardschede Ensis directus (Conrad, 1843) langs de Belgische kust. De Strandvlo 7: 51–52"
-57575300,140562922,pathway,eng,cbd_2014_pathway:stowaway_other,"Kerckhof F, Dumoulin E (1987) Eerste vondsten van de Amerikaanse zwaardschede Ensis directus (Conrad, 1843) langs de Belgische kust. De Strandvlo 7: 51–52"
-57575301,140562922,invasion stage,eng,established,"Kerckhof F, Dumoulin E (1987) Eerste vondsten van de Amerikaanse zwaardschede Ensis directus (Conrad, 1843) langs de Belgische kust. De Strandvlo 7: 51–52"
-57575260,140562925,native range,eng,Ponto-Caspian,"Adam W (1947) Revision des Mollusques de la Belgique. I Mollusques terrestres et dulcicoles. Mémoires du Musée Royal d’Histoire Naturelle de Belgique, 106, 297 pp"
-57575261,140562925,pathway,eng,cbd_2014_pathway:corridor_water,"Adam W (1947) Revision des Mollusques de la Belgique. I Mollusques terrestres et dulcicoles. Mémoires du Musée Royal d’Histoire Naturelle de Belgique, 106, 297 pp"
-57575262,140562925,invasion stage,eng,established,"Adam W (1947) Revision des Mollusques de la Belgique. I Mollusques terrestres et dulcicoles. Mémoires du Musée Royal d’Histoire Naturelle de Belgique, 106, 297 pp"
-57575252,140562926,native range,eng,New Zealand,"Adam W (1947) Revision des Mollusques de la Belgique. I Mollusques terrestres et dulcicoles. Mémoires du Musée Royal d’Histoire Naturelle de Belgique, 106, 297 pp"
-57575253,140562926,pathway,eng,cbd_2014_pathway:stowaway_ballast_water,"Adam W (1947) Revision des Mollusques de la Belgique. I Mollusques terrestres et dulcicoles. Mémoires du Musée Royal d’Histoire Naturelle de Belgique, 106, 297 pp"
-57575254,140562926,pathway,eng,cbd_2014_pathway:stowaway_hull_fouling,"Adam W (1947) Revision des Mollusques de la Belgique. I Mollusques terrestres et dulcicoles. Mémoires du Musée Royal d’Histoire Naturelle de Belgique, 106, 297 pp"
-57575255,140562926,pathway,eng,cbd_2014_pathway:stowaway_other,"Adam W (1947) Revision des Mollusques de la Belgique. I Mollusques terrestres et dulcicoles. Mémoires du Musée Royal d’Histoire Naturelle de Belgique, 106, 297 pp"
-57575256,140562926,invasion stage,eng,established,"Adam W (1947) Revision des Mollusques de la Belgique. I Mollusques terrestres et dulcicoles. Mémoires du Musée Royal d’Histoire Naturelle de Belgique, 106, 297 pp"
-57575238,140562929,native range,eng,Northern America,"Adam W, Leloup E (1934) Sur la présence du gastéropode Crepidula fornicata (Linné, 1758) sur la côte belge. Bulletin du Musée royal d'Histoire naturelle de Belgique 10: 1–5"
-57575239,140562929,pathway,eng,cbd_2014_pathway:stowaway_hull_fouling,"Adam W, Leloup E (1934) Sur la présence du gastéropode Crepidula fornicata (Linné, 1758) sur la côte belge. Bulletin du Musée royal d'Histoire naturelle de Belgique 10: 1–5"
-57575240,140562929,pathway,eng,cbd_2014_pathway:stowaway_other,"Adam W, Leloup E (1934) Sur la présence du gastéropode Crepidula fornicata (Linné, 1758) sur la côte belge. Bulletin du Musée royal d'Histoire naturelle de Belgique 10: 1–5"
-57575241,140562929,invasion stage,eng,established,"Adam W, Leloup E (1934) Sur la présence du gastéropode Crepidula fornicata (Linné, 1758) sur la côte belge. Bulletin du Musée royal d'Histoire naturelle de Belgique 10: 1–5"
-57575293,140562932,native range,eng,Northern America,"Kerckhof F, Haelters J, Gollasch S (2007) Alien species in the marine and brackish ecosystem: the situation in Belgian waters. Aquatic Invasions 2: 243–257, https://doi.org/10.3391/ai.2007.2.3.9"
-57575294,140562932,pathway,eng,cbd_2014_pathway:contaminant_on_animals,"Kerckhof F, Haelters J, Gollasch S (2007) Alien species in the marine and brackish ecosystem: the situation in Belgian waters. Aquatic Invasions 2: 243–257, https://doi.org/10.3391/ai.2007.2.3.9"
-57575295,140562932,pathway,eng,cbd_2014_pathway:stowaway_ballast_water,"Kerckhof F, Haelters J, Gollasch S (2007) Alien species in the marine and brackish ecosystem: the situation in Belgian waters. Aquatic Invasions 2: 243–257, https://doi.org/10.3391/ai.2007.2.3.9"
-57575296,140562932,pathway,eng,cbd_2014_pathway:stowaway_hull_fouling,"Kerckhof F, Haelters J, Gollasch S (2007) Alien species in the marine and brackish ecosystem: the situation in Belgian waters. Aquatic Invasions 2: 243–257, https://doi.org/10.3391/ai.2007.2.3.9"
-57575297,140562932,invasion stage,eng,established,"Kerckhof F, Haelters J, Gollasch S (2007) Alien species in the marine and brackish ecosystem: the situation in Belgian waters. Aquatic Invasions 2: 243–257, https://doi.org/10.3391/ai.2007.2.3.9"
-57575290,140562934,pathway,eng,cbd_2014_pathway:stowaway_hull_fouling,"Sellius G (1733) Historia naturalis teredinis seu xylophagi marini tubulochonchoidis speciatim Belgici, Trajecti ad Rhenum, p 366"
-57575291,140562934,pathway,eng,cbd_2014_pathway:stowaway_other,"Sellius G (1733) Historia naturalis teredinis seu xylophagi marini tubulochonchoidis speciatim Belgici, Trajecti ad Rhenum, p 366"
-57575292,140562934,invasion stage,eng,established,"Sellius G (1733) Historia naturalis teredinis seu xylophagi marini tubulochonchoidis speciatim Belgici, Trajecti ad Rhenum, p 366"
-57575196,140562935,pathway,eng,cbd_2014_pathway:stowaway_hull_fouling,"Backeljau T (1986) Lijst van de recente mariene mollusken van België. Studiedocumenten van het K.B.I.N. 29. Koninklijk Belgisch Instituut voor Natuurwetenschappen: Brussel, 106 pp"
-57575197,140562935,pathway,eng,cbd_2014_pathway:stowaway_other,"Backeljau T (1986) Lijst van de recente mariene mollusken van België. Studiedocumenten van het K.B.I.N. 29. Koninklijk Belgisch Instituut voor Natuurwetenschappen: Brussel, 106 pp"
-57575198,140562935,invasion stage,eng,established,"Backeljau T (1986) Lijst van de recente mariene mollusken van België. Studiedocumenten van het K.B.I.N. 29. Koninklijk Belgisch Instituut voor Natuurwetenschappen: Brussel, 106 pp"
-57575129,140562938,native range,eng,Asia,"Keppens M, Mienis HK (2004) A propos de la présence de Sinanodonta woodiana (Lea, 1834) en Belgique. Novapex Société 5: 78–81"
-57575130,140562938,pathway,eng,cbd_2014_pathway:contaminant_on_animals,"Keppens M, Mienis HK (2004) A propos de la présence de Sinanodonta woodiana (Lea, 1834) en Belgique. Novapex Société 5: 78–81"
-57575131,140562938,pathway,eng,cbd_2014_pathway:escape_aquaculture,"Keppens M, Mienis HK (2004) A propos de la présence de Sinanodonta woodiana (Lea, 1834) en Belgique. Novapex Société 5: 78–81"
-57575132,140562938,invasion stage,eng,established,"Keppens M, Mienis HK (2004) A propos de la présence de Sinanodonta woodiana (Lea, 1834) en Belgique. Novapex Société 5: 78–81"
-57575222,140562941,native range,eng,Asia,"Swinnen F, Leynen M, Sablon R, Duvivier L, Vanmaele R (1998) The Asiatic clam Corbicula (Bivalvia: Corbiculidae) in Belgium. Biologie 68: 47–53"
-57575223,140562941,pathway,eng,cbd_2014_pathway:corridor_water,"Swinnen F, Leynen M, Sablon R, Duvivier L, Vanmaele R (1998) The Asiatic clam Corbicula (Bivalvia: Corbiculidae) in Belgium. Biologie 68: 47–53"
-57575224,140562941,invasion stage,eng,established,"Swinnen F, Leynen M, Sablon R, Duvivier L, Vanmaele R (1998) The Asiatic clam Corbicula (Bivalvia: Corbiculidae) in Belgium. Biologie 68: 47–53"
-57575175,140562942,native range,eng,Asia,"Swinnen F, Leynen M, Sablon R, Duvivier L, Vanmaele R (1998) The Asiatic clam Corbicula (Bivalvia: Corbiculidae) in Belgium. Biologie 68: 47–53"
-57575176,140562942,pathway,eng,cbd_2014_pathway:corridor_water,"Swinnen F, Leynen M, Sablon R, Duvivier L, Vanmaele R (1998) The Asiatic clam Corbicula (Bivalvia: Corbiculidae) in Belgium. Biologie 68: 47–53"
-57575177,140562942,invasion stage,eng,established,"Swinnen F, Leynen M, Sablon R, Duvivier L, Vanmaele R (1998) The Asiatic clam Corbicula (Bivalvia: Corbiculidae) in Belgium. Biologie 68: 47–53"
-57575302,140562944,native range,eng,Northern America,"Nyst HJP (1835) Mollusques. Bulletin des Academies Royal des Sciences Lettres et Beaux Arts 2: 235–236 | Adam W (1947) Revision des Mollusques de la Belgique. I Mollusques terrestres et dulcicoles. Mémoires du Musée Royal d’Histoire Naturelle de Belgique, 106, 297 pp"
-57575303,140562944,pathway,eng,cbd_2014_pathway:stowaway_ballast_water,"Nyst HJP (1835) Mollusques. Bulletin des Academies Royal des Sciences Lettres et Beaux Arts 2: 235–236 | Adam W (1947) Revision des Mollusques de la Belgique. I Mollusques terrestres et dulcicoles. Mémoires du Musée Royal d’Histoire Naturelle de Belgique, 106, 297 pp"
-57575304,140562944,pathway,eng,cbd_2014_pathway:stowaway_hull_fouling,"Nyst HJP (1835) Mollusques. Bulletin des Academies Royal des Sciences Lettres et Beaux Arts 2: 235–236 | Adam W (1947) Revision des Mollusques de la Belgique. I Mollusques terrestres et dulcicoles. Mémoires du Musée Royal d’Histoire Naturelle de Belgique, 106, 297 pp"
-57575305,140562944,invasion stage,eng,established,"Nyst HJP (1835) Mollusques. Bulletin des Academies Royal des Sciences Lettres et Beaux Arts 2: 235–236 | Adam W (1947) Revision des Mollusques de la Belgique. I Mollusques terrestres et dulcicoles. Mémoires du Musée Royal d’Histoire Naturelle de Belgique, 106, 297 pp"
-57575306,140562945,native range,eng,Ponto-Caspian,"Sablon R, Vercauteren T, Jacobs P (2010b) De quaggamossel (Dreissena rostriformis bugensis (Andrusov, 1897)), een recent gevonden invasieve zoetwatermossel in Vlaanderen. ANTenne 4: 32–36"
-57575307,140562945,pathway,eng,cbd_2014_pathway:corridor_water,"Sablon R, Vercauteren T, Jacobs P (2010b) De quaggamossel (Dreissena rostriformis bugensis (Andrusov, 1897)), een recent gevonden invasieve zoetwatermossel in Vlaanderen. ANTenne 4: 32–36"
-57575308,140562945,invasion stage,eng,established,"Sablon R, Vercauteren T, Jacobs P (2010b) De quaggamossel (Dreissena rostriformis bugensis (Andrusov, 1897)), een recent gevonden invasieve zoetwatermossel in Vlaanderen. ANTenne 4: 32–36"
-57575151,140562946,native range,eng,Ponto-Caspian,"Adam W (1947) Revision des Mollusques de la Belgique. I Mollusques terrestres et dulcicoles. Mémoires du Musée Royal d’Histoire Naturelle de Belgique, 106, 297 pp"
-57575152,140562946,pathway,eng,cbd_2014_pathway:corridor_water,"Adam W (1947) Revision des Mollusques de la Belgique. I Mollusques terrestres et dulcicoles. Mémoires du Musée Royal d’Histoire Naturelle de Belgique, 106, 297 pp"
-57575153,140562946,invasion stage,eng,established,"Adam W (1947) Revision des Mollusques de la Belgique. I Mollusques terrestres et dulcicoles. Mémoires du Musée Royal d’Histoire Naturelle de Belgique, 106, 297 pp"
-57575225,140562948,native range,eng,Northern America,"Vandepitte L, De Poorter D, Lescrauweart A-N, Fockedey N, Mees J (2012) Niet-inheemse soorten van het Belgisch deel van de Noordzee en aanpalende estuaria. VLIZ Special publication 59. Vlaams Instituut voor de Zee (VLIZ): Oostende België, 372 pp"
-57575226,140562948,pathway,eng,cbd_2014_pathway:stowaway_ballast_water,"Vandepitte L, De Poorter D, Lescrauweart A-N, Fockedey N, Mees J (2012) Niet-inheemse soorten van het Belgisch deel van de Noordzee en aanpalende estuaria. VLIZ Special publication 59. Vlaams Instituut voor de Zee (VLIZ): Oostende België, 372 pp"
-57575227,140562948,invasion stage,eng,established,"Vandepitte L, De Poorter D, Lescrauweart A-N, Fockedey N, Mees J (2012) Niet-inheemse soorten van het Belgisch deel van de Noordzee en aanpalende estuaria. VLIZ Special publication 59. Vlaams Instituut voor de Zee (VLIZ): Oostende België, 372 pp"
-57575120,140562949,native range,eng,Northern America,Loppens K (1902) Petricola pholadiformis L. Annales de la Société Royale Zoologique et Malacologique de Belgique 37: 41–42
-57575121,140562949,pathway,eng,cbd_2014_pathway:contaminant_on_animals,Loppens K (1902) Petricola pholadiformis L. Annales de la Société Royale Zoologique et Malacologique de Belgique 37: 41–42
-57575122,140562949,invasion stage,eng,established,Loppens K (1902) Petricola pholadiformis L. Annales de la Société Royale Zoologique et Malacologique de Belgique 37: 41–42
-57575103,140562951,native range,eng,Northern America,"Verween A, Kerckhof F, Vincx M, Degraer S (2006) First European record of the invasive brackish water clam Rangia cuneata (G.W. Sowerby I, 1831) (Mollusca: Bivalvia). Aquatic Invasions 1: 198–203, https://doi.org/10.3391/ai.2006.1.4.1"
-57575104,140562951,pathway,eng,cbd_2014_pathway:stowaway_ballast_water,"Verween A, Kerckhof F, Vincx M, Degraer S (2006) First European record of the invasive brackish water clam Rangia cuneata (G.W. Sowerby I, 1831) (Mollusca: Bivalvia). Aquatic Invasions 1: 198–203, https://doi.org/10.3391/ai.2006.1.4.1"
-57575105,140562951,invasion stage,eng,established,"Verween A, Kerckhof F, Vincx M, Degraer S (2006) First European record of the invasive brackish water clam Rangia cuneata (G.W. Sowerby I, 1831) (Mollusca: Bivalvia). Aquatic Invasions 1: 198–203, https://doi.org/10.3391/ai.2006.1.4.1"
-57575123,140562954,native range,eng,Northern America,"Adam W (1947) Revision des Mollusques de la Belgique. I Mollusques terrestres et dulcicoles. Mémoires du Musée Royal d’Histoire Naturelle de Belgique, 106, 297 pp"
-57575124,140562954,pathway,eng,cbd_2014_pathway:stowaway_other,"Adam W (1947) Revision des Mollusques de la Belgique. I Mollusques terrestres et dulcicoles. Mémoires du Musée Royal d’Histoire Naturelle de Belgique, 106, 297 pp"
-57575125,140562954,invasion stage,eng,established,"Adam W (1947) Revision des Mollusques de la Belgique. I Mollusques terrestres et dulcicoles. Mémoires du Musée Royal d’Histoire Naturelle de Belgique, 106, 297 pp"
-57575154,140562956,native range,eng,North Africa,"Van Goethem JL, Sablon R (1986) Ferrissia wautieri (Mirolli, 1960), a freshwater limpet new to Belgium (Mollusca, Gastropoda, Ancylidae). Bulletin van het Koninklijk Belgisch Instituut voor Natuurwetenschappen: Biologie 56:155–157"
-57575155,140562956,pathway,eng,cbd_2014_pathway:escape_pet,"Van Goethem JL, Sablon R (1986) Ferrissia wautieri (Mirolli, 1960), a freshwater limpet new to Belgium (Mollusca, Gastropoda, Ancylidae). Bulletin van het Koninklijk Belgisch Instituut voor Natuurwetenschappen: Biologie 56:155–157"
-57575156,140562956,invasion stage,eng,established,"Van Goethem JL, Sablon R (1986) Ferrissia wautieri (Mirolli, 1960), a freshwater limpet new to Belgium (Mollusca, Gastropoda, Ancylidae). Bulletin van het Koninklijk Belgisch Instituut voor Natuurwetenschappen: Biologie 56:155–157"
-57575087,140562957,native range,eng,Northern America,"Sablon R, Vercauteren T, Lammens S, Ghyselbrecht E (2010a) Freshwater Molluscs introduced in Belgium in the last two Decades – Abstracts of the World Congress of Malacology, Phuket, Thailand, 18–24 July 2010, p 353"
-57575088,140562957,pathway,eng,cbd_2014_pathway:corridor_water,"Sablon R, Vercauteren T, Lammens S, Ghyselbrecht E (2010a) Freshwater Molluscs introduced in Belgium in the last two Decades – Abstracts of the World Congress of Malacology, Phuket, Thailand, 18–24 July 2010, p 353"
-57575089,140562957,invasion stage,eng,established,"Sablon R, Vercauteren T, Lammens S, Ghyselbrecht E (2010a) Freshwater Molluscs introduced in Belgium in the last two Decades – Abstracts of the World Congress of Malacology, Phuket, Thailand, 18–24 July 2010, p 353"
-57575084,140562960,native range,eng,Southeast Asia,Leloup E (1971) Recherches sur l'ostréiculture dans le bassin de chasse d'Ostende pendant l'année 1969. Bulletin de l'Institut Royal des Sciences Naturelles de Belgique = Mededelingen van het Koninklijk Belgisch Instituut voor Natuurwetenschappen 47(25): 1–16
-57575085,140562960,pathway,eng,cbd_2014_pathway:escape_aquaculture,Leloup E (1971) Recherches sur l'ostréiculture dans le bassin de chasse d'Ostende pendant l'année 1969. Bulletin de l'Institut Royal des Sciences Naturelles de Belgique = Mededelingen van het Koninklijk Belgisch Instituut voor Natuurwetenschappen 47(25): 1–16
-57575086,140562960,invasion stage,eng,established,Leloup E (1971) Recherches sur l'ostréiculture dans le bassin de chasse d'Ostende pendant l'année 1969. Bulletin de l'Institut Royal des Sciences Naturelles de Belgique = Mededelingen van het Koninklijk Belgisch Instituut voor Natuurwetenschappen 47(25): 1–16
-57575271,140562964,native range,eng,Ponto-Caspian,"Lock K, Van Wichelen J, Packet J, Simoens I, Van Looy K, Louette G, Warmoes T, Denys L (2007) Bepalen van het maximaal en het goed ecologisch potentieel, alsook de huidige toestand, voor een aantal Vlaamse (gewestelijke) waterlichamen die vergelijkbaar zijn met de categorie meren - Deel I. Report Institute of Nature Conservation 2007/51, Brussels"
-57575272,140562964,pathway,eng,cbd_2014_pathway:corridor_water,"Lock K, Van Wichelen J, Packet J, Simoens I, Van Looy K, Louette G, Warmoes T, Denys L (2007) Bepalen van het maximaal en het goed ecologisch potentieel, alsook de huidige toestand, voor een aantal Vlaamse (gewestelijke) waterlichamen die vergelijkbaar zijn met de categorie meren - Deel I. Report Institute of Nature Conservation 2007/51, Brussels"
-57575273,140562964,invasion stage,eng,established,"Lock K, Van Wichelen J, Packet J, Simoens I, Van Looy K, Louette G, Warmoes T, Denys L (2007) Bepalen van het maximaal en het goed ecologisch potentieel, alsook de huidige toestand, voor een aantal Vlaamse (gewestelijke) waterlichamen die vergelijkbaar zijn met de categorie meren - Deel I. Report Institute of Nature Conservation 2007/51, Brussels"
-57575245,140562965,native range,eng,Ponto-Caspian,"Verslycke T, Janssen C, Lock K, Mees J (2000) First occurrence of the Pontocaspian invader Hemimysis anomala (Sars, 1907) in Belgium (Crustacea: Mysidacea). Belgian Journal of Zoology 130: 157–158"
-57575246,140562965,pathway,eng,cbd_2014_pathway:stowaway_ballast_water,"Verslycke T, Janssen C, Lock K, Mees J (2000) First occurrence of the Pontocaspian invader Hemimysis anomala (Sars, 1907) in Belgium (Crustacea: Mysidacea). Belgian Journal of Zoology 130: 157–158"
-57575247,140562965,pathway,eng,cbd_2014_pathway:stowaway_other,"Verslycke T, Janssen C, Lock K, Mees J (2000) First occurrence of the Pontocaspian invader Hemimysis anomala (Sars, 1907) in Belgium (Crustacea: Mysidacea). Belgian Journal of Zoology 130: 157–158"
-57575248,140562965,invasion stage,eng,established,"Verslycke T, Janssen C, Lock K, Mees J (2000) First occurrence of the Pontocaspian invader Hemimysis anomala (Sars, 1907) in Belgium (Crustacea: Mysidacea). Belgian Journal of Zoology 130: 157–158"
-57575235,140562968,native range,eng,Ponto-Caspian,"Messiaen M, Lock K, Gabriels W, Vercauteren T, Wouters K, Boets P, Goethals PLM (2010) Alien macrocrustaceans in freshwater ecosystems in the eastern part of Flanders (Belgium). Belgian Journal of Zoology 140: 30–39"
-57575236,140562968,pathway,eng,cbd_2014_pathway:corridor_water,"Messiaen M, Lock K, Gabriels W, Vercauteren T, Wouters K, Boets P, Goethals PLM (2010) Alien macrocrustaceans in freshwater ecosystems in the eastern part of Flanders (Belgium). Belgian Journal of Zoology 140: 30–39"
-57575237,140562968,invasion stage,eng,established,"Messiaen M, Lock K, Gabriels W, Vercauteren T, Wouters K, Boets P, Goethals PLM (2010) Alien macrocrustaceans in freshwater ecosystems in the eastern part of Flanders (Belgium). Belgian Journal of Zoology 140: 30–39"
-57575186,140562970,native range,eng,Northern America,"Soors J, Faasse M, Stevens M, Verbessem I, De Regge N, Van den Bergh E (2010) New crustacean invaders in the Schelde estuary (Belgium). Belgian Journal of Zoology 140: 3–10"
-57575187,140562970,pathway,eng,cbd_2014_pathway:stowaway_ballast_water,"Soors J, Faasse M, Stevens M, Verbessem I, De Regge N, Van den Bergh E (2010) New crustacean invaders in the Schelde estuary (Belgium). Belgian Journal of Zoology 140: 3–10"
-57575188,140562970,invasion stage,eng,established,"Soors J, Faasse M, Stevens M, Verbessem I, De Regge N, Van den Bergh E (2010) New crustacean invaders in the Schelde estuary (Belgium). Belgian Journal of Zoology 140: 3–10"
-57575285,140562972,native range,eng,Southern Europe,Collection RBINS
-57575286,140562972,pathway,eng,cbd_2014_pathway:corridor_water,Collection RBINS
-57575287,140562972,pathway,eng,cbd_2014_pathway:stowaway_hull_fouling,Collection RBINS
-57575288,140562972,pathway,eng,cbd_2014_pathway:stowaway_other,Collection RBINS
-57575289,140562972,invasion stage,eng,established,Collection RBINS
-57575178,140562973,native range,eng,Southern Europe,Boets et al. unpublished data
-57575179,140562973,pathway,eng,cbd_2014_pathway:corridor_water,Boets et al. unpublished data
-57575180,140562973,pathway,eng,cbd_2014_pathway:stowaway_hull_fouling,Boets et al. unpublished data
-57575181,140562973,pathway,eng,cbd_2014_pathway:stowaway_other,Boets et al. unpublished data
-57575182,140562973,invasion stage,eng,established,Boets et al. unpublished data
-57575309,140562976,native range,eng,Asia,"Leloup E, Lefevere S (1952) Sur la présence dans les eaux de la côte belge du cirripède, Elminius modestus Darwin, 1854, du copepode parasite, Mytilicola intestinalis Steuer, 1902, et du polychète, Mercierella enigmatica Fauvel, 1922. Mededelingen Koninklijk Belgisch Instituut voor Natuur Wetenschappen 28: 1–12"
-57575310,140562976,native range,eng,Australia,"Leloup E, Lefevere S (1952) Sur la présence dans les eaux de la côte belge du cirripède, Elminius modestus Darwin, 1854, du copepode parasite, Mytilicola intestinalis Steuer, 1902, et du polychète, Mercierella enigmatica Fauvel, 1922. Mededelingen Koninklijk Belgisch Instituut voor Natuur Wetenschappen 28: 1–12"
-57575311,140562976,pathway,eng,cbd_2014_pathway:stowaway_hull_fouling,"Leloup E, Lefevere S (1952) Sur la présence dans les eaux de la côte belge du cirripède, Elminius modestus Darwin, 1854, du copepode parasite, Mytilicola intestinalis Steuer, 1902, et du polychète, Mercierella enigmatica Fauvel, 1922. Mededelingen Koninklijk Belgisch Instituut voor Natuur Wetenschappen 28: 1–12"
-57575312,140562976,invasion stage,eng,established,"Leloup E, Lefevere S (1952) Sur la présence dans les eaux de la côte belge du cirripède, Elminius modestus Darwin, 1854, du copepode parasite, Mytilicola intestinalis Steuer, 1902, et du polychète, Mercierella enigmatica Fauvel, 1922. Mededelingen Koninklijk Belgisch Instituut voor Natuur Wetenschappen 28: 1–12"
-57575263,140562978,native range,eng,Tropical and warm seas,"Kerckhof F, Cattrijsse A (2001) Exotic Cirripedia (Balanomorpha) from buoys off the Belgian coast. Senckenbergiana maritime 31: 245–254, https://doi.org/10.1007/BF03043033"
-57575264,140562978,pathway,eng,cbd_2014_pathway:stowaway_hull_fouling,"Kerckhof F, Cattrijsse A (2001) Exotic Cirripedia (Balanomorpha) from buoys off the Belgian coast. Senckenbergiana maritime 31: 245–254, https://doi.org/10.1007/BF03043033"
-57575265,140562978,invasion stage,eng,established,"Kerckhof F, Cattrijsse A (2001) Exotic Cirripedia (Balanomorpha) from buoys off the Belgian coast. Senckenbergiana maritime 31: 245–254, https://doi.org/10.1007/BF03043033"
-57575266,140562979,native range,eng,Western Atlantic,"Kerckhof F, Cattrijsse A (2001) Exotic Cirripedia (Balanomorpha) from buoys off the Belgian coast. Senckenbergiana maritime 31: 245–254, https://doi.org/10.1007/BF03043033"
-57575267,140562979,pathway,eng,cbd_2014_pathway:contaminant_on_animals,"Kerckhof F, Cattrijsse A (2001) Exotic Cirripedia (Balanomorpha) from buoys off the Belgian coast. Senckenbergiana maritime 31: 245–254, https://doi.org/10.1007/BF03043033"
-57575268,140562979,pathway,eng,cbd_2014_pathway:stowaway_ballast_water,"Kerckhof F, Cattrijsse A (2001) Exotic Cirripedia (Balanomorpha) from buoys off the Belgian coast. Senckenbergiana maritime 31: 245–254, https://doi.org/10.1007/BF03043033"
-57575269,140562979,pathway,eng,cbd_2014_pathway:stowaway_hull_fouling,"Kerckhof F, Cattrijsse A (2001) Exotic Cirripedia (Balanomorpha) from buoys off the Belgian coast. Senckenbergiana maritime 31: 245–254, https://doi.org/10.1007/BF03043033"
-57575270,140562979,invasion stage,eng,established,"Kerckhof F, Cattrijsse A (2001) Exotic Cirripedia (Balanomorpha) from buoys off the Belgian coast. Senckenbergiana maritime 31: 245–254, https://doi.org/10.1007/BF03043033"
-57575257,140562980,native range,eng,Southern Europe,"Kerckhof F, Cattrijsse A (2001) Exotic Cirripedia (Balanomorpha) from buoys off the Belgian coast. Senckenbergiana maritime 31: 245–254, https://doi.org/10.1007/BF03043033"
-57575258,140562980,pathway,eng,cbd_2014_pathway:stowaway_hull_fouling,"Kerckhof F, Cattrijsse A (2001) Exotic Cirripedia (Balanomorpha) from buoys off the Belgian coast. Senckenbergiana maritime 31: 245–254, https://doi.org/10.1007/BF03043033"
-57575259,140562980,invasion stage,eng,established,"Kerckhof F, Cattrijsse A (2001) Exotic Cirripedia (Balanomorpha) from buoys off the Belgian coast. Senckenbergiana maritime 31: 245–254, https://doi.org/10.1007/BF03043033"
-57575213,140562981,native range,eng,South America,"Kerckhof F, Cattrijsse A (2001) Exotic Cirripedia (Balanomorpha) from buoys off the Belgian coast. Senckenbergiana maritime 31: 245–254, https://doi.org/10.1007/BF03043033"
-57575214,140562981,pathway,eng,cbd_2014_pathway:stowaway_hull_fouling,"Kerckhof F, Cattrijsse A (2001) Exotic Cirripedia (Balanomorpha) from buoys off the Belgian coast. Senckenbergiana maritime 31: 245–254, https://doi.org/10.1007/BF03043033"
-57575215,140562981,invasion stage,eng,established,"Kerckhof F, Cattrijsse A (2001) Exotic Cirripedia (Balanomorpha) from buoys off the Belgian coast. Senckenbergiana maritime 31: 245–254, https://doi.org/10.1007/BF03043033"
-57575112,140562982,native range,eng,Indo-Pacific,"Kerckhof F, Cattrijsse A (2001) Exotic Cirripedia (Balanomorpha) from buoys off the Belgian coast. Senckenbergiana maritime 31: 245–254, https://doi.org/10.1007/BF03043033"
-57575113,140562982,native range,eng,West Africa,"Kerckhof F, Cattrijsse A (2001) Exotic Cirripedia (Balanomorpha) from buoys off the Belgian coast. Senckenbergiana maritime 31: 245–254, https://doi.org/10.1007/BF03043033"
-57575114,140562982,pathway,eng,cbd_2014_pathway:stowaway_hull_fouling,"Kerckhof F, Cattrijsse A (2001) Exotic Cirripedia (Balanomorpha) from buoys off the Belgian coast. Senckenbergiana maritime 31: 245–254, https://doi.org/10.1007/BF03043033"
-57575115,140562982,invasion stage,eng,established,"Kerckhof F, Cattrijsse A (2001) Exotic Cirripedia (Balanomorpha) from buoys off the Belgian coast. Senckenbergiana maritime 31: 245–254, https://doi.org/10.1007/BF03043033"
-57575242,140562985,native range,eng,Northern America,"Faasse M, Van Moorsel G (2003) The North-American amphipods, Melita nitida Smith, 1873 and Incisocalliope aestuarius (Watling and Maurer, 1973) (Crustacea: Amphipoda: Gammaridea), introduced to the western Scheldt estuary (The Netherlands). Aquatic Ecology 37: 13–22, https://doi.org/10.1023/A:1022120729031"
-57575243,140562985,pathway,eng,cbd_2014_pathway:stowaway_ballast_water,"Faasse M, Van Moorsel G (2003) The North-American amphipods, Melita nitida Smith, 1873 and Incisocalliope aestuarius (Watling and Maurer, 1973) (Crustacea: Amphipoda: Gammaridea), introduced to the western Scheldt estuary (The Netherlands). Aquatic Ecology 37: 13–22, https://doi.org/10.1023/A:1022120729031"
-57575244,140562985,invasion stage,eng,established,"Faasse M, Van Moorsel G (2003) The North-American amphipods, Melita nitida Smith, 1873 and Incisocalliope aestuarius (Watling and Maurer, 1973) (Crustacea: Amphipoda: Gammaridea), introduced to the western Scheldt estuary (The Netherlands). Aquatic Ecology 37: 13–22, https://doi.org/10.1023/A:1022120729031"
-57575216,140562987,native range,eng,Ponto-Caspian,"Wouters K (2002) On the distribution of alien non-marine and estuarine macro-crustaceans in Belgium. Bulletin van het Koninklijk Belgisch Instituut voor Natuurwetenschappen, Biologie 72: 119–129"
-57575217,140562987,pathway,eng,cbd_2014_pathway:corridor_water,"Wouters K (2002) On the distribution of alien non-marine and estuarine macro-crustaceans in Belgium. Bulletin van het Koninklijk Belgisch Instituut voor Natuurwetenschappen, Biologie 72: 119–129"
-57575218,140562987,invasion stage,eng,established,"Wouters K (2002) On the distribution of alien non-marine and estuarine macro-crustaceans in Belgium. Bulletin van het Koninklijk Belgisch Instituut voor Natuurwetenschappen, Biologie 72: 119–129"
-57575139,140562989,native range,eng,Northern America,"Wouters K (2002) On the distribution of alien non-marine and estuarine macro-crustaceans in Belgium. Bulletin van het Koninklijk Belgisch Instituut voor Natuurwetenschappen, Biologie 72: 119–129"
-57575140,140562989,pathway,eng,cbd_2014_pathway:stowaway_hull_fouling,"Wouters K (2002) On the distribution of alien non-marine and estuarine macro-crustaceans in Belgium. Bulletin van het Koninklijk Belgisch Instituut voor Natuurwetenschappen, Biologie 72: 119–129"
-57575141,140562989,invasion stage,eng,established,"Wouters K (2002) On the distribution of alien non-marine and estuarine macro-crustaceans in Belgium. Bulletin van het Koninklijk Belgisch Instituut voor Natuurwetenschappen, Biologie 72: 119–129"
-57575145,140562990,native range,eng,Ponto-Caspian,"Boets P, Lock K, Goethals PLM (2010b) First record of Synurella ambulans (Müller 1846) (Amphipoda: Crangonictidae) in Belgium. Belgian Journal of Zoology 140: 244–245"
-57575146,140562990,pathway,eng,cbd_2014_pathway:escape_aquaculture,"Boets P, Lock K, Goethals PLM (2010b) First record of Synurella ambulans (Müller 1846) (Amphipoda: Crangonictidae) in Belgium. Belgian Journal of Zoology 140: 244–245"
-57575147,140562990,invasion stage,eng,established,"Boets P, Lock K, Goethals PLM (2010b) First record of Synurella ambulans (Müller 1846) (Amphipoda: Crangonictidae) in Belgium. Belgian Journal of Zoology 140: 244–245"
-57575142,140562992,native range,eng,Ponto-Caspian,"Vercauteren T, Sablon S, Wouters K (2006) Exotische ongewervelden in vijvers en grachten van het Provinciaal Groendomein ‘Prinsenpark’. In: Retie: een eerste bilan. In: Nieuwborg H, Rijvers T (eds), Natuurstudie in de provincie Antwerpen. Antwerpse Koepel voor Natuurstudie (ANKONA) Jaarboek 2004–2005, pp 27–39"
-57575143,140562992,pathway,eng,cbd_2014_pathway:corridor_water,"Vercauteren T, Sablon S, Wouters K (2006) Exotische ongewervelden in vijvers en grachten van het Provinciaal Groendomein ‘Prinsenpark’. In: Retie: een eerste bilan. In: Nieuwborg H, Rijvers T (eds), Natuurstudie in de provincie Antwerpen. Antwerpse Koepel voor Natuurstudie (ANKONA) Jaarboek 2004–2005, pp 27–39"
-57575144,140562992,invasion stage,eng,established,"Vercauteren T, Sablon S, Wouters K (2006) Exotische ongewervelden in vijvers en grachten van het Provinciaal Groendomein ‘Prinsenpark’. In: Retie: een eerste bilan. In: Nieuwborg H, Rijvers T (eds), Natuurstudie in de provincie Antwerpen. Antwerpse Koepel voor Natuurstudie (ANKONA) Jaarboek 2004–2005, pp 27–39"
-57575099,140562993,native range,eng,New Zealand,"Dewicke A (2002) Hyperbenthic communities of the North Sea. PhD Thesis. Universiteit Gent (RUG): Gent, 219 pp Dumortier M, De Bruyn L, Hens M, Peymen J, Schneiders A, Van Daele T, Van Reeth W (2007) Biodiversity Indicators 2007. State of Nature in Flanders (Belgium). Research Institute for Nature and Forest, Brussels, Belgium"
-57575100,140562993,pathway,eng,cbd_2014_pathway:contaminant_on_animals,"Dewicke A (2002) Hyperbenthic communities of the North Sea. PhD Thesis. Universiteit Gent (RUG): Gent, 219 pp Dumortier M, De Bruyn L, Hens M, Peymen J, Schneiders A, Van Daele T, Van Reeth W (2007) Biodiversity Indicators 2007. State of Nature in Flanders (Belgium). Research Institute for Nature and Forest, Brussels, Belgium"
-57575101,140562993,pathway,eng,cbd_2014_pathway:stowaway_ballast_water,"Dewicke A (2002) Hyperbenthic communities of the North Sea. PhD Thesis. Universiteit Gent (RUG): Gent, 219 pp Dumortier M, De Bruyn L, Hens M, Peymen J, Schneiders A, Van Daele T, Van Reeth W (2007) Biodiversity Indicators 2007. State of Nature in Flanders (Belgium). Research Institute for Nature and Forest, Brussels, Belgium"
-57575102,140562993,invasion stage,eng,established,"Dewicke A (2002) Hyperbenthic communities of the North Sea. PhD Thesis. Universiteit Gent (RUG): Gent, 219 pp Dumortier M, De Bruyn L, Hens M, Peymen J, Schneiders A, Van Daele T, Van Reeth W (2007) Biodiversity Indicators 2007. State of Nature in Flanders (Belgium). Research Institute for Nature and Forest, Brussels, Belgium"
-57575096,140562995,native range,eng,Northern America,"Faasse M, Van Moorsel G (2003) The North-American amphipods, Melita nitida Smith, 1873 and Incisocalliope aestuarius (Watling and Maurer, 1973) (Crustacea: Amphipoda: Gammaridea), introduced to the western Scheldt estuary (The Netherlands). Aquatic Ecology 37: 13–22, https://doi.org/10.1023/A:1022120729031"
-57575097,140562995,pathway,eng,cbd_2014_pathway:stowaway_ballast_water,"Faasse M, Van Moorsel G (2003) The North-American amphipods, Melita nitida Smith, 1873 and Incisocalliope aestuarius (Watling and Maurer, 1973) (Crustacea: Amphipoda: Gammaridea), introduced to the western Scheldt estuary (The Netherlands). Aquatic Ecology 37: 13–22, https://doi.org/10.1023/A:1022120729031"
-57575098,140562995,invasion stage,eng,established,"Faasse M, Van Moorsel G (2003) The North-American amphipods, Melita nitida Smith, 1873 and Incisocalliope aestuarius (Watling and Maurer, 1973) (Crustacea: Amphipoda: Gammaridea), introduced to the western Scheldt estuary (The Netherlands). Aquatic Ecology 37: 13–22, https://doi.org/10.1023/A:1022120729031"
-57575282,140562997,native range,eng,Southern Europe,Collection RBINS
-57575283,140562997,pathway,eng,cbd_2014_pathway:corridor_water,Collection RBINS
-57575284,140562997,invasion stage,eng,established,Collection RBINS
-57575183,140562998,native range,eng,Ponto-Caspian,"Messiaen M, Lock K, Gabriels W, Vercauteren T, Wouters K, Boets P, Goethals PLM (2010) Alien macrocrustaceans in freshwater ecosystems in the eastern part of Flanders (Belgium). Belgian Journal of Zoology 140: 30–39"
-57575184,140562998,pathway,eng,cbd_2014_pathway:corridor_water,"Messiaen M, Lock K, Gabriels W, Vercauteren T, Wouters K, Boets P, Goethals PLM (2010) Alien macrocrustaceans in freshwater ecosystems in the eastern part of Flanders (Belgium). Belgian Journal of Zoology 140: 30–39"
-57575185,140562998,invasion stage,eng,established,"Messiaen M, Lock K, Gabriels W, Vercauteren T, Wouters K, Boets P, Goethals PLM (2010) Alien macrocrustaceans in freshwater ecosystems in the eastern part of Flanders (Belgium). Belgian Journal of Zoology 140: 30–39"
-57575172,140562999,native range,eng,Northern America,"Messiaen M, Lock K, Gabriels W, Vercauteren T, Wouters K, Boets P, Goethals PLM (2010) Alien macrocrustaceans in freshwater ecosystems in the eastern part of Flanders (Belgium). Belgian Journal of Zoology 140: 30–39"
-57575173,140562999,pathway,eng,cbd_2014_pathway:corridor_water,"Messiaen M, Lock K, Gabriels W, Vercauteren T, Wouters K, Boets P, Goethals PLM (2010) Alien macrocrustaceans in freshwater ecosystems in the eastern part of Flanders (Belgium). Belgian Journal of Zoology 140: 30–39"
-57575174,140562999,invasion stage,eng,established,"Messiaen M, Lock K, Gabriels W, Vercauteren T, Wouters K, Boets P, Goethals PLM (2010) Alien macrocrustaceans in freshwater ecosystems in the eastern part of Flanders (Belgium). Belgian Journal of Zoology 140: 30–39"
-57575163,140563000,native range,eng,Ponto-Caspian,"Boets P, Lock K, Tempelman D, Van Haaren T, Platvoet D, Goethals PLM (2012c) First occurrence of the Ponto-Caspian amphipod Echinogammarus trichiatus (Martynov, 1932) (Crustacea: Gammaridae) in Belgium. BioInvasions Records 1: 115–120, https://doi.org/10.3391/bir.2012.1.2.06"
-57575164,140563000,pathway,eng,cbd_2014_pathway:corridor_water,"Boets P, Lock K, Tempelman D, Van Haaren T, Platvoet D, Goethals PLM (2012c) First occurrence of the Ponto-Caspian amphipod Echinogammarus trichiatus (Martynov, 1932) (Crustacea: Gammaridae) in Belgium. BioInvasions Records 1: 115–120, https://doi.org/10.3391/bir.2012.1.2.06"
-57575165,140563000,invasion stage,eng,established,"Boets P, Lock K, Tempelman D, Van Haaren T, Platvoet D, Goethals PLM (2012c) First occurrence of the Ponto-Caspian amphipod Echinogammarus trichiatus (Martynov, 1932) (Crustacea: Gammaridae) in Belgium. BioInvasions Records 1: 115–120, https://doi.org/10.3391/bir.2012.1.2.06"
-57575093,140563001,native range,eng,Southern Europe,"Wouters K (2002) On the distribution of alien non-marine and estuarine macro-crustaceans in Belgium. Bulletin van het Koninklijk Belgisch Instituut voor Natuurwetenschappen, Biologie 72: 119–129"
-57575094,140563001,pathway,eng,cbd_2014_pathway:corridor_water,"Wouters K (2002) On the distribution of alien non-marine and estuarine macro-crustaceans in Belgium. Bulletin van het Koninklijk Belgisch Instituut voor Natuurwetenschappen, Biologie 72: 119–129"
-57575095,140563001,invasion stage,eng,established,"Wouters K (2002) On the distribution of alien non-marine and estuarine macro-crustaceans in Belgium. Bulletin van het Koninklijk Belgisch Instituut voor Natuurwetenschappen, Biologie 72: 119–129"
-57575072,140563003,native range,eng,Northeast Asia,"Cook EJ, Jahnke M, Kerckhof F, Minchin D, Faasse M, Boos K, Ashton G (2007) European expansion of the introduced amphipod Caprella mutica Schurin, 1935. Aquatic Invasions 2: 411–421, https://doi.org/10.3391/ai.2007.2.4.11"
-57575073,140563003,pathway,eng,cbd_2014_pathway:escape_aquaculture,"Cook EJ, Jahnke M, Kerckhof F, Minchin D, Faasse M, Boos K, Ashton G (2007) European expansion of the introduced amphipod Caprella mutica Schurin, 1935. Aquatic Invasions 2: 411–421, https://doi.org/10.3391/ai.2007.2.4.11"
-57575074,140563003,pathway,eng,cbd_2014_pathway:stowaway_hull_fouling,"Cook EJ, Jahnke M, Kerckhof F, Minchin D, Faasse M, Boos K, Ashton G (2007) European expansion of the introduced amphipod Caprella mutica Schurin, 1935. Aquatic Invasions 2: 411–421, https://doi.org/10.3391/ai.2007.2.4.11"
-57575075,140563003,invasion stage,eng,established,"Cook EJ, Jahnke M, Kerckhof F, Minchin D, Faasse M, Boos K, Ashton G (2007) European expansion of the introduced amphipod Caprella mutica Schurin, 1935. Aquatic Invasions 2: 411–421, https://doi.org/10.3391/ai.2007.2.4.11"
-57575219,140563006,native range,eng,Southeast Asia,"Boets P, Lock K, Goethals PLM (2011b) Shifts in the gammarid (Amphipoda) fauna of brackish polder waters in Flanders (Belgium). Journal of Crustacean Biology 31: 270–277, https://doi.org/10.1651/10-3357.1"
-57575220,140563006,pathway,eng,cbd_2014_pathway:stowaway_ballast_water,"Boets P, Lock K, Goethals PLM (2011b) Shifts in the gammarid (Amphipoda) fauna of brackish polder waters in Flanders (Belgium). Journal of Crustacean Biology 31: 270–277, https://doi.org/10.1651/10-3357.1"
-57575221,140563006,invasion stage,eng,established,"Boets P, Lock K, Goethals PLM (2011b) Shifts in the gammarid (Amphipoda) fauna of brackish polder waters in Flanders (Belgium). Journal of Crustacean Biology 31: 270–277, https://doi.org/10.1651/10-3357.1"
-57575199,140563008,native range,eng,Northern America,"Van Damme P, Mees J, Maebe S (1992) Voorkomen van het Zuiderzeekrabbetje Rhithropanopeus harrisii (Gould, 1841) in de Westerschelde. De Strandvlo 12(1): 19–21"
-57575200,140563008,pathway,eng,cbd_2014_pathway:stowaway_ballast_water,"Van Damme P, Mees J, Maebe S (1992) Voorkomen van het Zuiderzeekrabbetje Rhithropanopeus harrisii (Gould, 1841) in de Westerschelde. De Strandvlo 12(1): 19–21"
-57575201,140563008,invasion stage,eng,established,"Van Damme P, Mees J, Maebe S (1992) Voorkomen van het Zuiderzeekrabbetje Rhithropanopeus harrisii (Gould, 1841) in de Westerschelde. De Strandvlo 12(1): 19–21"
-57575249,140563010,native range,eng,Northern America,"Dumoulin E (2004) Snelle areaaluitbreiding van het penseelkrabbetje Hemigrapsus penicillatus (de Haan, 1835) langs de kusten van de Zuidelijke Bocht van de Noordzee, status van haar opmars in de Westerschelde en beschouwingen over de ecologie en het gedrag van de soort. De Strandvlo 24(1): 5-35"
-57575250,140563010,pathway,eng,cbd_2014_pathway:stowaway_ballast_water,"Dumoulin E (2004) Snelle areaaluitbreiding van het penseelkrabbetje Hemigrapsus penicillatus (de Haan, 1835) langs de kusten van de Zuidelijke Bocht van de Noordzee, status van haar opmars in de Westerschelde en beschouwingen over de ecologie en het gedrag van de soort. De Strandvlo 24(1): 5-35"
-57575251,140563010,invasion stage,eng,established,"Dumoulin E (2004) Snelle areaaluitbreiding van het penseelkrabbetje Hemigrapsus penicillatus (de Haan, 1835) langs de kusten van de Zuidelijke Bocht van de Noordzee, status van haar opmars in de Westerschelde en beschouwingen over de ecologie en het gedrag van de soort. De Strandvlo 24(1): 5-35"
-57575210,140563011,native range,eng,Northern America,"Nuyttens F, Versele G, Loones MA (2006) De aanwezigheid van de penseelkrab Hemigrapsus takanoi en de blaasjeskrab Hemigrapsus sanguineus in NieuwpoortBad. De strandvlo 26: 114–115"
-57575211,140563011,pathway,eng,cbd_2014_pathway:stowaway_ballast_water,"Nuyttens F, Versele G, Loones MA (2006) De aanwezigheid van de penseelkrab Hemigrapsus takanoi en de blaasjeskrab Hemigrapsus sanguineus in NieuwpoortBad. De strandvlo 26: 114–115"
-57575212,140563011,invasion stage,eng,established,"Nuyttens F, Versele G, Loones MA (2006) De aanwezigheid van de penseelkrab Hemigrapsus takanoi en de blaasjeskrab Hemigrapsus sanguineus in NieuwpoortBad. De strandvlo 26: 114–115"
-57575133,140563012,native range,eng,Southeast Asia,"Wouters K (2002) On the distribution of alien non-marine and estuarine macro-crustaceans in Belgium. Bulletin van het Koninklijk Belgisch Instituut voor Natuurwetenschappen, Biologie 72: 119–129"
-57575134,140563012,pathway,eng,cbd_2014_pathway:stowaway_ballast_water,"Wouters K (2002) On the distribution of alien non-marine and estuarine macro-crustaceans in Belgium. Bulletin van het Koninklijk Belgisch Instituut voor Natuurwetenschappen, Biologie 72: 119–129"
-57575135,140563012,invasion stage,eng,established,"Wouters K (2002) On the distribution of alien non-marine and estuarine macro-crustaceans in Belgium. Bulletin van het Koninklijk Belgisch Instituut voor Natuurwetenschappen, Biologie 72: 119–129"
-57575126,140563014,native range,eng,Southern Europe,"Wouters K (2002) On the distribution of alien non-marine and estuarine macro-crustaceans in Belgium. Bulletin van het Koninklijk Belgisch Instituut voor Natuurwetenschappen, Biologie 72: 119–129"
-57575127,140563014,pathway,eng,cbd_2014_pathway:escape_pet,"Wouters K (2002) On the distribution of alien non-marine and estuarine macro-crustaceans in Belgium. Bulletin van het Koninklijk Belgisch Instituut voor Natuurwetenschappen, Biologie 72: 119–129"
-57575128,140563014,invasion stage,eng,established,"Wouters K (2002) On the distribution of alien non-marine and estuarine macro-crustaceans in Belgium. Bulletin van het Koninklijk Belgisch Instituut voor Natuurwetenschappen, Biologie 72: 119–129"
-57575080,140563016,native range,eng,Northern America,"Van Damme P, Maes J (1993) De Blauwe Zwemkrab Callinectes sapidus Rathbun, 1896 in de Westerschelde (België). De Strandvlo 13(4): 120–121"
-57575081,140563016,pathway,eng,cbd_2014_pathway:stowaway_hull_fouling,"Van Damme P, Maes J (1993) De Blauwe Zwemkrab Callinectes sapidus Rathbun, 1896 in de Westerschelde (België). De Strandvlo 13(4): 120–121"
-57575082,140563016,pathway,eng,cbd_2014_pathway:stowaway_other,"Van Damme P, Maes J (1993) De Blauwe Zwemkrab Callinectes sapidus Rathbun, 1896 in de Westerschelde (België). De Strandvlo 13(4): 120–121"
-57575083,140563016,invasion stage,eng,established,"Van Damme P, Maes J (1993) De Blauwe Zwemkrab Callinectes sapidus Rathbun, 1896 in de Westerschelde (België). De Strandvlo 13(4): 120–121"
-57575231,140563018,native range,eng,Northern America,"Boets P, Lock K, Cammaerts R, Plu D, Goethals PLM (2009) Occurrence of the invasive crayfish Procambarus clarkii (Girard, 1852) in Belgium (Crustacea: Cambaridae). Belgian Journal of Zoology 139: 173–175"
-57575232,140563018,pathway,eng,cbd_2014_pathway:escape_aquaculture,"Boets P, Lock K, Cammaerts R, Plu D, Goethals PLM (2009) Occurrence of the invasive crayfish Procambarus clarkii (Girard, 1852) in Belgium (Crustacea: Cambaridae). Belgian Journal of Zoology 139: 173–175"
-57575233,140563018,pathway,eng,cbd_2014_pathway:escape_pet,"Boets P, Lock K, Cammaerts R, Plu D, Goethals PLM (2009) Occurrence of the invasive crayfish Procambarus clarkii (Girard, 1852) in Belgium (Crustacea: Cambaridae). Belgian Journal of Zoology 139: 173–175"
-57575234,140563018,invasion stage,eng,established,"Boets P, Lock K, Cammaerts R, Plu D, Goethals PLM (2009) Occurrence of the invasive crayfish Procambarus clarkii (Girard, 1852) in Belgium (Crustacea: Cambaridae). Belgian Journal of Zoology 139: 173–175"
-57575076,140563019,native range,eng,Northern America,"Wouters K (2002) On the distribution of alien non-marine and estuarine macro-crustaceans in Belgium. Bulletin van het Koninklijk Belgisch Instituut voor Natuurwetenschappen, Biologie 72: 119–129"
-57575077,140563019,pathway,eng,cbd_2014_pathway:escape_aquaculture,"Wouters K (2002) On the distribution of alien non-marine and estuarine macro-crustaceans in Belgium. Bulletin van het Koninklijk Belgisch Instituut voor Natuurwetenschappen, Biologie 72: 119–129"
-57575078,140563019,pathway,eng,cbd_2014_pathway:escape_pet,"Wouters K (2002) On the distribution of alien non-marine and estuarine macro-crustaceans in Belgium. Bulletin van het Koninklijk Belgisch Instituut voor Natuurwetenschappen, Biologie 72: 119–129"
-57575079,140563019,invasion stage,eng,established,"Wouters K (2002) On the distribution of alien non-marine and estuarine macro-crustaceans in Belgium. Bulletin van het Koninklijk Belgisch Instituut voor Natuurwetenschappen, Biologie 72: 119–129"
-57575116,140563021,native range,eng,Eastern Europe,"Gérard P (1986) Les différentes espèces d'écrevisses en Belgique et leur répartition géographique. Station de Recherche Forestière et Hydrobiologique. Travaux serie D 54, 25 p"
-57575117,140563021,pathway,eng,cbd_2014_pathway:escape_aquaculture,"Gérard P (1986) Les différentes espèces d'écrevisses en Belgique et leur répartition géographique. Station de Recherche Forestière et Hydrobiologique. Travaux serie D 54, 25 p"
-57575118,140563021,pathway,eng,cbd_2014_pathway:escape_pet,"Gérard P (1986) Les différentes espèces d'écrevisses en Belgique et leur répartition géographique. Station de Recherche Forestière et Hydrobiologique. Travaux serie D 54, 25 p"
-57575119,140563021,invasion stage,eng,established,"Gérard P (1986) Les différentes espèces d'écrevisses en Belgique et leur répartition géographique. Station de Recherche Forestière et Hydrobiologique. Travaux serie D 54, 25 p"
-57575069,140563022,native range,eng,Northern America,"Gérard P (1986) Les différentes espèces d'écrevisses en Belgique et leur répartition géographique. Station de Recherche Forestière et Hydrobiologique. Travaux serie D 54, 25 p"
-57575070,140563022,pathway,eng,cbd_2014_pathway:escape_aquaculture,"Gérard P (1986) Les différentes espèces d'écrevisses en Belgique et leur répartition géographique. Station de Recherche Forestière et Hydrobiologique. Travaux serie D 54, 25 p"
-57575071,140563022,invasion stage,eng,established,"Gérard P (1986) Les différentes espèces d'écrevisses en Belgique et leur répartition géographique. Station de Recherche Forestière et Hydrobiologique. Travaux serie D 54, 25 p"
-57575065,140563025,pathway,eng,cbd_2014_pathway:escape_aquaculture,"van Haaren T, Soors J (2009) Sinelobus stanfordi (Richardson, 1901): a new crustacean invader in Europe. Aquatic Invasions 4: 703–711, https://doi.org/10.3391/ai.2009.4.4.20"
-57575066,140563025,pathway,eng,cbd_2014_pathway:stowaway_ballast_water,"van Haaren T, Soors J (2009) Sinelobus stanfordi (Richardson, 1901): a new crustacean invader in Europe. Aquatic Invasions 4: 703–711, https://doi.org/10.3391/ai.2009.4.4.20"
-57575067,140563025,pathway,eng,cbd_2014_pathway:stowaway_hull_fouling,"van Haaren T, Soors J (2009) Sinelobus stanfordi (Richardson, 1901): a new crustacean invader in Europe. Aquatic Invasions 4: 703–711, https://doi.org/10.3391/ai.2009.4.4.20"
-57575068,140563025,invasion stage,eng,established,"van Haaren T, Soors J (2009) Sinelobus stanfordi (Richardson, 1901): a new crustacean invader in Europe. Aquatic Invasions 4: 703–711, https://doi.org/10.3391/ai.2009.4.4.20"
-57575062,141117231,native range,eng,Africa,
-57575063,141117231,invasion stage,eng,casual,
-57575064,141117231,pathway,eng,cbd_2014_pathway:escape_aquaculture,
-57575055,141117232,native range,eng,Eastern Europe,
-57575056,141117232,pathway,eng,cbd_2014_pathway:escape_aquaculture,
-57575057,141117232,invasion stage,eng,established,
-57575058,141117233,native range,eng,Eastern Europe,
-57575059,141117233,pathway,eng,cbd_2014_pathway:corridor_water,
-57575060,141117233,pathway,eng,cbd_2014_pathway:stowaway_ballast_water,
-57575061,141117233,invasion stage,eng,established,
-57575048,141117234,native range,eng,Asia,
-57575049,141117234,invasion stage,eng,casual,
-57575050,141117234,pathway,eng,cbd_2014_pathway:escape_aquaculture,
-57575051,141117234,pathway,eng,cbd_2014_pathway:escape_ornamental,
-57575052,141117235,native range,eng,Asia,
-57575053,141117235,invasion stage,eng,casual,
-57575054,141117235,pathway,eng,cbd_2014_pathway:release_biological_control,
-57575042,141117236,native range,eng,Asia,
-57575043,141117236,native range,eng,Eastern Europe,
-57575044,141117236,invasion stage,eng,established,
-57575045,141117236,pathway,eng,unintentional,
-57575046,141117237,pathway,eng,cbd_2014_pathway:escape_food_bait,
-57575047,141117237,invasion stage,eng,established,
-57575039,141117238,native range,eng,Eastern Europe,
-57575040,141117238,pathway,eng,cbd_2014_pathway:escape_food_bait,
-57575041,141117238,invasion stage,eng,established,
-57575036,141117240,native range,eng,Asia,
-57575037,141117240,invasion stage,eng,casual,
-57575038,141117240,pathway,eng,cbd_2014_pathway:escape_ornamental,
-57575032,141117241,native range,eng,Eastern Europe,
-57575033,141117241,pathway,eng,cbd_2014_pathway:corridor_water,
-57575034,141117241,pathway,eng,cbd_2014_pathway:stowaway_ballast_water,
-57575035,141117241,invasion stage,eng,established,
-57575029,141117242,native range,eng,Eastern Europe,
-57575030,141117242,pathway,eng,cbd_2014_pathway:escape_food_bait,
-57575031,141117242,invasion stage,eng,established,
-57575027,141117243,pathway,eng,cbd_2014_pathway:escape_ornamental,
-57575028,141117243,invasion stage,eng,established,
-57575024,141117244,pathway,eng,cbd_2014_pathway:escape_aquaculture,
-57575025,141117244,pathway,eng,cbd_2014_pathway:escape_ornamental,
-57575026,141117244,invasion stage,eng,established,
-57575021,141117245,invasion stage,eng,casual,
-57575022,141117245,pathway,eng,cbd_2014_pathway:escape_aquaculture,
-57575023,141117245,pathway,eng,cbd_2014_pathway:escape_food_bait,
-57575018,141117246,native range,eng,Eastern Europe,
-57575019,141117246,pathway,eng,cbd_2014_pathway:escape_food_bait,
-57575020,141117246,invasion stage,eng,established,
-57575014,141117247,native range,eng,Eastern Europe,
-57575015,141117247,pathway,eng,cbd_2014_pathway:corridor_water,
-57575016,141117247,pathway,eng,cbd_2014_pathway:stowaway_ballast_water,
-57575017,141117247,invasion stage,eng,established,
-57575012,141117248,invasion stage,eng,casual,
-57575013,141117248,pathway,eng,cbd_2014_pathway:escape_aquaculture,
-57575006,141117249,native range,eng,Asia,
-57575007,141117249,invasion stage,eng,casual,
-57575008,141117249,pathway,eng,cbd_2014_pathway:release_biological_control,
-57575002,141117250,native range,eng,Eastern Europe,
-57575003,141117250,invasion stage,eng,casual,
-57575004,141117250,pathway,eng,cbd_2014_pathway:escape_aquaculture,
-57575005,141117250,pathway,eng,cbd_2014_pathway:escape_ornamental,
-57574999,141117251,native range,eng,Africa,
-57575000,141117251,invasion stage,eng,casual,
-57575001,141117251,pathway,eng,cbd_2014_pathway:escape_aquaculture,
-57574995,141117252,native range,eng,Asia,
-57574996,141117252,pathway,eng,cbd_2014_pathway:escape_food_bait,
-57574997,141117252,invasion stage,eng,established,
-57574998,141117252,pathway,eng,unintentional,
-57574992,141117253,pathway,eng,cbd_2014_pathway:escape_aquaculture,
-57574993,141117253,pathway,eng,cbd_2014_pathway:escape_ornamental,
-57574994,141117253,invasion stage,eng,established,
-57574989,141117254,native range,eng,Asia,
-57574990,141117254,invasion stage,eng,casual,
-57574991,141117254,pathway,eng,cbd_2014_pathway:release_biological_control,
-57574985,141117255,native range,eng,Eastern Europe,
-57574986,141117255,invasion stage,eng,casual,
-57574987,141117255,pathway,eng,cbd_2014_pathway:escape_aquaculture,
-57574988,141117255,pathway,eng,cbd_2014_pathway:escape_ornamental,
 57574159,141264581,pathway,eng,cbd_2014_pathway:escape_horticulture,
 57574160,141264581,native range,eng,cultivated origin,
 57574161,141264581,invasion stage,eng,established,
@@ -9279,9 +8954,771 @@ key,taxonKey,type,language,description,source
 57573753,143605133,invasion stage,eng,casual,
 57573754,143605133,pathway,eng,cbd_2014_pathway:escape_food_bait,
 57573755,143605133,native range,eng,temperate Asia (WGSRPD:3),
+57567499,148437407,native range,eng,Northern America (WGSRPD:7),
+57567500,148437407,pathway,eng,cbd_2014_pathway:escape_horticulture,
+57567501,148437407,invasion stage,eng,established,
+57572056,148437417,native range,eng,Africa (WGSRPD:2),
+57572057,148437417,native range,eng,Europe (WGSRPD:1),
+57572058,148437417,pathway,eng,cbd_2014_pathway:escape_horticulture,
+57572059,148437417,invasion stage,eng,established,
+57572060,148437417,native range,eng,temperate Asia (WGSRPD:3),
+57568512,148437420,native range,eng,Africa (WGSRPD:2),
+57568513,148437420,native range,eng,Europe (WGSRPD:1),
+57568514,148437420,invasion stage,eng,casual,
+57568515,148437420,pathway,eng,cbd_2014_pathway:contaminant_seed,
+57568516,148437420,native range,eng,temperate Asia (WGSRPD:3),
+57574102,148437422,invasion stage,eng,casual,
+57574103,148437422,native range,eng,temperate Asia (WGSRPD:3),
+57566111,148437423,native range,eng,Northern America (WGSRPD:7),
+57566112,148437423,invasion stage,eng,casual,
+57566113,148437423,pathway,eng,cbd_2014_pathway:escape_horticulture,
+57572493,148437426,native range,eng,Northern America (WGSRPD:7),
+57572494,148437426,invasion stage,eng,casual,
+57572495,148437426,pathway,eng,cbd_2014_pathway:escape_horticulture,
+57569367,148437430,pathway,eng,cbd_2014_pathway:contaminant_nursery,
+57569368,148437430,invasion stage,eng,established,
+57569369,148437430,native range,eng,temperate Asia (WGSRPD:3),
+57574476,148437432,invasion stage,eng,casual,
+57574477,148437432,pathway,eng,cbd_2014_pathway:escape_agriculture,
+57574478,148437432,native range,eng,temperate Asia (WGSRPD:3),
+57572406,148437473,invasion stage,eng,casual,
+57572407,148437473,native range,eng,temperate Asia (WGSRPD:3),
+57572325,148437475,native range,eng,Europe (WGSRPD:1),
+57572326,148437475,invasion stage,eng,casual,
+57572327,148437475,pathway,eng,cbd_2014_pathway:escape_horticulture,
+57575160,140562891,native range,eng,Ponto-Caspian,"Vercauteren T, De Smedt S, Warmoes T, Goddeeris B, Wouters K (2005) Drie nieuwe Ponto-Kaspische inwijkelingen dringen door tot in kanalen in de provincie Antwerpen: de zoetwaterpolychaet Hypania invalida (Grube, 1860) en, voor het eerst in België, de platworm Dendrocoelum romanodanubiale (Codreanu, 1949) en de Donaupissebed Jaera istri Veuille, 1979. In: Nieuwborg H (ed), Natuurstudie in de provincie Antwerpen. Antwerpse Koepel voor Natuurstudie (ANKONA) Jaarboek 2003, pp 83–97"
+57575161,140562891,pathway,eng,cbd_2014_pathway:stowaway_hull_fouling,"Vercauteren T, De Smedt S, Warmoes T, Goddeeris B, Wouters K (2005) Drie nieuwe Ponto-Kaspische inwijkelingen dringen door tot in kanalen in de provincie Antwerpen: de zoetwaterpolychaet Hypania invalida (Grube, 1860) en, voor het eerst in België, de platworm Dendrocoelum romanodanubiale (Codreanu, 1949) en de Donaupissebed Jaera istri Veuille, 1979. In: Nieuwborg H (ed), Natuurstudie in de provincie Antwerpen. Antwerpse Koepel voor Natuurstudie (ANKONA) Jaarboek 2003, pp 83–97"
+57575162,140562891,invasion stage,eng,established,"Vercauteren T, De Smedt S, Warmoes T, Goddeeris B, Wouters K (2005) Drie nieuwe Ponto-Kaspische inwijkelingen dringen door tot in kanalen in de provincie Antwerpen: de zoetwaterpolychaet Hypania invalida (Grube, 1860) en, voor het eerst in België, de platworm Dendrocoelum romanodanubiale (Codreanu, 1949) en de Donaupissebed Jaera istri Veuille, 1979. In: Nieuwborg H (ed), Natuurstudie in de provincie Antwerpen. Antwerpse Koepel voor Natuurstudie (ANKONA) Jaarboek 2003, pp 83–97"
+57575274,140562894,native range,eng,China,"Soors J, van Haaren T, Timm T, Speybroeck J (2013) Bratislavia dadayi (Michaelsen, 1905) (Annelida: Clitellata: Naididae): a new non-indigenous species for Europe, and other non-native annelids in the Schelde estuary. Aquatic Invasions 8: 37–44, https://doi.org/10.3391/ai.2013.8.1.04"
+57575275,140562894,native range,eng,Southern Hemisphere,"Soors J, van Haaren T, Timm T, Speybroeck J (2013) Bratislavia dadayi (Michaelsen, 1905) (Annelida: Clitellata: Naididae): a new non-indigenous species for Europe, and other non-native annelids in the Schelde estuary. Aquatic Invasions 8: 37–44, https://doi.org/10.3391/ai.2013.8.1.04"
+57575276,140562894,native range,eng,United States,"Soors J, van Haaren T, Timm T, Speybroeck J (2013) Bratislavia dadayi (Michaelsen, 1905) (Annelida: Clitellata: Naididae): a new non-indigenous species for Europe, and other non-native annelids in the Schelde estuary. Aquatic Invasions 8: 37–44, https://doi.org/10.3391/ai.2013.8.1.04"
+57575277,140562894,pathway,eng,cbd_2014_pathway:stowaway_ballast_water,"Soors J, van Haaren T, Timm T, Speybroeck J (2013) Bratislavia dadayi (Michaelsen, 1905) (Annelida: Clitellata: Naididae): a new non-indigenous species for Europe, and other non-native annelids in the Schelde estuary. Aquatic Invasions 8: 37–44, https://doi.org/10.3391/ai.2013.8.1.04"
+57575278,140562894,invasion stage,eng,established,"Soors J, van Haaren T, Timm T, Speybroeck J (2013) Bratislavia dadayi (Michaelsen, 1905) (Annelida: Clitellata: Naididae): a new non-indigenous species for Europe, and other non-native annelids in the Schelde estuary. Aquatic Invasions 8: 37–44, https://doi.org/10.3391/ai.2013.8.1.04"
+57575205,140562895,native range,eng,Africa,"Soors J, van Haaren T, Timm T, Speybroeck J (2013) Bratislavia dadayi (Michaelsen, 1905) (Annelida: Clitellata: Naididae): a new non-indigenous species for Europe, and other non-native annelids in the Schelde estuary. Aquatic Invasions 8: 37–44, https://doi.org/10.3391/ai.2013.8.1.04"
+57575206,140562895,native range,eng,Asia,"Soors J, van Haaren T, Timm T, Speybroeck J (2013) Bratislavia dadayi (Michaelsen, 1905) (Annelida: Clitellata: Naididae): a new non-indigenous species for Europe, and other non-native annelids in the Schelde estuary. Aquatic Invasions 8: 37–44, https://doi.org/10.3391/ai.2013.8.1.04"
+57575207,140562895,native range,eng,Australia,"Soors J, van Haaren T, Timm T, Speybroeck J (2013) Bratislavia dadayi (Michaelsen, 1905) (Annelida: Clitellata: Naididae): a new non-indigenous species for Europe, and other non-native annelids in the Schelde estuary. Aquatic Invasions 8: 37–44, https://doi.org/10.3391/ai.2013.8.1.04"
+57575208,140562895,pathway,eng,cbd_2014_pathway:stowaway_ballast_water,"Soors J, van Haaren T, Timm T, Speybroeck J (2013) Bratislavia dadayi (Michaelsen, 1905) (Annelida: Clitellata: Naididae): a new non-indigenous species for Europe, and other non-native annelids in the Schelde estuary. Aquatic Invasions 8: 37–44, https://doi.org/10.3391/ai.2013.8.1.04"
+57575209,140562895,invasion stage,eng,established,"Soors J, van Haaren T, Timm T, Speybroeck J (2013) Bratislavia dadayi (Michaelsen, 1905) (Annelida: Clitellata: Naididae): a new non-indigenous species for Europe, and other non-native annelids in the Schelde estuary. Aquatic Invasions 8: 37–44, https://doi.org/10.3391/ai.2013.8.1.04"
+57575228,140562897,native range,eng,Northern America,"Seys J, Vincx M, Meire P (1999) Spatial distribution of oligochaetes (Clitellata) in the tidal freshwater and brackish parts of the Schelde estuary (Belgium). In: Aquatic Oligochaetes, Springer Netherlands, pp 119–132"
+57575229,140562897,pathway,eng,cbd_2014_pathway:stowaway_ballast_water,"Seys J, Vincx M, Meire P (1999) Spatial distribution of oligochaetes (Clitellata) in the tidal freshwater and brackish parts of the Schelde estuary (Belgium). In: Aquatic Oligochaetes, Springer Netherlands, pp 119–132"
+57575230,140562897,invasion stage,eng,established,"Seys J, Vincx M, Meire P (1999) Spatial distribution of oligochaetes (Clitellata) in the tidal freshwater and brackish parts of the Schelde estuary (Belgium). In: Aquatic Oligochaetes, Springer Netherlands, pp 119–132"
+57575202,140562898,native range,eng,East Asia,"Damas H (1938) Sur la presence dans la Meuse belge de Branchiura sowerbyi, Craspedacusta sowerbyi, et Urnatella gracilis. Annalles de Societé Zoologique Belge 69: 293–310"
+57575203,140562898,pathway,eng,cbd_2014_pathway:stowaway_ballast_water,"Damas H (1938) Sur la presence dans la Meuse belge de Branchiura sowerbyi, Craspedacusta sowerbyi, et Urnatella gracilis. Annalles de Societé Zoologique Belge 69: 293–310"
+57575204,140562898,invasion stage,eng,established,"Damas H (1938) Sur la presence dans la Meuse belge de Branchiura sowerbyi, Craspedacusta sowerbyi, et Urnatella gracilis. Annalles de Societé Zoologique Belge 69: 293–310"
+57575169,140562899,native range,eng,Ponto-Caspian,"Soors J, van Haaren T, Timm T, Speybroeck J (2013) Bratislavia dadayi (Michaelsen, 1905) (Annelida: Clitellata: Naididae): a new non-indigenous species for Europe, and other non-native annelids in the Schelde estuary. Aquatic Invasions 8: 37–44, https://doi.org/10.3391/ai.2013.8.1.04"
+57575170,140562899,pathway,eng,cbd_2014_pathway:stowaway_ballast_water,"Soors J, van Haaren T, Timm T, Speybroeck J (2013) Bratislavia dadayi (Michaelsen, 1905) (Annelida: Clitellata: Naididae): a new non-indigenous species for Europe, and other non-native annelids in the Schelde estuary. Aquatic Invasions 8: 37–44, https://doi.org/10.3391/ai.2013.8.1.04"
+57575171,140562899,invasion stage,eng,established,"Soors J, van Haaren T, Timm T, Speybroeck J (2013) Bratislavia dadayi (Michaelsen, 1905) (Annelida: Clitellata: Naididae): a new non-indigenous species for Europe, and other non-native annelids in the Schelde estuary. Aquatic Invasions 8: 37–44, https://doi.org/10.3391/ai.2013.8.1.04"
+57575166,140562900,native range,eng,Northern America,"Soors J, van Haaren T, Timm T, Speybroeck J (2013) Bratislavia dadayi (Michaelsen, 1905) (Annelida: Clitellata: Naididae): a new non-indigenous species for Europe, and other non-native annelids in the Schelde estuary. Aquatic Invasions 8: 37–44, https://doi.org/10.3391/ai.2013.8.1.04"
+57575167,140562900,pathway,eng,cbd_2014_pathway:stowaway_ballast_water,"Soors J, van Haaren T, Timm T, Speybroeck J (2013) Bratislavia dadayi (Michaelsen, 1905) (Annelida: Clitellata: Naididae): a new non-indigenous species for Europe, and other non-native annelids in the Schelde estuary. Aquatic Invasions 8: 37–44, https://doi.org/10.3391/ai.2013.8.1.04"
+57575168,140562900,invasion stage,eng,established,"Soors J, van Haaren T, Timm T, Speybroeck J (2013) Bratislavia dadayi (Michaelsen, 1905) (Annelida: Clitellata: Naididae): a new non-indigenous species for Europe, and other non-native annelids in the Schelde estuary. Aquatic Invasions 8: 37–44, https://doi.org/10.3391/ai.2013.8.1.04"
+57575157,140562901,native range,eng,Ponto-Caspian,"Soors J, van Haaren T, Timm T, Speybroeck J (2013) Bratislavia dadayi (Michaelsen, 1905) (Annelida: Clitellata: Naididae): a new non-indigenous species for Europe, and other non-native annelids in the Schelde estuary. Aquatic Invasions 8: 37–44, https://doi.org/10.3391/ai.2013.8.1.04"
+57575158,140562901,pathway,eng,cbd_2014_pathway:stowaway_ballast_water,"Soors J, van Haaren T, Timm T, Speybroeck J (2013) Bratislavia dadayi (Michaelsen, 1905) (Annelida: Clitellata: Naididae): a new non-indigenous species for Europe, and other non-native annelids in the Schelde estuary. Aquatic Invasions 8: 37–44, https://doi.org/10.3391/ai.2013.8.1.04"
+57575159,140562901,invasion stage,eng,established,"Soors J, van Haaren T, Timm T, Speybroeck J (2013) Bratislavia dadayi (Michaelsen, 1905) (Annelida: Clitellata: Naididae): a new non-indigenous species for Europe, and other non-native annelids in the Schelde estuary. Aquatic Invasions 8: 37–44, https://doi.org/10.3391/ai.2013.8.1.04"
+57575148,140562902,native range,eng,Northern America,"Soors J, van Haaren T, Timm T, Speybroeck J (2013) Bratislavia dadayi (Michaelsen, 1905) (Annelida: Clitellata: Naididae): a new non-indigenous species for Europe, and other non-native annelids in the Schelde estuary. Aquatic Invasions 8: 37–44, https://doi.org/10.3391/ai.2013.8.1.04"
+57575149,140562902,pathway,eng,cbd_2014_pathway:stowaway_ballast_water,"Soors J, van Haaren T, Timm T, Speybroeck J (2013) Bratislavia dadayi (Michaelsen, 1905) (Annelida: Clitellata: Naididae): a new non-indigenous species for Europe, and other non-native annelids in the Schelde estuary. Aquatic Invasions 8: 37–44, https://doi.org/10.3391/ai.2013.8.1.04"
+57575150,140562902,invasion stage,eng,established,"Soors J, van Haaren T, Timm T, Speybroeck J (2013) Bratislavia dadayi (Michaelsen, 1905) (Annelida: Clitellata: Naididae): a new non-indigenous species for Europe, and other non-native annelids in the Schelde estuary. Aquatic Invasions 8: 37–44, https://doi.org/10.3391/ai.2013.8.1.04"
+57575136,140562903,native range,eng,Asia,"Soors J, van Haaren T, Timm T, Speybroeck J (2013) Bratislavia dadayi (Michaelsen, 1905) (Annelida: Clitellata: Naididae): a new non-indigenous species for Europe, and other non-native annelids in the Schelde estuary. Aquatic Invasions 8: 37–44, https://doi.org/10.3391/ai.2013.8.1.04"
+57575137,140562903,pathway,eng,cbd_2014_pathway:stowaway_ballast_water,"Soors J, van Haaren T, Timm T, Speybroeck J (2013) Bratislavia dadayi (Michaelsen, 1905) (Annelida: Clitellata: Naididae): a new non-indigenous species for Europe, and other non-native annelids in the Schelde estuary. Aquatic Invasions 8: 37–44, https://doi.org/10.3391/ai.2013.8.1.04"
+57575138,140562903,invasion stage,eng,established,"Soors J, van Haaren T, Timm T, Speybroeck J (2013) Bratislavia dadayi (Michaelsen, 1905) (Annelida: Clitellata: Naididae): a new non-indigenous species for Europe, and other non-native annelids in the Schelde estuary. Aquatic Invasions 8: 37–44, https://doi.org/10.3391/ai.2013.8.1.04"
+57575279,140562906,native range,eng,Northern America,"Ysebaert T, Meire P, De Block M, De Regge N, Soors J (1997) A first record of Marenzelleria viridis (Verril, 1873) (Polychaeta, Spionidae) in the Schelde estuary (Belgium). Biologisch Jaarboek (Dodonaea) 64: 176–181"
+57575280,140562906,pathway,eng,cbd_2014_pathway:stowaway_ballast_water,"Ysebaert T, Meire P, De Block M, De Regge N, Soors J (1997) A first record of Marenzelleria viridis (Verril, 1873) (Polychaeta, Spionidae) in the Schelde estuary (Belgium). Biologisch Jaarboek (Dodonaea) 64: 176–181"
+57575281,140562906,invasion stage,eng,established,"Ysebaert T, Meire P, De Block M, De Regge N, Soors J (1997) A first record of Marenzelleria viridis (Verril, 1873) (Polychaeta, Spionidae) in the Schelde estuary (Belgium). Biologisch Jaarboek (Dodonaea) 64: 176–181"
+57575109,140562907,native range,eng,Northern America,"Soors J, van Haaren T, Timm T, Speybroeck J (2013) Bratislavia dadayi (Michaelsen, 1905) (Annelida: Clitellata: Naididae): a new non-indigenous species for Europe, and other non-native annelids in the Schelde estuary. Aquatic Invasions 8: 37–44, https://doi.org/10.3391/ai.2013.8.1.04"
+57575110,140562907,pathway,eng,cbd_2014_pathway:stowaway_ballast_water,"Soors J, van Haaren T, Timm T, Speybroeck J (2013) Bratislavia dadayi (Michaelsen, 1905) (Annelida: Clitellata: Naididae): a new non-indigenous species for Europe, and other non-native annelids in the Schelde estuary. Aquatic Invasions 8: 37–44, https://doi.org/10.3391/ai.2013.8.1.04"
+57575111,140562907,invasion stage,eng,established,"Soors J, van Haaren T, Timm T, Speybroeck J (2013) Bratislavia dadayi (Michaelsen, 1905) (Annelida: Clitellata: Naididae): a new non-indigenous species for Europe, and other non-native annelids in the Schelde estuary. Aquatic Invasions 8: 37–44, https://doi.org/10.3391/ai.2013.8.1.04"
+57575189,140562910,native range,eng,Asia,"Leloup E, Lefevere S (1952) Sur la présence dans les eaux de la côte belge du cirripède, Elminius modestus Darwin, 1854, du copepode parasite, Mytilicola intestinalis Steuer, 1902, et du polychète, Mercierella enigmatica Fauvel, 1922. Mededelingen Koninklijk Belgisch Instituut voor Natuur Wetenschappen 28: 1–12"
+57575190,140562910,pathway,eng,cbd_2014_pathway:stowaway_ballast_water,"Leloup E, Lefevere S (1952) Sur la présence dans les eaux de la côte belge du cirripède, Elminius modestus Darwin, 1854, du copepode parasite, Mytilicola intestinalis Steuer, 1902, et du polychète, Mercierella enigmatica Fauvel, 1922. Mededelingen Koninklijk Belgisch Instituut voor Natuur Wetenschappen 28: 1–12"
+57575191,140562910,pathway,eng,cbd_2014_pathway:stowaway_hull_fouling,"Leloup E, Lefevere S (1952) Sur la présence dans les eaux de la côte belge du cirripède, Elminius modestus Darwin, 1854, du copepode parasite, Mytilicola intestinalis Steuer, 1902, et du polychète, Mercierella enigmatica Fauvel, 1922. Mededelingen Koninklijk Belgisch Instituut voor Natuur Wetenschappen 28: 1–12"
+57575192,140562910,invasion stage,eng,established,"Leloup E, Lefevere S (1952) Sur la présence dans les eaux de la côte belge du cirripède, Elminius modestus Darwin, 1854, du copepode parasite, Mytilicola intestinalis Steuer, 1902, et du polychète, Mercierella enigmatica Fauvel, 1922. Mededelingen Koninklijk Belgisch Instituut voor Natuur Wetenschappen 28: 1–12"
+57575106,140562912,native range,eng,Australia,"Boets P, Brosens D, Lock K, Adriaens T, Aelterman B, Mertens J & Goethals P. 2016. Alien macroinvertebrates in Flanders (Belgium). Aquatic Invasions 11 (2): 131–144. https://doi.org/10.3391/ai.2016.11.2.03"
+57575107,140562912,pathway,eng,cbd_2014_pathway:stowaway_ballast_water,"Boets P, Brosens D, Lock K, Adriaens T, Aelterman B, Mertens J & Goethals P. 2016. Alien macroinvertebrates in Flanders (Belgium). Aquatic Invasions 11 (2): 131–144. https://doi.org/10.3391/ai.2016.11.2.03"
+57575108,140562912,invasion stage,eng,established,"Boets P, Brosens D, Lock K, Adriaens T, Aelterman B, Mertens J & Goethals P. 2016. Alien macroinvertebrates in Flanders (Belgium). Aquatic Invasions 11 (2): 131–144. https://doi.org/10.3391/ai.2016.11.2.03"
+57575193,140562916,native range,eng,Northern America,"Vercauteren T, Sablon S, Wouters K (2006) Exotische ongewervelden in vijvers en grachten van het Provinciaal Groendomein ‘Prinsenpark’. In: Retie: een eerste bilan. In: Nieuwborg H, Rijvers T (eds), Natuurstudie in de provincie Antwerpen. Antwerpse Koepel voor Natuurstudie (ANKONA) Jaarboek 2004–2005, pp 27–39"
+57575194,140562916,pathway,eng,cbd_2014_pathway:stowaway_other,"Vercauteren T, Sablon S, Wouters K (2006) Exotische ongewervelden in vijvers en grachten van het Provinciaal Groendomein ‘Prinsenpark’. In: Retie: een eerste bilan. In: Nieuwborg H, Rijvers T (eds), Natuurstudie in de provincie Antwerpen. Antwerpse Koepel voor Natuurstudie (ANKONA) Jaarboek 2004–2005, pp 27–39"
+57575195,140562916,invasion stage,eng,established,"Vercauteren T, Sablon S, Wouters K (2006) Exotische ongewervelden in vijvers en grachten van het Provinciaal Groendomein ‘Prinsenpark’. In: Retie: een eerste bilan. In: Nieuwborg H, Rijvers T (eds), Natuurstudie in de provincie Antwerpen. Antwerpse Koepel voor Natuurstudie (ANKONA) Jaarboek 2004–2005, pp 27–39"
+57575090,140562918,native range,eng,Ponto-Caspian,"Vercauteren T, De Smedt S, Warmoes T, Goddeeris B, Wouters K (2005) Drie nieuwe Ponto-Kaspische inwijkelingen dringen door tot in kanalen in de provincie Antwerpen: de zoetwaterpolychaet Hypania invalida (Grube, 1860) en, voor het eerst in België, de platworm Dendrocoelum romanodanubiale (Codreanu, 1949) en de Donaupissebed Jaera istri Veuille, 1979. In: Nieuwborg H (ed), Natuurstudie in de provincie Antwerpen. Antwerpse Koepel voor Natuurstudie (ANKONA) Jaarboek 2003, pp 83–97"
+57575091,140562918,pathway,eng,cbd_2014_pathway:corridor_water,"Vercauteren T, De Smedt S, Warmoes T, Goddeeris B, Wouters K (2005) Drie nieuwe Ponto-Kaspische inwijkelingen dringen door tot in kanalen in de provincie Antwerpen: de zoetwaterpolychaet Hypania invalida (Grube, 1860) en, voor het eerst in België, de platworm Dendrocoelum romanodanubiale (Codreanu, 1949) en de Donaupissebed Jaera istri Veuille, 1979. In: Nieuwborg H (ed), Natuurstudie in de provincie Antwerpen. Antwerpse Koepel voor Natuurstudie (ANKONA) Jaarboek 2003, pp 83–97"
+57575092,140562918,invasion stage,eng,established,"Vercauteren T, De Smedt S, Warmoes T, Goddeeris B, Wouters K (2005) Drie nieuwe Ponto-Kaspische inwijkelingen dringen door tot in kanalen in de provincie Antwerpen: de zoetwaterpolychaet Hypania invalida (Grube, 1860) en, voor het eerst in België, de platworm Dendrocoelum romanodanubiale (Codreanu, 1949) en de Donaupissebed Jaera istri Veuille, 1979. In: Nieuwborg H (ed), Natuurstudie in de provincie Antwerpen. Antwerpse Koepel voor Natuurstudie (ANKONA) Jaarboek 2003, pp 83–97"
+57575298,140562922,native range,eng,Northern America,"Kerckhof F, Dumoulin E (1987) Eerste vondsten van de Amerikaanse zwaardschede Ensis directus (Conrad, 1843) langs de Belgische kust. De Strandvlo 7: 51–52"
+57575299,140562922,pathway,eng,cbd_2014_pathway:stowaway_ballast_water,"Kerckhof F, Dumoulin E (1987) Eerste vondsten van de Amerikaanse zwaardschede Ensis directus (Conrad, 1843) langs de Belgische kust. De Strandvlo 7: 51–52"
+57575300,140562922,pathway,eng,cbd_2014_pathway:stowaway_other,"Kerckhof F, Dumoulin E (1987) Eerste vondsten van de Amerikaanse zwaardschede Ensis directus (Conrad, 1843) langs de Belgische kust. De Strandvlo 7: 51–52"
+57575301,140562922,invasion stage,eng,established,"Kerckhof F, Dumoulin E (1987) Eerste vondsten van de Amerikaanse zwaardschede Ensis directus (Conrad, 1843) langs de Belgische kust. De Strandvlo 7: 51–52"
+57575260,140562925,native range,eng,Ponto-Caspian,"Adam W (1947) Revision des Mollusques de la Belgique. I Mollusques terrestres et dulcicoles. Mémoires du Musée Royal d’Histoire Naturelle de Belgique, 106, 297 pp"
+57575261,140562925,pathway,eng,cbd_2014_pathway:corridor_water,"Adam W (1947) Revision des Mollusques de la Belgique. I Mollusques terrestres et dulcicoles. Mémoires du Musée Royal d’Histoire Naturelle de Belgique, 106, 297 pp"
+57575262,140562925,invasion stage,eng,established,"Adam W (1947) Revision des Mollusques de la Belgique. I Mollusques terrestres et dulcicoles. Mémoires du Musée Royal d’Histoire Naturelle de Belgique, 106, 297 pp"
+57575252,140562926,native range,eng,New Zealand,"Adam W (1947) Revision des Mollusques de la Belgique. I Mollusques terrestres et dulcicoles. Mémoires du Musée Royal d’Histoire Naturelle de Belgique, 106, 297 pp"
+57575253,140562926,pathway,eng,cbd_2014_pathway:stowaway_ballast_water,"Adam W (1947) Revision des Mollusques de la Belgique. I Mollusques terrestres et dulcicoles. Mémoires du Musée Royal d’Histoire Naturelle de Belgique, 106, 297 pp"
+57575254,140562926,pathway,eng,cbd_2014_pathway:stowaway_hull_fouling,"Adam W (1947) Revision des Mollusques de la Belgique. I Mollusques terrestres et dulcicoles. Mémoires du Musée Royal d’Histoire Naturelle de Belgique, 106, 297 pp"
+57575255,140562926,pathway,eng,cbd_2014_pathway:stowaway_other,"Adam W (1947) Revision des Mollusques de la Belgique. I Mollusques terrestres et dulcicoles. Mémoires du Musée Royal d’Histoire Naturelle de Belgique, 106, 297 pp"
+57575256,140562926,invasion stage,eng,established,"Adam W (1947) Revision des Mollusques de la Belgique. I Mollusques terrestres et dulcicoles. Mémoires du Musée Royal d’Histoire Naturelle de Belgique, 106, 297 pp"
+57575238,140562929,native range,eng,Northern America,"Adam W, Leloup E (1934) Sur la présence du gastéropode Crepidula fornicata (Linné, 1758) sur la côte belge. Bulletin du Musée royal d'Histoire naturelle de Belgique 10: 1–5"
+57575239,140562929,pathway,eng,cbd_2014_pathway:stowaway_hull_fouling,"Adam W, Leloup E (1934) Sur la présence du gastéropode Crepidula fornicata (Linné, 1758) sur la côte belge. Bulletin du Musée royal d'Histoire naturelle de Belgique 10: 1–5"
+57575240,140562929,pathway,eng,cbd_2014_pathway:stowaway_other,"Adam W, Leloup E (1934) Sur la présence du gastéropode Crepidula fornicata (Linné, 1758) sur la côte belge. Bulletin du Musée royal d'Histoire naturelle de Belgique 10: 1–5"
+57575241,140562929,invasion stage,eng,established,"Adam W, Leloup E (1934) Sur la présence du gastéropode Crepidula fornicata (Linné, 1758) sur la côte belge. Bulletin du Musée royal d'Histoire naturelle de Belgique 10: 1–5"
+57575293,140562932,native range,eng,Northern America,"Kerckhof F, Haelters J, Gollasch S (2007) Alien species in the marine and brackish ecosystem: the situation in Belgian waters. Aquatic Invasions 2: 243–257, https://doi.org/10.3391/ai.2007.2.3.9"
+57575294,140562932,pathway,eng,cbd_2014_pathway:contaminant_on_animals,"Kerckhof F, Haelters J, Gollasch S (2007) Alien species in the marine and brackish ecosystem: the situation in Belgian waters. Aquatic Invasions 2: 243–257, https://doi.org/10.3391/ai.2007.2.3.9"
+57575295,140562932,pathway,eng,cbd_2014_pathway:stowaway_ballast_water,"Kerckhof F, Haelters J, Gollasch S (2007) Alien species in the marine and brackish ecosystem: the situation in Belgian waters. Aquatic Invasions 2: 243–257, https://doi.org/10.3391/ai.2007.2.3.9"
+57575296,140562932,pathway,eng,cbd_2014_pathway:stowaway_hull_fouling,"Kerckhof F, Haelters J, Gollasch S (2007) Alien species in the marine and brackish ecosystem: the situation in Belgian waters. Aquatic Invasions 2: 243–257, https://doi.org/10.3391/ai.2007.2.3.9"
+57575297,140562932,invasion stage,eng,established,"Kerckhof F, Haelters J, Gollasch S (2007) Alien species in the marine and brackish ecosystem: the situation in Belgian waters. Aquatic Invasions 2: 243–257, https://doi.org/10.3391/ai.2007.2.3.9"
+57575290,140562934,pathway,eng,cbd_2014_pathway:stowaway_hull_fouling,"Sellius G (1733) Historia naturalis teredinis seu xylophagi marini tubulochonchoidis speciatim Belgici, Trajecti ad Rhenum, p 366"
+57575291,140562934,pathway,eng,cbd_2014_pathway:stowaway_other,"Sellius G (1733) Historia naturalis teredinis seu xylophagi marini tubulochonchoidis speciatim Belgici, Trajecti ad Rhenum, p 366"
+57575292,140562934,invasion stage,eng,established,"Sellius G (1733) Historia naturalis teredinis seu xylophagi marini tubulochonchoidis speciatim Belgici, Trajecti ad Rhenum, p 366"
+57575196,140562935,pathway,eng,cbd_2014_pathway:stowaway_hull_fouling,"Backeljau T (1986) Lijst van de recente mariene mollusken van België. Studiedocumenten van het K.B.I.N. 29. Koninklijk Belgisch Instituut voor Natuurwetenschappen: Brussel, 106 pp"
+57575197,140562935,pathway,eng,cbd_2014_pathway:stowaway_other,"Backeljau T (1986) Lijst van de recente mariene mollusken van België. Studiedocumenten van het K.B.I.N. 29. Koninklijk Belgisch Instituut voor Natuurwetenschappen: Brussel, 106 pp"
+57575198,140562935,invasion stage,eng,established,"Backeljau T (1986) Lijst van de recente mariene mollusken van België. Studiedocumenten van het K.B.I.N. 29. Koninklijk Belgisch Instituut voor Natuurwetenschappen: Brussel, 106 pp"
+57575129,140562938,native range,eng,Asia,"Keppens M, Mienis HK (2004) A propos de la présence de Sinanodonta woodiana (Lea, 1834) en Belgique. Novapex Société 5: 78–81"
+57575130,140562938,pathway,eng,cbd_2014_pathway:contaminant_on_animals,"Keppens M, Mienis HK (2004) A propos de la présence de Sinanodonta woodiana (Lea, 1834) en Belgique. Novapex Société 5: 78–81"
+57575131,140562938,pathway,eng,cbd_2014_pathway:escape_aquaculture,"Keppens M, Mienis HK (2004) A propos de la présence de Sinanodonta woodiana (Lea, 1834) en Belgique. Novapex Société 5: 78–81"
+57575132,140562938,invasion stage,eng,established,"Keppens M, Mienis HK (2004) A propos de la présence de Sinanodonta woodiana (Lea, 1834) en Belgique. Novapex Société 5: 78–81"
+57575222,140562941,native range,eng,Asia,"Swinnen F, Leynen M, Sablon R, Duvivier L, Vanmaele R (1998) The Asiatic clam Corbicula (Bivalvia: Corbiculidae) in Belgium. Biologie 68: 47–53"
+57575223,140562941,pathway,eng,cbd_2014_pathway:corridor_water,"Swinnen F, Leynen M, Sablon R, Duvivier L, Vanmaele R (1998) The Asiatic clam Corbicula (Bivalvia: Corbiculidae) in Belgium. Biologie 68: 47–53"
+57575224,140562941,invasion stage,eng,established,"Swinnen F, Leynen M, Sablon R, Duvivier L, Vanmaele R (1998) The Asiatic clam Corbicula (Bivalvia: Corbiculidae) in Belgium. Biologie 68: 47–53"
+57575175,140562942,native range,eng,Asia,"Swinnen F, Leynen M, Sablon R, Duvivier L, Vanmaele R (1998) The Asiatic clam Corbicula (Bivalvia: Corbiculidae) in Belgium. Biologie 68: 47–53"
+57575176,140562942,pathway,eng,cbd_2014_pathway:corridor_water,"Swinnen F, Leynen M, Sablon R, Duvivier L, Vanmaele R (1998) The Asiatic clam Corbicula (Bivalvia: Corbiculidae) in Belgium. Biologie 68: 47–53"
+57575177,140562942,invasion stage,eng,established,"Swinnen F, Leynen M, Sablon R, Duvivier L, Vanmaele R (1998) The Asiatic clam Corbicula (Bivalvia: Corbiculidae) in Belgium. Biologie 68: 47–53"
+57575302,140562944,native range,eng,Northern America,"Nyst HJP (1835) Mollusques. Bulletin des Academies Royal des Sciences Lettres et Beaux Arts 2: 235–236 | Adam W (1947) Revision des Mollusques de la Belgique. I Mollusques terrestres et dulcicoles. Mémoires du Musée Royal d’Histoire Naturelle de Belgique, 106, 297 pp"
+57575303,140562944,pathway,eng,cbd_2014_pathway:stowaway_ballast_water,"Nyst HJP (1835) Mollusques. Bulletin des Academies Royal des Sciences Lettres et Beaux Arts 2: 235–236 | Adam W (1947) Revision des Mollusques de la Belgique. I Mollusques terrestres et dulcicoles. Mémoires du Musée Royal d’Histoire Naturelle de Belgique, 106, 297 pp"
+57575304,140562944,pathway,eng,cbd_2014_pathway:stowaway_hull_fouling,"Nyst HJP (1835) Mollusques. Bulletin des Academies Royal des Sciences Lettres et Beaux Arts 2: 235–236 | Adam W (1947) Revision des Mollusques de la Belgique. I Mollusques terrestres et dulcicoles. Mémoires du Musée Royal d’Histoire Naturelle de Belgique, 106, 297 pp"
+57575305,140562944,invasion stage,eng,established,"Nyst HJP (1835) Mollusques. Bulletin des Academies Royal des Sciences Lettres et Beaux Arts 2: 235–236 | Adam W (1947) Revision des Mollusques de la Belgique. I Mollusques terrestres et dulcicoles. Mémoires du Musée Royal d’Histoire Naturelle de Belgique, 106, 297 pp"
+57575306,140562945,native range,eng,Ponto-Caspian,"Sablon R, Vercauteren T, Jacobs P (2010b) De quaggamossel (Dreissena rostriformis bugensis (Andrusov, 1897)), een recent gevonden invasieve zoetwatermossel in Vlaanderen. ANTenne 4: 32–36"
+57575307,140562945,pathway,eng,cbd_2014_pathway:corridor_water,"Sablon R, Vercauteren T, Jacobs P (2010b) De quaggamossel (Dreissena rostriformis bugensis (Andrusov, 1897)), een recent gevonden invasieve zoetwatermossel in Vlaanderen. ANTenne 4: 32–36"
+57575308,140562945,invasion stage,eng,established,"Sablon R, Vercauteren T, Jacobs P (2010b) De quaggamossel (Dreissena rostriformis bugensis (Andrusov, 1897)), een recent gevonden invasieve zoetwatermossel in Vlaanderen. ANTenne 4: 32–36"
+57575151,140562946,native range,eng,Ponto-Caspian,"Adam W (1947) Revision des Mollusques de la Belgique. I Mollusques terrestres et dulcicoles. Mémoires du Musée Royal d’Histoire Naturelle de Belgique, 106, 297 pp"
+57575152,140562946,pathway,eng,cbd_2014_pathway:corridor_water,"Adam W (1947) Revision des Mollusques de la Belgique. I Mollusques terrestres et dulcicoles. Mémoires du Musée Royal d’Histoire Naturelle de Belgique, 106, 297 pp"
+57575153,140562946,invasion stage,eng,established,"Adam W (1947) Revision des Mollusques de la Belgique. I Mollusques terrestres et dulcicoles. Mémoires du Musée Royal d’Histoire Naturelle de Belgique, 106, 297 pp"
+57575225,140562948,native range,eng,Northern America,"Vandepitte L, De Poorter D, Lescrauweart A-N, Fockedey N, Mees J (2012) Niet-inheemse soorten van het Belgisch deel van de Noordzee en aanpalende estuaria. VLIZ Special publication 59. Vlaams Instituut voor de Zee (VLIZ): Oostende België, 372 pp"
+57575226,140562948,pathway,eng,cbd_2014_pathway:stowaway_ballast_water,"Vandepitte L, De Poorter D, Lescrauweart A-N, Fockedey N, Mees J (2012) Niet-inheemse soorten van het Belgisch deel van de Noordzee en aanpalende estuaria. VLIZ Special publication 59. Vlaams Instituut voor de Zee (VLIZ): Oostende België, 372 pp"
+57575227,140562948,invasion stage,eng,established,"Vandepitte L, De Poorter D, Lescrauweart A-N, Fockedey N, Mees J (2012) Niet-inheemse soorten van het Belgisch deel van de Noordzee en aanpalende estuaria. VLIZ Special publication 59. Vlaams Instituut voor de Zee (VLIZ): Oostende België, 372 pp"
+57575120,140562949,native range,eng,Northern America,Loppens K (1902) Petricola pholadiformis L. Annales de la Société Royale Zoologique et Malacologique de Belgique 37: 41–42
+57575121,140562949,pathway,eng,cbd_2014_pathway:contaminant_on_animals,Loppens K (1902) Petricola pholadiformis L. Annales de la Société Royale Zoologique et Malacologique de Belgique 37: 41–42
+57575122,140562949,invasion stage,eng,established,Loppens K (1902) Petricola pholadiformis L. Annales de la Société Royale Zoologique et Malacologique de Belgique 37: 41–42
+57575103,140562951,native range,eng,Northern America,"Verween A, Kerckhof F, Vincx M, Degraer S (2006) First European record of the invasive brackish water clam Rangia cuneata (G.W. Sowerby I, 1831) (Mollusca: Bivalvia). Aquatic Invasions 1: 198–203, https://doi.org/10.3391/ai.2006.1.4.1"
+57575104,140562951,pathway,eng,cbd_2014_pathway:stowaway_ballast_water,"Verween A, Kerckhof F, Vincx M, Degraer S (2006) First European record of the invasive brackish water clam Rangia cuneata (G.W. Sowerby I, 1831) (Mollusca: Bivalvia). Aquatic Invasions 1: 198–203, https://doi.org/10.3391/ai.2006.1.4.1"
+57575105,140562951,invasion stage,eng,established,"Verween A, Kerckhof F, Vincx M, Degraer S (2006) First European record of the invasive brackish water clam Rangia cuneata (G.W. Sowerby I, 1831) (Mollusca: Bivalvia). Aquatic Invasions 1: 198–203, https://doi.org/10.3391/ai.2006.1.4.1"
+57575123,140562954,native range,eng,Northern America,"Adam W (1947) Revision des Mollusques de la Belgique. I Mollusques terrestres et dulcicoles. Mémoires du Musée Royal d’Histoire Naturelle de Belgique, 106, 297 pp"
+57575124,140562954,pathway,eng,cbd_2014_pathway:stowaway_other,"Adam W (1947) Revision des Mollusques de la Belgique. I Mollusques terrestres et dulcicoles. Mémoires du Musée Royal d’Histoire Naturelle de Belgique, 106, 297 pp"
+57575125,140562954,invasion stage,eng,established,"Adam W (1947) Revision des Mollusques de la Belgique. I Mollusques terrestres et dulcicoles. Mémoires du Musée Royal d’Histoire Naturelle de Belgique, 106, 297 pp"
+57575154,140562956,native range,eng,North Africa,"Van Goethem JL, Sablon R (1986) Ferrissia wautieri (Mirolli, 1960), a freshwater limpet new to Belgium (Mollusca, Gastropoda, Ancylidae). Bulletin van het Koninklijk Belgisch Instituut voor Natuurwetenschappen: Biologie 56:155–157"
+57575155,140562956,pathway,eng,cbd_2014_pathway:escape_pet,"Van Goethem JL, Sablon R (1986) Ferrissia wautieri (Mirolli, 1960), a freshwater limpet new to Belgium (Mollusca, Gastropoda, Ancylidae). Bulletin van het Koninklijk Belgisch Instituut voor Natuurwetenschappen: Biologie 56:155–157"
+57575156,140562956,invasion stage,eng,established,"Van Goethem JL, Sablon R (1986) Ferrissia wautieri (Mirolli, 1960), a freshwater limpet new to Belgium (Mollusca, Gastropoda, Ancylidae). Bulletin van het Koninklijk Belgisch Instituut voor Natuurwetenschappen: Biologie 56:155–157"
+57575087,140562957,native range,eng,Northern America,"Sablon R, Vercauteren T, Lammens S, Ghyselbrecht E (2010a) Freshwater Molluscs introduced in Belgium in the last two Decades – Abstracts of the World Congress of Malacology, Phuket, Thailand, 18–24 July 2010, p 353"
+57575088,140562957,pathway,eng,cbd_2014_pathway:corridor_water,"Sablon R, Vercauteren T, Lammens S, Ghyselbrecht E (2010a) Freshwater Molluscs introduced in Belgium in the last two Decades – Abstracts of the World Congress of Malacology, Phuket, Thailand, 18–24 July 2010, p 353"
+57575089,140562957,invasion stage,eng,established,"Sablon R, Vercauteren T, Lammens S, Ghyselbrecht E (2010a) Freshwater Molluscs introduced in Belgium in the last two Decades – Abstracts of the World Congress of Malacology, Phuket, Thailand, 18–24 July 2010, p 353"
+57575084,140562960,native range,eng,Southeast Asia,Leloup E (1971) Recherches sur l'ostréiculture dans le bassin de chasse d'Ostende pendant l'année 1969. Bulletin de l'Institut Royal des Sciences Naturelles de Belgique = Mededelingen van het Koninklijk Belgisch Instituut voor Natuurwetenschappen 47(25): 1–16
+57575085,140562960,pathway,eng,cbd_2014_pathway:escape_aquaculture,Leloup E (1971) Recherches sur l'ostréiculture dans le bassin de chasse d'Ostende pendant l'année 1969. Bulletin de l'Institut Royal des Sciences Naturelles de Belgique = Mededelingen van het Koninklijk Belgisch Instituut voor Natuurwetenschappen 47(25): 1–16
+57575086,140562960,invasion stage,eng,established,Leloup E (1971) Recherches sur l'ostréiculture dans le bassin de chasse d'Ostende pendant l'année 1969. Bulletin de l'Institut Royal des Sciences Naturelles de Belgique = Mededelingen van het Koninklijk Belgisch Instituut voor Natuurwetenschappen 47(25): 1–16
+57575271,140562964,native range,eng,Ponto-Caspian,"Lock K, Van Wichelen J, Packet J, Simoens I, Van Looy K, Louette G, Warmoes T, Denys L (2007) Bepalen van het maximaal en het goed ecologisch potentieel, alsook de huidige toestand, voor een aantal Vlaamse (gewestelijke) waterlichamen die vergelijkbaar zijn met de categorie meren - Deel I. Report Institute of Nature Conservation 2007/51, Brussels"
+57575272,140562964,pathway,eng,cbd_2014_pathway:corridor_water,"Lock K, Van Wichelen J, Packet J, Simoens I, Van Looy K, Louette G, Warmoes T, Denys L (2007) Bepalen van het maximaal en het goed ecologisch potentieel, alsook de huidige toestand, voor een aantal Vlaamse (gewestelijke) waterlichamen die vergelijkbaar zijn met de categorie meren - Deel I. Report Institute of Nature Conservation 2007/51, Brussels"
+57575273,140562964,invasion stage,eng,established,"Lock K, Van Wichelen J, Packet J, Simoens I, Van Looy K, Louette G, Warmoes T, Denys L (2007) Bepalen van het maximaal en het goed ecologisch potentieel, alsook de huidige toestand, voor een aantal Vlaamse (gewestelijke) waterlichamen die vergelijkbaar zijn met de categorie meren - Deel I. Report Institute of Nature Conservation 2007/51, Brussels"
+57575245,140562965,native range,eng,Ponto-Caspian,"Verslycke T, Janssen C, Lock K, Mees J (2000) First occurrence of the Pontocaspian invader Hemimysis anomala (Sars, 1907) in Belgium (Crustacea: Mysidacea). Belgian Journal of Zoology 130: 157–158"
+57575246,140562965,pathway,eng,cbd_2014_pathway:stowaway_ballast_water,"Verslycke T, Janssen C, Lock K, Mees J (2000) First occurrence of the Pontocaspian invader Hemimysis anomala (Sars, 1907) in Belgium (Crustacea: Mysidacea). Belgian Journal of Zoology 130: 157–158"
+57575247,140562965,pathway,eng,cbd_2014_pathway:stowaway_other,"Verslycke T, Janssen C, Lock K, Mees J (2000) First occurrence of the Pontocaspian invader Hemimysis anomala (Sars, 1907) in Belgium (Crustacea: Mysidacea). Belgian Journal of Zoology 130: 157–158"
+57575248,140562965,invasion stage,eng,established,"Verslycke T, Janssen C, Lock K, Mees J (2000) First occurrence of the Pontocaspian invader Hemimysis anomala (Sars, 1907) in Belgium (Crustacea: Mysidacea). Belgian Journal of Zoology 130: 157–158"
+57575235,140562968,native range,eng,Ponto-Caspian,"Messiaen M, Lock K, Gabriels W, Vercauteren T, Wouters K, Boets P, Goethals PLM (2010) Alien macrocrustaceans in freshwater ecosystems in the eastern part of Flanders (Belgium). Belgian Journal of Zoology 140: 30–39"
+57575236,140562968,pathway,eng,cbd_2014_pathway:corridor_water,"Messiaen M, Lock K, Gabriels W, Vercauteren T, Wouters K, Boets P, Goethals PLM (2010) Alien macrocrustaceans in freshwater ecosystems in the eastern part of Flanders (Belgium). Belgian Journal of Zoology 140: 30–39"
+57575237,140562968,invasion stage,eng,established,"Messiaen M, Lock K, Gabriels W, Vercauteren T, Wouters K, Boets P, Goethals PLM (2010) Alien macrocrustaceans in freshwater ecosystems in the eastern part of Flanders (Belgium). Belgian Journal of Zoology 140: 30–39"
+57575186,140562970,native range,eng,Northern America,"Soors J, Faasse M, Stevens M, Verbessem I, De Regge N, Van den Bergh E (2010) New crustacean invaders in the Schelde estuary (Belgium). Belgian Journal of Zoology 140: 3–10"
+57575187,140562970,pathway,eng,cbd_2014_pathway:stowaway_ballast_water,"Soors J, Faasse M, Stevens M, Verbessem I, De Regge N, Van den Bergh E (2010) New crustacean invaders in the Schelde estuary (Belgium). Belgian Journal of Zoology 140: 3–10"
+57575188,140562970,invasion stage,eng,established,"Soors J, Faasse M, Stevens M, Verbessem I, De Regge N, Van den Bergh E (2010) New crustacean invaders in the Schelde estuary (Belgium). Belgian Journal of Zoology 140: 3–10"
+57575285,140562972,native range,eng,Southern Europe,Collection RBINS
+57575286,140562972,pathway,eng,cbd_2014_pathway:corridor_water,Collection RBINS
+57575287,140562972,pathway,eng,cbd_2014_pathway:stowaway_hull_fouling,Collection RBINS
+57575288,140562972,pathway,eng,cbd_2014_pathway:stowaway_other,Collection RBINS
+57575289,140562972,invasion stage,eng,established,Collection RBINS
+57575178,140562973,native range,eng,Southern Europe,Boets et al. unpublished data
+57575179,140562973,pathway,eng,cbd_2014_pathway:corridor_water,Boets et al. unpublished data
+57575180,140562973,pathway,eng,cbd_2014_pathway:stowaway_hull_fouling,Boets et al. unpublished data
+57575181,140562973,pathway,eng,cbd_2014_pathway:stowaway_other,Boets et al. unpublished data
+57575182,140562973,invasion stage,eng,established,Boets et al. unpublished data
+57575309,140562976,native range,eng,Asia,"Leloup E, Lefevere S (1952) Sur la présence dans les eaux de la côte belge du cirripède, Elminius modestus Darwin, 1854, du copepode parasite, Mytilicola intestinalis Steuer, 1902, et du polychète, Mercierella enigmatica Fauvel, 1922. Mededelingen Koninklijk Belgisch Instituut voor Natuur Wetenschappen 28: 1–12"
+57575310,140562976,native range,eng,Australia,"Leloup E, Lefevere S (1952) Sur la présence dans les eaux de la côte belge du cirripède, Elminius modestus Darwin, 1854, du copepode parasite, Mytilicola intestinalis Steuer, 1902, et du polychète, Mercierella enigmatica Fauvel, 1922. Mededelingen Koninklijk Belgisch Instituut voor Natuur Wetenschappen 28: 1–12"
+57575311,140562976,pathway,eng,cbd_2014_pathway:stowaway_hull_fouling,"Leloup E, Lefevere S (1952) Sur la présence dans les eaux de la côte belge du cirripède, Elminius modestus Darwin, 1854, du copepode parasite, Mytilicola intestinalis Steuer, 1902, et du polychète, Mercierella enigmatica Fauvel, 1922. Mededelingen Koninklijk Belgisch Instituut voor Natuur Wetenschappen 28: 1–12"
+57575312,140562976,invasion stage,eng,established,"Leloup E, Lefevere S (1952) Sur la présence dans les eaux de la côte belge du cirripède, Elminius modestus Darwin, 1854, du copepode parasite, Mytilicola intestinalis Steuer, 1902, et du polychète, Mercierella enigmatica Fauvel, 1922. Mededelingen Koninklijk Belgisch Instituut voor Natuur Wetenschappen 28: 1–12"
+57575263,140562978,native range,eng,Tropical and warm seas,"Kerckhof F, Cattrijsse A (2001) Exotic Cirripedia (Balanomorpha) from buoys off the Belgian coast. Senckenbergiana maritime 31: 245–254, https://doi.org/10.1007/BF03043033"
+57575264,140562978,pathway,eng,cbd_2014_pathway:stowaway_hull_fouling,"Kerckhof F, Cattrijsse A (2001) Exotic Cirripedia (Balanomorpha) from buoys off the Belgian coast. Senckenbergiana maritime 31: 245–254, https://doi.org/10.1007/BF03043033"
+57575265,140562978,invasion stage,eng,established,"Kerckhof F, Cattrijsse A (2001) Exotic Cirripedia (Balanomorpha) from buoys off the Belgian coast. Senckenbergiana maritime 31: 245–254, https://doi.org/10.1007/BF03043033"
+57575266,140562979,native range,eng,Western Atlantic,"Kerckhof F, Cattrijsse A (2001) Exotic Cirripedia (Balanomorpha) from buoys off the Belgian coast. Senckenbergiana maritime 31: 245–254, https://doi.org/10.1007/BF03043033"
+57575267,140562979,pathway,eng,cbd_2014_pathway:contaminant_on_animals,"Kerckhof F, Cattrijsse A (2001) Exotic Cirripedia (Balanomorpha) from buoys off the Belgian coast. Senckenbergiana maritime 31: 245–254, https://doi.org/10.1007/BF03043033"
+57575268,140562979,pathway,eng,cbd_2014_pathway:stowaway_ballast_water,"Kerckhof F, Cattrijsse A (2001) Exotic Cirripedia (Balanomorpha) from buoys off the Belgian coast. Senckenbergiana maritime 31: 245–254, https://doi.org/10.1007/BF03043033"
+57575269,140562979,pathway,eng,cbd_2014_pathway:stowaway_hull_fouling,"Kerckhof F, Cattrijsse A (2001) Exotic Cirripedia (Balanomorpha) from buoys off the Belgian coast. Senckenbergiana maritime 31: 245–254, https://doi.org/10.1007/BF03043033"
+57575270,140562979,invasion stage,eng,established,"Kerckhof F, Cattrijsse A (2001) Exotic Cirripedia (Balanomorpha) from buoys off the Belgian coast. Senckenbergiana maritime 31: 245–254, https://doi.org/10.1007/BF03043033"
+57575257,140562980,native range,eng,Southern Europe,"Kerckhof F, Cattrijsse A (2001) Exotic Cirripedia (Balanomorpha) from buoys off the Belgian coast. Senckenbergiana maritime 31: 245–254, https://doi.org/10.1007/BF03043033"
+57575258,140562980,pathway,eng,cbd_2014_pathway:stowaway_hull_fouling,"Kerckhof F, Cattrijsse A (2001) Exotic Cirripedia (Balanomorpha) from buoys off the Belgian coast. Senckenbergiana maritime 31: 245–254, https://doi.org/10.1007/BF03043033"
+57575259,140562980,invasion stage,eng,established,"Kerckhof F, Cattrijsse A (2001) Exotic Cirripedia (Balanomorpha) from buoys off the Belgian coast. Senckenbergiana maritime 31: 245–254, https://doi.org/10.1007/BF03043033"
+57575213,140562981,native range,eng,South America,"Kerckhof F, Cattrijsse A (2001) Exotic Cirripedia (Balanomorpha) from buoys off the Belgian coast. Senckenbergiana maritime 31: 245–254, https://doi.org/10.1007/BF03043033"
+57575214,140562981,pathway,eng,cbd_2014_pathway:stowaway_hull_fouling,"Kerckhof F, Cattrijsse A (2001) Exotic Cirripedia (Balanomorpha) from buoys off the Belgian coast. Senckenbergiana maritime 31: 245–254, https://doi.org/10.1007/BF03043033"
+57575215,140562981,invasion stage,eng,established,"Kerckhof F, Cattrijsse A (2001) Exotic Cirripedia (Balanomorpha) from buoys off the Belgian coast. Senckenbergiana maritime 31: 245–254, https://doi.org/10.1007/BF03043033"
+57575112,140562982,native range,eng,Indo-Pacific,"Kerckhof F, Cattrijsse A (2001) Exotic Cirripedia (Balanomorpha) from buoys off the Belgian coast. Senckenbergiana maritime 31: 245–254, https://doi.org/10.1007/BF03043033"
+57575113,140562982,native range,eng,West Africa,"Kerckhof F, Cattrijsse A (2001) Exotic Cirripedia (Balanomorpha) from buoys off the Belgian coast. Senckenbergiana maritime 31: 245–254, https://doi.org/10.1007/BF03043033"
+57575114,140562982,pathway,eng,cbd_2014_pathway:stowaway_hull_fouling,"Kerckhof F, Cattrijsse A (2001) Exotic Cirripedia (Balanomorpha) from buoys off the Belgian coast. Senckenbergiana maritime 31: 245–254, https://doi.org/10.1007/BF03043033"
+57575115,140562982,invasion stage,eng,established,"Kerckhof F, Cattrijsse A (2001) Exotic Cirripedia (Balanomorpha) from buoys off the Belgian coast. Senckenbergiana maritime 31: 245–254, https://doi.org/10.1007/BF03043033"
+57575242,140562985,native range,eng,Northern America,"Faasse M, Van Moorsel G (2003) The North-American amphipods, Melita nitida Smith, 1873 and Incisocalliope aestuarius (Watling and Maurer, 1973) (Crustacea: Amphipoda: Gammaridea), introduced to the western Scheldt estuary (The Netherlands). Aquatic Ecology 37: 13–22, https://doi.org/10.1023/A:1022120729031"
+57575243,140562985,pathway,eng,cbd_2014_pathway:stowaway_ballast_water,"Faasse M, Van Moorsel G (2003) The North-American amphipods, Melita nitida Smith, 1873 and Incisocalliope aestuarius (Watling and Maurer, 1973) (Crustacea: Amphipoda: Gammaridea), introduced to the western Scheldt estuary (The Netherlands). Aquatic Ecology 37: 13–22, https://doi.org/10.1023/A:1022120729031"
+57575244,140562985,invasion stage,eng,established,"Faasse M, Van Moorsel G (2003) The North-American amphipods, Melita nitida Smith, 1873 and Incisocalliope aestuarius (Watling and Maurer, 1973) (Crustacea: Amphipoda: Gammaridea), introduced to the western Scheldt estuary (The Netherlands). Aquatic Ecology 37: 13–22, https://doi.org/10.1023/A:1022120729031"
+57575216,140562987,native range,eng,Ponto-Caspian,"Wouters K (2002) On the distribution of alien non-marine and estuarine macro-crustaceans in Belgium. Bulletin van het Koninklijk Belgisch Instituut voor Natuurwetenschappen, Biologie 72: 119–129"
+57575217,140562987,pathway,eng,cbd_2014_pathway:corridor_water,"Wouters K (2002) On the distribution of alien non-marine and estuarine macro-crustaceans in Belgium. Bulletin van het Koninklijk Belgisch Instituut voor Natuurwetenschappen, Biologie 72: 119–129"
+57575218,140562987,invasion stage,eng,established,"Wouters K (2002) On the distribution of alien non-marine and estuarine macro-crustaceans in Belgium. Bulletin van het Koninklijk Belgisch Instituut voor Natuurwetenschappen, Biologie 72: 119–129"
+57575139,140562989,native range,eng,Northern America,"Wouters K (2002) On the distribution of alien non-marine and estuarine macro-crustaceans in Belgium. Bulletin van het Koninklijk Belgisch Instituut voor Natuurwetenschappen, Biologie 72: 119–129"
+57575140,140562989,pathway,eng,cbd_2014_pathway:stowaway_hull_fouling,"Wouters K (2002) On the distribution of alien non-marine and estuarine macro-crustaceans in Belgium. Bulletin van het Koninklijk Belgisch Instituut voor Natuurwetenschappen, Biologie 72: 119–129"
+57575141,140562989,invasion stage,eng,established,"Wouters K (2002) On the distribution of alien non-marine and estuarine macro-crustaceans in Belgium. Bulletin van het Koninklijk Belgisch Instituut voor Natuurwetenschappen, Biologie 72: 119–129"
+57575145,140562990,native range,eng,Ponto-Caspian,"Boets P, Lock K, Goethals PLM (2010b) First record of Synurella ambulans (Müller 1846) (Amphipoda: Crangonictidae) in Belgium. Belgian Journal of Zoology 140: 244–245"
+57575146,140562990,pathway,eng,cbd_2014_pathway:escape_aquaculture,"Boets P, Lock K, Goethals PLM (2010b) First record of Synurella ambulans (Müller 1846) (Amphipoda: Crangonictidae) in Belgium. Belgian Journal of Zoology 140: 244–245"
+57575147,140562990,invasion stage,eng,established,"Boets P, Lock K, Goethals PLM (2010b) First record of Synurella ambulans (Müller 1846) (Amphipoda: Crangonictidae) in Belgium. Belgian Journal of Zoology 140: 244–245"
+57575142,140562992,native range,eng,Ponto-Caspian,"Vercauteren T, Sablon S, Wouters K (2006) Exotische ongewervelden in vijvers en grachten van het Provinciaal Groendomein ‘Prinsenpark’. In: Retie: een eerste bilan. In: Nieuwborg H, Rijvers T (eds), Natuurstudie in de provincie Antwerpen. Antwerpse Koepel voor Natuurstudie (ANKONA) Jaarboek 2004–2005, pp 27–39"
+57575143,140562992,pathway,eng,cbd_2014_pathway:corridor_water,"Vercauteren T, Sablon S, Wouters K (2006) Exotische ongewervelden in vijvers en grachten van het Provinciaal Groendomein ‘Prinsenpark’. In: Retie: een eerste bilan. In: Nieuwborg H, Rijvers T (eds), Natuurstudie in de provincie Antwerpen. Antwerpse Koepel voor Natuurstudie (ANKONA) Jaarboek 2004–2005, pp 27–39"
+57575144,140562992,invasion stage,eng,established,"Vercauteren T, Sablon S, Wouters K (2006) Exotische ongewervelden in vijvers en grachten van het Provinciaal Groendomein ‘Prinsenpark’. In: Retie: een eerste bilan. In: Nieuwborg H, Rijvers T (eds), Natuurstudie in de provincie Antwerpen. Antwerpse Koepel voor Natuurstudie (ANKONA) Jaarboek 2004–2005, pp 27–39"
+57575099,140562993,native range,eng,New Zealand,"Dewicke A (2002) Hyperbenthic communities of the North Sea. PhD Thesis. Universiteit Gent (RUG): Gent, 219 pp Dumortier M, De Bruyn L, Hens M, Peymen J, Schneiders A, Van Daele T, Van Reeth W (2007) Biodiversity Indicators 2007. State of Nature in Flanders (Belgium). Research Institute for Nature and Forest, Brussels, Belgium"
+57575100,140562993,pathway,eng,cbd_2014_pathway:contaminant_on_animals,"Dewicke A (2002) Hyperbenthic communities of the North Sea. PhD Thesis. Universiteit Gent (RUG): Gent, 219 pp Dumortier M, De Bruyn L, Hens M, Peymen J, Schneiders A, Van Daele T, Van Reeth W (2007) Biodiversity Indicators 2007. State of Nature in Flanders (Belgium). Research Institute for Nature and Forest, Brussels, Belgium"
+57575101,140562993,pathway,eng,cbd_2014_pathway:stowaway_ballast_water,"Dewicke A (2002) Hyperbenthic communities of the North Sea. PhD Thesis. Universiteit Gent (RUG): Gent, 219 pp Dumortier M, De Bruyn L, Hens M, Peymen J, Schneiders A, Van Daele T, Van Reeth W (2007) Biodiversity Indicators 2007. State of Nature in Flanders (Belgium). Research Institute for Nature and Forest, Brussels, Belgium"
+57575102,140562993,invasion stage,eng,established,"Dewicke A (2002) Hyperbenthic communities of the North Sea. PhD Thesis. Universiteit Gent (RUG): Gent, 219 pp Dumortier M, De Bruyn L, Hens M, Peymen J, Schneiders A, Van Daele T, Van Reeth W (2007) Biodiversity Indicators 2007. State of Nature in Flanders (Belgium). Research Institute for Nature and Forest, Brussels, Belgium"
+57575096,140562995,native range,eng,Northern America,"Faasse M, Van Moorsel G (2003) The North-American amphipods, Melita nitida Smith, 1873 and Incisocalliope aestuarius (Watling and Maurer, 1973) (Crustacea: Amphipoda: Gammaridea), introduced to the western Scheldt estuary (The Netherlands). Aquatic Ecology 37: 13–22, https://doi.org/10.1023/A:1022120729031"
+57575097,140562995,pathway,eng,cbd_2014_pathway:stowaway_ballast_water,"Faasse M, Van Moorsel G (2003) The North-American amphipods, Melita nitida Smith, 1873 and Incisocalliope aestuarius (Watling and Maurer, 1973) (Crustacea: Amphipoda: Gammaridea), introduced to the western Scheldt estuary (The Netherlands). Aquatic Ecology 37: 13–22, https://doi.org/10.1023/A:1022120729031"
+57575098,140562995,invasion stage,eng,established,"Faasse M, Van Moorsel G (2003) The North-American amphipods, Melita nitida Smith, 1873 and Incisocalliope aestuarius (Watling and Maurer, 1973) (Crustacea: Amphipoda: Gammaridea), introduced to the western Scheldt estuary (The Netherlands). Aquatic Ecology 37: 13–22, https://doi.org/10.1023/A:1022120729031"
+57575282,140562997,native range,eng,Southern Europe,Collection RBINS
+57575283,140562997,pathway,eng,cbd_2014_pathway:corridor_water,Collection RBINS
+57575284,140562997,invasion stage,eng,established,Collection RBINS
+57575183,140562998,native range,eng,Ponto-Caspian,"Messiaen M, Lock K, Gabriels W, Vercauteren T, Wouters K, Boets P, Goethals PLM (2010) Alien macrocrustaceans in freshwater ecosystems in the eastern part of Flanders (Belgium). Belgian Journal of Zoology 140: 30–39"
+57575184,140562998,pathway,eng,cbd_2014_pathway:corridor_water,"Messiaen M, Lock K, Gabriels W, Vercauteren T, Wouters K, Boets P, Goethals PLM (2010) Alien macrocrustaceans in freshwater ecosystems in the eastern part of Flanders (Belgium). Belgian Journal of Zoology 140: 30–39"
+57575185,140562998,invasion stage,eng,established,"Messiaen M, Lock K, Gabriels W, Vercauteren T, Wouters K, Boets P, Goethals PLM (2010) Alien macrocrustaceans in freshwater ecosystems in the eastern part of Flanders (Belgium). Belgian Journal of Zoology 140: 30–39"
+57575172,140562999,native range,eng,Northern America,"Messiaen M, Lock K, Gabriels W, Vercauteren T, Wouters K, Boets P, Goethals PLM (2010) Alien macrocrustaceans in freshwater ecosystems in the eastern part of Flanders (Belgium). Belgian Journal of Zoology 140: 30–39"
+57575173,140562999,pathway,eng,cbd_2014_pathway:corridor_water,"Messiaen M, Lock K, Gabriels W, Vercauteren T, Wouters K, Boets P, Goethals PLM (2010) Alien macrocrustaceans in freshwater ecosystems in the eastern part of Flanders (Belgium). Belgian Journal of Zoology 140: 30–39"
+57575174,140562999,invasion stage,eng,established,"Messiaen M, Lock K, Gabriels W, Vercauteren T, Wouters K, Boets P, Goethals PLM (2010) Alien macrocrustaceans in freshwater ecosystems in the eastern part of Flanders (Belgium). Belgian Journal of Zoology 140: 30–39"
+57575163,140563000,native range,eng,Ponto-Caspian,"Boets P, Lock K, Tempelman D, Van Haaren T, Platvoet D, Goethals PLM (2012c) First occurrence of the Ponto-Caspian amphipod Echinogammarus trichiatus (Martynov, 1932) (Crustacea: Gammaridae) in Belgium. BioInvasions Records 1: 115–120, https://doi.org/10.3391/bir.2012.1.2.06"
+57575164,140563000,pathway,eng,cbd_2014_pathway:corridor_water,"Boets P, Lock K, Tempelman D, Van Haaren T, Platvoet D, Goethals PLM (2012c) First occurrence of the Ponto-Caspian amphipod Echinogammarus trichiatus (Martynov, 1932) (Crustacea: Gammaridae) in Belgium. BioInvasions Records 1: 115–120, https://doi.org/10.3391/bir.2012.1.2.06"
+57575165,140563000,invasion stage,eng,established,"Boets P, Lock K, Tempelman D, Van Haaren T, Platvoet D, Goethals PLM (2012c) First occurrence of the Ponto-Caspian amphipod Echinogammarus trichiatus (Martynov, 1932) (Crustacea: Gammaridae) in Belgium. BioInvasions Records 1: 115–120, https://doi.org/10.3391/bir.2012.1.2.06"
+57575093,140563001,native range,eng,Southern Europe,"Wouters K (2002) On the distribution of alien non-marine and estuarine macro-crustaceans in Belgium. Bulletin van het Koninklijk Belgisch Instituut voor Natuurwetenschappen, Biologie 72: 119–129"
+57575094,140563001,pathway,eng,cbd_2014_pathway:corridor_water,"Wouters K (2002) On the distribution of alien non-marine and estuarine macro-crustaceans in Belgium. Bulletin van het Koninklijk Belgisch Instituut voor Natuurwetenschappen, Biologie 72: 119–129"
+57575095,140563001,invasion stage,eng,established,"Wouters K (2002) On the distribution of alien non-marine and estuarine macro-crustaceans in Belgium. Bulletin van het Koninklijk Belgisch Instituut voor Natuurwetenschappen, Biologie 72: 119–129"
+57575072,140563003,native range,eng,Northeast Asia,"Cook EJ, Jahnke M, Kerckhof F, Minchin D, Faasse M, Boos K, Ashton G (2007) European expansion of the introduced amphipod Caprella mutica Schurin, 1935. Aquatic Invasions 2: 411–421, https://doi.org/10.3391/ai.2007.2.4.11"
+57575073,140563003,pathway,eng,cbd_2014_pathway:escape_aquaculture,"Cook EJ, Jahnke M, Kerckhof F, Minchin D, Faasse M, Boos K, Ashton G (2007) European expansion of the introduced amphipod Caprella mutica Schurin, 1935. Aquatic Invasions 2: 411–421, https://doi.org/10.3391/ai.2007.2.4.11"
+57575074,140563003,pathway,eng,cbd_2014_pathway:stowaway_hull_fouling,"Cook EJ, Jahnke M, Kerckhof F, Minchin D, Faasse M, Boos K, Ashton G (2007) European expansion of the introduced amphipod Caprella mutica Schurin, 1935. Aquatic Invasions 2: 411–421, https://doi.org/10.3391/ai.2007.2.4.11"
+57575075,140563003,invasion stage,eng,established,"Cook EJ, Jahnke M, Kerckhof F, Minchin D, Faasse M, Boos K, Ashton G (2007) European expansion of the introduced amphipod Caprella mutica Schurin, 1935. Aquatic Invasions 2: 411–421, https://doi.org/10.3391/ai.2007.2.4.11"
+57575219,140563006,native range,eng,Southeast Asia,"Boets P, Lock K, Goethals PLM (2011b) Shifts in the gammarid (Amphipoda) fauna of brackish polder waters in Flanders (Belgium). Journal of Crustacean Biology 31: 270–277, https://doi.org/10.1651/10-3357.1"
+57575220,140563006,pathway,eng,cbd_2014_pathway:stowaway_ballast_water,"Boets P, Lock K, Goethals PLM (2011b) Shifts in the gammarid (Amphipoda) fauna of brackish polder waters in Flanders (Belgium). Journal of Crustacean Biology 31: 270–277, https://doi.org/10.1651/10-3357.1"
+57575221,140563006,invasion stage,eng,established,"Boets P, Lock K, Goethals PLM (2011b) Shifts in the gammarid (Amphipoda) fauna of brackish polder waters in Flanders (Belgium). Journal of Crustacean Biology 31: 270–277, https://doi.org/10.1651/10-3357.1"
+57575199,140563008,native range,eng,Northern America,"Van Damme P, Mees J, Maebe S (1992) Voorkomen van het Zuiderzeekrabbetje Rhithropanopeus harrisii (Gould, 1841) in de Westerschelde. De Strandvlo 12(1): 19–21"
+57575200,140563008,pathway,eng,cbd_2014_pathway:stowaway_ballast_water,"Van Damme P, Mees J, Maebe S (1992) Voorkomen van het Zuiderzeekrabbetje Rhithropanopeus harrisii (Gould, 1841) in de Westerschelde. De Strandvlo 12(1): 19–21"
+57575201,140563008,invasion stage,eng,established,"Van Damme P, Mees J, Maebe S (1992) Voorkomen van het Zuiderzeekrabbetje Rhithropanopeus harrisii (Gould, 1841) in de Westerschelde. De Strandvlo 12(1): 19–21"
+57575249,140563010,native range,eng,Northern America,"Dumoulin E (2004) Snelle areaaluitbreiding van het penseelkrabbetje Hemigrapsus penicillatus (de Haan, 1835) langs de kusten van de Zuidelijke Bocht van de Noordzee, status van haar opmars in de Westerschelde en beschouwingen over de ecologie en het gedrag van de soort. De Strandvlo 24(1): 5-35"
+57575250,140563010,pathway,eng,cbd_2014_pathway:stowaway_ballast_water,"Dumoulin E (2004) Snelle areaaluitbreiding van het penseelkrabbetje Hemigrapsus penicillatus (de Haan, 1835) langs de kusten van de Zuidelijke Bocht van de Noordzee, status van haar opmars in de Westerschelde en beschouwingen over de ecologie en het gedrag van de soort. De Strandvlo 24(1): 5-35"
+57575251,140563010,invasion stage,eng,established,"Dumoulin E (2004) Snelle areaaluitbreiding van het penseelkrabbetje Hemigrapsus penicillatus (de Haan, 1835) langs de kusten van de Zuidelijke Bocht van de Noordzee, status van haar opmars in de Westerschelde en beschouwingen over de ecologie en het gedrag van de soort. De Strandvlo 24(1): 5-35"
+57575210,140563011,native range,eng,Northern America,"Nuyttens F, Versele G, Loones MA (2006) De aanwezigheid van de penseelkrab Hemigrapsus takanoi en de blaasjeskrab Hemigrapsus sanguineus in NieuwpoortBad. De strandvlo 26: 114–115"
+57575211,140563011,pathway,eng,cbd_2014_pathway:stowaway_ballast_water,"Nuyttens F, Versele G, Loones MA (2006) De aanwezigheid van de penseelkrab Hemigrapsus takanoi en de blaasjeskrab Hemigrapsus sanguineus in NieuwpoortBad. De strandvlo 26: 114–115"
+57575212,140563011,invasion stage,eng,established,"Nuyttens F, Versele G, Loones MA (2006) De aanwezigheid van de penseelkrab Hemigrapsus takanoi en de blaasjeskrab Hemigrapsus sanguineus in NieuwpoortBad. De strandvlo 26: 114–115"
+57575133,140563012,native range,eng,Southeast Asia,"Wouters K (2002) On the distribution of alien non-marine and estuarine macro-crustaceans in Belgium. Bulletin van het Koninklijk Belgisch Instituut voor Natuurwetenschappen, Biologie 72: 119–129"
+57575134,140563012,pathway,eng,cbd_2014_pathway:stowaway_ballast_water,"Wouters K (2002) On the distribution of alien non-marine and estuarine macro-crustaceans in Belgium. Bulletin van het Koninklijk Belgisch Instituut voor Natuurwetenschappen, Biologie 72: 119–129"
+57575135,140563012,invasion stage,eng,established,"Wouters K (2002) On the distribution of alien non-marine and estuarine macro-crustaceans in Belgium. Bulletin van het Koninklijk Belgisch Instituut voor Natuurwetenschappen, Biologie 72: 119–129"
+57575126,140563014,native range,eng,Southern Europe,"Wouters K (2002) On the distribution of alien non-marine and estuarine macro-crustaceans in Belgium. Bulletin van het Koninklijk Belgisch Instituut voor Natuurwetenschappen, Biologie 72: 119–129"
+57575127,140563014,pathway,eng,cbd_2014_pathway:escape_pet,"Wouters K (2002) On the distribution of alien non-marine and estuarine macro-crustaceans in Belgium. Bulletin van het Koninklijk Belgisch Instituut voor Natuurwetenschappen, Biologie 72: 119–129"
+57575128,140563014,invasion stage,eng,established,"Wouters K (2002) On the distribution of alien non-marine and estuarine macro-crustaceans in Belgium. Bulletin van het Koninklijk Belgisch Instituut voor Natuurwetenschappen, Biologie 72: 119–129"
+57575080,140563016,native range,eng,Northern America,"Van Damme P, Maes J (1993) De Blauwe Zwemkrab Callinectes sapidus Rathbun, 1896 in de Westerschelde (België). De Strandvlo 13(4): 120–121"
+57575081,140563016,pathway,eng,cbd_2014_pathway:stowaway_hull_fouling,"Van Damme P, Maes J (1993) De Blauwe Zwemkrab Callinectes sapidus Rathbun, 1896 in de Westerschelde (België). De Strandvlo 13(4): 120–121"
+57575082,140563016,pathway,eng,cbd_2014_pathway:stowaway_other,"Van Damme P, Maes J (1993) De Blauwe Zwemkrab Callinectes sapidus Rathbun, 1896 in de Westerschelde (België). De Strandvlo 13(4): 120–121"
+57575083,140563016,invasion stage,eng,established,"Van Damme P, Maes J (1993) De Blauwe Zwemkrab Callinectes sapidus Rathbun, 1896 in de Westerschelde (België). De Strandvlo 13(4): 120–121"
+57575231,140563018,native range,eng,Northern America,"Boets P, Lock K, Cammaerts R, Plu D, Goethals PLM (2009) Occurrence of the invasive crayfish Procambarus clarkii (Girard, 1852) in Belgium (Crustacea: Cambaridae). Belgian Journal of Zoology 139: 173–175"
+57575232,140563018,pathway,eng,cbd_2014_pathway:escape_aquaculture,"Boets P, Lock K, Cammaerts R, Plu D, Goethals PLM (2009) Occurrence of the invasive crayfish Procambarus clarkii (Girard, 1852) in Belgium (Crustacea: Cambaridae). Belgian Journal of Zoology 139: 173–175"
+57575233,140563018,pathway,eng,cbd_2014_pathway:escape_pet,"Boets P, Lock K, Cammaerts R, Plu D, Goethals PLM (2009) Occurrence of the invasive crayfish Procambarus clarkii (Girard, 1852) in Belgium (Crustacea: Cambaridae). Belgian Journal of Zoology 139: 173–175"
+57575234,140563018,invasion stage,eng,established,"Boets P, Lock K, Cammaerts R, Plu D, Goethals PLM (2009) Occurrence of the invasive crayfish Procambarus clarkii (Girard, 1852) in Belgium (Crustacea: Cambaridae). Belgian Journal of Zoology 139: 173–175"
+57575076,140563019,native range,eng,Northern America,"Wouters K (2002) On the distribution of alien non-marine and estuarine macro-crustaceans in Belgium. Bulletin van het Koninklijk Belgisch Instituut voor Natuurwetenschappen, Biologie 72: 119–129"
+57575077,140563019,pathway,eng,cbd_2014_pathway:escape_aquaculture,"Wouters K (2002) On the distribution of alien non-marine and estuarine macro-crustaceans in Belgium. Bulletin van het Koninklijk Belgisch Instituut voor Natuurwetenschappen, Biologie 72: 119–129"
+57575078,140563019,pathway,eng,cbd_2014_pathway:escape_pet,"Wouters K (2002) On the distribution of alien non-marine and estuarine macro-crustaceans in Belgium. Bulletin van het Koninklijk Belgisch Instituut voor Natuurwetenschappen, Biologie 72: 119–129"
+57575079,140563019,invasion stage,eng,established,"Wouters K (2002) On the distribution of alien non-marine and estuarine macro-crustaceans in Belgium. Bulletin van het Koninklijk Belgisch Instituut voor Natuurwetenschappen, Biologie 72: 119–129"
+57575116,140563021,native range,eng,Eastern Europe,"Gérard P (1986) Les différentes espèces d'écrevisses en Belgique et leur répartition géographique. Station de Recherche Forestière et Hydrobiologique. Travaux serie D 54, 25 p"
+57575117,140563021,pathway,eng,cbd_2014_pathway:escape_aquaculture,"Gérard P (1986) Les différentes espèces d'écrevisses en Belgique et leur répartition géographique. Station de Recherche Forestière et Hydrobiologique. Travaux serie D 54, 25 p"
+57575118,140563021,pathway,eng,cbd_2014_pathway:escape_pet,"Gérard P (1986) Les différentes espèces d'écrevisses en Belgique et leur répartition géographique. Station de Recherche Forestière et Hydrobiologique. Travaux serie D 54, 25 p"
+57575119,140563021,invasion stage,eng,established,"Gérard P (1986) Les différentes espèces d'écrevisses en Belgique et leur répartition géographique. Station de Recherche Forestière et Hydrobiologique. Travaux serie D 54, 25 p"
+57575069,140563022,native range,eng,Northern America,"Gérard P (1986) Les différentes espèces d'écrevisses en Belgique et leur répartition géographique. Station de Recherche Forestière et Hydrobiologique. Travaux serie D 54, 25 p"
+57575070,140563022,pathway,eng,cbd_2014_pathway:escape_aquaculture,"Gérard P (1986) Les différentes espèces d'écrevisses en Belgique et leur répartition géographique. Station de Recherche Forestière et Hydrobiologique. Travaux serie D 54, 25 p"
+57575071,140563022,invasion stage,eng,established,"Gérard P (1986) Les différentes espèces d'écrevisses en Belgique et leur répartition géographique. Station de Recherche Forestière et Hydrobiologique. Travaux serie D 54, 25 p"
+57575065,140563025,pathway,eng,cbd_2014_pathway:escape_aquaculture,"van Haaren T, Soors J (2009) Sinelobus stanfordi (Richardson, 1901): a new crustacean invader in Europe. Aquatic Invasions 4: 703–711, https://doi.org/10.3391/ai.2009.4.4.20"
+57575066,140563025,pathway,eng,cbd_2014_pathway:stowaway_ballast_water,"van Haaren T, Soors J (2009) Sinelobus stanfordi (Richardson, 1901): a new crustacean invader in Europe. Aquatic Invasions 4: 703–711, https://doi.org/10.3391/ai.2009.4.4.20"
+57575067,140563025,pathway,eng,cbd_2014_pathway:stowaway_hull_fouling,"van Haaren T, Soors J (2009) Sinelobus stanfordi (Richardson, 1901): a new crustacean invader in Europe. Aquatic Invasions 4: 703–711, https://doi.org/10.3391/ai.2009.4.4.20"
+57575068,140563025,invasion stage,eng,established,"van Haaren T, Soors J (2009) Sinelobus stanfordi (Richardson, 1901): a new crustacean invader in Europe. Aquatic Invasions 4: 703–711, https://doi.org/10.3391/ai.2009.4.4.20"
+57575062,141117231,native range,eng,Africa,
+57575063,141117231,invasion stage,eng,casual,
+57575064,141117231,pathway,eng,cbd_2014_pathway:escape_aquaculture,
+57575055,141117232,native range,eng,Eastern Europe,
+57575056,141117232,pathway,eng,cbd_2014_pathway:escape_aquaculture,
+57575057,141117232,invasion stage,eng,established,
+57575058,141117233,native range,eng,Eastern Europe,
+57575059,141117233,pathway,eng,cbd_2014_pathway:corridor_water,
+57575060,141117233,pathway,eng,cbd_2014_pathway:stowaway_ballast_water,
+57575061,141117233,invasion stage,eng,established,
+57575048,141117234,native range,eng,Asia,
+57575049,141117234,invasion stage,eng,casual,
+57575050,141117234,pathway,eng,cbd_2014_pathway:escape_aquaculture,
+57575051,141117234,pathway,eng,cbd_2014_pathway:escape_ornamental,
+57575052,141117235,native range,eng,Asia,
+57575053,141117235,invasion stage,eng,casual,
+57575054,141117235,pathway,eng,cbd_2014_pathway:release_biological_control,
+57575042,141117236,native range,eng,Asia,
+57575043,141117236,native range,eng,Eastern Europe,
+57575044,141117236,invasion stage,eng,established,
+57575045,141117236,pathway,eng,unintentional,
+57575046,141117237,pathway,eng,cbd_2014_pathway:escape_food_bait,
+57575047,141117237,invasion stage,eng,established,
+57575039,141117238,native range,eng,Eastern Europe,
+57575040,141117238,pathway,eng,cbd_2014_pathway:escape_food_bait,
+57575041,141117238,invasion stage,eng,established,
+57575036,141117240,native range,eng,Asia,
+57575037,141117240,invasion stage,eng,casual,
+57575038,141117240,pathway,eng,cbd_2014_pathway:escape_ornamental,
+57575032,141117241,native range,eng,Eastern Europe,
+57575033,141117241,pathway,eng,cbd_2014_pathway:corridor_water,
+57575034,141117241,pathway,eng,cbd_2014_pathway:stowaway_ballast_water,
+57575035,141117241,invasion stage,eng,established,
+57575029,141117242,native range,eng,Eastern Europe,
+57575030,141117242,pathway,eng,cbd_2014_pathway:escape_food_bait,
+57575031,141117242,invasion stage,eng,established,
+57575027,141117243,pathway,eng,cbd_2014_pathway:escape_ornamental,
+57575028,141117243,invasion stage,eng,established,
+57575024,141117244,pathway,eng,cbd_2014_pathway:escape_aquaculture,
+57575025,141117244,pathway,eng,cbd_2014_pathway:escape_ornamental,
+57575026,141117244,invasion stage,eng,established,
+57575021,141117245,invasion stage,eng,casual,
+57575022,141117245,pathway,eng,cbd_2014_pathway:escape_aquaculture,
+57575023,141117245,pathway,eng,cbd_2014_pathway:escape_food_bait,
+57575018,141117246,native range,eng,Eastern Europe,
+57575019,141117246,pathway,eng,cbd_2014_pathway:escape_food_bait,
+57575020,141117246,invasion stage,eng,established,
+57575014,141117247,native range,eng,Eastern Europe,
+57575015,141117247,pathway,eng,cbd_2014_pathway:corridor_water,
+57575016,141117247,pathway,eng,cbd_2014_pathway:stowaway_ballast_water,
+57575017,141117247,invasion stage,eng,established,
+57575012,141117248,invasion stage,eng,casual,
+57575013,141117248,pathway,eng,cbd_2014_pathway:escape_aquaculture,
+57575006,141117249,native range,eng,Asia,
+57575007,141117249,invasion stage,eng,casual,
+57575008,141117249,pathway,eng,cbd_2014_pathway:release_biological_control,
+57575002,141117250,native range,eng,Eastern Europe,
+57575003,141117250,invasion stage,eng,casual,
+57575004,141117250,pathway,eng,cbd_2014_pathway:escape_aquaculture,
+57575005,141117250,pathway,eng,cbd_2014_pathway:escape_ornamental,
+57574999,141117251,native range,eng,Africa,
+57575000,141117251,invasion stage,eng,casual,
+57575001,141117251,pathway,eng,cbd_2014_pathway:escape_aquaculture,
+57574995,141117252,native range,eng,Asia,
+57574996,141117252,pathway,eng,cbd_2014_pathway:escape_food_bait,
+57574997,141117252,invasion stage,eng,established,
+57574998,141117252,pathway,eng,unintentional,
+57574992,141117253,pathway,eng,cbd_2014_pathway:escape_aquaculture,
+57574993,141117253,pathway,eng,cbd_2014_pathway:escape_ornamental,
+57574994,141117253,invasion stage,eng,established,
+57574989,141117254,native range,eng,Asia,
+57574990,141117254,invasion stage,eng,casual,
+57574991,141117254,pathway,eng,cbd_2014_pathway:release_biological_control,
+57574985,141117255,native range,eng,Eastern Europe,
+57574986,141117255,invasion stage,eng,casual,
+57574987,141117255,pathway,eng,cbd_2014_pathway:escape_aquaculture,
+57574988,141117255,pathway,eng,cbd_2014_pathway:escape_ornamental,
 57575009,143611964,native range,eng,Eastern Europe,
 57575010,143611964,pathway,eng,cbd_2014_pathway:corridor_water,
 57575011,143611964,invasion stage,eng,established,
+57574879,148437687,native range,eng,North Pacific Ocean,
+57574580,148437689,native range,eng,North America,
+57574581,148437689,pathway,eng,cbd_2014_pathway:contaminant_animal_parasite,
+57574849,148437697,invasion stage,eng,established,
+57574825,148437702,pathway,eng,cbd_2014_pathway:contaminant_animal_parasite,
+57574826,148437702,invasion stage,eng,established,
+57574592,148437706,native range,eng,New Zealand (WGSRPD:51),
+57574593,148437706,invasion stage,eng,introduced,
+57574738,148437709,native range,eng,Southern Asia,
+57574739,148437709,pathway,eng,cbd_2014_pathway:contaminant_animal_parasite,
+57574740,148437709,invasion stage,eng,established,
+57574589,148437713,native range,eng,Asia,
+57574590,148437713,pathway,eng,cbd_2014_pathway:contaminant_animal_parasite,
+57574591,148437715,pathway,eng,cbd_2014_pathway:contaminant_animal_parasite,
+57574893,148437718,pathway,eng,cbd_2014_pathway:contaminant_animal_parasite,
+57574894,148437718,invasion stage,eng,established,
+57574919,148437723,native range,eng,New Zealand (WGSRPD:51),
+57574920,148437723,pathway,eng,cbd_2014_pathway:contaminant_habitat_material,
+57574788,148437727,native range,eng,Southeast Asia,
+57574789,148437727,pathway,eng,cbd_2014_pathway:contaminant_habitat_material,
+57574666,148437730,native range,eng,Australia,
+57574667,148437730,pathway,eng,cbd_2014_pathway:contaminant_habitat_material,
+57574668,148437730,invasion stage,eng,introduced,
+57574594,148437737,native range,eng,Eastern Asia (WGSRPD:38),
+57574932,148437742,invasion stage,eng,established,
+57574846,148437746,pathway,eng,cbd_2014_pathway:escape_pet,
+57574966,148437757,native range,eng,North America,
+57574889,148437763,invasion stage,eng,established,
+57574596,148437766,invasion stage,eng,established,
+57574860,148437767,pathway,eng,cbd_2014_pathway:escape_pet,
+57574861,148437767,invasion stage,eng,introduced,
+57574856,148437771,pathway,eng,cbd_2014_pathway:escape_pet,
+57574785,148437776,native range,eng,Southern America (WGSRPD:8),
+57574772,148437781,native range,eng,North America,
+57574773,148437781,invasion stage,eng,established,
+57574971,148437787,pathway,eng,cbd_2014_pathway:escape_pet,
+57574972,148437787,invasion stage,eng,introduced,
+57574584,148437789,native range,eng,Southern Europe,
+57574585,148437789,pathway,eng,cbd_2014_pathway:contaminant_on_animals,
+57574586,148437789,invasion stage,eng,established,
+57574944,148437790,pathway,eng,cbd_2014_pathway:escape_pet,
+57574945,148437790,invasion stage,eng,introduced,
+57574793,148437791,pathway,eng,cbd_2014_pathway:escape_pet,
+57574794,148437791,invasion stage,eng,introduced,
+57574736,148437794,pathway,eng,cbd_2014_pathway:escape_pet,
+57574737,148437794,invasion stage,eng,introduced,
+57574742,148437797,native range,eng,Asia,
+57574743,148437797,pathway,eng,cbd_2014_pathway:escape_pet,
+57574744,148437797,pathway,eng,cbd_2014_pathway:escape_zoo,
+57574745,148437797,invasion stage,eng,established,
+57574587,148437800,pathway,eng,cbd_2014_pathway:escape_horticulture,
+57574588,148437800,invasion stage,eng,established,
+57574713,148437801,pathway,eng,cbd_2014_pathway:escape_pet,
+57574714,148437801,pathway,eng,cbd_2014_pathway:escape_zoo,
+57574715,148437801,invasion stage,eng,established,
+57574790,148437805,native range,eng,Southern America (WGSRPD:8),
+57574791,148437805,invasion stage,eng,introduced,
+57574583,148437806,invasion stage,eng,established,
+57574669,148437808,invasion stage,eng,introduced,
+57574595,148437810,invasion stage,eng,established,
+57574959,148437813,pathway,eng,cbd_2014_pathway:escape_pet,
+57574960,148437813,invasion stage,eng,established,
+57574582,148437814,invasion stage,eng,established,
+57574958,148437820,invasion stage,eng,introduced,
+57574828,148437821,native range,eng,North America,
+57574795,148437823,pathway,eng,cbd_2014_pathway:escape_pet,
+57574796,148437823,invasion stage,eng,introduced,
+57574697,148437826,native range,eng,North America,
+57574698,148437826,pathway,eng,cbd_2014_pathway:escape_fur_farm,
+57574699,148437826,pathway,eng,cbd_2014_pathway:unaided,
+57574700,148437826,invasion stage,eng,introduced,
+57574663,148437829,native range,eng,North America,
+57574664,148437829,pathway,eng,cbd_2014_pathway:escape_pet,
+57574665,148437829,invasion stage,eng,introduced,
+57574866,148437833,pathway,eng,cbd_2014_pathway:release_hunting,
+57574741,148437838,invasion stage,eng,established,
+57574658,148437842,native range,eng,Asia,
+57574659,148437842,pathway,eng,cbd_2014_pathway:release_hunting,
+57574660,148437842,invasion stage,eng,established,
+57574880,148437847,native range,eng,Southern Europe,
+57574881,148437847,pathway,eng,cbd_2014_pathway:escape_pet,
+57574882,148437847,pathway,eng,cbd_2014_pathway:release_landscape_improvement,
+57574883,148437847,invasion stage,eng,introduced,
+57574839,148437849,native range,eng,Asia,
+57574840,148437849,pathway,eng,cbd_2014_pathway:escape_pet,
+57574841,148437849,pathway,eng,cbd_2014_pathway:release_other,
+57574842,148437849,invasion stage,eng,introduced,
+57574810,148437851,native range,eng,Iberia,
+57574811,148437851,pathway,eng,cbd_2014_pathway:release_landscape_improvement,
+57574812,148437851,invasion stage,eng,established,
+57574708,148437854,native range,eng,Nam,
+57574709,148437854,pathway,eng,cbd_2014_pathway:stowaway_ballast_water,
+57574710,148437854,invasion stage,eng,introduced,
+57574780,148437858,native range,eng,Central America (WGSRPD:80),
+57574781,148437858,invasion stage,eng,introduced,
+57574751,148437861,native range,eng,Africa (WGSRPD:2),
+57574752,148437861,invasion stage,eng,introduced,
+57574964,148437864,native range,eng,Europe (WGSRPD:1),
+57574965,148437864,invasion stage,eng,established,
+57574946,148437865,native range,eng,Southern Europe,
+57574947,148437865,invasion stage,eng,established,
+57574684,148437867,native range,eng,Eastern North America,
+57574685,148437867,invasion stage,eng,established,
+57574813,148437871,native range,eng,Europe (WGSRPD:1),
+57574814,148437871,pathway,eng,cbd_2014_pathway:release_conservation,
+57574815,148437871,pathway,eng,cbd_2014_pathway:release_landscape_improvement,
+57574816,148437871,invasion stage,eng,established,
+57574782,148437874,native range,eng,Asia,
+57574783,148437874,pathway,eng,cbd_2014_pathway:escape_pet,
+57574784,148437874,invasion stage,eng,established,
+57574956,148437877,native range,eng,Southern Europe,
+57574957,148437877,invasion stage,eng,introduced,
+57574847,148437879,native range,eng,Southern Europe,
+57574848,148437879,invasion stage,eng,introduced,
+57574661,148437880,native range,eng,Europe (WGSRPD:1),
+57574662,148437880,invasion stage,eng,established,
+57574913,148437884,native range,eng,North America,
+57574914,148437884,pathway,eng,cbd_2014_pathway:escape_pet,
+57574915,148437884,pathway,eng,cbd_2014_pathway:release_other,
+57574916,148437884,invasion stage,eng,introduced,
+57574909,148437885,native range,eng,North America,
+57574910,148437885,pathway,eng,cbd_2014_pathway:escape_pet,
+57574911,148437885,pathway,eng,cbd_2014_pathway:release_other,
+57574912,148437885,invasion stage,eng,introduced,
+57574693,148437886,native range,eng,North America,
+57574694,148437886,pathway,eng,cbd_2014_pathway:escape_pet,
+57574695,148437886,pathway,eng,cbd_2014_pathway:release_other,
+57574696,148437886,invasion stage,eng,introduced,
+57574689,148437888,native range,eng,North America,
+57574690,148437888,pathway,eng,cbd_2014_pathway:escape_pet,
+57574691,148437888,pathway,eng,cbd_2014_pathway:release_other,
+57574692,148437888,invasion stage,eng,introduced,
+57574618,148437889,native range,eng,North America,
+57574619,148437889,pathway,eng,cbd_2014_pathway:escape_pet,
+57574620,148437889,pathway,eng,cbd_2014_pathway:release_other,
+57574621,148437889,invasion stage,eng,introduced,
+57574948,148437892,native range,eng,Southern Europe,
+57574949,148437892,pathway,eng,cbd_2014_pathway:contaminant_habitat_material,
+57574950,148437892,invasion stage,eng,established,
+57574906,148437897,invasion stage,eng,established,
+57574834,148437900,invasion stage,eng,established,
+57574835,148437901,invasion stage,eng,established,
+57574817,148437903,native range,eng,Southern Europe,
+57574818,148437903,pathway,eng,cbd_2014_pathway:stowaway_container,
+57574819,148437903,invasion stage,eng,established,
+57574758,148437911,invasion stage,eng,established,
+57574615,148437923,native range,eng,Southeast Asia,
+57574616,148437923,pathway,eng,cbd_2014_pathway:escape_pet,
+57574617,148437923,invasion stage,eng,established,
+57574610,148437924,invasion stage,eng,established,
+57574974,148437930,native range,eng,"Mediterranean, Africa, India, Myanmar, China",
+57574975,148437930,invasion stage,eng,introduced,
+57574890,148437937,native range,eng,North America,
+57574891,148437937,pathway,eng,cbd_2014_pathway:stowaway_container,
+57574892,148437937,invasion stage,eng,introduced,
+57574897,148437940,native range,eng,"Spain, Italy, North Africa",
+57574898,148437940,invasion stage,eng,introduced,
+57574904,148437943,native range,eng,"North America, Europe, North Africa, Turkey, Israel, Caucasus, Russia (European To Far East), Central Asia, China, Korea",
+57574905,148437943,invasion stage,eng,introduced,
+57574872,148437946,native range,eng,Mediterranean & Portugal,
+57574873,148437946,invasion stage,eng,introduced,
+57574832,148437949,native range,eng,Mediterranean To Russia,
+57574833,148437949,invasion stage,eng,established,
+57574845,148437952,invasion stage,eng,established,
+57574820,148437955,native range,eng,"Europe, Africa, Yemen, Pakistan, Philippines",
+57574821,148437955,invasion stage,eng,established,
+57574951,148437958,native range,eng,Tropical Africa,
+57574952,148437958,invasion stage,eng,introduced,
+57574976,148437959,invasion stage,eng,introduced,
+57574822,148437961,native range,eng,Asia And Pacific Islands,
+57574823,148437961,pathway,eng,cbd_2014_pathway:stowaway_container,
+57574824,148437961,invasion stage,eng,introduced,
+57574807,148437965,native range,eng,New Zealand (WGSRPD:51),
+57574808,148437965,pathway,eng,cbd_2014_pathway:stowaway,
+57574809,148437965,invasion stage,eng,established,
+57574792,148437968,native range,eng,North America,
+57574786,148437972,native range,eng,Usa To Guatemala,
+57574787,148437972,invasion stage,eng,introduced,
+57574764,148437974,native range,eng,"Canada To Peru, Caribbean",
+57574765,148437974,invasion stage,eng,introduced,
+57574750,148437978,native range,eng,Mediterranean,
+57574876,148437982,native range,eng,Eastern Africa,
+57574877,148437982,pathway,eng,cbd_2014_pathway:stowaway_other,
+57574878,148437982,invasion stage,eng,introduced,
+57574884,148437984,native range,eng,Asia,
+57574885,148437984,pathway,eng,cbd_2014_pathway:stowaway_other,
+57574886,148437984,invasion stage,eng,established,
+57574836,148437985,native range,eng,Asia,
+57574837,148437985,pathway,eng,cbd_2014_pathway:stowaway_other,
+57574838,148437985,invasion stage,eng,established,
+57574725,148437986,native range,eng,Asia,
+57574726,148437986,pathway,eng,cbd_2014_pathway:stowaway_other,
+57574727,148437986,invasion stage,eng,established,
+57574681,148437994,native range,eng,Africa (WGSRPD:2),
+57574682,148437994,pathway,eng,cbd_2014_pathway:contaminant_on_plants,
+57574683,148437994,invasion stage,eng,introduced,
+57574933,148437998,invasion stage,eng,established,
+57574870,148438008,native range,eng,"Egypt, Ethiopia, Kenya, Uganda, Rwanda",
+57574871,148438008,invasion stage,eng,introduced,
+57574746,148438009,native range,eng,Europe To Northern Africa,
+57574747,148438009,invasion stage,eng,established,
+57574649,148438011,native range,eng,Mediterranean,
+57574650,148438011,invasion stage,eng,introduced,
+57574953,148438015,native range,eng,Africa (WGSRPD:2),
+57574954,148438015,pathway,eng,cbd_2014_pathway:stowaway_container,
+57574955,148438015,invasion stage,eng,established,
+57574931,148438016,invasion stage,eng,introduced,
+57574907,148438018,native range,eng,"Mediterranean, Northern Africa",
+57574908,148438018,invasion stage,eng,established,
+57574804,148438020,native range,eng,Northern Africa And Middle East,
+57574805,148438020,invasion stage,eng,introduced,
+57574774,148438022,native range,eng,Near East,
+57574775,148438022,invasion stage,eng,introduced,
+57574651,148438024,native range,eng,Temperate Asia,
+57574652,148438024,pathway,eng,cbd_2014_pathway:stowaway_container,
+57574653,148438024,invasion stage,eng,established,
+57574645,148438026,native range,eng,"Europe To Azerbaijan, Egypt",
+57574646,148438026,invasion stage,eng,established,
+57574970,148438028,invasion stage,eng,introduced,
+57574801,148438029,invasion stage,eng,introduced,
+57574843,148438030,native range,eng,Mediterranean,
+57574844,148438030,invasion stage,eng,introduced,
+57574644,148438031,invasion stage,eng,introduced,
+57574633,148438033,native range,eng,Tropical Asia,
+57574634,148438033,invasion stage,eng,introduced,
+57574902,148438035,pathway,eng,cbd_2014_pathway:stowaway_container,
+57574903,148438035,invasion stage,eng,introduced,
+57574864,148438037,native range,eng,"Macaronesia, North Africa, Europe, Turkey, Caucasus, Near East, Kazakhstan",
+57574865,148438037,invasion stage,eng,established,
+57574874,148438039,native range,eng,"Europe, North Africa To Near East, Turkey, Caucasus, Russia To Central Asia, Iran, Afghanistan, China, Mongolia, Korea",
+57574875,148438039,invasion stage,eng,introduced,
+57574778,148438041,native range,eng,"Southern Europe, Africa, Turkey, Caucasus, Near East, Iran",
+57574779,148438041,invasion stage,eng,introduced,
+57574770,148438043,native range,eng,"Macaronesia, Europe, North Africa To Turkey, Caucasus, Turkmenistan, Iran",
+57574771,148438043,invasion stage,eng,established,
+57574755,148438045,native range,eng,Africa (WGSRPD:2),
+57574756,148438045,pathway,eng,cbd_2014_pathway:stowaway_container,
+57574757,148438045,invasion stage,eng,introduced,
+57574703,148438047,native range,eng,"Northern Africa, Southern Europe To Turkey",
+57574704,148438047,invasion stage,eng,introduced,
+57574647,148438049,native range,eng,Canary Is. To Turkey,
+57574648,148438049,invasion stage,eng,introduced,
+57574635,148438051,native range,eng,Africa (WGSRPD:2),
+57574636,148438051,invasion stage,eng,established,
+57574917,148438059,native range,eng,"Brazil, Uruguay, Paraguay, Argentina",
+57574918,148438059,invasion stage,eng,introduced,
+57574895,148438060,native range,eng,"Central, South America",
+57574896,148438060,invasion stage,eng,introduced,
+57574631,148438062,native range,eng,"Costa Rica, Panama",
+57574632,148438062,invasion stage,eng,introduced,
+57574942,148438065,native range,eng,Caribbean To Brazil,
+57574943,148438065,invasion stage,eng,introduced,
+57574899,148438067,native range,eng,"Cyprus, Turkey, Middle East, Egypt, Sudan",
+57574900,148438067,pathway,eng,cbd_2014_pathway:contaminant_food,
+57574901,148438067,invasion stage,eng,introduced,
+57574722,148438069,native range,eng,Costa Rica (WGSRPD:80_COS),
+57574723,148438069,pathway,eng,cbd_2014_pathway:stowaway_container,
+57574724,148438069,invasion stage,eng,introduced,
+57574625,148438071,native range,eng,"Bolivia, Chile, Argentina",
+57574626,148438071,pathway,eng,cbd_2014_pathway:stowaway_container,
+57574627,148438071,invasion stage,eng,introduced,
+57574831,148438075,native range,eng,Africa (WGSRPD:2),
+57574979,148438078,native range,eng,Southeastern Europe (WGSRPD:13),
+57574980,148438078,pathway,eng,cbd_2014_pathway:contaminant_on_plants,
+57574981,148438078,invasion stage,eng,established,
+57574926,148438079,native range,eng,North America,
+57574927,148438079,pathway,eng,cbd_2014_pathway:contaminant_on_plants,
+57574928,148438079,invasion stage,eng,introduced,
+57574730,148438084,native range,eng,Southern Africa,
+57574731,148438084,pathway,eng,cbd_2014_pathway:contaminant_on_plants,
+57574732,148438084,invasion stage,eng,introduced,
+57574733,148438087,native range,eng,Mallorca,
+57574734,148438087,pathway,eng,cbd_2014_pathway:contaminant_on_plants,
+57574735,148438087,invasion stage,eng,introduced,
+57574640,148438090,native range,eng,America,
+57574939,148438108,native range,eng,Asia,
+57574940,148438108,pathway,eng,cbd_2014_pathway:contaminant_on_plants,
+57574941,148438108,invasion stage,eng,introduced,
+57574611,148438110,native range,eng,Africa (WGSRPD:2),
+57574612,148438110,native range,eng,Asia,
+57574613,148438110,pathway,eng,cbd_2014_pathway:contaminant_on_plants,
+57574614,148438110,invasion stage,eng,introduced,
+57574608,148438113,native range,eng,"Cape Verde Is., Africa, Madagascar, Comoros",
+57574609,148438113,invasion stage,eng,introduced,
+57574973,148438117,native range,eng,Eastern Asia (WGSRPD:38),
+57574967,148438120,native range,eng,Asia,
+57574968,148438120,pathway,eng,cbd_2014_pathway:unaided,
+57574969,148438120,invasion stage,eng,introduced,
+57574977,148438126,native range,eng,Africa (WGSRPD:2),
+57574978,148438126,invasion stage,eng,established,
+57574862,148438128,native range,eng,Cosmopolitan,
+57574863,148438128,invasion stage,eng,established,
+57574857,148438130,native range,eng,Southern America (WGSRPD:8),
+57574858,148438130,pathway,eng,cbd_2014_pathway:contaminant_on_plants,
+57574859,148438130,invasion stage,eng,established,
+57574923,148438132,invasion stage,eng,introduced,
+57574806,148438133,invasion stage,eng,introduced,
+57574768,148438135,native range,eng,Europe (WGSRPD:1),
+57574769,148438135,invasion stage,eng,introduced,
+57574753,148438137,native range,eng,Cosmopolitan,
+57574754,148438137,invasion stage,eng,introduced,
+57574748,148438138,native range,eng,Cosmopolitan,
+57574749,148438138,invasion stage,eng,introduced,
+57574934,148438140,native range,eng,Europe (WGSRPD:1),
+57574935,148438140,invasion stage,eng,established,
+57574728,148438141,native range,eng,Cosmopolitan,
+57574729,148438141,invasion stage,eng,established,
+57574711,148438143,native range,eng,Cosmopolitan,
+57574712,148438143,invasion stage,eng,introduced,
+57574686,148438145,native range,eng,Southeast Asia,
+57574687,148438145,invasion stage,eng,introduced,
+57574673,148438147,native range,eng,Europe (WGSRPD:1),
+57574674,148438147,pathway,eng,cbd_2014_pathway:contaminant_on_plants,
+57574675,148438147,invasion stage,eng,established,
+57574637,148438149,native range,eng,Europe (WGSRPD:1),
+57574638,148438149,pathway,eng,cbd_2014_pathway:contaminant_timber,
+57574639,148438149,invasion stage,eng,introduced,
+57574606,148438151,native range,eng,Cosmopolitan,
+57574607,148438151,invasion stage,eng,established,
+57574622,148438155,native range,eng,Southern Asia,
+57574623,148438155,pathway,eng,cbd_2014_pathway:contaminant_animal_parasite,
+57574624,148438155,invasion stage,eng,established,
+57574603,148438158,native range,eng,Southern Asia,
+57574604,148438158,pathway,eng,cbd_2014_pathway:contaminant_animal_parasite,
+57574605,148438158,invasion stage,eng,established,
+57574961,148438161,native range,eng,Central And South America,
+57574962,148438161,pathway,eng,cbd_2014_pathway:stowaway_container,
+57574963,148438161,invasion stage,eng,introduced,
+57574929,148438163,native range,eng,"Mediterranean To Turkey, Israel",
+57574930,148438163,invasion stage,eng,introduced,
+57574887,148438165,native range,eng,Tasmania (WGSRPD:50_TAS),
+57574888,148438165,invasion stage,eng,introduced,
+57574766,148438167,native range,eng,"North, Central And South America",
+57574767,148438167,invasion stage,eng,introduced,
+57574924,148438169,native range,eng,"Eastern Palearctic Including China, Korea, Japan",
+57574925,148438169,invasion stage,eng,established,
+57574829,148438170,native range,eng,Mediterranean To Central Asia,
+57574830,148438170,invasion stage,eng,introduced,
+57574701,148438171,native range,eng,Macaronesia,
+57574702,148438171,invasion stage,eng,introduced,
+57574850,148438173,native range,eng,"India, Southeast Asia To Australia, New Zealand",
+57574851,148438173,pathway,eng,cbd_2014_pathway:stowaway_container,
+57574852,148438173,invasion stage,eng,introduced,
+57574761,148438174,native range,eng,Probably Native To North America Only,
+57574762,148438174,pathway,eng,cbd_2014_pathway:stowaway_container,
+57574763,148438174,invasion stage,eng,introduced,
+57574676,148438175,native range,eng,North America,
+57574677,148438175,pathway,eng,cbd_2014_pathway:stowaway_container,
+57574678,148438175,invasion stage,eng,introduced,
+57574628,148438176,native range,eng,Africa (WGSRPD:2),
+57574629,148438176,pathway,eng,cbd_2014_pathway:stowaway_container,
+57574630,148438176,invasion stage,eng,introduced,
+57574802,148438178,native range,eng,Australia,
+57574803,148438178,invasion stage,eng,introduced,
+57574601,148438179,native range,eng,Africa (WGSRPD:2),
+57574602,148438179,invasion stage,eng,introduced,
+57574688,148438190,native range,eng,Australia,
+57574797,148438193,native range,eng,China (WGSRPD:36),
+57574798,148438193,native range,eng,Japan (WGSRPD:38_JAP),
+57574799,148438193,pathway,eng,cbd_2014_pathway:contaminant_on_plants,
+57574800,148438193,invasion stage,eng,established,
+57574705,148438195,native range,eng,Asia,
+57574706,148438195,pathway,eng,cbd_2014_pathway:contaminant_on_plants,
+57574707,148438195,invasion stage,eng,introduced,
+57574670,148438196,native range,eng,Asia,
+57574671,148438196,pathway,eng,cbd_2014_pathway:stowaway_organic_packing,
+57574672,148438196,invasion stage,eng,introduced,
+57574936,148438199,native range,eng,Canary Islands (WGSRPD:21_CNY),
+57574937,148438199,pathway,eng,cbd_2014_pathway:stowaway_people_luggage,
+57574938,148438199,invasion stage,eng,introduced,
+57574716,148438201,native range,eng,Australia,
+57574717,148438201,pathway,eng,cbd_2014_pathway:release_biological_control,
+57574718,148438201,invasion stage,eng,introduced,
+57574867,148438203,native range,eng,Australia,
+57574868,148438203,pathway,eng,cbd_2014_pathway:release_biological_control,
+57574869,148438203,invasion stage,eng,introduced,
+57574719,148438204,native range,eng,Australia,
+57574720,148438204,pathway,eng,cbd_2014_pathway:release_biological_control,
+57574721,148438204,invasion stage,eng,introduced,
+57574641,148438206,native range,eng,North America,
+57574642,148438206,pathway,eng,cbd_2014_pathway:release_biological_control,
+57574643,148438206,invasion stage,eng,introduced,
+57574598,148438208,native range,eng,Asia,
+57574599,148438208,pathway,eng,cbd_2014_pathway:release_biological_control,
+57574600,148438208,invasion stage,eng,established,
+57574853,148438212,native range,eng,Asia,
+57574854,148438212,pathway,eng,cbd_2014_pathway:contaminant_on_plants,
+57574855,148438212,invasion stage,eng,introduced,
+57574776,148438215,pathway,eng,cbd_2014_pathway:stowaway_other,
+57574777,148438215,invasion stage,eng,introduced,
+57574982,148438218,native range,eng,Southern Europe,
+57574983,148438218,pathway,eng,cbd_2014_pathway:stowaway_vehicles,
+57574984,148438218,invasion stage,eng,established,
+57574759,148438220,pathway,eng,cbd_2014_pathway:unknown,
+57574760,148438220,invasion stage,eng,introduced,
+57574654,148438223,native range,eng,Southern Europe,
+57574655,148438223,pathway,eng,cbd_2014_pathway:contaminant_habitat_material,
+57574656,148438223,pathway,eng,cbd_2014_pathway:stowaway_vehicles,
+57574657,148438223,invasion stage,eng,introduced,
+57574921,148438226,native range,eng,Southeast Asia,
+57574922,148438226,invasion stage,eng,introduced,
+57574827,148438228,invasion stage,eng,introduced,
+57574679,148438230,pathway,eng,cbd_2014_pathway:stowaway_other,
+57574680,148438230,invasion stage,eng,established,
+57574597,148438232,invasion stage,eng,introduced,
 57575672,146042122,native range,eng,Northern America (WGSRPD:7),http://www.cabi.org/isc | http://www.europe-aliens.org | https://secure.fera.defra.gov.uk/nonnativespecies/home/index.cfm | http://ias.biodiversity.be | http://alienplantsbelgium.be/sites/alienplantsbelgium.be/files/tabel_2.pdf | http://www.nobanis.org | http://www.nederlandsesoorten.nl
 57575673,146042122,pathway,eng,cbd_2014_pathway:release,http://www.cabi.org/isc | http://www.europe-aliens.org | https://secure.fera.defra.gov.uk/nonnativespecies/home/index.cfm | http://ias.biodiversity.be | http://alienplantsbelgium.be/sites/alienplantsbelgium.be/files/tabel_2.pdf | http://www.nobanis.org | http://www.nederlandsesoorten.nl
 57576431,146042123,native range,eng,Northern America (WGSRPD:7),http://www.europe-aliens.org | http://www.issg.org/database | https://secure.fera.defra.gov.uk/nonnativespecies/home/index.cfm | http://www.nobanis.org | http://www.nederlandsesoorten.nl
@@ -10412,440 +10849,3 @@ key,taxonKey,type,language,description,source
 57575961,146042484,native range,eng,Europe (WGSRPD:1),http://www.europe-aliens.org | https://secure.fera.defra.gov.uk/nonnativespecies/home/index.cfm | www.animalbase.uni-goettingen.de
 57575962,146042484,pathway,eng,cbd_2014_pathway:contaminant,http://www.europe-aliens.org | https://secure.fera.defra.gov.uk/nonnativespecies/home/index.cfm | www.animalbase.uni-goettingen.de
 57575963,146042484,pathway,eng,cbd_2014_pathway:stowaway,http://www.europe-aliens.org | https://secure.fera.defra.gov.uk/nonnativespecies/home/index.cfm | www.animalbase.uni-goettingen.de
-57567499,148437407,native range,eng,Northern America (WGSRPD:7),
-57567500,148437407,pathway,eng,cbd_2014_pathway:escape_horticulture,
-57567501,148437407,invasion stage,eng,established,
-57572056,148437417,native range,eng,Africa (WGSRPD:2),
-57572057,148437417,native range,eng,Europe (WGSRPD:1),
-57572058,148437417,pathway,eng,cbd_2014_pathway:escape_horticulture,
-57572059,148437417,invasion stage,eng,established,
-57572060,148437417,native range,eng,temperate Asia (WGSRPD:3),
-57568512,148437420,native range,eng,Africa (WGSRPD:2),
-57568513,148437420,native range,eng,Europe (WGSRPD:1),
-57568514,148437420,invasion stage,eng,casual,
-57568515,148437420,pathway,eng,cbd_2014_pathway:contaminant_seed,
-57568516,148437420,native range,eng,temperate Asia (WGSRPD:3),
-57574102,148437422,invasion stage,eng,casual,
-57574103,148437422,native range,eng,temperate Asia (WGSRPD:3),
-57566111,148437423,native range,eng,Northern America (WGSRPD:7),
-57566112,148437423,invasion stage,eng,casual,
-57566113,148437423,pathway,eng,cbd_2014_pathway:escape_horticulture,
-57572493,148437426,native range,eng,Northern America (WGSRPD:7),
-57572494,148437426,invasion stage,eng,casual,
-57572495,148437426,pathway,eng,cbd_2014_pathway:escape_horticulture,
-57569367,148437430,pathway,eng,cbd_2014_pathway:contaminant_nursery,
-57569368,148437430,invasion stage,eng,established,
-57569369,148437430,native range,eng,temperate Asia (WGSRPD:3),
-57574476,148437432,invasion stage,eng,casual,
-57574477,148437432,pathway,eng,cbd_2014_pathway:escape_agriculture,
-57574478,148437432,native range,eng,temperate Asia (WGSRPD:3),
-57572406,148437473,invasion stage,eng,casual,
-57572407,148437473,native range,eng,temperate Asia (WGSRPD:3),
-57572325,148437475,native range,eng,Europe (WGSRPD:1),
-57572326,148437475,invasion stage,eng,casual,
-57572327,148437475,pathway,eng,cbd_2014_pathway:escape_horticulture,
-57574879,148437687,native range,eng,North Pacific Ocean,
-57574580,148437689,native range,eng,North America,
-57574581,148437689,pathway,eng,cbd_2014_pathway:contaminant_animal_parasite,
-57574849,148437697,invasion stage,eng,established,
-57574825,148437702,pathway,eng,cbd_2014_pathway:contaminant_animal_parasite,
-57574826,148437702,invasion stage,eng,established,
-57574592,148437706,native range,eng,New Zealand (WGSRPD:51),
-57574593,148437706,invasion stage,eng,introduced,
-57574738,148437709,native range,eng,Southern Asia,
-57574739,148437709,pathway,eng,cbd_2014_pathway:contaminant_animal_parasite,
-57574740,148437709,invasion stage,eng,established,
-57574589,148437713,native range,eng,Asia,
-57574590,148437713,pathway,eng,cbd_2014_pathway:contaminant_animal_parasite,
-57574591,148437715,pathway,eng,cbd_2014_pathway:contaminant_animal_parasite,
-57574893,148437718,pathway,eng,cbd_2014_pathway:contaminant_animal_parasite,
-57574894,148437718,invasion stage,eng,established,
-57574919,148437723,native range,eng,New Zealand (WGSRPD:51),
-57574920,148437723,pathway,eng,cbd_2014_pathway:contaminant_habitat_material,
-57574788,148437727,native range,eng,Southeast Asia,
-57574789,148437727,pathway,eng,cbd_2014_pathway:contaminant_habitat_material,
-57574666,148437730,native range,eng,Australia,
-57574667,148437730,pathway,eng,cbd_2014_pathway:contaminant_habitat_material,
-57574668,148437730,invasion stage,eng,introduced,
-57574594,148437737,native range,eng,Eastern Asia (WGSRPD:38),
-57574932,148437742,invasion stage,eng,established,
-57574846,148437746,pathway,eng,cbd_2014_pathway:escape_pet,
-57574966,148437757,native range,eng,North America,
-57574889,148437763,invasion stage,eng,established,
-57574596,148437766,invasion stage,eng,established,
-57574860,148437767,pathway,eng,cbd_2014_pathway:escape_pet,
-57574861,148437767,invasion stage,eng,introduced,
-57574856,148437771,pathway,eng,cbd_2014_pathway:escape_pet,
-57574785,148437776,native range,eng,Southern America (WGSRPD:8),
-57574772,148437781,native range,eng,North America,
-57574773,148437781,invasion stage,eng,established,
-57574971,148437787,pathway,eng,cbd_2014_pathway:escape_pet,
-57574972,148437787,invasion stage,eng,introduced,
-57574584,148437789,native range,eng,Southern Europe,
-57574585,148437789,pathway,eng,cbd_2014_pathway:contaminant_on_animals,
-57574586,148437789,invasion stage,eng,established,
-57574944,148437790,pathway,eng,cbd_2014_pathway:escape_pet,
-57574945,148437790,invasion stage,eng,introduced,
-57574793,148437791,pathway,eng,cbd_2014_pathway:escape_pet,
-57574794,148437791,invasion stage,eng,introduced,
-57574736,148437794,pathway,eng,cbd_2014_pathway:escape_pet,
-57574737,148437794,invasion stage,eng,introduced,
-57574742,148437797,native range,eng,Asia,
-57574743,148437797,pathway,eng,cbd_2014_pathway:escape_pet,
-57574744,148437797,pathway,eng,cbd_2014_pathway:escape_zoo,
-57574745,148437797,invasion stage,eng,established,
-57574587,148437800,pathway,eng,cbd_2014_pathway:escape_horticulture,
-57574588,148437800,invasion stage,eng,established,
-57574713,148437801,pathway,eng,cbd_2014_pathway:escape_pet,
-57574714,148437801,pathway,eng,cbd_2014_pathway:escape_zoo,
-57574715,148437801,invasion stage,eng,established,
-57574790,148437805,native range,eng,Southern America (WGSRPD:8),
-57574791,148437805,invasion stage,eng,introduced,
-57574583,148437806,invasion stage,eng,established,
-57574669,148437808,invasion stage,eng,introduced,
-57574595,148437810,invasion stage,eng,established,
-57574959,148437813,pathway,eng,cbd_2014_pathway:escape_pet,
-57574960,148437813,invasion stage,eng,established,
-57574582,148437814,invasion stage,eng,established,
-57574958,148437820,invasion stage,eng,introduced,
-57574828,148437821,native range,eng,North America,
-57574795,148437823,pathway,eng,cbd_2014_pathway:escape_pet,
-57574796,148437823,invasion stage,eng,introduced,
-57574697,148437826,native range,eng,North America,
-57574698,148437826,pathway,eng,cbd_2014_pathway:escape_fur_farm,
-57574699,148437826,pathway,eng,cbd_2014_pathway:unaided,
-57574700,148437826,invasion stage,eng,introduced,
-57574663,148437829,native range,eng,North America,
-57574664,148437829,pathway,eng,cbd_2014_pathway:escape_pet,
-57574665,148437829,invasion stage,eng,introduced,
-57574866,148437833,pathway,eng,cbd_2014_pathway:release_hunting,
-57574741,148437838,invasion stage,eng,established,
-57574658,148437842,native range,eng,Asia,
-57574659,148437842,pathway,eng,cbd_2014_pathway:release_hunting,
-57574660,148437842,invasion stage,eng,established,
-57574880,148437847,native range,eng,Southern Europe,
-57574881,148437847,pathway,eng,cbd_2014_pathway:escape_pet,
-57574882,148437847,pathway,eng,cbd_2014_pathway:release_landscape_improvement,
-57574883,148437847,invasion stage,eng,introduced,
-57574839,148437849,native range,eng,Asia,
-57574840,148437849,pathway,eng,cbd_2014_pathway:escape_pet,
-57574841,148437849,pathway,eng,cbd_2014_pathway:release_other,
-57574842,148437849,invasion stage,eng,introduced,
-57574810,148437851,native range,eng,Iberia,
-57574811,148437851,pathway,eng,cbd_2014_pathway:release_landscape_improvement,
-57574812,148437851,invasion stage,eng,established,
-57574708,148437854,native range,eng,Nam,
-57574709,148437854,pathway,eng,cbd_2014_pathway:stowaway_ballast_water,
-57574710,148437854,invasion stage,eng,introduced,
-57574780,148437858,native range,eng,Central America (WGSRPD:80),
-57574781,148437858,invasion stage,eng,introduced,
-57574751,148437861,native range,eng,Africa (WGSRPD:2),
-57574752,148437861,invasion stage,eng,introduced,
-57574964,148437864,native range,eng,Europe (WGSRPD:1),
-57574965,148437864,invasion stage,eng,established,
-57574946,148437865,native range,eng,Southern Europe,
-57574947,148437865,invasion stage,eng,established,
-57574684,148437867,native range,eng,Eastern North America,
-57574685,148437867,invasion stage,eng,established,
-57574813,148437871,native range,eng,Europe (WGSRPD:1),
-57574814,148437871,pathway,eng,cbd_2014_pathway:release_conservation,
-57574815,148437871,pathway,eng,cbd_2014_pathway:release_landscape_improvement,
-57574816,148437871,invasion stage,eng,established,
-57574782,148437874,native range,eng,Asia,
-57574783,148437874,pathway,eng,cbd_2014_pathway:escape_pet,
-57574784,148437874,invasion stage,eng,established,
-57574956,148437877,native range,eng,Southern Europe,
-57574957,148437877,invasion stage,eng,introduced,
-57574847,148437879,native range,eng,Southern Europe,
-57574848,148437879,invasion stage,eng,introduced,
-57574661,148437880,native range,eng,Europe (WGSRPD:1),
-57574662,148437880,invasion stage,eng,established,
-57574913,148437884,native range,eng,North America,
-57574914,148437884,pathway,eng,cbd_2014_pathway:escape_pet,
-57574915,148437884,pathway,eng,cbd_2014_pathway:release_other,
-57574916,148437884,invasion stage,eng,introduced,
-57574909,148437885,native range,eng,North America,
-57574910,148437885,pathway,eng,cbd_2014_pathway:escape_pet,
-57574911,148437885,pathway,eng,cbd_2014_pathway:release_other,
-57574912,148437885,invasion stage,eng,introduced,
-57574693,148437886,native range,eng,North America,
-57574694,148437886,pathway,eng,cbd_2014_pathway:escape_pet,
-57574695,148437886,pathway,eng,cbd_2014_pathway:release_other,
-57574696,148437886,invasion stage,eng,introduced,
-57574689,148437888,native range,eng,North America,
-57574690,148437888,pathway,eng,cbd_2014_pathway:escape_pet,
-57574691,148437888,pathway,eng,cbd_2014_pathway:release_other,
-57574692,148437888,invasion stage,eng,introduced,
-57574618,148437889,native range,eng,North America,
-57574619,148437889,pathway,eng,cbd_2014_pathway:escape_pet,
-57574620,148437889,pathway,eng,cbd_2014_pathway:release_other,
-57574621,148437889,invasion stage,eng,introduced,
-57574948,148437892,native range,eng,Southern Europe,
-57574949,148437892,pathway,eng,cbd_2014_pathway:contaminant_habitat_material,
-57574950,148437892,invasion stage,eng,established,
-57574906,148437897,invasion stage,eng,established,
-57574834,148437900,invasion stage,eng,established,
-57574835,148437901,invasion stage,eng,established,
-57574817,148437903,native range,eng,Southern Europe,
-57574818,148437903,pathway,eng,cbd_2014_pathway:stowaway_container,
-57574819,148437903,invasion stage,eng,established,
-57574758,148437911,invasion stage,eng,established,
-57574615,148437923,native range,eng,Southeast Asia,
-57574616,148437923,pathway,eng,cbd_2014_pathway:escape_pet,
-57574617,148437923,invasion stage,eng,established,
-57574610,148437924,invasion stage,eng,established,
-57574974,148437930,native range,eng,"Mediterranean, Africa, India, Myanmar, China",
-57574975,148437930,invasion stage,eng,introduced,
-57574890,148437937,native range,eng,North America,
-57574891,148437937,pathway,eng,cbd_2014_pathway:stowaway_container,
-57574892,148437937,invasion stage,eng,introduced,
-57574897,148437940,native range,eng,"Spain, Italy, North Africa",
-57574898,148437940,invasion stage,eng,introduced,
-57574904,148437943,native range,eng,"North America, Europe, North Africa, Turkey, Israel, Caucasus, Russia (European To Far East), Central Asia, China, Korea",
-57574905,148437943,invasion stage,eng,introduced,
-57574872,148437946,native range,eng,Mediterranean & Portugal,
-57574873,148437946,invasion stage,eng,introduced,
-57574832,148437949,native range,eng,Mediterranean To Russia,
-57574833,148437949,invasion stage,eng,established,
-57574845,148437952,invasion stage,eng,established,
-57574820,148437955,native range,eng,"Europe, Africa, Yemen, Pakistan, Philippines",
-57574821,148437955,invasion stage,eng,established,
-57574951,148437958,native range,eng,Tropical Africa,
-57574952,148437958,invasion stage,eng,introduced,
-57574976,148437959,invasion stage,eng,introduced,
-57574822,148437961,native range,eng,Asia And Pacific Islands,
-57574823,148437961,pathway,eng,cbd_2014_pathway:stowaway_container,
-57574824,148437961,invasion stage,eng,introduced,
-57574807,148437965,native range,eng,New Zealand (WGSRPD:51),
-57574808,148437965,pathway,eng,cbd_2014_pathway:stowaway,
-57574809,148437965,invasion stage,eng,established,
-57574792,148437968,native range,eng,North America,
-57574786,148437972,native range,eng,Usa To Guatemala,
-57574787,148437972,invasion stage,eng,introduced,
-57574764,148437974,native range,eng,"Canada To Peru, Caribbean",
-57574765,148437974,invasion stage,eng,introduced,
-57574750,148437978,native range,eng,Mediterranean,
-57574876,148437982,native range,eng,Eastern Africa,
-57574877,148437982,pathway,eng,cbd_2014_pathway:stowaway_other,
-57574878,148437982,invasion stage,eng,introduced,
-57574884,148437984,native range,eng,Asia,
-57574885,148437984,pathway,eng,cbd_2014_pathway:stowaway_other,
-57574886,148437984,invasion stage,eng,established,
-57574836,148437985,native range,eng,Asia,
-57574837,148437985,pathway,eng,cbd_2014_pathway:stowaway_other,
-57574838,148437985,invasion stage,eng,established,
-57574725,148437986,native range,eng,Asia,
-57574726,148437986,pathway,eng,cbd_2014_pathway:stowaway_other,
-57574727,148437986,invasion stage,eng,established,
-57574681,148437994,native range,eng,Africa (WGSRPD:2),
-57574682,148437994,pathway,eng,cbd_2014_pathway:contaminant_on_plants,
-57574683,148437994,invasion stage,eng,introduced,
-57574933,148437998,invasion stage,eng,established,
-57574870,148438008,native range,eng,"Egypt, Ethiopia, Kenya, Uganda, Rwanda",
-57574871,148438008,invasion stage,eng,introduced,
-57574746,148438009,native range,eng,Europe To Northern Africa,
-57574747,148438009,invasion stage,eng,established,
-57574649,148438011,native range,eng,Mediterranean,
-57574650,148438011,invasion stage,eng,introduced,
-57574953,148438015,native range,eng,Africa (WGSRPD:2),
-57574954,148438015,pathway,eng,cbd_2014_pathway:stowaway_container,
-57574955,148438015,invasion stage,eng,established,
-57574931,148438016,invasion stage,eng,introduced,
-57574907,148438018,native range,eng,"Mediterranean, Northern Africa",
-57574908,148438018,invasion stage,eng,established,
-57574804,148438020,native range,eng,Northern Africa And Middle East,
-57574805,148438020,invasion stage,eng,introduced,
-57574774,148438022,native range,eng,Near East,
-57574775,148438022,invasion stage,eng,introduced,
-57574651,148438024,native range,eng,Temperate Asia,
-57574652,148438024,pathway,eng,cbd_2014_pathway:stowaway_container,
-57574653,148438024,invasion stage,eng,established,
-57574645,148438026,native range,eng,"Europe To Azerbaijan, Egypt",
-57574646,148438026,invasion stage,eng,established,
-57574970,148438028,invasion stage,eng,introduced,
-57574801,148438029,invasion stage,eng,introduced,
-57574843,148438030,native range,eng,Mediterranean,
-57574844,148438030,invasion stage,eng,introduced,
-57574644,148438031,invasion stage,eng,introduced,
-57574633,148438033,native range,eng,Tropical Asia,
-57574634,148438033,invasion stage,eng,introduced,
-57574902,148438035,pathway,eng,cbd_2014_pathway:stowaway_container,
-57574903,148438035,invasion stage,eng,introduced,
-57574864,148438037,native range,eng,"Macaronesia, North Africa, Europe, Turkey, Caucasus, Near East, Kazakhstan",
-57574865,148438037,invasion stage,eng,established,
-57574874,148438039,native range,eng,"Europe, North Africa To Near East, Turkey, Caucasus, Russia To Central Asia, Iran, Afghanistan, China, Mongolia, Korea",
-57574875,148438039,invasion stage,eng,introduced,
-57574778,148438041,native range,eng,"Southern Europe, Africa, Turkey, Caucasus, Near East, Iran",
-57574779,148438041,invasion stage,eng,introduced,
-57574770,148438043,native range,eng,"Macaronesia, Europe, North Africa To Turkey, Caucasus, Turkmenistan, Iran",
-57574771,148438043,invasion stage,eng,established,
-57574755,148438045,native range,eng,Africa (WGSRPD:2),
-57574756,148438045,pathway,eng,cbd_2014_pathway:stowaway_container,
-57574757,148438045,invasion stage,eng,introduced,
-57574703,148438047,native range,eng,"Northern Africa, Southern Europe To Turkey",
-57574704,148438047,invasion stage,eng,introduced,
-57574647,148438049,native range,eng,Canary Is. To Turkey,
-57574648,148438049,invasion stage,eng,introduced,
-57574635,148438051,native range,eng,Africa (WGSRPD:2),
-57574636,148438051,invasion stage,eng,established,
-57574917,148438059,native range,eng,"Brazil, Uruguay, Paraguay, Argentina",
-57574918,148438059,invasion stage,eng,introduced,
-57574895,148438060,native range,eng,"Central, South America",
-57574896,148438060,invasion stage,eng,introduced,
-57574631,148438062,native range,eng,"Costa Rica, Panama",
-57574632,148438062,invasion stage,eng,introduced,
-57574942,148438065,native range,eng,Caribbean To Brazil,
-57574943,148438065,invasion stage,eng,introduced,
-57574899,148438067,native range,eng,"Cyprus, Turkey, Middle East, Egypt, Sudan",
-57574900,148438067,pathway,eng,cbd_2014_pathway:contaminant_food,
-57574901,148438067,invasion stage,eng,introduced,
-57574722,148438069,native range,eng,Costa Rica (WGSRPD:80_COS),
-57574723,148438069,pathway,eng,cbd_2014_pathway:stowaway_container,
-57574724,148438069,invasion stage,eng,introduced,
-57574625,148438071,native range,eng,"Bolivia, Chile, Argentina",
-57574626,148438071,pathway,eng,cbd_2014_pathway:stowaway_container,
-57574627,148438071,invasion stage,eng,introduced,
-57574831,148438075,native range,eng,Africa (WGSRPD:2),
-57574979,148438078,native range,eng,Southeastern Europe (WGSRPD:13),
-57574980,148438078,pathway,eng,cbd_2014_pathway:contaminant_on_plants,
-57574981,148438078,invasion stage,eng,established,
-57574926,148438079,native range,eng,North America,
-57574927,148438079,pathway,eng,cbd_2014_pathway:contaminant_on_plants,
-57574928,148438079,invasion stage,eng,introduced,
-57574730,148438084,native range,eng,Southern Africa,
-57574731,148438084,pathway,eng,cbd_2014_pathway:contaminant_on_plants,
-57574732,148438084,invasion stage,eng,introduced,
-57574733,148438087,native range,eng,Mallorca,
-57574734,148438087,pathway,eng,cbd_2014_pathway:contaminant_on_plants,
-57574735,148438087,invasion stage,eng,introduced,
-57574640,148438090,native range,eng,America,
-57574939,148438108,native range,eng,Asia,
-57574940,148438108,pathway,eng,cbd_2014_pathway:contaminant_on_plants,
-57574941,148438108,invasion stage,eng,introduced,
-57574611,148438110,native range,eng,Africa (WGSRPD:2),
-57574612,148438110,native range,eng,Asia,
-57574613,148438110,pathway,eng,cbd_2014_pathway:contaminant_on_plants,
-57574614,148438110,invasion stage,eng,introduced,
-57574608,148438113,native range,eng,"Cape Verde Is., Africa, Madagascar, Comoros",
-57574609,148438113,invasion stage,eng,introduced,
-57574973,148438117,native range,eng,Eastern Asia (WGSRPD:38),
-57574967,148438120,native range,eng,Asia,
-57574968,148438120,pathway,eng,cbd_2014_pathway:unaided,
-57574969,148438120,invasion stage,eng,introduced,
-57574977,148438126,native range,eng,Africa (WGSRPD:2),
-57574978,148438126,invasion stage,eng,established,
-57574862,148438128,native range,eng,Cosmopolitan,
-57574863,148438128,invasion stage,eng,established,
-57574857,148438130,native range,eng,Southern America (WGSRPD:8),
-57574858,148438130,pathway,eng,cbd_2014_pathway:contaminant_on_plants,
-57574859,148438130,invasion stage,eng,established,
-57574923,148438132,invasion stage,eng,introduced,
-57574806,148438133,invasion stage,eng,introduced,
-57574768,148438135,native range,eng,Europe (WGSRPD:1),
-57574769,148438135,invasion stage,eng,introduced,
-57574753,148438137,native range,eng,Cosmopolitan,
-57574754,148438137,invasion stage,eng,introduced,
-57574748,148438138,native range,eng,Cosmopolitan,
-57574749,148438138,invasion stage,eng,introduced,
-57574934,148438140,native range,eng,Europe (WGSRPD:1),
-57574935,148438140,invasion stage,eng,established,
-57574728,148438141,native range,eng,Cosmopolitan,
-57574729,148438141,invasion stage,eng,established,
-57574711,148438143,native range,eng,Cosmopolitan,
-57574712,148438143,invasion stage,eng,introduced,
-57574686,148438145,native range,eng,Southeast Asia,
-57574687,148438145,invasion stage,eng,introduced,
-57574673,148438147,native range,eng,Europe (WGSRPD:1),
-57574674,148438147,pathway,eng,cbd_2014_pathway:contaminant_on_plants,
-57574675,148438147,invasion stage,eng,established,
-57574637,148438149,native range,eng,Europe (WGSRPD:1),
-57574638,148438149,pathway,eng,cbd_2014_pathway:contaminant_timber,
-57574639,148438149,invasion stage,eng,introduced,
-57574606,148438151,native range,eng,Cosmopolitan,
-57574607,148438151,invasion stage,eng,established,
-57574622,148438155,native range,eng,Southern Asia,
-57574623,148438155,pathway,eng,cbd_2014_pathway:contaminant_animal_parasite,
-57574624,148438155,invasion stage,eng,established,
-57574603,148438158,native range,eng,Southern Asia,
-57574604,148438158,pathway,eng,cbd_2014_pathway:contaminant_animal_parasite,
-57574605,148438158,invasion stage,eng,established,
-57574961,148438161,native range,eng,Central And South America,
-57574962,148438161,pathway,eng,cbd_2014_pathway:stowaway_container,
-57574963,148438161,invasion stage,eng,introduced,
-57574929,148438163,native range,eng,"Mediterranean To Turkey, Israel",
-57574930,148438163,invasion stage,eng,introduced,
-57574887,148438165,native range,eng,Tasmania (WGSRPD:50_TAS),
-57574888,148438165,invasion stage,eng,introduced,
-57574766,148438167,native range,eng,"North, Central And South America",
-57574767,148438167,invasion stage,eng,introduced,
-57574924,148438169,native range,eng,"Eastern Palearctic Including China, Korea, Japan",
-57574925,148438169,invasion stage,eng,established,
-57574829,148438170,native range,eng,Mediterranean To Central Asia,
-57574830,148438170,invasion stage,eng,introduced,
-57574701,148438171,native range,eng,Macaronesia,
-57574702,148438171,invasion stage,eng,introduced,
-57574850,148438173,native range,eng,"India, Southeast Asia To Australia, New Zealand",
-57574851,148438173,pathway,eng,cbd_2014_pathway:stowaway_container,
-57574852,148438173,invasion stage,eng,introduced,
-57574761,148438174,native range,eng,Probably Native To North America Only,
-57574762,148438174,pathway,eng,cbd_2014_pathway:stowaway_container,
-57574763,148438174,invasion stage,eng,introduced,
-57574676,148438175,native range,eng,North America,
-57574677,148438175,pathway,eng,cbd_2014_pathway:stowaway_container,
-57574678,148438175,invasion stage,eng,introduced,
-57574628,148438176,native range,eng,Africa (WGSRPD:2),
-57574629,148438176,pathway,eng,cbd_2014_pathway:stowaway_container,
-57574630,148438176,invasion stage,eng,introduced,
-57574802,148438178,native range,eng,Australia,
-57574803,148438178,invasion stage,eng,introduced,
-57574601,148438179,native range,eng,Africa (WGSRPD:2),
-57574602,148438179,invasion stage,eng,introduced,
-57574688,148438190,native range,eng,Australia,
-57574797,148438193,native range,eng,China (WGSRPD:36),
-57574798,148438193,native range,eng,Japan (WGSRPD:38_JAP),
-57574799,148438193,pathway,eng,cbd_2014_pathway:contaminant_on_plants,
-57574800,148438193,invasion stage,eng,established,
-57574705,148438195,native range,eng,Asia,
-57574706,148438195,pathway,eng,cbd_2014_pathway:contaminant_on_plants,
-57574707,148438195,invasion stage,eng,introduced,
-57574670,148438196,native range,eng,Asia,
-57574671,148438196,pathway,eng,cbd_2014_pathway:stowaway_organic_packing,
-57574672,148438196,invasion stage,eng,introduced,
-57574936,148438199,native range,eng,Canary Islands (WGSRPD:21_CNY),
-57574937,148438199,pathway,eng,cbd_2014_pathway:stowaway_people_luggage,
-57574938,148438199,invasion stage,eng,introduced,
-57574716,148438201,native range,eng,Australia,
-57574717,148438201,pathway,eng,cbd_2014_pathway:release_biological_control,
-57574718,148438201,invasion stage,eng,introduced,
-57574867,148438203,native range,eng,Australia,
-57574868,148438203,pathway,eng,cbd_2014_pathway:release_biological_control,
-57574869,148438203,invasion stage,eng,introduced,
-57574719,148438204,native range,eng,Australia,
-57574720,148438204,pathway,eng,cbd_2014_pathway:release_biological_control,
-57574721,148438204,invasion stage,eng,introduced,
-57574641,148438206,native range,eng,North America,
-57574642,148438206,pathway,eng,cbd_2014_pathway:release_biological_control,
-57574643,148438206,invasion stage,eng,introduced,
-57574598,148438208,native range,eng,Asia,
-57574599,148438208,pathway,eng,cbd_2014_pathway:release_biological_control,
-57574600,148438208,invasion stage,eng,established,
-57574853,148438212,native range,eng,Asia,
-57574854,148438212,pathway,eng,cbd_2014_pathway:contaminant_on_plants,
-57574855,148438212,invasion stage,eng,introduced,
-57574776,148438215,pathway,eng,cbd_2014_pathway:stowaway_other,
-57574777,148438215,invasion stage,eng,introduced,
-57574982,148438218,native range,eng,Southern Europe,
-57574983,148438218,pathway,eng,cbd_2014_pathway:stowaway_vehicles,
-57574984,148438218,invasion stage,eng,established,
-57574759,148438220,pathway,eng,cbd_2014_pathway:unknown,
-57574760,148438220,invasion stage,eng,introduced,
-57574654,148438223,native range,eng,Southern Europe,
-57574655,148438223,pathway,eng,cbd_2014_pathway:contaminant_habitat_material,
-57574656,148438223,pathway,eng,cbd_2014_pathway:stowaway_vehicles,
-57574657,148438223,invasion stage,eng,introduced,
-57574921,148438226,native range,eng,Southeast Asia,
-57574922,148438226,invasion stage,eng,introduced,
-57574827,148438228,invasion stage,eng,introduced,
-57574679,148438230,pathway,eng,cbd_2014_pathway:stowaway_other,
-57574680,148438230,invasion stage,eng,established,
-57574597,148438232,invasion stage,eng,introduced,

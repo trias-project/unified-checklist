@@ -76,14 +76,13 @@ taxa <-
   filter(origin == "SOURCE") # Keep only source taxa, not denormed higher classification taxa
 ```
 
-2. Select columns of interest, rename `key` to `taxonKey` and sort by `taxonKey`.
+2. Select columns of interest, rename `key` to `taxonKey`.
 
 ```{r get_taxa-6}
 taxa <-
   taxa %>%
   select(key, scientificName, taxonID, datasetKey, nameType, issues, nubKey) %>%
-  rename(taxonKey = key) %>%
-  arrange(taxonKey)
+  rename(taxonKey = key)
 ```
 
 3. Convert the column `issues` from a list to a concatenated string.
@@ -91,13 +90,8 @@ taxa <-
 ```{r get_taxa-7}
 taxa <-
   taxa %>%
-  group_by_at(vars(-issues)) %>%
-  summarize(issues = str_c(issues, collapse = ",")) %>%
-  ungroup() %>%
-  mutate(
-    issues = na_if(issues, "NULL"),
-    issues = na_if(issues, "NA")
-  )
+  mutate(issues = sapply(issues, toString)) %>%
+  mutate(issues = na_if(issues, "NA")) # Set "NA" strings to real NA
 ```
 
 4. Preview checklist taxa:

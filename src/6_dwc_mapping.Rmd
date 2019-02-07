@@ -293,7 +293,7 @@ taxon %<>% mutate(dwc_family = family)
 
 #### genus
 
-Inspect differences between `genus` and `canonicalName_genus`:
+`genus` is part of the higher classification, which is provided by the GBIF Backbone Taxonomy. We will use that, but note that for some synonyms it might differ from the genus in the scientific name:
 
 ```{r}
 taxon %>%
@@ -301,10 +301,8 @@ taxon %>%
   select(verificationKey, scientificName, genus, canonicalName_genus, taxonomicStatus)
 ```
 
-The `genus` under which the GBIF Backbone Taxonomy has classified a taxon can differ from the genus in the scientific name. Since we consider all our taxa as accepted taxa, we take the genus from the scientific name (i.e. the `canonicalName_genus`).
-
 ```{r echo = TRUE}
-taxon %<>% mutate(dwc_genus = canonicalName_genus)
+taxon %<>% mutate(dwc_genus = genus)
 ```
 
 #### specificEpithet

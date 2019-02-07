@@ -262,7 +262,7 @@ taxon %<>% mutate(dwc_scientificName = scientificName)
 ```{r echo = TRUE}
 taxon %<>% mutate(dwc_acceptedNameUsage = case_when(
   is.na(acceptedName) ~ scientificName, # If empty acceptedName, use scientificName
-  TRUE ~ acceptedName
+  TRUE ~ as.character(acceptedName)
 ))
 ```
 

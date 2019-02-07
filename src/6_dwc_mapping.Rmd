@@ -569,8 +569,8 @@ Combine three source columns and remove `NA`:
 
 ```{r echo = TRUE}
 distribution %<>% mutate(dwc_source = 
-  paste(source_1, source_2, source_3, sep = ", ") %>%
-  str_remove_all(", NA")
+  paste(source_1, source_2, source_3, sep = " | ") %>%
+  str_remove_all(" \\| NA")
 )
 ```
 

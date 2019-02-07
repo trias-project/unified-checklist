@@ -723,7 +723,7 @@ species_profile %>% head()
 5. Save to [CSV](https://github.com/trias-project/unified-checklist/blob/master/data/processed/speciesprofile.csv).
 
 ```{r}
-write.csv(species_profile, here("data", "processed", "speciesprofile.csv"), na = "")
+write_csv(species_profile, here("data", "processed", "speciesprofile.csv"), na = "")
 ```
 
 ## Description extension {#description-extension}

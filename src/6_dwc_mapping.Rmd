@@ -5,11 +5,11 @@ In this chapter we standardize the unified information to a Darwin Core checklis
 ## Read unified data
 
 ```{r echo = TRUE}
-checklists <- read_csv(here("data", "raw", "checklists.csv"), col_types = "ccTcccc")
-input_taxa <- read_csv(here("data", "interim", "taxa_unified.csv"), col_types = "icicccccccccicccccciccc")
-input_distributions <- read_csv(here("data", "interim", "distributions_unified.csv"), col_types = "iiicic")
-input_speciesprofiles <- read_csv(here("data", "interim", "speciesprofiles_unified.csv"), col_types = "illlcic")
-input_descriptions <- read_csv(here("data", "interim", "descriptions_unified.csv"), col_types = "icccic")
+checklists <- read_csv(here("data", "raw", "checklists.csv"))
+input_taxa <- read_csv(here("data", "interim", "taxa_unified.csv"))
+input_distributions <- read_csv(here("data", "interim", "distributions_unified.csv"))
+input_speciesprofiles <- read_csv(here("data", "interim", "speciesprofiles_unified.csv"))
+input_descriptions <- read_csv(here("data", "interim", "descriptions_unified.csv"))
 ```
 
 ## Preview data

@@ -23,18 +23,76 @@ distributions | `r nrow(input_distributions)`
 speciesprofiles | `r nrow(input_speciesprofiles)`
 descriptions | `r nrow(input_descriptions)`
 
-2. Number of taxa per kingdom and rank:
+2. Number of taxa per checklist:
 
 ```{r}
 input_taxa %>%
-  group_by(kingdom, rank) %>%
+  
+  # Separate datasetKeys on "|" in as many columns as there are checklists
+  separate(
+    datasetKeys,
+    into = c(paste("source", 1:nrow(checklists), sep = "_")),
+    sep = "\\|",
+    remove = FALSE,
+    fill = "right"
+  ) %>%
+  
+  # Add column whether contributing source is unique
+  mutate(unique_shared = case_when(
+    is.na(source_2) ~ "unique", # If there is no second source, it is unique
+    TRUE ~ "shared"
+  )) %>%
+  
+  # Gather to one row per source (multiple rows)
+  gather(
+    key = position,
+    value = source,
+    paste("source", 1:nrow(checklists), sep = "_"),
+    na.rm = TRUE,
+    convert = FALSE
+  ) %>%
+  
+  # Group by source dataset and whether it is unique or not
+  group_by(source, unique_shared) %>%
+  summarize(count = n()) %>%
+  
+  # Create count per column shared vs unique
+  spread(unique_shared, count) %>%
+  ungroup() %>%
+  rename(datasetKey = source) %>%
+  
+  # Join with checklist information (right join to get checklist order)
+  right_join(
+    checklists,
+    by = "datasetKey"
+  ) %>%
+  select(doi, unique, shared, title, datasetKey) %>%
+  adorn_totals("row")
+```
+
+3. Number of taxa per kingdom:
+
+```{r}
+input_taxa %>%
+  group_by(kingdom) %>%
   summarize(
     `taxa` = n()
   ) %>%
   adorn_totals("row")
 ```
 
-3. Number of taxa and descriptions per type:
+4. Number of taxa per rank:
+
+```{r}
+input_taxa %>%
+  group_by(rank) %>%
+  summarize(
+    `taxa` = n()
+  ) %>%
+  adorn_totals("row")
+```
+
+5. Number of taxa and descriptions per type:
 
 ```{r}
 input_descriptions %>%

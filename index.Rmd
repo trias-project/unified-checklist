@@ -1,6 +1,6 @@
 ---
-title: "National, unified checklist of alien species in Belgium"
-author: Peter Desmet, Damiano Oldoni, Lien Reyserhove
+title: "Global Register of Introduced and Invasive Species - Belgium"
+author: Peter Desmet, Lien Reyserhove, Damiano Oldoni
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 github-repo: trias-project/unified-checklist
@@ -25,9 +25,12 @@ knitr::opts_chunk$set(
 )
 ```
 
-# Intro
-
 This document contains and describes all the steps in creating a unified checklist of alien species in Belgium and was developed for the [Tracking Invasive Alien Species (TrIAS) project](http://trias-project.be). By running this document in R, it will create all the necessary data files for the unified checklist.
+
+For more general information, see:
+
+- [GitHub repository](https://github.com/trias-project/unified-checklist)
+- [Dataset published on GBIF](https://doi.org/10.15468/xoidmd)
 
 Load libraries:
 

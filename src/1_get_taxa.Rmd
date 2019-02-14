@@ -208,7 +208,8 @@ backbone_info <-
     "bb_rank",
     "bb_taxonomicStatus",
     "bb_acceptedKey", 
-    "bb_acceptedName"
+    "bb_acceptedName",
+    "bb_speciesKey"
   )
 ```
 

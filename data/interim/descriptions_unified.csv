@@ -7394,6 +7394,8 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 5864277,native range,Southern Europe,289244ee-e1c1-49aa-b2d7-d379391ce265,140562997,Gammarus roeseli
 5864277,pathway,cbd_2014_pathway:corridor_water,289244ee-e1c1-49aa-b2d7-d379391ce265,140562997,Gammarus roeseli
 5879783,native range,Africa (WGSRPD:2),1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438075,"Thaumatotibia leucotreta (Meyrick, 1913)"
+5890148,invasion stage,established,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437702,"Anguillicola crassus Kuwahara, Niimi & Itagaki, 1974"
+5890148,pathway,cbd_2014_pathway:contaminant_animal_parasite,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437702,"Anguillicola crassus Kuwahara, Niimi & Itagaki, 1974"
 5914287,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264585,Melia azedarach L.
 5914287,native range,Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264585,Melia azedarach L.
 5914287,native range,Australasia (WGSRPD:5),9ff7d317-609b-4c08-bd86-3bc404b77c42,141264585,Melia azedarach L.

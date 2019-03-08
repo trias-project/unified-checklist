@@ -489,7 +489,7 @@ taxon %<>% select(starts_with("dwc_"))
 2. Drop the `dwc_` prefix.
   
 ```{r}
-colnames(taxon) <- str_replace(colnames(taxon), "dwc_", "")
+colnames(taxon) <- str_remove(colnames(taxon), "dwc_")
 ```
 
 3. Sort on `taxonID`.
@@ -643,7 +643,7 @@ distribution %<>% select(starts_with("dwc_"))
 2. Drop the `dwc_` prefix.
   
 ```{r}
-colnames(distribution) <- str_replace(colnames(distribution), "dwc_", "")
+colnames(distribution) <- str_remove(colnames(distribution), "dwc_")
 ```
 
 3. Sort on `taxonID`.
@@ -763,7 +763,7 @@ species_profile %<>% select(starts_with("dwc_"))
 2. Drop the `dwc_` prefix.
   
 ```{r}
-colnames(species_profile) <- str_replace(colnames(species_profile), "dwc_", "")
+colnames(species_profile) <- str_remove(colnames(species_profile), "dwc_")
 ```
 
 3. Sort on `taxonID`.
@@ -844,7 +844,7 @@ description %<>% select(starts_with("dwc_"))
 2. Drop the `dwc_` prefix.
   
 ```{r}
-colnames(description) <- str_replace(colnames(description), "dwc_", "")
+colnames(description) <- str_remove(colnames(description), "dwc_")
 ```
 
 3. Sort on `taxonID`.

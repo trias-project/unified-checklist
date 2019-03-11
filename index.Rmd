@@ -40,6 +40,7 @@ library(tidylog)        # To provide feedback on dplyr functions
 library(magrittr)       # To use %<>% pipes
 library(here)           # To find files
 library(janitor)        # To clean input data
+library(openxlsx)       # To write Excel files
 library(digest)         # To generate hashes
 library(rgbif)          # To use GBIF services
 

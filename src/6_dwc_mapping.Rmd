@@ -339,7 +339,7 @@ taxon %<>% mutate(dwc_phylum = phylum)
 #### class
 
 ```{r echo = TRUE}
-taxon %<>% mutate(dwc_phylum = class)
+taxon %<>% mutate(dwc_class = class)
 ```
 
 #### order

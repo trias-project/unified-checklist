@@ -18,6 +18,7 @@ verificationKey,startYear,endYear,datasetKey,taxonKeys,scientificNames
 1032377,2004,2011,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438158,"Hoplopleura erismata Ferris, 1921"
 1043717,2018,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438201,"Cryptolaemus montrouzieri Mulsant, 1853"
 1043978,2018,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438188,"Stelidota geminata (Say, 1825)"
+1152186,2006,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438193,"Callidiellum rufipenne Niisato, 2007"
 1311477,2011,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438120,"Vespa velutina Lepeletier, 1836"
 1313740,1998,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438149,"Camponotus vagus (Scopoli, 1763)"
 1314773,1911,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438126,"Monomorium pharaonis (Linnaeus, 1758)"
@@ -59,6 +60,7 @@ verificationKey,startYear,endYear,datasetKey,taxonKeys,scientificNames
 1749449,1999,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438078,"Cameraria ohridella Deschka & Dimic, 1986"
 1932752,1991,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438084,"Cacyreus marshalli Butler, 1898"
 1941864,2011,2011,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438087,"Paysandisia archon (Burmeister, 1880)"
+2115692,1998,2016,289244ee-e1c1-49aa-b2d7-d379391ce265,140562982,Megabalanus tintinnabulum
 2115717,1800,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437909,Balanus improvisus
 2115769,1950,2016,289244ee-e1c1-49aa-b2d7-d379391ce265,140562976,Austrominius modestus
 2138649,1997,1997,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437974,Mermessus denticulatus (Banks 1898)
@@ -135,6 +137,7 @@ verificationKey,startYear,endYear,datasetKey,taxonKeys,scientificNames
 2284443,2004,2011,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437709,Mastophorus
 2286079,1960,2017,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042468,Crassostrea virginica (Gmelin 1791)
 2287072,1834,2016,289244ee-e1c1-49aa-b2d7-d379391ce265,140562946,Dreissena polymorpha
+2287073,2009,2016,289244ee-e1c1-49aa-b2d7-d379391ce265,140562945,Dreissena rostriformis bugensis
 2287076,1835,2016,289244ee-e1c1-49aa-b2d7-d379391ce265,140562944,Mytilopsis leucophaeata
 2287249,1987,2016,289244ee-e1c1-49aa-b2d7-d379391ce265,140562922,Ensis directus
 2287615,1899,2016,289244ee-e1c1-49aa-b2d7-d379391ce265,140562949,Petricolaria pholadiformis
@@ -182,6 +185,7 @@ verificationKey,startYear,endYear,datasetKey,taxonKeys,scientificNames
 2431875,2011,2012,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437851,"Pleurodeles waltl Michahelles, 1830"
 2431886,2018,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437847,"Triturus marmoratus (Latreille, 1800)"
 2433536,2007,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437823,"Nasua nasua (Linnaeus, 1766)"
+2433652,1987,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437826,"Mustela vison Schreber, 1777"
 2434552,2018,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437817,"Nyctereutes procyonoides (Gray, 1834)"
 2435035,2018,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437813,"Felis catus Linnaeus, 1758"
 2435451,2007,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437746,"Sarcophilus harrisii (Boitard, 1841)"
@@ -1578,6 +1582,7 @@ verificationKey,startYear,endYear,datasetKey,taxonKeys,scientificNames
 5204019,1884,2018,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117245,Oncorhynchus mykiss
 5204034,,,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042340,Oncorhynchus kisutch (Walbaum 1792)
 5208832,2018,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437854,"Gobiosoma bosc (Lacepède, 1800)"
+5211250,1873,2017,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042378,"Micropterus dolomieui Lacepède, 1802"
 5216933,2010,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437858,"Rhinella marina (Linnaeus, 1758)"
 5217334,2018,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437861,"Xenopus laevis (Daudin, 1802)"
 5218786,2018,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437821,"Procyon lotor (Linnaeus, 1758)"
@@ -2118,9 +2123,11 @@ verificationKey,startYear,endYear,datasetKey,taxonKeys,scientificNames
 5831060,2003,2018,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265136,Crepis foetida L. subsp. rhoeadifolia (Bieb.) Čelak.
 5831068,1948,2017,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265243,Crepis sancta (L.) Bornm. subsp. nemausensis (Vill.) Babc.
 5831906,1886,2010,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266078,Bupleurum gerardi All.
+5851603,1984,2018,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117238,Aspius aspius
 5864277,1937,2016,289244ee-e1c1-49aa-b2d7-d379391ce265,140562997,Gammarus roeseli
 5879783,2016,2016,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438075,"Thaumatotibia leucotreta (Meyrick, 1913)"
 5890148,1985,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437702,"Anguillicola crassus Kuwahara, Niimi & Itagaki, 1974"
+5892120,2004,2016,289244ee-e1c1-49aa-b2d7-d379391ce265,140562916,Dugesia tigrina
 5914287,2006,2006,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264585,Melia azedarach L.
 5930559,2006,2017,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264719,Ilex x altaclerensis
 6026665,1999,2014,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266079,Torilis africana Spreng.
@@ -2492,6 +2499,7 @@ verificationKey,startYear,endYear,datasetKey,taxonKeys,scientificNames
 8871276,2009,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437987,Neuroctenus lestoni
 8911082,1835,2018,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266183,Amaranthus blitum L. s.l.
 8925248,1904,1904,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266582,Galium parisiense L. var. parisiense
+8946295,1986,2016,289244ee-e1c1-49aa-b2d7-d379391ce265,140563021,Astacus leptodactylus
 8949622,1912,1934,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266839,Verbascum chaixii Vill.
 8969026,1976,2016,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266967,Physalis philadelphica Lam.
 8993502,2005,2018,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267186,Silene italica (L.) Pers.

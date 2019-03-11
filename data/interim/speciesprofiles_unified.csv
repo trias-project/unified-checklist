@@ -18,6 +18,7 @@ verificationKey,marine,freshwater,terrestrial,datasetKey,taxonKey,scientificName
 1032377,FALSE,FALSE,TRUE,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438158,"Hoplopleura erismata Ferris, 1921"
 1043717,FALSE,FALSE,TRUE,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438201,"Cryptolaemus montrouzieri Mulsant, 1853"
 1043978,FALSE,FALSE,TRUE,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438188,"Stelidota geminata (Say, 1825)"
+1152186,FALSE,FALSE,TRUE,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438193,"Callidiellum rufipenne Niisato, 2007"
 1311477,FALSE,FALSE,TRUE,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438120,"Vespa velutina Lepeletier, 1836"
 1313740,FALSE,FALSE,TRUE,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438149,"Camponotus vagus (Scopoli, 1763)"
 1314773,FALSE,FALSE,TRUE,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438126,"Monomorium pharaonis (Linnaeus, 1758)"
@@ -59,6 +60,7 @@ verificationKey,marine,freshwater,terrestrial,datasetKey,taxonKey,scientificName
 1749449,FALSE,FALSE,TRUE,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438078,"Cameraria ohridella Deschka & Dimic, 1986"
 1932752,FALSE,FALSE,TRUE,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438084,"Cacyreus marshalli Butler, 1898"
 1941864,FALSE,FALSE,TRUE,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438087,"Paysandisia archon (Burmeister, 1880)"
+2115692,TRUE,FALSE,FALSE,289244ee-e1c1-49aa-b2d7-d379391ce265,140562982,Megabalanus tintinnabulum
 2115769,TRUE,FALSE,FALSE,289244ee-e1c1-49aa-b2d7-d379391ce265,140562976,Austrominius modestus
 2138649,FALSE,FALSE,TRUE,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437974,Mermessus denticulatus (Banks 1898)
 2140406,FALSE,FALSE,TRUE,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437994,"Triaeris stenaspis Simon, 1891"
@@ -134,6 +136,7 @@ verificationKey,marine,freshwater,terrestrial,datasetKey,taxonKey,scientificName
 2284443,FALSE,FALSE,TRUE,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437709,Mastophorus
 2286079,TRUE,FALSE,FALSE,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042468,Crassostrea virginica (Gmelin 1791)
 2287072,FALSE,TRUE,FALSE,289244ee-e1c1-49aa-b2d7-d379391ce265,140562946,Dreissena polymorpha
+2287073,FALSE,TRUE,FALSE,289244ee-e1c1-49aa-b2d7-d379391ce265,140562945,Dreissena rostriformis bugensis
 2287076,FALSE,TRUE,FALSE,289244ee-e1c1-49aa-b2d7-d379391ce265,140562944,Mytilopsis leucophaeata
 2287249,TRUE,FALSE,FALSE,289244ee-e1c1-49aa-b2d7-d379391ce265,140562922,Ensis directus
 2287615,TRUE,FALSE,FALSE,289244ee-e1c1-49aa-b2d7-d379391ce265,140562949,Petricolaria pholadiformis
@@ -180,6 +183,7 @@ verificationKey,marine,freshwater,terrestrial,datasetKey,taxonKey,scientificName
 2431875,FALSE,TRUE,FALSE,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437851,"Pleurodeles waltl Michahelles, 1830"
 2431886,FALSE,TRUE,FALSE,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437847,"Triturus marmoratus (Latreille, 1800)"
 2433536,FALSE,FALSE,TRUE,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437823,"Nasua nasua (Linnaeus, 1766)"
+2433652,FALSE,FALSE,TRUE,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437826,"Mustela vison Schreber, 1777"
 2434552,FALSE,FALSE,TRUE,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437817,"Nyctereutes procyonoides (Gray, 1834)"
 2435035,FALSE,FALSE,TRUE,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437813,"Felis catus Linnaeus, 1758"
 2435451,FALSE,FALSE,TRUE,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437746,"Sarcophilus harrisii (Boitard, 1841)"
@@ -1557,6 +1561,7 @@ verificationKey,marine,freshwater,terrestrial,datasetKey,taxonKey,scientificName
 5203111,FALSE,TRUE,FALSE,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117253,Umbra pygmaea
 5204019,FALSE,TRUE,FALSE,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117245,Oncorhynchus mykiss
 5204034,TRUE,TRUE,FALSE,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042340,Oncorhynchus kisutch (Walbaum 1792)
+5211250,FALSE,TRUE,FALSE,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042378,"Micropterus dolomieui Lacepède, 1802"
 5216933,FALSE,TRUE,FALSE,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437858,"Rhinella marina (Linnaeus, 1758)"
 5217334,FALSE,TRUE,FALSE,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437861,"Xenopus laevis (Daudin, 1802)"
 5218786,FALSE,FALSE,TRUE,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437821,"Procyon lotor (Linnaeus, 1758)"
@@ -2096,9 +2101,11 @@ verificationKey,marine,freshwater,terrestrial,datasetKey,taxonKey,scientificName
 5831060,FALSE,FALSE,TRUE,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265136,Crepis foetida L. subsp. rhoeadifolia (Bieb.) Čelak.
 5831068,FALSE,FALSE,TRUE,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265243,Crepis sancta (L.) Bornm. subsp. nemausensis (Vill.) Babc.
 5831906,FALSE,FALSE,TRUE,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266078,Bupleurum gerardi All.
+5851603,FALSE,TRUE,FALSE,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117238,Aspius aspius
 5864277,FALSE,TRUE,FALSE,289244ee-e1c1-49aa-b2d7-d379391ce265,140562997,Gammarus roeseli
 5879783,FALSE,FALSE,TRUE,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438075,"Thaumatotibia leucotreta (Meyrick, 1913)"
 5890148,TRUE,TRUE,FALSE,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437702,"Anguillicola crassus Kuwahara, Niimi & Itagaki, 1974"
+5892120,FALSE,TRUE,FALSE,289244ee-e1c1-49aa-b2d7-d379391ce265,140562916,Dugesia tigrina
 5914287,FALSE,FALSE,TRUE,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264585,Melia azedarach L.
 5930559,FALSE,FALSE,TRUE,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264719,Ilex x altaclerensis
 6026665,FALSE,FALSE,TRUE,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266079,Torilis africana Spreng.
@@ -2469,6 +2476,7 @@ verificationKey,marine,freshwater,terrestrial,datasetKey,taxonKey,scientificName
 8871276,FALSE,FALSE,TRUE,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437987,Neuroctenus lestoni
 8911082,FALSE,FALSE,TRUE,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266183,Amaranthus blitum L. s.l.
 8925248,FALSE,FALSE,TRUE,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266582,Galium parisiense L. var. parisiense
+8946295,FALSE,TRUE,FALSE,289244ee-e1c1-49aa-b2d7-d379391ce265,140563021,Astacus leptodactylus
 8949622,FALSE,FALSE,TRUE,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266839,Verbascum chaixii Vill.
 8969026,FALSE,FALSE,TRUE,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266967,Physalis philadelphica Lam.
 8993502,FALSE,FALSE,TRUE,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267186,Silene italica (L.) Pers.

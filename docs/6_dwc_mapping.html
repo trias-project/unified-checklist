@@ -25,7 +25,7 @@
 <meta name="author" content="Peter Desmet, Lien Reyserhove, Damiano Oldoni">
 
 
-<meta name="date" content="2019-02-14">
+<meta name="date" content="2019-03-11">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -33,7 +33,7 @@
   
   
 <link rel="prev" href="5_unify_information.html">
-
+<link rel="next" href="7_griis_mapping.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -189,6 +189,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="6.7.3" data-path="6_dwc_mapping.html"><a href="6_dwc_mapping.html#post-processing-3"><i class="fa fa-check"></i><b>6.7.3</b> Post-processing</a></li>
 </ul></li>
 </ul></li>
+<li class="chapter" data-level="7" data-path="7_griis_mapping.html"><a href="7_griis_mapping.html"><i class="fa fa-check"></i><b>7</b> GRIIS mapping</a><ul>
+<li class="chapter" data-level="7.1" data-path="7_griis_mapping.html"><a href="7_griis_mapping.html#read-darwin-core-data"><i class="fa fa-check"></i><b>7.1</b> Read Darwin Core data</a></li>
+<li class="chapter" data-level="7.2" data-path="7_griis_mapping.html"><a href="7_griis_mapping.html#griis-format"><i class="fa fa-check"></i><b>7.2</b> GRIIS format</a><ul>
+<li class="chapter" data-level="7.2.1" data-path="7_griis_mapping.html"><a href="7_griis_mapping.html#pre-processing-3"><i class="fa fa-check"></i><b>7.2.1</b> Pre-processing</a></li>
+<li class="chapter" data-level="7.2.2" data-path="7_griis_mapping.html"><a href="7_griis_mapping.html#term-mapping-4"><i class="fa fa-check"></i><b>7.2.2</b> Term mapping</a></li>
+<li class="chapter" data-level="7.2.3" data-path="7_griis_mapping.html"><a href="7_griis_mapping.html#eventdate-1"><i class="fa fa-check"></i><b>7.2.3</b> eventDate</a></li>
+</ul></li>
+<li class="chapter" data-level="7.3" data-path="7_griis_mapping.html"><a href="7_griis_mapping.html#post-processing-4"><i class="fa fa-check"></i><b>7.3</b> Post-processing</a></li>
+</ul></li>
 </ul>
 
       </nav>
@@ -232,19 +241,19 @@ input_descriptions &lt;-<span class="st"> </span><span class="kw">read_csv</span
 <tbody>
 <tr class="odd">
 <td>taxa</td>
-<td>2530</td>
+<td>2538</td>
 </tr>
 <tr class="even">
 <td>distributions</td>
-<td>2530</td>
+<td>2538</td>
 </tr>
 <tr class="odd">
 <td>speciesprofiles</td>
-<td>2507</td>
+<td>2515</td>
 </tr>
 <tr class="even">
 <td>descriptions</td>
-<td>8836</td>
+<td>8885</td>
 </tr>
 </tbody>
 </table>
@@ -253,7 +262,7 @@ input_descriptions &lt;-<span class="st"> </span><span class="kw">read_csv</span
 </ol>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
-{"columns":[{"label":["doi"],"name":[1],"type":["chr"],"align":["left"]},{"label":["unique"],"name":[2],"type":["int"],"align":["right"]},{"label":["shared"],"name":[3],"type":["int"],"align":["right"]},{"label":["title"],"name":[4],"type":["chr"],"align":["left"]},{"label":["datasetKey"],"name":[5],"type":["chr"],"align":["left"]}],"data":[{"1":"https://doi.org/10.15468/wtda1m","2":"2113","3":"43","4":"Manual of the Alien Plants of Belgium","5":"9ff7d317-609b-4c08-bd86-3bc404b77c42"},{"1":"https://doi.org/10.15468/yxcq07","2":"52","3":"14","4":"Inventory of alien macroinvertebrates in Flanders, Belgium","5":"289244ee-e1c1-49aa-b2d7-d379391ce265"},{"1":"https://doi.org/10.15468/xvuzfh","2":"8","3":"16","4":"Checklist of non-native freshwater fishes in Flanders, Belgium","5":"98940a79-2bf1-46e6-afd6-ba2e85a26f9f"},{"1":"https://doi.org/10.15468/2dboyn","2":"12","3":"NA","4":"Catalogue of the Rust Fungi of Belgium","5":"b043c480-dd36-4f4f-aa82-e188753ff09d"},{"1":"https://doi.org/10.15468/3pmlxs","2":"218","3":"22","4":"Ad hoc checklist of alien species in Belgium","5":"1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2"},{"1":"https://doi.org/10.15468/guejza","2":"41","3":"84","4":"RINSE - Pathways and vectors of biological invasions in Northwest Europe","5":"1738f272-6b5d-4f43-9a92-453a8c5ea50a"},{"1":"https://doi.org/10.15468/39omei","2":"NA","3":"NA","4":"GBIF Backbone Taxonomy","5":"d7dddbf4-2cf0-4f39-9b2a-bb099caae36c"},{"1":"Total","2":"2444","3":"179","4":"-","5":"-"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+{"columns":[{"label":["doi"],"name":[1],"type":["chr"],"align":["left"]},{"label":["unique"],"name":[2],"type":["int"],"align":["right"]},{"label":["shared"],"name":[3],"type":["int"],"align":["right"]},{"label":["title"],"name":[4],"type":["chr"],"align":["left"]},{"label":["datasetKey"],"name":[5],"type":["chr"],"align":["left"]}],"data":[{"1":"https://doi.org/10.15468/wtda1m","2":"2113","3":"43","4":"Manual of the Alien Plants of Belgium","5":"9ff7d317-609b-4c08-bd86-3bc404b77c42"},{"1":"https://doi.org/10.15468/yxcq07","2":"53","3":"17","4":"Inventory of alien macroinvertebrates in Flanders, Belgium","5":"289244ee-e1c1-49aa-b2d7-d379391ce265"},{"1":"https://doi.org/10.15468/xvuzfh","2":"9","3":"16","4":"Checklist of non-native freshwater fishes in Flanders, Belgium","5":"98940a79-2bf1-46e6-afd6-ba2e85a26f9f"},{"1":"https://doi.org/10.15468/2dboyn","2":"12","3":"NA","4":"Catalogue of the Rust Fungi of Belgium","5":"b043c480-dd36-4f4f-aa82-e188753ff09d"},{"1":"https://doi.org/10.15468/3pmlxs","2":"219","3":"25","4":"Ad hoc checklist of alien species in Belgium","5":"1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2"},{"1":"https://doi.org/10.15468/guejza","2":"42","3":"88","4":"RINSE - Pathways and vectors of biological invasions in Northwest Europe","5":"1738f272-6b5d-4f43-9a92-453a8c5ea50a"},{"1":"https://doi.org/10.15468/39omei","2":"NA","3":"NA","4":"GBIF Backbone Taxonomy","5":"d7dddbf4-2cf0-4f39-9b2a-bb099caae36c"},{"1":"Total","2":"2448","3":"189","4":"-","5":"-"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
   </script>
 </div>
 <ol start="3" style="list-style-type: decimal">
@@ -261,7 +270,7 @@ input_descriptions &lt;-<span class="st"> </span><span class="kw">read_csv</span
 </ol>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
-{"columns":[{"label":["kingdom"],"name":[1],"type":["chr"],"align":["left"]},{"label":["taxa"],"name":[2],"type":["int"],"align":["right"]}],"data":[{"1":"Animalia","2":"342"},{"1":"Chromista","2":"1"},{"1":"Fungi","2":"20"},{"1":"Plantae","2":"2167"},{"1":"Total","2":"2530"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+{"columns":[{"label":["kingdom"],"name":[1],"type":["chr"],"align":["left"]},{"label":["taxa"],"name":[2],"type":["int"],"align":["right"]}],"data":[{"1":"Animalia","2":"350"},{"1":"Chromista","2":"1"},{"1":"Fungi","2":"20"},{"1":"Plantae","2":"2167"},{"1":"Total","2":"2538"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
   </script>
 </div>
 <ol start="4" style="list-style-type: decimal">
@@ -269,7 +278,7 @@ input_descriptions &lt;-<span class="st"> </span><span class="kw">read_csv</span
 </ol>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
-{"columns":[{"label":["rank"],"name":[1],"type":["chr"],"align":["left"]},{"label":["taxa"],"name":[2],"type":["int"],"align":["right"]}],"data":[{"1":"GENUS","2":"11"},{"1":"SPECIES","2":"2400"},{"1":"SUBSPECIES","2":"101"},{"1":"VARIETY","2":"18"},{"1":"Total","2":"2530"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+{"columns":[{"label":["rank"],"name":[1],"type":["chr"],"align":["left"]},{"label":["taxa"],"name":[2],"type":["int"],"align":["right"]}],"data":[{"1":"GENUS","2":"11"},{"1":"SPECIES","2":"2408"},{"1":"SUBSPECIES","2":"101"},{"1":"VARIETY","2":"18"},{"1":"Total","2":"2538"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
   </script>
 </div>
 <ol start="5" style="list-style-type: decimal">
@@ -277,7 +286,7 @@ input_descriptions &lt;-<span class="st"> </span><span class="kw">read_csv</span
 </ol>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
-{"columns":[{"label":["type"],"name":[1],"type":["chr"],"align":["left"]},{"label":["taxa"],"name":[2],"type":["int"],"align":["right"]},{"label":["unique taxa"],"name":[3],"type":["int"],"align":["right"]},{"label":["unique descriptions"],"name":[4],"type":["int"],"align":["right"]}],"data":[{"1":"invasion stage","2":"2400","3":"2399","4":"4"},{"1":"native range","2":"3674","3":"2420","4":"85"},{"1":"pathway","2":"2762","3":"2205","4":"37"},{"1":"Total","2":"8836","3":"7024","4":"126"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+{"columns":[{"label":["type"],"name":[1],"type":["chr"],"align":["left"]},{"label":["taxa"],"name":[2],"type":["int"],"align":["right"]},{"label":["unique taxa"],"name":[3],"type":["int"],"align":["right"]},{"label":["unique descriptions"],"name":[4],"type":["int"],"align":["right"]}],"data":[{"1":"invasion stage","2":"2407","3":"2406","4":"4"},{"1":"native range","2":"3690","3":"2428","4":"89"},{"1":"pathway","2":"2788","3":"2213","4":"38"},{"1":"Total","2":"8885","3":"7047","4":"131"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
   </script>
 </div>
 </div>
@@ -440,7 +449,7 @@ taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw
 </div>
 <div id="class" class="section level4">
 <h4><span class="header-section-number">6.4.2.15</span> class</h4>
-<pre class="sourceCode r"><code class="sourceCode r">taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_phylum =</span> class)</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r">taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_class =</span> class)</code></pre>
 </div>
 <div id="order" class="section level4">
 <h4><span class="header-section-number">6.4.2.16</span> order</h4>
@@ -473,7 +482,7 @@ taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw
 <p>Inspect values:</p>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
-{"columns":[{"label":["rank"],"name":[1],"type":["chr"],"align":["left"]},{"label":["n"],"name":[2],"type":["int"],"align":["right"]}],"data":[{"1":"GENUS","2":"11"},{"1":"SPECIES","2":"2400"},{"1":"SUBSPECIES","2":"101"},{"1":"VARIETY","2":"18"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+{"columns":[{"label":["rank"],"name":[1],"type":["chr"],"align":["left"]},{"label":["n"],"name":[2],"type":["int"],"align":["right"]}],"data":[{"1":"GENUS","2":"11"},{"1":"SPECIES","2":"2408"},{"1":"SUBSPECIES","2":"101"},{"1":"VARIETY","2":"18"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
   </script>
 </div>
 <p>Map values as is, in UPPERCASE, so it is clearer this information comes from the GBIF Backbone Taxonomy:</p>
@@ -488,7 +497,7 @@ taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw
 <p>Inspect values:</p>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
-{"columns":[{"label":["taxonomicStatus"],"name":[1],"type":["chr"],"align":["left"]},{"label":["n"],"name":[2],"type":["int"],"align":["right"]}],"data":[{"1":"ACCEPTED","2":"2464"},{"1":"DOUBTFUL","2":"53"},{"1":"PROPARTE_SYNONYM","2":"1"},{"1":"SYNONYM","2":"12"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+{"columns":[{"label":["taxonomicStatus"],"name":[1],"type":["chr"],"align":["left"]},{"label":["n"],"name":[2],"type":["int"],"align":["right"]}],"data":[{"1":"ACCEPTED","2":"2472"},{"1":"DOUBTFUL","2":"53"},{"1":"PROPARTE_SYNONYM","2":"1"},{"1":"SYNONYM","2":"12"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
   </script>
 </div>
 <p>Map values as is, in UPPERCASE, so it is clearer this information comes from the GBIF Backbone Taxonomy:</p>
@@ -514,7 +523,7 @@ taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw
 </ol>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
-{"columns":[{"label":["language"],"name":[1],"type":["chr"],"align":["left"]},{"label":["license"],"name":[2],"type":["chr"],"align":["left"]},{"label":["rightsHolder"],"name":[3],"type":["lgl"],"align":["right"]},{"label":["bibliographicCitation"],"name":[4],"type":["chr"],"align":["left"]},{"label":["datasetID"],"name":[5],"type":["chr"],"align":["left"]},{"label":["institutionCode"],"name":[6],"type":["chr"],"align":["left"]},{"label":["datasetName"],"name":[7],"type":["chr"],"align":["left"]},{"label":["references"],"name":[8],"type":["chr"],"align":["left"]},{"label":["taxonID"],"name":[9],"type":["chr"],"align":["left"]},{"label":["acceptedNameUsageID"],"name":[10],"type":["chr"],"align":["left"]},{"label":["scientificName"],"name":[11],"type":["chr"],"align":["left"]},{"label":["acceptedNameUsage"],"name":[12],"type":["chr"],"align":["left"]},{"label":["kingdom"],"name":[13],"type":["chr"],"align":["left"]},{"label":["phylum"],"name":[14],"type":["chr"],"align":["left"]},{"label":["order"],"name":[15],"type":["chr"],"align":["left"]},{"label":["family"],"name":[16],"type":["chr"],"align":["left"]},{"label":["genus"],"name":[17],"type":["chr"],"align":["left"]},{"label":["specificEpithet"],"name":[18],"type":["chr"],"align":["left"]},{"label":["infraspecificEpithet"],"name":[19],"type":["chr"],"align":["left"]},{"label":["taxonRank"],"name":[20],"type":["chr"],"align":["left"]},{"label":["scientificNameAuthorship"],"name":[21],"type":["chr"],"align":["left"]},{"label":["taxonomicStatus"],"name":[22],"type":["chr"],"align":["left"]},{"label":["taxonRemarks"],"name":[23],"type":["chr"],"align":["left"]}],"data":[{"1":"en","2":"http://creativecommons.org/licenses/by/4.0/legalcode","3":"NA","4":"https://www.gbif.org/species/1010644: Hanseniella caldaria (Hansen, 1903) in GBIF Secretariat (2017). GBIF Backbone Taxonomy. Checklist dataset https://doi.org/10.15468/39omei","5":"https://doi.org/10.15468/xoidmd","6":"ISSG","7":"Global Register of Introduced and Invasive Species - Belgium","8":"https://www.gbif.org/species/1010644","9":"https://www.gbif.org/species/1010644","10":"https://www.gbif.org/species/1010644","11":"Hanseniella caldaria (Hansen, 1903)","12":"Hanseniella caldaria (Hansen, 1903)","13":"Animalia","14":"Symphyla","15":"NA","16":"Scutigerellidae","17":"Hanseniella","18":"caldaria","19":"NA","20":"SPECIES","21":"(Hansen, 1903)","22":"ACCEPTED","23":"Sources considered for this taxon: https://doi.org/10.15468/3pmlxs"},{"1":"en","2":"http://creativecommons.org/licenses/by/4.0/legalcode","3":"NA","4":"https://www.gbif.org/species/1013526: Cylindroiulus britannicus (Verhoeff, 1891) in GBIF Secretariat (2017). GBIF Backbone Taxonomy. Checklist dataset https://doi.org/10.15468/39omei","5":"https://doi.org/10.15468/xoidmd","6":"ISSG","7":"Global Register of Introduced and Invasive Species - Belgium","8":"https://www.gbif.org/species/1013526","9":"https://www.gbif.org/species/1013526","10":"https://www.gbif.org/species/1013526","11":"Cylindroiulus britannicus (Verhoeff, 1891)","12":"Cylindroiulus britannicus (Verhoeff, 1891)","13":"Animalia","14":"Diplopoda","15":"Julida","16":"Julidae","17":"Cylindroiulus","18":"britannicus","19":"NA","20":"SPECIES","21":"(Verhoeff, 1891)","22":"ACCEPTED","23":"Sources considered for this taxon: https://doi.org/10.15468/3pmlxs"},{"1":"en","2":"http://creativecommons.org/licenses/by/4.0/legalcode","3":"NA","4":"https://www.gbif.org/species/1031394: Ectopsocus petersi Smithers, 1978 in GBIF Secretariat (2017). GBIF Backbone Taxonomy. Checklist dataset https://doi.org/10.15468/39omei","5":"https://doi.org/10.15468/xoidmd","6":"ISSG","7":"Global Register of Introduced and Invasive Species - Belgium","8":"https://www.gbif.org/species/1031394","9":"https://www.gbif.org/species/1031394","10":"https://www.gbif.org/species/1031394","11":"Ectopsocus petersi Smithers, 1978","12":"Ectopsocus petersi Smithers, 1978","13":"Animalia","14":"Insecta","15":"Psocodea","16":"Ectopsocidae","17":"Ectopsocus","18":"petersi","19":"NA","20":"SPECIES","21":"Smithers, 1978","22":"ACCEPTED","23":"Sources considered for this taxon: https://doi.org/10.15468/3pmlxs"},{"1":"en","2":"http://creativecommons.org/licenses/by/4.0/legalcode","3":"NA","4":"https://www.gbif.org/species/1031400: Ectopsocus briggsi McLachlan, 1899 in GBIF Secretariat (2017). GBIF Backbone Taxonomy. Checklist dataset https://doi.org/10.15468/39omei","5":"https://doi.org/10.15468/xoidmd","6":"ISSG","7":"Global Register of Introduced and Invasive Species - Belgium","8":"https://www.gbif.org/species/1031400","9":"https://www.gbif.org/species/1031400","10":"https://www.gbif.org/species/1031400","11":"Ectopsocus briggsi McLachlan, 1899","12":"Ectopsocus briggsi McLachlan, 1899","13":"Animalia","14":"Insecta","15":"Psocodea","16":"Ectopsocidae","17":"Ectopsocus","18":"briggsi","19":"NA","20":"SPECIES","21":"McLachlan, 1899","22":"ACCEPTED","23":"Sources considered for this taxon: https://doi.org/10.15468/3pmlxs"},{"1":"en","2":"http://creativecommons.org/licenses/by/4.0/legalcode","3":"NA","4":"https://www.gbif.org/species/1031512: Liposcelis brunnea Motschulsky, 1852 in GBIF Secretariat (2017). GBIF Backbone Taxonomy. Checklist dataset https://doi.org/10.15468/39omei","5":"https://doi.org/10.15468/xoidmd","6":"ISSG","7":"Global Register of Introduced and Invasive Species - Belgium","8":"https://www.gbif.org/species/1031512","9":"https://www.gbif.org/species/1031512","10":"https://www.gbif.org/species/1031512","11":"Liposcelis brunnea Motschulsky, 1852","12":"Liposcelis brunnea Motschulsky, 1852","13":"Animalia","14":"Insecta","15":"Psocodea","16":"Liposcelididae","17":"Liposcelis","18":"brunnea","19":"NA","20":"SPECIES","21":"Motschulsky, 1852","22":"ACCEPTED","23":"Sources considered for this taxon: https://doi.org/10.15468/3pmlxs"},{"1":"en","2":"http://creativecommons.org/licenses/by/4.0/legalcode","3":"NA","4":"https://www.gbif.org/species/1031520: Liposcelis bostrychophila Badonnel, 1931 in GBIF Secretariat (2017). GBIF Backbone Taxonomy. Checklist dataset https://doi.org/10.15468/39omei","5":"https://doi.org/10.15468/xoidmd","6":"ISSG","7":"Global Register of Introduced and Invasive Species - Belgium","8":"https://www.gbif.org/species/1031520","9":"https://www.gbif.org/species/1031520","10":"https://www.gbif.org/species/1031520","11":"Liposcelis bostrychophila Badonnel, 1931","12":"Liposcelis bostrychophila Badonnel, 1931","13":"Animalia","14":"Insecta","15":"Psocodea","16":"Liposcelididae","17":"Liposcelis","18":"bostrychophila","19":"NA","20":"SPECIES","21":"Badonnel, 1931","22":"ACCEPTED","23":"Sources considered for this taxon: https://doi.org/10.15468/3pmlxs"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+{"columns":[{"label":["language"],"name":[1],"type":["chr"],"align":["left"]},{"label":["license"],"name":[2],"type":["chr"],"align":["left"]},{"label":["rightsHolder"],"name":[3],"type":["lgl"],"align":["right"]},{"label":["bibliographicCitation"],"name":[4],"type":["chr"],"align":["left"]},{"label":["datasetID"],"name":[5],"type":["chr"],"align":["left"]},{"label":["institutionCode"],"name":[6],"type":["chr"],"align":["left"]},{"label":["datasetName"],"name":[7],"type":["chr"],"align":["left"]},{"label":["references"],"name":[8],"type":["chr"],"align":["left"]},{"label":["taxonID"],"name":[9],"type":["chr"],"align":["left"]},{"label":["acceptedNameUsageID"],"name":[10],"type":["chr"],"align":["left"]},{"label":["scientificName"],"name":[11],"type":["chr"],"align":["left"]},{"label":["acceptedNameUsage"],"name":[12],"type":["chr"],"align":["left"]},{"label":["kingdom"],"name":[13],"type":["chr"],"align":["left"]},{"label":["phylum"],"name":[14],"type":["chr"],"align":["left"]},{"label":["class"],"name":[15],"type":["chr"],"align":["left"]},{"label":["order"],"name":[16],"type":["chr"],"align":["left"]},{"label":["family"],"name":[17],"type":["chr"],"align":["left"]},{"label":["genus"],"name":[18],"type":["chr"],"align":["left"]},{"label":["specificEpithet"],"name":[19],"type":["chr"],"align":["left"]},{"label":["infraspecificEpithet"],"name":[20],"type":["chr"],"align":["left"]},{"label":["taxonRank"],"name":[21],"type":["chr"],"align":["left"]},{"label":["scientificNameAuthorship"],"name":[22],"type":["chr"],"align":["left"]},{"label":["taxonomicStatus"],"name":[23],"type":["chr"],"align":["left"]},{"label":["taxonRemarks"],"name":[24],"type":["chr"],"align":["left"]}],"data":[{"1":"en","2":"http://creativecommons.org/licenses/by/4.0/legalcode","3":"NA","4":"https://www.gbif.org/species/1010644: Hanseniella caldaria (Hansen, 1903) in GBIF Secretariat (2017). GBIF Backbone Taxonomy. Checklist dataset https://doi.org/10.15468/39omei","5":"https://doi.org/10.15468/xoidmd","6":"ISSG","7":"Global Register of Introduced and Invasive Species - Belgium","8":"https://www.gbif.org/species/1010644","9":"https://www.gbif.org/species/1010644","10":"https://www.gbif.org/species/1010644","11":"Hanseniella caldaria (Hansen, 1903)","12":"Hanseniella caldaria (Hansen, 1903)","13":"Animalia","14":"Arthropoda","15":"Symphyla","16":"NA","17":"Scutigerellidae","18":"Hanseniella","19":"caldaria","20":"NA","21":"SPECIES","22":"(Hansen, 1903)","23":"ACCEPTED","24":"Sources considered for this taxon: https://doi.org/10.15468/3pmlxs"},{"1":"en","2":"http://creativecommons.org/licenses/by/4.0/legalcode","3":"NA","4":"https://www.gbif.org/species/1013526: Cylindroiulus britannicus (Verhoeff, 1891) in GBIF Secretariat (2017). GBIF Backbone Taxonomy. Checklist dataset https://doi.org/10.15468/39omei","5":"https://doi.org/10.15468/xoidmd","6":"ISSG","7":"Global Register of Introduced and Invasive Species - Belgium","8":"https://www.gbif.org/species/1013526","9":"https://www.gbif.org/species/1013526","10":"https://www.gbif.org/species/1013526","11":"Cylindroiulus britannicus (Verhoeff, 1891)","12":"Cylindroiulus britannicus (Verhoeff, 1891)","13":"Animalia","14":"Arthropoda","15":"Diplopoda","16":"Julida","17":"Julidae","18":"Cylindroiulus","19":"britannicus","20":"NA","21":"SPECIES","22":"(Verhoeff, 1891)","23":"ACCEPTED","24":"Sources considered for this taxon: https://doi.org/10.15468/3pmlxs"},{"1":"en","2":"http://creativecommons.org/licenses/by/4.0/legalcode","3":"NA","4":"https://www.gbif.org/species/1031394: Ectopsocus petersi Smithers, 1978 in GBIF Secretariat (2017). GBIF Backbone Taxonomy. Checklist dataset https://doi.org/10.15468/39omei","5":"https://doi.org/10.15468/xoidmd","6":"ISSG","7":"Global Register of Introduced and Invasive Species - Belgium","8":"https://www.gbif.org/species/1031394","9":"https://www.gbif.org/species/1031394","10":"https://www.gbif.org/species/1031394","11":"Ectopsocus petersi Smithers, 1978","12":"Ectopsocus petersi Smithers, 1978","13":"Animalia","14":"Arthropoda","15":"Insecta","16":"Psocodea","17":"Ectopsocidae","18":"Ectopsocus","19":"petersi","20":"NA","21":"SPECIES","22":"Smithers, 1978","23":"ACCEPTED","24":"Sources considered for this taxon: https://doi.org/10.15468/3pmlxs"},{"1":"en","2":"http://creativecommons.org/licenses/by/4.0/legalcode","3":"NA","4":"https://www.gbif.org/species/1031400: Ectopsocus briggsi McLachlan, 1899 in GBIF Secretariat (2017). GBIF Backbone Taxonomy. Checklist dataset https://doi.org/10.15468/39omei","5":"https://doi.org/10.15468/xoidmd","6":"ISSG","7":"Global Register of Introduced and Invasive Species - Belgium","8":"https://www.gbif.org/species/1031400","9":"https://www.gbif.org/species/1031400","10":"https://www.gbif.org/species/1031400","11":"Ectopsocus briggsi McLachlan, 1899","12":"Ectopsocus briggsi McLachlan, 1899","13":"Animalia","14":"Arthropoda","15":"Insecta","16":"Psocodea","17":"Ectopsocidae","18":"Ectopsocus","19":"briggsi","20":"NA","21":"SPECIES","22":"McLachlan, 1899","23":"ACCEPTED","24":"Sources considered for this taxon: https://doi.org/10.15468/3pmlxs"},{"1":"en","2":"http://creativecommons.org/licenses/by/4.0/legalcode","3":"NA","4":"https://www.gbif.org/species/1031512: Liposcelis brunnea Motschulsky, 1852 in GBIF Secretariat (2017). GBIF Backbone Taxonomy. Checklist dataset https://doi.org/10.15468/39omei","5":"https://doi.org/10.15468/xoidmd","6":"ISSG","7":"Global Register of Introduced and Invasive Species - Belgium","8":"https://www.gbif.org/species/1031512","9":"https://www.gbif.org/species/1031512","10":"https://www.gbif.org/species/1031512","11":"Liposcelis brunnea Motschulsky, 1852","12":"Liposcelis brunnea Motschulsky, 1852","13":"Animalia","14":"Arthropoda","15":"Insecta","16":"Psocodea","17":"Liposcelididae","18":"Liposcelis","19":"brunnea","20":"NA","21":"SPECIES","22":"Motschulsky, 1852","23":"ACCEPTED","24":"Sources considered for this taxon: https://doi.org/10.15468/3pmlxs"},{"1":"en","2":"http://creativecommons.org/licenses/by/4.0/legalcode","3":"NA","4":"https://www.gbif.org/species/1031520: Liposcelis bostrychophila Badonnel, 1931 in GBIF Secretariat (2017). GBIF Backbone Taxonomy. Checklist dataset https://doi.org/10.15468/39omei","5":"https://doi.org/10.15468/xoidmd","6":"ISSG","7":"Global Register of Introduced and Invasive Species - Belgium","8":"https://www.gbif.org/species/1031520","9":"https://www.gbif.org/species/1031520","10":"https://www.gbif.org/species/1031520","11":"Liposcelis bostrychophila Badonnel, 1931","12":"Liposcelis bostrychophila Badonnel, 1931","13":"Animalia","14":"Arthropoda","15":"Insecta","16":"Psocodea","17":"Liposcelididae","18":"Liposcelis","19":"bostrychophila","20":"NA","21":"SPECIES","22":"Badonnel, 1931","23":"ACCEPTED","24":"Sources considered for this taxon: https://doi.org/10.15468/3pmlxs"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
   </script>
 </div>
 <ol start="5" style="list-style-type: decimal">
@@ -623,7 +632,7 @@ taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw
 <p>ISSG also used the field <code>habitat</code>, in which we will summarize the information from <code>isMarine</code>, <code>isFreshwater</code> and <code>isTerrestrial</code>.</p>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
-{"columns":[{"label":["marine"],"name":[1],"type":["lgl"],"align":["right"]},{"label":["freshwater"],"name":[2],"type":["lgl"],"align":["right"]},{"label":["terrestrial"],"name":[3],"type":["lgl"],"align":["right"]},{"label":["records"],"name":[4],"type":["int"],"align":["right"]}],"data":[{"1":"FALSE","2":"FALSE","3":"TRUE","4":"2321"},{"1":"FALSE","2":"TRUE","3":"FALSE","4":"132"},{"1":"FALSE","2":"TRUE","3":"TRUE","4":"26"},{"1":"TRUE","2":"FALSE","3":"FALSE","4":"21"},{"1":"TRUE","2":"TRUE","3":"FALSE","4":"7"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+{"columns":[{"label":["marine"],"name":[1],"type":["lgl"],"align":["right"]},{"label":["freshwater"],"name":[2],"type":["lgl"],"align":["right"]},{"label":["terrestrial"],"name":[3],"type":["lgl"],"align":["right"]},{"label":["records"],"name":[4],"type":["int"],"align":["right"]}],"data":[{"1":"FALSE","2":"FALSE","3":"TRUE","4":"2323"},{"1":"FALSE","2":"TRUE","3":"FALSE","4":"137"},{"1":"FALSE","2":"TRUE","3":"TRUE","4":"26"},{"1":"TRUE","2":"FALSE","3":"FALSE","4":"22"},{"1":"TRUE","2":"TRUE","3":"FALSE","4":"7"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
   </script>
 </div>
 <p>Map <code>habitat</code>:</p>
@@ -639,7 +648,7 @@ taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw
 <p>Show mapping:</p>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
-{"columns":[{"label":["dwc_isMarine"],"name":[1],"type":["lgl"],"align":["right"]},{"label":["dwc_isFreshwater"],"name":[2],"type":["lgl"],"align":["right"]},{"label":["dwc_isTerrestrial"],"name":[3],"type":["lgl"],"align":["right"]},{"label":["dwc_habitat"],"name":[4],"type":["chr"],"align":["left"]},{"label":["records"],"name":[5],"type":["int"],"align":["right"]}],"data":[{"1":"FALSE","2":"FALSE","3":"TRUE","4":"terrestrial","5":"2321"},{"1":"FALSE","2":"TRUE","3":"FALSE","4":"freshwater","5":"132"},{"1":"FALSE","2":"TRUE","3":"TRUE","4":"freshwater|terrestrial","5":"26"},{"1":"TRUE","2":"FALSE","3":"FALSE","4":"marine","5":"21"},{"1":"TRUE","2":"TRUE","3":"FALSE","4":"marine|freshwater","5":"7"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+{"columns":[{"label":["dwc_isMarine"],"name":[1],"type":["lgl"],"align":["right"]},{"label":["dwc_isFreshwater"],"name":[2],"type":["lgl"],"align":["right"]},{"label":["dwc_isTerrestrial"],"name":[3],"type":["lgl"],"align":["right"]},{"label":["dwc_habitat"],"name":[4],"type":["chr"],"align":["left"]},{"label":["records"],"name":[5],"type":["int"],"align":["right"]}],"data":[{"1":"FALSE","2":"FALSE","3":"TRUE","4":"terrestrial","5":"2323"},{"1":"FALSE","2":"TRUE","3":"FALSE","4":"freshwater","5":"137"},{"1":"FALSE","2":"TRUE","3":"TRUE","4":"freshwater|terrestrial","5":"26"},{"1":"TRUE","2":"FALSE","3":"FALSE","4":"marine","5":"22"},{"1":"TRUE","2":"TRUE","3":"FALSE","4":"marine|freshwater","5":"7"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
   </script>
 </div>
 </div>
@@ -729,8 +738,8 @@ taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw
           </div>
         </div>
       </div>
-<a href="5_unify_information.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-
+<a href="5_unify_information.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="7_griis_mapping.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

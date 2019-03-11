@@ -5,11 +5,11 @@
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Global Register of Introduced and Invasive Species - Belgium</title>
-  <meta name="description" content="Global Register of Introduced and Invasive Species - Belgium">
+  <title>7 GRIIS mapping | Global Register of Introduced and Invasive Species - Belgium</title>
+  <meta name="description" content="7 GRIIS mapping | Global Register of Introduced and Invasive Species - Belgium>
   <meta name="generator" content="bookdown  and GitBook 2.6.7">
 
-  <meta property="og:title" content="Global Register of Introduced and Invasive Species - Belgium" />
+  <meta property="og:title" content="7 GRIIS mapping | Global Register of Introduced and Invasive Species - Belgium />
   <meta property="og:type" content="book" />
   
   
@@ -17,7 +17,7 @@
   <meta name="github-repo" content="trias-project/unified-checklist" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Global Register of Introduced and Invasive Species - Belgium" />
+  <meta name="twitter:title" content="7 GRIIS mapping | Global Register of Introduced and Invasive Species - Belgium />
   
   
   
@@ -32,8 +32,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
+<link rel="prev" href="6_dwc_mapping.html">
 
-<link rel="next" href="1_get_taxa.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -215,37 +215,136 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Global Register of Introduced and Invasive Species - Belgium</h1>
-<p class="author"><em>Peter Desmet, Lien Reyserhove, Damiano Oldoni</em></p>
-<p class="date"><em>2019-03-11</em></p>
+<div id="griis-mapping" class="section level1">
+<h1><span class="header-section-number">7</span> GRIIS mapping</h1>
+<p>In this chapter we export the unified information to an Excel template that can be used by the Global Register of Introduced and Invasive Species (GRIIS).</p>
+<div id="read-darwin-core-data" class="section level2">
+<h2><span class="header-section-number">7.1</span> Read Darwin Core data</h2>
+<pre class="sourceCode r"><code class="sourceCode r">dwc_taxon &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="kw">here</span>(<span class="st">&quot;data&quot;</span>, <span class="st">&quot;processed&quot;</span>, <span class="st">&quot;taxon.csv&quot;</span>))
+dwc_distribution &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="kw">here</span>(<span class="st">&quot;data&quot;</span>, <span class="st">&quot;processed&quot;</span>, <span class="st">&quot;distribution.csv&quot;</span>))
+dwc_speciesprofile &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="kw">here</span>(<span class="st">&quot;data&quot;</span>, <span class="st">&quot;processed&quot;</span>, <span class="st">&quot;speciesprofile.csv&quot;</span>))</code></pre>
 </div>
-<p>This document contains and describes all the steps in creating a unified checklist of alien species in Belgium and was developed for the <a href="http://trias-project.be">Tracking Invasive Alien Species (TrIAS) project</a>. By running this document in R, it will create all the necessary data files for the unified checklist.</p>
-<p>For more general information, see:</p>
-<ul>
-<li><a href="https://github.com/trias-project/unified-checklist">GitHub repository</a></li>
-<li><a href="https://doi.org/10.15468/xoidmd">Dataset published on GBIF</a></li>
-</ul>
-<p>Load libraries:</p>
-<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(tidyverse)      <span class="co"># To do data science</span>
-<span class="kw">library</span>(tidylog)        <span class="co"># To provide feedback on dplyr functions</span>
-<span class="kw">library</span>(magrittr)       <span class="co"># To use %&lt;&gt;% pipes</span>
-<span class="kw">library</span>(here)           <span class="co"># To find files</span>
-<span class="kw">library</span>(janitor)        <span class="co"># To clean input data</span>
-<span class="kw">library</span>(openxlsx)       <span class="co"># To write Excel files</span>
-<span class="kw">library</span>(digest)         <span class="co"># To generate hashes</span>
-<span class="kw">library</span>(rgbif)          <span class="co"># To use GBIF services</span>
+<div id="griis-format" class="section level2">
+<h2><span class="header-section-number">7.2</span> GRIIS format</h2>
+<div id="pre-processing-3" class="section level3">
+<h3><span class="header-section-number">7.2.1</span> Pre-processing</h3>
+<ol style="list-style-type: decimal">
+<li>Check if the taxon core, distribution extension and species profile extension contain only one row per <code>taxonID</code>.</li>
+</ol>
+<pre><code>## [1] TRUE</code></pre>
+<pre><code>## [1] TRUE</code></pre>
+<pre><code>## [1] TRUE</code></pre>
+<ol start="2" style="list-style-type: decimal">
+<li>Join the 3 files into one dataframe <code>griis</code>.</li>
+</ol>
+</div>
+<div id="term-mapping-4" class="section level3">
+<h3><span class="header-section-number">7.2.2</span> Term mapping</h3>
+<div id="taxonid-4" class="section level4">
+<h4><span class="header-section-number">7.2.2.1</span> taxonID</h4>
+<pre class="sourceCode r"><code class="sourceCode r">griis <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">griis_taxonID =</span> taxonID)</code></pre>
+</div>
+<div id="countrycode-1" class="section level4">
+<h4><span class="header-section-number">7.2.2.2</span> countryCode</h4>
+<pre class="sourceCode r"><code class="sourceCode r">griis <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">griis_countryCode =</span> countryCode)</code></pre>
+</div>
+<div id="island" class="section level4">
+<h4><span class="header-section-number">7.2.2.3</span> island</h4>
+<pre class="sourceCode r"><code class="sourceCode r">griis <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">griis_island =</span> <span class="st">&quot;&quot;</span>)</code></pre>
+</div>
+<div id="scientificname-1" class="section level4">
+<h4><span class="header-section-number">7.2.2.4</span> scientificName</h4>
+<pre class="sourceCode r"><code class="sourceCode r">griis <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">griis_scientificName =</span> scientificName)</code></pre>
+</div>
+<div id="acceptednameusage-1" class="section level4">
+<h4><span class="header-section-number">7.2.2.5</span> acceptedNameUsage</h4>
+<pre class="sourceCode r"><code class="sourceCode r">griis <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">griis_acceptedNameUsage =</span> <span class="kw">case_when</span>(
+  acceptedNameUsage <span class="op">!=</span><span class="st"> </span>scientificName <span class="op">~</span><span class="st"> </span>acceptedNameUsage,
+  <span class="ot">TRUE</span> <span class="op">~</span><span class="st"> &quot;&quot;</span>
+))</code></pre>
+</div>
+<div id="taxonrank-1" class="section level4">
+<h4><span class="header-section-number">7.2.2.6</span> taxonRank</h4>
+<pre class="sourceCode r"><code class="sourceCode r">griis <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">griis_taxonRank =</span> taxonRank)</code></pre>
+</div>
+<div id="taxonomicstatus-1" class="section level4">
+<h4><span class="header-section-number">7.2.2.7</span> taxonomicStatus</h4>
+<pre class="sourceCode r"><code class="sourceCode r">griis <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">griis_taxonomicStatus =</span> taxonomicStatus)</code></pre>
+</div>
+<div id="kingdom-1" class="section level4">
+<h4><span class="header-section-number">7.2.2.8</span> kingdom</h4>
+<pre class="sourceCode r"><code class="sourceCode r">griis <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">griis_kingdom =</span> kingdom)</code></pre>
+</div>
+<div id="phylum-1" class="section level4">
+<h4><span class="header-section-number">7.2.2.9</span> phylum</h4>
+<pre class="sourceCode r"><code class="sourceCode r">griis <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">griis_phylum =</span> phylum)</code></pre>
+</div>
+<div id="class-1" class="section level4">
+<h4><span class="header-section-number">7.2.2.10</span> class</h4>
+<pre class="sourceCode r"><code class="sourceCode r">griis <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">griis_class =</span> class)</code></pre>
+</div>
+<div id="order-1" class="section level4">
+<h4><span class="header-section-number">7.2.2.11</span> order</h4>
+<pre class="sourceCode r"><code class="sourceCode r">griis <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">griis_order =</span> order)</code></pre>
+</div>
+<div id="family-1" class="section level4">
+<h4><span class="header-section-number">7.2.2.12</span> family</h4>
+<pre class="sourceCode r"><code class="sourceCode r">griis <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">griis_family =</span> family)</code></pre>
+</div>
+<div id="habitat-1" class="section level4">
+<h4><span class="header-section-number">7.2.2.13</span> habitat</h4>
+<pre class="sourceCode r"><code class="sourceCode r">griis <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">griis_habitat =</span> habitat)</code></pre>
+</div>
+<div id="occurrencestatus-1" class="section level4">
+<h4><span class="header-section-number">7.2.2.14</span> occurrenceStatus</h4>
+<pre class="sourceCode r"><code class="sourceCode r">griis <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">griis_occurrenceStatus =</span> occurrenceStatus)</code></pre>
+</div>
+<div id="establishmentmeans-1" class="section level4">
+<h4><span class="header-section-number">7.2.2.15</span> establishmentMeans</h4>
+<pre class="sourceCode r"><code class="sourceCode r">griis <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">griis_establishmentMeans =</span> <span class="kw">recode</span>(establishmentMeans,
+  <span class="st">&quot;introduced&quot;</span> =<span class="st"> &quot;alien&quot;</span>,
+  <span class="dt">.default =</span> <span class="st">&quot;&quot;</span>,
+  <span class="dt">.missing =</span> <span class="st">&quot;&quot;</span>
+))</code></pre>
+</div>
+<div id="isinvasive-1" class="section level4">
+<h4><span class="header-section-number">7.2.2.16</span> isInvasive</h4>
+<pre class="sourceCode r"><code class="sourceCode r">griis <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">griis_isInvasive =</span> <span class="kw">case_when</span>(
+  <span class="kw">is.na</span>(isInvasive) <span class="op">~</span><span class="st"> &quot;Null&quot;</span>
+))</code></pre>
+</div>
+</div>
+<div id="eventdate-1" class="section level3">
+<h3><span class="header-section-number">7.2.3</span> eventDate</h3>
+<pre class="sourceCode r"><code class="sourceCode r">griis <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">griis_eventDate =</span> eventDate)</code></pre>
+</div>
+</div>
+<div id="post-processing-4" class="section level2">
+<h2><span class="header-section-number">7.3</span> Post-processing</h2>
+<ol style="list-style-type: decimal">
+<li><p>Only keep the GRIIS columns.</p></li>
+<li><p>Drop the <code>griis_</code> prefix.</p></li>
+<li><p>Sort on <code>scientificName</code> (the default for GRIIS lists).</p></li>
+<li><p>Preview data:</p></li>
+</ol>
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["taxonID"],"name":[1],"type":["chr"],"align":["left"]},{"label":["countryCode"],"name":[2],"type":["chr"],"align":["left"]},{"label":["island"],"name":[3],"type":["chr"],"align":["left"]},{"label":["scientificName"],"name":[4],"type":["chr"],"align":["left"]},{"label":["acceptedNameUsage"],"name":[5],"type":["chr"],"align":["left"]},{"label":["taxonRank"],"name":[6],"type":["chr"],"align":["left"]},{"label":["taxonomicStatus"],"name":[7],"type":["chr"],"align":["left"]},{"label":["kingdom"],"name":[8],"type":["chr"],"align":["left"]},{"label":["phylum"],"name":[9],"type":["chr"],"align":["left"]},{"label":["class"],"name":[10],"type":["chr"],"align":["left"]},{"label":["order"],"name":[11],"type":["chr"],"align":["left"]},{"label":["family"],"name":[12],"type":["chr"],"align":["left"]},{"label":["habitat"],"name":[13],"type":["chr"],"align":["left"]},{"label":["occurrenceStatus"],"name":[14],"type":["chr"],"align":["left"]},{"label":["establishmentMeans"],"name":[15],"type":["chr"],"align":["left"]},{"label":["isInvasive"],"name":[16],"type":["chr"],"align":["left"]},{"label":["eventDate"],"name":[17],"type":["chr"],"align":["left"]}],"data":[{"1":"https://www.gbif.org/species/3095938","2":"BE","3":"","4":"×Conyzigeron huelsenii (Vatke) Rauschert","5":"","6":"SPECIES","7":"ACCEPTED","8":"Plantae","9":"Tracheophyta","10":"Magnoliopsida","11":"Asterales","12":"Asteraceae","13":"terrestrial","14":"present","15":"alien","16":"Null","17":"2008/2008"},{"1":"https://www.gbif.org/species/2685484","2":"BE","3":"","4":"Abies alba Mill.","5":"","6":"SPECIES","7":"ACCEPTED","8":"Plantae","9":"Tracheophyta","10":"Pinopsida","11":"Pinales","12":"Pinaceae","13":"terrestrial","14":"present","15":"alien","16":"Null","17":"2008/2017"},{"1":"https://www.gbif.org/species/2685361","2":"BE","3":"","4":"Abies grandis Lindl.","5":"","6":"SPECIES","7":"ACCEPTED","8":"Plantae","9":"Tracheophyta","10":"Pinopsida","11":"Pinales","12":"Pinaceae","13":"terrestrial","14":"present","15":"alien","16":"Null","17":"2009/2018"},{"1":"https://www.gbif.org/species/2685552","2":"BE","3":"","4":"Abies nordmanniana Spach","5":"","6":"SPECIES","7":"ACCEPTED","8":"Plantae","9":"Tracheophyta","10":"Pinopsida","11":"Pinales","12":"Pinaceae","13":"terrestrial","14":"present","15":"alien","16":"Null","17":"2016/2016"},{"1":"https://www.gbif.org/species/8690876","2":"BE","3":"","4":"Abronia fragrans Nutt.","5":"","6":"SPECIES","7":"DOUBTFUL","8":"Plantae","9":"Tracheophyta","10":"Magnoliopsida","11":"Caryophyllales","12":"Nyctaginaceae","13":"terrestrial","14":"present","15":"alien","16":"Null","17":"1951/1951"},{"1":"https://www.gbif.org/species/3152614","2":"BE","3":"","4":"Abutilon theophrasti Medik.","5":"","6":"SPECIES","7":"ACCEPTED","8":"Plantae","9":"Tracheophyta","10":"Magnoliopsida","11":"Malvales","12":"Malvaceae","13":"terrestrial","14":"present","15":"alien","16":"Null","17":"1929/2018"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+<ol start="5" style="list-style-type: decimal">
+<li>Save to <a href="https://github.com/trias-project/unified-checklist/blob/master/data/processed/Belgium_GBIF_GRIIS.xlsx">Excel</a>.</li>
+</ol>
 
-<span class="co"># devtools::install_github(&quot;trias-project/trias&quot;)</span>
-<span class="kw">library</span>(trias)          <span class="co"># To use functions developed for TrIAS</span></code></pre>
-
+</div>
+</div>
             </section>
 
           </div>
         </div>
       </div>
+<a href="6_dwc_mapping.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 
-<a href="1_get_taxa.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -275,7 +374,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/trias-project/unified-checklist/blob/master/index.Rmd",
+"link": "https://github.com/trias-project/unified-checklist/blob/master/src/7_griis_mapping.Rmd",
 "text": "Edit"
 },
 "history": {

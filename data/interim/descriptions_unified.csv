@@ -8,6 +8,10 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 1043717,invasion stage,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438201,"Cryptolaemus montrouzieri Mulsant, 1853"
 1043717,native range,Australia,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438201,"Cryptolaemus montrouzieri Mulsant, 1853"
 1043717,pathway,cbd_2014_pathway:release_biological_control,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438201,"Cryptolaemus montrouzieri Mulsant, 1853"
+1152186,invasion stage,established,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438193,"Callidiellum rufipenne Niisato, 2007"
+1152186,native range,China (WGSRPD:36),1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438193,"Callidiellum rufipenne Niisato, 2007"
+1152186,native range,Japan (WGSRPD:38_JAP),1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438193,"Callidiellum rufipenne Niisato, 2007"
+1152186,pathway,cbd_2014_pathway:contaminant_on_plants,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438193,"Callidiellum rufipenne Niisato, 2007"
 1311477,invasion stage,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438120,"Vespa velutina Lepeletier, 1836"
 1311477,native range,Asia,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438120,"Vespa velutina Lepeletier, 1836"
 1311477,pathway,cbd_2014_pathway:unaided,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438120,"Vespa velutina Lepeletier, 1836"
@@ -76,6 +80,10 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 1941864,invasion stage,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438087,"Paysandisia archon (Burmeister, 1880)"
 1941864,native range,Mallorca,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438087,"Paysandisia archon (Burmeister, 1880)"
 1941864,pathway,cbd_2014_pathway:contaminant_on_plants,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438087,"Paysandisia archon (Burmeister, 1880)"
+2115692,invasion stage,established,289244ee-e1c1-49aa-b2d7-d379391ce265,140562982,Megabalanus tintinnabulum
+2115692,native range,Indo-Pacific,289244ee-e1c1-49aa-b2d7-d379391ce265,140562982,Megabalanus tintinnabulum
+2115692,native range,West Africa,289244ee-e1c1-49aa-b2d7-d379391ce265,140562982,Megabalanus tintinnabulum
+2115692,pathway,cbd_2014_pathway:stowaway_hull_fouling,289244ee-e1c1-49aa-b2d7-d379391ce265,140562982,Megabalanus tintinnabulum
 2115769,invasion stage,established,289244ee-e1c1-49aa-b2d7-d379391ce265,140562976,Austrominius modestus
 2115769,native range,Asia,289244ee-e1c1-49aa-b2d7-d379391ce265,140562976,Austrominius modestus
 2115769,native range,Australia,289244ee-e1c1-49aa-b2d7-d379391ce265,140562976,Austrominius modestus
@@ -266,8 +274,22 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 2287072,pathway,cbd_2014_pathway:corridor_water,289244ee-e1c1-49aa-b2d7-d379391ce265,140562946,Dreissena polymorpha
 2287072,pathway,cbd_2014_pathway:natural_dispersal,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042440,Dreissena polymorpha (Pallas 1771)
 2287072,pathway,cbd_2014_pathway:stowaway,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042440,Dreissena polymorpha (Pallas 1771)
+2287073,invasion stage,established,289244ee-e1c1-49aa-b2d7-d379391ce265,140562945,Dreissena rostriformis bugensis
+2287073,native range,Asia,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042411,"Dreissena rostriformis bugensis (Andrusov, 1897)"
+2287073,native range,Europe (WGSRPD:1),1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042411,"Dreissena rostriformis bugensis (Andrusov, 1897)"
+2287073,native range,Ponto-Caspian,289244ee-e1c1-49aa-b2d7-d379391ce265,140562945,Dreissena rostriformis bugensis
+2287073,pathway,cbd_2014_pathway:contaminant,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042411,"Dreissena rostriformis bugensis (Andrusov, 1897)"
+2287073,pathway,cbd_2014_pathway:corridor,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042411,"Dreissena rostriformis bugensis (Andrusov, 1897)"
+2287073,pathway,cbd_2014_pathway:corridor_water,289244ee-e1c1-49aa-b2d7-d379391ce265,140562945,Dreissena rostriformis bugensis
+2287073,pathway,cbd_2014_pathway:natural_dispersal,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042411,"Dreissena rostriformis bugensis (Andrusov, 1897)"
+2287073,pathway,cbd_2014_pathway:stowaway,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042411,"Dreissena rostriformis bugensis (Andrusov, 1897)"
 2287076,invasion stage,established,289244ee-e1c1-49aa-b2d7-d379391ce265,140562944,Mytilopsis leucophaeata
 2287076,native range,Northern America,289244ee-e1c1-49aa-b2d7-d379391ce265,140562944,Mytilopsis leucophaeata
+2287076,native range,Northern America (WGSRPD:7),1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042404,Mytilopsis leucophaeta (Conrad 1831)
+2287076,pathway,cbd_2014_pathway:contaminant,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042404,Mytilopsis leucophaeta (Conrad 1831)
+2287076,pathway,cbd_2014_pathway:corridor,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042404,Mytilopsis leucophaeta (Conrad 1831)
+2287076,pathway,cbd_2014_pathway:natural_dispersal,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042404,Mytilopsis leucophaeta (Conrad 1831)
+2287076,pathway,cbd_2014_pathway:stowaway,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042404,Mytilopsis leucophaeta (Conrad 1831)
 2287076,pathway,cbd_2014_pathway:stowaway_ballast_water,289244ee-e1c1-49aa-b2d7-d379391ce265,140562944,Mytilopsis leucophaeata
 2287076,pathway,cbd_2014_pathway:stowaway_hull_fouling,289244ee-e1c1-49aa-b2d7-d379391ce265,140562944,Mytilopsis leucophaeata
 2287249,invasion stage,established,289244ee-e1c1-49aa-b2d7-d379391ce265,140562922,Ensis directus
@@ -280,8 +302,16 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 2287249,pathway,cbd_2014_pathway:stowaway_ballast_water,289244ee-e1c1-49aa-b2d7-d379391ce265,140562922,Ensis directus
 2287249,pathway,cbd_2014_pathway:stowaway_other,289244ee-e1c1-49aa-b2d7-d379391ce265,140562922,Ensis directus
 2287615,invasion stage,established,289244ee-e1c1-49aa-b2d7-d379391ce265,140562949,Petricolaria pholadiformis
+2287615,native range,Asia,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042471,"Petricola pholadiformis Lamarck, 1818"
 2287615,native range,Northern America,289244ee-e1c1-49aa-b2d7-d379391ce265,140562949,Petricolaria pholadiformis
+2287615,native range,Northern America (WGSRPD:7),1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042471,"Petricola pholadiformis Lamarck, 1818"
+2287615,pathway,cbd_2014_pathway:contaminant,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042471,"Petricola pholadiformis Lamarck, 1818"
 2287615,pathway,cbd_2014_pathway:contaminant_on_animals,289244ee-e1c1-49aa-b2d7-d379391ce265,140562949,Petricolaria pholadiformis
+2287615,pathway,cbd_2014_pathway:corridor,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042471,"Petricola pholadiformis Lamarck, 1818"
+2287615,pathway,cbd_2014_pathway:escape,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042471,"Petricola pholadiformis Lamarck, 1818"
+2287615,pathway,cbd_2014_pathway:natural_dispersal,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042471,"Petricola pholadiformis Lamarck, 1818"
+2287615,pathway,cbd_2014_pathway:release,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042471,"Petricola pholadiformis Lamarck, 1818"
+2287615,pathway,cbd_2014_pathway:stowaway,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042471,"Petricola pholadiformis Lamarck, 1818"
 2287668,invasion stage,established,289244ee-e1c1-49aa-b2d7-d379391ce265,140562948,Mercenaria mercenaria
 2287668,native range,Northern America,289244ee-e1c1-49aa-b2d7-d379391ce265,140562948,Mercenaria mercenaria
 2287668,native range,Northern America (WGSRPD:7),1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042416,Mercenaria mercenaria (Linnaeus 1758)
@@ -476,6 +506,13 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 2431886,pathway,cbd_2014_pathway:release_landscape_improvement,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437847,"Triturus marmoratus (Latreille, 1800)"
 2433536,invasion stage,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437823,"Nasua nasua (Linnaeus, 1766)"
 2433536,pathway,cbd_2014_pathway:escape_pet,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437823,"Nasua nasua (Linnaeus, 1766)"
+2433652,invasion stage,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437826,"Mustela vison Schreber, 1777"
+2433652,native range,North America,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437826,"Mustela vison Schreber, 1777"
+2433652,native range,Northern America (WGSRPD:7),1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042142,"Mustela vison (Schreber, 1777)"
+2433652,pathway,cbd_2014_pathway:escape,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042142,"Mustela vison (Schreber, 1777)"
+2433652,pathway,cbd_2014_pathway:escape_fur_farm,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437826,"Mustela vison Schreber, 1777"
+2433652,pathway,cbd_2014_pathway:release,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042142,"Mustela vison (Schreber, 1777)"
+2433652,pathway,cbd_2014_pathway:unaided,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437826,"Mustela vison Schreber, 1777"
 2434552,native range,Asia,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042129,Nyctereutes procyonoides (Gray 1834)
 2434552,pathway,cbd_2014_pathway:corridor,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042129,Nyctereutes procyonoides (Gray 1834)
 2434552,pathway,cbd_2014_pathway:escape,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042129,Nyctereutes procyonoides (Gray 1834)
@@ -5360,6 +5397,8 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 5208832,invasion stage,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437854,"Gobiosoma bosc (Lacepède, 1800)"
 5208832,native range,Nam,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437854,"Gobiosoma bosc (Lacepède, 1800)"
 5208832,pathway,cbd_2014_pathway:stowaway_ballast_water,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437854,"Gobiosoma bosc (Lacepède, 1800)"
+5211250,native range,Northern America (WGSRPD:7),1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042378,"Micropterus dolomieui Lacepède, 1802"
+5211250,pathway,cbd_2014_pathway:release,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042378,"Micropterus dolomieui Lacepède, 1802"
 5216933,invasion stage,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437858,"Rhinella marina (Linnaeus, 1758)"
 5216933,native range,Central America (WGSRPD:80),1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437858,"Rhinella marina (Linnaeus, 1758)"
 5217334,invasion stage,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437861,"Xenopus laevis (Daudin, 1802)"
@@ -7390,12 +7429,18 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 5831906,native range,Europe (WGSRPD:1),9ff7d317-609b-4c08-bd86-3bc404b77c42,141266078,Bupleurum gerardi All.
 5831906,native range,temperate Asia (WGSRPD:3),9ff7d317-609b-4c08-bd86-3bc404b77c42,141266078,Bupleurum gerardi All.
 5831906,pathway,cbd_2014_pathway:contaminant_seed,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266078,Bupleurum gerardi All.
+5851603,invasion stage,established,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117238,Aspius aspius
+5851603,native range,Eastern Europe,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117238,Aspius aspius
+5851603,pathway,cbd_2014_pathway:escape_food_bait,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117238,Aspius aspius
 5864277,invasion stage,established,289244ee-e1c1-49aa-b2d7-d379391ce265,140562997,Gammarus roeseli
 5864277,native range,Southern Europe,289244ee-e1c1-49aa-b2d7-d379391ce265,140562997,Gammarus roeseli
 5864277,pathway,cbd_2014_pathway:corridor_water,289244ee-e1c1-49aa-b2d7-d379391ce265,140562997,Gammarus roeseli
 5879783,native range,Africa (WGSRPD:2),1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438075,"Thaumatotibia leucotreta (Meyrick, 1913)"
 5890148,invasion stage,established,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437702,"Anguillicola crassus Kuwahara, Niimi & Itagaki, 1974"
 5890148,pathway,cbd_2014_pathway:contaminant_animal_parasite,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437702,"Anguillicola crassus Kuwahara, Niimi & Itagaki, 1974"
+5892120,invasion stage,established,289244ee-e1c1-49aa-b2d7-d379391ce265,140562916,Dugesia tigrina
+5892120,native range,Northern America,289244ee-e1c1-49aa-b2d7-d379391ce265,140562916,Dugesia tigrina
+5892120,pathway,cbd_2014_pathway:stowaway_other,289244ee-e1c1-49aa-b2d7-d379391ce265,140562916,Dugesia tigrina
 5914287,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264585,Melia azedarach L.
 5914287,native range,Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264585,Melia azedarach L.
 5914287,native range,Australasia (WGSRPD:5),9ff7d317-609b-4c08-bd86-3bc404b77c42,141264585,Melia azedarach L.
@@ -8699,6 +8744,10 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 8925248,native range,Europe (WGSRPD:1),9ff7d317-609b-4c08-bd86-3bc404b77c42,141266582,Galium parisiense L. var. parisiense
 8925248,native range,temperate Asia (WGSRPD:3),9ff7d317-609b-4c08-bd86-3bc404b77c42,141266582,Galium parisiense L. var. parisiense
 8925248,pathway,cbd_2014_pathway:contaminant_on_animals,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266582,Galium parisiense L. var. parisiense
+8946295,invasion stage,established,289244ee-e1c1-49aa-b2d7-d379391ce265,140563021,Astacus leptodactylus
+8946295,native range,Eastern Europe,289244ee-e1c1-49aa-b2d7-d379391ce265,140563021,Astacus leptodactylus
+8946295,pathway,cbd_2014_pathway:escape_aquaculture,289244ee-e1c1-49aa-b2d7-d379391ce265,140563021,Astacus leptodactylus
+8946295,pathway,cbd_2014_pathway:escape_pet,289244ee-e1c1-49aa-b2d7-d379391ce265,140563021,Astacus leptodactylus
 8949622,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266839,Verbascum chaixii Vill.
 8949622,native range,Europe (WGSRPD:1),9ff7d317-609b-4c08-bd86-3bc404b77c42,141266839,Verbascum chaixii Vill.
 8949622,native range,temperate Asia (WGSRPD:3),9ff7d317-609b-4c08-bd86-3bc404b77c42,141266839,Verbascum chaixii Vill.

@@ -1,13 +1,13 @@
-# Temp file created while building:
+# Temp file created while building
 book_filename: unified-checklist.Rmd
 
-# Delete temp file after building:
+# Delete temp file after building
 delete_merged_file: true
 
-# Generate output in:
+# Generate output in
 output_dir: docs
 
-# Order of the chapters (= which Rmd files to include):
+# Order of the chapters (= which Rmd files to include)
 rmd_files: [
   index.Rmd,
   src/1_get_taxa.Rmd,
@@ -19,7 +19,7 @@ rmd_files: [
   src/7_griis_mapping.Rmd
 ]
 
-# Where Rmd files are kept:
+# Where Rmd files are kept
 edit: https://github.com/trias-project/unified-checklist/blob/master/%s
 
 # All other settings are defined in index.Rmd

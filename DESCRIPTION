@@ -1,0 +1,15 @@
+Package: unified-checklist
+Type: Book
+Title: Global Register of Introduced and Invasive Species - Belgium
+Version: 0.0.1
+Description: This description file is only used to define dependencies.
+Imports:
+    bookdown,
+    tidyverse,
+    tidylog,
+    magrittr,
+    here,
+    janitor,
+    openxlsx,
+    digest,
+    rgbif

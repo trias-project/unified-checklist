@@ -12,6 +12,7 @@ Imports:
     janitor,
     openxlsx,
     digest,
-    rgbif
+    rgbif,
+    trias
 Remotes:
     trias-project/trias

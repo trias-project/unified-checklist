@@ -13,3 +13,5 @@ Imports:
     openxlsx,
     digest,
     rgbif
+Remotes:
+    trias-project/trias

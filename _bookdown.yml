@@ -4,6 +4,9 @@ book_filename: unified-checklist.Rmd
 # Delete temp file after building
 delete_merged_file: true
 
+# Output directory
+output_dir: docs
+
 # Order of the chapters (= which Rmd files to include)
 rmd_files: [
   index.Rmd,

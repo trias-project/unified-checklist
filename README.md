@@ -1,7 +1,5 @@
 # Global Register of Introduced and Invasive Species - Belgium
 
-[![Build Status](https://travis-ci.org/trias-project/unified-checklist.svg?branch=master)](https://travis-ci.org/trias-project/unified-checklist)
-
 ## Rationale
 
 This repository contains the functionality to create and standardize the _Global Register of Introduced and Invasive Species - Belgium_ to a [Darwin Core checklist](https://www.gbif.org/dataset-classes) that can be harvested by [GBIF](http://www.gbif.org).

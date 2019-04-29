@@ -66,6 +66,20 @@ The repository structure is based on [Cookiecutter Data Science](http://drivenda
 4. Install any required packages
 6. Click `Build > Build Book` to generate the processed data and build the website in `docs/`
 
+## Publication
+
+To publish an update of the dataset:
+
+1. Open the [resource in the IPT](https://ipt.inbo.be/manage/resource.do?r=unified-checklist) (login required)
+2. `Source data`: upload the newly generated data files from `data/processed`
+3. `Darwin Core mappings`: does not require updates, unless terms were added/removed in the pipeline
+4. `Metadata`: does not require updates, except for:
+    - `Basic metadata`: in description, check if number of taxa (2.500+) still applies
+    - `Taxonomic coverage`: in description, update numbers per kingdom based on [new data](https://trias-project.github.io/unified-checklist/6_dwc_mapping.html#preview-data)
+    - `Temporal coverage`: update `End date` if need be
+5. Publish: click `Publish`, add a short description and publish
+6. Check if [dataset is updated](https://www.gbif.org/dataset/6d9e952f-948c-4483-9807-575348147c7e) at GBIF (can take a couple of hours)
+
 ## Contributors
 
 [List of contributors](https://github.com/trias-project/unified-checklist/contributors)

@@ -8435,6 +8435,13 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 8022932,native range,Europe (WGSRPD:1),9ff7d317-609b-4c08-bd86-3bc404b77c42,141265531,Plantago lagopus L.
 8022932,native range,temperate Asia (WGSRPD:3),9ff7d317-609b-4c08-bd86-3bc404b77c42,141265531,Plantago lagopus L.
 8022932,pathway,cbd_2014_pathway:contaminant_seed,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265531,Plantago lagopus L.
+8035075,invasion stage,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265050,Crassula helmsii (T. Kirk) Cock.
+8035075,native range,Australasia (WGSRPD:5),9ff7d317-609b-4c08-bd86-3bc404b77c42,141265050,Crassula helmsii (T. Kirk) Cock.
+8035075,native range,Australia (WGSRPD:50),1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042246,Crassula helmsii (Kirk) Cockayne
+8035075,pathway,cbd_2014_pathway:corridor,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042246,Crassula helmsii (Kirk) Cockayne
+8035075,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265050,Crassula helmsii (T. Kirk) Cock.
+8035075,pathway,cbd_2014_pathway:natural_dispersal,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042246,Crassula helmsii (Kirk) Cockayne
+8035075,pathway,cbd_2014_pathway:release,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042246,Crassula helmsii (Kirk) Cockayne
 8040052,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265586,Bromus polyanthus Scribn.
 8040052,native range,Northern America (WGSRPD:7),9ff7d317-609b-4c08-bd86-3bc404b77c42,141265586,Bromus polyanthus Scribn.
 8042568,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265089,Artemisia abrotanum L.

@@ -12,10 +12,10 @@ taxa <- read_csv(here("data", "interim", "taxa_with_verification.csv"))
 
 ## Read verification information {#verification}
 
-Verification information consists of a manually assigned `verificationKey` for taxa the backbone does not recognize (no backbone match) or will lump under another name (synonyms). Those `checklist/backbone/accepted` taxon combinations are stored in [`data/interim/verification.tsv`](https://github.com/trias-project/unified-checklist/blob/master/data/interim/verification.tsv), which was created/updated in previous runs of this chapter and then manually annoted with a `verificationKey`.
+Verification information consists of a manually assigned `verificationKey` for taxa the backbone does not recognize (no backbone match) or will lump under another name (synonyms). Those `checklist/backbone/accepted` taxon combinations are stored in [`references/verification.tsv`](https://github.com/trias-project/unified-checklist/blob/master/references/verification.tsv), which was created/updated in previous runs of this chapter and then manually annoted with a `verificationKey`.
 
 ```{r verify_taxa-2}
-verification <- read_tsv(here("data", "interim", "verification.tsv"))
+verification <- read_tsv(here("references", "verification.tsv"))
 ```
 
 ## Run and save verification
@@ -53,12 +53,12 @@ verification$taxa %>%
   write_csv(here("data", "interim", "taxa_with_verification.csv"), na = "")
 ```
 
-3. Save updated verification back to [`data/interim/verification.tsv`](https://github.com/trias-project/unified-checklist/blob/master/data/interim/verification.tsv) (sorted on `scientificName`)
+3. Save updated verification back to [`references/verification.tsv`](https://github.com/trias-project/unified-checklist/blob/master/references/verification.tsv) (sorted on `scientificName`)
 
 ```{r verify_taxa-4}
 verification$verification %>%
   arrange(scientificName) %>%
-  write_tsv(here("data", "interim", "verification.tsv"), na = "")
+  write_tsv(here("references", "verification.tsv"), na = "")
 ```
 
 ## Show verification status

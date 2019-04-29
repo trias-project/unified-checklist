@@ -1,0 +1,2094 @@
+---
+title: "Global Register of Introduced and Invasive Species - Belgium"
+author: Peter Desmet, Lien Reyserhove, Damiano Oldoni
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+github-repo: trias-project/unified-checklist
+output:
+  bookdown::gitbook:
+    split_by: rmd
+    df_print: paged
+    config:
+      search: no
+      sharing:
+        facebook: no
+        twitter: yes
+        all: []
+---
+
+```{r index-setup, include = FALSE}
+knitr::opts_chunk$set(
+  echo = FALSE, # Exclude code from output by default
+  warning = FALSE,
+  message = FALSE,
+  rownames.print = FALSE # Option for df_print = paged
+)
+```
+
+This document contains and describes all the steps in creating a unified checklist of alien species in Belgium and was developed for the [Tracking Invasive Alien Species (TrIAS) project](http://trias-project.be). By running this document in R, it will create all the necessary data files for the unified checklist.
+
+For more general information, see:
+
+- [GitHub repository](https://github.com/trias-project/unified-checklist)
+- [Dataset published on GBIF](https://doi.org/10.15468/xoidmd)
+
+Load libraries:
+
+```{r echo = TRUE}
+library(tidyverse)      # To do data science
+library(tidylog)        # To provide feedback on dplyr functions
+library(magrittr)       # To use %<>% pipes
+library(here)           # To find files
+library(janitor)        # To clean input data
+library(openxlsx)       # To write Excel files
+library(digest)         # To generate hashes
+library(rgbif)          # To use GBIF services
+
+# devtools::install_github("trias-project/trias")
+library(trias)          # To use functions developed for TrIAS
+```
+
+<!--chapter:end:index.Rmd-->
+
+# Get taxa from checklists
+
+In this chapter we select species checklists and retrieve the taxa they contain.
+
+## Choose checklists {#choose-checklists}
+
+The unified checklist is compiled from [species checklists published to GBIF under the TrIAS project](https://www.gbif.org/dataset/search?type=CHECKLIST&project_id=trias). Here we choose the checklists we want to include and rank them by trust (most trustworthy first). The ranking will help to choose between duplicate taxa in later steps.
+
+1. Choose checklists:
+
+```{r get_taxa-1, echo = TRUE}
+checklist_keys <- c(
+  "9ff7d317-609b-4c08-bd86-3bc404b77c42", # alien-plants-belgium
+  "289244ee-e1c1-49aa-b2d7-d379391ce265", # alien-macroinvertebrates
+  "98940a79-2bf1-46e6-afd6-ba2e85a26f9f", # alien-fishes-checklist
+  "b043c480-dd36-4f4f-aa82-e188753ff09d", # uredinales-belgium-checklist
+  "1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2", # ad-hoc-checklist
+  "1738f272-6b5d-4f43-9a92-453a8c5ea50a"  # rinse-pathways-checklist
+)
+```
+
+2. Add the [GBIF Backbone Taxonomy](https://doi.org/10.15468/39omei). **Note**: we won't use this as a source checklist, but we need its metadata in the Darwin Core mapping.
+
+```{r get_taxa-2, echo = TRUE}
+checklist_keys <- append(checklist_keys, "d7dddbf4-2cf0-4f39-9b2a-bb099caae36c")
+```
+
+3. Get metadata for these checklists from GBIF and display the result:
+
+```{r get_taxa-get_checklist_metadata_from_gbif, cache = TRUE}
+checklists <-
+  map(checklist_keys, function(x) rgbif::datasets(uuid = x)) %>%
+  map_df(function(x) list(
+    datasetKey = x$data$key,
+    title = x$data$title,
+    modified = x$data$modified,
+    publisher = x$data$publishingOrganizationKey,
+    doi = paste0("https://doi.org/", x$data$doi),
+    citation = x$data$citation$text,
+    license = x$data$license
+  ))
+checklists
+```
+
+4. Remove `accessed via GBIF.org on yyyy-mm-dd.` from citation (we want the static citation of the dataset).
+
+```{r get_taxa-3}
+checklists <-
+  checklists %>% mutate(citation = str_remove(citation, " accessed via GBIF.org on \\d+-\\d+-\\d+."))
+```
+
+5. Save to [CSV](https://github.com/trias-project/unified-checklist/blob/master/data/raw/checklists.csv).
+
+```{r get_taxa-4}
+write_csv(checklists, here("data", "raw", "checklists.csv"), na = "")
+```
+
+6. Remove the GBIF Backbone Taxonomy for further querying steps.
+
+```{r get_taxa-5}
+checklists <- head(checklists, -1)
+```
+
+## Get taxa
+
+1. Get taxa from these checklists from GBIF. **Note**: here we get _checklist taxa_, not _GBIF backbone taxa_.
+
+```{r get_taxa-get_checklist_taxa_from_gbif, cache = TRUE}
+taxa <-
+  map_df(checklists$datasetKey, function(x) name_usage(
+    datasetKey = x,
+    limit = 99999, # Should be more than total taxa for all checklists
+    return = "data"
+  )) %>% 
+  filter(origin == "SOURCE") # Keep only source taxa, not denormed higher classification taxa
+```
+
+2. Select columns of interest, rename `key` to `taxonKey`.
+
+```{r get_taxa-6}
+taxa <-
+  taxa %>%
+  select(key, scientificName, taxonID, datasetKey, nameType, issues, nubKey) %>%
+  rename(taxonKey = key)
+```
+
+3. Convert the column `issues` from a list to a concatenated string.
+
+```{r get_taxa-7}
+taxa <-
+  taxa %>%
+  mutate(issues = sapply(issues, toString)) %>%
+  mutate(issues = na_if(issues, "NA")) # Set "NA" strings to real NA
+```
+
+4. Preview checklist taxa:
+
+```{r get_taxa-8}
+taxa %>% head()
+```
+
+## Filter on distribution {#filter-on-distribution}
+
+TrIAS checklists can contain more than alien species in Belgium. We therefore need to filter on the associated [distribution](http://rs.gbif.org/extension/gbif/1.0/distribution.xml) information (using the `trias::has_distribution()` function) as follows:
+
+* **In Belgium**: `country`(code) = `BE`
+* **Present**: [`occurrenceStatus` status](https://gbif.github.io/gbif-api/apidocs/org/gbif/api/vocabulary/OccurrenceStatus.html) = `PRESENT`, `COMMMON`, `RARE` OR `IRREGULAR`
+* **Introduced**: [`establishmentMeans`](http://gbif.github.io/parsers/apidocs/org/gbif/api/vocabulary/EstablishmentMeans.html) = `INTRODUCED`,  `NATURALISED`, `INVASIVE` OR `ASSISTED COLONISATION`
+
+**Note**: we filter on distribution information of _checklist taxa_, not _GBIF backbone taxa_. That is because backbone taxa contain distribution information from TrIAS checklists _and_ other checklists, which we don't want to consider here.
+
+E.g. compare:
+
+* Distributions for _checklist_ taxon [Eriocheir sinensis](https://api.gbif.org/v1/species/140563012/distributions) (`140563012`)
+* Distributions for _backbone_ taxon [Eriocheir sinensis](https://api.gbif.org/v1/species/2225776/distributions) (`2225776`)
+
+**Note**: if a checklist has related information for a taxon, but not a valid distribution, that related information will NOT be included in the unified checklist. This is to exclude related information about a taxon for which the checklist did not even consider a Belgian scope (e.g. pathway).
+
+1. Get distribution information from GBIF and check if these meet the filter criteria. The result (`TRUE`/`FALSE`) is inserted as an extra column `validDistribution`.
+
+```{r get_taxa-get_distribution_info_from_gbif, cache = TRUE}
+progress_bar <- progress_estimated(nrow(taxa))
+
+taxa <-
+  taxa %>%
+  mutate(validDistribution = map_lgl(taxa$taxonKey, function(x) {
+    progress_bar$tick()$print()
+    trias::gbif_has_distribution(
+      taxon_key = x,
+      country = "BE",
+      establishmentMeans = c("INTRODUCED", "NATURALISED", "INVASIVE", "ASSISTED COLONISATION"),
+      status = c("PRESENT", "COMMON", "RARE", "IRREGULAR")
+    )
+  }))
+```
+
+2. Preview some taxa with not a single valid distribution (`taxonKey` can be used to verify manually on GBIF):
+
+```{r get_taxa-9}
+taxa %>%
+  filter(!validDistribution) %>%
+  head()
+```
+
+3. Rename `nubKey` to `bb_key` and move to the end.
+
+```{r get_taxa-10}
+taxa <-
+  taxa %>%
+  rename(bb_key = nubKey) %>%
+  select(-bb_key, everything())
+```
+
+## Get GBIF backbone taxonomy information
+
+A taxon can occur on more than one checklist. To identify these duplicates, we cannot rely on the _scientific name_ as there might be spelling variations (e.g. with or without authorship) and it does not account for synonyms that should be lumped with the accepted taxon. To have **unifying taxon identifiers across taxa**, we rely on the [GBIF backbone taxonomy](https://doi.org/10.15468/39omei), to which every checklist taxon (re)published to GBIF is automatically matched. If a match in the backbone is found, the checklist taxon will have a `nubKey`.
+
+1. Filter taxa on having valid distribution and `nubKey` and create vector of unique `nubKey`s.
+
+```{r get_taxa-11}
+nub_keys <-
+  taxa %>%
+  filter(validDistribution) %>%
+  filter(is.finite(bb_key)) %>%
+  select(bb_key) %>%
+  distinct(bb_key) %>%
+  pull()
+```
+
+2. Get GBIF backbone taxonomy information.
+
+```{r get_taxa-get_backbone_info_from_gbif, cache = TRUE}
+progress_bar <- progress_estimated(length(nub_keys))
+
+backbone_info <-
+  map_dfr(nub_keys, function(x) {
+    progress_bar$tick()$print()
+    rgbif::name_usage(
+      key = x,
+      return = "data"
+    )
+  })
+```
+
+3. Rename `accepted` to `acceptedName`.
+
+```{r get_taxa-12}
+backbone_info <-
+  backbone_info %>%
+  rename(acceptedName = accepted)
+```
+
+4. Add prefix `bb_` to column names.
+
+```{r get_taxa-13}
+colnames(backbone_info) <- paste0("bb_", colnames(backbone_info))
+```
+
+5. Select columns of interest.
+
+```{r get_taxa-14}
+backbone_info <-
+  backbone_info %>%
+  select(
+    "bb_key",
+    "bb_scientificName",
+    "bb_kingdom",
+    "bb_rank",
+    "bb_taxonomicStatus",
+    "bb_acceptedKey", 
+    "bb_acceptedName",
+    "bb_speciesKey"
+  )
+```
+
+6. Join backbone information with checklist taxa. **Note**: this can attach information to taxa with `validDistribution = FALSE` that share a `bb_key` with other taxa.
+
+```{r get_taxa-15}
+taxa <-
+  taxa %>%
+  left_join(
+    backbone_info, 
+    by = "bb_key"
+  )
+```
+
+7. Preview merged information:
+
+```{r get_taxa-16}
+taxa %>% head()
+```
+
+## Show summary and save
+
+Show summary per checklist:
+
+```{r get_taxa-17}
+taxa %>%
+  left_join(checklists, by = "datasetKey") %>%
+  group_by(title) %>%
+  summarize(
+    taxa = n(),
+    invalid_dist = sum(!validDistribution),
+    valid_dist = sum(validDistribution),
+    valid_dist_not_in_backbone = sum(validDistribution & is.na(bb_key))
+  ) %>%
+  adorn_totals("row")
+```
+
+Save to two CSVs:
+
+* [`data/raw/taxa.csv`](https://github.com/trias-project/unified-checklist/blob/master/data/raw/taxa.csv): all checklist taxa
+
+```{r get_taxa-18}
+write_csv(taxa, here("data", "raw", "taxa.csv"), na = "")
+```
+
+* [`data/interim/taxa_with_verification.csv`](https://github.com/trias-project/unified-checklist/blob/master/data/interim/taxa_with_verification.csv.csv): subset of checklist taxa with a valid distribution and an empty column `verificationKey`. This file will be used in later steps.
+
+```{r get_taxa-19}
+taxa %>%
+  mutate(verificationKey = NA) %>%
+  filter(validDistribution) %>%
+  write_csv(here("data", "interim", "taxa_with_verification.csv"), na = "")
+```
+
+<!--chapter:end:src/1_get_taxa.Rmd-->
+
+# Get related information
+
+In this chapter we retrieve related information for taxa on the checklists (with a valid distribution).
+
+## Read taxa
+
+1. Read taxa from [`data/interim/taxa_with_verification.csv`](https://github.com/trias-project/unified-checklist/blob/master/data/interim/taxa_with_verification.csv).
+
+```{r get_information-1}
+taxa <- read_csv(here("data", "raw", "taxa.csv"))
+```
+
+2. Extract `taxonKeys` as a vector.
+
+```{r get_information-2}
+taxon_keys <-
+  taxa %>%
+  pull(taxonKey)
+```
+
+## Get distributions
+
+1. Get distributions for our taxa from GBIF.
+
+```{r get_information-get_distributions_from_gbif, cache = TRUE}
+progress_bar <- progress_estimated(length(taxon_keys))
+
+distributions <-
+  map_dfr(taxon_keys, function(x) {
+  progress_bar$tick()$print()
+  rgbif::name_usage(
+    key = x,
+    return = "data",
+    data = "distribution"
+  )
+})
+```
+
+2. Save to [CSV](https://github.com/trias-project/unified-checklist/blob/master/data/raw/distributions.csv).
+
+```{r get_information-3}
+write_csv(distributions, here("data", "raw", "distributions.csv"), na = "")
+```
+
+## Get species profiles
+
+1. Get species profiles for our taxa from GBIF.
+
+```{r get_information-get_speciesprofiles_from_gbif, cache = TRUE}
+progress_bar <- progress_estimated(length(taxon_keys))
+
+speciesprofiles <-
+  map_dfr(taxon_keys, function(x) {
+    progress_bar$tick()$print()
+    rgbif::name_usage(
+      key = x,
+      return = "data",
+      data = "speciesProfiles"
+    )
+  })
+```
+
+2. Save to [CSV](https://github.com/trias-project/unified-checklist/blob/master/data/raw/speciesprofiles.csv).
+
+```{r get_information-4}
+write_csv(speciesprofiles, here("data", "raw", "speciesprofiles.csv"), na = "")
+```
+
+## Get descriptions
+
+1. Get descriptions for our taxa from GBIF.
+
+```{r get_information-get_descriptions_from_gbif, cache = TRUE}
+progress_bar <- progress_estimated(length(taxon_keys))
+
+descriptions <-
+  map_dfr(taxon_keys, function(x) {
+    progress_bar$tick()$print()
+    rgbif::name_usage(
+      key = x,
+      return = "data",
+      data = "description"
+    )
+  })
+```
+
+2. Save to [CSV](https://github.com/trias-project/unified-checklist/blob/master/data/raw/descriptions.csv).
+
+```{r get_information-5}
+write_csv(descriptions, here("data", "raw", "descriptions.csv"), na = "")
+```
+
+<!--chapter:end:src/2_get_information.Rmd-->
+
+# Verify taxa
+
+In this chapter we verify taxonomic information returned by the [GBIF Backbone Taxonomy](https://doi.org/10.15468/39omei). We do this because we want to use the backbone information to unify taxa that can be considered the same within or across checklists. This is straightforward for (accepted) taxa with the same backbone key (`bb_key`), but requires verification for taxa the backbone does not recognize (no backbone match) or will lump under another name (synonyms). See \@ref(verification).
+
+## Read taxa
+
+Read taxa from [`data/interim/taxa_with_verification.csv`](https://github.com/trias-project/unified-checklist/blob/master/data/interim/taxa_with_verification.csv).
+
+```{r verify_taxa-1}
+taxa <- read_csv(here("data", "interim", "taxa_with_verification.csv"))
+```
+
+## Read verification information {#verification}
+
+Verification information consists of a manually assigned `verificationKey` for taxa the backbone does not recognize (no backbone match) or will lump under another name (synonyms). Those `checklist/backbone/accepted` taxon combinations are stored in [`references/verification.tsv`](https://github.com/trias-project/unified-checklist/blob/master/references/verification.tsv), which was created/updated in previous runs of this chapter and then manually annoted with a `verificationKey`.
+
+```{r verify_taxa-2}
+verification <- read_tsv(here("references", "verification.tsv"))
+```
+
+## Run and save verification
+
+1. Use the existing verification information to verify taxa with the function `trias::verify_taxa`:
+
+```{r verify_taxa-run_verification, echo = TRUE}
+verification <- trias::verify_taxa(taxa, verification)
+```
+
+  **Note**: to start a verification from scratch, use `trias::verify_taxa(taxa)`.
+
+2. Save taxa with populated `verificationKey` back to [`data/interim/taxa_with_verification.csv`](https://github.com/trias-project/unified-checklist/blob/master/data/interim/taxa_with_verification.csv).
+
+```{r verify_taxa-3}
+verification$taxa %>%
+  # Select columns in same order as originally provided
+  select(
+    taxonKey,
+    scientificName,
+    taxonID,
+    datasetKey,
+    nameType,
+    issues,
+    validDistribution,
+    bb_key,
+    bb_scientificName,
+    bb_kingdom,
+    bb_rank,
+    bb_taxonomicStatus,
+    bb_acceptedKey,
+    bb_acceptedName,
+    verificationKey
+  ) %>%
+  write_csv(here("data", "interim", "taxa_with_verification.csv"), na = "")
+```
+
+3. Save updated verification back to [`references/verification.tsv`](https://github.com/trias-project/unified-checklist/blob/master/references/verification.tsv) (sorted on `scientificName`)
+
+```{r verify_taxa-4}
+verification$verification %>%
+  arrange(scientificName) %>%
+  write_tsv(here("references", "verification.tsv"), na = "")
+```
+
+## Show verification status
+
+### Unmatched taxa
+
+Status | Number of taxa
+--- | ---
+Verified | `r verification$taxa %>% filter(is.na(bb_key) & !is.na(verificationKey)) %>% nrow()`
+Unverified | `r verification$taxa %>% filter(is.na(bb_key) & is.na(verificationKey)) %>% nrow()`
+New in this run | `r verification$info$new_unmatched_taxa %>% nrow()`
+No longer used | `r verification$info$outdated_unmatched_taxa %>% nrow()`
+
+Unmatched taxa are those for which the automatic backbone matching on the scientific name failed (have [`BACKBONE_MATCH_NONE`](http://gbif.github.io/parsers/apidocs/org/gbif/api/vocabulary/NameUsageIssue.html) in `issues`), either because the scientific name could not be parsed or because it is not listed in the backbone.
+
+Verification (see \@ref(verification)) involves setting the `verificationKey` to a manually found `bb_key`. One could even set multiple `bb_key`s, e.g. to split a hybrid formula into its hybrid parents.
+
+### Synonyms
+
+Status | Number of taxa
+--- | ---
+Previously verified | `r verification$taxa %>% filter(!is.na(bb_acceptedKey) & !is.na(verificationKey)) %>% nrow()`
+Unverified | `r verification$taxa %>% filter(!is.na(bb_acceptedKey) & is.na(verificationKey)) %>% nrow()`
+New in this run | `r verification$info$new_synonyms %>% nrow()`
+No longer used | `r verification$info$outdated_synonyms %>% nrow()`
+
+Synonyms are taxa that the backbone will lump under an accepted taxon (`taxonomicStatus` = `SYNONYM` or similar). This lumping is often correct, but should be verified.
+
+Verification (see \@ref(verification)) involves setting the `verifiedKey` to one of the following:
+
+* **accepted `bb_key` suggested by GBIF**: backbone synonymy is accepted and taxon will be lumped.
+* **another accepted `bb_key`**: backbone synonymy is rejected, but taxon will be lumped under another name.
+* **`bb_key` of taxon itself**: backbone synonymy is rejected, taxon will be considered as separate taxon.
+
+### Accepted taxa
+
+Status | Number of taxa
+--- | ---
+Verified (automatic) | `r verification$taxa %>% filter(bb_taxonomicStatus %in% c("ACCEPTED", "DOUBTFUL") & !is.na(verificationKey)) %>% nrow()`
+Unverified |`r verification$taxa %>% filter(bb_taxonomicStatus %in% c("ACCEPTED", "DOUBTFUL") & is.na(verificationKey)) %>% nrow()`
+
+Accepted taxa are those the backbone considers own entities (`taxonomicStatus` = `ACCEPTED` or `DOUBTFUL`) that won't be lumped.
+
+No verification is required for these: `verificationKey` is automatically set to their `bb_key`.
+
+### Erroneous verificationKeys
+
+Provided verification keys that are not found in the GBIF backbone:
+
+```{r verify_taxa-5}
+verification$info$check_verificationKey %>%
+  filter(!is_from_gbif_backbone) %>%
+  distinct(key) %>%
+  select(key)
+```
+
+### Additional information
+
+Additional information regarding the verification information that is of no further consequence.
+
+* Duplicate taxa (having same `bb_key` and `bb_acceptedKey`) that are quick wins to verify:
+
+```{r verify_taxa-6}
+verification$info$duplicates %>%
+  group_by(n) %>%
+  summarize(
+    taxa = n()
+  )
+```
+
+* Previously listed synonyms for which the scientific name was updated in the backbone:
+
+```{r verify_taxa-7}
+verification$info$updated_bb_scientificName
+```
+
+* Previously listed synonyms for which the _accepted_ scientific name was updated in the backbone:
+
+```{r verify_taxa-8}
+verification$info$updated_bb_acceptedName
+```
+
+<!--chapter:end:src/3_verify_taxa.Rmd-->
+
+# Unify taxa
+
+In this chapter we unify taxa on their `verificationKey`.
+
+## Read taxa
+
+Read taxa from [`data/interim/taxa_with_verification.csv`](https://github.com/trias-project/unified-checklist/blob/master/data/interim/taxa_with_verification.csv).
+
+```{r unify_taxa-1}
+taxa <- read_csv(here("data", "interim", "taxa_with_verification.csv"))
+```
+
+## Unify taxa
+
+1. Remove taxa without verificationKey.
+
+```{r unify_taxa-2}
+taxa_unified <-
+  taxa %>%
+  filter(!is.na(verificationKey))
+```
+
+2. Separate multiple `verificationKey`s (if any) for single taxa.
+
+```{r unify_taxa-3}
+taxa_unified <-
+  taxa_unified %>%
+  
+  # Separate multiple verification keys on | character in max 5 columns
+  separate(
+    verificationKey,
+    into = c("verKey_1", "verKey_2", "verKey_3", "verKey_4", "verKey_5"),
+    sep = "\\|",
+    convert = TRUE,
+    extra = "drop",
+    fill = "right"
+  ) %>%
+  
+  # Gather those 5 columns back to one (removing NA)
+  gather(
+    field,
+    verificationKey,
+    starts_with("verKey_"),
+    na.rm = TRUE,
+    convert = TRUE
+  ) %>%
+  
+  # Drop field column
+  select(-field)
+```
+
+3. Group taxa by `verificationKey`, saving the `datasetKey` and `taxonKey` of the taxa that are bundled per key in `datasetKeys` and `taxonKeys`.
+
+```{r unify_taxa-4}
+taxa_unified <-
+  taxa_unified %>%
+  # Group by verificationKey across and within checklists
+  group_by(verificationKey) %>%
+  
+  # Note contained checklists and taxa
+  summarize(
+    datasetKeys = paste(unique(datasetKey), collapse = "|"),
+    taxonKeys = paste(unique(taxonKey), collapse = "|")
+  )
+```
+
+5. Extract `verificationKey` as a vector.
+
+```{r unify_taxa-5}
+verification_keys <-
+  taxa_unified %>%
+  pull(verificationKey)
+```
+
+6. Number of unique taxa: `r length(verification_keys)`
+
+## Get GBIF backbone taxonomy information
+
+Even though we stored some backbone information for most of our taxa in the previous steps, we want to start from scratch here and retrieve it from GBIF again, as 1) some taxon keys in `verificationKey`s will be new and 2) we want to store more attributes per taxon this time.
+
+1. Get GBIF backbone taxonomy information.
+
+```{r unify_taxa-get_backbone_info_from_gbif, cache = TRUE}
+progress_bar <- progress_estimated(length(verification_keys))
+
+backbone_info <-
+  map_dfr(verification_keys, function(x) {
+    progress_bar$tick()$print()
+    rgbif::name_usage(
+      key = x,
+      return = "data"
+    )
+  })
+```
+
+2. Rename `accepted` to `acceptedName`.
+
+```{r unify_taxa-6}
+backbone_info <-
+  backbone_info %>%
+  rename(acceptedName = accepted)
+```
+
+3. Select columns of interest.
+
+```{r unify_taxa-7}
+backbone_info <-
+  backbone_info %>%
+  select(
+    "key",
+    "scientificName",
+    "nameKey",
+    "taxonID",
+    "kingdom",
+    "phylum",
+    "class",
+    "order",
+    "family",
+    "genus",
+    "species",
+    "datasetKey",
+    "parentKey",
+    "parent",
+    "canonicalName",
+    "authorship",
+    "nameType",
+    "rank",
+    "taxonomicStatus",
+    "acceptedKey",
+    "acceptedName"
+  )
+```
+
+4. Join backbone information with our unified taxa, so we keep `datasetKeys` and `taxonKeys`.
+
+```{r unify_taxa-8}
+taxa_unified <-
+  taxa_unified %>%
+  left_join(
+    backbone_info, 
+    by = c("verificationKey" = "key")
+  )
+```
+
+5. Move columns `datasetKeys` and `taxonKeys` to the end.
+
+```{r unify_taxa-9}
+taxa_unified <-
+  taxa_unified %>%
+  select(-datasetKeys,everything()) %>%
+  select(-taxonKeys,everything())
+```
+
+6. Preview merged information:
+
+```{r unify_taxa-10}
+taxa_unified %>% head()
+```
+
+7. Number of taxa: `r nrow(taxa_unified)`
+
+8. Save to [CSV](https://github.com/trias-project/unified-checklist/blob/master/data/interim/taxa_unified.csv).
+
+```{r unify_taxa-11}
+write_csv(taxa_unified, here("data", "interim", "taxa_unified.csv"), na = "")
+```
+
+<!--chapter:end:src/4_unify_taxa.Rmd-->
+
+# Unify related information
+
+In this chapter we unify related information for each verified taxon.
+
+## Read data
+
+```{r unify_information-1, echo = TRUE}
+checklists <- read_csv(here("data", "raw", "checklists.csv"))
+taxa <- read_csv(here("data", "interim", "taxa_with_verification.csv"))
+distributions <- read_csv(here("data", "raw", "distributions.csv"))
+speciesprofiles <- read_csv(here("data", "raw", "speciesprofiles.csv"))
+descriptions <- read_csv(here("data", "raw", "descriptions.csv"))
+```
+
+## Assign checklist order
+
+1. Get checklist keys as (ordered) vector.
+
+```{r unify_information-2}
+checklist_keys <-
+  checklists %>%
+  pull(datasetKey)
+```
+
+2. Assign the checklist order (= index of checklist keys) as an extra column to taxa.
+
+```{r unify_information-3}
+taxa <-
+  taxa %>%
+  rowwise() %>%
+  mutate(checklistOrder = which(checklist_keys == datasetKey)[1])
+```
+
+## Unify distribution {#unify-distribution}
+
+1. Parse `temporal` (eventDate) information.
+
+```{r unify_information-5, echo = TRUE}
+distributions_unified <-
+  distributions %>%
+  
+  # Split temporal on "/" into startYear and endYear
+  # If temporal only contains a single year, then endYear will be empty
+  separate(
+    temporal,
+    into = c("startYear", "endYear"),
+    sep = "/",
+    remove = FALSE,
+    convert = TRUE,
+    extra = "drop",
+    fill = "right"
+  ) %>%
+  
+  # Only keep the first 4 characters: 1968-11-21 -> 1968
+  mutate(
+    startYear = as.integer(str_sub(startYear, 1, 4)), 
+    endYear = as.integer(str_sub(endYear, 1, 4))
+  ) %>%
+  
+  # If endYear is empty (no range), populate it with startYear: 2018 & 2018
+  mutate(endYear = if_else(is.na(endYear), startYear, endYear))
+```
+
+2. Filter distributions.
+
+```{r unify_information-6, echo = TRUE}
+distributions_unified <-
+  distributions_unified %>%
+  
+  # Filter on non-native species present in (at least part of) Belgium
+  filter(
+    country == "BE" &
+    establishmentMeans %in% c("INTRODUCED", "NATURALISED", "INVASIVE", "ASSISTED COLONISATION") &
+    status %in% c("PRESENT", "COMMON", "RARE", "IRREGULAR")
+  )
+```
+
+3. Choose a single distribution within a checklist.
+
+**Note**: In contrast to the other extensions, the distribution information can come from multiple taxa within the same checklist. For example:
+
+scientific name | eventDate
+--- | ---
+[https://www.gbif.org/species/141266662/verbatim](Medicago monantha subsp. incisa (Benth.) Verloove & Lambinon) | 1885/1901
+[Medicago monantha subsp. noeana (Boiss.) Greuter & Burdet](https://www.gbif.org/species/141266791/verbatim) | 1886/1955
+
+Both are considered (verified) synonyms of [Medicago monantha Trautv.](https://www.gbif.org/species/2965226), so their distribution information is merged to `1885/1955`. We note both in `taxonKeys` and `scientificNames`.
+
+```{r unify_information-7, echo = TRUE}
+distributions_unified <-
+  distributions_unified %>%
+
+  # Join distribution with taxon to get verificationKey and checklistOrder
+  left_join(taxa, by = "taxonKey") %>%
+  
+  # Remove records that have no verificationKey (e.g. one wasn't assigned yet)
+  filter(!is.na(verificationKey)) %>%
+  
+  # Group by verificationKey within checklist
+  group_by(
+    datasetKey,
+    checklistOrder,
+    verificationKey
+  ) %>%
+  
+  # Take earliest year, latest year and note taxonKey(s) and scientificName(s):
+  summarize(
+    startYear = as.integer(min(startYear, na.rm = TRUE)),
+    endYear = as.integer(max(endYear, na.rm = TRUE)),
+    taxonKeys = paste(unique(taxonKey), collapse = "|"),
+    scientificNames = paste(unique(scientificName), collapse = "|")
+  )
+```
+
+4. Choose a single distribution across checklists.
+
+```{r unify_information-8, echo = TRUE}
+distributions_unified <-
+  distributions_unified %>%
+  
+  # Sort by checklist order (trustworthiness)
+  arrange(checklistOrder) %>%
+  
+  # Group by verificationKey across checklists
+  group_by(verificationKey) %>%
+  
+  # Select year of most trustworthy checklist (first one)
+  # and note that checklist and its taxonKey(s) and scientificName(s)
+  summarize(
+    startYear = first(startYear),
+    endYear = first(endYear),
+    datasetKey = first(datasetKey),
+    taxonKeys = first(taxonKeys),
+    scientificNames = first(scientificNames)
+  ) %>%
+
+  # Sort by verificationKey
+  arrange(verificationKey)
+```
+
+5. Save to [CSV](https://github.com/trias-project/unified-checklist/blob/master/data/interim/distributions_unified.csv).
+
+```{r unify_information-9}
+write_csv(distributions_unified, here("data", "interim", "distributions_unified.csv"), na = "")
+```
+
+## Unify species profiles
+
+1. Filter species profiles.
+
+```{r unify_information-10, echo = TRUE}
+speciesprofiles_unified <-
+  speciesprofiles %>%
+  
+  # Remove species profiles that contain NA for any of the attributes
+  # This is rare: normally all attributes are populated or there just isn't a
+  # species profile for that species
+  filter(
+    !is.na(marine) &
+    !is.na(freshwater) &
+    !is.na(terrestrial)
+  )
+```
+
+2. Choose a single species profile within a checklist.
+
+```{r unify_information-11, echo = TRUE}
+speciesprofiles_unified <-
+  speciesprofiles_unified %>%
+
+  # Join species profile with taxon to get verificationKey and checklist order
+  left_join(taxa, on = taxonKey) %>%
+  
+  # Remove records that have no verificationKey (e.g. one wasn't assigned yet)
+  filter(!is.na(verificationKey)) %>%
+  
+  # Group by verificationKey within checklist
+  group_by(
+    datasetKey,
+    checklistOrder,
+    verificationKey
+  ) %>%
+  
+  # Take first species profile and note taxonKey
+  summarize(
+    marine = first(marine),
+    freshwater = first(freshwater),
+    terrestrial = first(terrestrial),
+    taxonKey = first(taxonKey),
+    scientificName = first(scientificName)
+  )
+```
+
+3. Choose a single species profile across checklists.
+
+```{r unify_information-12, echo = TRUE}
+speciesprofiles_unified <-
+  speciesprofiles_unified %>%
+  
+  # Sort by checklist order (trustworthiness)
+  arrange(checklistOrder) %>%
+  
+  # Group by verificationKey across checklists
+  group_by(verificationKey) %>%
+  
+  # Select species profile of most trustworthy checklist (first one)
+  # and note that checklist and its taxonKey
+  summarize(
+    marine = first(marine),
+    freshwater = first(freshwater),
+    terrestrial = first(terrestrial),
+    datasetKey = first(datasetKey),
+    taxonKey = first(taxonKey),
+    scientificName = first(scientificName)
+  ) %>%
+
+  # Sort by verificationKey
+  arrange(verificationKey)
+```
+
+4. Save to [CSV](https://github.com/trias-project/unified-checklist/blob/master/data/interim/speciesprofiles_unified.csv).
+
+```{r unify_information-13}
+write_csv(speciesprofiles_unified, here("data", "interim", "speciesprofiles_unified.csv"), na = "")
+```
+
+## Unify descriptions
+
+1. Filter non `NA` descriptions.
+
+```{r unify_information-14}
+descriptions_unified <-
+  descriptions %>%
+  
+  # Filter on non-NA descriptions
+  filter(
+    !is.na(description)
+  )
+```
+
+2. Select unique descriptions (within their type) within a checklist.
+
+```{r unify_information-15, echo = TRUE}
+descriptions_unified <-
+  descriptions_unified %>%
+
+  # Join species profile with taxon to get verificationKey and checklist order
+  left_join(taxa, on = taxonKey) %>%
+  
+  # Remove records that have no verificationKey (e.g. one wasn't assigned yet)
+  filter(!is.na(verificationKey)) %>%
+  
+  # Group by type and verificationKey within checklist
+  group_by(
+    datasetKey,
+    checklistOrder,
+    verificationKey,
+    type,
+    description
+  ) %>%
+  
+  # Take first taxonKey and scientificName
+  summarize(
+    taxonKey = first(taxonKey),
+    scientificName = first(scientificName)
+  )
+```
+
+3. Select unique descriptions (within their type) across checklists.
+
+```{r unify_information-16, echo = TRUE}
+descriptions_unified <-
+  descriptions_unified %>%
+  
+  # Sort by checklist order (trustworthiness)
+  arrange(checklistOrder) %>%
+  
+  # Group by type and verificationKey across checklists
+  group_by(
+    type,
+    description,
+    verificationKey
+  ) %>%
+  
+  # Select first datasetKey, taxonKey and scientificName
+  summarize(
+    datasetKey = first(datasetKey),
+    taxonKey = first(taxonKey),
+    scientificName = first(scientificName)
+  ) %>%
+
+  # Move verificationKey to beginning and drop checklist_order
+  select(verificationKey, everything()) %>%
+  
+  # Sort by verificationKey and type
+  arrange(verificationKey, type)
+```
+
+4. Save to [CSV](https://github.com/trias-project/unified-checklist/blob/master/data/interim/descriptions_unified.csv).
+
+```{r unify_information-17}
+write_csv(descriptions_unified, here("data", "interim", "descriptions_unified.csv"), na = "")
+```
+
+<!--chapter:end:src/5_unify_information.Rmd-->
+
+# Darwin Core mapping
+
+In this chapter we standardize the unified information to a Darwin Core checklist that can be harvested by GBIF.
+
+## Read unified data
+
+```{r echo = TRUE}
+checklists <- read_csv(here("data", "raw", "checklists.csv"))
+input_taxa <- read_csv(here("data", "interim", "taxa_unified.csv"))
+input_distributions <- read_csv(here("data", "interim", "distributions_unified.csv"))
+input_speciesprofiles <- read_csv(here("data", "interim", "speciesprofiles_unified.csv"))
+input_descriptions <- read_csv(here("data", "interim", "descriptions_unified.csv"))
+```
+
+## Preview data
+
+1. Number of rows per file and corresponding mapping section in this chapter:
+
+File | Number of rows
+--- | ---
+taxa | `r nrow(input_taxa)`
+distributions | `r nrow(input_distributions)`
+speciesprofiles | `r nrow(input_speciesprofiles)`
+descriptions | `r nrow(input_descriptions)`
+
+2. Number of taxa per checklist:
+
+```{r}
+input_taxa %>%
+  
+  # Separate datasetKeys on "|" in as many columns as there are checklists
+  separate(
+    datasetKeys,
+    into = c(paste("source", 1:nrow(checklists), sep = "_")),
+    sep = "\\|",
+    remove = FALSE,
+    fill = "right"
+  ) %>%
+  
+  # Add column whether contributing source is unique
+  mutate(unique_shared = case_when(
+    is.na(source_2) ~ "unique", # If there is no second source, it is unique
+    TRUE ~ "shared"
+  )) %>%
+  
+  # Gather to one row per source (multiple rows)
+  gather(
+    key = position,
+    value = source,
+    paste("source", 1:nrow(checklists), sep = "_"),
+    na.rm = TRUE,
+    convert = FALSE
+  ) %>%
+  
+  # Group by source dataset and whether it is unique or not
+  group_by(source, unique_shared) %>%
+  summarize(count = n()) %>%
+  
+  # Create count per column shared vs unique
+  spread(unique_shared, count) %>%
+  ungroup() %>%
+  rename(datasetKey = source) %>%
+  
+  # Join with checklist information (right join to get checklist order)
+  right_join(
+    checklists,
+    by = "datasetKey"
+  ) %>%
+  select(doi, unique, shared, title, datasetKey) %>%
+  adorn_totals("row")
+```
+
+3. Number of taxa per kingdom:
+
+```{r}
+input_taxa %>%
+  group_by(kingdom) %>%
+  summarize(
+    `taxa` = n()
+  ) %>%
+  adorn_totals("row")
+```
+
+4. Number of taxa per rank:
+
+```{r}
+input_taxa %>%
+  group_by(rank) %>%
+  summarize(
+    `taxa` = n()
+  ) %>%
+  adorn_totals("row")
+```
+
+5. Number of taxa and descriptions per type:
+
+```{r}
+input_descriptions %>%
+  group_by(type) %>%
+  summarize(
+    `taxa` = n(),
+    `unique taxa` = n_distinct(verificationKey),
+    `unique descriptions` = n_distinct(description)
+  ) %>%
+  adorn_totals("row")
+```
+
+## How we cite our sources {#citing-sources}
+
+Each row of information in the Taxon core and the extensions is based on a specific source:
+
+File | Source | Field for citation | Mapping section
+--- | --- | --- | ---
+Taxon core | a taxon in the [GBIF Backbone Taxonomy](https://doi.org/10.15468/39omei) | `bibliographicCitation`| \@ref(taxon-core)
+Distribution extension | one or more taxa in a source checklist | `source` | \@ref(distribution-extension)
+Species profile extension | a taxon in a source checklist | `source` | \@ref(species-profile-extension)
+Description extension | a taxon in a source checklist | `source` | \@ref(description-extension)
+
+To reference this source, we will use the **GBIF citation format for species pages**, prefixed with the URL of that page. E.g. for the distribution of _Nymphea marliacea Marliac_ this would be:
+
+> https://www.gbif.org/species/141264581: Nymphaea marliacea Marliac in Verloove F, Groom Q, Brosens D, Desmet P, Reyserhove L (2018). Manual of the Alien Plants of Belgium. Version 1.7. Botanic Garden Meise. Checklist dataset https://doi.org/10.15468/wtda1m.
+
+This information is a combination of: 
+
+- `taxonKey`: e.g. `1412645812` (contained in `distributions.csv`),
+- `scientificName`: e.g. `Nymphaea marliacea Marliac` (contained in `distributions.csv`),
+- `citation`: e.g. `Verloove F, Groom Q, Brosens D, Desmet P, Reyserhove L (2018). Manual of the Alien Plants of Belgium. Version 1.7. Botanic Garden Meise. Checklist dataset https://doi.org/10.15468/wtda1m.` (contained in `checklists.csv`)
+
+To generate this full citation, we create a helper function `add_source_citation(df, new_column, dataset_info)`.
+
+```{r}
+add_source_citation <- function(df, new_column, dataset_info,
+                                dataset_key = "datasetKey",
+                                taxon_key = "taxonKey",
+                                scientific_name = "scientificName") {
+  df %>%
+  
+  # Join df with dataset_info
+  left_join(
+    select(dataset_info, datasetKey, citation),
+    by = setNames("datasetKey", dataset_key)
+  ) %>%
+  
+  # Build full citation in new_column (requires !! to bypass nse)
+  mutate(!!new_column := case_when(
+    is.na(df[[taxon_key]]) ~ NA_character_,
+    is.na(df[[scientific_name]]) ~ NA_character_,
+    is.na(citation) ~ NA_character_,
+    TRUE ~ paste0(
+            "https://www.gbif.org/species/",
+            df[[taxon_key]],
+            ": ",
+            df[[scientific_name]],
+            " in ",
+            citation
+          )
+  )) %>%
+  
+  # Remove added citation field
+  select(-citation)
+}
+```
+
+## Taxon core {#taxon-core}
+
+### Pre-processing
+
+1. Create a dataframe `taxon` from the unified taxa.
+
+```{r}
+taxon <- input_taxa
+```
+
+2. Separate `canonicalName` in `canonicalName_genus`, `canonicalName_species` and `canonicalName_infraspecific` (on whitespace).
+
+```{r}
+taxon %<>% separate(
+  canonicalName,
+  into = c(
+    "canonicalName_genus",
+    "canonicalName_species",
+    "canonicalName_infraspecific"
+  ),
+  sep = "\\s+", # Whitespace
+  remove = FALSE,
+  convert = TRUE,
+  extra = "drop",
+  fill = "right"
+)
+```
+
+### Term mapping
+
+Map the data to [Darwin Core Taxon](http://rs.gbif.org/core/dwc_taxon_2015-04-24.xml).
+
+#### language
+
+```{r echo = TRUE}
+taxon %<>% mutate(dwc_language = "en")
+```
+
+#### license
+
+The license under which (each record of) the unified checklist will be published should be the most restrictive license of the source checklists. The **potential licenses** are the three Creative Commons licenses [supported by GBIF](https://www.gbif.org/terms) (ordered from least to most restrictive):
+
+```{r}
+legal_licenses <- tibble::tibble(
+  license = c(
+    "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+    "http://creativecommons.org/licenses/by/4.0/legalcode",
+    "http://creativecommons.org/licenses/by-nc/4.0/legalcode"
+    ),
+  ranking = c(1:3)
+)
+legal_licenses
+```
+
+The **actual licenses** of the source checklists _and_ the [GBIF Backbone Taxonomy](https://doi.org/10.15468/39omei) (which we use for the taxon core) are:
+
+```{r}
+checklist_licenses <-
+  checklists %>%
+  group_by(license) %>%
+  count() %>%
+  ungroup()
+checklist_licenses
+```
+
+Based on the above `ranking`, the most restrictive license is:
+
+```{r}
+most_restrictive_license <-
+  checklist_licenses %>%
+  left_join(legal_licenses, by = "license") %>%
+  filter(ranking == max(ranking)) %>%
+  pull(license)
+most_restrictive_license
+```
+
+Which we use for our `license`:
+
+```{r echo = TRUE}
+taxon %<>% mutate(dwc_license = most_restrictive_license)
+```
+
+#### rightsHolder
+
+We do not set `rightsHolder` as the taxon and its related information is based on different source checklists (which in turn are based on other sources), published by different organizations, and mostly released under CC0. Instead, we make an effort to cite the sources (see \@ref(citing-sources)).
+
+```{r echo = TRUE}
+taxon %<>% mutate(dwc_rightsHolder = NA)
+```
+
+#### bibliographicCitation
+
+See \@ref(citing-sources):
+
+```{r echo = TRUE}
+# Add temporary field with datasetKey of GBIF Backbone Taxonomy
+# taxon %<>% mutate(datasetKey = "d7dddbf4-2cf0-4f39-9b2a-bb099caae36c")
+
+taxon %<>% add_source_citation(
+  new_column = "dwc_bibliographicCitation",
+  dataset_info = checklists,
+  taxon_key = "verificationKey"
+)
+```
+
+#### datasetID
+
+```{r echo = TRUE}
+taxon %<>% mutate(dwc_datasetID = "https://doi.org/10.15468/xoidmd")
+```
+
+#### institutionCode
+
+```{r echo = TRUE}
+taxon %<>% mutate(dwc_institutionCode = "ISSG") # Invasive Species Specialist Group ISSG
+```
+
+#### datasetName
+
+```{r echo = TRUE}
+taxon %<>% mutate(dwc_datasetName = "Global Register of Introduced and Invasive Species - Belgium")
+```
+
+#### references
+
+URL of the GBIF Backbone Taxonomy taxon on gbif.org:
+
+```{r echo = TRUE}
+taxon %<>% mutate(dwc_references = paste0("https://www.gbif.org/species/", verificationKey))
+```
+
+#### taxonID
+
+URL of the GBIF Backbone Taxonomy taxon on gbif.org:
+
+```{r echo = TRUE}
+taxon %<>% mutate(dwc_taxonID = paste0("https://www.gbif.org/species/", verificationKey))
+```
+
+#### acceptedNameUsageID
+
+```{r echo = TRUE}
+taxon %<>% mutate(dwc_acceptedNameUsageID = case_when(
+  is.na(acceptedKey) ~ paste0("https://www.gbif.org/species/", verificationKey), # If empty acceptedKey, use verificationKey
+  TRUE ~ paste0("https://www.gbif.org/species/", acceptedKey)
+))
+```
+
+#### scientificName
+
+```{r echo = TRUE}
+taxon %<>% mutate(dwc_scientificName = scientificName)
+```
+
+#### acceptedNameUsage
+
+```{r echo = TRUE}
+taxon %<>% mutate(dwc_acceptedNameUsage = case_when(
+  is.na(acceptedName) ~ scientificName, # If empty acceptedName, use scientificName
+  TRUE ~ as.character(acceptedName)
+))
+```
+
+#### kingdom
+
+```{r echo = TRUE}
+taxon %<>% mutate(dwc_kingdom = kingdom)
+```
+
+#### phylum
+
+```{r echo = TRUE}
+taxon %<>% mutate(dwc_phylum = phylum)
+```
+
+#### class
+
+```{r echo = TRUE}
+taxon %<>% mutate(dwc_class = class)
+```
+
+#### order
+
+```{r echo = TRUE}
+taxon %<>% mutate(dwc_order = order)
+```
+
+#### family
+
+```{r echo = TRUE}
+taxon %<>% mutate(dwc_family = family)
+```
+
+#### genus
+
+`genus` is part of the higher classification, which is provided by the GBIF Backbone Taxonomy. We will use that, but note that for some synonyms it might differ from the genus in the scientific name:
+
+```{r}
+taxon %>%
+  filter(genus != canonicalName_genus) %>%
+  select(verificationKey, scientificName, genus, canonicalName_genus, taxonomicStatus)
+```
+
+```{r echo = TRUE}
+taxon %<>% mutate(dwc_genus = genus)
+```
+
+#### specificEpithet
+
+```{r echo = TRUE}
+taxon %<>% mutate(dwc_specificEpithet = canonicalName_species)
+```
+
+#### infraspecificEpithet
+
+```{r echo = TRUE}
+taxon %<>% mutate(dwc_infraspecificEpithet = canonicalName_infraspecific)
+```
+
+#### taxonRank
+
+Inspect values:
+
+```{r}
+taxon %>%
+  group_by(rank) %>%
+  count()
+```
+
+Map values as is, in UPPERCASE, so it is clearer this information comes from the GBIF Backbone Taxonomy:
+
+```{r echo = TRUE}
+taxon %<>% mutate(dwc_taxonRank = rank)
+```
+
+#### scientificNameAuthorship
+
+```{r echo = TRUE}
+taxon %<>% mutate(dwc_scientificNameAuthorship = authorship)
+```
+
+#### taxonomicStatus
+
+Inspect values:
+
+```{r}
+taxon %>%
+  group_by(taxonomicStatus) %>%
+  count()
+```
+
+Map values as is, in UPPERCASE, so it is clearer this information comes from the GBIF Backbone Taxonomy:
+
+```{r echo = TRUE}
+taxon %<>% mutate(dwc_taxonomicStatus = taxonomicStatus)
+```
+
+#### taxonRemarks
+
+Here we list the checklists that were _considered_ for unifying information about a taxon, i.e. the checklists we selected (see \@ref(choose-checklists)) in which the taxon appeared and got through verification (see \@ref(verification)). In the case of multiple considered checklists, it is possible that not all of them are selected as a source (see \@ref(citing-sources)) when unifying information.
+
+The `datasetKey`s of the considered checklists are listed in `datasetKeys`. Since we want the DOI instead, we will separate this information into columns, gather to rows and join with the DOI, and spread and combine again into a single column.
+
+```{r}
+taxon <-
+  taxon %>%
+  
+  # Separate datasetKeys on "|" in as many columns as there are checklists
+  separate(
+    datasetKeys,
+    into = c(paste("source", 1:nrow(checklists), sep = "_")),
+    sep = "\\|",
+    remove = FALSE,
+    fill = "right"
+  ) %>%
+
+  # Gather to one row per source (multiple rows)
+  gather(
+    key = source,
+    value = key,
+    paste("source", 1:nrow(checklists), sep = "_"),
+    na.rm = TRUE,
+    convert = FALSE
+  ) %>%
+
+  # Join with checklists
+  left_join(
+    select(checklists, datasetKey, doi),
+    by = c("key" = "datasetKey")
+  ) %>%
+  
+  # Remove column "key"
+  select(-key) %>%
+  
+  # Spread back to one row per taxon (multiple columns)
+  spread(source, doi) %>%
+  
+  # Combine source columns into one column "datasetDOIs"
+  unite(
+    col = "datasetDOIs",
+    starts_with("source_"),
+    sep = ", ",
+    remove = TRUE
+  ) %>%
+  
+  # Delete "NA" string values
+  mutate(datasetDOIs = str_remove_all(datasetDOIs, "(, NA)"))
+```
+  
+Map to `taxonRemarks`:
+
+```{r echo = TRUE}
+taxon %<>% mutate(dwc_taxonRemarks = paste(
+  "Sources considered for this taxon:", datasetDOIs
+))
+```
+
+### Post-processing
+
+1. Only keep the Darwin Core columns.
+  
+```{r}
+taxon %<>% select(starts_with("dwc_"))
+```
+  
+2. Drop the `dwc_` prefix.
+  
+```{r}
+colnames(taxon) <- str_remove(colnames(taxon), "dwc_")
+```
+
+3. Sort on `taxonID`.
+
+```{r}
+taxon %<>% arrange(taxonID)
+```
+
+4. Preview data:
+
+```{r}
+taxon %>% head()
+```
+
+5. Save to [CSV](https://github.com/trias-project/unified-checklist/blob/master/data/processed/taxon.csv).
+
+```{r}
+write_csv(taxon, here("data", "processed", "taxon.csv"), na = "")
+```
+
+## Distribution extension {#distribution-extension}
+
+### Pre-processing
+
+Create a dataframe `distribution` from the unified distributions.
+
+```{r}
+distribution <- input_distributions
+```
+
+### Term mapping
+
+Map the data to [Species Distribution](http://rs.gbif.org/extension/gbif/1.0/distribution.xml). Because of the scope (see \@ref(filter-on-distribution)) of the dataset, we can set all distributions to `occurrenceStatus:present` and `establishmentMeans:introduced` in `Belgium`.
+
+#### taxonID
+
+```{r echo = TRUE}
+distribution %<>% mutate(dwc_taxonID = paste0("https://www.gbif.org/species/", verificationKey))
+```
+
+#### locationID
+
+```{r echo = TRUE}
+distribution %<>% mutate(dwc_locationID = "ISO_3166-2:BE") 
+```
+
+#### locality
+
+```{r echo = TRUE}
+distribution %<>% mutate(dwc_locality = "Belgium") 
+```
+
+#### countryCode
+
+```{r echo = TRUE}
+distribution %<>% mutate(dwc_countryCode = "BE") 
+```
+
+#### occurrenceStatus
+
+```{r echo = TRUE}
+distribution %<>% mutate(dwc_occurrenceStatus = "present") 
+```
+
+#### establishmentMeans
+
+```{r echo = TRUE}
+distribution %<>% mutate(dwc_establishmentMeans = "introduced") 
+```
+
+#### eventDate
+
+The distribution information applies to a certain date range, which we will express here as an ISO 8601 date `yyyy/yyyy` (`startYear/endYear`). How the information for `startYear` and `endYear` is extracted from the source checklists, is described in \@ref(unify-distribution). As a result, each taxon in `input_distribution` has _or_ an `startYear` and an `endYear` _or_ no `eventDate` information at all.
+
+```{r echo = TRUE}
+distribution %<>% mutate(dwc_eventDate = case_when(
+  is.na(startYear) & is.na(endYear) ~ "",
+  TRUE ~ paste(startYear, endYear, sep = "/")
+))
+``` 
+ 
+#### source
+
+A distribution can have multiple source taxa (i.e. two verified synonyms from the same checklist). We therefore separate `datasetKeys` and `scientificNames` in a maximum of three columns and build a source (see \@ref(citing-sources)) for each.
+
+```{r}
+distribution <-
+  distribution %>%
+  
+  # Separate taxonKeys on "|" in 3 columns
+  separate(
+    taxonKeys,
+    into = c("taxonKey_1", "taxonKey_2", "taxonKey_3"),
+    sep = "\\|",
+    remove = FALSE,
+    convert = TRUE,
+    extra = "drop",
+    fill = "right") %>%
+  
+  # Do the same with scientificNames
+  separate(
+    scientificNames,
+    into = c("scientificName_1", "scientificName_2", "scientificName_3"),
+    sep = "\\|",
+    remove = FALSE,
+    convert = TRUE,
+    extra = "drop",
+    fill = "right"
+  ) %>%
+  
+  # Add source citations
+  add_source_citation(
+    new_column = "source_1",
+    dataset_info = checklists,
+    taxon_key = "taxonKey_1",
+    scientific_name = "scientificName_1"
+  ) %>%
+  
+  add_source_citation(
+    new_column = "source_2",
+    dataset_info = checklists,
+    taxon_key = "taxonKey_2",
+    scientific_name = "scientificName_2"
+  ) %>%
+  
+  add_source_citation(
+    new_column = "source_3",
+    dataset_info = checklists,
+    taxon_key = "taxonKey_3",
+    scientific_name = "scientificName_3"
+  )
+```
+
+Combine three source columns and remove `NA`:
+
+```{r echo = TRUE}
+distribution %<>% mutate(dwc_source = 
+  paste(source_1, source_2, source_3, sep = " | ") %>%
+  str_remove_all(" \\| NA")
+)
+```
+
+### Post-processing
+
+1. Only keep the Darwin Core columns.
+  
+```{r}
+distribution %<>% select(starts_with("dwc_"))
+```
+  
+2. Drop the `dwc_` prefix.
+  
+```{r}
+colnames(distribution) <- str_remove(colnames(distribution), "dwc_")
+```
+
+3. Sort on `taxonID`.
+
+```{r}
+distribution %<>% arrange(taxonID)
+```
+
+4. Preview data:
+
+```{r}
+distribution %>% head()
+```
+
+5. Save to [CSV](https://github.com/trias-project/unified-checklist/blob/master/data/processed/distribution.csv).
+
+```{r}
+write_csv(distribution, here("data", "processed", "distribution.csv"), na = "")
+```
+
+## Species profile extension {#species-profile-extension}
+
+Create a dataframe `species_profile` from the unified species profiles.
+
+```{r}
+species_profile <- input_speciesprofiles
+```
+
+### Term mapping
+
+Map the data to [Species Profile](http://rs.gbif.org/extension/gbif/1.0/speciesprofile.xml).
+
+#### taxonID
+
+```{r echo = TRUE}
+species_profile %<>% mutate(dwc_taxonID = paste0("https://www.gbif.org/species/", verificationKey))
+```
+
+#### isMarine
+
+```{r echo = TRUE}
+species_profile %<>% mutate(dwc_isMarine = marine)
+```
+
+#### isFreshwater
+
+```{r echo = TRUE}
+species_profile %<>% mutate(dwc_isFreshwater = freshwater)
+```
+
+#### isTerrestrial
+
+```{r echo = TRUE}
+species_profile %<>% mutate(dwc_isTerrestrial = terrestrial)
+```
+
+#### isInvasive
+
+The source checklists currently do not include information on the invasive nature of the taxa. We plan to add that information in an update of the dataset.
+
+```{r echo = TRUE}
+species_profile %<>% mutate(dwc_isInvasive = "")
+```
+
+#### habitat
+
+ISSG also used the field `habitat`, in which we will summarize the information from `isMarine`, `isFreshwater` and `isTerrestrial`. 
+
+```{r}
+species_profile %>%
+  group_by(marine, freshwater, terrestrial) %>% 
+  summarize(records = n()) %>% 
+  arrange(marine, freshwater, terrestrial)
+```
+
+Map `habitat`:
+
+```{r echo = TRUE}
+species_profile %<>% mutate(dwc_habitat = case_when(
+  marine == "FALSE" & freshwater == "FALSE" & terrestrial == "TRUE"  ~ "terrestrial",
+  marine == "FALSE" & freshwater == "TRUE"  & terrestrial == "FALSE" ~ "freshwater",
+  marine == "FALSE" & freshwater == "TRUE"  & terrestrial == "TRUE"  ~ "freshwater|terrestrial",
+  marine == "TRUE"  & freshwater == "FALSE" & terrestrial == "FALSE" ~ "marine",
+  marine == "TRUE"  & freshwater == "FALSE" & terrestrial == "TRUE"  ~ "marine|terrestrial",
+  marine == "TRUE"  & freshwater == "TRUE"  & terrestrial == "FALSE" ~ "marine|freshwater",
+  marine == "TRUE"  & freshwater == "TRUE"  & terrestrial == "TRUE"  ~ "marine|freshwater|terrestrial"
+))
+```
+
+Show mapping:
+
+```{r}
+species_profile %>% 
+  group_by(dwc_isMarine, dwc_isFreshwater, dwc_isTerrestrial, dwc_habitat) %>% 
+  summarize(records = n()) 
+```
+
+#### source
+
+See \@ref(citing-sources):
+
+```{r echo = TRUE}
+species_profile %<>% add_source_citation(
+  new_column = "dwc_source",
+  dataset_info = checklists
+)
+```
+
+### Post-processing
+
+1. Only keep the Darwin Core columns.
+  
+```{r}
+species_profile %<>% select(starts_with("dwc_"))
+```
+  
+2. Drop the `dwc_` prefix.
+  
+```{r}
+colnames(species_profile) <- str_remove(colnames(species_profile), "dwc_")
+```
+
+3. Sort on `taxonID`.
+
+```{r}
+species_profile %<>% arrange(taxonID)
+```
+
+4. Preview data:
+
+```{r}
+species_profile %>% head()
+```
+
+5. Save to [CSV](https://github.com/trias-project/unified-checklist/blob/master/data/processed/speciesprofile.csv).
+
+```{r}
+write_csv(species_profile, here("data", "processed", "speciesprofile.csv"), na = "")
+```
+
+## Description extension {#description-extension}
+
+### Pre-processing
+
+Create a dataframe `description` from the unified descriptions.
+
+```{r}
+description <- input_descriptions
+```
+
+### Term mapping
+
+Map the data to [Taxon Description](http://rs.gbif.org/extension/gbif/1.0/description.xml).
+
+#### taxonID
+
+```{r echo = TRUE}
+description %<>% mutate(dwc_taxonID = paste0("https://www.gbif.org/species/", verificationKey))
+```
+
+#### description
+
+```{r echo = TRUE}
+description %<>% mutate(dwc_description = description)
+```
+
+#### type
+
+```{r echo = TRUE}
+description %<>% mutate(dwc_type = type)
+```
+
+#### language
+
+```{r echo = TRUE}
+description %<>% mutate(dwc_language = "en")
+```
+
+#### source
+
+See \@ref(citing-sources):
+
+```{r echo = TRUE}
+description %<>% add_source_citation(
+  new_column = "dwc_source",
+  dataset_info = checklists
+)
+```
+
+### Post-processing
+
+1. Only keep the Darwin Core columns.
+  
+```{r}
+description %<>% select(starts_with("dwc_"))
+```
+  
+2. Drop the `dwc_` prefix.
+  
+```{r}
+colnames(description) <- str_remove(colnames(description), "dwc_")
+```
+
+3. Sort on `taxonID`.
+
+```{r}
+description %<>% arrange(taxonID)
+```
+
+4. Preview data:
+
+```{r}
+description %>% head()
+```
+
+5. Save to [CSV](https://github.com/trias-project/unified-checklist/blob/master/data/processed/description.csv).
+
+```{r}
+write_csv(description, here("data", "processed", "description.csv"), na = "")
+```
+
+<!--chapter:end:src/6_dwc_mapping.Rmd-->
+
+# GRIIS mapping
+
+In this chapter we export the unified information to an Excel template that can be used by the Global Register of Introduced and Invasive Species (GRIIS).
+
+## Read Darwin Core data
+
+```{r echo = TRUE}
+dwc_taxon <- read_csv(here("data", "processed", "taxon.csv"))
+dwc_distribution <- read_csv(here("data", "processed", "distribution.csv"))
+dwc_speciesprofile <- read_csv(here("data", "processed", "speciesprofile.csv"))
+```
+
+## GRIIS format
+
+### Pre-processing
+
+1. Check if the taxon core, distribution extension and species profile extension contain only one row per `taxonID`.
+
+```{r}
+nrow(dwc_taxon) == dwc_taxon %>% distinct(taxonID) %>% nrow()
+nrow(dwc_distribution) == dwc_distribution %>% distinct(taxonID) %>% nrow()
+nrow(dwc_speciesprofile) == dwc_speciesprofile %>% distinct(taxonID) %>% nrow()
+```
+
+2. Join the 3 files into one dataframe `griis`.
+
+```{r}
+griis <-
+  # taxa
+  dwc_taxon %>%
+  
+  # join with distributions
+  left_join(
+    dwc_distribution,
+    on = "taxonID"
+  ) %>%
+  
+  # join species profiles
+  left_join(
+    dwc_speciesprofile,
+    on = "taxonID"
+  )
+```
+
+### Term mapping
+
+#### taxonID
+
+```{r echo = TRUE}
+griis %<>% mutate(griis_taxonID = taxonID)
+```
+
+#### countryCode
+
+```{r echo = TRUE}
+griis %<>% mutate(griis_countryCode = countryCode)
+```
+
+#### island
+
+```{r echo = TRUE}
+griis %<>% mutate(griis_island = "")
+```
+
+#### scientificName
+
+```{r echo = TRUE}
+griis %<>% mutate(griis_scientificName = scientificName)
+```
+
+#### acceptedNameUsage
+
+```{r echo = TRUE}
+griis %<>% mutate(griis_acceptedNameUsage = case_when(
+  acceptedNameUsage != scientificName ~ acceptedNameUsage,
+  TRUE ~ ""
+))
+```
+
+#### taxonRank
+
+```{r echo = TRUE}
+griis %<>% mutate(griis_taxonRank = taxonRank)
+```
+
+#### taxonomicStatus
+
+```{r echo = TRUE}
+griis %<>% mutate(griis_taxonomicStatus = taxonomicStatus)
+```
+
+#### kingdom
+
+```{r echo = TRUE}
+griis %<>% mutate(griis_kingdom = kingdom)
+```
+
+#### phylum
+
+```{r echo = TRUE}
+griis %<>% mutate(griis_phylum = phylum)
+```
+
+#### class
+
+```{r echo = TRUE}
+griis %<>% mutate(griis_class = class)
+```
+
+#### order
+
+```{r echo = TRUE}
+griis %<>% mutate(griis_order = order)
+```
+
+#### family
+
+```{r echo = TRUE}
+griis %<>% mutate(griis_family = family)
+```
+
+#### habitat
+
+```{r echo = TRUE}
+griis %<>% mutate(griis_habitat = habitat)
+```
+
+#### occurrenceStatus
+
+```{r echo = TRUE}
+griis %<>% mutate(griis_occurrenceStatus = occurrenceStatus)
+```
+
+#### establishmentMeans
+
+```{r echo = TRUE}
+griis %<>% mutate(griis_establishmentMeans = recode(establishmentMeans,
+  "introduced" = "alien",
+  .default = "",
+  .missing = ""
+))
+```
+
+#### isInvasive
+
+```{r echo = TRUE}
+griis %<>% mutate(griis_isInvasive = case_when(
+  is.na(isInvasive) ~ "Null"
+))
+```
+
+### eventDate
+
+```{r echo = TRUE}
+griis %<>% mutate(griis_eventDate = eventDate)
+```
+
+## Post-processing
+
+1. Only keep the GRIIS columns.
+  
+```{r}
+griis %<>% select(starts_with("griis_"))
+```
+  
+2. Drop the `griis_` prefix.
+  
+```{r}
+colnames(griis) <- str_remove(colnames(griis), "griis_")
+```
+
+3. Sort on `scientificName` (the default for GRIIS lists).
+
+```{r}
+griis %<>% arrange(scientificName)
+```
+
+4. Preview data:
+
+```{r}
+griis %>% head()
+```
+
+5. Save to [Excel](https://github.com/trias-project/unified-checklist/blob/master/data/processed/Belgium_GBIF_GRIIS.xlsx).
+
+```{r}
+openxlsx::write.xlsx(griis, here("data", "processed", "Belgium_GBIF_GRIIS.xlsx"))
+```
+
+<!--chapter:end:src/7_griis_mapping.Rmd-->
+

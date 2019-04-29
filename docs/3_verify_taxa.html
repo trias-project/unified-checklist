@@ -224,7 +224,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="verification" class="section level2">
 <h2><span class="header-section-number">3.2</span> Read verification information</h2>
-<p>Verification information consists of a manually assigned <code>verificationKey</code> for taxa the backbone does not recognize (no backbone match) or will lump under another name (synonyms). Those <code>checklist/backbone/accepted</code> taxon combinations are stored in <a href="https://github.com/trias-project/unified-checklist/blob/master/data/interim/verification.tsv"><code>data/interim/verification.tsv</code></a>, which was created/updated in previous runs of this chapter and then manually annoted with a <code>verificationKey</code>.</p>
+<p>Verification information consists of a manually assigned <code>verificationKey</code> for taxa the backbone does not recognize (no backbone match) or will lump under another name (synonyms). Those <code>checklist/backbone/accepted</code> taxon combinations are stored in <a href="https://github.com/trias-project/unified-checklist/blob/master/references/verification.tsv"><code>references/verification.tsv</code></a>, which was created/updated in previous runs of this chapter and then manually annoted with a <code>verificationKey</code>.</p>
 </div>
 <div id="run-and-save-verification" class="section level2">
 <h2><span class="header-section-number">3.3</span> Run and save verification</h2>
@@ -235,7 +235,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p><strong>Note</strong>: to start a verification from scratch, use <code>trias::verify_taxa(taxa)</code>.</p>
 <ol start="2" style="list-style-type: decimal">
 <li><p>Save taxa with populated <code>verificationKey</code> back to <a href="https://github.com/trias-project/unified-checklist/blob/master/data/interim/taxa_with_verification.csv"><code>data/interim/taxa_with_verification.csv</code></a>.</p></li>
-<li><p>Save updated verification back to <a href="https://github.com/trias-project/unified-checklist/blob/master/data/interim/verification.tsv"><code>data/interim/verification.tsv</code></a> (sorted on <code>scientificName</code>)</p></li>
+<li><p>Save updated verification back to <a href="https://github.com/trias-project/unified-checklist/blob/master/references/verification.tsv"><code>references/verification.tsv</code></a> (sorted on <code>scientificName</code>)</p></li>
 </ol>
 </div>
 <div id="show-verification-status" class="section level2">
@@ -283,11 +283,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <tbody>
 <tr class="odd">
 <td>Previously verified</td>
-<td>118</td>
+<td>136</td>
 </tr>
 <tr class="even">
 <td>Unverified</td>
-<td>305</td>
+<td>287</td>
 </tr>
 <tr class="odd">
 <td>New in this run</td>

@@ -57,7 +57,9 @@ verificationKey,startYear,endYear,datasetKey,taxonKeys,scientificNames
 1719204,2018,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438232,"Gryllomorpha dalmatina (Ocskay, 1832)"
 1722140,2018,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438223,"Eumodicogryllus bordigalensis (Latreille, 1804)"
 1722299,2018,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438226,"Gryllodes sigillatus (Walker & F., 1869)"
+1728964,2018,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438212,"Tachycines asynamorus Adelung, 1902"
 1749449,1999,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438078,"Cameraria ohridella Deschka & Dimic, 1986"
+1749886,2001,2014,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438081,"Macrosaccus robiniella (Clemens, 1859)"
 1932752,1991,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438084,"Cacyreus marshalli Butler, 1898"
 1941864,2011,2011,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438087,"Paysandisia archon (Burmeister, 1880)"
 2115692,1998,2016,289244ee-e1c1-49aa-b2d7-d379391ce265,140562982,Megabalanus tintinnabulum
@@ -147,6 +149,7 @@ verificationKey,startYear,endYear,datasetKey,taxonKeys,scientificNames
 2294277,1866,2017,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042426,"Theba pisana (Müller, 1774)"
 2296797,1922,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437918,Candidula intersecta
 2296805,1976,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437904,Trochoidea elegans
+2296809,1946,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437913,Cochlicella barbara
 2297108,2018,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437924,Milax gagates
 2308541,2009,2016,289244ee-e1c1-49aa-b2d7-d379391ce265,140562902,Limnodrilus cervix
 2308574,1931,2016,289244ee-e1c1-49aa-b2d7-d379391ce265,140562898,Branchiura sowerbyi
@@ -1520,6 +1523,7 @@ verificationKey,startYear,endYear,datasetKey,taxonKeys,scientificNames
 4417131,2009,2016,289244ee-e1c1-49aa-b2d7-d379391ce265,140563000,Echinogammarus trichiatus
 4423428,2012,2012,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438220,"Yersinella raymondii (Yersin, 1860)"
 4453195,2018,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438186,"Carpophilus obsoletus Erichson, 1843"
+4467502,2013,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438183,"Otiorhynchus dieckmanni Magnano, 1979"
 4486365,2004,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437965,"Nysius huttoni FB White, 1878"
 4487282,2008,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437969,Fulvius anthocoroides
 4487370,2009,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437968,"Tropidosteptes pacificus (Van Duzee, 1921)"
@@ -1535,6 +1539,7 @@ verificationKey,startYear,endYear,datasetKey,taxonKeys,scientificNames
 4565134,2018,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437891,Cernuella aginnica
 4565140,1937,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437915,Cernuella cisalpina
 4567717,1971,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437897,Boettgerilla pallens
+4598006,1985,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437917,Cernuella neglecta
 4598226,1981,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437907,Tandonia sowerbyi
 4805564,1952,2016,289244ee-e1c1-49aa-b2d7-d379391ce265,140562980,Amphibalanus amphitrite
 4812260,2010,2016,289244ee-e1c1-49aa-b2d7-d379391ce265,140562895,Branchiodrilus hortensis
@@ -2174,6 +2179,7 @@ verificationKey,startYear,endYear,datasetKey,taxonKeys,scientificNames
 6447496,1911,1951,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266189,Atriplex leptocarpa F. Muell.
 6447806,1918,2005,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266185,Axyris amaranthoides L.
 6449041,1868,2018,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265681,Panicum miliaceum L. subsp. miliaceum
+6454754,1895,2016,289244ee-e1c1-49aa-b2d7-d379391ce265,140563014,Atyaephyra desmaresti
 6467647,1700,2016,289244ee-e1c1-49aa-b2d7-d379391ce265,140562979,Amphibalanus improvisus
 6476666,2015,2017,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437730,"Caenoplana bicolor (Graff, 1899)"
 6710856,1897,1939,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265653,Austrostipa scabra (Lindl.) S.W.L. Jacobs & J. Everett subsp. scabra
@@ -2362,6 +2368,7 @@ verificationKey,startYear,endYear,datasetKey,taxonKeys,scientificNames
 7810918,1814,2018,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266849,Scrophularia vernalis L.
 7814921,1893,1893,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266527,Clarkia bottae (Spach) F.H. & M.E. Lewis
 7818643,2002,2015,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265430,Prunus armeniaca L.
+7820753,1969,2016,289244ee-e1c1-49aa-b2d7-d379391ce265,140562960,Crassostrea gigas
 7823272,2012,2012,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266886,Ranunculus pensylvanicus L.f.
 7823743,2005,2005,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266470,Malva maroccana (Batt. & Trabut) Verloove & Lambinon
 7826351,1800,1938,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266885,Ranunculus lanuginosus L.
@@ -2401,6 +2408,7 @@ verificationKey,startYear,endYear,datasetKey,taxonKeys,scientificNames
 8010851,2010,2013,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266288,Acer japonicum Thunb.
 8012084,2002,2018,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267183,Dianthus subacaulis Vill.
 8012649,2013,2013,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266419,Rumex x hybridus Kindb.
+8014163,1946,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437912,Lehmannia valentiana
 8018277,2004,2004,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265341,Centaurea pectinata L.
 8018483,1947,2011,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265732,Eragrostis neomexicana Vasey
 8021567,2014,2017,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267167,Hypericum olympicum L.
@@ -2520,6 +2528,7 @@ verificationKey,startYear,endYear,datasetKey,taxonKeys,scientificNames
 9206251,1915,2018,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265339,Helianthus annuus L.
 9228111,2017,2017,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267125,Fumaria bastardii Boreau
 9288303,1893,2018,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266974,Solanum triflorum Nutt. var. triflorum
+9291405,2014,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437903,"Eobania vermiculata (O.F.Müller, 1774)"
 9297163,1902,1994,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266455,Erodium malacoides (L.) L'Hérit.
 9321334,2003,2015,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265333,Pilosella x prussica (Naeg. & Peter) Soják
 9350124,1968,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437871,"Natrix helvetica Lacépède, 1789"
@@ -2531,10 +2540,13 @@ verificationKey,startYear,endYear,datasetKey,taxonKeys,scientificNames
 9448191,1908,2017,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265132,Carduus nutans L. subsp. leiophyllus (Petrovič) Arènes
 9479629,2006,2016,289244ee-e1c1-49aa-b2d7-d379391ce265,140562900,Tasserkidrilus americanus
 9484350,1904,1951,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265917,Lachnagrostis eriantha (Hack.) A.J. Br.
+9491873,2001,2017,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042309,"Tetraodon fluviatilis F. Hamilton, 1822"
 9508942,1998,2010,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266232,Origanum vulgare L. subsp. hirtum (Link) A. Terrac.
 9518324,2006,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437820,Procyon cancrivorus
+9520065,1937,2016,289244ee-e1c1-49aa-b2d7-d379391ce265,140562956,Ferrissia fragilis
 9521148,1954,2017,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266129,Chenopodium probstii Aell.
 9540191,2001,2018,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265378,Pyracantha coccinea Roem.
 9567226,2003,2015,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266123,Oxybasis glauca (L.) Fuentes & al. var. salina (Standley) Verloove
 9671002,1863,1915,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265108,Centaurea x extranea Beck
+9738098,2016,2017,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437923,"Bellamya chinensis (Gray, 1834)"
 9758813,2008,2017,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266389,x Reyllopia conollyana (J.P. Bailey) Galasso

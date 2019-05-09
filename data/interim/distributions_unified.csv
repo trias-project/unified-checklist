@@ -146,8 +146,12 @@ verificationKey,startYear,endYear,datasetKey,taxonKeys,scientificNames
 2287668,1933,2016,289244ee-e1c1-49aa-b2d7-d379391ce265,140562948,Mercenaria mercenaria
 2288847,1730,1732,289244ee-e1c1-49aa-b2d7-d379391ce265,140562934,Teredo navalis
 2288859,1600,2016,289244ee-e1c1-49aa-b2d7-d379391ce265,140562935,Psiloteredo megotara
-2294277,1866,2017,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042426,"Theba pisana (Müller, 1774)"
-2296797,1922,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437918,Candidula intersecta
+2294131,2003,2003,e082b10e-476f-43c1-aa61-f8d92f33029a,157062962,"Allopeas clavulinum (Potiez & Michaud, 1835)"
+2294277,1934,1934,e082b10e-476f-43c1-aa61-f8d92f33029a,157063085,"Theba pisana (O.F. Müller, 1774)"
+2295309,2003,2003,e082b10e-476f-43c1-aa61-f8d92f33029a,157063256,"Hawaiia minuscula (Binney, 1841)"
+2295425,2003,2003,e082b10e-476f-43c1-aa61-f8d92f33029a,157062947,"Zonitoides arboreus (Say, 1817)"
+2296797,1922,1922,e082b10e-476f-43c1-aa61-f8d92f33029a,157063040,"Candidula intersecta (Poiret, 1801)"
+2296801,1867,1867,e082b10e-476f-43c1-aa61-f8d92f33029a,157063124,"Cernuella virgata (Da Costa, 1778)"
 2296805,1976,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437904,Trochoidea elegans
 2296809,1946,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437913,Cochlicella barbara
 2297108,2018,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437924,Milax gagates
@@ -1534,12 +1538,15 @@ verificationKey,startYear,endYear,datasetKey,taxonKeys,scientificNames
 4556286,2011,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437708,"Meloidogyne artiellia Franklin, 1961"
 4559541,1999,2016,289244ee-e1c1-49aa-b2d7-d379391ce265,140562938,Sinanodonta woodiana
 4562566,,,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042436,"Aegopinella nitens (Michaud, 1831)"
+4562917,1828,1828,e082b10e-476f-43c1-aa61-f8d92f33029a,157063108,"Cochlicella acuta (O.F. Müller, 1774)"
 4564944,1965,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437894,Xerosecta cespitum
-4565039,1994,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437892,"Hygromia cinctella (Draparnaud, 1801)"
-4565134,2018,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437891,Cernuella aginnica
-4565140,1937,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437915,Cernuella cisalpina
-4567717,1971,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437897,Boettgerilla pallens
+4565039,1994,1994,e082b10e-476f-43c1-aa61-f8d92f33029a,157063054,"Hygromia cinctella (Draparnaud, 1801)"
+4565134,1944,1944,e082b10e-476f-43c1-aa61-f8d92f33029a,157063120,"Cernuella aginnica (Locard, 1882)"
+4565140,1937,1937,e082b10e-476f-43c1-aa61-f8d92f33029a,157063191,"Cernuella cisalpina (Rossmässler, 1837)"
+4567717,1967,1967,e082b10e-476f-43c1-aa61-f8d92f33029a,157063252,"Boettgerilla pallens Simroth, 1912"
+4568269,2014,2014,e082b10e-476f-43c1-aa61-f8d92f33029a,157062984,"Paralaoma servilis (Shuttleworth, 1852)"
 4598006,1985,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437917,Cernuella neglecta
+4598225,1941,1941,e082b10e-476f-43c1-aa61-f8d92f33029a,157063014,"Tandonia budapestensis (Hazay, 1880)"
 4598226,1981,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437907,Tandonia sowerbyi
 4805564,1952,2016,289244ee-e1c1-49aa-b2d7-d379391ce265,140562980,Amphibalanus amphitrite
 4812260,2010,2016,289244ee-e1c1-49aa-b2d7-d379391ce265,140562895,Branchiodrilus hortensis
@@ -1577,7 +1584,7 @@ verificationKey,startYear,endYear,datasetKey,taxonKeys,scientificNames
 5189713,1998,2016,289244ee-e1c1-49aa-b2d7-d379391ce265,140562957,Menetus dilatatus
 5189806,1869,2016,289244ee-e1c1-49aa-b2d7-d379391ce265,140562954,Physella acuta
 5190777,1972,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437901,Deroceras panormitanum
-5190912,1983,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437925,Testacella haliotidea
+5190912,1860,1860,e082b10e-476f-43c1-aa61-f8d92f33029a,157062974,"Testacella haliotidea Draparnaud, 1801"
 5192470,1927,2016,289244ee-e1c1-49aa-b2d7-d379391ce265,140562926,Potamopyrgus antipodarum
 5192789,1911,2016,289244ee-e1c1-49aa-b2d7-d379391ce265,140562929,Crepidula fornicata
 5199161,2000,2016,289244ee-e1c1-49aa-b2d7-d379391ce265,140562891,Hypania invalida
@@ -2319,9 +2326,10 @@ verificationKey,startYear,endYear,datasetKey,taxonKeys,scientificNames
 7510471,1995,1995,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266399,Polygonum argyrocoleon Steud. ex Kunze
 7517279,1948,1948,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265715,Austrodanthonia tenuior (Steud.) H.P. Linder
 7519710,1984,1993,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266608,Orobanche amethystea Thuill.
+7520678,2013,2013,e082b10e-476f-43c1-aa61-f8d92f33029a,157062968,"Striosubulina striatella (Rang, 1831)"
 7523432,1978,1978,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267211,Silene behen L.
 7536406,1895,1895,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266352,Nemophila menziesii Hook. & Arnott var. integrifolia Parish
-7540164,1973,2017,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042480,"Arion vulgaris (Moquin-Tandon, 1855)"
+7540164,1981,1981,e082b10e-476f-43c1-aa61-f8d92f33029a,157063238,"Arion vulgaris Moquin-Tandon, 1855"
 7544073,1864,2018,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265008,Saxifraga x arendsii Engl. s.l.
 7547256,2007,2016,289244ee-e1c1-49aa-b2d7-d379391ce265,140563025,Sinelobus vanhaareni
 7549853,1921,1921,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265780,Disakisperma dubia (Kunth) P.M. Peterson & N. Snow
@@ -2408,7 +2416,7 @@ verificationKey,startYear,endYear,datasetKey,taxonKeys,scientificNames
 8010851,2010,2013,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266288,Acer japonicum Thunb.
 8012084,2002,2018,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267183,Dianthus subacaulis Vill.
 8012649,2013,2013,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266419,Rumex x hybridus Kindb.
-8014163,1946,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437912,Lehmannia valentiana
+8014163,1946,1946,e082b10e-476f-43c1-aa61-f8d92f33029a,157063061,"Ambigolimax valentianus (A. Férussac, 1822)"
 8018277,2004,2004,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265341,Centaurea pectinata L.
 8018483,1947,2011,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265732,Eragrostis neomexicana Vasey
 8021567,2014,2017,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267167,Hypericum olympicum L.
@@ -2502,7 +2510,7 @@ verificationKey,startYear,endYear,datasetKey,taxonKeys,scientificNames
 8690876,1951,1951,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265030,Abronia fragrans Nutt.
 8720751,2008,2009,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266430,Aconogonon divaricatum (L.) Nakai
 8740315,2018,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437723,"Marionfyfea adventor Jones & Sluys, 2016"
-8745918,1968,2017,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042406,"Deroceras invadens Reise, Hutchinson, Schunack & Schlitt, 2011"
+8745918,1968,1968,e082b10e-476f-43c1-aa61-f8d92f33029a,157063248,"Deroceras invadens Reise, Hutchinson, Schunack & Schlitt, 2011"
 8765358,2013,2013,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438199,"Coccinella miranda Wollaston, 1864"
 8773480,2014,2017,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266396,Aconogonon x fennicum Reiersen
 8871276,2009,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437987,Neuroctenus lestoni
@@ -2528,7 +2536,7 @@ verificationKey,startYear,endYear,datasetKey,taxonKeys,scientificNames
 9206251,1915,2018,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265339,Helianthus annuus L.
 9228111,2017,2017,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267125,Fumaria bastardii Boreau
 9288303,1893,2018,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266974,Solanum triflorum Nutt. var. triflorum
-9291405,2014,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437903,"Eobania vermiculata (O.F.Müller, 1774)"
+9291405,2014,2014,e082b10e-476f-43c1-aa61-f8d92f33029a,157063067,"Massylaea vermiculata (O.F. Müller, 1774)"
 9297163,1902,1994,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266455,Erodium malacoides (L.) L'Hérit.
 9321334,2003,2015,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265333,Pilosella x prussica (Naeg. & Peter) Soják
 9350124,1968,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437871,"Natrix helvetica Lacépède, 1789"

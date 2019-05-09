@@ -340,7 +340,37 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 2288859,pathway,cbd_2014_pathway:stowaway,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042451,"Psiloteredo megotara (Hanley in Forbes & Hanley, 1848)"
 2288859,pathway,cbd_2014_pathway:stowaway_hull_fouling,289244ee-e1c1-49aa-b2d7-d379391ce265,140562935,Psiloteredo megotara
 2288859,pathway,cbd_2014_pathway:stowaway_other,289244ee-e1c1-49aa-b2d7-d379391ce265,140562935,Psiloteredo megotara
+2294131,degree of establishment,blackburn_et_al_2011:B2,e082b10e-476f-43c1-aa61-f8d92f33029a,157062962,"Allopeas clavulinum (Potiez & Michaud, 1835)"
+2294131,native range,eastern Africa,e082b10e-476f-43c1-aa61-f8d92f33029a,157062962,"Allopeas clavulinum (Potiez & Michaud, 1835)"
+2294131,pathway,cbd_2014_pathway:contaminant_habitat_material,e082b10e-476f-43c1-aa61-f8d92f33029a,157062962,"Allopeas clavulinum (Potiez & Michaud, 1835)"
+2294131,pathway,cbd_2014_pathway:contaminant_on_plants,e082b10e-476f-43c1-aa61-f8d92f33029a,157062962,"Allopeas clavulinum (Potiez & Michaud, 1835)"
+2294277,degree of establishment,blackburn_et_al_2011:E,e082b10e-476f-43c1-aa61-f8d92f33029a,157063085,"Theba pisana (O.F. Müller, 1774)"
+2294277,native range,circum western Mediterranean coastal areas,e082b10e-476f-43c1-aa61-f8d92f33029a,157063085,"Theba pisana (O.F. Müller, 1774)"
 2294277,native range,Europe (WGSRPD:1),1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042426,"Theba pisana (Müller, 1774)"
+2294277,native range,nortwestern Africa,e082b10e-476f-43c1-aa61-f8d92f33029a,157063085,"Theba pisana (O.F. Müller, 1774)"
+2294277,pathway,cbd_2014_pathway:release_other,e082b10e-476f-43c1-aa61-f8d92f33029a,157063085,"Theba pisana (O.F. Müller, 1774)"
+2294277,pathway,cbd_2014_pathway:unaided,e082b10e-476f-43c1-aa61-f8d92f33029a,157063085,"Theba pisana (O.F. Müller, 1774)"
+2295309,degree of establishment,blackburn_et_al_2011:B2,e082b10e-476f-43c1-aa61-f8d92f33029a,157063256,"Hawaiia minuscula (Binney, 1841)"
+2295309,native range,North America,e082b10e-476f-43c1-aa61-f8d92f33029a,157063256,"Hawaiia minuscula (Binney, 1841)"
+2295309,pathway,cbd_2014_pathway:contaminant_habitat_material,e082b10e-476f-43c1-aa61-f8d92f33029a,157063256,"Hawaiia minuscula (Binney, 1841)"
+2295309,pathway,cbd_2014_pathway:contaminant_on_plants,e082b10e-476f-43c1-aa61-f8d92f33029a,157063256,"Hawaiia minuscula (Binney, 1841)"
+2295425,degree of establishment,blackburn_et_al_2011:B2,e082b10e-476f-43c1-aa61-f8d92f33029a,157062947,"Zonitoides arboreus (Say, 1817)"
+2295425,native range,North America,e082b10e-476f-43c1-aa61-f8d92f33029a,157062947,"Zonitoides arboreus (Say, 1817)"
+2295425,pathway,cbd_2014_pathway:contaminant_habitat_material,e082b10e-476f-43c1-aa61-f8d92f33029a,157062947,"Zonitoides arboreus (Say, 1817)"
+2295425,pathway,cbd_2014_pathway:contaminant_on_plants,e082b10e-476f-43c1-aa61-f8d92f33029a,157062947,"Zonitoides arboreus (Say, 1817)"
+2296797,degree of establishment,blackburn_et_al_2011:E,e082b10e-476f-43c1-aa61-f8d92f33029a,157063040,"Candidula intersecta (Poiret, 1801)"
+2296797,native range,Iberian Peninsula,e082b10e-476f-43c1-aa61-f8d92f33029a,157063040,"Candidula intersecta (Poiret, 1801)"
+2296797,native range,southwestern France,e082b10e-476f-43c1-aa61-f8d92f33029a,157063040,"Candidula intersecta (Poiret, 1801)"
+2296797,pathway,cbd_2014_pathway:stowaway_people_luggage,e082b10e-476f-43c1-aa61-f8d92f33029a,157063040,"Candidula intersecta (Poiret, 1801)"
+2296797,pathway,cbd_2014_pathway:stowaway_vehicles,e082b10e-476f-43c1-aa61-f8d92f33029a,157063040,"Candidula intersecta (Poiret, 1801)"
+2296797,pathway,cbd_2014_pathway:unaided,e082b10e-476f-43c1-aa61-f8d92f33029a,157063040,"Candidula intersecta (Poiret, 1801)"
+2296801,degree of establishment,blackburn_et_al_2011:E,e082b10e-476f-43c1-aa61-f8d92f33029a,157063124,"Cernuella virgata (Da Costa, 1778)"
+2296801,native range,central Mediterranean coastal areas,e082b10e-476f-43c1-aa61-f8d92f33029a,157063124,"Cernuella virgata (Da Costa, 1778)"
+2296801,native range,western Mediterranean coastal areas,e082b10e-476f-43c1-aa61-f8d92f33029a,157063124,"Cernuella virgata (Da Costa, 1778)"
+2296801,pathway,cbd_2014_pathway:release_other,e082b10e-476f-43c1-aa61-f8d92f33029a,157063124,"Cernuella virgata (Da Costa, 1778)"
+2296801,pathway,cbd_2014_pathway:stowaway_people_luggage,e082b10e-476f-43c1-aa61-f8d92f33029a,157063124,"Cernuella virgata (Da Costa, 1778)"
+2296801,pathway,cbd_2014_pathway:stowaway_vehicles,e082b10e-476f-43c1-aa61-f8d92f33029a,157063124,"Cernuella virgata (Da Costa, 1778)"
+2296801,pathway,cbd_2014_pathway:unaided,e082b10e-476f-43c1-aa61-f8d92f33029a,157063124,"Cernuella virgata (Da Costa, 1778)"
 2296805,native range,Europe (WGSRPD:1),1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042390,"Trochoidea elegans (Gmelin, 1791)"
 2296805,pathway,cbd_2014_pathway:contaminant,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042390,"Trochoidea elegans (Gmelin, 1791)"
 2296805,pathway,cbd_2014_pathway:stowaway,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042390,"Trochoidea elegans (Gmelin, 1791)"
@@ -5242,12 +5272,52 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 4559541,pathway,cbd_2014_pathway:escape_aquaculture,289244ee-e1c1-49aa-b2d7-d379391ce265,140562938,Sinanodonta woodiana
 4559541,pathway,cbd_2014_pathway:stowaway,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042453,"Sinanodonta woodiana (Lea, 1834)"
 4562566,native range,Europe (WGSRPD:1),1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042436,"Aegopinella nitens (Michaud, 1831)"
+4562917,degree of establishment,blackburn_et_al_2011:E,e082b10e-476f-43c1-aa61-f8d92f33029a,157063108,"Cochlicella acuta (O.F. Müller, 1774)"
+4562917,native range,circum-Mediterranean,e082b10e-476f-43c1-aa61-f8d92f33029a,157063108,"Cochlicella acuta (O.F. Müller, 1774)"
+4562917,pathway,cbd_2014_pathway:release_other,e082b10e-476f-43c1-aa61-f8d92f33029a,157063108,"Cochlicella acuta (O.F. Müller, 1774)"
+4562917,pathway,cbd_2014_pathway:stowaway_people_luggage,e082b10e-476f-43c1-aa61-f8d92f33029a,157063108,"Cochlicella acuta (O.F. Müller, 1774)"
+4562917,pathway,cbd_2014_pathway:stowaway_vehicles,e082b10e-476f-43c1-aa61-f8d92f33029a,157063108,"Cochlicella acuta (O.F. Müller, 1774)"
+4562917,pathway,cbd_2014_pathway:unaided,e082b10e-476f-43c1-aa61-f8d92f33029a,157063108,"Cochlicella acuta (O.F. Müller, 1774)"
+4565039,degree of establishment,blackburn_et_al_2011:E,e082b10e-476f-43c1-aa61-f8d92f33029a,157063054,"Hygromia cinctella (Draparnaud, 1801)"
 4565039,invasion stage,established,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437892,"Hygromia cinctella (Draparnaud, 1801)"
+4565039,native range,Italy,e082b10e-476f-43c1-aa61-f8d92f33029a,157063054,"Hygromia cinctella (Draparnaud, 1801)"
+4565039,native range,northwestern Croatia,e082b10e-476f-43c1-aa61-f8d92f33029a,157063054,"Hygromia cinctella (Draparnaud, 1801)"
+4565039,native range,Slovenia,e082b10e-476f-43c1-aa61-f8d92f33029a,157063054,"Hygromia cinctella (Draparnaud, 1801)"
+4565039,native range,southeastern France,e082b10e-476f-43c1-aa61-f8d92f33029a,157063054,"Hygromia cinctella (Draparnaud, 1801)"
 4565039,native range,Southern Europe,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437892,"Hygromia cinctella (Draparnaud, 1801)"
 4565039,pathway,cbd_2014_pathway:contaminant_habitat_material,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437892,"Hygromia cinctella (Draparnaud, 1801)"
+4565039,pathway,cbd_2014_pathway:contaminant_on_plants,e082b10e-476f-43c1-aa61-f8d92f33029a,157063054,"Hygromia cinctella (Draparnaud, 1801)"
+4565039,pathway,cbd_2014_pathway:stowaway,e082b10e-476f-43c1-aa61-f8d92f33029a,157063054,"Hygromia cinctella (Draparnaud, 1801)"
+4565039,pathway,cbd_2014_pathway:unaided,e082b10e-476f-43c1-aa61-f8d92f33029a,157063054,"Hygromia cinctella (Draparnaud, 1801)"
+4565134,degree of establishment,blackburn_et_al_2011:E,e082b10e-476f-43c1-aa61-f8d92f33029a,157063120,"Cernuella aginnica (Locard, 1882)"
+4565134,native range,southern France,e082b10e-476f-43c1-aa61-f8d92f33029a,157063120,"Cernuella aginnica (Locard, 1882)"
+4565134,pathway,cbd_2014_pathway:stowaway_people_luggage,e082b10e-476f-43c1-aa61-f8d92f33029a,157063120,"Cernuella aginnica (Locard, 1882)"
+4565134,pathway,cbd_2014_pathway:stowaway_vehicles,e082b10e-476f-43c1-aa61-f8d92f33029a,157063120,"Cernuella aginnica (Locard, 1882)"
+4565140,degree of establishment,blackburn_et_al_2011:E,e082b10e-476f-43c1-aa61-f8d92f33029a,157063191,"Cernuella cisalpina (Rossmässler, 1837)"
+4565140,native range,coastal areas of the western Balkan,e082b10e-476f-43c1-aa61-f8d92f33029a,157063191,"Cernuella cisalpina (Rossmässler, 1837)"
+4565140,native range,Italy,e082b10e-476f-43c1-aa61-f8d92f33029a,157063191,"Cernuella cisalpina (Rossmässler, 1837)"
+4565140,pathway,cbd_2014_pathway:stowaway_people_luggage,e082b10e-476f-43c1-aa61-f8d92f33029a,157063191,"Cernuella cisalpina (Rossmässler, 1837)"
+4565140,pathway,cbd_2014_pathway:stowaway_vehicles,e082b10e-476f-43c1-aa61-f8d92f33029a,157063191,"Cernuella cisalpina (Rossmässler, 1837)"
+4567717,degree of establishment,blackburn_et_al_2011:E,e082b10e-476f-43c1-aa61-f8d92f33029a,157063252,"Boettgerilla pallens Simroth, 1912"
 4567717,invasion stage,established,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437897,Boettgerilla pallens
+4567717,native range,Caucasus region,e082b10e-476f-43c1-aa61-f8d92f33029a,157063252,"Boettgerilla pallens Simroth, 1912"
 4567717,native range,Europe (WGSRPD:1),1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042402,Boettgerilla pallens Simroth 1912
+4567717,pathway,cbd_2014_pathway:contaminant_habitat_material,e082b10e-476f-43c1-aa61-f8d92f33029a,157063252,"Boettgerilla pallens Simroth, 1912"
+4567717,pathway,cbd_2014_pathway:contaminant_on_plants,e082b10e-476f-43c1-aa61-f8d92f33029a,157063252,"Boettgerilla pallens Simroth, 1912"
+4567717,pathway,cbd_2014_pathway:unaided,e082b10e-476f-43c1-aa61-f8d92f33029a,157063252,"Boettgerilla pallens Simroth, 1912"
+4568269,degree of establishment,blackburn_et_al_2011:E,e082b10e-476f-43c1-aa61-f8d92f33029a,157062984,"Paralaoma servilis (Shuttleworth, 1852)"
+4568269,native range,Australia,e082b10e-476f-43c1-aa61-f8d92f33029a,157062984,"Paralaoma servilis (Shuttleworth, 1852)"
+4568269,native range,New Zealand,e082b10e-476f-43c1-aa61-f8d92f33029a,157062984,"Paralaoma servilis (Shuttleworth, 1852)"
+4568269,pathway,cbd_2014_pathway:contaminant_habitat_material,e082b10e-476f-43c1-aa61-f8d92f33029a,157062984,"Paralaoma servilis (Shuttleworth, 1852)"
+4568269,pathway,cbd_2014_pathway:contaminant_on_plants,e082b10e-476f-43c1-aa61-f8d92f33029a,157062984,"Paralaoma servilis (Shuttleworth, 1852)"
 4598006,native range,Europe (WGSRPD:1),1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042438,"Cernuella neglecta (Draparnaud, 1805)"
+4598225,degree of establishment,blackburn_et_al_2011:E,e082b10e-476f-43c1-aa61-f8d92f33029a,157063014,"Tandonia budapestensis (Hazay, 1880)"
+4598225,native range,Carpathians,e082b10e-476f-43c1-aa61-f8d92f33029a,157063014,"Tandonia budapestensis (Hazay, 1880)"
+4598225,native range,northern Balkan,e082b10e-476f-43c1-aa61-f8d92f33029a,157063014,"Tandonia budapestensis (Hazay, 1880)"
+4598225,native range,southeastern Alps,e082b10e-476f-43c1-aa61-f8d92f33029a,157063014,"Tandonia budapestensis (Hazay, 1880)"
+4598225,native range,southern Alps,e082b10e-476f-43c1-aa61-f8d92f33029a,157063014,"Tandonia budapestensis (Hazay, 1880)"
+4598225,pathway,cbd_2014_pathway:contaminant_habitat_material,e082b10e-476f-43c1-aa61-f8d92f33029a,157063014,"Tandonia budapestensis (Hazay, 1880)"
+4598225,pathway,cbd_2014_pathway:contaminant_on_plants,e082b10e-476f-43c1-aa61-f8d92f33029a,157063014,"Tandonia budapestensis (Hazay, 1880)"
 4598226,native range,Europe (WGSRPD:1),1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042413,"Tandonia sowerbyi (A. Férussac, 1823)"
 4805564,invasion stage,established,289244ee-e1c1-49aa-b2d7-d379391ce265,140562980,Amphibalanus amphitrite
 4805564,native range,Southern Europe,289244ee-e1c1-49aa-b2d7-d379391ce265,140562980,Amphibalanus amphitrite
@@ -5350,6 +5420,11 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 5189806,native range,Northern America,289244ee-e1c1-49aa-b2d7-d379391ce265,140562954,Physella acuta
 5189806,pathway,cbd_2014_pathway:stowaway_other,289244ee-e1c1-49aa-b2d7-d379391ce265,140562954,Physella acuta
 5190777,invasion stage,established,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437901,Deroceras panormitanum
+5190912,degree of establishment,blackburn_et_al_2011:C0,e082b10e-476f-43c1-aa61-f8d92f33029a,157062974,"Testacella haliotidea Draparnaud, 1801"
+5190912,native range,southern Europe,e082b10e-476f-43c1-aa61-f8d92f33029a,157062974,"Testacella haliotidea Draparnaud, 1801"
+5190912,native range,western Mediterranean,e082b10e-476f-43c1-aa61-f8d92f33029a,157062974,"Testacella haliotidea Draparnaud, 1801"
+5190912,pathway,cbd_2014_pathway:contaminant_habitat_material,e082b10e-476f-43c1-aa61-f8d92f33029a,157062974,"Testacella haliotidea Draparnaud, 1801"
+5190912,pathway,cbd_2014_pathway:contaminant_on_plants,e082b10e-476f-43c1-aa61-f8d92f33029a,157062974,"Testacella haliotidea Draparnaud, 1801"
 5192470,invasion stage,established,289244ee-e1c1-49aa-b2d7-d379391ce265,140562926,Potamopyrgus antipodarum
 5192470,native range,Australia (WGSRPD:50),1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042422,"Potamopyrgus antipodarum (Gray, 1843)"
 5192470,native range,New Zealand,289244ee-e1c1-49aa-b2d7-d379391ce265,140562926,Potamopyrgus antipodarum
@@ -8121,6 +8196,10 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 7519710,native range,Europe (WGSRPD:1),9ff7d317-609b-4c08-bd86-3bc404b77c42,141266608,Orobanche amethystea Thuill.
 7519710,native range,temperate Asia (WGSRPD:3),9ff7d317-609b-4c08-bd86-3bc404b77c42,141266608,Orobanche amethystea Thuill.
 7519710,pathway,cbd_2014_pathway:contaminant_seed,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266608,Orobanche amethystea Thuill.
+7520678,degree of establishment,blackburn_et_al_2011:B2,e082b10e-476f-43c1-aa61-f8d92f33029a,157062968,"Striosubulina striatella (Rang, 1831)"
+7520678,native range,tropical western Africa,e082b10e-476f-43c1-aa61-f8d92f33029a,157062968,"Striosubulina striatella (Rang, 1831)"
+7520678,pathway,cbd_2014_pathway:contaminant_habitat_material,e082b10e-476f-43c1-aa61-f8d92f33029a,157062968,"Striosubulina striatella (Rang, 1831)"
+7520678,pathway,cbd_2014_pathway:contaminant_on_plants,e082b10e-476f-43c1-aa61-f8d92f33029a,157062968,"Striosubulina striatella (Rang, 1831)"
 7523432,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267211,Silene behen L.
 7523432,native range,Africa (WGSRPD:2),9ff7d317-609b-4c08-bd86-3bc404b77c42,141267211,Silene behen L.
 7523432,native range,Europe (WGSRPD:1),9ff7d317-609b-4c08-bd86-3bc404b77c42,141267211,Silene behen L.
@@ -8129,11 +8208,16 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 7536406,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266352,Nemophila menziesii Hook. & Arnott var. integrifolia Parish
 7536406,native range,Northern America (WGSRPD:7),9ff7d317-609b-4c08-bd86-3bc404b77c42,141266352,Nemophila menziesii Hook. & Arnott var. integrifolia Parish
 7536406,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266352,Nemophila menziesii Hook. & Arnott var. integrifolia Parish
+7540164,degree of establishment,blackburn_et_al_2011:E,e082b10e-476f-43c1-aa61-f8d92f33029a,157063238,"Arion vulgaris Moquin-Tandon, 1855"
 7540164,native range,Europe (WGSRPD:1),1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042480,"Arion vulgaris (Moquin-Tandon, 1855)"
+7540164,native range,unclear,e082b10e-476f-43c1-aa61-f8d92f33029a,157063238,"Arion vulgaris Moquin-Tandon, 1855"
 7540164,pathway,cbd_2014_pathway:contaminant,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042480,"Arion vulgaris (Moquin-Tandon, 1855)"
+7540164,pathway,cbd_2014_pathway:contaminant_habitat_material,e082b10e-476f-43c1-aa61-f8d92f33029a,157063238,"Arion vulgaris Moquin-Tandon, 1855"
+7540164,pathway,cbd_2014_pathway:contaminant_on_plants,e082b10e-476f-43c1-aa61-f8d92f33029a,157063238,"Arion vulgaris Moquin-Tandon, 1855"
 7540164,pathway,cbd_2014_pathway:corridor,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042480,"Arion vulgaris (Moquin-Tandon, 1855)"
 7540164,pathway,cbd_2014_pathway:natural_dispersal,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042480,"Arion vulgaris (Moquin-Tandon, 1855)"
 7540164,pathway,cbd_2014_pathway:stowaway,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042480,"Arion vulgaris (Moquin-Tandon, 1855)"
+7540164,pathway,cbd_2014_pathway:unaided,e082b10e-476f-43c1-aa61-f8d92f33029a,157063238,"Arion vulgaris Moquin-Tandon, 1855"
 7544073,invasion stage,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265008,Saxifraga x arendsii Engl. s.l.
 7544073,native range,cultivated origin,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265008,Saxifraga x arendsii Engl. s.l.
 7544073,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265008,Saxifraga x arendsii Engl. s.l.
@@ -8439,9 +8523,14 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 8012084,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267183,Dianthus subacaulis Vill.
 8012649,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266419,Rumex x hybridus Kindb.
 8012649,native range,hybrid origin,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266419,Rumex x hybridus Kindb.
+8014163,degree of establishment,blackburn_et_al_2011:E,e082b10e-476f-43c1-aa61-f8d92f33029a,157063061,"Ambigolimax valentianus (A. Férussac, 1822)"
 8014163,native range,Europe (WGSRPD:1),1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042439,"Lehmannia valentiana (Férussac, 1822)"
+8014163,native range,Iberian Peninsula,e082b10e-476f-43c1-aa61-f8d92f33029a,157063061,"Ambigolimax valentianus (A. Férussac, 1822)"
 8014163,pathway,cbd_2014_pathway:contaminant,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042439,"Lehmannia valentiana (Férussac, 1822)"
+8014163,pathway,cbd_2014_pathway:contaminant_habitat_material,e082b10e-476f-43c1-aa61-f8d92f33029a,157063061,"Ambigolimax valentianus (A. Férussac, 1822)"
+8014163,pathway,cbd_2014_pathway:contaminant_on_plants,e082b10e-476f-43c1-aa61-f8d92f33029a,157063061,"Ambigolimax valentianus (A. Férussac, 1822)"
 8014163,pathway,cbd_2014_pathway:stowaway,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042439,"Lehmannia valentiana (Férussac, 1822)"
+8014163,pathway,cbd_2014_pathway:unaided,e082b10e-476f-43c1-aa61-f8d92f33029a,157063061,"Ambigolimax valentianus (A. Férussac, 1822)"
 8018277,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265341,Centaurea pectinata L.
 8018277,native range,Europe (WGSRPD:1),9ff7d317-609b-4c08-bd86-3bc404b77c42,141265341,Centaurea pectinata L.
 8018483,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265732,Eragrostis neomexicana Vasey
@@ -8754,7 +8843,11 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 8720751,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266430,Aconogonon divaricatum (L.) Nakai
 8740315,native range,New Zealand (WGSRPD:51),1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437723,"Marionfyfea adventor Jones & Sluys, 2016"
 8740315,pathway,cbd_2014_pathway:contaminant_habitat_material,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437723,"Marionfyfea adventor Jones & Sluys, 2016"
+8745918,degree of establishment,blackburn_et_al_2011:E,e082b10e-476f-43c1-aa61-f8d92f33029a,157063248,"Deroceras invadens Reise, Hutchinson, Schunack & Schlitt, 2011"
 8745918,native range,Europe (WGSRPD:1),1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042406,"Deroceras invadens Reise, Hutchinson, Schunack & Schlitt, 2011"
+8745918,native range,tropical western Africa,e082b10e-476f-43c1-aa61-f8d92f33029a,157063248,"Deroceras invadens Reise, Hutchinson, Schunack & Schlitt, 2011"
+8745918,pathway,cbd_2014_pathway:contaminant_habitat_material,e082b10e-476f-43c1-aa61-f8d92f33029a,157063248,"Deroceras invadens Reise, Hutchinson, Schunack & Schlitt, 2011"
+8745918,pathway,cbd_2014_pathway:contaminant_on_plants,e082b10e-476f-43c1-aa61-f8d92f33029a,157063248,"Deroceras invadens Reise, Hutchinson, Schunack & Schlitt, 2011"
 8745918,pathway,cbd_2014_pathway:release,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042406,"Deroceras invadens Reise, Hutchinson, Schunack & Schlitt, 2011"
 8765358,invasion stage,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438199,"Coccinella miranda Wollaston, 1864"
 8765358,native range,Canary Islands (WGSRPD:21_CNY),1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438199,"Coccinella miranda Wollaston, 1864"
@@ -8852,9 +8945,14 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 9288303,pathway,cbd_2014_pathway:contaminant_habitat_material,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266974,Solanum triflorum Nutt. var. triflorum
 9288303,pathway,cbd_2014_pathway:contaminant_on_animals,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266974,Solanum triflorum Nutt. var. triflorum
 9288303,pathway,cbd_2014_pathway:contaminant_seed,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266974,Solanum triflorum Nutt. var. triflorum
+9291405,degree of establishment,blackburn_et_al_2011:C3,e082b10e-476f-43c1-aa61-f8d92f33029a,157063067,"Massylaea vermiculata (O.F. Müller, 1774)"
 9291405,invasion stage,established,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437903,"Eobania vermiculata (O.F.Müller, 1774)"
 9291405,native range,Southern Europe,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437903,"Eobania vermiculata (O.F.Müller, 1774)"
-9291405,pathway,cbd_2014_pathway:stowaway_container,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437903,"Eobania vermiculata (O.F.Müller, 1774)"
+9291405,native range,western circum-Mediterranean,e082b10e-476f-43c1-aa61-f8d92f33029a,157063067,"Massylaea vermiculata (O.F. Müller, 1774)"
+9291405,pathway,cbd_2014_pathway:escape_pet,e082b10e-476f-43c1-aa61-f8d92f33029a,157063067,"Massylaea vermiculata (O.F. Müller, 1774)"
+9291405,pathway,cbd_2014_pathway:escape_research,e082b10e-476f-43c1-aa61-f8d92f33029a,157063067,"Massylaea vermiculata (O.F. Müller, 1774)"
+9291405,pathway,cbd_2014_pathway:stowaway_container,e082b10e-476f-43c1-aa61-f8d92f33029a,157063067,"Massylaea vermiculata (O.F. Müller, 1774)"
+9291405,pathway,cbd_2014_pathway:stowaway_ship,e082b10e-476f-43c1-aa61-f8d92f33029a,157063067,"Massylaea vermiculata (O.F. Müller, 1774)"
 9297163,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266455,Erodium malacoides (L.) L'Hérit.
 9297163,native range,Africa (WGSRPD:2),9ff7d317-609b-4c08-bd86-3bc404b77c42,141266455,Erodium malacoides (L.) L'Hérit.
 9297163,native range,Europe (WGSRPD:1),9ff7d317-609b-4c08-bd86-3bc404b77c42,141266455,Erodium malacoides (L.) L'Hérit.

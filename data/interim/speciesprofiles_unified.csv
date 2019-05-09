@@ -2279,6 +2279,7 @@ verificationKey,marine,freshwater,terrestrial,datasetKey,taxonKey,scientificName
 7407436,FALSE,FALSE,TRUE,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266156,Chenopodiastrum simplex (Torr.) Fuentes & al.
 7415922,FALSE,FALSE,TRUE,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266413,Rumex pulcher L. subsp. woodsii (De Not.) Arcang.
 7421129,FALSE,FALSE,TRUE,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267153,Cyperus longus L. subsp. badius (Desf.) Bonnier & Layens
+7425750,FALSE,FALSE,TRUE,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437743,Stropharia aurantiaca (Cooke) M. Imai
 7427650,FALSE,FALSE,TRUE,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264948,Convolvulus tricolor L. subsp. cupanianus (Tod.) Cavara & Grande
 7428369,FALSE,FALSE,TRUE,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267094,Centranthus ruber (L.) DC.
 7433196,FALSE,FALSE,TRUE,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264864,Euonymus latifolius (L.) Mill.
@@ -2519,6 +2520,7 @@ verificationKey,marine,freshwater,terrestrial,datasetKey,taxonKey,scientificName
 9484350,FALSE,FALSE,TRUE,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265917,Lachnagrostis eriantha (Hack.) A.J. Br.
 9491873,TRUE,TRUE,FALSE,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042309,"Tetraodon fluviatilis F. Hamilton, 1822"
 9508942,FALSE,FALSE,TRUE,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266232,Origanum vulgare L. subsp. hirtum (Link) A. Terrac.
+9513097,FALSE,FALSE,TRUE,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437706,Amanita inopinata D.A. Reid & Bas
 9518324,FALSE,FALSE,TRUE,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437820,Procyon cancrivorus
 9520065,FALSE,TRUE,FALSE,289244ee-e1c1-49aa-b2d7-d379391ce265,140562956,Ferrissia fragilis
 9521148,FALSE,FALSE,TRUE,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266129,Chenopodium probstii Aell.

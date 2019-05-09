@@ -374,9 +374,13 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 2296805,native range,Europe (WGSRPD:1),1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042390,"Trochoidea elegans (Gmelin, 1791)"
 2296805,pathway,cbd_2014_pathway:contaminant,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042390,"Trochoidea elegans (Gmelin, 1791)"
 2296805,pathway,cbd_2014_pathway:stowaway,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042390,"Trochoidea elegans (Gmelin, 1791)"
+2296809,degree of establishment,blackburn_et_al_2011:C3,e082b10e-476f-43c1-aa61-f8d92f33029a,157063103,"Cochlicella barbara (Linnaeus, 1758)"
 2296809,native range,Europe (WGSRPD:1),1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042484,"Cochlicella barbara (Linnaeus, 1758)"
+2296809,native range,northern coastal areas of the western Mediterranean,e082b10e-476f-43c1-aa61-f8d92f33029a,157063103,"Cochlicella barbara (Linnaeus, 1758)"
 2296809,pathway,cbd_2014_pathway:contaminant,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042484,"Cochlicella barbara (Linnaeus, 1758)"
 2296809,pathway,cbd_2014_pathway:stowaway,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042484,"Cochlicella barbara (Linnaeus, 1758)"
+2296809,pathway,cbd_2014_pathway:stowaway_people_luggage,e082b10e-476f-43c1-aa61-f8d92f33029a,157063103,"Cochlicella barbara (Linnaeus, 1758)"
+2296809,pathway,cbd_2014_pathway:stowaway_vehicles,e082b10e-476f-43c1-aa61-f8d92f33029a,157063103,"Cochlicella barbara (Linnaeus, 1758)"
 2297108,invasion stage,established,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437924,Milax gagates
 2297108,native range,Europe (WGSRPD:1),1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042431,"Milax gagates (Draparnaud, 1801)"
 2308541,invasion stage,established,289244ee-e1c1-49aa-b2d7-d379391ce265,140562902,Limnodrilus cervix
@@ -5310,7 +5314,13 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 4568269,native range,New Zealand,e082b10e-476f-43c1-aa61-f8d92f33029a,157062984,"Paralaoma servilis (Shuttleworth, 1852)"
 4568269,pathway,cbd_2014_pathway:contaminant_habitat_material,e082b10e-476f-43c1-aa61-f8d92f33029a,157062984,"Paralaoma servilis (Shuttleworth, 1852)"
 4568269,pathway,cbd_2014_pathway:contaminant_on_plants,e082b10e-476f-43c1-aa61-f8d92f33029a,157062984,"Paralaoma servilis (Shuttleworth, 1852)"
+4598006,degree of establishment,blackburn_et_al_2011:D2,e082b10e-476f-43c1-aa61-f8d92f33029a,157063180,"Cernuella neglecta (Draparnaud, 1805)"
+4598006,native range,central Italy,e082b10e-476f-43c1-aa61-f8d92f33029a,157063180,"Cernuella neglecta (Draparnaud, 1805)"
 4598006,native range,Europe (WGSRPD:1),1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042438,"Cernuella neglecta (Draparnaud, 1805)"
+4598006,native range,southern France,e082b10e-476f-43c1-aa61-f8d92f33029a,157063180,"Cernuella neglecta (Draparnaud, 1805)"
+4598006,native range,western Italy,e082b10e-476f-43c1-aa61-f8d92f33029a,157063180,"Cernuella neglecta (Draparnaud, 1805)"
+4598006,pathway,cbd_2014_pathway:stowaway_people_luggage,e082b10e-476f-43c1-aa61-f8d92f33029a,157063180,"Cernuella neglecta (Draparnaud, 1805)"
+4598006,pathway,cbd_2014_pathway:stowaway_vehicles,e082b10e-476f-43c1-aa61-f8d92f33029a,157063180,"Cernuella neglecta (Draparnaud, 1805)"
 4598225,degree of establishment,blackburn_et_al_2011:E,e082b10e-476f-43c1-aa61-f8d92f33029a,157063014,"Tandonia budapestensis (Hazay, 1880)"
 4598225,native range,Carpathians,e082b10e-476f-43c1-aa61-f8d92f33029a,157063014,"Tandonia budapestensis (Hazay, 1880)"
 4598225,native range,northern Balkan,e082b10e-476f-43c1-aa61-f8d92f33029a,157063014,"Tandonia budapestensis (Hazay, 1880)"
@@ -9000,6 +9010,8 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 9508942,native range,Africa (WGSRPD:2),9ff7d317-609b-4c08-bd86-3bc404b77c42,141266232,Origanum vulgare L. subsp. hirtum (Link) A. Terrac.
 9508942,native range,Europe (WGSRPD:1),9ff7d317-609b-4c08-bd86-3bc404b77c42,141266232,Origanum vulgare L. subsp. hirtum (Link) A. Terrac.
 9508942,native range,temperate Asia (WGSRPD:3),9ff7d317-609b-4c08-bd86-3bc404b77c42,141266232,Origanum vulgare L. subsp. hirtum (Link) A. Terrac.
+9513097,invasion stage,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437706,Amanita inopinata D.A. Reid & Bas
+9513097,native range,New Zealand (WGSRPD:51),1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437706,Amanita inopinata D.A. Reid & Bas
 9518324,invasion stage,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437820,Procyon cancrivorus
 9520065,invasion stage,established,289244ee-e1c1-49aa-b2d7-d379391ce265,140562956,Ferrissia fragilis
 9520065,native range,North Africa,289244ee-e1c1-49aa-b2d7-d379391ce265,140562956,Ferrissia fragilis

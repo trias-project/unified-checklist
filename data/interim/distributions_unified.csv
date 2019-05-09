@@ -153,7 +153,7 @@ verificationKey,startYear,endYear,datasetKey,taxonKeys,scientificNames
 2296797,1922,1922,e082b10e-476f-43c1-aa61-f8d92f33029a,157063040,"Candidula intersecta (Poiret, 1801)"
 2296801,1867,1867,e082b10e-476f-43c1-aa61-f8d92f33029a,157063124,"Cernuella virgata (Da Costa, 1778)"
 2296805,1976,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437904,Trochoidea elegans
-2296809,1946,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437913,Cochlicella barbara
+2296809,1946,1946,e082b10e-476f-43c1-aa61-f8d92f33029a,157063103,"Cochlicella barbara (Linnaeus, 1758)"
 2297108,2018,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437924,Milax gagates
 2308541,2009,2016,289244ee-e1c1-49aa-b2d7-d379391ce265,140562902,Limnodrilus cervix
 2308574,1931,2016,289244ee-e1c1-49aa-b2d7-d379391ce265,140562898,Branchiura sowerbyi
@@ -1545,7 +1545,7 @@ verificationKey,startYear,endYear,datasetKey,taxonKeys,scientificNames
 4565140,1937,1937,e082b10e-476f-43c1-aa61-f8d92f33029a,157063191,"Cernuella cisalpina (Rossmässler, 1837)"
 4567717,1967,1967,e082b10e-476f-43c1-aa61-f8d92f33029a,157063252,"Boettgerilla pallens Simroth, 1912"
 4568269,2014,2014,e082b10e-476f-43c1-aa61-f8d92f33029a,157062984,"Paralaoma servilis (Shuttleworth, 1852)"
-4598006,1985,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437917,Cernuella neglecta
+4598006,1972,1972,e082b10e-476f-43c1-aa61-f8d92f33029a,157063180,"Cernuella neglecta (Draparnaud, 1805)"
 4598225,1941,1941,e082b10e-476f-43c1-aa61-f8d92f33029a,157063014,"Tandonia budapestensis (Hazay, 1880)"
 4598226,1981,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437907,Tandonia sowerbyi
 4805564,1952,2016,289244ee-e1c1-49aa-b2d7-d379391ce265,140562980,Amphibalanus amphitrite
@@ -2309,12 +2309,14 @@ verificationKey,startYear,endYear,datasetKey,taxonKeys,scientificNames
 7407436,1882,1970,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266156,Chenopodiastrum simplex (Torr.) Fuentes & al.
 7415922,1999,2018,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266413,Rumex pulcher L. subsp. woodsii (De Not.) Arcang.
 7421129,1816,1947,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267153,Cyperus longus L. subsp. badius (Desf.) Bonnier & Layens
+7425750,2018,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437743,Stropharia aurantiaca (Cooke) M. Imai
 7427650,1925,1948,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264948,Convolvulus tricolor L. subsp. cupanianus (Tod.) Cavara & Grande
 7428369,1869,2018,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267094,Centranthus ruber (L.) DC.
 7433196,1979,2018,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264864,Euonymus latifolius (L.) Mill.
 7437751,2011,2017,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264885,Urtica membranacea Poiret ex Savigny
 7443846,2012,2018,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267067,Dipsacus strigosus Willd. ex Roem. & Schult.
 7455425,2010,2017,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264993,Phyla nodiflora (L.) var. minor (Hook.) N. O'Leary & Múlgura
+7461690,2007,2007,b043c480-dd36-4f4f-aa82-e188753ff09d,143610767,Frommeëlla mexicana (Mains) J.W. McCain & J.F. Hennen
 7466434,1947,2018,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266063,Pastinaca sativa L. subsp. urens (Req. ex Godr.) Čelak.
 7477038,1907,1907,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266832,Scrophularia scorodonia L.
 7481364,2008,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438012,Fulvius subnittens
@@ -2550,6 +2552,7 @@ verificationKey,startYear,endYear,datasetKey,taxonKeys,scientificNames
 9484350,1904,1951,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265917,Lachnagrostis eriantha (Hack.) A.J. Br.
 9491873,2001,2017,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042309,"Tetraodon fluviatilis F. Hamilton, 1822"
 9508942,1998,2010,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266232,Origanum vulgare L. subsp. hirtum (Link) A. Terrac.
+9513097,2008,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437706,Amanita inopinata D.A. Reid & Bas
 9518324,2006,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437820,Procyon cancrivorus
 9520065,1937,2016,289244ee-e1c1-49aa-b2d7-d379391ce265,140562956,Ferrissia fragilis
 9521148,1954,2017,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266129,Chenopodium probstii Aell.

@@ -1201,6 +1201,7 @@ verificationKey,marine,freshwater,terrestrial,datasetKey,taxonKey,scientificName
 3147018,FALSE,FALSE,TRUE,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265285,Erigeron floribundus (Kunth) Schultz-Bip.
 3147146,FALSE,FALSE,TRUE,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265149,Erigeron speciosus (Lindl.) DC.
 3147168,FALSE,FALSE,TRUE,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265277,Erigeron karvinskianus DC.
+3147815,FALSE,FALSE,TRUE,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265295,Verbesina alternifolia (L.) Britton
 3147913,FALSE,FALSE,TRUE,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265101,Verbesina encelioides (Cav.) Benth. & Hook. f. ex A. Gray
 3148340,FALSE,FALSE,TRUE,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265340,Inula helenium L.
 3148392,FALSE,FALSE,TRUE,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265098,Inula hirta L.
@@ -2338,6 +2339,7 @@ verificationKey,marine,freshwater,terrestrial,datasetKey,taxonKey,scientificName
 7644304,FALSE,FALSE,TRUE,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266147,Chenopodium borbasioides A. Ludwig
 7645931,FALSE,FALSE,TRUE,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266631,Salix acutifolia Willd.
 7652364,FALSE,FALSE,TRUE,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437959,Nephila
+7655426,FALSE,FALSE,TRUE,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266605,Cucurbita maxima Duchesne
 7664179,FALSE,FALSE,TRUE,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438128,"Technomyrmex vitiensis (Smith, 1861)"
 7668385,TRUE,FALSE,FALSE,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131016,"Bugulina simplex (Hincks, 1886)"
 7670473,FALSE,TRUE,FALSE,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437713,"Batrachochytrium salamandrivorans A. Martel, Blooi, Bossuyt & Pasmans, 2013"

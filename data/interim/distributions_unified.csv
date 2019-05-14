@@ -1219,6 +1219,7 @@ verificationKey,startYear,endYear,datasetKey,taxonKeys,scientificNames
 3147018,2000,2018,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265285,Erigeron floribundus (Kunth) Schultz-Bip.
 3147146,1869,1887,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265149,Erigeron speciosus (Lindl.) DC.
 3147168,2000,2018,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265277,Erigeron karvinskianus DC.
+3147815,1984,2018,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265295,Verbesina alternifolia (L.) Britton
 3147913,1950,1959,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265101,Verbesina encelioides (Cav.) Benth. & Hook. f. ex A. Gray
 3148340,1813,2018,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265340,Inula helenium L.
 3148392,1850,1900,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265098,Inula hirta L.
@@ -2375,6 +2376,7 @@ verificationKey,startYear,endYear,datasetKey,taxonKeys,scientificNames
 7644304,1947,1962,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266147,Chenopodium borbasioides A. Ludwig
 7645931,1986,2013,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266631,Salix acutifolia Willd.
 7652364,2010,2010,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437959,Nephila
+7655426,2017,2017,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266605,Cucurbita maxima Duchesne
 7664179,1980,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438128,"Technomyrmex vitiensis (Smith, 1861)"
 7668385,,,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131016,"Bugulina simplex (Hincks, 1886)"
 7670473,2013,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437713,"Batrachochytrium salamandrivorans A. Martel, Blooi, Bossuyt & Pasmans, 2013"

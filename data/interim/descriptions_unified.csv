@@ -113,6 +113,8 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 2114769,Introduced species vector dispersal,in Belgian part of the North Sea: Aquaculture: accidental,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131792,"Pseudodiaptomus marinus Sato, 1913"
 2114769,Introduced species vector dispersal,"in Belgian part of the North Sea: Ships: accidental with ballast water, sea water systems, live wells or other deck basins",0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131792,"Pseudodiaptomus marinus Sato, 1913"
 2114769,Introduced species vector dispersal,"in France (Nation) : Ships: accidental with ballast water, sea water systems, live wells or other deck basins",0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131792,"Pseudodiaptomus marinus Sato, 1913"
+2115692,Introduced species vector dispersal,in Belgian part of the North Sea: Ships: accidental as attached or free-living fouling organisms,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131647,"Megabalanus tintinnabulum (Linnaeus, 1758)"
+2115692,Introduced species vector dispersal,"in Belgian part of the North Sea: Ships: accidental with ballast water, sea water systems, live wells or other deck basins",0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131647,"Megabalanus tintinnabulum (Linnaeus, 1758)"
 2115692,invasion stage,established,289244ee-e1c1-49aa-b2d7-d379391ce265,140562982,Megabalanus tintinnabulum
 2115692,native range,Indo-Pacific,289244ee-e1c1-49aa-b2d7-d379391ce265,140562982,Megabalanus tintinnabulum
 2115692,native range,West Africa,289244ee-e1c1-49aa-b2d7-d379391ce265,140562982,Megabalanus tintinnabulum
@@ -4566,6 +4568,9 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 3147168,invasion stage,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265277,Erigeron karvinskianus DC.
 3147168,native range,Northern America (WGSRPD:7),9ff7d317-609b-4c08-bd86-3bc404b77c42,141265277,Erigeron karvinskianus DC.
 3147168,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265277,Erigeron karvinskianus DC.
+3147815,invasion stage,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265295,Verbesina alternifolia (L.) Britton
+3147815,native range,Northern America (WGSRPD:7),9ff7d317-609b-4c08-bd86-3bc404b77c42,141265295,Verbesina alternifolia (L.) Britton
+3147815,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265295,Verbesina alternifolia (L.) Britton
 3147913,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265101,Verbesina encelioides (Cav.) Benth. & Hook. f. ex A. Gray
 3147913,native range,Northern America (WGSRPD:7),9ff7d317-609b-4c08-bd86-3bc404b77c42,141265101,Verbesina encelioides (Cav.) Benth. & Hook. f. ex A. Gray
 3147913,pathway,cbd_2014_pathway:contaminant_on_animals,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265101,Verbesina encelioides (Cav.) Benth. & Hook. f. ex A. Gray
@@ -8921,6 +8926,9 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 7645931,native range,temperate Asia (WGSRPD:3),9ff7d317-609b-4c08-bd86-3bc404b77c42,141266631,Salix acutifolia Willd.
 7645931,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266631,Salix acutifolia Willd.
 7652364,invasion stage,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437959,Nephila
+7655426,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266605,Cucurbita maxima Duchesne
+7655426,native range,pan-American,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266605,Cucurbita maxima Duchesne
+7655426,pathway,cbd_2014_pathway:escape_food_bait,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266605,Cucurbita maxima Duchesne
 7664179,invasion stage,established,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438128,"Technomyrmex vitiensis (Smith, 1861)"
 7664179,native range,Cosmopolitan,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438128,"Technomyrmex vitiensis (Smith, 1861)"
 7670473,native range,Asia,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437713,"Batrachochytrium salamandrivorans A. Martel, Blooi, Bossuyt & Pasmans, 2013"

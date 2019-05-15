@@ -262,19 +262,8 @@ descriptions &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<spa
 <span class="st">  </span><span class="co"># If endYear is empty (no range), populate it with startYear: 2018 &amp; 2018</span>
 <span class="st">  </span><span class="kw">mutate</span>(<span class="dt">endYear =</span> <span class="kw">if_else</span>(<span class="kw">is.na</span>(endYear), startYear, endYear))</code></pre>
 <ol start="2" style="list-style-type: decimal">
-<li>Filter distributions.</li>
-</ol>
-<pre class="sourceCode r"><code class="sourceCode r">distributions_unified &lt;-
-<span class="st">  </span>distributions_unified <span class="op">%&gt;%</span>
-<span class="st">  </span>
-<span class="st">  </span><span class="co"># Filter on non-native species present in (at least part of) Belgium</span>
-<span class="st">  </span><span class="kw">filter</span>(
-    country <span class="op">==</span><span class="st"> &quot;BE&quot;</span> <span class="op">&amp;</span>
-<span class="st">    </span>establishmentMeans <span class="op">%in%</span><span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;INTRODUCED&quot;</span>, <span class="st">&quot;NATURALISED&quot;</span>, <span class="st">&quot;INVASIVE&quot;</span>, <span class="st">&quot;ASSISTED COLONISATION&quot;</span>) <span class="op">&amp;</span>
-<span class="st">    </span>status <span class="op">%in%</span><span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;PRESENT&quot;</span>, <span class="st">&quot;COMMON&quot;</span>, <span class="st">&quot;RARE&quot;</span>, <span class="st">&quot;IRREGULAR&quot;</span>)
-  )</code></pre>
-<ol start="3" style="list-style-type: decimal">
-<li>Choose a single distribution within a checklist.</li>
+<li><p>Filter distributions: this was already done in <a href="1_get_taxa.html#filter-on-distribution">1.3</a>, where only distributions of interest were kept.</p></li>
+<li><p>Choose a single distribution within a checklist.</p></li>
 </ol>
 <p><strong>Note</strong>: In contrast to the other extensions, the distribution information can come from multiple taxa within the same checklist. For example:</p>
 <table>

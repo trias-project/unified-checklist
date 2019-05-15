@@ -61,19 +61,7 @@ distributions_unified <-
   mutate(endYear = if_else(is.na(endYear), startYear, endYear))
 ```
 
-2. Filter distributions.
-
-```{r unify_information-6, echo = TRUE}
-distributions_unified <-
-  distributions_unified %>%
-  
-  # Filter on non-native species present in (at least part of) Belgium
-  filter(
-    country == "BE" &
-    establishmentMeans %in% c("INTRODUCED", "NATURALISED", "INVASIVE", "ASSISTED COLONISATION") &
-    status %in% c("PRESENT", "COMMON", "RARE", "IRREGULAR")
-  )
-```
+2. Filter distributions: this was already done in \@ref(filter-on-distribution), where only distributions of interest were kept.
 
 3. Choose a single distribution within a checklist.
 
@@ -86,7 +74,7 @@ scientific name | eventDate
 
 Both are considered (verified) synonyms of [Medicago monantha Trautv.](https://www.gbif.org/species/2965226), so their distribution information is merged to `1885/1955`. We note both in `taxonKeys` and `scientificNames`.
 
-```{r unify_information-7, echo = TRUE}
+```{r unify_information-6, echo = TRUE}
 distributions_unified <-
   distributions_unified %>%
 
@@ -114,7 +102,7 @@ distributions_unified <-
 
 4. Choose a single distribution across checklists.
 
-```{r unify_information-8, echo = TRUE}
+```{r unify_information-7, echo = TRUE}
 distributions_unified <-
   distributions_unified %>%
   
@@ -140,7 +128,7 @@ distributions_unified <-
 
 5. Save to [CSV](https://github.com/trias-project/unified-checklist/blob/master/data/interim/distributions_unified.csv).
 
-```{r unify_information-9}
+```{r unify_information-8}
 write_csv(distributions_unified, here("data", "interim", "distributions_unified.csv"), na = "")
 ```
 
@@ -148,7 +136,7 @@ write_csv(distributions_unified, here("data", "interim", "distributions_unified.
 
 1. Filter species profiles.
 
-```{r unify_information-10, echo = TRUE}
+```{r unify_information-9, echo = TRUE}
 speciesprofiles_unified <-
   speciesprofiles %>%
   
@@ -164,7 +152,7 @@ speciesprofiles_unified <-
 
 2. Choose a single species profile within a checklist.
 
-```{r unify_information-11, echo = TRUE}
+```{r unify_information-10, echo = TRUE}
 speciesprofiles_unified <-
   speciesprofiles_unified %>%
 
@@ -193,7 +181,7 @@ speciesprofiles_unified <-
 
 3. Choose a single species profile across checklists.
 
-```{r unify_information-12, echo = TRUE}
+```{r unify_information-11, echo = TRUE}
 speciesprofiles_unified <-
   speciesprofiles_unified %>%
   
@@ -220,7 +208,7 @@ speciesprofiles_unified <-
 
 4. Save to [CSV](https://github.com/trias-project/unified-checklist/blob/master/data/interim/speciesprofiles_unified.csv).
 
-```{r unify_information-13}
+```{r unify_information-12}
 write_csv(speciesprofiles_unified, here("data", "interim", "speciesprofiles_unified.csv"), na = "")
 ```
 
@@ -228,7 +216,7 @@ write_csv(speciesprofiles_unified, here("data", "interim", "speciesprofiles_unif
 
 1. Filter non `NA` descriptions.
 
-```{r unify_information-14}
+```{r unify_information-13}
 descriptions_unified <-
   descriptions %>%
   
@@ -240,7 +228,7 @@ descriptions_unified <-
 
 2. Select unique descriptions (within their type) within a checklist.
 
-```{r unify_information-15, echo = TRUE}
+```{r unify_information-14, echo = TRUE}
 descriptions_unified <-
   descriptions_unified %>%
 
@@ -268,7 +256,7 @@ descriptions_unified <-
 
 3. Select unique descriptions (within their type) across checklists.
 
-```{r unify_information-16, echo = TRUE}
+```{r unify_information-15, echo = TRUE}
 descriptions_unified <-
   descriptions_unified %>%
   
@@ -298,6 +286,6 @@ descriptions_unified <-
 
 4. Save to [CSV](https://github.com/trias-project/unified-checklist/blob/master/data/interim/descriptions_unified.csv).
 
-```{r unify_information-17}
+```{r unify_information-16}
 write_csv(descriptions_unified, here("data", "interim", "descriptions_unified.csv"), na = "")
 ```

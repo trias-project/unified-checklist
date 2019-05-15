@@ -20,27 +20,7 @@ taxon_keys <-
 
 ## Get distributions
 
-1. Get distributions for our taxa from GBIF.
-
-```{r get_information-get_distributions_from_gbif, cache = TRUE}
-progress_bar <- progress_estimated(length(taxon_keys))
-
-distributions <-
-  map_dfr(taxon_keys, function(x) {
-  progress_bar$tick()$print()
-  rgbif::name_usage(
-    key = x,
-    return = "data",
-    data = "distribution"
-  )
-})
-```
-
-2. Save to [CSV](https://github.com/trias-project/unified-checklist/blob/master/data/raw/distributions.csv).
-
-```{r get_information-3}
-write_csv(distributions, here("data", "raw", "distributions.csv"), na = "")
-```
+This was already done in \@ref(filter-on-distribution), where only distributions of interest were kept.
 
 ## Get species profiles
 
@@ -62,7 +42,7 @@ speciesprofiles <-
 
 2. Save to [CSV](https://github.com/trias-project/unified-checklist/blob/master/data/raw/speciesprofiles.csv).
 
-```{r get_information-4}
+```{r get_information-3}
 write_csv(speciesprofiles, here("data", "raw", "speciesprofiles.csv"), na = "")
 ```
 
@@ -86,6 +66,6 @@ descriptions <-
 
 2. Save to [CSV](https://github.com/trias-project/unified-checklist/blob/master/data/raw/descriptions.csv).
 
-```{r get_information-5}
+```{r get_information-4}
 write_csv(descriptions, here("data", "raw", "descriptions.csv"), na = "")
 ```

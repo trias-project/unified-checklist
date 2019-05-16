@@ -1,4 +1,6 @@
 verificationKey,type,description,datasetKey,taxonKey,scientificName
+1002621,Introduced species vector dispersal,in Belgian part of the North Sea: Other,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131084,"Keratella tropica (Apstein, 1907)"
+1002621,Introduced species vector dispersal,"in Belgian part of the North Sea: Ships: accidental with ballast water, sea water systems, live wells or other deck basins",0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131084,"Keratella tropica (Apstein, 1907)"
 1008955,Introduced species vector dispersal,in Belgian part of the North Sea: Aquaculture: accidental,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157130960,"Fenestrulina delicia Winston, Hayward & Craig, 2000"
 1032262,invasion stage,established,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438155,"Enderleinellus kumadai Kaneko, 1954"
 1032262,native range,Southern Asia,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438155,"Enderleinellus kumadai Kaneko, 1954"
@@ -88,6 +90,7 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 1941864,invasion stage,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438087,"Paysandisia archon (Burmeister, 1880)"
 1941864,native range,Mallorca,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438087,"Paysandisia archon (Burmeister, 1880)"
 1941864,pathway,cbd_2014_pathway:contaminant_on_plants,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438087,"Paysandisia archon (Burmeister, 1880)"
+2053954,Introduced species vector dispersal,in Belgian part of the North Sea: Other,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131468,"Prokelisia marginata (Van Duzee, 1897)"
 2110811,Introduced species impact,in Denmark (Nation) : Other impact - undefined or uncertain,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131747,"Mytilicola intestinalis Steuer, 1902"
 2110811,Introduced species impact,in France (Nation) : Other impact - undefined or uncertain,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131747,"Mytilicola intestinalis Steuer, 1902"
 2110811,Introduced species impact,in Germany (Nation) : Other impact - undefined or uncertain,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131747,"Mytilicola intestinalis Steuer, 1902"
@@ -119,6 +122,7 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 2115692,native range,Indo-Pacific,289244ee-e1c1-49aa-b2d7-d379391ce265,140562982,Megabalanus tintinnabulum
 2115692,native range,West Africa,289244ee-e1c1-49aa-b2d7-d379391ce265,140562982,Megabalanus tintinnabulum
 2115692,pathway,cbd_2014_pathway:stowaway_hull_fouling,289244ee-e1c1-49aa-b2d7-d379391ce265,140562982,Megabalanus tintinnabulum
+2115706,Introduced species vector dispersal,in Belgian part of the North Sea: Ships: accidental as attached or free-living fouling organisms,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131651,"Balanus glandula Darwin, 1854"
 2115769,Introduced species abundance,in United Kingdom part of the Celtic Sea (Marine Region) : Common,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131607,"Austrominius modestus (Darwin, 1854)"
 2115769,Introduced species abundance,in United Kingdom part of the English Channel (Marine Region) : Common,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131607,"Austrominius modestus (Darwin, 1854)"
 2115769,Introduced species abundance,in United Kingdom part of the North Sea (Marine Region) : Common,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131607,"Austrominius modestus (Darwin, 1854)"
@@ -257,6 +261,14 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 2206086,pathway,cbd_2014_pathway:corridor_water,289244ee-e1c1-49aa-b2d7-d379391ce265,140562972,Proasellus meridianus
 2206086,pathway,cbd_2014_pathway:stowaway_hull_fouling,289244ee-e1c1-49aa-b2d7-d379391ce265,140562972,Proasellus meridianus
 2206086,pathway,cbd_2014_pathway:stowaway_other,289244ee-e1c1-49aa-b2d7-d379391ce265,140562972,Proasellus meridianus
+2215949,Introduced species impact,in German part of the North Sea (Marine Region) : Outcompetes native species for resources and/or space,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131913,"Melita nitida Smith, 1873"
+2215949,Introduced species impact,in Germany (Nation) : Other impact - undefined or uncertain,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131913,"Melita nitida Smith, 1873"
+2215949,Introduced species vector dispersal,in Belgian part of the North Sea: Ships: accidental as attached or free-living fouling organisms,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131913,"Melita nitida Smith, 1873"
+2215949,Introduced species vector dispersal,"in Belgian part of the North Sea: Ships: accidental with ballast water, sea water systems, live wells or other deck basins",0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131913,"Melita nitida Smith, 1873"
+2215949,Introduced species vector dispersal,in Dutch part of the North Sea : Debris: transport of species on human generated debris,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131913,"Melita nitida Smith, 1873"
+2215949,Introduced species vector dispersal,in Dutch part of the North Sea : Shipping,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131913,"Melita nitida Smith, 1873"
+2215949,Introduced species vector dispersal,in German part of the North Sea (Marine Region) : Ships: accidental as attached or free-living fouling organisms,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131913,"Melita nitida Smith, 1873"
+2215949,Introduced species vector dispersal,"in Germany (Nation) : Ships: accidental with ballast water, sea water systems, live wells or other deck basins",0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131913,"Melita nitida Smith, 1873"
 2215949,invasion stage,established,289244ee-e1c1-49aa-b2d7-d379391ce265,140562985,Melita nitida
 2215949,native range,Northern America,289244ee-e1c1-49aa-b2d7-d379391ce265,140562985,Melita nitida
 2215949,pathway,cbd_2014_pathway:stowaway_ballast_water,289244ee-e1c1-49aa-b2d7-d379391ce265,140562985,Melita nitida
@@ -447,6 +459,18 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 2227000,native range,Northern America,289244ee-e1c1-49aa-b2d7-d379391ce265,140563019,Orconectes limosus
 2227000,pathway,cbd_2014_pathway:escape_aquaculture,289244ee-e1c1-49aa-b2d7-d379391ce265,140563019,Orconectes limosus
 2227000,pathway,cbd_2014_pathway:escape_pet,289244ee-e1c1-49aa-b2d7-d379391ce265,140563019,Orconectes limosus
+2227300,Introduced species abundance,"in Austria (Nation) : Populations of red swamp crayfish in Europe are most dense in Spain, Portugal and Italy but scattered populations are found in England, Belgium, Germany, Poland, Switzerland and Austria, as well as the Azores and Madeira (Holdich et al. 2009).",0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132190,"Procambarus clarkii (Girard, 1852)"
+2227300,Introduced species abundance,"in Belgian part of the North Sea : Populations of red swamp crayfish in Europe are most dense in Spain, Portugal and Italy but scattered populations are found in England, Belgium, Germany, Poland, Switzerland and Austria, as well as the Azores and Madeira (Holdich et al. 2009).",0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132190,"Procambarus clarkii (Girard, 1852)"
+2227300,Introduced species abundance,"in Germany (Nation) : Populations of red swamp crayfish in Europe are most dense in Spain, Portugal and Italy but scattered populations are found in England, Belgium, Germany, Poland, Switzerland and Austria, as well as the Azores and Madeira (Holdich et al. 2009).",0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132190,"Procambarus clarkii (Girard, 1852)"
+2227300,Introduced species abundance,"in Polish part of the Baltic Sea : Populations of red swamp crayfish in Europe are most dense in Spain, Portugal and Italy but scattered populations are found in England, Belgium, Germany, Poland, Switzerland and Austria, as well as the Azores and Madeira (Holdich et al. 2009).",0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132190,"Procambarus clarkii (Girard, 1852)"
+2227300,Introduced species abundance,"in Switzerland (Nation) : Populations of red swamp crayfish in Europe are most dense in Spain, Portugal and Italy but scattered populations are found in England, Belgium, Germany, Poland, Switzerland and Austria, as well as the Azores and Madeira (Holdich et al. 2009).",0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132190,"Procambarus clarkii (Girard, 1852)"
+2227300,Introduced species abundance,"in United Kingdom part of the North Sea (Marine Region) : Populations of red swamp crayfish in Europe are most dense in Spain, Portugal and Italy but scattered populations are found in England, Belgium, Germany, Poland, Switzerland and Austria, as well as the Azores and Madeira (Holdich et al. 2009).",0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132190,"Procambarus clarkii (Girard, 1852)"
+2227300,Introduced species impact,in Belgian part of the North Sea : Other impact - undefined or uncertain,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132190,"Procambarus clarkii (Girard, 1852)"
+2227300,Introduced species impact,in Dutch part of the North Sea : Other impact - undefined or uncertain,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132190,"Procambarus clarkii (Girard, 1852)"
+2227300,Introduced species impact,in Italy (Nation) : Other impact - undefined or uncertain,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132190,"Procambarus clarkii (Girard, 1852)"
+2227300,Introduced species impact,in Kenyan part of the Indian Ocean : Adverse habitat modification,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132190,"Procambarus clarkii (Girard, 1852)"
+2227300,Introduced species impact,in Kenyan part of the Indian Ocean : Loss of aquaculture/commercial/recreational harvest or gain,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132190,"Procambarus clarkii (Girard, 1852)"
+2227300,Introduced species remark,"In Kenyan part of the Indian Ocean : The burrowing activity of Procambarus clarkii can damage crops, such as rice and taro, and may weaken earthen irrigation dams and levees. Further, this crayfish may eat some types of crops. Problems are especially great where crayfish are not eaten for cultural reasons (e.g. Japan, Kenya), however, even where there is large-scale harvesting (e.g. Spain, Portugal, China), damage to rice fields is considerable (Brock 1960; Correia and Ferreira 1995; Huner and Barr 1991; Yue et al. 2010).",0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132190,"Procambarus clarkii (Girard, 1852)"
 2227300,invasion stage,established,289244ee-e1c1-49aa-b2d7-d379391ce265,140563018,Procambarus clarkii
 2227300,native range,Northern America,289244ee-e1c1-49aa-b2d7-d379391ce265,140563018,Procambarus clarkii
 2227300,pathway,cbd_2014_pathway:escape_aquaculture,289244ee-e1c1-49aa-b2d7-d379391ce265,140563018,Procambarus clarkii
@@ -520,6 +544,15 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 2266009,Introduced species vector dispersal,in Panamanian part of the North Pacific Ocean (Marine Region) : Ships: general<br/>Shipping has spread C. caspia through much of the world.,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131303,"Cordylophora caspia (Pallas, 1771)"
 2266009,Introduced species vector dispersal,in Ukraine (Nation) : Ships: general<br/>Shipping has spread C. caspia through much of the world.,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131303,"Cordylophora caspia (Pallas, 1771)"
 2266009,Introduced species vector dispersal,in Uruguay (Nation) : Ships: general<br/>Shipping has spread C. caspia through much of the world.,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131303,"Cordylophora caspia (Pallas, 1771)"
+2266521,Introduced species abundance,in Adriatic Sea (IHO Sea Area) : abundant (Mizzan 1999),0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131339,"Garveia franciscana (Torrey, 1902)"
+2266521,Introduced species abundance,in Black Sea (IHO Sea Area) : widespread and abundant,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131339,"Garveia franciscana (Torrey, 1902)"
+2266521,Introduced species abundance,in Panamanian part of the Caribbean Sea (Marine Region) : Abundant in the Gatun Locks in 1924,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131339,"Garveia franciscana (Torrey, 1902)"
+2266521,Introduced species impact,in Sea of Azov (IHO Sea Area) : Loss of aquaculture/commercial/recreational harvest or gain,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131339,"Garveia franciscana (Torrey, 1902)"
+2266521,Introduced species impact,in Ukraine (Nation) : Loss of aquaculture/commercial/recreational harvest or gain,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131339,"Garveia franciscana (Torrey, 1902)"
+2266521,Introduced species remark,"In Sea of Azov (IHO Sea Area) : Fouling of power plants and other industrial water systems by G. franciscana has been reported from Chesapeake Bay (Cory 1967; Virginia Power 1992); Lake Maracaibo, Venezuela (de Rincon and Morris 2003); and the Sea of Azov, Ukraine (Simkina 1963; Simkina 1965).",0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131339,"Garveia franciscana (Torrey, 1902)"
+2266521,Introduced species remark,"In Ukraine (Nation) : Fouling of power plants and other industrial water systems by G. franciscana has been reported from Chesapeake Bay (Cory 1967; Virginia Power 1992); Lake Maracaibo, Venezuela (de Rincon and Morris 2003); and the Sea of Azov, Ukraine (Simkina 1963; Simkina 1965).",0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131339,"Garveia franciscana (Torrey, 1902)"
+2266521,Introduced species vector dispersal,"in Belgian part of the North Sea: Ships: accidental with ballast water, sea water systems, live wells or other deck basins",0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131339,"Garveia franciscana (Torrey, 1902)"
+2266521,Introduced species vector dispersal,in Dutch part of the North Sea : Shipping,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131339,"Garveia franciscana (Torrey, 1902)"
 2266561,Introduced species vector dispersal,in Belgian part of the North Sea: Aquaculture: accidental,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131336,"Nemopsis bachei L.Agassiz, 1849"
 2266561,Introduced species vector dispersal,in Belgian part of the North Sea: Debris: transport of species on human generated debris,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131336,"Nemopsis bachei L.Agassiz, 1849"
 2266561,Introduced species vector dispersal,in Belgian part of the North Sea: Ships: accidental as attached or free-living fouling organisms,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131336,"Nemopsis bachei L.Agassiz, 1849"
@@ -591,6 +624,8 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 2287249,pathway,cbd_2014_pathway:stowaway,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042392,Ensis directus (Conrad 1843)
 2287249,pathway,cbd_2014_pathway:stowaway_ballast_water,289244ee-e1c1-49aa-b2d7-d379391ce265,140562922,Ensis directus
 2287249,pathway,cbd_2014_pathway:stowaway_other,289244ee-e1c1-49aa-b2d7-d379391ce265,140562922,Ensis directus
+2287615,Introduced species vector dispersal,in United Kingdom part of the North Sea (Marine Region) : Fisheries: accidental with deliberate translocations of fish or shellfish,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157128717,"Petricolaria pholadiformis (Lamarck, 1818)"
+2287615,Introduced species vector dispersal,in United Kingdom part of the North Sea (Marine Region) : Shipping,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157128717,"Petricolaria pholadiformis (Lamarck, 1818)"
 2287615,invasion stage,established,289244ee-e1c1-49aa-b2d7-d379391ce265,140562949,Petricolaria pholadiformis
 2287615,native range,Asia,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042471,"Petricola pholadiformis Lamarck, 1818"
 2287615,native range,Northern America,289244ee-e1c1-49aa-b2d7-d379391ce265,140562949,Petricolaria pholadiformis
@@ -690,6 +725,11 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 2308605,invasion stage,established,289244ee-e1c1-49aa-b2d7-d379391ce265,140562899,Potamothrix vejdovskyi
 2308605,native range,Ponto-Caspian,289244ee-e1c1-49aa-b2d7-d379391ce265,140562899,Potamothrix vejdovskyi
 2308605,pathway,cbd_2014_pathway:stowaway_ballast_water,289244ee-e1c1-49aa-b2d7-d379391ce265,140562899,Potamothrix vejdovskyi
+2320810,Introduced species vector dispersal,in Belgian part of the North Sea: Aquaculture: accidental,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157127100,"Boccardia proboscidea Hartman, 1940"
+2320810,Introduced species vector dispersal,in Belgian part of the North Sea: Ships: general,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157127100,"Boccardia proboscidea Hartman, 1940"
+2320810,Introduced species vector dispersal,in Spain (Nation) : Fisheries: accidental with deliberate translocations of fish or shellfish,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157127100,"Boccardia proboscidea Hartman, 1940"
+2320998,Introduced species vector dispersal,in Belgian part of the North Sea: Aquaculture: accidental,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157127087,"Boccardiella hamata (Webster, 1879)"
+2320998,Introduced species vector dispersal,in Belgian part of the North Sea: Ships: general,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157127087,"Boccardiella hamata (Webster, 1879)"
 2321010,invasion stage,established,289244ee-e1c1-49aa-b2d7-d379391ce265,140562907,Marenzelleria neglecta
 2321010,native range,Northern America,289244ee-e1c1-49aa-b2d7-d379391ce265,140562907,Marenzelleria neglecta
 2321010,pathway,cbd_2014_pathway:stowaway_ballast_water,289244ee-e1c1-49aa-b2d7-d379391ce265,140562907,Marenzelleria neglecta
@@ -5595,6 +5635,28 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 4271356,native range,Europe (WGSRPD:1),9ff7d317-609b-4c08-bd86-3bc404b77c42,141266067,Heracleum sibiricum L.
 4271356,native range,temperate Asia (WGSRPD:3),9ff7d317-609b-4c08-bd86-3bc404b77c42,141266067,Heracleum sibiricum L.
 4271356,pathway,cbd_2014_pathway:contaminant_seed,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266067,Heracleum sibiricum L.
+4283395,Introduced species abundance,in Brazil (Nation) : sporadic occurances,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131419,"Diadumene lineata (Verrill, 1869)"
+4283395,Introduced species abundance,in Celtic Sea (IHO Sea Area) : Common,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131419,"Diadumene lineata (Verrill, 1869)"
+4283395,Introduced species abundance,in English Channel (IHO Sea Area) : Common,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131419,"Diadumene lineata (Verrill, 1869)"
+4283395,Introduced species abundance,in United Kingdom part of the North Sea (Marine Region) : Common,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131419,"Diadumene lineata (Verrill, 1869)"
+4283395,Introduced species remark,In Argentina (Nation) : No economic or ecological impacts have been reported for this species.,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131419,"Diadumene lineata (Verrill, 1869)"
+4283395,Introduced species remark,In Black Sea (IHO Sea Area) : No economic or ecological impacts have been reported for this species.,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131419,"Diadumene lineata (Verrill, 1869)"
+4283395,Introduced species remark,In Brazil (Nation) : No economic or ecological impacts have been reported for this species.,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131419,"Diadumene lineata (Verrill, 1869)"
+4283395,Introduced species remark,In Irish Exclusive Economic Zone (EEZ) : No economic or ecological impacts have been reported for this species.,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131419,"Diadumene lineata (Verrill, 1869)"
+4283395,Introduced species remark,In Malaysia (Nation) : No economic or ecological impacts have been reported for this species.,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131419,"Diadumene lineata (Verrill, 1869)"
+4283395,Introduced species remark,In Mediterranean Sea - Eastern Basin (IHO Sea Area) : No economic or ecological impacts have been reported for this species.,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131419,"Diadumene lineata (Verrill, 1869)"
+4283395,Introduced species remark,In Mediterranean Sea - Western Basin (IHO Sea Area) : No economic or ecological impacts have been reported for this species.,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131419,"Diadumene lineata (Verrill, 1869)"
+4283395,Introduced species remark,In New Zealand (Nation) : No economic or ecological impacts have been reported for this species.,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131419,"Diadumene lineata (Verrill, 1869)"
+4283395,Introduced species remark,In Singaporean part of the Singapore Strait : No economic or ecological impacts have been reported for this species.,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131419,"Diadumene lineata (Verrill, 1869)"
+4283395,Introduced species remark,In Spanish (Canary Islands) part of the North Atlantic Ocean (Marine Region) : No economic or ecological impacts have been reported for this species.,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131419,"Diadumene lineata (Verrill, 1869)"
+4283395,Introduced species vector dispersal,in Belgian part of the North Sea: Aquaculture: accidental,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131419,"Diadumene lineata (Verrill, 1869)"
+4283395,Introduced species vector dispersal,in Belgian part of the North Sea: Ships: general,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131419,"Diadumene lineata (Verrill, 1869)"
+4283395,Introduced species vector dispersal,in Canadian part of the Bay of Fundy (Marine Region) : Natural dispersal,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131419,"Diadumene lineata (Verrill, 1869)"
+4283395,Introduced species vector dispersal,in Celtic Sea (IHO Sea Area) : Fisheries: accidental with deliberate translocations of fish or shellfish,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131419,"Diadumene lineata (Verrill, 1869)"
+4283395,Introduced species vector dispersal,in English Channel (IHO Sea Area) : Shipping,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131419,"Diadumene lineata (Verrill, 1869)"
+4283395,Introduced species vector dispersal,in United Kingdom part of the Celtic Sea (Marine Region) : Fisheries: accidental with deliberate translocations of fish or shellfish,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131419,"Diadumene lineata (Verrill, 1869)"
+4283395,Introduced species vector dispersal,in United Kingdom part of the Celtic Sea (Marine Region) : Ships: general,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131419,"Diadumene lineata (Verrill, 1869)"
+4283395,Introduced species vector dispersal,in United Kingdom part of the North Sea (Marine Region) : Fisheries: accidental with deliberate translocations of fish or shellfish,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131419,"Diadumene lineata (Verrill, 1869)"
 4285694,invasion stage,casual,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117251,Oreochromis niloticus
 4285694,native range,Africa,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117251,Oreochromis niloticus
 4285694,native range,Africa (WGSRPD:2),1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042307,"Oreochromis niloticus (Linnaeus, 1758)"
@@ -5608,6 +5670,9 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 4286942,pathway,cbd_2014_pathway:escape,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042314,"Carassius auratus Linnaeus, 1758"
 4286942,pathway,cbd_2014_pathway:escape_ornamental,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117240,Carassius auratus
 4286942,pathway,cbd_2014_pathway:release,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042314,"Carassius auratus Linnaeus, 1758"
+4286975,Introduced species impact,in Belgian part of the North Sea : Other impact - undefined or uncertain,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157130041,"Cyprinus carpio Linnaeus, 1758"
+4286975,Introduced species vector dispersal,in Polish part of the Baltic Sea : Fisheries: deliberate translocations of fish or shellfish to establish or support fishery,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157130041,"Cyprinus carpio Linnaeus, 1758"
+4286975,Introduced species vector dispersal,in Polish part of the Baltic Sea : Individual release: deliberate release by individuals,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157130041,"Cyprinus carpio Linnaeus, 1758"
 4286975,invasion stage,established,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117232,Cyprinus carpio
 4286975,native range,Eastern Europe,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117232,Cyprinus carpio
 4286975,pathway,cbd_2014_pathway:escape_aquaculture,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117232,Cyprinus carpio
@@ -5625,6 +5690,16 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 4314702,native range,New Zealand,289244ee-e1c1-49aa-b2d7-d379391ce265,140562993,Monocorophium sextonae
 4314702,pathway,cbd_2014_pathway:contaminant_on_animals,289244ee-e1c1-49aa-b2d7-d379391ce265,140562993,Monocorophium sextonae
 4314702,pathway,cbd_2014_pathway:stowaway_ballast_water,289244ee-e1c1-49aa-b2d7-d379391ce265,140562993,Monocorophium sextonae
+4315705,Introduced species abundance,in Czech Republic (Nation) : Common,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132021,"Dikerogammarus villosus (Sowinsky, 1894)"
+4315705,Introduced species abundance,in Czech Republic (Nation) : Common to dominant,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132021,"Dikerogammarus villosus (Sowinsky, 1894)"
+4315705,Introduced species impact,in Czech Republic (Nation) : Outcompetes native species for resources and/or space,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132021,"Dikerogammarus villosus (Sowinsky, 1894)"
+4315705,Introduced species population trend,in Czech Republic (Nation) : Increasing,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132021,"Dikerogammarus villosus (Sowinsky, 1894)"
+4315705,Introduced species remark,"in Czech Republic (Nation) : Species recorded here as ""established"" as most specimens in the population sampled at this location were mature females which (along with the greater than 20% proportion of juveniles) which indicates successful reproduction.",0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132021,"Dikerogammarus villosus (Sowinsky, 1894)"
+4315705,Introduced species remark,"in Czech Republic (Nation) : The lagoon is geographically divided into a smaller part to the west, belonging to Germany and a larger eastern part belonging to Poland.",0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132021,"Dikerogammarus villosus (Sowinsky, 1894)"
+4315705,Introduced species vector dispersal,in Belgian part of the North Sea: Ships: accidental as attached or free-living fouling organisms,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132021,"Dikerogammarus villosus (Sowinsky, 1894)"
+4315705,Introduced species vector dispersal,"in Belgian part of the North Sea: Ships: accidental with ballast water, sea water systems, live wells or other deck basins",0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132021,"Dikerogammarus villosus (Sowinsky, 1894)"
+4315705,Introduced species vector dispersal,in Czech Republic (Nation) : Natural dispersal,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132021,"Dikerogammarus villosus (Sowinsky, 1894)"
+4315705,Introduced species vector dispersal,"in Czech Republic (Nation) : Secondary natural dispersal from alien source population. ""Using the canals joining the different river systems, the species has reached the River Odra. There it quickly spread [natural dispersal] both up- and downstream, reaching for the first time the B",0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132021,"Dikerogammarus villosus (Sowinsky, 1894)"
 4315705,invasion stage,established,289244ee-e1c1-49aa-b2d7-d379391ce265,140562998,Dikerogammarus villosus
 4315705,native range,Ponto-Caspian,289244ee-e1c1-49aa-b2d7-d379391ce265,140562998,Dikerogammarus villosus
 4315705,pathway,cbd_2014_pathway:corridor_water,289244ee-e1c1-49aa-b2d7-d379391ce265,140562998,Dikerogammarus villosus
@@ -5652,6 +5727,12 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 4363583,pathway,cbd_2014_pathway:natural_dispersal,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042441,Rapana venosa (Valenciennes 1846)
 4363583,pathway,cbd_2014_pathway:release,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042441,Rapana venosa (Valenciennes 1846)
 4363583,pathway,cbd_2014_pathway:stowaway,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042441,Rapana venosa (Valenciennes 1846)
+4372686,Introduced species abundance,in Tunisian part of the Mediterranean Sea - Eastern Basin (Marine Region) : Rare,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157128723,"Ruditapes philippinarum (Adams & Reeve, 1850)"
+4372686,Introduced species vector dispersal,in Belgian part of the North Sea: Natural dispersal,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157128723,"Ruditapes philippinarum (Adams & Reeve, 1850)"
+4372686,Introduced species vector dispersal,"in Belgian part of the North Sea: Ships: accidental with ballast water, sea water systems, live wells or other deck basins",0a2eaf0c-5504-4f48-a47f-c94229029dc8,157128723,"Ruditapes philippinarum (Adams & Reeve, 1850)"
+4372686,Introduced species vector dispersal,in France: Fisheries: deliberate translocations of fish or shellfish to establish or support fishery,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157128723,"Ruditapes philippinarum (Adams & Reeve, 1850)"
+4372686,Introduced species vector dispersal,in Tunisian part of the Mediterranean Sea - Eastern Basin (Marine Region) : Invaded from temperate North Pacific,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157128723,"Ruditapes philippinarum (Adams & Reeve, 1850)"
+4372686,Introduced species vector dispersal,in United Kingdom: Fisheries: deliberate translocations of fish or shellfish to establish or support fishery,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157128723,"Ruditapes philippinarum (Adams & Reeve, 1850)"
 4382841,Introduced species abundance,in French part of the English Channel (Marine Region) : Common,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132321,"Hemigrapsus takanoi Asakura & Watanabe, 2005"
 4382841,Introduced species abundance,in French part of the North Sea (Marine Region) : Common,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132321,"Hemigrapsus takanoi Asakura & Watanabe, 2005"
 4382841,Introduced species abundance,in North Sea (IHO Sea Area) : Common,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132321,"Hemigrapsus takanoi Asakura & Watanabe, 2005"
@@ -5879,6 +5960,10 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 5166489,invasion stage,established,289244ee-e1c1-49aa-b2d7-d379391ce265,140562981,Megabalanus coccopoma
 5166489,native range,South America,289244ee-e1c1-49aa-b2d7-d379391ce265,140562981,Megabalanus coccopoma
 5166489,pathway,cbd_2014_pathway:stowaway_hull_fouling,289244ee-e1c1-49aa-b2d7-d379391ce265,140562981,Megabalanus coccopoma
+5166760,Introduced species vector dispersal,in Belgian part of the North Sea: Aquaculture: accidental,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131558,"Ammothea hilgendorfi (Böhm, 1879)"
+5166760,Introduced species vector dispersal,in Italian part of the Adriatic Sea (Marine Region) : Shipping,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131558,"Ammothea hilgendorfi (Böhm, 1879)"
+5166760,Introduced species vector dispersal,in United Kingdom part of the English Channel (Marine Region) : Ships: accidental as attached or free-living fouling organisms,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131558,"Ammothea hilgendorfi (Böhm, 1879)"
+5166760,Introduced species vector dispersal,in United Kingdom part of the English Channel (Marine Region) : Ships: general,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131558,"Ammothea hilgendorfi (Böhm, 1879)"
 5168461,invasion stage,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437972,"Erigone dentosa O. Pickard-Cambridge, 1894"
 5168461,native range,Usa To Guatemala,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437972,"Erigone dentosa O. Pickard-Cambridge, 1894"
 5170395,invasion stage,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438060,"Phoneutria boliviensis (F. O. Pickard-Cambridge, 1897)"
@@ -6058,6 +6143,12 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 5203111,pathway,cbd_2014_pathway:escape_ornamental,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117253,Umbra pygmaea
 5203111,pathway,cbd_2014_pathway:natural_dispersal,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042380,"Umbra pygmaea (DeKay, 1842)"
 5203111,pathway,cbd_2014_pathway:release,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042380,"Umbra pygmaea (DeKay, 1842)"
+5204019,Introduced species impact,in Belgian part of the North Sea : Other impact - undefined or uncertain,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157130623,"Oncorhynchus mykiss (Walbaum, 1792)"
+5204019,Introduced species impact,in Celtic Sea (IHO Sea Area) : Consumes native species (predator or herbivore),0a2eaf0c-5504-4f48-a47f-c94229029dc8,157130623,"Oncorhynchus mykiss (Walbaum, 1792)"
+5204019,Introduced species impact,in Portugal (Nation) : Other impact - undefined or uncertain,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157130623,"Oncorhynchus mykiss (Walbaum, 1792)"
+5204019,Introduced species vector dispersal,in Belgian part of the North Sea : Fisheries: deliberate translocations of fish or shellfish to establish or support fishery,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157130623,"Oncorhynchus mykiss (Walbaum, 1792)"
+5204019,Introduced species vector dispersal,in Celtic Sea (IHO Sea Area) : Fisheries: deliberate translocations of fish or shellfish to establish or support fishery,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157130623,"Oncorhynchus mykiss (Walbaum, 1792)"
+5204019,Introduced species vector dispersal,in France (Nation) : Fisheries: deliberate translocations of fish or shellfish to establish or support fishery,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157130623,"Oncorhynchus mykiss (Walbaum, 1792)"
 5204019,invasion stage,casual,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117245,Oncorhynchus mykiss
 5204019,native range,Asia,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042371,Oncorhynchus mykiss (Walbaum 1792)
 5204019,native range,Northern America (WGSRPD:7),1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042371,Oncorhynchus mykiss (Walbaum 1792)

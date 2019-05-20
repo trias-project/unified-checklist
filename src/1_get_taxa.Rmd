@@ -159,7 +159,7 @@ distributions <-
   filter(
     country == "BE",
     establishmentMeans %in% c("INTRODUCED", "NATURALISED", "INVASIVE", "ASSISTED COLONISATION"),
-    status %in% c("PRESENT", "COMMON", "RARE", "IRREGULAR")
+    !status %in% c("ABSENT", "EXCLUDED", "DOUBTFUL") # Inverse filter!
   )
 ```
 

@@ -1,4 +1,5 @@
 verificationKey,marine,freshwater,terrestrial,datasetKey,taxonKey,scientificName
+1002621,FALSE,TRUE,FALSE,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131084,"Keratella tropica (Apstein, 1907)"
 1007534,TRUE,FALSE,FALSE,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157130955,"Phaeostachys spinifera (Johnston, 1847)"
 1008610,TRUE,FALSE,FALSE,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157130989,"Haplopoma graniferum (Johnston, 1847)"
 1008612,TRUE,FALSE,FALSE,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157130988,"Haplopoma impressum (Audouin, 1826)"
@@ -162,6 +163,8 @@ verificationKey,marine,freshwater,terrestrial,datasetKey,taxonKey,scientificName
 2308541,FALSE,TRUE,FALSE,289244ee-e1c1-49aa-b2d7-d379391ce265,140562902,Limnodrilus cervix
 2308574,FALSE,TRUE,FALSE,289244ee-e1c1-49aa-b2d7-d379391ce265,140562898,Branchiura sowerbyi
 2308605,FALSE,TRUE,FALSE,289244ee-e1c1-49aa-b2d7-d379391ce265,140562899,Potamothrix vejdovskyi
+2320810,TRUE,FALSE,FALSE,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157127100,"Boccardia proboscidea Hartman, 1940"
+2320998,TRUE,FALSE,FALSE,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157127087,"Boccardiella hamata (Webster, 1879)"
 2321010,TRUE,TRUE,FALSE,289244ee-e1c1-49aa-b2d7-d379391ce265,140562907,Marenzelleria neglecta
 2321012,TRUE,TRUE,FALSE,289244ee-e1c1-49aa-b2d7-d379391ce265,140562906,Marenzelleria viridis
 2327735,FALSE,TRUE,FALSE,289244ee-e1c1-49aa-b2d7-d379391ce265,140562910,Ficopomatus enigmaticus
@@ -173,14 +176,15 @@ verificationKey,marine,freshwater,terrestrial,datasetKey,taxonKey,scientificName
 2340989,FALSE,TRUE,FALSE,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117244,Ameiurus nebulosus
 2351064,FALSE,TRUE,FALSE,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042384,"Coregonus nasus Pallas, 1776"
 2351136,FALSE,TRUE,FALSE,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042317,"Coregonus peled (J. F. Gmelin, 1788)"
-2351211,FALSE,TRUE,FALSE,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042345,"Coregonus lavaretus (Linnaeus, 1758)"
+2351211,TRUE,TRUE,FALSE,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157130604,"Coregonus lavaretus (Linnaeus, 1758)"
+2351271,TRUE,TRUE,FALSE,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157130610,"Salvelinus fontinalis (Mitchill, 1814)"
 2351413,FALSE,TRUE,FALSE,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042377,"Hucho hucho (Linnaeus, 1758)"
 2360504,FALSE,TRUE,FALSE,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042330,"Vimba vimba (Linnaeus, 1758)"
 2362030,FALSE,TRUE,FALSE,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117254,Ctenopharyngodon idella
 2362473,FALSE,TRUE,FALSE,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117235,Hypophthalmichthys molitrix
 2362486,FALSE,TRUE,FALSE,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117249,Hypophthalmichthys nobilis
 2362868,FALSE,TRUE,FALSE,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117252,Pseudorasbora parva
-2362881,FALSE,TRUE,FALSE,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042356,"Leucaspius delineatus Heckel, 1843"
+2362881,FALSE,TRUE,FALSE,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157130045,"Leucaspius delineatus (Heckel, 1843), 1841"
 2366634,FALSE,TRUE,FALSE,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117236,Carassius gibelio
 2367033,FALSE,TRUE,FALSE,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117246,Ballerus ballerus
 2367742,FALSE,TRUE,FALSE,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117237,Pimephales promelas
@@ -1503,6 +1507,7 @@ verificationKey,marine,freshwater,terrestrial,datasetKey,taxonKey,scientificName
 4264680,FALSE,TRUE,FALSE,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437776,"Myocastor coypus (Molina, 1782)"
 4270675,FALSE,FALSE,TRUE,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265914,Echinochloa muricata (Beauv.) Fernald var. muricata
 4271356,FALSE,FALSE,TRUE,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266067,Heracleum sibiricum L.
+4283395,TRUE,FALSE,FALSE,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131419,"Diadumene lineata (Verrill, 1869)"
 4285694,FALSE,TRUE,FALSE,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117251,Oreochromis niloticus
 4285968,FALSE,TRUE,FALSE,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117233,Ponticola kessleri
 4286942,FALSE,TRUE,FALSE,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117240,Carassius auratus
@@ -1566,6 +1571,7 @@ verificationKey,marine,freshwater,terrestrial,datasetKey,taxonKey,scientificName
 5104748,FALSE,FALSE,TRUE,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438079,"Cameraria gaultheriella (Walsingham, 1889)"
 5108665,FALSE,FALSE,TRUE,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438090,"Callopistria floridensis Guenée, 1852"
 5166489,TRUE,FALSE,FALSE,289244ee-e1c1-49aa-b2d7-d379391ce265,140562981,Megabalanus coccopoma
+5166760,TRUE,FALSE,FALSE,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131558,"Ammothea hilgendorfi (Böhm, 1879)"
 5168461,FALSE,FALSE,TRUE,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437972,"Erigone dentosa O. Pickard-Cambridge, 1894"
 5170395,FALSE,FALSE,TRUE,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438060,"Phoneutria boliviensis (F. O. Pickard-Cambridge, 1897)"
 5177089,FALSE,TRUE,FALSE,289244ee-e1c1-49aa-b2d7-d379391ce265,140562968,Jaera istri

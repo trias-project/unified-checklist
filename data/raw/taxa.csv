@@ -3290,7 +3290,7 @@ taxonKey,scientificName,taxonID,datasetKey,nameType,issues,validDistribution,bb_
 157127084,"Boccardiella Blake & Kudenov, 1978",urn:lsid:marinespecies.org:taxname:129610,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,SCIENTIFIC_NAME_ASSEMBLED,FALSE,2320997,,,,,,,
 157127085,"Rumex crispus L., 1753",urn:lsid:marinespecies.org:taxname:535790,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,"SCIENTIFIC_NAME_ASSEMBLED,DISTRIBUTION_INVALID",FALSE,8195144,,,,,,,
 157127086,"Triloculina d'Orbigny, 1826",urn:lsid:marinespecies.org:taxname:112047,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,SCIENTIFIC_NAME_ASSEMBLED,FALSE,8175234,,,,,,,
-157127087,"Boccardiella hamata (Webster, 1879)",urn:lsid:marinespecies.org:taxname:333121,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,"SCIENTIFIC_NAME_ASSEMBLED,DISTRIBUTION_INVALID",FALSE,2320998,,,,,,,
+157127087,"Boccardiella hamata (Webster, 1879)",urn:lsid:marinespecies.org:taxname:333121,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,"SCIENTIFIC_NAME_ASSEMBLED,DISTRIBUTION_INVALID",TRUE,2320998,"Boccardiella hamata (Webster, 1879)",Animalia,SPECIES,ACCEPTED,,,2320998
 157127088,"Rosanae Takht., 1967",urn:lsid:marinespecies.org:taxname:449897,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,"SCIENTIFIC_NAME_ASSEMBLED,BACKBONE_MATCH_NONE",FALSE,,,,,,,,
 157127089,"Pyrgo Defrance, 1824",urn:lsid:marinespecies.org:taxname:112037,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,SCIENTIFIC_NAME_ASSEMBLED,FALSE,8410647,,,,,,,
 157127090,"Rosales Bercht. & J.Presl, 1820",urn:lsid:marinespecies.org:taxname:414693,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,SCIENTIFIC_NAME_ASSEMBLED,FALSE,691,,,,,,,
@@ -3302,7 +3302,7 @@ taxonKey,scientificName,taxonID,datasetKey,nameType,issues,validDistribution,bb_
 157127097,"Boccardia Carazzi, 1893",urn:lsid:marinespecies.org:taxname:129609,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,SCIENTIFIC_NAME_ASSEMBLED,FALSE,2320787,,,,,,,
 157127098,"Pseudotriloculina subgranulata (Cushman, 1918)",urn:lsid:marinespecies.org:taxname:489997,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,SCIENTIFIC_NAME_ASSEMBLED,FALSE,7348462,,,,,,,
 157127099,Fabaceae,urn:lsid:marinespecies.org:taxname:414814,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,,FALSE,5386,,,,,,,
-157127100,"Boccardia proboscidea Hartman, 1940",urn:lsid:marinespecies.org:taxname:327249,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,"SCIENTIFIC_NAME_ASSEMBLED,DISTRIBUTION_INVALID",FALSE,2320810,,,,,,,
+157127100,"Boccardia proboscidea Hartman, 1940",urn:lsid:marinespecies.org:taxname:327249,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,"SCIENTIFIC_NAME_ASSEMBLED,DISTRIBUTION_INVALID",TRUE,2320810,"Boccardia proboscidea Hartman, 1940",Animalia,SPECIES,ACCEPTED,,,2320810
 157127101,"Pseudomassilina Lacroix, 1938",urn:lsid:marinespecies.org:taxname:112034,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,SCIENTIFIC_NAME_ASSEMBLED,FALSE,8010992,,,,,,,
 157127102,Lotus,urn:lsid:marinespecies.org:taxname:426009,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,,FALSE,2962960,,,,,,,
 157127103,"Boccardia semibranchiata Guérin, 1990",urn:lsid:marinespecies.org:taxname:131113,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,SCIENTIFIC_NAME_ASSEMBLED,FALSE,2320817,,,,,,,
@@ -3448,7 +3448,7 @@ taxonKey,scientificName,taxonID,datasetKey,nameType,issues,validDistribution,bb_
 157127256,Spartina alterniflora Loisel.,urn:lsid:marinespecies.org:taxname:234072,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,"SCIENTIFIC_NAME_ASSEMBLED,DISTRIBUTION_INVALID",FALSE,5290035,,,,,,,
 157127257,"Eunice floridana (Pourtalès, 1867)",urn:lsid:marinespecies.org:taxname:130056,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,SCIENTIFIC_NAME_ASSEMBLED,FALSE,5198300,,,,,,,
 157127258,"Nodosariinae Ehrenberg, 1838",urn:lsid:marinespecies.org:taxname:721188,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,"SCIENTIFIC_NAME_ASSEMBLED,BACKBONE_MATCH_NONE",FALSE,,,,,,,,
-157127259,"Spartina townsendii H. & J.Groves, 1881",urn:lsid:marinespecies.org:taxname:234039,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,"SCIENTIFIC_NAME_ASSEMBLED,DISTRIBUTION_INVALID",FALSE,5290034,Spartina townsendii H.Groves & J.Groves,Plantae,SPECIES,SYNONYM,9393876,Sporobolus townsendii (H.Groves & J.Groves) P.M.Peterson & Saarela,9393876
+157127259,"Spartina townsendii H. & J.Groves, 1881",urn:lsid:marinespecies.org:taxname:234039,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,"SCIENTIFIC_NAME_ASSEMBLED,DISTRIBUTION_INVALID",TRUE,5290034,Spartina townsendii H.Groves & J.Groves,Plantae,SPECIES,SYNONYM,9393876,Sporobolus townsendii (H.Groves & J.Groves) P.M.Peterson & Saarela,9393876
 157127260,"Onuphidae Kinberg, 1865",urn:lsid:marinespecies.org:taxname:965,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,SCIENTIFIC_NAME_ASSEMBLED,FALSE,2053,,,,,,,
 157127261,"Pyramidulina Fornasini, 1894",urn:lsid:marinespecies.org:taxname:465887,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,SCIENTIFIC_NAME_ASSEMBLED,FALSE,8034367,,,,,,,
 157127262,Spartina townsendii var. anglica C.E.Hubbard,urn:lsid:marinespecies.org:taxname:234041,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,"SCIENTIFIC_NAME_ASSEMBLED,DISTRIBUTION_INVALID",TRUE,5679819,Spartina townsendii var. anglica C.E.Hubbard,Plantae,VARIETY,DOUBTFUL,,,9393876
@@ -4782,11 +4782,11 @@ taxonKey,scientificName,taxonID,datasetKey,nameType,issues,validDistribution,bb_
 157128714,"Petricolinae d'Orbigny, 1840",urn:lsid:marinespecies.org:taxname:246,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,"SCIENTIFIC_NAME_ASSEMBLED,BACKBONE_MATCH_NONE",FALSE,,,,,,,,
 157128715,"Hillea Schiller, 1925",urn:lsid:marinespecies.org:taxname:178565,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,SCIENTIFIC_NAME_ASSEMBLED,FALSE,3202411,,,,,,,
 157128716,"Petricolaria Stoliczka, 1870",urn:lsid:marinespecies.org:taxname:156960,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,SCIENTIFIC_NAME_ASSEMBLED,FALSE,2287614,,,,,,,
-157128717,"Petricolaria pholadiformis (Lamarck, 1818)",urn:lsid:marinespecies.org:taxname:156961,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,"SCIENTIFIC_NAME_ASSEMBLED,DISTRIBUTION_INVALID",FALSE,2287615,"Petricolaria pholadiformis (Lamarck, 1818)",Animalia,SPECIES,ACCEPTED,,,2287615
+157128717,"Petricolaria pholadiformis (Lamarck, 1818)",urn:lsid:marinespecies.org:taxname:156961,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,"SCIENTIFIC_NAME_ASSEMBLED,DISTRIBUTION_INVALID",TRUE,2287615,"Petricolaria pholadiformis (Lamarck, 1818)",Animalia,SPECIES,ACCEPTED,,,2287615
 157128719,"Petricola Lamarck, 1801",urn:lsid:marinespecies.org:taxname:138332,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,SCIENTIFIC_NAME_ASSEMBLED,FALSE,2287606,,,,,,,
 157128720,"Petricola fabagella Lamarck, 1818",urn:lsid:marinespecies.org:taxname:507423,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,SCIENTIFIC_NAME_ASSEMBLED,FALSE,6524162,,,,,,,
 157128722,"Ruditapes Chiamenti, 1900",urn:lsid:marinespecies.org:taxname:231748,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,SCIENTIFIC_NAME_ASSEMBLED,FALSE,2287625,,,,,,,
-157128723,"Ruditapes philippinarum (Adams & Reeve, 1850)",urn:lsid:marinespecies.org:taxname:231750,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,"SCIENTIFIC_NAME_ASSEMBLED,DISTRIBUTION_INVALID",FALSE,4372686,,,,,,,
+157128723,"Ruditapes philippinarum (Adams & Reeve, 1850)",urn:lsid:marinespecies.org:taxname:231750,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,"SCIENTIFIC_NAME_ASSEMBLED,DISTRIBUTION_INVALID",TRUE,4372686,"Ruditapes philippinarum (Adams & Reeve, 1850)",Animalia,SPECIES,ACCEPTED,,,4372686
 157128729,"Circe Schumacher, 1817",urn:lsid:marinespecies.org:taxname:205535,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,SCIENTIFIC_NAME_ASSEMBLED,FALSE,3247613,,,,,,,
 157128730,"Circe scripta (Linnaeus, 1758)",urn:lsid:marinespecies.org:taxname:216564,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,SCIENTIFIC_NAME_ASSEMBLED,FALSE,5729364,,,,,,,
 157128731,"Meretrix Lamarck, 1799",urn:lsid:marinespecies.org:taxname:204011,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,SCIENTIFIC_NAME_ASSEMBLED,FALSE,4372740,,,,,,,
@@ -5863,11 +5863,11 @@ taxonKey,scientificName,taxonID,datasetKey,nameType,issues,validDistribution,bb_
 157130038,"Cyprinidae Rafinesque, 1815",urn:lsid:marinespecies.org:taxname:154163,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,SCIENTIFIC_NAME_ASSEMBLED,FALSE,7336,,,,,,,
 157130039,"Cyprininae Rafinesque, 1815",urn:lsid:marinespecies.org:taxname:826615,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,"SCIENTIFIC_NAME_ASSEMBLED,BACKBONE_MATCH_NONE",FALSE,,,,,,,,
 157130040,"Cyprinus Linnaeus, 1758",urn:lsid:marinespecies.org:taxname:154280,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,SCIENTIFIC_NAME_ASSEMBLED,FALSE,2347697,,,,,,,
-157130041,"Cyprinus carpio Linnaeus, 1758",urn:lsid:marinespecies.org:taxname:154582,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,"SCIENTIFIC_NAME_ASSEMBLED,DISTRIBUTION_INVALID",FALSE,4286975,"Cyprinus carpio Linnaeus, 1758",Animalia,SPECIES,ACCEPTED,,,4286975
+157130041,"Cyprinus carpio Linnaeus, 1758",urn:lsid:marinespecies.org:taxname:154582,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,"SCIENTIFIC_NAME_ASSEMBLED,DISTRIBUTION_INVALID",TRUE,4286975,"Cyprinus carpio Linnaeus, 1758",Animalia,SPECIES,ACCEPTED,,,4286975
 157130042,"Leuciscinae Bonaparte, 1835",urn:lsid:marinespecies.org:taxname:714645,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,"SCIENTIFIC_NAME_ASSEMBLED,BACKBONE_MATCH_NONE",FALSE,,,,,,,,
 157130043,"Chondrostoma Agassiz, 1832",urn:lsid:marinespecies.org:taxname:154481,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,SCIENTIFIC_NAME_ASSEMBLED,FALSE,2360535,,,,,,,
 157130044,"Leucaspius Heckel & Kner, 1857",urn:lsid:marinespecies.org:taxname:154320,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,SCIENTIFIC_NAME_ASSEMBLED,FALSE,2362880,,,,,,,
-157130045,"Leucaspius delineatus (Heckel, 1843), 1841",urn:lsid:marinespecies.org:taxname:154321,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,"SCIENTIFIC_NAME_ASSEMBLED,DISTRIBUTION_INVALID",FALSE,2362881,"Leucaspius delineatus (Heckel, 1843)",Animalia,SPECIES,ACCEPTED,,,2362881
+157130045,"Leucaspius delineatus (Heckel, 1843), 1841",urn:lsid:marinespecies.org:taxname:154321,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,"SCIENTIFIC_NAME_ASSEMBLED,DISTRIBUTION_INVALID",TRUE,2362881,"Leucaspius delineatus (Heckel, 1843)",Animalia,SPECIES,ACCEPTED,,,2362881
 157130046,Perciformes,urn:lsid:marinespecies.org:taxname:11014,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,,FALSE,587,,,,,,,
 157130047,Xiphioidei,urn:lsid:marinespecies.org:taxname:843668,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,BACKBONE_MATCH_NONE,FALSE,,,,,,,,
 157130048,"Istiophoridae Rafinesque, 1815",urn:lsid:marinespecies.org:taxname:125539,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,SCIENTIFIC_NAME_ASSEMBLED,FALSE,9670,,,,,,,
@@ -6381,12 +6381,12 @@ taxonKey,scientificName,taxonID,datasetKey,nameType,issues,validDistribution,bb_
 157130601,"Coregoninae Bonaparte, 1845",urn:lsid:marinespecies.org:taxname:154736,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,"SCIENTIFIC_NAME_ASSEMBLED,BACKBONE_MATCH_NONE",FALSE,,,,,,,,
 157130602,"Coregonus Linnaeus, 1758",urn:lsid:marinespecies.org:taxname:126139,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,SCIENTIFIC_NAME_ASSEMBLED,FALSE,2350934,,,,,,,
 157130603,"Coregonus maraena (Bloch, 1779)",urn:lsid:marinespecies.org:taxname:712453,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,SCIENTIFIC_NAME_ASSEMBLED,FALSE,2351174,,,,,,,
-157130604,"Coregonus lavaretus (Linnaeus, 1758)",urn:lsid:marinespecies.org:taxname:127180,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,"SCIENTIFIC_NAME_ASSEMBLED,DISTRIBUTION_INVALID",FALSE,2351211,"Coregonus lavaretus Valenciennes, 1848",Animalia,SPECIES,ACCEPTED,,,
+157130604,"Coregonus lavaretus (Linnaeus, 1758)",urn:lsid:marinespecies.org:taxname:127180,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,"SCIENTIFIC_NAME_ASSEMBLED,DISTRIBUTION_INVALID",TRUE,2351211,"Coregonus lavaretus Valenciennes, 1848",Animalia,SPECIES,ACCEPTED,,,
 157130605,"Salmoninae Schinz, 1822",urn:lsid:marinespecies.org:taxname:154188,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,"SCIENTIFIC_NAME_ASSEMBLED,BACKBONE_MATCH_NONE",FALSE,,,,,,,,
 157130606,"Salvelinus Richardson, 1836",urn:lsid:marinespecies.org:taxname:126142,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,SCIENTIFIC_NAME_ASSEMBLED,FALSE,2351241,,,,,,,
 157130607,"Salvelinus leucomaenis (Pallas, 1814)",urn:lsid:marinespecies.org:taxname:293725,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,SCIENTIFIC_NAME_ASSEMBLED,FALSE,4284019,,,,,,,
 157130608,Salvelinus leucomaenis subsp. leucomaenis,urn:lsid:marinespecies.org:taxname:274353,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,SCIENTIFIC_NAME_ASSEMBLED,FALSE,7059129,,,,,,,
-157130610,"Salvelinus fontinalis (Mitchill, 1814)",urn:lsid:marinespecies.org:taxname:154241,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,"SCIENTIFIC_NAME_ASSEMBLED,DISTRIBUTION_INVALID",FALSE,2351271,,,,,,,
+157130610,"Salvelinus fontinalis (Mitchill, 1814)",urn:lsid:marinespecies.org:taxname:154241,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,"SCIENTIFIC_NAME_ASSEMBLED,DISTRIBUTION_INVALID",TRUE,2351271,"Salvelinus fontinalis (Mitchill, 1814)",Animalia,SPECIES,ACCEPTED,,,2351271
 157130611,"Salvelinus alpinus (Linnaeus, 1758)",urn:lsid:marinespecies.org:taxname:127188,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,SCIENTIFIC_NAME_ASSEMBLED,FALSE,4284021,,,,,,,
 157130612,Salvelinus alpinus subsp. alpinus,urn:lsid:marinespecies.org:taxname:293724,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,SCIENTIFIC_NAME_ASSEMBLED,FALSE,7193472,,,,,,,
 157130614,"Salmo Linnaeus, 1758",urn:lsid:marinespecies.org:taxname:126141,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,SCIENTIFIC_NAME_ASSEMBLED,FALSE,2347608,,,,,,,
@@ -6398,7 +6398,7 @@ taxonKey,scientificName,taxonID,datasetKey,nameType,issues,validDistribution,bb_
 157130620,Oncorhynchus clarkii subsp. clarkii,urn:lsid:marinespecies.org:taxname:323483,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,SCIENTIFIC_NAME_ASSEMBLED,FALSE,5722958,,,,,,,
 157130621,"Oncorhynchus nerka (Walbaum, 1792)",urn:lsid:marinespecies.org:taxname:254569,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,SCIENTIFIC_NAME_ASSEMBLED,FALSE,5204039,,,,,,,
 157130622,"Oncorhynchus tshawytscha (Walbaum, 1792)",urn:lsid:marinespecies.org:taxname:158075,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,SCIENTIFIC_NAME_ASSEMBLED,FALSE,5204024,,,,,,,
-157130623,"Oncorhynchus mykiss (Walbaum, 1792)",urn:lsid:marinespecies.org:taxname:127185,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,"SCIENTIFIC_NAME_ASSEMBLED,DISTRIBUTION_INVALID",FALSE,5204019,"Oncorhynchus mykiss (Walbaum, 1792)",Animalia,SPECIES,ACCEPTED,,,5204019
+157130623,"Oncorhynchus mykiss (Walbaum, 1792)",urn:lsid:marinespecies.org:taxname:127185,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,"SCIENTIFIC_NAME_ASSEMBLED,DISTRIBUTION_INVALID",TRUE,5204019,"Oncorhynchus mykiss (Walbaum, 1792)",Animalia,SPECIES,ACCEPTED,,,5204019
 157130624,"Oncorhynchus kisutch (Walbaum, 1792)",urn:lsid:marinespecies.org:taxname:127184,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,SCIENTIFIC_NAME_ASSEMBLED,FALSE,5204034,"Oncorhynchus kisutch (Walbaum, 1792)",Animalia,SPECIES,ACCEPTED,,,5204034
 157130625,"Oncorhynchus keta (Walbaum, 1792)",urn:lsid:marinespecies.org:taxname:127183,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,SCIENTIFIC_NAME_ASSEMBLED,FALSE,5204014,,,,,,,
 157130626,"Oncorhynchus gorbuscha (Walbaum, 1792)",urn:lsid:marinespecies.org:taxname:127182,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,"SCIENTIFIC_NAME_ASSEMBLED,DISTRIBUTION_INVALID",FALSE,5204037,,,,,,,
@@ -6811,7 +6811,7 @@ taxonKey,scientificName,taxonID,datasetKey,nameType,issues,validDistribution,bb_
 157131081,"Lecane decipiens (Murray, 1913)",urn:lsid:marinespecies.org:taxname:148329,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,SCIENTIFIC_NAME_ASSEMBLED,FALSE,1002381,,,,,,,
 157131082,"Brachionidae Ehrenberg, 1838",urn:lsid:marinespecies.org:taxname:134918,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,SCIENTIFIC_NAME_ASSEMBLED,FALSE,3880,,,,,,,
 157131083,"Keratella Bory de St.Vincent, 1822",urn:lsid:marinespecies.org:taxname:134941,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,SCIENTIFIC_NAME_ASSEMBLED,FALSE,1002582,,,,,,,
-157131084,"Keratella tropica (Apstein, 1907)",urn:lsid:marinespecies.org:taxname:248010,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,"SCIENTIFIC_NAME_ASSEMBLED,DISTRIBUTION_INVALID",FALSE,1002621,,,,,,,
+157131084,"Keratella tropica (Apstein, 1907)",urn:lsid:marinespecies.org:taxname:248010,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,"SCIENTIFIC_NAME_ASSEMBLED,DISTRIBUTION_INVALID",TRUE,1002621,"Keratella tropica (Apstein, 1907)",Animalia,SPECIES,ACCEPTED,,,1002621
 157131085,"Entoprocta Nitsche, 1869",urn:lsid:marinespecies.org:taxname:1271,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,SCIENTIFIC_NAME_ASSEMBLED,FALSE,8173593,,,,,,,
 157131088,"Barentsiidae Emschermann, 1972",urn:lsid:marinespecies.org:taxname:154527,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,SCIENTIFIC_NAME_ASSEMBLED,FALSE,1897,,,,,,,
 157131089,"Urnatella Leidy, 1851",urn:lsid:marinespecies.org:taxname:395102,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,SCIENTIFIC_NAME_ASSEMBLED,FALSE,2284722,,,,,,,
@@ -7046,7 +7046,7 @@ taxonKey,scientificName,taxonID,datasetKey,nameType,issues,validDistribution,bb_
 157131336,"Nemopsis bachei L.Agassiz, 1849",urn:lsid:marinespecies.org:taxname:117348,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,"SCIENTIFIC_NAME_ASSEMBLED,DISTRIBUTION_INVALID",TRUE,2266561,"Nemopsis bachei L.Agassiz, 1849",Animalia,SPECIES,ACCEPTED,,,2266561
 157131337,"Garveia Wright, 1859",urn:lsid:marinespecies.org:taxname:117018,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,SCIENTIFIC_NAME_ASSEMBLED,FALSE,2266504,,,,,,,
 157131338,"Garveia cerulea (Clarke, 1882)",urn:lsid:marinespecies.org:taxname:157915,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,SCIENTIFIC_NAME_ASSEMBLED,FALSE,4283290,,,,,,,
-157131339,"Garveia franciscana (Torrey, 1902)",urn:lsid:marinespecies.org:taxname:117340,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,"SCIENTIFIC_NAME_ASSEMBLED,DISTRIBUTION_INVALID",FALSE,2266521,,,,,,,
+157131339,"Garveia franciscana (Torrey, 1902)",urn:lsid:marinespecies.org:taxname:117340,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,"SCIENTIFIC_NAME_ASSEMBLED,DISTRIBUTION_INVALID",TRUE,2266521,"Garveia franciscana (Torrey, 1902)",Animalia,SPECIES,ACCEPTED,,,2266521
 157131341,"Bougainvillia Lesson, 1830",urn:lsid:marinespecies.org:taxname:117015,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,SCIENTIFIC_NAME_ASSEMBLED,FALSE,2266571,,,,,,,
 157131342,"Bougainvillia niobe Mayer, 1894",urn:lsid:marinespecies.org:taxname:221103,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,SCIENTIFIC_NAME_ASSEMBLED,FALSE,2266574,,,,,,,
 157131343,"Bougainvillia rugosa Clarke, 1882",urn:lsid:marinespecies.org:taxname:117332,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,SCIENTIFIC_NAME_ASSEMBLED,FALSE,2266593,,,,,,,
@@ -7119,7 +7119,7 @@ taxonKey,scientificName,taxonID,datasetKey,nameType,issues,validDistribution,bb_
 157131416,"Diadumenidae Stephenson, 1920",urn:lsid:marinespecies.org:taxname:100664,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,SCIENTIFIC_NAME_ASSEMBLED,FALSE,5129,,,,,,,
 157131417,"Haliplanella Hand, 1956",urn:lsid:marinespecies.org:taxname:100729,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,SCIENTIFIC_NAME_ASSEMBLED,FALSE,2255891,,,,,,,
 157131418,"Diadumene Stephenson, 1920",urn:lsid:marinespecies.org:taxname:100728,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,SCIENTIFIC_NAME_ASSEMBLED,FALSE,2255865,,,,,,,
-157131419,"Diadumene lineata (Verrill, 1869)",urn:lsid:marinespecies.org:taxname:395099,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,"SCIENTIFIC_NAME_ASSEMBLED,DISTRIBUTION_INVALID",FALSE,4283395,,,,,,,
+157131419,"Diadumene lineata (Verrill, 1869)",urn:lsid:marinespecies.org:taxname:395099,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,"SCIENTIFIC_NAME_ASSEMBLED,DISTRIBUTION_INVALID",TRUE,4283395,"Diadumene lineata (Verrill, 1869)",Animalia,SPECIES,ACCEPTED,,,4283395
 157131423,"Diadumene franciscana Hand, 1956",urn:lsid:marinespecies.org:taxname:283512,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,SCIENTIFIC_NAME_ASSEMBLED,FALSE,2257925,,,,,,,
 157131424,"Diadumene leucolena (Verrill, 1866)",urn:lsid:marinespecies.org:taxname:158230,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,SCIENTIFIC_NAME_ASSEMBLED,FALSE,2257920,,,,,,,
 157131425,"Diadumene cincta Stephenson, 1925",urn:lsid:marinespecies.org:taxname:100872,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,"SCIENTIFIC_NAME_ASSEMBLED,DISTRIBUTION_INVALID",FALSE,2257924,,,,,,,
@@ -7159,7 +7159,7 @@ taxonKey,scientificName,taxonID,datasetKey,nameType,issues,validDistribution,bb_
 157131465,Auchenorrhyncha,urn:lsid:marinespecies.org:taxname:503316,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,BACKBONE_MATCH_NONE,FALSE,,,,,,,,
 157131466,"Delphacidae Leach, 1815",urn:lsid:marinespecies.org:taxname:503317,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,SCIENTIFIC_NAME_ASSEMBLED,FALSE,8498,,,,,,,
 157131467,"Prokelisia Osborn, 1905",urn:lsid:marinespecies.org:taxname:503318,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,SCIENTIFIC_NAME_ASSEMBLED,FALSE,2053953,,,,,,,
-157131468,"Prokelisia marginata (Van Duzee, 1897)",urn:lsid:marinespecies.org:taxname:503319,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,"SCIENTIFIC_NAME_ASSEMBLED,DISTRIBUTION_INVALID",FALSE,2053954,,,,,,,
+157131468,"Prokelisia marginata (Van Duzee, 1897)",urn:lsid:marinespecies.org:taxname:503319,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,"SCIENTIFIC_NAME_ASSEMBLED,DISTRIBUTION_INVALID",TRUE,2053954,"Prokelisia marginata (Van Duzee, 1897)",Animalia,SPECIES,ACCEPTED,,,2053954
 157131469,Sternorrhyncha,urn:lsid:marinespecies.org:taxname:478549,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,BACKBONE_MATCH_NONE,FALSE,,,,,,,,
 157131470,Aphididae,urn:lsid:marinespecies.org:taxname:494197,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,,FALSE,3042,,,,,,,
 157131471,"Rhopalosiphum Koch, 1854",urn:lsid:marinespecies.org:taxname:990741,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,SCIENTIFIC_NAME_ASSEMBLED,FALSE,2069512,,,,,,,
@@ -7244,7 +7244,7 @@ taxonKey,scientificName,taxonID,datasetKey,nameType,issues,validDistribution,bb_
 157131555,"Ammothella longioculata (Faraggiana, 1940)",urn:lsid:marinespecies.org:taxname:134613,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,SCIENTIFIC_NAME_ASSEMBLED,FALSE,2118181,,,,,,,
 157131556,"Ammothella appendiculata (Dohrn, 1881)",urn:lsid:marinespecies.org:taxname:134609,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,SCIENTIFIC_NAME_ASSEMBLED,FALSE,2118188,,,,,,,
 157131557,"Ammothea Leach, 1814",urn:lsid:marinespecies.org:taxname:134569,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,SCIENTIFIC_NAME_ASSEMBLED,FALSE,2118547,,,,,,,
-157131558,"Ammothea hilgendorfi (Böhm, 1879)",urn:lsid:marinespecies.org:taxname:134607,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,"SCIENTIFIC_NAME_ASSEMBLED,DISTRIBUTION_INVALID",FALSE,5166760,,,,,,,
+157131558,"Ammothea hilgendorfi (Böhm, 1879)",urn:lsid:marinespecies.org:taxname:134607,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,"SCIENTIFIC_NAME_ASSEMBLED,DISTRIBUTION_INVALID",TRUE,5166760,"Ammothea hilgendorfi (Bohm, 1879)",Animalia,SPECIES,ACCEPTED,,,5166760
 157131559,"Achelia Hodge, 1864",urn:lsid:marinespecies.org:taxname:134568,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,SCIENTIFIC_NAME_ASSEMBLED,FALSE,2118396,,,,,,,
 157131560,"Achelia echinata Hodge, 1864",urn:lsid:marinespecies.org:taxname:134599,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,SCIENTIFIC_NAME_ASSEMBLED,FALSE,2118434,,,,,,,
 157131561,"Arachnida Cuvier, 1812",urn:lsid:marinespecies.org:taxname:1300,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,SCIENTIFIC_NAME_ASSEMBLED,FALSE,367,,,,,,,
@@ -7325,7 +7325,7 @@ taxonKey,scientificName,taxonID,datasetKey,nameType,issues,validDistribution,bb_
 157131647,"Megabalanus tintinnabulum (Linnaeus, 1758)",urn:lsid:marinespecies.org:taxname:106225,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,"SCIENTIFIC_NAME_ASSEMBLED,DISTRIBUTION_INVALID",TRUE,5166487,"Megabalanus tintinnabulum (Linnaeus, 1758)",Animalia,SPECIES,HOMOTYPIC_SYNONYM,2115692,"Balanus tintinnabulum (Linnaeus, 1758)",2115692
 157131649,Balaninae,urn:lsid:marinespecies.org:taxname:106073,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,BACKBONE_MATCH_NONE,FALSE,,,,,,,,
 157131650,"Balanus Costa, 1778",urn:lsid:marinespecies.org:taxname:106122,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,SCIENTIFIC_NAME_ASSEMBLED,FALSE,2115691,,,,,,,
-157131651,"Balanus glandula Darwin, 1854",urn:lsid:marinespecies.org:taxname:394848,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,"SCIENTIFIC_NAME_ASSEMBLED,DISTRIBUTION_INVALID",FALSE,2115706,,,,,,,
+157131651,"Balanus glandula Darwin, 1854",urn:lsid:marinespecies.org:taxname:394848,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,"SCIENTIFIC_NAME_ASSEMBLED,DISTRIBUTION_INVALID",TRUE,2115706,"Balanus glandula Darwin, 1854",Animalia,SPECIES,ACCEPTED,,,2115706
 157131652,"Balanus trigonus Darwin, 1854",urn:lsid:marinespecies.org:taxname:106223,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,"SCIENTIFIC_NAME_ASSEMBLED,DISTRIBUTION_INVALID",FALSE,2115724,,,,,,,
 157131653,"Archaeobalanidae Newman & Ross, 1976",urn:lsid:marinespecies.org:taxname:106056,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,SCIENTIFIC_NAME_ASSEMBLED,FALSE,5103,,,,,,,
 157131654,"Archaeobalaninae Newman & Ross, 1976",urn:lsid:marinespecies.org:taxname:106070,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,"SCIENTIFIC_NAME_ASSEMBLED,BACKBONE_MATCH_NONE",FALSE,,,,,,,,
@@ -7565,7 +7565,7 @@ taxonKey,scientificName,taxonID,datasetKey,nameType,issues,validDistribution,bb_
 157131910,"Melitidae Bousfield, 1973",urn:lsid:marinespecies.org:taxname:101397,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,SCIENTIFIC_NAME_ASSEMBLED,FALSE,8003,,,,,,,
 157131911,"Melita Leach, 1814",urn:lsid:marinespecies.org:taxname:101679,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,SCIENTIFIC_NAME_ASSEMBLED,FALSE,2215940,,,,,,,
 157131912,"Melita zeylanica Stebbing, 1904",urn:lsid:marinespecies.org:taxname:211349,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,SCIENTIFIC_NAME_ASSEMBLED,FALSE,4315268,,,,,,,
-157131913,"Melita nitida Smith, 1873",urn:lsid:marinespecies.org:taxname:146922,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,"SCIENTIFIC_NAME_ASSEMBLED,DISTRIBUTION_INVALID",FALSE,2215949,"Melita nitida S.I.Smith, 1873",Animalia,SPECIES,ACCEPTED,,,2215949
+157131913,"Melita nitida Smith, 1873",urn:lsid:marinespecies.org:taxname:146922,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,"SCIENTIFIC_NAME_ASSEMBLED,DISTRIBUTION_INVALID",TRUE,2215949,"Melita nitida S.I.Smith, 1873",Animalia,SPECIES,ACCEPTED,,,2215949
 157131914,"Corophiida Leach, 1814",urn:lsid:marinespecies.org:taxname:719474,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,"SCIENTIFIC_NAME_ASSEMBLED,BACKBONE_MATCH_NONE",FALSE,,,,,,,,
 157131915,"Caprellidira Leach, 1814",urn:lsid:marinespecies.org:taxname:719478,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,"SCIENTIFIC_NAME_ASSEMBLED,BACKBONE_MATCH_NONE",FALSE,,,,,,,,
 157131916,"Photoidea Boeck, 1871",urn:lsid:marinespecies.org:taxname:716961,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,"SCIENTIFIC_NAME_ASSEMBLED,BACKBONE_MATCH_NONE",FALSE,,,,,,,,
@@ -7664,7 +7664,7 @@ taxonKey,scientificName,taxonID,datasetKey,nameType,issues,validDistribution,bb_
 157132018,"Gammaridae Leach, 1814",urn:lsid:marinespecies.org:taxname:101383,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,SCIENTIFIC_NAME_ASSEMBLED,FALSE,4434,,,,,,,
 157132019,Echinogammarus incertae sedis,urn:lsid:marinespecies.org:taxname:510103,0a2eaf0c-5504-4f48-a47f-c94229029dc8,PLACEHOLDER,BACKBONE_MATCH_NONE,FALSE,,,,,,,,
 157132020,"Dikerogammarus Stebbing, 1899",urn:lsid:marinespecies.org:taxname:148585,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,SCIENTIFIC_NAME_ASSEMBLED,FALSE,4315702,,,,,,,
-157132021,"Dikerogammarus villosus (Sowinsky, 1894)",urn:lsid:marinespecies.org:taxname:148586,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,"SCIENTIFIC_NAME_ASSEMBLED,DISTRIBUTION_INVALID",FALSE,4315705,"Dikerogammarus villosus (Sowinsky, 1894)",Animalia,SPECIES,ACCEPTED,,,4315705
+157132021,"Dikerogammarus villosus (Sowinsky, 1894)",urn:lsid:marinespecies.org:taxname:148586,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,"SCIENTIFIC_NAME_ASSEMBLED,DISTRIBUTION_INVALID",TRUE,4315705,"Dikerogammarus villosus (Sowinsky, 1894)",Animalia,SPECIES,ACCEPTED,,,4315705
 157132022,"Gammarus Fabricius, 1775",urn:lsid:marinespecies.org:taxname:101537,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,SCIENTIFIC_NAME_ASSEMBLED,FALSE,2218440,,,,,,,
 157132023,"Gammarus daiberi Bousfield, 1969",urn:lsid:marinespecies.org:taxname:158091,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,SCIENTIFIC_NAME_ASSEMBLED,FALSE,2219850,,,,,,,
 157132024,"Gammarus tigrinus Sexton, 1939",urn:lsid:marinespecies.org:taxname:102296,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,"SCIENTIFIC_NAME_ASSEMBLED,DISTRIBUTION_INVALID",TRUE,2219863,"Gammarus tigrinus Sexton, 1939",Animalia,SPECIES,ACCEPTED,,,2219863
@@ -7811,7 +7811,7 @@ taxonKey,scientificName,taxonID,datasetKey,nameType,issues,validDistribution,bb_
 157132185,"Aselloidea Latreille, 1802",urn:lsid:marinespecies.org:taxname:155713,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,"SCIENTIFIC_NAME_ASSEMBLED,BACKBONE_MATCH_NONE",FALSE,,,,,,,,
 157132186,"Eucarida Calman, 1904",urn:lsid:marinespecies.org:taxname:1089,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,"SCIENTIFIC_NAME_ASSEMBLED,BACKBONE_MATCH_NONE",FALSE,,,,,,,,
 157132187,"Decapoda Latreille, 1802",urn:lsid:marinespecies.org:taxname:1130,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,SCIENTIFIC_NAME_ASSEMBLED,FALSE,637,,,,,,,
-157132190,"Procambarus clarkii (Girard, 1852)",urn:lsid:marinespecies.org:taxname:465540,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,"PARENT_NAME_USAGE_ID_INVALID,SCIENTIFIC_NAME_ASSEMBLED,DISTRIBUTION_INVALID",FALSE,2227300,"Procambarus clarkii (Girard, 1852)",Animalia,SPECIES,ACCEPTED,,,2227300
+157132190,"Procambarus clarkii (Girard, 1852)",urn:lsid:marinespecies.org:taxname:465540,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,"PARENT_NAME_USAGE_ID_INVALID,SCIENTIFIC_NAME_ASSEMBLED,DISTRIBUTION_INVALID",TRUE,2227300,"Procambarus clarkii (Girard, 1852)",Animalia,SPECIES,ACCEPTED,,,2227300
 157132191,"Pleocyemata Burkenroad, 1963",urn:lsid:marinespecies.org:taxname:106670,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,"SCIENTIFIC_NAME_ASSEMBLED,BACKBONE_MATCH_NONE",FALSE,,,,,,,,
 157132192,"Gebiidea de Saint Laurent, 1979",urn:lsid:marinespecies.org:taxname:477323,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,"SCIENTIFIC_NAME_ASSEMBLED,BACKBONE_MATCH_NONE",FALSE,,,,,,,,
 157132193,"Upogebiidae Borradaile, 1903",urn:lsid:marinespecies.org:taxname:106803,0a2eaf0c-5504-4f48-a47f-c94229029dc8,SCIENTIFIC,SCIENTIFIC_NAME_ASSEMBLED,FALSE,4566,,,,,,,
@@ -9459,7 +9459,7 @@ taxonKey,scientificName,taxonID,datasetKey,nameType,issues,validDistribution,bb_
 146042349,"Anguilla japonica Temminck & Schlegel, 1846",rinse-pathways-checklist:taxon:1bbdfb255e1b8127218d6ed189758944,1738f272-6b5d-4f43-9a92-453a8c5ea50a,SCIENTIFIC,,FALSE,5213022,,,,,,,
 146042350,"Oreochromis aureus (Steindachner, 1864)",rinse-pathways-checklist:taxon:216cd981c79a4c417f03addad2efb7d2,1738f272-6b5d-4f43-9a92-453a8c5ea50a,SCIENTIFIC,,FALSE,2372367,,,,,,,
 146042351,"Silurus glanis Linnaeus, 1758",rinse-pathways-checklist:taxon:212ba5d14ebbbf52a10ba0c2d3121636,1738f272-6b5d-4f43-9a92-453a8c5ea50a,SCIENTIFIC,,TRUE,2337607,"Silurus glanis Linnaeus, 1758",Animalia,SPECIES,ACCEPTED,,,2337607
-146042352,"Salvelinus fontinalis (Mitchill, 1814)",rinse-pathways-checklist:taxon:2aa7a305f2ca559a212b594131f87c9d,1738f272-6b5d-4f43-9a92-453a8c5ea50a,SCIENTIFIC,,FALSE,2351271,,,,,,,
+146042352,"Salvelinus fontinalis (Mitchill, 1814)",rinse-pathways-checklist:taxon:2aa7a305f2ca559a212b594131f87c9d,1738f272-6b5d-4f43-9a92-453a8c5ea50a,SCIENTIFIC,,FALSE,2351271,"Salvelinus fontinalis (Mitchill, 1814)",Animalia,SPECIES,ACCEPTED,,,2351271
 146042353,"Clarias batrachus (Linnaeus, 1758)",rinse-pathways-checklist:taxon:28dfe044253f01a4f31916b36e12bf74,1738f272-6b5d-4f43-9a92-453a8c5ea50a,SCIENTIFIC,,FALSE,5202683,,,,,,,
 146042354,"Poecilia reticulata W. K. H. Peters, 1859",rinse-pathways-checklist:taxon:30000779b31dfaac01283fe38042e4f7,1738f272-6b5d-4f43-9a92-453a8c5ea50a,SCIENTIFIC,,FALSE,2350050,,,,,,,
 146042355,"Osphronemus goramy Lacépède, 1801",rinse-pathways-checklist:taxon:302df63fb3078785f79cba83d1a6f584,1738f272-6b5d-4f43-9a92-453a8c5ea50a,SCIENTIFIC,,FALSE,2394154,,,,,,,
@@ -9518,7 +9518,7 @@ taxonKey,scientificName,taxonID,datasetKey,nameType,issues,validDistribution,bb_
 146042409,"Crepidula fornicata (Linnaeus, 1758)",rinse-pathways-checklist:taxon:da91be2f31d7767e6e3cc3cc82c7b4e4,1738f272-6b5d-4f43-9a92-453a8c5ea50a,SCIENTIFIC,,TRUE,5192789,"Crepidula fornicata (Linnaeus, 1758)",Animalia,SPECIES,ACCEPTED,,,5192789
 146042410,"Choromytilus chorus (Molina, 1782)",rinse-pathways-checklist:taxon:d9f85d1c2f4f1f5c99f8f371ac578e8b,1738f272-6b5d-4f43-9a92-453a8c5ea50a,SCIENTIFIC,,FALSE,5855356,,,,,,,
 146042411,"Dreissena rostriformis bugensis (Andrusov, 1897)",rinse-pathways-checklist:taxon:d80b60f4951a627a05bf7e807988e7e2,1738f272-6b5d-4f43-9a92-453a8c5ea50a,SCIENTIFIC,,TRUE,4371624,"Dreissena rostriformis bugensis Andrusov, 1897",Animalia,SUBSPECIES,SYNONYM,2287073,"Dreissena bugensis (Andrusov, 1897)",2287073
-146042412,Ruditapes philippinarum (Adams & Reeve 1850),rinse-pathways-checklist:taxon:b5e78ec6c0bce59556b499b3f6074229,1738f272-6b5d-4f43-9a92-453a8c5ea50a,SCIENTIFIC,,FALSE,4372686,,,,,,,
+146042412,Ruditapes philippinarum (Adams & Reeve 1850),rinse-pathways-checklist:taxon:b5e78ec6c0bce59556b499b3f6074229,1738f272-6b5d-4f43-9a92-453a8c5ea50a,SCIENTIFIC,,FALSE,4372686,"Ruditapes philippinarum (Adams & Reeve, 1850)",Animalia,SPECIES,ACCEPTED,,,4372686
 146042413,"Tandonia sowerbyi (A. Férussac, 1823)",rinse-pathways-checklist:taxon:b58a4fbf2481e23e725bc4100b953cc8,1738f272-6b5d-4f43-9a92-453a8c5ea50a,SCIENTIFIC,,TRUE,4598226,"Tandonia sowerbyi (A.Férussac, 1823)",Animalia,SPECIES,ACCEPTED,,,4598226
 146042414,"Melanoides tuberculatus (Muller, 1774)",rinse-pathways-checklist:taxon:affa3fab91265aa3e370ace85dac85f8,1738f272-6b5d-4f43-9a92-453a8c5ea50a,SCIENTIFIC,,FALSE,4362965,,,,,,,
 146042415,"Rangia cuneata (G. B. Sowerby I, 1831)",rinse-pathways-checklist:taxon:af90a29ef7663c45758bacedc4f9ca1f,1738f272-6b5d-4f43-9a92-453a8c5ea50a,SCIENTIFIC,,TRUE,5188971,"Rangia cuneata (G.B.Sowerby I, 1832)",Animalia,SPECIES,ACCEPTED,,,5188971

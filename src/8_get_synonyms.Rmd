@@ -1,0 +1,78 @@
+# Get synonyms of all accepted taxa
+
+In this chapter we retrieve from GBIF Taxonomy Backbone all synonyms of the accepted taxa contained in the unified checklist. Reference issue: [unified-checklist/issue#41](https://github.com/trias-project/unified-checklist/issues/41).
+
+## Get accepted taxa from unified checklist
+
+### Read taxonomic data
+
+```{r get_synonyms-read-taxa}
+input_taxa <- read_csv(here("data", "interim", "taxa_unified.csv"))
+```
+
+### Select accepted taxa
+
+```{r get_synonyms-aaccepted-taxa}
+accepted_taxa <- 
+  input_taxa %>%
+  filter(taxonomicStatus == "ACCEPTED")
+```
+
+## Find synonyms
+
+We retrieve all synonyms of all accepted taxa from GBIF Taxonomic Backbone. **Note: this step can take few minutes**.
+
+```{r get_synonyms-get-synonyms-from-gbif, message=FALSE}
+progress_bar <- progress_estimated(nrow(accepted_taxa))
+
+detach("package:tidylog") # to remove infos interrupting progress bar
+synonyms <- map_dfr(
+  accepted_taxa$verificationKey, 
+  function(key) {
+    progress_bar$tick()$print()
+      name_usage(
+        key = key, 
+        data = "synonyms", 
+        return = "data") %>%
+      select(-contains("issues"))
+  }
+)
+library(tidylog)
+```
+
+We are interested in the following columns:
+
+```{r get_synonyms-list-of-gbif-fields}
+gbif_fields <- c(
+  "key",
+  "scientificName",
+  "rank",
+  "taxonomicStatus",
+  "kingdom",
+  "phylum",
+  "class",
+  "order",
+  "family",
+  "genus",
+  "species",
+  "kingdomKey",
+  "phylumKey",
+  "classKey",
+  "orderKey",
+  "familyKey",
+  "genusKey",
+  "speciesKey",
+  "acceptedKey",
+  "accepted"
+)
+```
+
+Save as CSV:
+
+```{r get_synonyms-save-as-csv}
+synonyms %>%
+  select(gbif_fields) %>%
+  write_csv(here("data", "interim", "synonyms_of_accepted_taxa_unified.csv"), 
+            na = "")
+```
+

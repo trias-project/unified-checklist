@@ -76,6 +76,7 @@ verificationKey,startYear,endYear,datasetKey,taxonKeys,scientificNames
 2115692,1998,2016,289244ee-e1c1-49aa-b2d7-d379391ce265,140562982,Megabalanus tintinnabulum
 2115706,2015,2015,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131651,"Balanus glandula Darwin, 1854"
 2115717,1800,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437909,Balanus improvisus
+2115724,,,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131652,"Balanus trigonus Darwin, 1854"
 2115769,1950,2016,289244ee-e1c1-49aa-b2d7-d379391ce265,140562976,Austrominius modestus
 2138649,1997,1997,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437974,Mermessus denticulatus (Banks 1898)
 2140406,2018,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437994,"Triaeris stenaspis Simon, 1891"
@@ -152,7 +153,7 @@ verificationKey,startYear,endYear,datasetKey,taxonKeys,scientificNames
 2266009,1905,1905,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131303,"Cordylophora caspia (Pallas, 1771)"
 2266521,1962,1962,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131339,"Garveia franciscana (Torrey, 1902)"
 2266561,1996,1996,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131336,"Nemopsis bachei L.Agassiz, 1849"
-2266754,,,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131189,"Gonionemus vertens A.Agassiz, 1862"
+2266754,1946,1946,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131189,"Gonionemus vertens A.Agassiz, 1862"
 2284443,2004,2011,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437709,Mastophorus
 2286079,1960,2017,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042468,Crassostrea virginica (Gmelin 1791)
 2287072,1834,2016,289244ee-e1c1-49aa-b2d7-d379391ce265,140562946,Dreissena polymorpha
@@ -188,7 +189,7 @@ verificationKey,startYear,endYear,datasetKey,taxonKeys,scientificNames
 2340989,1871,2018,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117244,Ameiurus nebulosus
 2351064,,,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042384,"Coregonus nasus Pallas, 1776"
 2351136,1978,2017,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042317,"Coregonus peled (J. F. Gmelin, 1788)"
-2351211,,,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157130604,"Coregonus lavaretus (Linnaeus, 1758)"
+2351211,1978,2017,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042345,"Coregonus lavaretus (Linnaeus, 1758)"
 2351271,1884,1884,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157130610,"Salvelinus fontinalis (Mitchill, 1814)"
 2351413,1954,2017,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042377,"Hucho hucho (Linnaeus, 1758)"
 2360504,2001,2017,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042330,"Vimba vimba (Linnaeus, 1758)"
@@ -196,7 +197,7 @@ verificationKey,startYear,endYear,datasetKey,taxonKeys,scientificNames
 2362473,1975,2018,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117235,Hypophthalmichthys molitrix
 2362486,1975,2018,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117249,Hypophthalmichthys nobilis
 2362868,1992,2018,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117252,Pseudorasbora parva
-2362881,,,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157130045,"Leucaspius delineatus (Heckel, 1843), 1841"
+2362881,1910,2017,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042356,"Leucaspius delineatus Heckel, 1843"
 2366634,1601,2018,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117236,Carassius gibelio
 2367033,2016,2018,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117246,Ballerus ballerus
 2367742,1984,2018,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117237,Pimephales promelas
@@ -1543,7 +1544,7 @@ verificationKey,startYear,endYear,datasetKey,taxonKeys,scientificNames
 4315760,1925,2016,289244ee-e1c1-49aa-b2d7-d379391ce265,140563001,Echinogammarus berilloni
 4344674,2001,2016,289244ee-e1c1-49aa-b2d7-d379391ce265,140562918,Dendrocoelum romanodanubiale
 4354941,2003,2003,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157129849,"Botrylloides violaceus Oka, 1927"
-4363583,,,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042441,Rapana venosa (Valenciennes 1846)
+4363583,,,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157129405,"Rapana venosa (Valenciennes, 1846)"
 4372686,,,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157128723,"Ruditapes philippinarum (Adams & Reeve, 1850)"
 4382841,2003,2016,289244ee-e1c1-49aa-b2d7-d379391ce265,140563010,Hemigrapsus takanoi
 4400961,2018,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438237,Badonnelia titei
@@ -1578,6 +1579,7 @@ verificationKey,startYear,endYear,datasetKey,taxonKeys,scientificNames
 4598225,1941,1941,e082b10e-476f-43c1-aa61-f8d92f33029a,157063014,"Tandonia budapestensis (Hazay, 1880)"
 4598226,1981,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437907,Tandonia sowerbyi
 4805564,1952,2016,289244ee-e1c1-49aa-b2d7-d379391ce265,140562980,Amphibalanus amphitrite
+4805565,1997,1997,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131626,"Amphibalanus variegatus (Darwin, 1854)"
 4812260,2010,2016,289244ee-e1c1-49aa-b2d7-d379391ce265,140562895,Branchiodrilus hortensis
 4925890,2012,2017,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266290,Acer tataricum L. subsp. ginnala (Maxim.) Wesm.
 4926336,1850,2017,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265079,Anaphalis margaritacea (L.) Benth.
@@ -1594,6 +1596,7 @@ verificationKey,startYear,endYear,datasetKey,taxonKeys,scientificNames
 4939668,1949,2016,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266501,Kitaibela vitifolia Willd.
 4984851,1999,1999,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131026,"Bugula neritina (Linnaeus, 1758)"
 4985072,2000,2000,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131005,"Tricellaria inopinata d'Hondt & Occhipinti Ambrogi, 1985"
+4985433,,,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157130851,"Victorella pavida Saville-Kent, 1870"
 4987920,2018,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438244,Trichopsocus clarus
 4989894,2018,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438206,"Hippodamia convergens Guérin-Meneville, 1842"
 4989904,2001,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438208,"Harmonia axyridis (Pallas, 1773)"
@@ -1611,6 +1614,7 @@ verificationKey,startYear,endYear,datasetKey,taxonKeys,scientificNames
 5178057,1998,2016,289244ee-e1c1-49aa-b2d7-d379391ce265,140563003,Caprella mutica
 5179027,1830,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437991,Scutigera coleoptrata (Linnaeus 1758)
 5182343,,,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157128288,"Haliclona xena De Weerdt, 1986"
+5188774,1962,1962,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131091,"Barentsia ramosa (Robertson, 1900)"
 5188971,2004,2016,289244ee-e1c1-49aa-b2d7-d379391ce265,140562951,Rangia cuneata
 5189032,1992,2016,289244ee-e1c1-49aa-b2d7-d379391ce265,140562942,Corbicula fluminalis
 5189713,1998,2016,289244ee-e1c1-49aa-b2d7-d379391ce265,140562957,Menetus dilatatus
@@ -2365,6 +2369,7 @@ verificationKey,startYear,endYear,datasetKey,taxonKeys,scientificNames
 7519710,1984,1993,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266608,Orobanche amethystea Thuill.
 7520678,2013,2013,e082b10e-476f-43c1-aa61-f8d92f33029a,157062968,"Striosubulina striatella (Rang, 1831)"
 7523432,1978,1978,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267211,Silene behen L.
+7523753,1866,2018,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267078,Symphoricarpos albus (L.) S.F. Blake
 7536406,1895,1895,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266352,Nemophila menziesii Hook. & Arnott var. integrifolia Parish
 7540164,1981,1981,e082b10e-476f-43c1-aa61-f8d92f33029a,157063238,"Arion vulgaris Moquin-Tandon, 1855"
 7544073,1864,2018,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265008,Saxifraga x arendsii Engl. s.l.

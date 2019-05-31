@@ -1,33 +1,59 @@
 # Get synonyms of all accepted taxa
 
-In this chapter we retrieve from GBIF Taxonomy Backbone all synonyms of the accepted taxa contained in the unified checklist. Reference issue: [unified-checklist/issue#41](https://github.com/trias-project/unified-checklist/issues/41).
+In this chapter we retrieve all synonyms of the taxa in the unified checklist. Together with the accepted names, such a list allows to search for non-native scientific names in e.g. occurrence databases.
 
-## Get accepted taxa from unified checklist
+## Get unified taxa
 
-### Read taxonomic data
+1. Read `data/interim/taxa_unified.csv`.
 
-```{r get_synonyms-read-taxa}
+```{r get_synonyms-1}
 input_taxa <- read_csv(here("data", "interim", "taxa_unified.csv"))
 ```
 
-### Select accepted taxa
+2. Define columns of interest.
 
-```{r get_synonyms-aaccepted-taxa}
-accepted_taxa <- 
+```{r get_synonyms-2}
+selected_columns <- c(
+  "key",
+  "scientificName",
+  "canonicalName",
+  "authorship",
+  "rank",
+  "taxonomicStatus",
+  "kingdom",
+  "phylum",
+  "class",
+  "order",
+  "family",
+  "genus",
+  "species",
+  "parentKey",
+  "parent",
+  "acceptedKey",
+  "accepted"
+)
+```
+
+3. Select/rename columns of interest.
+
+```{r get_synonyms-3}
+input_taxa <-
   input_taxa %>%
-  filter(taxonomicStatus == "ACCEPTED")
+  rename(key = verificationKey) %>%
+  rename(accepted = acceptedName) %>%
+  select(selected_columns)
 ```
 
 ## Find synonyms
 
-We retrieve all synonyms of all accepted taxa from GBIF Taxonomic Backbone. **Note: this step can take few minutes**.
+1. Retrieve all synonyms (from the GBIF Backbone Taxonomy) of the taxa in our list. Synonym taxa won't return results, but are fine to leave in the list. _Note: this step can take few minutes._
 
-```{r get_synonyms-get-synonyms-from-gbif, message=FALSE}
-progress_bar <- progress_estimated(nrow(accepted_taxa))
+```{r get_synonyms-get-synonyms-from-gbif}
+progress_bar <- progress_estimated(nrow(input_taxa))
 
 detach("package:tidylog") # to remove infos interrupting progress bar
 synonyms <- map_dfr(
-  accepted_taxa$verificationKey, 
+  input_taxa$key, 
   function(key) {
     progress_bar$tick()$print()
       name_usage(
@@ -40,39 +66,27 @@ synonyms <- map_dfr(
 library(tidylog)
 ```
 
-We are interested in the following columns:
+2. Select columns of interest in synonyms.
 
-```{r get_synonyms-list-of-gbif-fields}
-gbif_fields <- c(
-  "key",
-  "scientificName",
-  "rank",
-  "taxonomicStatus",
-  "kingdom",
-  "phylum",
-  "class",
-  "order",
-  "family",
-  "genus",
-  "species",
-  "kingdomKey",
-  "phylumKey",
-  "classKey",
-  "orderKey",
-  "familyKey",
-  "genusKey",
-  "speciesKey",
-  "acceptedKey",
-  "accepted"
-)
+```{r get_synonyms-4}
+synonyms <-
+  synonyms %>%
+  select(selected_columns)
 ```
 
-Save as CSV:
+3. Merge input taxa with their synonyms.
 
-```{r get_synonyms-save-as-csv}
-synonyms %>%
-  select(gbif_fields) %>%
-  write_csv(here("data", "interim", "synonyms_of_accepted_taxa_unified.csv"), 
-            na = "")
+```{r get_synonyms-5}
+taxa_and_synonyms <-
+  input_taxa %>%
+  mutate(source = "unified checklist") %>%
+  union_all(
+    synonyms %>% mutate(source = "gbif synonym")
+  )
 ```
 
+4. Save as [CSV](https://github.com/trias-project/unified-checklist/blob/master/data/interim/taxa_unified_and_synonyms.csv).
+
+```{r get_synonyms-6}
+write_csv(taxa_and_synonyms, here("data", "interim", "taxa_unified_and_synonyms.csv"), na = "")
+```

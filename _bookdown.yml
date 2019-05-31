@@ -16,7 +16,8 @@ rmd_files: [
   src/4_unify_taxa.Rmd,
   src/5_unify_information.Rmd,
   src/6_dwc_mapping.Rmd,
-  src/7_griis_mapping.Rmd
+  src/7_griis_mapping.Rmd,
+  src/8_get_synonyms.Rmd
 ]
 
 # Where Rmd files are kept

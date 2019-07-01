@@ -112,12 +112,20 @@ distributions_unified <-
   
   # Take earliest year, latest year and note taxonKey(s) and scientificName(s):
   summarize(
-    startYear = as.integer(min(startYear, na.rm = TRUE)),
-    endYear = as.integer(max(endYear, na.rm = TRUE)),
+    startYear = min(startYear, na.rm = TRUE),
+    endYear = max(endYear, na.rm = TRUE),
     taxonKeys = paste(unique(taxonKey), collapse = "|"),
     scientificNames = paste(unique(scientificName), collapse = "|")
   ) %>%
   ungroup() %>%
+  
+  # Convert dates to integers and set Inf to NA
+  mutate(startYear = ifelse(!is.infinite(startYear), 
+                            as.integer(startYear), 
+                            NA_integer_),
+         endYear = ifelse(!is.infinite(endYear), 
+                            as.integer(endYear), 
+                            NA_integer_))
 ```
 
 4. Choose a single distribution across checklists.

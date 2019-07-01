@@ -46,7 +46,7 @@ taxa <-
 
 1. Parse `temporal` (eventDate) information.
 
-```{r unify_information-5, echo = TRUE}
+```{r unify_information-4, echo = TRUE}
 distributions_unified <-
   distributions %>%
   
@@ -85,7 +85,7 @@ scientific name | eventDate
 
 Both are considered (verified) synonyms of [Medicago monantha Trautv.](https://www.gbif.org/species/2965226), so their distribution information is merged to `1885/1955`. We note both in `taxonKeys` and `scientificNames`.
 
-```{r unify_information-6, echo = TRUE}
+```{r unify_information-5, echo = TRUE}
 distributions_unified <-
   distributions_unified %>%
   
@@ -130,7 +130,7 @@ distributions_unified <-
 
 4. Choose a single distribution across checklists.
 
-```{r unify_information-7, echo = TRUE}
+```{r unify_information-6, echo = TRUE}
 distributions_unified <-
   distributions_unified %>%
   

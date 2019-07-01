@@ -213,7 +213,10 @@ distributions_unified <-
 6. Save to [CSV](https://github.com/trias-project/unified-checklist/blob/master/data/interim/distributions_unified.csv).
 
 ```{r unify_information-8}
-write_csv(distributions_unified, here("data", "interim", "distributions_unified.csv"), na = "")
+write_csv(distributions_unified, 
+          here("data", "interim", "distributions_unified.csv"), 
+          na = ""
+)
 ```
 
 ## Unify species profiles

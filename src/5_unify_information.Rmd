@@ -10,6 +10,9 @@ taxa <- read_csv(here("data", "interim", "taxa_with_verification.csv"))
 distributions <- read_csv(here("data", "raw", "distributions.csv"))
 speciesprofiles <- read_csv(here("data", "raw", "speciesprofiles.csv"))
 descriptions <- read_csv(here("data", "raw", "descriptions.csv"))
+# read locality mapping
+locations <- read_tsv(here("references", "locality_mapping.tsv"),
+                      na = "")
 ```
 
 ## Assign checklist order

@@ -88,6 +88,12 @@ Both are considered (verified) synonyms of [Medicago monantha Trautv.](https://w
 ```{r unify_information-6, echo = TRUE}
 distributions_unified <-
   distributions_unified %>%
+  
+  # Map localities and locationId
+  left_join(locations, by = c("locationId", "locality")) %>%
+  select(-c(locality, locationId)) %>%
+  rename(locationId = locationId_assigned, 
+         locality = locality_assigned) %>%
 
   # Join distribution with taxon to get verificationKey and checklistOrder
   left_join(taxa, by = "taxonKey") %>%

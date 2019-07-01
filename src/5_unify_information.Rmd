@@ -105,7 +105,9 @@ distributions_unified <-
   group_by(
     datasetKey,
     checklistOrder,
-    verificationKey
+    verificationKey,
+    locality,
+    locationId
   ) %>%
   
   # Take earliest year, latest year and note taxonKey(s) and scientificName(s):
@@ -114,7 +116,8 @@ distributions_unified <-
     endYear = as.integer(max(endYear, na.rm = TRUE)),
     taxonKeys = paste(unique(taxonKey), collapse = "|"),
     scientificNames = paste(unique(scientificName), collapse = "|")
-  )
+  ) %>%
+  ungroup() %>%
 ```
 
 4. Choose a single distribution across checklists.
@@ -127,7 +130,9 @@ distributions_unified <-
   arrange(checklistOrder) %>%
   
   # Group by verificationKey across checklists
-  group_by(verificationKey) %>%
+  group_by(verificationKey,
+           locality,
+           locationId) %>%
   
   # Select year of most trustworthy checklist (first one)
   # and note that checklist and its taxonKey(s) and scientificName(s)
@@ -138,6 +143,7 @@ distributions_unified <-
     taxonKeys = first(taxonKeys),
     scientificNames = first(scientificNames)
   ) %>%
+  ungroup() %>%
 
   # Sort by verificationKey
   arrange(verificationKey)

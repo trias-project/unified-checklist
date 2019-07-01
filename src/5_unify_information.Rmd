@@ -7,9 +7,17 @@ In this chapter we unify related information for each verified taxon.
 ```{r unify_information-1, echo = TRUE}
 checklists <- read_csv(here("data", "raw", "checklists.csv"))
 taxa <- read_csv(here("data", "interim", "taxa_with_verification.csv"))
-distributions <- read_csv(here("data", "raw", "distributions.csv"))
+distributions <- read_csv(here("data", "raw", "distributions.csv"),
+                          col_types = cols(
+                            .default = col_character(),
+                            taxonKey = col_double()))
 speciesprofiles <- read_csv(here("data", "raw", "speciesprofiles.csv"))
-descriptions <- read_csv(here("data", "raw", "descriptions.csv"))
+descriptions <- read_csv(here("data", "raw", "descriptions.csv"),
+                         col_types = cols(
+                           .default = col_character(),
+                           key = col_double(),
+                           taxonKey = col_double()))
+
 # read locality mapping
 locations <- read_tsv(here("references", "locality_mapping.tsv"),
                       na = "")

@@ -210,7 +210,7 @@ distributions_unified <-
   arrange(verificationKey)
 ```
 
-5. Save to [CSV](https://github.com/trias-project/unified-checklist/blob/master/data/interim/distributions_unified.csv).
+6. Save to [CSV](https://github.com/trias-project/unified-checklist/blob/master/data/interim/distributions_unified.csv).
 
 ```{r unify_information-8}
 write_csv(distributions_unified, here("data", "interim", "distributions_unified.csv"), na = "")

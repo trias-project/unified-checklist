@@ -557,7 +557,7 @@ distribution %<>% mutate(dwc_locality = locality)
 #### countryCode
 
 ```{r dwc_mapping-49, echo = TRUE}
-distribution %<>% mutate(dwc_countryCode = "BE") 
+distribution %<>% mutate(dwc_countryCode = "BE")
 ```
 
 #### occurrenceStatus

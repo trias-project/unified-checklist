@@ -545,13 +545,13 @@ distribution %<>% mutate(dwc_taxonID = paste0("https://www.gbif.org/species/", v
 #### locationID
 
 ```{r dwc_mapping-47, echo = TRUE}
-distribution %<>% mutate(dwc_locationID = locationId) 
+distribution %<>% mutate(dwc_locationID = locationId)
 ```
 
 #### locality
 
 ```{r dwc_mapping-48, echo = TRUE}
-distribution %<>% mutate(dwc_locality = locality) 
+distribution %<>% mutate(dwc_locality = locality)
 ```
 
 #### countryCode

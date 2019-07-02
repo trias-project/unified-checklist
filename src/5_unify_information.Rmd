@@ -74,7 +74,22 @@ distributions_unified <-
 
 2. Filter distributions: this was already done in \@ref(filter-on-distribution), where only distributions of interest were kept.
 
-3. Choose a single distribution within a checklist.
+3. Map `locality` and `locationId` to regional or national level.
+
+```{r unify_information-5, echo = TRUE}
+distributions_unified <-
+  distributions_unified %>%
+  
+  # Map localities and locationId
+  left_join(locations, by = c("locationId", "locality")) %>%
+  select(-c(locality, locationId)) %>%
+  rename(locationId = locationId_assigned, 
+         locality = locality_assigned) %>%
+  
+  # Order columns
+  select(names(distributions_unified))
+```
+
 
 **Note**: In contrast to the other extensions, the distribution information can come from multiple taxa within the same checklist. For example:
 

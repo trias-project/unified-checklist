@@ -533,7 +533,8 @@ distribution <- input_distributions
 
 ### Term mapping
 
-Map the data to [Species Distribution](http://rs.gbif.org/extension/gbif/1.0/distribution.xml). Because of the scope (see \@ref(filter-on-distribution)) of the dataset, we can set all distributions to `occurrenceStatus:present` and `establishmentMeans:introduced` in `Belgium`.
+Map the data to [Species Distribution](http://rs.gbif.org/extension/gbif/1.0/distribution.xml). Because of the scope (see \@ref(filter-on-distribution)) of the dataset, we can set all distributions to `occurrenceStatus:present` and `establishmentMeans:introduced` in `Belgium`, and, if present, one or more of its regions: `Flemish Region`, `Walloon Region` and 
+`Brussels-Capital Region`.
 
 #### taxonID
 
@@ -543,14 +544,14 @@ distribution %<>% mutate(dwc_taxonID = paste0("https://www.gbif.org/species/", v
 
 #### locationID
 
-```{r echo = TRUE}
-distribution %<>% mutate(dwc_locationID = "ISO_3166-2:BE") 
+```{r dwc_mapping-47, echo = TRUE}
+distribution %<>% mutate(dwc_locationID = locationId) 
 ```
 
 #### locality
 
-```{r echo = TRUE}
-distribution %<>% mutate(dwc_locality = "Belgium") 
+```{r dwc_mapping-48, echo = TRUE}
+distribution %<>% mutate(dwc_locality = locality) 
 ```
 
 #### countryCode

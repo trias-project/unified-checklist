@@ -17,7 +17,9 @@ input_distributions <- read_csv(
     endYear = col_double()
   )
 )
-input_speciesprofiles <- read_csv(here("data", "interim", "speciesprofiles_unified.csv"))
+input_speciesprofiles <- read_csv(
+  here("data", "interim", "speciesprofiles_unified.csv")
+)
 input_descriptions <- read_csv(here("data", "interim", "descriptions_unified.csv"))
 ```
 

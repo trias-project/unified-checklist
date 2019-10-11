@@ -10,6 +10,12 @@ dwc_distribution <- read_csv(here("data", "processed", "distribution.csv"))
 dwc_speciesprofile <- read_csv(here("data", "processed", "speciesprofile.csv"))
 ```
 
+Select only national distributions
+
+```{r}
+dwc_distribution <- dwc_distribution %>% filter(locality == "Belgium")
+```
+
 ## GRIIS format
 
 ### Pre-processing

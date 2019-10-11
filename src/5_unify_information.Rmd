@@ -26,9 +26,6 @@ descriptions <- read_csv(
     taxonKey = col_double()
   )
 )
-
-# Read location codes
-locations <- read_tsv(here("references", "locality_mapping.tsv"), na = "")
 ```
 
 ## Assign checklist order

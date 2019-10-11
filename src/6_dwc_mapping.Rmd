@@ -4,7 +4,7 @@ In this chapter we standardize the unified information to a Darwin Core checklis
 
 ## Read unified data
 
-```{r dwc_mapping-1 echo = TRUE}
+```{r dwc_mapping-1, echo = TRUE}
 checklists <- read_csv(here("data", "raw", "checklists.csv"))
 input_taxa <- read_csv(here("data", "interim", "taxa_unified.csv"))
 input_distributions <- read_csv(

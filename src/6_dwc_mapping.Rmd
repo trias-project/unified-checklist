@@ -533,8 +533,7 @@ distribution <- input_distributions
 
 ### Term mapping
 
-Map the data to [Species Distribution](http://rs.gbif.org/extension/gbif/1.0/distribution.xml). Because of the scope (see \@ref(filter-on-distribution)) of the dataset, we can set all distributions to `occurrenceStatus:present` and `establishmentMeans:introduced` in `Belgium`, and, if present, one or more of its regions: `Flemish Region`, `Walloon Region` and 
-`Brussels-Capital Region`.
+Map the data to [Species Distribution](http://rs.gbif.org/extension/gbif/1.0/distribution.xml). Because of the scope (see \@ref(filter-on-distribution)) of the dataset, we can set all distributions to `occurrenceStatus:present` and `establishmentMeans:introduced`.
 
 #### taxonID
 
@@ -638,9 +637,7 @@ Combine three source columns and remove `NA`:
 
 ```{r dwc_mapping-54, echo = TRUE}
 distribution %<>% mutate(
-  dwc_source =
-    paste(source_1, source_2, source_3, sep = " | ") %>%
-      str_remove_all(" \\| NA")
+  dwc_source = paste(source_1, source_2, source_3, sep = " | ") %>% str_remove_all(" \\| NA")
 )
 ```
 

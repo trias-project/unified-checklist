@@ -119,18 +119,17 @@ distributions_unified <-
 4. Add a Belgian distribution from regional distributions within a checklist if not present.
 
 ```{r unify_information-6, echo = TRUE}
-## Create Belgian distributions where missing
-distributions_unified_belgium_from_regions <-
+distributions_belgium_from_regions <-
   distributions_unified %>%
 
   # Group by taxonKey within a checklist
   group_by(taxonKey) %>%
 
-  # Filter taxonKey without national distribution
+  # Filter on those groups without a national distribution
   filter(!"Belgium" %in% locality) %>%
 
-  # Take earliest year, latest year from regional distributions
-  # and not source and remarks
+  # Take earliest and latest year from regional distributions
+  # Don't copy source and remarks
   summarize(
     startYear = min(startYear, na.rm = TRUE),
     endYear = max(endYear, na.rm = TRUE)
@@ -139,17 +138,11 @@ distributions_unified_belgium_from_regions <-
 
   # Convert dates to integers and set Inf to NA
   mutate(
-    startYear = ifelse(!is.infinite(startYear),
-      as.integer(startYear),
-      NA_integer_
-    ),
-    endYear = ifelse(!is.infinite(endYear),
-      as.integer(endYear),
-      NA_integer_
-    )
+    startYear = ifelse(!is.infinite(startYear), as.integer(startYear), NA_integer_),
+    endYear = ifelse(!is.infinite(endYear), as.integer(endYear), NA_integer_)
   ) %>%
 
-  # Add locality, locationId
+  # Add locality and locationId
   mutate(
     locality = "Belgium",
     locationId = "ISO_3166-2:BE"
@@ -158,16 +151,16 @@ distributions_unified_belgium_from_regions <-
   # Order columns
   select(one_of(names(distributions_unified)))
 
-## Add the just created Belgian distributions
+# Add newly created Belgian distributions to distributions
 distributions_unified <-
   distributions_unified %>%
-  bind_rows(distributions_unified_belgium_from_regions) %>%
+  bind_rows(distributions_belgium_from_regions) %>%
 
   # Sort by taxonKey
   arrange(taxonKey)
 ```
 
-5. Choose a single distribution within a checklist for each location.
+5. Choose a single distribution per locality within a checklist.
 
 **Note**: In contrast to the other extensions, the distribution information can come from multiple taxa within the same checklist. For example:
 
@@ -188,7 +181,7 @@ distributions_unified <-
   # Remove records that have no verificationKey (e.g. one wasn't assigned yet)
   filter(!is.na(verificationKey)) %>%
 
-  # Group by verificationKey within checklist
+  # Group by verificationKey and locality within a checklist
   group_by(
     datasetKey,
     checklistOrder,
@@ -208,18 +201,12 @@ distributions_unified <-
 
   # Convert dates to integers and set Inf to NA
   mutate(
-    startYear = ifelse(!is.infinite(startYear),
-      as.integer(startYear),
-      NA_integer_
-    ),
-    endYear = ifelse(!is.infinite(endYear),
-      as.integer(endYear),
-      NA_integer_
-    )
+    startYear = ifelse(!is.infinite(startYear), as.integer(startYear), NA_integer_),
+    endYear = ifelse(!is.infinite(endYear), as.integer(endYear), NA_integer_)
   )
 ```
 
-6. Choose a single distribution across checklists.
+6. Choose a single distribution per locality across checklists.
 
 ```{r unify_information-8, echo = TRUE}
 distributions_unified <-
@@ -228,7 +215,7 @@ distributions_unified <-
   # Sort by checklist order (trustworthiness)
   arrange(checklistOrder) %>%
 
-  # Group by verificationKey across checklists
+  # Group by verificationKey and locality across checklists
   group_by(
     verificationKey,
     locality,
@@ -253,10 +240,7 @@ distributions_unified <-
 7. Save to [CSV](https://github.com/trias-project/unified-checklist/blob/master/data/interim/distributions_unified.csv).
 
 ```{r unify_information-9}
-write_csv(distributions_unified,
-  here("data", "interim", "distributions_unified.csv"),
-  na = ""
-)
+write_csv(distributions_unified, here("data", "interim", "distributions_unified.csv"), na = "")
 ```
 
 ## Unify species profiles
@@ -272,8 +256,8 @@ speciesprofiles_unified <-
   # species profile for that species
   filter(
     !is.na(marine) &
-      !is.na(freshwater) &
-      !is.na(terrestrial)
+    !is.na(freshwater) &
+    !is.na(terrestrial)
   )
 ```
 

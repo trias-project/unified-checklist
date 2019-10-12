@@ -85,31 +85,31 @@ distributions_unified <-
 distributions_unified <-
   distributions_unified %>%
   mutate(locality = recode(locality,
-    "Belgian part of the North Sea"   = "Belgium",
+    "Belgian part of the North Sea" = "Belgium",
     "Belgian Exclusive Economic Zone" = "Belgium",
-    "Baai van Heist"                  = "Flemish Region",
-    "Belgian Coast"                   = "Flemish Region",
-    "Blankenberge Harbour"            = "Flemish Region",
-    "Bredene"                         = "Flemish Region",
-    "Coastal Polders"                 = "Flemish Region",
-    "De Panne"                        = "Flemish Region",
-    "Haven van Antwerpen"             = "Flemish Region",
-    "Kanaal Gent - Terneuzen"         = "Flemish Region",
-    "Knokke-Heist"                    = "Flemish Region",
-    "Koksijde"                        = "Flemish Region",
-    "Nieuwpoort Harbour"              = "Flemish Region",
-    "Oostende"                        = "Flemish Region",
-    "Oostende"                        = "Flemish Region",
-    "Oostende Harbour"                = "Flemish Region",
-    "port of Bruges-Zeebrugge"        = "Flemish Region",
-    "Port of Ghent"                   = "Flemish Region",
-    "Spuikom"                         = "Flemish Region",
-    "Zeebrugge"                       = "Flemish Region"
+    "Baai van Heist" = "Flemish Region",
+    "Belgian Coast" = "Flemish Region",
+    "Blankenberge Harbour" = "Flemish Region",
+    "Bredene" = "Flemish Region",
+    "Coastal Polders" = "Flemish Region",
+    "De Panne" = "Flemish Region",
+    "Haven van Antwerpen" = "Flemish Region",
+    "Kanaal Gent - Terneuzen" = "Flemish Region",
+    "Knokke-Heist" = "Flemish Region",
+    "Koksijde" = "Flemish Region",
+    "Nieuwpoort Harbour" = "Flemish Region",
+    "Oostende" = "Flemish Region",
+    "Oostende" = "Flemish Region",
+    "Oostende Harbour" = "Flemish Region",
+    "port of Bruges-Zeebrugge" = "Flemish Region",
+    "Port of Ghent" = "Flemish Region",
+    "Spuikom" = "Flemish Region",
+    "Zeebrugge" = "Flemish Region"
   )) %>%
   mutate(locationId = case_when(
-   locality == "Belgium" ~ "ISO_3166-2:BE",
-   locality == "Flemish Region" ~ "ISO_3166-2:BE-VLG",
-   TRUE ~ locationId
+    locality == "Belgium" ~ "ISO_3166-2:BE",
+    locality == "Flemish Region" ~ "ISO_3166-2:BE-VLG",
+    TRUE ~ locationId
   ))
 ```
 
@@ -253,8 +253,8 @@ speciesprofiles_unified <-
   # species profile for that species
   filter(
     !is.na(marine) &
-    !is.na(freshwater) &
-    !is.na(terrestrial)
+      !is.na(freshwater) &
+      !is.na(terrestrial)
   )
 ```
 

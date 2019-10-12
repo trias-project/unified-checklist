@@ -23,9 +23,15 @@ dwc_distribution <- dwc_distribution %>% filter(locality == "Belgium")
 1. Check if the taxon core, distribution extension and species profile extension contain only one row per `taxonID`.
 
 ```{r}
-nrow(dwc_taxon) == dwc_taxon %>% distinct(taxonID) %>% nrow()
-nrow(dwc_distribution) == dwc_distribution %>% distinct(taxonID) %>% nrow()
-nrow(dwc_speciesprofile) == dwc_speciesprofile %>% distinct(taxonID) %>% nrow()
+nrow(dwc_taxon) == dwc_taxon %>%
+  distinct(taxonID) %>%
+  nrow()
+nrow(dwc_distribution) == dwc_distribution %>%
+  distinct(taxonID) %>%
+  nrow()
+nrow(dwc_speciesprofile) == dwc_speciesprofile %>%
+  distinct(taxonID) %>%
+  nrow()
 ```
 
 2. Join the 3 files into one dataframe `griis`.
@@ -34,13 +40,13 @@ nrow(dwc_speciesprofile) == dwc_speciesprofile %>% distinct(taxonID) %>% nrow()
 griis <-
   # taxa
   dwc_taxon %>%
-  
+
   # join with distributions
   left_join(
     dwc_distribution,
     on = "taxonID"
   ) %>%
-  
+
   # join species profiles
   left_join(
     dwc_speciesprofile,

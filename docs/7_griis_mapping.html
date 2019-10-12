@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html >
-
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 <head>
 
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>7 GRIIS mapping | Global Register of Introduced and Invasive Species - Belgium</title>
-  <meta name="description" content="7 GRIIS mapping | Global Register of Introduced and Invasive Species - Belgium">
-  <meta name="generator" content="bookdown  and GitBook 2.6.7">
+  <meta name="description" content="7 GRIIS mapping | Global Register of Introduced and Invasive Species - Belgium" />
+  <meta name="generator" content="bookdown 0.12 and GitBook 2.6.7" />
 
   <meta property="og:title" content="7 GRIIS mapping | Global Register of Introduced and Invasive Species - Belgium" />
   <meta property="og:type" content="book" />
@@ -22,14 +21,14 @@
   
   
 
-<meta name="author" content="Peter Desmet, Lien Reyserhove, Damiano Oldoni">
+<meta name="author" content="Peter Desmet, Lien Reyserhove, Damiano Oldoni" />
 
 
-<meta name="date" content="2019-05-31">
+<meta name="date" content="2019-10-12" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
 <link rel="prev" href="6_dwc_mapping.html">
@@ -58,7 +57,6 @@ a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
 a.sourceLine:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode { white-space: pre; position: relative; }
-div.sourceCode { margin: 1em 0; }
 pre.sourceCode { margin: 0; }
 @media screen {
 div.sourceCode { overflow: auto; }
@@ -224,9 +222,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>In this chapter we export the unified information to an Excel template that can be used by the Global Register of Introduced and Invasive Species (GRIIS).</p>
 <div id="read-darwin-core-data" class="section level2">
 <h2><span class="header-section-number">7.1</span> Read Darwin Core data</h2>
-<pre class="sourceCode r"><code class="sourceCode r">dwc_taxon &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="kw">here</span>(<span class="st">&quot;data&quot;</span>, <span class="st">&quot;processed&quot;</span>, <span class="st">&quot;taxon.csv&quot;</span>))
-dwc_distribution &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="kw">here</span>(<span class="st">&quot;data&quot;</span>, <span class="st">&quot;processed&quot;</span>, <span class="st">&quot;distribution.csv&quot;</span>))
-dwc_speciesprofile &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="kw">here</span>(<span class="st">&quot;data&quot;</span>, <span class="st">&quot;processed&quot;</span>, <span class="st">&quot;speciesprofile.csv&quot;</span>))</code></pre>
+<div class="sourceCode" id="cb63"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb63-1" title="1">dwc_taxon &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="kw">here</span>(<span class="st">&quot;data&quot;</span>, <span class="st">&quot;processed&quot;</span>, <span class="st">&quot;taxon.csv&quot;</span>))</a>
+<a class="sourceLine" id="cb63-2" title="2">dwc_distribution &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="kw">here</span>(<span class="st">&quot;data&quot;</span>, <span class="st">&quot;processed&quot;</span>, <span class="st">&quot;distribution.csv&quot;</span>))</a>
+<a class="sourceLine" id="cb63-3" title="3">dwc_speciesprofile &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="kw">here</span>(<span class="st">&quot;data&quot;</span>, <span class="st">&quot;processed&quot;</span>, <span class="st">&quot;speciesprofile.csv&quot;</span>))</a></code></pre></div>
+<p>Select only national distributions</p>
 </div>
 <div id="griis-format" class="section level2">
 <h2><span class="header-section-number">7.2</span> GRIIS format</h2>
@@ -246,81 +245,81 @@ dwc_speciesprofile &lt;-<span class="st"> </span><span class="kw">read_csv</span
 <h3><span class="header-section-number">7.2.2</span> Term mapping</h3>
 <div id="taxonid-4" class="section level4">
 <h4><span class="header-section-number">7.2.2.1</span> taxonID</h4>
-<pre class="sourceCode r"><code class="sourceCode r">griis <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">griis_taxonID =</span> taxonID)</code></pre>
+<div class="sourceCode" id="cb67"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb67-1" title="1">griis <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">griis_taxonID =</span> taxonID)</a></code></pre></div>
 </div>
 <div id="countrycode-1" class="section level4">
 <h4><span class="header-section-number">7.2.2.2</span> countryCode</h4>
-<pre class="sourceCode r"><code class="sourceCode r">griis <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">griis_countryCode =</span> countryCode)</code></pre>
+<div class="sourceCode" id="cb68"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb68-1" title="1">griis <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">griis_countryCode =</span> countryCode)</a></code></pre></div>
 </div>
 <div id="island" class="section level4">
 <h4><span class="header-section-number">7.2.2.3</span> island</h4>
-<pre class="sourceCode r"><code class="sourceCode r">griis <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">griis_island =</span> <span class="st">&quot;&quot;</span>)</code></pre>
+<div class="sourceCode" id="cb69"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb69-1" title="1">griis <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">griis_island =</span> <span class="st">&quot;&quot;</span>)</a></code></pre></div>
 </div>
 <div id="scientificname-1" class="section level4">
 <h4><span class="header-section-number">7.2.2.4</span> scientificName</h4>
-<pre class="sourceCode r"><code class="sourceCode r">griis <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">griis_scientificName =</span> scientificName)</code></pre>
+<div class="sourceCode" id="cb70"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb70-1" title="1">griis <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">griis_scientificName =</span> scientificName)</a></code></pre></div>
 </div>
 <div id="acceptednameusage-1" class="section level4">
 <h4><span class="header-section-number">7.2.2.5</span> acceptedNameUsage</h4>
-<pre class="sourceCode r"><code class="sourceCode r">griis <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">griis_acceptedNameUsage =</span> <span class="kw">case_when</span>(
-  acceptedNameUsage <span class="op">!=</span><span class="st"> </span>scientificName <span class="op">~</span><span class="st"> </span>acceptedNameUsage,
-  <span class="ot">TRUE</span> <span class="op">~</span><span class="st"> &quot;&quot;</span>
-))</code></pre>
+<div class="sourceCode" id="cb71"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb71-1" title="1">griis <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">griis_acceptedNameUsage =</span> <span class="kw">case_when</span>(</a>
+<a class="sourceLine" id="cb71-2" title="2">  acceptedNameUsage <span class="op">!=</span><span class="st"> </span>scientificName <span class="op">~</span><span class="st"> </span>acceptedNameUsage,</a>
+<a class="sourceLine" id="cb71-3" title="3">  <span class="ot">TRUE</span> <span class="op">~</span><span class="st"> &quot;&quot;</span></a>
+<a class="sourceLine" id="cb71-4" title="4">))</a></code></pre></div>
 </div>
 <div id="taxonrank-1" class="section level4">
 <h4><span class="header-section-number">7.2.2.6</span> taxonRank</h4>
-<pre class="sourceCode r"><code class="sourceCode r">griis <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">griis_taxonRank =</span> taxonRank)</code></pre>
+<div class="sourceCode" id="cb72"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb72-1" title="1">griis <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">griis_taxonRank =</span> taxonRank)</a></code></pre></div>
 </div>
 <div id="taxonomicstatus-1" class="section level4">
 <h4><span class="header-section-number">7.2.2.7</span> taxonomicStatus</h4>
-<pre class="sourceCode r"><code class="sourceCode r">griis <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">griis_taxonomicStatus =</span> taxonomicStatus)</code></pre>
+<div class="sourceCode" id="cb73"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb73-1" title="1">griis <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">griis_taxonomicStatus =</span> taxonomicStatus)</a></code></pre></div>
 </div>
 <div id="kingdom-1" class="section level4">
 <h4><span class="header-section-number">7.2.2.8</span> kingdom</h4>
-<pre class="sourceCode r"><code class="sourceCode r">griis <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">griis_kingdom =</span> kingdom)</code></pre>
+<div class="sourceCode" id="cb74"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb74-1" title="1">griis <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">griis_kingdom =</span> kingdom)</a></code></pre></div>
 </div>
 <div id="phylum-1" class="section level4">
 <h4><span class="header-section-number">7.2.2.9</span> phylum</h4>
-<pre class="sourceCode r"><code class="sourceCode r">griis <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">griis_phylum =</span> phylum)</code></pre>
+<div class="sourceCode" id="cb75"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb75-1" title="1">griis <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">griis_phylum =</span> phylum)</a></code></pre></div>
 </div>
 <div id="class-1" class="section level4">
 <h4><span class="header-section-number">7.2.2.10</span> class</h4>
-<pre class="sourceCode r"><code class="sourceCode r">griis <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">griis_class =</span> class)</code></pre>
+<div class="sourceCode" id="cb76"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb76-1" title="1">griis <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">griis_class =</span> class)</a></code></pre></div>
 </div>
 <div id="order-1" class="section level4">
 <h4><span class="header-section-number">7.2.2.11</span> order</h4>
-<pre class="sourceCode r"><code class="sourceCode r">griis <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">griis_order =</span> order)</code></pre>
+<div class="sourceCode" id="cb77"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb77-1" title="1">griis <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">griis_order =</span> order)</a></code></pre></div>
 </div>
 <div id="family-1" class="section level4">
 <h4><span class="header-section-number">7.2.2.12</span> family</h4>
-<pre class="sourceCode r"><code class="sourceCode r">griis <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">griis_family =</span> family)</code></pre>
+<div class="sourceCode" id="cb78"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb78-1" title="1">griis <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">griis_family =</span> family)</a></code></pre></div>
 </div>
 <div id="habitat-1" class="section level4">
 <h4><span class="header-section-number">7.2.2.13</span> habitat</h4>
-<pre class="sourceCode r"><code class="sourceCode r">griis <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">griis_habitat =</span> habitat)</code></pre>
+<div class="sourceCode" id="cb79"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb79-1" title="1">griis <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">griis_habitat =</span> habitat)</a></code></pre></div>
 </div>
 <div id="occurrencestatus-1" class="section level4">
 <h4><span class="header-section-number">7.2.2.14</span> occurrenceStatus</h4>
-<pre class="sourceCode r"><code class="sourceCode r">griis <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">griis_occurrenceStatus =</span> occurrenceStatus)</code></pre>
+<div class="sourceCode" id="cb80"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb80-1" title="1">griis <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">griis_occurrenceStatus =</span> occurrenceStatus)</a></code></pre></div>
 </div>
 <div id="establishmentmeans-1" class="section level4">
 <h4><span class="header-section-number">7.2.2.15</span> establishmentMeans</h4>
-<pre class="sourceCode r"><code class="sourceCode r">griis <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">griis_establishmentMeans =</span> <span class="kw">recode</span>(establishmentMeans,
-  <span class="st">&quot;introduced&quot;</span> =<span class="st"> &quot;alien&quot;</span>,
-  <span class="dt">.default =</span> <span class="st">&quot;&quot;</span>,
-  <span class="dt">.missing =</span> <span class="st">&quot;&quot;</span>
-))</code></pre>
+<div class="sourceCode" id="cb81"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb81-1" title="1">griis <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">griis_establishmentMeans =</span> <span class="kw">recode</span>(establishmentMeans,</a>
+<a class="sourceLine" id="cb81-2" title="2">  <span class="st">&quot;introduced&quot;</span> =<span class="st"> &quot;alien&quot;</span>,</a>
+<a class="sourceLine" id="cb81-3" title="3">  <span class="dt">.default =</span> <span class="st">&quot;&quot;</span>,</a>
+<a class="sourceLine" id="cb81-4" title="4">  <span class="dt">.missing =</span> <span class="st">&quot;&quot;</span></a>
+<a class="sourceLine" id="cb81-5" title="5">))</a></code></pre></div>
 </div>
 <div id="isinvasive-1" class="section level4">
 <h4><span class="header-section-number">7.2.2.16</span> isInvasive</h4>
-<pre class="sourceCode r"><code class="sourceCode r">griis <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">griis_isInvasive =</span> <span class="kw">case_when</span>(
-  <span class="kw">is.na</span>(isInvasive) <span class="op">~</span><span class="st"> &quot;Null&quot;</span>
-))</code></pre>
+<div class="sourceCode" id="cb82"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb82-1" title="1">griis <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">griis_isInvasive =</span> <span class="kw">case_when</span>(</a>
+<a class="sourceLine" id="cb82-2" title="2">  <span class="kw">is.na</span>(isInvasive) <span class="op">~</span><span class="st"> &quot;Null&quot;</span></a>
+<a class="sourceLine" id="cb82-3" title="3">))</a></code></pre></div>
 </div>
 </div>
 <div id="eventdate-1" class="section level3">
 <h3><span class="header-section-number">7.2.3</span> eventDate</h3>
-<pre class="sourceCode r"><code class="sourceCode r">griis <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">griis_eventDate =</span> eventDate)</code></pre>
+<div class="sourceCode" id="cb83"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb83-1" title="1">griis <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">griis_eventDate =</span> eventDate)</a></code></pre></div>
 </div>
 </div>
 <div id="post-processing-4" class="section level2">
@@ -333,7 +332,7 @@ dwc_speciesprofile &lt;-<span class="st"> </span><span class="kw">read_csv</span
 </ol>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
-{"columns":[{"label":["taxonID"],"name":[1],"type":["chr"],"align":["left"]},{"label":["countryCode"],"name":[2],"type":["chr"],"align":["left"]},{"label":["island"],"name":[3],"type":["chr"],"align":["left"]},{"label":["scientificName"],"name":[4],"type":["chr"],"align":["left"]},{"label":["acceptedNameUsage"],"name":[5],"type":["chr"],"align":["left"]},{"label":["taxonRank"],"name":[6],"type":["chr"],"align":["left"]},{"label":["taxonomicStatus"],"name":[7],"type":["chr"],"align":["left"]},{"label":["kingdom"],"name":[8],"type":["chr"],"align":["left"]},{"label":["phylum"],"name":[9],"type":["chr"],"align":["left"]},{"label":["class"],"name":[10],"type":["chr"],"align":["left"]},{"label":["order"],"name":[11],"type":["chr"],"align":["left"]},{"label":["family"],"name":[12],"type":["chr"],"align":["left"]},{"label":["habitat"],"name":[13],"type":["chr"],"align":["left"]},{"label":["occurrenceStatus"],"name":[14],"type":["chr"],"align":["left"]},{"label":["establishmentMeans"],"name":[15],"type":["chr"],"align":["left"]},{"label":["isInvasive"],"name":[16],"type":["chr"],"align":["left"]},{"label":["eventDate"],"name":[17],"type":["chr"],"align":["left"]}],"data":[{"1":"https://www.gbif.org/species/3095938","2":"BE","3":"","4":"×Conyzigeron huelsenii (Vatke) Rauschert","5":"","6":"SPECIES","7":"ACCEPTED","8":"Plantae","9":"Tracheophyta","10":"Magnoliopsida","11":"Asterales","12":"Asteraceae","13":"terrestrial","14":"present","15":"alien","16":"Null","17":"2008/2008"},{"1":"https://www.gbif.org/species/2685484","2":"BE","3":"","4":"Abies alba Mill.","5":"","6":"SPECIES","7":"ACCEPTED","8":"Plantae","9":"Tracheophyta","10":"Pinopsida","11":"Pinales","12":"Pinaceae","13":"terrestrial","14":"present","15":"alien","16":"Null","17":"2008/2017"},{"1":"https://www.gbif.org/species/2685361","2":"BE","3":"","4":"Abies grandis Lindl.","5":"","6":"SPECIES","7":"ACCEPTED","8":"Plantae","9":"Tracheophyta","10":"Pinopsida","11":"Pinales","12":"Pinaceae","13":"terrestrial","14":"present","15":"alien","16":"Null","17":"2009/2018"},{"1":"https://www.gbif.org/species/2685552","2":"BE","3":"","4":"Abies nordmanniana Spach","5":"","6":"SPECIES","7":"ACCEPTED","8":"Plantae","9":"Tracheophyta","10":"Pinopsida","11":"Pinales","12":"Pinaceae","13":"terrestrial","14":"present","15":"alien","16":"Null","17":"2016/2016"},{"1":"https://www.gbif.org/species/8690876","2":"BE","3":"","4":"Abronia fragrans Nutt.","5":"","6":"SPECIES","7":"DOUBTFUL","8":"Plantae","9":"Tracheophyta","10":"Magnoliopsida","11":"Caryophyllales","12":"Nyctaginaceae","13":"terrestrial","14":"present","15":"alien","16":"Null","17":"1951/1951"},{"1":"https://www.gbif.org/species/3152614","2":"BE","3":"","4":"Abutilon theophrasti Medik.","5":"","6":"SPECIES","7":"ACCEPTED","8":"Plantae","9":"Tracheophyta","10":"Magnoliopsida","11":"Malvales","12":"Malvaceae","13":"terrestrial","14":"present","15":"alien","16":"Null","17":"1929/2018"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+{"columns":[{"label":["taxonID"],"name":[1],"type":["chr"],"align":["left"]},{"label":["countryCode"],"name":[2],"type":["chr"],"align":["left"]},{"label":["island"],"name":[3],"type":["chr"],"align":["left"]},{"label":["scientificName"],"name":[4],"type":["chr"],"align":["left"]},{"label":["acceptedNameUsage"],"name":[5],"type":["chr"],"align":["left"]},{"label":["taxonRank"],"name":[6],"type":["chr"],"align":["left"]},{"label":["taxonomicStatus"],"name":[7],"type":["chr"],"align":["left"]},{"label":["kingdom"],"name":[8],"type":["chr"],"align":["left"]},{"label":["phylum"],"name":[9],"type":["chr"],"align":["left"]},{"label":["class"],"name":[10],"type":["chr"],"align":["left"]},{"label":["order"],"name":[11],"type":["chr"],"align":["left"]},{"label":["family"],"name":[12],"type":["chr"],"align":["left"]},{"label":["habitat"],"name":[13],"type":["chr"],"align":["left"]},{"label":["occurrenceStatus"],"name":[14],"type":["chr"],"align":["left"]},{"label":["establishmentMeans"],"name":[15],"type":["chr"],"align":["left"]},{"label":["isInvasive"],"name":[16],"type":["chr"],"align":["left"]},{"label":["eventDate"],"name":[17],"type":["chr"],"align":["left"]}],"data":[{"1":"https://www.gbif.org/species/3095938","2":"BE","3":"","4":"×Conyzigeron huelsenii (Vatke) Rauschert","5":"","6":"SPECIES","7":"ACCEPTED","8":"Plantae","9":"Tracheophyta","10":"Magnoliopsida","11":"Asterales","12":"Asteraceae","13":"terrestrial","14":"present","15":"alien","16":"Null","17":"2008/2008"},{"1":"https://www.gbif.org/species/2685484","2":"BE","3":"","4":"Abies alba Mill.","5":"","6":"SPECIES","7":"ACCEPTED","8":"Plantae","9":"Tracheophyta","10":"Pinopsida","11":"Pinales","12":"Pinaceae","13":"terrestrial","14":"present","15":"alien","16":"Null","17":"2008/2017"},{"1":"https://www.gbif.org/species/2685361","2":"BE","3":"","4":"Abies grandis (Douglas ex D.Don) Lindl.","5":"","6":"SPECIES","7":"ACCEPTED","8":"Plantae","9":"Tracheophyta","10":"Pinopsida","11":"Pinales","12":"Pinaceae","13":"terrestrial","14":"present","15":"alien","16":"Null","17":"2009/2018"},{"1":"https://www.gbif.org/species/2685552","2":"BE","3":"","4":"Abies nordmanniana Spach","5":"","6":"SPECIES","7":"ACCEPTED","8":"Plantae","9":"Tracheophyta","10":"Pinopsida","11":"Pinales","12":"Pinaceae","13":"terrestrial","14":"present","15":"alien","16":"Null","17":"2016/2016"},{"1":"https://www.gbif.org/species/8690876","2":"BE","3":"","4":"Abronia fragrans Nutt.","5":"","6":"SPECIES","7":"DOUBTFUL","8":"Plantae","9":"Tracheophyta","10":"Magnoliopsida","11":"Caryophyllales","12":"Nyctaginaceae","13":"terrestrial","14":"present","15":"alien","16":"Null","17":"1951/1951"},{"1":"https://www.gbif.org/species/3152614","2":"BE","3":"","4":"Abutilon theophrasti Medik.","5":"","6":"SPECIES","7":"ACCEPTED","8":"Plantae","9":"Tracheophyta","10":"Magnoliopsida","11":"Malvales","12":"Malvaceae","13":"terrestrial","14":"present","15":"alien","16":"Null","17":"1929/2018"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
   </script>
 </div>
 <ol start="5" style="list-style-type: decimal">

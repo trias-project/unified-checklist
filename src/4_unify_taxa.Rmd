@@ -25,7 +25,7 @@ taxa_unified <-
 ```{r unify_taxa-3}
 taxa_unified <-
   taxa_unified %>%
-  
+
   # Separate multiple verification keys on | character in max 5 columns
   separate(
     verificationKey,
@@ -35,7 +35,7 @@ taxa_unified <-
     extra = "drop",
     fill = "right"
   ) %>%
-  
+
   # Gather those 5 columns back to one (removing NA)
   gather(
     field,
@@ -44,7 +44,7 @@ taxa_unified <-
     na.rm = TRUE,
     convert = TRUE
   ) %>%
-  
+
   # Drop field column
   select(-field)
 ```
@@ -56,7 +56,7 @@ taxa_unified <-
   taxa_unified %>%
   # Group by verificationKey across and within checklists
   group_by(verificationKey) %>%
-  
+
   # Note contained checklists and taxa
   summarize(
     datasetKeys = paste(unique(datasetKey), collapse = "|"),
@@ -137,7 +137,7 @@ backbone_info <-
 taxa_unified <-
   taxa_unified %>%
   left_join(
-    backbone_info, 
+    backbone_info,
     by = c("verificationKey" = "key")
   )
 ```
@@ -147,8 +147,8 @@ taxa_unified <-
 ```{r unify_taxa-9}
 taxa_unified <-
   taxa_unified %>%
-  select(-datasetKeys,everything()) %>%
-  select(-taxonKeys,everything())
+  select(-datasetKeys, everything()) %>%
+  select(-taxonKeys, everything())
 ```
 
 6. Preview merged information:

@@ -33,14 +33,14 @@ checklist_keys <- append(checklist_keys, "d7dddbf4-2cf0-4f39-9b2a-bb099caae36c")
 checklists <-
   map(checklist_keys, function(x) rgbif::datasets(uuid = x)) %>%
   map_df(function(x) list(
-    datasetKey = x$data$key,
-    title = x$data$title,
-    modified = x$data$modified,
-    publisher = x$data$publishingOrganizationKey,
-    doi = paste0("https://doi.org/", x$data$doi),
-    citation = x$data$citation$text,
-    license = x$data$license
-  ))
+      datasetKey = x$data$key,
+      title = x$data$title,
+      modified = x$data$modified,
+      publisher = x$data$publishingOrganizationKey,
+      doi = paste0("https://doi.org/", x$data$doi),
+      citation = x$data$citation$text,
+      license = x$data$license
+    ))
 checklists
 ```
 
@@ -70,10 +70,10 @@ checklists <- head(checklists, -1)
 ```{r get_taxa-get_checklist_taxa_from_gbif, cache = TRUE}
 taxa <-
   map_df(checklists$datasetKey, function(x) name_usage(
-    datasetKey = x,
-    limit = 99999, # Should be more than total taxa for all checklists
-    return = "data"
-  ))
+      datasetKey = x,
+      limit = 99999, # Should be more than total taxa for all checklists
+      return = "data"
+    ))
 ```
 
 2. Keep only source taxa, not denormed higher classification taxa (= taxa added by GBIF if `kingdom`, `phylum`, etc. was populated)
@@ -142,13 +142,13 @@ progress_bar <- progress_estimated(length(taxon_keys))
 
 distributions <-
   map_dfr(taxon_keys, function(x) {
-  progress_bar$tick()$print()
-  rgbif::name_usage(
-    key = x,
-    return = "data",
-    data = "distribution"
-  )
-})
+    progress_bar$tick()$print()
+    rgbif::name_usage(
+      key = x,
+      return = "data",
+      data = "distribution"
+    )
+  })
 ```
 
 2. Filter distributions on present, alien species in Belgium:
@@ -175,7 +175,7 @@ write_csv(distributions, here("data", "raw", "distributions.csv"), na = "")
 taxa <-
   taxa %>%
   mutate(validDistribution = if_else(
-    taxonKey %in% unique(distributions$taxonKey) ,
+    taxonKey %in% unique(distributions$taxonKey),
     TRUE,
     FALSE
   ))
@@ -254,7 +254,7 @@ backbone_info <-
     "bb_kingdom",
     "bb_rank",
     "bb_taxonomicStatus",
-    "bb_acceptedKey", 
+    "bb_acceptedKey",
     "bb_acceptedName",
     "bb_speciesKey"
   )
@@ -266,7 +266,7 @@ backbone_info <-
 taxa <-
   taxa %>%
   left_join(
-    backbone_info, 
+    backbone_info,
     by = "bb_key"
   )
 ```

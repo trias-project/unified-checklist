@@ -5,11 +5,27 @@ In this chapter we unify related information for each verified taxon.
 ## Read data
 
 ```{r unify_information-1, echo = TRUE}
+# Read checklists
 checklists <- read_csv(here("data", "raw", "checklists.csv"))
+
+# Read data
 taxa <- read_csv(here("data", "interim", "taxa_with_verification.csv"))
-distributions <- read_csv(here("data", "raw", "distributions.csv"))
+distributions <- read_csv(
+  here("data", "raw", "distributions.csv"),
+  col_types = cols(
+    .default = col_character(),
+    taxonKey = col_double()
+  )
+)
 speciesprofiles <- read_csv(here("data", "raw", "speciesprofiles.csv"))
-descriptions <- read_csv(here("data", "raw", "descriptions.csv"))
+descriptions <- read_csv(
+  here("data", "raw", "descriptions.csv"),
+  col_types = cols(
+    .default = col_character(),
+    key = col_double(),
+    taxonKey = col_double()
+  )
+)
 ```
 
 ## Assign checklist order
@@ -35,10 +51,10 @@ taxa <-
 
 1. Parse `temporal` (eventDate) information.
 
-```{r unify_information-5, echo = TRUE}
+```{r unify_information-4, echo = TRUE}
 distributions_unified <-
   distributions %>%
-  
+
   # Split temporal on "/" into startYear and endYear
   # If temporal only contains a single year, then endYear will be empty
   separate(
@@ -50,20 +66,98 @@ distributions_unified <-
     extra = "drop",
     fill = "right"
   ) %>%
-  
+
   # Only keep the first 4 characters: 1968-11-21 -> 1968
   mutate(
-    startYear = as.integer(str_sub(startYear, 1, 4)), 
+    startYear = as.integer(str_sub(startYear, 1, 4)),
     endYear = as.integer(str_sub(endYear, 1, 4))
   ) %>%
-  
+
   # If endYear is empty (no range), populate it with startYear: 2018 & 2018
   mutate(endYear = if_else(is.na(endYear), startYear, endYear))
 ```
 
 2. Filter distributions: this was already done in \@ref(filter-on-distribution), where only distributions of interest were kept.
 
-3. Choose a single distribution within a checklist.
+3. Convert specific localities (from WRIMS) to regional or national localities.
+
+```{r unify_information-5, echo = TRUE}
+distributions_unified <-
+  distributions_unified %>%
+  mutate(locality = recode(locality,
+    "Belgian part of the North Sea" = "Belgium",
+    "Belgian Exclusive Economic Zone" = "Belgium",
+    "Baai van Heist" = "Flemish Region",
+    "Belgian Coast" = "Flemish Region",
+    "Blankenberge Harbour" = "Flemish Region",
+    "Bredene" = "Flemish Region",
+    "Coastal Polders" = "Flemish Region",
+    "De Panne" = "Flemish Region",
+    "Haven van Antwerpen" = "Flemish Region",
+    "Kanaal Gent - Terneuzen" = "Flemish Region",
+    "Knokke-Heist" = "Flemish Region",
+    "Koksijde" = "Flemish Region",
+    "Nieuwpoort Harbour" = "Flemish Region",
+    "Oostende" = "Flemish Region",
+    "Oostende" = "Flemish Region",
+    "Oostende Harbour" = "Flemish Region",
+    "port of Bruges-Zeebrugge" = "Flemish Region",
+    "Port of Ghent" = "Flemish Region",
+    "Spuikom" = "Flemish Region",
+    "Zeebrugge" = "Flemish Region"
+  )) %>%
+  mutate(locationId = case_when(
+    locality == "Belgium" ~ "ISO_3166-2:BE",
+    locality == "Flemish Region" ~ "ISO_3166-2:BE-VLG",
+    TRUE ~ locationId
+  ))
+```
+
+4. Add a Belgian distribution from regional distributions within a checklist if not present.
+
+```{r unify_information-6, echo = TRUE}
+distributions_belgium_from_regions <-
+  distributions_unified %>%
+
+  # Group by taxonKey within a checklist
+  group_by(taxonKey) %>%
+
+  # Filter on those groups without a national distribution
+  filter(!"Belgium" %in% locality) %>%
+
+  # Take earliest and latest year from regional distributions
+  # Don't copy source and remarks
+  summarize(
+    startYear = min(startYear, na.rm = TRUE),
+    endYear = max(endYear, na.rm = TRUE)
+  ) %>%
+  ungroup() %>%
+
+  # Convert dates to integers and set Inf to NA
+  mutate(
+    startYear = ifelse(!is.infinite(startYear), as.integer(startYear), NA_integer_),
+    endYear = ifelse(!is.infinite(endYear), as.integer(endYear), NA_integer_)
+  ) %>%
+
+  # Add locality and locationId
+  mutate(
+    locality = "Belgium",
+    locationId = "ISO_3166-2:BE"
+  ) %>%
+
+  # Order columns
+  select(one_of(names(distributions_unified)))
+
+# Add newly created Belgian distributions to distributions
+distributions_unified <-
+  distributions_unified %>%
+  bind_rows(distributions_belgium_from_regions) %>%
+
+  # Sort by taxonKey
+  arrange(taxonKey)
+```
+
+5. Choose a single distribution per locality within a checklist.
 
 **Note**: In contrast to the other extensions, the distribution information can come from multiple taxa within the same checklist. For example:
 
@@ -74,44 +168,57 @@ scientific name | eventDate
 
 Both are considered (verified) synonyms of [Medicago monantha Trautv.](https://www.gbif.org/species/2965226), so their distribution information is merged to `1885/1955`. We note both in `taxonKeys` and `scientificNames`.
 
-```{r unify_information-6, echo = TRUE}
+```{r unify_information-7, echo = TRUE}
 distributions_unified <-
   distributions_unified %>%
 
   # Join distribution with taxon to get verificationKey and checklistOrder
   left_join(taxa, by = "taxonKey") %>%
-  
+
   # Remove records that have no verificationKey (e.g. one wasn't assigned yet)
   filter(!is.na(verificationKey)) %>%
-  
-  # Group by verificationKey within checklist
+
+  # Group by verificationKey and locality within a checklist
   group_by(
     datasetKey,
     checklistOrder,
-    verificationKey
+    verificationKey,
+    locality,
+    locationId
   ) %>%
-  
-  # Take earliest year, latest year and note taxonKey(s) and scientificName(s):
+
+  # Take earliest year, latest year and note taxonKey(s) and scientificName(s)
   summarize(
-    startYear = as.integer(min(startYear, na.rm = TRUE)),
-    endYear = as.integer(max(endYear, na.rm = TRUE)),
+    startYear = min(startYear, na.rm = TRUE),
+    endYear = max(endYear, na.rm = TRUE),
     taxonKeys = paste(unique(taxonKey), collapse = "|"),
     scientificNames = paste(unique(scientificName), collapse = "|")
+  ) %>%
+  ungroup() %>%
+
+  # Convert dates to integers and set Inf to NA
+  mutate(
+    startYear = ifelse(!is.infinite(startYear), as.integer(startYear), NA_integer_),
+    endYear = ifelse(!is.infinite(endYear), as.integer(endYear), NA_integer_)
   )
 ```
 
-4. Choose a single distribution across checklists.
+6. Choose a single distribution per locality across checklists.
 
-```{r unify_information-7, echo = TRUE}
+```{r unify_information-8, echo = TRUE}
 distributions_unified <-
   distributions_unified %>%
-  
+
   # Sort by checklist order (trustworthiness)
   arrange(checklistOrder) %>%
-  
-  # Group by verificationKey across checklists
-  group_by(verificationKey) %>%
-  
+
+  # Group by verificationKey and locality across checklists
+  group_by(
+    verificationKey,
+    locality,
+    locationId
+  ) %>%
+
   # Select year of most trustworthy checklist (first one)
   # and note that checklist and its taxonKey(s) and scientificName(s)
   summarize(
@@ -121,14 +228,15 @@ distributions_unified <-
     taxonKeys = first(taxonKeys),
     scientificNames = first(scientificNames)
   ) %>%
+  ungroup() %>%
 
   # Sort by verificationKey
   arrange(verificationKey)
 ```
 
-5. Save to [CSV](https://github.com/trias-project/unified-checklist/blob/master/data/interim/distributions_unified.csv).
+7. Save to [CSV](https://github.com/trias-project/unified-checklist/blob/master/data/interim/distributions_unified.csv).
 
-```{r unify_information-8}
+```{r unify_information-9}
 write_csv(distributions_unified, here("data", "interim", "distributions_unified.csv"), na = "")
 ```
 
@@ -136,39 +244,39 @@ write_csv(distributions_unified, here("data", "interim", "distributions_unified.
 
 1. Filter species profiles.
 
-```{r unify_information-9, echo = TRUE}
+```{r unify_information-10, echo = TRUE}
 speciesprofiles_unified <-
   speciesprofiles %>%
-  
+
   # Remove species profiles that contain NA for any of the attributes
   # This is rare: normally all attributes are populated or there just isn't a
   # species profile for that species
   filter(
     !is.na(marine) &
-    !is.na(freshwater) &
-    !is.na(terrestrial)
+      !is.na(freshwater) &
+      !is.na(terrestrial)
   )
 ```
 
 2. Choose a single species profile within a checklist.
 
-```{r unify_information-10, echo = TRUE}
+```{r unify_information-11, echo = TRUE}
 speciesprofiles_unified <-
   speciesprofiles_unified %>%
 
   # Join species profile with taxon to get verificationKey and checklist order
   left_join(taxa, on = taxonKey) %>%
-  
+
   # Remove records that have no verificationKey (e.g. one wasn't assigned yet)
   filter(!is.na(verificationKey)) %>%
-  
+
   # Group by verificationKey within checklist
   group_by(
     datasetKey,
     checklistOrder,
     verificationKey
   ) %>%
-  
+
   # Take first species profile and note taxonKey
   summarize(
     marine = first(marine),
@@ -181,16 +289,16 @@ speciesprofiles_unified <-
 
 3. Choose a single species profile across checklists.
 
-```{r unify_information-11, echo = TRUE}
+```{r unify_information-12, echo = TRUE}
 speciesprofiles_unified <-
   speciesprofiles_unified %>%
-  
+
   # Sort by checklist order (trustworthiness)
   arrange(checklistOrder) %>%
-  
+
   # Group by verificationKey across checklists
   group_by(verificationKey) %>%
-  
+
   # Select species profile of most trustworthy checklist (first one)
   # and note that checklist and its taxonKey
   summarize(
@@ -208,7 +316,7 @@ speciesprofiles_unified <-
 
 4. Save to [CSV](https://github.com/trias-project/unified-checklist/blob/master/data/interim/speciesprofiles_unified.csv).
 
-```{r unify_information-12}
+```{r unify_information-13}
 write_csv(speciesprofiles_unified, here("data", "interim", "speciesprofiles_unified.csv"), na = "")
 ```
 
@@ -216,10 +324,10 @@ write_csv(speciesprofiles_unified, here("data", "interim", "speciesprofiles_unif
 
 1. Filter non `NA` descriptions.
 
-```{r unify_information-13}
+```{r unify_information-14}
 descriptions_unified <-
   descriptions %>%
-  
+
   # Filter on non-NA descriptions
   filter(
     !is.na(description)
@@ -228,16 +336,16 @@ descriptions_unified <-
 
 2. Select unique descriptions (within their type) within a checklist.
 
-```{r unify_information-14, echo = TRUE}
+```{r unify_information-15, echo = TRUE}
 descriptions_unified <-
   descriptions_unified %>%
 
   # Join species profile with taxon to get verificationKey and checklist order
   left_join(taxa, on = taxonKey) %>%
-  
+
   # Remove records that have no verificationKey (e.g. one wasn't assigned yet)
   filter(!is.na(verificationKey)) %>%
-  
+
   # Group by type and verificationKey within checklist
   group_by(
     datasetKey,
@@ -246,7 +354,7 @@ descriptions_unified <-
     type,
     description
   ) %>%
-  
+
   # Take first taxonKey and scientificName
   summarize(
     taxonKey = first(taxonKey),
@@ -256,20 +364,20 @@ descriptions_unified <-
 
 3. Select unique descriptions (within their type) across checklists.
 
-```{r unify_information-15, echo = TRUE}
+```{r unify_information-16, echo = TRUE}
 descriptions_unified <-
   descriptions_unified %>%
-  
+
   # Sort by checklist order (trustworthiness)
   arrange(checklistOrder) %>%
-  
+
   # Group by type and verificationKey across checklists
   group_by(
     type,
     description,
     verificationKey
   ) %>%
-  
+
   # Select first datasetKey, taxonKey and scientificName
   summarize(
     datasetKey = first(datasetKey),
@@ -279,13 +387,13 @@ descriptions_unified <-
 
   # Move verificationKey to beginning and drop checklist_order
   select(verificationKey, everything()) %>%
-  
+
   # Sort by verificationKey and type
   arrange(verificationKey, type)
 ```
 
 4. Save to [CSV](https://github.com/trias-project/unified-checklist/blob/master/data/interim/descriptions_unified.csv).
 
-```{r unify_information-16}
+```{r unify_information-17}
 write_csv(descriptions_unified, here("data", "interim", "descriptions_unified.csv"), na = "")
 ```

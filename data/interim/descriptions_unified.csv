@@ -78,9 +78,9 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 1722140,pathway,cbd_2014_pathway:stowaway_vehicles,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438223,"Eumodicogryllus bordigalensis (Latreille, 1804)"
 1722299,invasion stage,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438226,"Gryllodes sigillatus (Walker & F., 1869)"
 1722299,native range,Southeast Asia,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438226,"Gryllodes sigillatus (Walker & F., 1869)"
-1728964,invasion stage,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438212,"Tachycines asynamorus Adelung, 1902"
-1728964,native range,Asia,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438212,"Tachycines asynamorus Adelung, 1902"
-1728964,pathway,cbd_2014_pathway:contaminant_on_plants,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438212,"Tachycines asynamorus Adelung, 1902"
+1728965,invasion stage,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438212,"Tachycines asynamorus Adelung, 1902"
+1728965,native range,Asia,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438212,"Tachycines asynamorus Adelung, 1902"
+1728965,pathway,cbd_2014_pathway:contaminant_on_plants,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438212,"Tachycines asynamorus Adelung, 1902"
 1749449,invasion stage,established,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438078,"Cameraria ohridella Deschka & Dimic, 1986"
 1749449,native range,Southeastern Europe (WGSRPD:13),1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438078,"Cameraria ohridella Deschka & Dimic, 1986"
 1749449,pathway,cbd_2014_pathway:contaminant_on_plants,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438078,"Cameraria ohridella Deschka & Dimic, 1986"
@@ -112,10 +112,6 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 2114446,Introduced species vector dispersal,in Denmark (Nation) : Shipping,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131836,"Acartia tonsa Dana, 1849"
 2114446,Introduced species vector dispersal,in United Kingdom part of the English Channel (Marine Region) : Ships: general,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131836,"Acartia tonsa Dana, 1849"
 2114446,Introduced species vector dispersal,in United Kingdom part of the North Sea (Marine Region) : Ships: general,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131836,"Acartia tonsa Dana, 1849"
-2114769,Introduced species impact,in France (Nation) : Other impact - undefined or uncertain,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131792,"Pseudodiaptomus marinus Sato, 1913"
-2114769,Introduced species vector dispersal,in Belgian part of the North Sea: Aquaculture: accidental,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131792,"Pseudodiaptomus marinus Sato, 1913"
-2114769,Introduced species vector dispersal,"in Belgian part of the North Sea: Ships: accidental with ballast water, sea water systems, live wells or other deck basins",0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131792,"Pseudodiaptomus marinus Sato, 1913"
-2114769,Introduced species vector dispersal,"in France (Nation) : Ships: accidental with ballast water, sea water systems, live wells or other deck basins",0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131792,"Pseudodiaptomus marinus Sato, 1913"
 2115692,Introduced species vector dispersal,in Belgian part of the North Sea: Ships: accidental as attached or free-living fouling organisms,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131647,"Megabalanus tintinnabulum (Linnaeus, 1758)"
 2115692,Introduced species vector dispersal,"in Belgian part of the North Sea: Ships: accidental with ballast water, sea water systems, live wells or other deck basins",0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131647,"Megabalanus tintinnabulum (Linnaeus, 1758)"
 2115692,invasion stage,established,289244ee-e1c1-49aa-b2d7-d379391ce265,140562982,Megabalanus tintinnabulum
@@ -280,9 +276,6 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 2217982,invasion stage,established,289244ee-e1c1-49aa-b2d7-d379391ce265,140562989,Crangonyx pseudogracilis
 2217982,native range,Northern America,289244ee-e1c1-49aa-b2d7-d379391ce265,140562989,Crangonyx pseudogracilis
 2217982,pathway,cbd_2014_pathway:stowaway_hull_fouling,289244ee-e1c1-49aa-b2d7-d379391ce265,140562989,Crangonyx pseudogracilis
-2218567,invasion stage,established,289244ee-e1c1-49aa-b2d7-d379391ce265,140562987,Orchestia cavimana
-2218567,native range,Ponto-Caspian,289244ee-e1c1-49aa-b2d7-d379391ce265,140562987,Orchestia cavimana
-2218567,pathway,cbd_2014_pathway:corridor_water,289244ee-e1c1-49aa-b2d7-d379391ce265,140562987,Orchestia cavimana
 2219863,Introduced species abundance,in France (Nation) : Common to dominant,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132024,"Gammarus tigrinus Sexton, 1939"
 2219863,Introduced species abundance,in French part of the Bay of Biscay (Marine Region) : Common to dominant,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132024,"Gammarus tigrinus Sexton, 1939"
 2219863,Introduced species abundance,in Latvian part of the Gulf of Riga (Marine Region) : Common,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132024,"Gammarus tigrinus Sexton, 1939"
@@ -378,8 +371,8 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 2225772,Introduced species impact,in Romanian part of the Black Sea : Outcompetes native species for resources and/or space,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,"Hemigrapsus sanguineus (De Haan, 1835)"
 2225772,Introduced species population trend,"in Black Sea (IHO Sea Area) : Reproduction here is unlikely, because of the low salinity (~ 18 PSU) (Micu et al. 2010).",0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,"Hemigrapsus sanguineus (De Haan, 1835)"
 2225772,Introduced species population trend,in Dutch part of the North Sea : Increasing,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,"Hemigrapsus sanguineus (De Haan, 1835)"
-2225772,Introduced species population trend,in French part of the English Channel (Marine Region) : Increasing,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,"Hemigrapsus sanguineus (De Haan, 1835)"
 2225772,Introduced species population trend,in French part of the English Channel : Increasing,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,"Hemigrapsus sanguineus (De Haan, 1835)"
+2225772,Introduced species population trend,in French part of the English Channel (Marine Region) : Increasing,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,"Hemigrapsus sanguineus (De Haan, 1835)"
 2225772,Introduced species population trend,in French part of the North Atlantic Ocean (Marine Region) : Increasing,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,"Hemigrapsus sanguineus (De Haan, 1835)"
 2225772,Introduced species population trend,in French part of the North Sea (Marine Region) : Increasing,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,"Hemigrapsus sanguineus (De Haan, 1835)"
 2225772,Introduced species population trend,"in Romanian part of the Black Sea : Reproduction here is unlikely, because of the low salinity (~ 18 PSU) (Micu et al. 2010).",0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,"Hemigrapsus sanguineus (De Haan, 1835)"
@@ -696,12 +689,6 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 2295425,native range,North America,e082b10e-476f-43c1-aa61-f8d92f33029a,157062947,"Zonitoides arboreus (Say, 1817)"
 2295425,pathway,cbd_2014_pathway:contaminant_habitat_material,e082b10e-476f-43c1-aa61-f8d92f33029a,157062947,"Zonitoides arboreus (Say, 1817)"
 2295425,pathway,cbd_2014_pathway:contaminant_on_plants,e082b10e-476f-43c1-aa61-f8d92f33029a,157062947,"Zonitoides arboreus (Say, 1817)"
-2296797,degree of establishment,blackburn_et_al_2011:E,e082b10e-476f-43c1-aa61-f8d92f33029a,157063040,"Candidula intersecta (Poiret, 1801)"
-2296797,native range,Iberian Peninsula,e082b10e-476f-43c1-aa61-f8d92f33029a,157063040,"Candidula intersecta (Poiret, 1801)"
-2296797,native range,southwestern France,e082b10e-476f-43c1-aa61-f8d92f33029a,157063040,"Candidula intersecta (Poiret, 1801)"
-2296797,pathway,cbd_2014_pathway:stowaway_people_luggage,e082b10e-476f-43c1-aa61-f8d92f33029a,157063040,"Candidula intersecta (Poiret, 1801)"
-2296797,pathway,cbd_2014_pathway:stowaway_vehicles,e082b10e-476f-43c1-aa61-f8d92f33029a,157063040,"Candidula intersecta (Poiret, 1801)"
-2296797,pathway,cbd_2014_pathway:unaided,e082b10e-476f-43c1-aa61-f8d92f33029a,157063040,"Candidula intersecta (Poiret, 1801)"
 2296801,degree of establishment,blackburn_et_al_2011:E,e082b10e-476f-43c1-aa61-f8d92f33029a,157063124,"Cernuella virgata (Da Costa, 1778)"
 2296801,native range,central Mediterranean coastal areas,e082b10e-476f-43c1-aa61-f8d92f33029a,157063124,"Cernuella virgata (Da Costa, 1778)"
 2296801,native range,western Mediterranean coastal areas,e082b10e-476f-43c1-aa61-f8d92f33029a,157063124,"Cernuella virgata (Da Costa, 1778)"
@@ -712,13 +699,13 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 2296805,native range,Europe (WGSRPD:1),1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042390,"Trochoidea elegans (Gmelin, 1791)"
 2296805,pathway,cbd_2014_pathway:contaminant,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042390,"Trochoidea elegans (Gmelin, 1791)"
 2296805,pathway,cbd_2014_pathway:stowaway,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042390,"Trochoidea elegans (Gmelin, 1791)"
-2296809,degree of establishment,blackburn_et_al_2011:C3,e082b10e-476f-43c1-aa61-f8d92f33029a,157063103,"Cochlicella barbara (Linnaeus, 1758)"
-2296809,native range,Europe (WGSRPD:1),1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042484,"Cochlicella barbara (Linnaeus, 1758)"
-2296809,native range,northern coastal areas of the western Mediterranean,e082b10e-476f-43c1-aa61-f8d92f33029a,157063103,"Cochlicella barbara (Linnaeus, 1758)"
-2296809,pathway,cbd_2014_pathway:contaminant,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042484,"Cochlicella barbara (Linnaeus, 1758)"
-2296809,pathway,cbd_2014_pathway:stowaway,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042484,"Cochlicella barbara (Linnaeus, 1758)"
-2296809,pathway,cbd_2014_pathway:stowaway_people_luggage,e082b10e-476f-43c1-aa61-f8d92f33029a,157063103,"Cochlicella barbara (Linnaeus, 1758)"
-2296809,pathway,cbd_2014_pathway:stowaway_vehicles,e082b10e-476f-43c1-aa61-f8d92f33029a,157063103,"Cochlicella barbara (Linnaeus, 1758)"
+2296807,degree of establishment,blackburn_et_al_2011:C3,e082b10e-476f-43c1-aa61-f8d92f33029a,157063103,"Cochlicella barbara (Linnaeus, 1758)"
+2296807,native range,Europe (WGSRPD:1),1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042484,"Cochlicella barbara (Linnaeus, 1758)"
+2296807,native range,northern coastal areas of the western Mediterranean,e082b10e-476f-43c1-aa61-f8d92f33029a,157063103,"Cochlicella barbara (Linnaeus, 1758)"
+2296807,pathway,cbd_2014_pathway:contaminant,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042484,"Cochlicella barbara (Linnaeus, 1758)"
+2296807,pathway,cbd_2014_pathway:stowaway,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042484,"Cochlicella barbara (Linnaeus, 1758)"
+2296807,pathway,cbd_2014_pathway:stowaway_people_luggage,e082b10e-476f-43c1-aa61-f8d92f33029a,157063103,"Cochlicella barbara (Linnaeus, 1758)"
+2296807,pathway,cbd_2014_pathway:stowaway_vehicles,e082b10e-476f-43c1-aa61-f8d92f33029a,157063103,"Cochlicella barbara (Linnaeus, 1758)"
 2297108,invasion stage,established,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437924,Milax gagates
 2297108,native range,Europe (WGSRPD:1),1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042431,"Milax gagates (Draparnaud, 1801)"
 2308541,invasion stage,established,289244ee-e1c1-49aa-b2d7-d379391ce265,140562902,Limnodrilus cervix
@@ -1845,6 +1832,9 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 2773453,native range,Europe (WGSRPD:1),9ff7d317-609b-4c08-bd86-3bc404b77c42,141267005,Ornithogalum divergens Boreau
 2773453,native range,temperate Asia (WGSRPD:3),9ff7d317-609b-4c08-bd86-3bc404b77c42,141267005,Ornithogalum divergens Boreau
 2773453,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267005,Ornithogalum divergens Boreau
+2774846,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267003,Chlorophytum comosum group
+2774846,native range,cultivated origin,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267003,Chlorophytum comosum group
+2774846,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267003,Chlorophytum comosum group
 2775530,invasion stage,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267008,Yucca flaccida Haworth
 2775530,native range,Northern America (WGSRPD:7),9ff7d317-609b-4c08-bd86-3bc404b77c42,141267008,Yucca flaccida Haworth
 2775530,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267008,Yucca flaccida Haworth
@@ -2002,6 +1992,9 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 2874509,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266600,Cucurbita moschata Duchesne
 2874509,native range,pan-American,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266600,Cucurbita moschata Duchesne
 2874509,pathway,cbd_2014_pathway:escape_food_bait,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266600,Cucurbita moschata Duchesne
+2874515,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266605,Cucurbita maxima Duchesne
+2874515,native range,pan-American,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266605,Cucurbita maxima Duchesne
+2874515,pathway,cbd_2014_pathway:escape_food_bait,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266605,Cucurbita maxima Duchesne
 2874538,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266604,Thladiantha dubia Bunge
 2874538,native range,temperate Asia (WGSRPD:3),9ff7d317-609b-4c08-bd86-3bc404b77c42,141266604,Thladiantha dubia Bunge
 2874538,pathway,cbd_2014_pathway:escape_food_bait,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266604,Thladiantha dubia Bunge
@@ -2144,6 +2137,11 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 2888706,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267088,Kolkwitzia amabilis Graebn.
 2888706,native range,temperate Asia (WGSRPD:3),9ff7d317-609b-4c08-bd86-3bc404b77c42,141267088,Kolkwitzia amabilis Graebn.
 2888706,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267088,Kolkwitzia amabilis Graebn.
+2888740,invasion stage,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267094,Centranthus ruber (L.) DC.
+2888740,native range,Africa (WGSRPD:2),9ff7d317-609b-4c08-bd86-3bc404b77c42,141267094,Centranthus ruber (L.) DC.
+2888740,native range,Europe (WGSRPD:1),9ff7d317-609b-4c08-bd86-3bc404b77c42,141267094,Centranthus ruber (L.) DC.
+2888740,native range,temperate Asia (WGSRPD:3),9ff7d317-609b-4c08-bd86-3bc404b77c42,141267094,Centranthus ruber (L.) DC.
+2888740,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267094,Centranthus ruber (L.) DC.
 2888773,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267074,Valerianella eriocarpa Desv.
 2888773,native range,Africa (WGSRPD:2),9ff7d317-609b-4c08-bd86-3bc404b77c42,141267074,Valerianella eriocarpa Desv.
 2888773,native range,Europe (WGSRPD:1),9ff7d317-609b-4c08-bd86-3bc404b77c42,141267074,Valerianella eriocarpa Desv.
@@ -2281,9 +2279,6 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 2891390,invasion stage,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266448,Geranium phaeum L.
 2891390,native range,Europe (WGSRPD:1),9ff7d317-609b-4c08-bd86-3bc404b77c42,141266448,Geranium phaeum L.
 2891390,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266448,Geranium phaeum L.
-2891613,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266460,Pelargonium capitatum (L.) Ait.
-2891613,native range,Africa (WGSRPD:2),9ff7d317-609b-4c08-bd86-3bc404b77c42,141266460,Pelargonium capitatum (L.) Ait.
-2891613,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266460,Pelargonium capitatum (L.) Ait.
 2891617,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266464,Erodium brachycarpum (Godr.) Thell.
 2891617,native range,Africa (WGSRPD:2),9ff7d317-609b-4c08-bd86-3bc404b77c42,141266464,Erodium brachycarpum (Godr.) Thell.
 2891617,pathway,cbd_2014_pathway:contaminant_on_animals,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266464,Erodium brachycarpum (Godr.) Thell.
@@ -2295,10 +2290,6 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 2891664,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266321,Oxalis articulata Savigny
 2891664,native range,Southern America (WGSRPD:8),9ff7d317-609b-4c08-bd86-3bc404b77c42,141266321,Oxalis articulata Savigny
 2891664,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266321,Oxalis articulata Savigny
-2891666,invasion stage,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266323,Oxalis stricta L.
-2891666,native range,Northern America (WGSRPD:7),9ff7d317-609b-4c08-bd86-3bc404b77c42,141266323,Oxalis stricta L.
-2891666,native range,temperate Asia (WGSRPD:3),9ff7d317-609b-4c08-bd86-3bc404b77c42,141266323,Oxalis stricta L.
-2891666,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266323,Oxalis stricta L.
 2891677,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266326,Oxalis dillenii Jacq.
 2891677,native range,Northern America (WGSRPD:7),9ff7d317-609b-4c08-bd86-3bc404b77c42,141266326,Oxalis dillenii Jacq.
 2891677,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266326,Oxalis dillenii Jacq.
@@ -2900,11 +2891,11 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 2972595,native range,Europe (WGSRPD:1),9ff7d317-609b-4c08-bd86-3bc404b77c42,141266803,Onobrychis viciifolia Scop.
 2972595,native range,temperate Asia (WGSRPD:3),9ff7d317-609b-4c08-bd86-3bc404b77c42,141266803,Onobrychis viciifolia Scop.
 2972595,pathway,cbd_2014_pathway:escape_agriculture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266803,Onobrychis viciifolia Scop.
-2972703,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266703,Onobrychis caput-galli (L.) Lam.
-2972703,native range,Africa (WGSRPD:2),9ff7d317-609b-4c08-bd86-3bc404b77c42,141266703,Onobrychis caput-galli (L.) Lam.
-2972703,native range,Europe (WGSRPD:1),9ff7d317-609b-4c08-bd86-3bc404b77c42,141266703,Onobrychis caput-galli (L.) Lam.
-2972703,native range,temperate Asia (WGSRPD:3),9ff7d317-609b-4c08-bd86-3bc404b77c42,141266703,Onobrychis caput-galli (L.) Lam.
-2972703,pathway,cbd_2014_pathway:contaminant_on_animals,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266703,Onobrychis caput-galli (L.) Lam.
+2972868,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266703,Onobrychis caput-galli (L.) Lam.
+2972868,native range,Africa (WGSRPD:2),9ff7d317-609b-4c08-bd86-3bc404b77c42,141266703,Onobrychis caput-galli (L.) Lam.
+2972868,native range,Europe (WGSRPD:1),9ff7d317-609b-4c08-bd86-3bc404b77c42,141266703,Onobrychis caput-galli (L.) Lam.
+2972868,native range,temperate Asia (WGSRPD:3),9ff7d317-609b-4c08-bd86-3bc404b77c42,141266703,Onobrychis caput-galli (L.) Lam.
+2972868,pathway,cbd_2014_pathway:contaminant_on_animals,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266703,Onobrychis caput-galli (L.) Lam.
 2974753,invasion stage,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266718,Vicia lutea L.
 2974753,native range,Africa (WGSRPD:2),9ff7d317-609b-4c08-bd86-3bc404b77c42,141266718,Vicia lutea L.
 2974753,native range,Europe (WGSRPD:1),9ff7d317-609b-4c08-bd86-3bc404b77c42,141266718,Vicia lutea L.
@@ -3125,6 +3116,9 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 3003979,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265472,Rosa rugosa Thunb.
 3003979,pathway,cbd_2014_pathway:natural_dispersal,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042191,Rosa rugosa Thunb.
 3003979,pathway,cbd_2014_pathway:release,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042191,Rosa rugosa Thunb.
+3005039,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265373,Rosa chinensis group
+3005039,native range,cultivated origin,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265373,Rosa chinensis group
+3005039,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265373,Rosa chinensis group
 3006974,invasion stage,extinct,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265400,Rosa pendulina L.
 3006974,native range,Europe (WGSRPD:1),9ff7d317-609b-4c08-bd86-3bc404b77c42,141265400,Rosa pendulina L.
 3006974,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265400,Rosa pendulina L.
@@ -3140,17 +3134,6 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 3012117,invasion stage,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265447,Sorbaria tomentosa (Lindl.) Rehd.
 3012117,native range,temperate Asia (WGSRPD:3),9ff7d317-609b-4c08-bd86-3bc404b77c42,141265447,Sorbaria tomentosa (Lindl.) Rehd.
 3012117,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265447,Sorbaria tomentosa (Lindl.) Rehd.
-3012254,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265441,Sorbus intermedia (Ehrh.) Pers.
-3012254,native range,Europe (WGSRPD:1),9ff7d317-609b-4c08-bd86-3bc404b77c42,141265441,Sorbus intermedia (Ehrh.) Pers.
-3012254,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265441,Sorbus intermedia (Ehrh.) Pers.
-3012400,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265453,Sorbus hybrida L.
-3012400,native range,Europe (WGSRPD:1),9ff7d317-609b-4c08-bd86-3bc404b77c42,141265453,Sorbus hybrida L.
-3012400,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265453,Sorbus hybrida L.
-3013206,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265479,Sorbus domestica L.
-3013206,native range,Africa (WGSRPD:2),9ff7d317-609b-4c08-bd86-3bc404b77c42,141265479,Sorbus domestica L.
-3013206,native range,Europe (WGSRPD:1),9ff7d317-609b-4c08-bd86-3bc404b77c42,141265479,Sorbus domestica L.
-3013206,native range,temperate Asia (WGSRPD:3),9ff7d317-609b-4c08-bd86-3bc404b77c42,141265479,Sorbus domestica L.
-3013206,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265479,Sorbus domestica L.
 3015457,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265376,Crataegus persimilis Sarg.
 3015457,native range,Northern America (WGSRPD:7),9ff7d317-609b-4c08-bd86-3bc404b77c42,141265376,Crataegus persimilis Sarg.
 3015457,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265376,Crataegus persimilis Sarg.
@@ -3542,6 +3525,9 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 3040233,invasion stage,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266638,Populus alba L.
 3040233,native range,Europe (WGSRPD:1),9ff7d317-609b-4c08-bd86-3bc404b77c42,141266638,Populus alba L.
 3040233,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266638,Populus alba L.
+3040241,invasion stage,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266640,"Populus x jackii Sargent ""Gileadensis"""
+3040241,native range,Northern America (WGSRPD:7),9ff7d317-609b-4c08-bd86-3bc404b77c42,141266640,"Populus x jackii Sargent ""Gileadensis"""
+3040241,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266640,"Populus x jackii Sargent ""Gileadensis"""
 3040253,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264762,Reseda phyteuma L.
 3040253,native range,Africa (WGSRPD:2),9ff7d317-609b-4c08-bd86-3bc404b77c42,141264762,Reseda phyteuma L.
 3040253,native range,Europe (WGSRPD:1),9ff7d317-609b-4c08-bd86-3bc404b77c42,141264762,Reseda phyteuma L.
@@ -3990,9 +3976,6 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 3084742,invasion stage,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266892,Claytonia sibirica L.
 3084742,native range,Northern America (WGSRPD:7),9ff7d317-609b-4c08-bd86-3bc404b77c42,141266892,Claytonia sibirica L.
 3084742,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266892,Claytonia sibirica L.
-3084748,invasion stage,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266889,Claytonia perfoliata Donn ex Willd.
-3084748,native range,Northern America (WGSRPD:7),9ff7d317-609b-4c08-bd86-3bc404b77c42,141266889,Claytonia perfoliata Donn ex Willd.
-3084748,pathway,cbd_2014_pathway:escape_agriculture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266889,Claytonia perfoliata Donn ex Willd.
 3084837,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266318,Mesembryanthemum nodiflorum L.
 3084837,native range,Africa (WGSRPD:2),9ff7d317-609b-4c08-bd86-3bc404b77c42,141266318,Mesembryanthemum nodiflorum L.
 3084837,native range,Europe (WGSRPD:1),9ff7d317-609b-4c08-bd86-3bc404b77c42,141266318,Mesembryanthemum nodiflorum L.
@@ -4623,9 +4606,6 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 3148340,native range,Europe (WGSRPD:1),9ff7d317-609b-4c08-bd86-3bc404b77c42,141265340,Inula helenium L.
 3148340,native range,temperate Asia (WGSRPD:3),9ff7d317-609b-4c08-bd86-3bc404b77c42,141265340,Inula helenium L.
 3148340,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265340,Inula helenium L.
-3148392,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265098,Inula hirta L.
-3148392,native range,Europe (WGSRPD:1),9ff7d317-609b-4c08-bd86-3bc404b77c42,141265098,Inula hirta L.
-3148392,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265098,Inula hirta L.
 3148548,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265178,Anacyclus valentinus L.
 3148548,native range,Africa (WGSRPD:2),9ff7d317-609b-4c08-bd86-3bc404b77c42,141265178,Anacyclus valentinus L.
 3148548,native range,Europe (WGSRPD:1),9ff7d317-609b-4c08-bd86-3bc404b77c42,141265178,Anacyclus valentinus L.
@@ -4866,6 +4846,9 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 3188757,native range,Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264725,Trapa natans L.
 3188757,native range,Europe (WGSRPD:1),9ff7d317-609b-4c08-bd86-3bc404b77c42,141264725,Trapa natans L.
 3188757,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264725,Trapa natans L.
+3188829,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266540,"Oenothera elata Humb., Bonpl. & Kunth"
+3188829,native range,pan-American,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266540,"Oenothera elata Humb., Bonpl. & Kunth"
+3188829,pathway,cbd_2014_pathway:contaminant_habitat_material,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266540,"Oenothera elata Humb., Bonpl. & Kunth"
 3188830,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266548,Oenothera stricta Ledeb. ex Link
 3188830,native range,Southern America (WGSRPD:8),9ff7d317-609b-4c08-bd86-3bc404b77c42,141266548,Oenothera stricta Ledeb. ex Link
 3188830,pathway,cbd_2014_pathway:contaminant_seed,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266548,Oenothera stricta Ledeb. ex Link
@@ -5050,6 +5033,9 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 3664677,native range,Northern America (WGSRPD:7),9ff7d317-609b-4c08-bd86-3bc404b77c42,141266528,Oenothera subterminalis R.R. Gates
 3664677,pathway,cbd_2014_pathway:contaminant_habitat_material,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266528,Oenothera subterminalis R.R. Gates
 3665817,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266553,Oenothera rubricauloides Rostański
+3665866,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266519,Oenothera rubricalyx R.R. Gates
+3665866,native range,Northern America (WGSRPD:7),9ff7d317-609b-4c08-bd86-3bc404b77c42,141266519,Oenothera rubricalyx R.R. Gates
+3665866,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266519,Oenothera rubricalyx R.R. Gates
 3665940,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266542,Oenothera royfraseri R.R. Gates
 3665940,native range,Northern America (WGSRPD:7),9ff7d317-609b-4c08-bd86-3bc404b77c42,141266542,Oenothera royfraseri R.R. Gates
 3665966,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266558,Epilobium x floridulum Smejkal
@@ -5797,7 +5783,6 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 4486365,native range,New Zealand (WGSRPD:51),1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437965,"Nysius huttoni FB White, 1878"
 4486365,pathway,cbd_2014_pathway:stowaway,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437965,"Nysius huttoni FB White, 1878"
 4487370,native range,North America,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437968,"Tropidosteptes pacificus (Van Duzee, 1921)"
-4549071,native range,Mediterranean,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437978,Varroa jacobsoni
 4550810,invasion stage,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438178,"Cryptachaea veruculata (Urquhart, 1886)"
 4550810,native range,Australia,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438178,"Cryptachaea veruculata (Urquhart, 1886)"
 4553469,invasion stage,established,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437952,Leiobunum
@@ -5825,6 +5810,13 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 4565039,pathway,cbd_2014_pathway:contaminant_on_plants,e082b10e-476f-43c1-aa61-f8d92f33029a,157063054,"Hygromia cinctella (Draparnaud, 1801)"
 4565039,pathway,cbd_2014_pathway:stowaway,e082b10e-476f-43c1-aa61-f8d92f33029a,157063054,"Hygromia cinctella (Draparnaud, 1801)"
 4565039,pathway,cbd_2014_pathway:unaided,e082b10e-476f-43c1-aa61-f8d92f33029a,157063054,"Hygromia cinctella (Draparnaud, 1801)"
+4565061,degree of establishment,blackburn_et_al_2011:D2,e082b10e-476f-43c1-aa61-f8d92f33029a,157063180,"Cernuella neglecta (Draparnaud, 1805)"
+4565061,native range,central Italy,e082b10e-476f-43c1-aa61-f8d92f33029a,157063180,"Cernuella neglecta (Draparnaud, 1805)"
+4565061,native range,Europe (WGSRPD:1),1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042438,"Cernuella neglecta (Draparnaud, 1805)"
+4565061,native range,southern France,e082b10e-476f-43c1-aa61-f8d92f33029a,157063180,"Cernuella neglecta (Draparnaud, 1805)"
+4565061,native range,western Italy,e082b10e-476f-43c1-aa61-f8d92f33029a,157063180,"Cernuella neglecta (Draparnaud, 1805)"
+4565061,pathway,cbd_2014_pathway:stowaway_people_luggage,e082b10e-476f-43c1-aa61-f8d92f33029a,157063180,"Cernuella neglecta (Draparnaud, 1805)"
+4565061,pathway,cbd_2014_pathway:stowaway_vehicles,e082b10e-476f-43c1-aa61-f8d92f33029a,157063180,"Cernuella neglecta (Draparnaud, 1805)"
 4565134,degree of establishment,blackburn_et_al_2011:E,e082b10e-476f-43c1-aa61-f8d92f33029a,157063120,"Cernuella aginnica (Locard, 1882)"
 4565134,native range,southern France,e082b10e-476f-43c1-aa61-f8d92f33029a,157063120,"Cernuella aginnica (Locard, 1882)"
 4565134,pathway,cbd_2014_pathway:stowaway_people_luggage,e082b10e-476f-43c1-aa61-f8d92f33029a,157063120,"Cernuella aginnica (Locard, 1882)"
@@ -5846,13 +5838,6 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 4568269,native range,New Zealand,e082b10e-476f-43c1-aa61-f8d92f33029a,157062984,"Paralaoma servilis (Shuttleworth, 1852)"
 4568269,pathway,cbd_2014_pathway:contaminant_habitat_material,e082b10e-476f-43c1-aa61-f8d92f33029a,157062984,"Paralaoma servilis (Shuttleworth, 1852)"
 4568269,pathway,cbd_2014_pathway:contaminant_on_plants,e082b10e-476f-43c1-aa61-f8d92f33029a,157062984,"Paralaoma servilis (Shuttleworth, 1852)"
-4598006,degree of establishment,blackburn_et_al_2011:D2,e082b10e-476f-43c1-aa61-f8d92f33029a,157063180,"Cernuella neglecta (Draparnaud, 1805)"
-4598006,native range,central Italy,e082b10e-476f-43c1-aa61-f8d92f33029a,157063180,"Cernuella neglecta (Draparnaud, 1805)"
-4598006,native range,Europe (WGSRPD:1),1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042438,"Cernuella neglecta (Draparnaud, 1805)"
-4598006,native range,southern France,e082b10e-476f-43c1-aa61-f8d92f33029a,157063180,"Cernuella neglecta (Draparnaud, 1805)"
-4598006,native range,western Italy,e082b10e-476f-43c1-aa61-f8d92f33029a,157063180,"Cernuella neglecta (Draparnaud, 1805)"
-4598006,pathway,cbd_2014_pathway:stowaway_people_luggage,e082b10e-476f-43c1-aa61-f8d92f33029a,157063180,"Cernuella neglecta (Draparnaud, 1805)"
-4598006,pathway,cbd_2014_pathway:stowaway_vehicles,e082b10e-476f-43c1-aa61-f8d92f33029a,157063180,"Cernuella neglecta (Draparnaud, 1805)"
 4598225,degree of establishment,blackburn_et_al_2011:E,e082b10e-476f-43c1-aa61-f8d92f33029a,157063014,"Tandonia budapestensis (Hazay, 1880)"
 4598225,native range,Carpathians,e082b10e-476f-43c1-aa61-f8d92f33029a,157063014,"Tandonia budapestensis (Hazay, 1880)"
 4598225,native range,northern Balkan,e082b10e-476f-43c1-aa61-f8d92f33029a,157063014,"Tandonia budapestensis (Hazay, 1880)"
@@ -7436,11 +7421,6 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 5376925,native range,Southern America (WGSRPD:8),9ff7d317-609b-4c08-bd86-3bc404b77c42,141265976,Lepidium bonariense L.
 5376925,pathway,cbd_2014_pathway:contaminant_on_animals,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265976,Lepidium bonariense L.
 5376925,pathway,cbd_2014_pathway:contaminant_seed,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265976,Lepidium bonariense L.
-5376961,invasion stage,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265965,Lepidium draba L. subsp. draba
-5376961,native range,Africa (WGSRPD:2),9ff7d317-609b-4c08-bd86-3bc404b77c42,141265965,Lepidium draba L. subsp. draba
-5376961,native range,Europe (WGSRPD:1),9ff7d317-609b-4c08-bd86-3bc404b77c42,141265965,Lepidium draba L. subsp. draba
-5376961,native range,temperate Asia (WGSRPD:3),9ff7d317-609b-4c08-bd86-3bc404b77c42,141265965,Lepidium draba L. subsp. draba
-5376961,pathway,cbd_2014_pathway:contaminant_seed,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265965,Lepidium draba L. subsp. draba
 5376994,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265991,Lepidium graminifolium L.
 5376994,native range,Africa (WGSRPD:2),9ff7d317-609b-4c08-bd86-3bc404b77c42,141265991,Lepidium graminifolium L.
 5376994,native range,Europe (WGSRPD:1),9ff7d317-609b-4c08-bd86-3bc404b77c42,141265991,Lepidium graminifolium L.
@@ -7603,6 +7583,9 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 5384932,invasion stage,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264749,Saururus cernuus L.
 5384932,native range,Northern America (WGSRPD:7),9ff7d317-609b-4c08-bd86-3bc404b77c42,141264749,Saururus cernuus L.
 5384932,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264749,Saururus cernuus L.
+5384950,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265100,Eclipta prostrata (L.) L.
+5384950,native range,Pantropical,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265100,Eclipta prostrata (L.) L.
+5384950,pathway,cbd_2014_pathway:contaminant_seed,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265100,Eclipta prostrata (L.) L.
 5386028,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265216,Cyanus triumfettii (All.) Á. Löve & D. Löve
 5386028,native range,Africa (WGSRPD:2),9ff7d317-609b-4c08-bd86-3bc404b77c42,141265216,Cyanus triumfettii (All.) Á. Löve & D. Löve
 5386028,native range,Europe (WGSRPD:1),9ff7d317-609b-4c08-bd86-3bc404b77c42,141265216,Cyanus triumfettii (All.) Á. Löve & D. Löve
@@ -7859,6 +7842,10 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 5414959,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265537,Collinsia heterophylla Buist ex Graham
 5414959,native range,Northern America (WGSRPD:7),9ff7d317-609b-4c08-bd86-3bc404b77c42,141265537,Collinsia heterophylla Buist ex Graham
 5414959,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265537,Collinsia heterophylla Buist ex Graham
+5415009,invasion stage,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265505,Linaria supina (L.) Chazelles
+5415009,native range,Africa (WGSRPD:2),9ff7d317-609b-4c08-bd86-3bc404b77c42,141265505,Linaria supina (L.) Chazelles
+5415009,native range,Europe (WGSRPD:1),9ff7d317-609b-4c08-bd86-3bc404b77c42,141265505,Linaria supina (L.) Chazelles
+5415009,pathway,cbd_2014_pathway:contaminant_habitat_material,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265505,Linaria supina (L.) Chazelles
 5415012,invasion stage,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265520,Linaria purpurea (L.) Mill.
 5415012,native range,Africa (WGSRPD:2),9ff7d317-609b-4c08-bd86-3bc404b77c42,141265520,Linaria purpurea (L.) Mill.
 5415012,native range,Europe (WGSRPD:1),9ff7d317-609b-4c08-bd86-3bc404b77c42,141265520,Linaria purpurea (L.) Mill.
@@ -8348,6 +8335,9 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 6290046,native range,temperate Asia (WGSRPD:3),9ff7d317-609b-4c08-bd86-3bc404b77c42,141266927,Solanum villosum Mill. subsp. miniatum (Bernh. ex Willd.) Edmonds
 6290046,pathway,cbd_2014_pathway:contaminant_on_animals,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266927,Solanum villosum Mill. subsp. miniatum (Bernh. ex Willd.) Edmonds
 6290046,pathway,cbd_2014_pathway:contaminant_seed,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266927,Solanum villosum Mill. subsp. miniatum (Bernh. ex Willd.) Edmonds
+6300805,invasion stage,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265117,Pilosella bauhini (Schult. ex Besser) Arv.-Touv.
+6300805,native range,Europe (WGSRPD:1),9ff7d317-609b-4c08-bd86-3bc404b77c42,141265117,Pilosella bauhini (Schult. ex Besser) Arv.-Touv.
+6300805,pathway,cbd_2014_pathway:contaminant_habitat_material,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265117,Pilosella bauhini (Schult. ex Besser) Arv.-Touv.
 6304873,invasion stage,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265238,Cicerbita macrophylla (Willd.) Wallr. subsp. macrophylla
 6304873,native range,Europe (WGSRPD:1),9ff7d317-609b-4c08-bd86-3bc404b77c42,141265238,Cicerbita macrophylla (Willd.) Wallr. subsp. macrophylla
 6304873,native range,temperate Asia (WGSRPD:3),9ff7d317-609b-4c08-bd86-3bc404b77c42,141265238,Cicerbita macrophylla (Willd.) Wallr. subsp. macrophylla
@@ -8903,11 +8893,6 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 7427650,native range,Europe (WGSRPD:1),9ff7d317-609b-4c08-bd86-3bc404b77c42,141264948,Convolvulus tricolor L. subsp. cupanianus (Tod.) Cavara & Grande
 7427650,native range,temperate Asia (WGSRPD:3),9ff7d317-609b-4c08-bd86-3bc404b77c42,141264948,Convolvulus tricolor L. subsp. cupanianus (Tod.) Cavara & Grande
 7427650,pathway,cbd_2014_pathway:contaminant_seed,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264948,Convolvulus tricolor L. subsp. cupanianus (Tod.) Cavara & Grande
-7428369,invasion stage,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267094,Centranthus ruber (L.) DC.
-7428369,native range,Africa (WGSRPD:2),9ff7d317-609b-4c08-bd86-3bc404b77c42,141267094,Centranthus ruber (L.) DC.
-7428369,native range,Europe (WGSRPD:1),9ff7d317-609b-4c08-bd86-3bc404b77c42,141267094,Centranthus ruber (L.) DC.
-7428369,native range,temperate Asia (WGSRPD:3),9ff7d317-609b-4c08-bd86-3bc404b77c42,141267094,Centranthus ruber (L.) DC.
-7428369,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267094,Centranthus ruber (L.) DC.
 7433196,invasion stage,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264864,Euonymus latifolius (L.) Mill.
 7433196,native range,Europe (WGSRPD:1),9ff7d317-609b-4c08-bd86-3bc404b77c42,141264864,Euonymus latifolius (L.) Mill.
 7433196,native range,temperate Asia (WGSRPD:3),9ff7d317-609b-4c08-bd86-3bc404b77c42,141264864,Euonymus latifolius (L.) Mill.
@@ -9045,9 +9030,6 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 7645931,native range,temperate Asia (WGSRPD:3),9ff7d317-609b-4c08-bd86-3bc404b77c42,141266631,Salix acutifolia Willd.
 7645931,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266631,Salix acutifolia Willd.
 7652364,invasion stage,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437959,Nephila
-7655426,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266605,Cucurbita maxima Duchesne
-7655426,native range,pan-American,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266605,Cucurbita maxima Duchesne
-7655426,pathway,cbd_2014_pathway:escape_food_bait,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266605,Cucurbita maxima Duchesne
 7664179,invasion stage,established,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438128,"Technomyrmex vitiensis (Smith, 1861)"
 7664179,native range,Cosmopolitan,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438128,"Technomyrmex vitiensis (Smith, 1861)"
 7670473,native range,Asia,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437713,"Batrachochytrium salamandrivorans A. Martel, Blooi, Bossuyt & Pasmans, 2013"
@@ -9215,9 +9197,15 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 7881150,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267010,Polygonatum x hybridum Brügger
 7881150,native range,cultivated origin,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267010,Polygonatum x hybridum Brügger
 7881150,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267010,Polygonatum x hybridum Brügger
+7882646,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265389,Rosa virginiana J. Herrmann
+7882646,native range,Northern America (WGSRPD:7),9ff7d317-609b-4c08-bd86-3bc404b77c42,141265389,Rosa virginiana J. Herrmann
+7882646,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265389,Rosa virginiana J. Herrmann
 7883427,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265587,Triticum monococcum L.
 7883427,native range,Europe (WGSRPD:1),9ff7d317-609b-4c08-bd86-3bc404b77c42,141265587,Triticum monococcum L.
 7883427,pathway,cbd_2014_pathway:escape_agriculture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265587,Triticum monococcum L.
+7885624,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266602,Cucumis myriocarpus Naudin
+7885624,native range,Africa (WGSRPD:2),9ff7d317-609b-4c08-bd86-3bc404b77c42,141266602,Cucumis myriocarpus Naudin
+7885624,pathway,cbd_2014_pathway:contaminant_on_animals,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266602,Cucumis myriocarpus Naudin
 7889822,invasion stage,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265450,Spiraea x billardii Hérincq
 7889822,native range,cultivated origin,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265450,Spiraea x billardii Hérincq
 7889822,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265450,Spiraea x billardii Hérincq
@@ -9310,8 +9298,6 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 8012084,invasion stage,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267183,Dianthus subacaulis Vill.
 8012084,native range,Europe (WGSRPD:1),9ff7d317-609b-4c08-bd86-3bc404b77c42,141267183,Dianthus subacaulis Vill.
 8012084,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267183,Dianthus subacaulis Vill.
-8012649,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266419,Rumex x hybridus Kindb.
-8012649,native range,hybrid origin,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266419,Rumex x hybridus Kindb.
 8014163,degree of establishment,blackburn_et_al_2011:E,e082b10e-476f-43c1-aa61-f8d92f33029a,157063061,"Ambigolimax valentianus (A. Férussac, 1822)"
 8014163,native range,Europe (WGSRPD:1),1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042439,"Lehmannia valentiana (Férussac, 1822)"
 8014163,native range,Iberian Peninsula,e082b10e-476f-43c1-aa61-f8d92f33029a,157063061,"Ambigolimax valentianus (A. Férussac, 1822)"
@@ -9399,9 +9385,6 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 8118326,native range,Africa (WGSRPD:2),9ff7d317-609b-4c08-bd86-3bc404b77c42,141266230,Teucrium resupinatum Desf.
 8118326,native range,Europe (WGSRPD:1),9ff7d317-609b-4c08-bd86-3bc404b77c42,141266230,Teucrium resupinatum Desf.
 8118326,pathway,cbd_2014_pathway:contaminant_seed,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266230,Teucrium resupinatum Desf.
-8132203,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264691,Prunus domestica L. subsp. syriaca (Borkh.) Jancken ex Mansf.
-8132203,native range,temperate Asia (WGSRPD:3),9ff7d317-609b-4c08-bd86-3bc404b77c42,141264691,Prunus domestica L. subsp. syriaca (Borkh.) Jancken ex Mansf.
-8132203,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264691,Prunus domestica L. subsp. syriaca (Borkh.) Jancken ex Mansf.
 8133114,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265206,Aster amellus L.
 8133114,native range,Europe (WGSRPD:1),9ff7d317-609b-4c08-bd86-3bc404b77c42,141265206,Aster amellus L.
 8133114,native range,temperate Asia (WGSRPD:3),9ff7d317-609b-4c08-bd86-3bc404b77c42,141265206,Aster amellus L.
@@ -9449,9 +9432,6 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 8192063,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265637,Eragrostis lacunaria F. Muell. ex Benth.
 8192063,native range,Australasia (WGSRPD:5),9ff7d317-609b-4c08-bd86-3bc404b77c42,141265637,Eragrostis lacunaria F. Muell. ex Benth.
 8192063,pathway,cbd_2014_pathway:contaminant_on_animals,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265637,Eragrostis lacunaria F. Muell. ex Benth.
-8193935,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266072,Petroselinum crispum (Mill.) Nyman ex A.W. Hill
-8193935,native range,temperate Asia (WGSRPD:3),9ff7d317-609b-4c08-bd86-3bc404b77c42,141266072,Petroselinum crispum (Mill.) Nyman ex A.W. Hill
-8193935,pathway,cbd_2014_pathway:escape_agriculture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266072,Petroselinum crispum (Mill.) Nyman ex A.W. Hill
 8195160,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265353,Artemisia pontica L.
 8195160,native range,Europe (WGSRPD:1),9ff7d317-609b-4c08-bd86-3bc404b77c42,141265353,Artemisia pontica L.
 8195160,native range,temperate Asia (WGSRPD:3),9ff7d317-609b-4c08-bd86-3bc404b77c42,141265353,Artemisia pontica L.
@@ -9462,9 +9442,6 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 8207952,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266018,Matthiola incana (L.) R. Brown
 8207952,native range,Europe (WGSRPD:1),9ff7d317-609b-4c08-bd86-3bc404b77c42,141266018,Matthiola incana (L.) R. Brown
 8207952,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266018,Matthiola incana (L.) R. Brown
-8211936,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265218,Inula spiraeifolia L.
-8211936,native range,Europe (WGSRPD:1),9ff7d317-609b-4c08-bd86-3bc404b77c42,141265218,Inula spiraeifolia L.
-8211936,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265218,Inula spiraeifolia L.
 8223023,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265015,Saxifraga x geum L.
 8223023,native range,Europe (WGSRPD:1),9ff7d317-609b-4c08-bd86-3bc404b77c42,141265015,Saxifraga x geum L.
 8223023,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265015,Saxifraga x geum L.
@@ -9472,10 +9449,6 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 8227753,native range,Europe (WGSRPD:1),9ff7d317-609b-4c08-bd86-3bc404b77c42,141266345,Anchusa procera Besser
 8227753,native range,temperate Asia (WGSRPD:3),9ff7d317-609b-4c08-bd86-3bc404b77c42,141266345,Anchusa procera Besser
 8227753,pathway,cbd_2014_pathway:contaminant_on_animals,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266345,Anchusa procera Besser
-8233535,invasion stage,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265505,Linaria supina (L.) Chazelles
-8233535,native range,Africa (WGSRPD:2),9ff7d317-609b-4c08-bd86-3bc404b77c42,141265505,Linaria supina (L.) Chazelles
-8233535,native range,Europe (WGSRPD:1),9ff7d317-609b-4c08-bd86-3bc404b77c42,141265505,Linaria supina (L.) Chazelles
-8233535,pathway,cbd_2014_pathway:contaminant_habitat_material,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265505,Linaria supina (L.) Chazelles
 8241853,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264612,Athyrium niponicum (Mett.) Hance
 8241853,native range,temperate Asia (WGSRPD:3),9ff7d317-609b-4c08-bd86-3bc404b77c42,141264612,Athyrium niponicum (Mett.) Hance
 8241853,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264612,Athyrium niponicum (Mett.) Hance
@@ -9592,9 +9565,6 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 8392258,invasion stage,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265116,Erigeron annuus (L.) Desf. s.l.
 8392258,native range,Northern America (WGSRPD:7),9ff7d317-609b-4c08-bd86-3bc404b77c42,141265116,Erigeron annuus (L.) Desf. s.l.
 8392258,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265116,Erigeron annuus (L.) Desf. s.l.
-8400045,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264934,Daboecia cantabrica (Huds.) K.Koch
-8400045,native range,Europe (WGSRPD:1),9ff7d317-609b-4c08-bd86-3bc404b77c42,141264934,Daboecia cantabrica (Huds.) K.Koch
-8400045,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264934,Daboecia cantabrica (Huds.) K.Koch
 8402586,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266475,Malva x clementii (Cheek) Stace
 8402586,native range,cultivated origin,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266475,Malva x clementii (Cheek) Stace
 8402586,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266475,Malva x clementii (Cheek) Stace
@@ -9604,6 +9574,10 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 8418777,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265024,Lilium x hollandicum Bergmans ex Woodcock & Stearn
 8418777,native range,cultivated origin,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265024,Lilium x hollandicum Bergmans ex Woodcock & Stearn
 8418777,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265024,Lilium x hollandicum Bergmans ex Woodcock & Stearn
+8419625,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267193,Silene scabriflora Brot.
+8419625,native range,Africa (WGSRPD:2),9ff7d317-609b-4c08-bd86-3bc404b77c42,141267193,Silene scabriflora Brot.
+8419625,native range,Europe (WGSRPD:1),9ff7d317-609b-4c08-bd86-3bc404b77c42,141267193,Silene scabriflora Brot.
+8419625,pathway,cbd_2014_pathway:contaminant_seed,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267193,Silene scabriflora Brot.
 8420312,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265648,Phalaris platensis Henrard ex Heukels
 8420312,native range,Southern America (WGSRPD:8),9ff7d317-609b-4c08-bd86-3bc404b77c42,141265648,Phalaris platensis Henrard ex Heukels
 8420312,pathway,cbd_2014_pathway:contaminant_on_animals,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265648,Phalaris platensis Henrard ex Heukels
@@ -9630,9 +9604,6 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 8542672,native range,Australasia (WGSRPD:5),9ff7d317-609b-4c08-bd86-3bc404b77c42,141265070,Cotula australis (Sieber ex Spreng.) Hook. f.
 8542672,pathway,cbd_2014_pathway:contaminant_on_animals,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265070,Cotula australis (Sieber ex Spreng.) Hook. f.
 8542672,pathway,cbd_2014_pathway:stowaway_people_luggage,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265070,Cotula australis (Sieber ex Spreng.) Hook. f.
-8576221,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265435,Sorbus latifolia (Lam.) Pers.
-8576221,native range,Europe (WGSRPD:1),9ff7d317-609b-4c08-bd86-3bc404b77c42,141265435,Sorbus latifolia (Lam.) Pers.
-8576221,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265435,Sorbus latifolia (Lam.) Pers.
 8584304,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265134,Guizotia abyssinica (L. f.) Cass.
 8584304,native range,Africa (WGSRPD:2),9ff7d317-609b-4c08-bd86-3bc404b77c42,141265134,Guizotia abyssinica (L. f.) Cass.
 8584304,pathway,cbd_2014_pathway:contaminant_seed,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265134,Guizotia abyssinica (L. f.) Cass.
@@ -9773,9 +9744,6 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 9376410,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266314,Delosperma cooperi (Hook.f.) L. Bolus
 9376410,native range,Africa (WGSRPD:2),9ff7d317-609b-4c08-bd86-3bc404b77c42,141266314,Delosperma cooperi (Hook.f.) L. Bolus
 9376410,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266314,Delosperma cooperi (Hook.f.) L. Bolus
-9382645,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265389,Rosa virginiana J. Herrmann
-9382645,native range,Northern America (WGSRPD:7),9ff7d317-609b-4c08-bd86-3bc404b77c42,141265389,Rosa virginiana J. Herrmann
-9382645,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265389,Rosa virginiana J. Herrmann
 9393876,invasion stage,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265808,Spartina x townsendii H. & J. Groves
 9393876,native range,hybrid origin,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265808,Spartina x townsendii H. & J. Groves
 9429152,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266457,Erodium ciconium (L.) L'Hérit.
@@ -9822,10 +9790,12 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 9567226,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266123,Oxybasis glauca (L.) Fuentes & al. var. salina (Standley) Verloove
 9567226,native range,Northern America (WGSRPD:7),9ff7d317-609b-4c08-bd86-3bc404b77c42,141266123,Oxybasis glauca (L.) Fuentes & al. var. salina (Standley) Verloove
 9567226,pathway,cbd_2014_pathway:contaminant_seed,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266123,Oxybasis glauca (L.) Fuentes & al. var. salina (Standley) Verloove
-9671002,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265108,Centaurea x extranea Beck
-9671002,native range,hybrid origin,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265108,Centaurea x extranea Beck
+9733080,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266498,Sidalcea oregana (Nutt.) A. Gray
+9733080,native range,Northern America (WGSRPD:7),9ff7d317-609b-4c08-bd86-3bc404b77c42,141266498,Sidalcea oregana (Nutt.) A. Gray
+9733080,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266498,Sidalcea oregana (Nutt.) A. Gray
 9738098,invasion stage,established,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437923,"Bellamya chinensis (Gray, 1834)"
 9738098,native range,Southeast Asia,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437923,"Bellamya chinensis (Gray, 1834)"
 9738098,pathway,cbd_2014_pathway:escape_pet,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437923,"Bellamya chinensis (Gray, 1834)"
-9758813,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266389,x Reyllopia conollyana (J.P. Bailey) Galasso
-9758813,native range,hybrid origin,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266389,x Reyllopia conollyana (J.P. Bailey) Galasso
+10269496,native range,Australia,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438190,"Epuraea imperialis (Reitter, 1877)"
+10329298,invasion stage,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437946,"Haplodrassus securifer Bosmans & Abrous, 2018"
+10329298,native range,Mediterranean & Portugal,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437946,"Haplodrassus securifer Bosmans & Abrous, 2018"

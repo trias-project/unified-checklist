@@ -104,7 +104,9 @@ distributions_unified <-
     "port of Bruges-Zeebrugge" = "Flemish Region",
     "Port of Ghent" = "Flemish Region",
     "Spuikom" = "Flemish Region",
-    "Zeebrugge" = "Flemish Region"
+    "Zeebrugge" = "Flemish Region",
+    "Flanders" = "Flemish Region",
+    "Wallonia" = "Walloon Region"
   )) %>%
   mutate(locationId = case_when(
     locality == "Belgium" ~ "ISO_3166-2:BE",

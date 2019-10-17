@@ -581,7 +581,10 @@ distribution %<>% mutate(dwc_eventDate = case_when(
   TRUE ~ paste(startYear, endYear, sep = "/")
 ))
 ``` 
- 
+
+- Minimum year: `r distribution %>% summarize(min(startYear, na.rm = TRUE)) %>% pull()`
+- Maximum year: `r distribution %>% summarize(max(startYear, na.rm = TRUE)) %>% pull()`
+
 #### source
 
 A distribution can have multiple source taxa (i.e. two verified synonyms from the same checklist). We therefore separate `datasetKeys` and `scientificNames` in a maximum of three columns and build a source (see \@ref(citing-sources)) for each.

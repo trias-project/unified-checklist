@@ -269,7 +269,6 @@ verificationKey,locality,locationId,startYear,endYear,datasetKey,taxonKeys,scien
 2228667,Flemish Region,ISO_3166-2:BE-VLG,,,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132071,"Sinelobus stanfordi (Richardson, 1901)"
 2266009,Belgium,ISO_3166-2:BE,1905,1905,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131303,"Cordylophora caspia (Pallas, 1771)"
 2266009,Flemish Region,ISO_3166-2:BE-VLG,,,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131303,"Cordylophora caspia (Pallas, 1771)"
-2266521,Belgium,ISO_3166-2:BE,1962,1962,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131339,"Garveia franciscana (Torrey, 1902)"
 2266561,Belgium,ISO_3166-2:BE,1996,1996,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131336,"Nemopsis bachei L.Agassiz, 1849"
 2266754,Belgium,ISO_3166-2:BE,1946,1946,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131189,"Gonionemus vertens A.Agassiz, 1862"
 2266754,Flemish Region,ISO_3166-2:BE-VLG,,,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131189,"Gonionemus vertens A.Agassiz, 1862"
@@ -296,7 +295,6 @@ verificationKey,locality,locationId,startYear,endYear,datasetKey,taxonKeys,scien
 2294277,Belgium,ISO_3166-2:BE,1934,1934,e082b10e-476f-43c1-aa61-f8d92f33029a,157063085,"Theba pisana (O.F. Müller, 1774)"
 2295309,Belgium,ISO_3166-2:BE,2003,2003,e082b10e-476f-43c1-aa61-f8d92f33029a,157063256,"Hawaiia minuscula (Binney, 1841)"
 2295425,Belgium,ISO_3166-2:BE,2003,2003,e082b10e-476f-43c1-aa61-f8d92f33029a,157062947,"Zonitoides arboreus (Say, 1817)"
-2296801,Belgium,ISO_3166-2:BE,1867,1867,e082b10e-476f-43c1-aa61-f8d92f33029a,157063124,"Cernuella virgata (Da Costa, 1778)"
 2296805,Belgium,ISO_3166-2:BE,1976,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437904,Trochoidea elegans
 2296805,Flemish Region,ISO_3166-2:BE-VLG,1976,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437904,Trochoidea elegans
 2296807,Belgium,ISO_3166-2:BE,1946,1946,e082b10e-476f-43c1-aa61-f8d92f33029a,157063103,"Cochlicella barbara (Linnaeus, 1758)"
@@ -7021,6 +7019,7 @@ verificationKey,locality,locationId,startYear,endYear,datasetKey,taxonKeys,scien
 9752149,Belgium,ISO_3166-2:BE,1701,2019,e1c3be64-2799-4342-8312-49d076993132,159498405,Phasianus colchicus
 9772663,Belgium,ISO_3166-2:BE,,,e1c3be64-2799-4342-8312-49d076993132,159498300,"Leptoptilos crumenifer (Lesson, 1831)"
 9791464,Belgium,ISO_3166-2:BE,2011,2011,e1c3be64-2799-4342-8312-49d076993132,159498397,"Colinus virginianus (Linnaeus, 1758)"
+9805907,Belgium,ISO_3166-2:BE,1867,1867,e082b10e-476f-43c1-aa61-f8d92f33029a,157063124,"Cernuella virgata (Da Costa, 1778)"
 10172912,Belgium,ISO_3166-2:BE,2018,2018,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267189,Cerastium x maureri M. Schulze
 10172912,Flemish Region,ISO_3166-2:BE-VLG,2018,2018,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267189,Cerastium x maureri M. Schulze
 10173593,Belgium,ISO_3166-2:BE,1952,2015,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266452,Geranium x magnificum Hyl.

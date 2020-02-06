@@ -262,14 +262,14 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 2206086,pathway,cbd_2014_pathway:corridor_water,289244ee-e1c1-49aa-b2d7-d379391ce265,140562972,Proasellus meridianus
 2206086,pathway,cbd_2014_pathway:stowaway_hull_fouling,289244ee-e1c1-49aa-b2d7-d379391ce265,140562972,Proasellus meridianus
 2206086,pathway,cbd_2014_pathway:stowaway_other,289244ee-e1c1-49aa-b2d7-d379391ce265,140562972,Proasellus meridianus
-2215949,Introduced species impact,in German part of the North Sea (Marine Region) : Outcompetes native species for resources and/or space,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131913,"Melita nitida Smith, 1873"
-2215949,Introduced species impact,in Germany (Nation) : Other impact - undefined or uncertain,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131913,"Melita nitida Smith, 1873"
-2215949,Introduced species vector dispersal,in Belgian part of the North Sea: Ships: accidental as attached or free-living fouling organisms,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131913,"Melita nitida Smith, 1873"
-2215949,Introduced species vector dispersal,"in Belgian part of the North Sea: Ships: accidental with ballast water, sea water systems, live wells or other deck basins",0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131913,"Melita nitida Smith, 1873"
-2215949,Introduced species vector dispersal,in Dutch part of the North Sea : Debris: transport of species on human generated debris,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131913,"Melita nitida Smith, 1873"
-2215949,Introduced species vector dispersal,in Dutch part of the North Sea : Shipping,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131913,"Melita nitida Smith, 1873"
-2215949,Introduced species vector dispersal,in German part of the North Sea (Marine Region) : Ships: accidental as attached or free-living fouling organisms,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131913,"Melita nitida Smith, 1873"
-2215949,Introduced species vector dispersal,"in Germany (Nation) : Ships: accidental with ballast water, sea water systems, live wells or other deck basins",0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131913,"Melita nitida Smith, 1873"
+2215949,Introduced species impact,in German part of the North Sea (Marine Region) : Outcompetes native species for resources and/or space,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131913,"Melita nitida S.I.Smith, 1873"
+2215949,Introduced species impact,in Germany (Nation) : Other impact - undefined or uncertain,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131913,"Melita nitida S.I.Smith, 1873"
+2215949,Introduced species vector dispersal,in Belgian part of the North Sea: Ships: accidental as attached or free-living fouling organisms,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131913,"Melita nitida S.I.Smith, 1873"
+2215949,Introduced species vector dispersal,"in Belgian part of the North Sea: Ships: accidental with ballast water, sea water systems, live wells or other deck basins",0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131913,"Melita nitida S.I.Smith, 1873"
+2215949,Introduced species vector dispersal,in Dutch part of the North Sea : Debris: transport of species on human generated debris,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131913,"Melita nitida S.I.Smith, 1873"
+2215949,Introduced species vector dispersal,in Dutch part of the North Sea : Shipping,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131913,"Melita nitida S.I.Smith, 1873"
+2215949,Introduced species vector dispersal,in German part of the North Sea (Marine Region) : Ships: accidental as attached or free-living fouling organisms,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131913,"Melita nitida S.I.Smith, 1873"
+2215949,Introduced species vector dispersal,"in Germany (Nation) : Ships: accidental with ballast water, sea water systems, live wells or other deck basins",0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131913,"Melita nitida S.I.Smith, 1873"
 2215949,invasion stage,established,289244ee-e1c1-49aa-b2d7-d379391ce265,140562985,Melita nitida
 2215949,native range,Northern America,289244ee-e1c1-49aa-b2d7-d379391ce265,140562985,Melita nitida
 2215949,pathway,cbd_2014_pathway:stowaway_ballast_water,289244ee-e1c1-49aa-b2d7-d379391ce265,140562985,Melita nitida
@@ -353,46 +353,46 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 2225646,native range,Northern America,289244ee-e1c1-49aa-b2d7-d379391ce265,140563016,Callinectes sapidus
 2225646,pathway,cbd_2014_pathway:stowaway_hull_fouling,289244ee-e1c1-49aa-b2d7-d379391ce265,140563016,Callinectes sapidus
 2225646,pathway,cbd_2014_pathway:stowaway_other,289244ee-e1c1-49aa-b2d7-d379391ce265,140563016,Callinectes sapidus
-2225772,Introduced species abundance,"in Black Sea (IHO Sea Area) :  One specimen was collected from a yacht harbor in Constanta, Romania, on the Black Sea.",0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,"Hemigrapsus sanguineus (De Haan, 1835)"
-2225772,Introduced species abundance,in Croatian part of the Adriatic Sea : A single specimen was found in Croatia (Schubart 2003).,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,"Hemigrapsus sanguineus (De Haan, 1835)"
-2225772,Introduced species abundance,in Dutch part of the North Sea : Common,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,"Hemigrapsus sanguineus (De Haan, 1835)"
-2225772,Introduced species abundance,in French part of the English Channel (Marine Region) : Common,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,"Hemigrapsus sanguineus (De Haan, 1835)"
-2225772,Introduced species abundance,in French part of the English Channel (Marine Region) : Locally common,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,"Hemigrapsus sanguineus (De Haan, 1835)"
-2225772,Introduced species abundance,in French part of the North Atlantic Ocean (Marine Region) : Common to dominant,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,"Hemigrapsus sanguineus (De Haan, 1835)"
-2225772,Introduced species abundance,in French part of the North Sea (Marine Region) : Common,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,"Hemigrapsus sanguineus (De Haan, 1835)"
-2225772,Introduced species abundance,"in Italy (Nation) : According to personal communications from Italian scientists to Greg Ruiz, this crab is established near the Po River Delta.",0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,"Hemigrapsus sanguineus (De Haan, 1835)"
-2225772,Introduced species abundance,in North Sea (IHO Sea Area) : Common,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,"Hemigrapsus sanguineus (De Haan, 1835)"
-2225772,Introduced species abundance,"in Romanian part of the Black Sea :  One specimen was collected from a yacht harbor in Constanta, Romania, on the Black Sea.",0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,"Hemigrapsus sanguineus (De Haan, 1835)"
-2225772,Introduced species impact,in Celtic Sea (IHO Sea Area) : Other impact - undefined or uncertain,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,"Hemigrapsus sanguineus (De Haan, 1835)"
-2225772,Introduced species impact,in French part of the English Channel (Marine Region) : Other impact - undefined or uncertain,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,"Hemigrapsus sanguineus (De Haan, 1835)"
-2225772,Introduced species impact,in French part of the English Channel (Marine Region) : Outcompetes native species for resources and/or space,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,"Hemigrapsus sanguineus (De Haan, 1835)"
-2225772,Introduced species impact,in French part of the North Atlantic Ocean (Marine Region) : Outcompetes native species for resources and/or space,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,"Hemigrapsus sanguineus (De Haan, 1835)"
-2225772,Introduced species impact,in French part of the North Sea (Marine Region) : Outcompetes native species for resources and/or space,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,"Hemigrapsus sanguineus (De Haan, 1835)"
-2225772,Introduced species impact,in Romanian part of the Black Sea : Outcompetes native species for resources and/or space,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,"Hemigrapsus sanguineus (De Haan, 1835)"
-2225772,Introduced species population trend,"in Black Sea (IHO Sea Area) : Reproduction here is unlikely, because of the low salinity (~ 18 PSU) (Micu et al. 2010).",0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,"Hemigrapsus sanguineus (De Haan, 1835)"
-2225772,Introduced species population trend,in Dutch part of the North Sea : Increasing,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,"Hemigrapsus sanguineus (De Haan, 1835)"
-2225772,Introduced species population trend,in French part of the English Channel : Increasing,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,"Hemigrapsus sanguineus (De Haan, 1835)"
-2225772,Introduced species population trend,in French part of the English Channel (Marine Region) : Increasing,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,"Hemigrapsus sanguineus (De Haan, 1835)"
-2225772,Introduced species population trend,in French part of the North Atlantic Ocean (Marine Region) : Increasing,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,"Hemigrapsus sanguineus (De Haan, 1835)"
-2225772,Introduced species population trend,in French part of the North Sea (Marine Region) : Increasing,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,"Hemigrapsus sanguineus (De Haan, 1835)"
-2225772,Introduced species population trend,"in Romanian part of the Black Sea : Reproduction here is unlikely, because of the low salinity (~ 18 PSU) (Micu et al. 2010).",0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,"Hemigrapsus sanguineus (De Haan, 1835)"
-2225772,Introduced species remark,"In French part of the English Channel (Marine Region) : In future, may present threat to shellfish farms and aquaculture production",0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,"Hemigrapsus sanguineus (De Haan, 1835)"
-2225772,Introduced species vector dispersal,in Belgian part of the North Sea: Aquaculture: accidental,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,"Hemigrapsus sanguineus (De Haan, 1835)"
-2225772,Introduced species vector dispersal,"in Belgian part of the North Sea: Ships: accidental with ballast water, sea water systems, live wells or other deck basins",0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,"Hemigrapsus sanguineus (De Haan, 1835)"
-2225772,Introduced species vector dispersal,"in Black Sea (IHO Sea Area) : Ships: accidental with ballast water, sea water systems, live wells or other deck basins<br/>Ballast water is the most likely vector for its initial introduction, though ship/boat fouling and natural dispersal of larvae may contribute to its local spread.",0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,"Hemigrapsus sanguineus (De Haan, 1835)"
-2225772,Introduced species vector dispersal,in Celtic Sea (IHO Sea Area) : Recreational equipment: accidental with recreational equipment,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,"Hemigrapsus sanguineus (De Haan, 1835)"
-2225772,Introduced species vector dispersal,in Celtic Sea (IHO Sea Area) : The most likely vector of introduction for the species to the Tomis Marina was the movement of adult individuals in the hull fouling of a recreational yacht,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,"Hemigrapsus sanguineus (De Haan, 1835)"
-2225772,Introduced species vector dispersal,in Dutch part of the North Sea : Shipping,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,"Hemigrapsus sanguineus (De Haan, 1835)"
-2225772,Introduced species vector dispersal,"in Dutch part of the North Sea : Ships: accidental with ballast water, sea water systems, live wells or other deck basins",0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,"Hemigrapsus sanguineus (De Haan, 1835)"
-2225772,Introduced species vector dispersal,in France (Nation) : Shipping,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,"Hemigrapsus sanguineus (De Haan, 1835)"
-2225772,Introduced species vector dispersal,"in French Exclusive Economic Zone (EEZ) : Ships: accidental with ballast water, sea water systems, live wells or other deck basins<br/>Ballast water is the most likely vector for its initial introduction, though ship/boat fouling and natural dispersal of larvae may contribute to its local spread.",0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,"Hemigrapsus sanguineus (De Haan, 1835)"
-2225772,Introduced species vector dispersal,"in French part of the English Channel (Marine Region) : Ships: accidental with ballast water, sea water systems, live wells or other deck basins",0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,"Hemigrapsus sanguineus (De Haan, 1835)"
-2225772,Introduced species vector dispersal,"in French part of the North Atlantic Ocean (Marine Region) : Ships: accidental with ballast water, sea water systems, live wells or other deck basins",0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,"Hemigrapsus sanguineus (De Haan, 1835)"
-2225772,Introduced species vector dispersal,"in French part of the North Sea (Marine Region) : Ships: accidental with ballast water, sea water systems, live wells or other deck basins",0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,"Hemigrapsus sanguineus (De Haan, 1835)"
-2225772,Introduced species vector dispersal,"in Germany (Nation) : Ships: accidental with ballast water, sea water systems, live wells or other deck basins<br/>Ballast water is the most likely vector for its initial introduction, though ship/boat fouling and natural dispersal of larvae may contribute to its local spread.",0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,"Hemigrapsus sanguineus (De Haan, 1835)"
-2225772,Introduced species vector dispersal,in North Sea (IHO Sea Area) : Ships: accidental associated with cargo,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,"Hemigrapsus sanguineus (De Haan, 1835)"
-2225772,Introduced species vector dispersal,"in Romanian part of the Black Sea : Ships: accidental with ballast water, sea water systems, live wells or other deck basins",0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,"Hemigrapsus sanguineus (De Haan, 1835)"
-2225772,Introduced species vector dispersal,"in United States part of the North Atlantic Ocean (Marine Region): Ships: accidental with solid ballast (e.g.rocks, sand, etc)",0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,"Hemigrapsus sanguineus (De Haan, 1835)"
+2225772,Introduced species abundance,"in Black Sea (IHO Sea Area) :  One specimen was collected from a yacht harbor in Constanta, Romania, on the Black Sea.",0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,Hemigrapsus sanguineus
+2225772,Introduced species abundance,in Croatian part of the Adriatic Sea : A single specimen was found in Croatia (Schubart 2003).,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,Hemigrapsus sanguineus
+2225772,Introduced species abundance,in Dutch part of the North Sea : Common,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,Hemigrapsus sanguineus
+2225772,Introduced species abundance,in French part of the English Channel (Marine Region) : Common,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,Hemigrapsus sanguineus
+2225772,Introduced species abundance,in French part of the English Channel (Marine Region) : Locally common,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,Hemigrapsus sanguineus
+2225772,Introduced species abundance,in French part of the North Atlantic Ocean (Marine Region) : Common to dominant,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,Hemigrapsus sanguineus
+2225772,Introduced species abundance,in French part of the North Sea (Marine Region) : Common,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,Hemigrapsus sanguineus
+2225772,Introduced species abundance,"in Italy (Nation) : According to personal communications from Italian scientists to Greg Ruiz, this crab is established near the Po River Delta.",0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,Hemigrapsus sanguineus
+2225772,Introduced species abundance,in North Sea (IHO Sea Area) : Common,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,Hemigrapsus sanguineus
+2225772,Introduced species abundance,"in Romanian part of the Black Sea :  One specimen was collected from a yacht harbor in Constanta, Romania, on the Black Sea.",0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,Hemigrapsus sanguineus
+2225772,Introduced species impact,in Celtic Sea (IHO Sea Area) : Other impact - undefined or uncertain,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,Hemigrapsus sanguineus
+2225772,Introduced species impact,in French part of the English Channel (Marine Region) : Other impact - undefined or uncertain,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,Hemigrapsus sanguineus
+2225772,Introduced species impact,in French part of the English Channel (Marine Region) : Outcompetes native species for resources and/or space,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,Hemigrapsus sanguineus
+2225772,Introduced species impact,in French part of the North Atlantic Ocean (Marine Region) : Outcompetes native species for resources and/or space,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,Hemigrapsus sanguineus
+2225772,Introduced species impact,in French part of the North Sea (Marine Region) : Outcompetes native species for resources and/or space,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,Hemigrapsus sanguineus
+2225772,Introduced species impact,in Romanian part of the Black Sea : Outcompetes native species for resources and/or space,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,Hemigrapsus sanguineus
+2225772,Introduced species population trend,"in Black Sea (IHO Sea Area) : Reproduction here is unlikely, because of the low salinity (~ 18 PSU) (Micu et al. 2010).",0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,Hemigrapsus sanguineus
+2225772,Introduced species population trend,in Dutch part of the North Sea : Increasing,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,Hemigrapsus sanguineus
+2225772,Introduced species population trend,in French part of the English Channel : Increasing,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,Hemigrapsus sanguineus
+2225772,Introduced species population trend,in French part of the English Channel (Marine Region) : Increasing,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,Hemigrapsus sanguineus
+2225772,Introduced species population trend,in French part of the North Atlantic Ocean (Marine Region) : Increasing,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,Hemigrapsus sanguineus
+2225772,Introduced species population trend,in French part of the North Sea (Marine Region) : Increasing,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,Hemigrapsus sanguineus
+2225772,Introduced species population trend,"in Romanian part of the Black Sea : Reproduction here is unlikely, because of the low salinity (~ 18 PSU) (Micu et al. 2010).",0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,Hemigrapsus sanguineus
+2225772,Introduced species remark,"In French part of the English Channel (Marine Region) : In future, may present threat to shellfish farms and aquaculture production",0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,Hemigrapsus sanguineus
+2225772,Introduced species vector dispersal,in Belgian part of the North Sea: Aquaculture: accidental,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,Hemigrapsus sanguineus
+2225772,Introduced species vector dispersal,"in Belgian part of the North Sea: Ships: accidental with ballast water, sea water systems, live wells or other deck basins",0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,Hemigrapsus sanguineus
+2225772,Introduced species vector dispersal,"in Black Sea (IHO Sea Area) : Ships: accidental with ballast water, sea water systems, live wells or other deck basins<br/>Ballast water is the most likely vector for its initial introduction, though ship/boat fouling and natural dispersal of larvae may contribute to its local spread.",0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,Hemigrapsus sanguineus
+2225772,Introduced species vector dispersal,in Celtic Sea (IHO Sea Area) : Recreational equipment: accidental with recreational equipment,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,Hemigrapsus sanguineus
+2225772,Introduced species vector dispersal,in Celtic Sea (IHO Sea Area) : The most likely vector of introduction for the species to the Tomis Marina was the movement of adult individuals in the hull fouling of a recreational yacht,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,Hemigrapsus sanguineus
+2225772,Introduced species vector dispersal,in Dutch part of the North Sea : Shipping,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,Hemigrapsus sanguineus
+2225772,Introduced species vector dispersal,"in Dutch part of the North Sea : Ships: accidental with ballast water, sea water systems, live wells or other deck basins",0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,Hemigrapsus sanguineus
+2225772,Introduced species vector dispersal,in France (Nation) : Shipping,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,Hemigrapsus sanguineus
+2225772,Introduced species vector dispersal,"in French Exclusive Economic Zone (EEZ) : Ships: accidental with ballast water, sea water systems, live wells or other deck basins<br/>Ballast water is the most likely vector for its initial introduction, though ship/boat fouling and natural dispersal of larvae may contribute to its local spread.",0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,Hemigrapsus sanguineus
+2225772,Introduced species vector dispersal,"in French part of the English Channel (Marine Region) : Ships: accidental with ballast water, sea water systems, live wells or other deck basins",0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,Hemigrapsus sanguineus
+2225772,Introduced species vector dispersal,"in French part of the North Atlantic Ocean (Marine Region) : Ships: accidental with ballast water, sea water systems, live wells or other deck basins",0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,Hemigrapsus sanguineus
+2225772,Introduced species vector dispersal,"in French part of the North Sea (Marine Region) : Ships: accidental with ballast water, sea water systems, live wells or other deck basins",0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,Hemigrapsus sanguineus
+2225772,Introduced species vector dispersal,"in Germany (Nation) : Ships: accidental with ballast water, sea water systems, live wells or other deck basins<br/>Ballast water is the most likely vector for its initial introduction, though ship/boat fouling and natural dispersal of larvae may contribute to its local spread.",0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,Hemigrapsus sanguineus
+2225772,Introduced species vector dispersal,in North Sea (IHO Sea Area) : Ships: accidental associated with cargo,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,Hemigrapsus sanguineus
+2225772,Introduced species vector dispersal,"in Romanian part of the Black Sea : Ships: accidental with ballast water, sea water systems, live wells or other deck basins",0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,Hemigrapsus sanguineus
+2225772,Introduced species vector dispersal,"in United States part of the North Atlantic Ocean (Marine Region): Ships: accidental with solid ballast (e.g.rocks, sand, etc)",0a2eaf0c-5504-4f48-a47f-c94229029dc8,157132322,Hemigrapsus sanguineus
 2225772,invasion stage,established,289244ee-e1c1-49aa-b2d7-d379391ce265,140563011,Hemigrapsus sanguineus
 2225772,native range,Northern America,289244ee-e1c1-49aa-b2d7-d379391ce265,140563011,Hemigrapsus sanguineus
 2225772,pathway,cbd_2014_pathway:stowaway_ballast_water,289244ee-e1c1-49aa-b2d7-d379391ce265,140563011,Hemigrapsus sanguineus
@@ -542,15 +542,6 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 2266009,Introduced species vector dispersal,in Panamanian part of the North Pacific Ocean (Marine Region) : Ships: general<br/>Shipping has spread C. caspia through much of the world.,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131303,"Cordylophora caspia (Pallas, 1771)"
 2266009,Introduced species vector dispersal,in Ukraine (Nation) : Ships: general<br/>Shipping has spread C. caspia through much of the world.,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131303,"Cordylophora caspia (Pallas, 1771)"
 2266009,Introduced species vector dispersal,in Uruguay (Nation) : Ships: general<br/>Shipping has spread C. caspia through much of the world.,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131303,"Cordylophora caspia (Pallas, 1771)"
-2266521,Introduced species abundance,in Adriatic Sea (IHO Sea Area) : abundant (Mizzan 1999),0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131339,"Garveia franciscana (Torrey, 1902)"
-2266521,Introduced species abundance,in Black Sea (IHO Sea Area) : widespread and abundant,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131339,"Garveia franciscana (Torrey, 1902)"
-2266521,Introduced species abundance,in Panamanian part of the Caribbean Sea (Marine Region) : Abundant in the Gatun Locks in 1924,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131339,"Garveia franciscana (Torrey, 1902)"
-2266521,Introduced species impact,in Sea of Azov (IHO Sea Area) : Loss of aquaculture/commercial/recreational harvest or gain,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131339,"Garveia franciscana (Torrey, 1902)"
-2266521,Introduced species impact,in Ukraine (Nation) : Loss of aquaculture/commercial/recreational harvest or gain,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131339,"Garveia franciscana (Torrey, 1902)"
-2266521,Introduced species remark,"In Sea of Azov (IHO Sea Area) : Fouling of power plants and other industrial water systems by G. franciscana has been reported from Chesapeake Bay (Cory 1967; Virginia Power 1992); Lake Maracaibo, Venezuela (de Rincon and Morris 2003); and the Sea of Azov, Ukraine (Simkina 1963; Simkina 1965).",0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131339,"Garveia franciscana (Torrey, 1902)"
-2266521,Introduced species remark,"In Ukraine (Nation) : Fouling of power plants and other industrial water systems by G. franciscana has been reported from Chesapeake Bay (Cory 1967; Virginia Power 1992); Lake Maracaibo, Venezuela (de Rincon and Morris 2003); and the Sea of Azov, Ukraine (Simkina 1963; Simkina 1965).",0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131339,"Garveia franciscana (Torrey, 1902)"
-2266521,Introduced species vector dispersal,"in Belgian part of the North Sea: Ships: accidental with ballast water, sea water systems, live wells or other deck basins",0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131339,"Garveia franciscana (Torrey, 1902)"
-2266521,Introduced species vector dispersal,in Dutch part of the North Sea : Shipping,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131339,"Garveia franciscana (Torrey, 1902)"
 2266561,Introduced species vector dispersal,in Belgian part of the North Sea: Aquaculture: accidental,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131336,"Nemopsis bachei L.Agassiz, 1849"
 2266561,Introduced species vector dispersal,in Belgian part of the North Sea: Debris: transport of species on human generated debris,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131336,"Nemopsis bachei L.Agassiz, 1849"
 2266561,Introduced species vector dispersal,in Belgian part of the North Sea: Ships: accidental as attached or free-living fouling organisms,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131336,"Nemopsis bachei L.Agassiz, 1849"
@@ -689,13 +680,6 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 2295425,native range,North America,e082b10e-476f-43c1-aa61-f8d92f33029a,157062947,"Zonitoides arboreus (Say, 1817)"
 2295425,pathway,cbd_2014_pathway:contaminant_habitat_material,e082b10e-476f-43c1-aa61-f8d92f33029a,157062947,"Zonitoides arboreus (Say, 1817)"
 2295425,pathway,cbd_2014_pathway:contaminant_on_plants,e082b10e-476f-43c1-aa61-f8d92f33029a,157062947,"Zonitoides arboreus (Say, 1817)"
-2296801,degree of establishment,blackburn_et_al_2011:E,e082b10e-476f-43c1-aa61-f8d92f33029a,157063124,"Cernuella virgata (Da Costa, 1778)"
-2296801,native range,central Mediterranean coastal areas,e082b10e-476f-43c1-aa61-f8d92f33029a,157063124,"Cernuella virgata (Da Costa, 1778)"
-2296801,native range,western Mediterranean coastal areas,e082b10e-476f-43c1-aa61-f8d92f33029a,157063124,"Cernuella virgata (Da Costa, 1778)"
-2296801,pathway,cbd_2014_pathway:release_other,e082b10e-476f-43c1-aa61-f8d92f33029a,157063124,"Cernuella virgata (Da Costa, 1778)"
-2296801,pathway,cbd_2014_pathway:stowaway_people_luggage,e082b10e-476f-43c1-aa61-f8d92f33029a,157063124,"Cernuella virgata (Da Costa, 1778)"
-2296801,pathway,cbd_2014_pathway:stowaway_vehicles,e082b10e-476f-43c1-aa61-f8d92f33029a,157063124,"Cernuella virgata (Da Costa, 1778)"
-2296801,pathway,cbd_2014_pathway:unaided,e082b10e-476f-43c1-aa61-f8d92f33029a,157063124,"Cernuella virgata (Da Costa, 1778)"
 2296805,native range,Europe (WGSRPD:1),1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042390,"Trochoidea elegans (Gmelin, 1791)"
 2296805,pathway,cbd_2014_pathway:contaminant,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042390,"Trochoidea elegans (Gmelin, 1791)"
 2296805,pathway,cbd_2014_pathway:stowaway,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042390,"Trochoidea elegans (Gmelin, 1791)"
@@ -10552,6 +10536,13 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 9772663,pathway,cbd_2014_pathway:escape,e1c3be64-2799-4342-8312-49d076993132,159498300,"Leptoptilos crumenifer (Lesson, 1831)"
 9791464,native range,Northern America (WGSRPD:7),e1c3be64-2799-4342-8312-49d076993132,159498397,"Colinus virginianus (Linnaeus, 1758)"
 9791464,pathway,cbd_2014_pathway:escape_pet,e1c3be64-2799-4342-8312-49d076993132,159498397,"Colinus virginianus (Linnaeus, 1758)"
+9805907,degree of establishment,blackburn_et_al_2011:E,e082b10e-476f-43c1-aa61-f8d92f33029a,157063124,"Cernuella virgata (Da Costa, 1778)"
+9805907,native range,central Mediterranean coastal areas,e082b10e-476f-43c1-aa61-f8d92f33029a,157063124,"Cernuella virgata (Da Costa, 1778)"
+9805907,native range,western Mediterranean coastal areas,e082b10e-476f-43c1-aa61-f8d92f33029a,157063124,"Cernuella virgata (Da Costa, 1778)"
+9805907,pathway,cbd_2014_pathway:release_other,e082b10e-476f-43c1-aa61-f8d92f33029a,157063124,"Cernuella virgata (Da Costa, 1778)"
+9805907,pathway,cbd_2014_pathway:stowaway_people_luggage,e082b10e-476f-43c1-aa61-f8d92f33029a,157063124,"Cernuella virgata (Da Costa, 1778)"
+9805907,pathway,cbd_2014_pathway:stowaway_vehicles,e082b10e-476f-43c1-aa61-f8d92f33029a,157063124,"Cernuella virgata (Da Costa, 1778)"
+9805907,pathway,cbd_2014_pathway:unaided,e082b10e-476f-43c1-aa61-f8d92f33029a,157063124,"Cernuella virgata (Da Costa, 1778)"
 10172912,invasion stage,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267189,Cerastium x maureri M. Schulze
 10172912,native range,hybrid origin,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267189,Cerastium x maureri M. Schulze
 10173593,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266452,Geranium x magnificum Hyl.

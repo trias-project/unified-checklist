@@ -79,7 +79,7 @@ distributions_unified <-
 
 2. Filter distributions: this was already done in \@ref(filter-on-distribution), where only distributions of interest were kept.
 
-3. Convert specific localities (from WRIMS) to regional or national localities.
+3. Convert specific localities (from WRIMS) to regional or national localities:
 
 ```{r unify_information-5, echo = TRUE}
 distributions_unified <-
@@ -108,10 +108,14 @@ distributions_unified <-
     "Flanders" = "Flemish Region",
     "Wallonia" = "Walloon Region"
   )) %>%
+  
+  # Standardize locationId for all
   mutate(locationId = case_when(
-    locality == "Belgium" ~ "ISO_3166-2:BE",
-    locality == "Flemish Region" ~ "ISO_3166-2:BE-VLG",
-    TRUE ~ locationId
+    locality == "Belgium" ~ "ISO_3166:BE",
+    locality == "Brussels-Capital Region" ~ "ISO_3166:BE-BRU",
+    locality == "Flemish Region" ~ "ISO_3166:BE-VLG",
+    locality == "Walloon Region" ~ "ISO_3166:BE-WAL",
+    TRUE ~ NA_character_
   ))
 ```
 
@@ -144,7 +148,7 @@ distributions_belgium_from_regions <-
   # Add locality and locationId
   mutate(
     locality = "Belgium",
-    locationId = "ISO_3166-2:BE"
+    locationId = "ISO_3166:BE"
   ) %>%
 
   # Order columns

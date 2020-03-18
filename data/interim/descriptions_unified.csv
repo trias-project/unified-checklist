@@ -1370,8 +1370,9 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 2498160,pathway,cbd_2014_pathway:escape_farm,e1c3be64-2799-4342-8312-49d076993132,159498617,"Chen rossii (Cassin, 1861)"
 2498160,pathway,cbd_2014_pathway:escape_pet,e1c3be64-2799-4342-8312-49d076993132,159498617,"Chen rossii (Cassin, 1861)"
 2498162,native range,Eastern Asian Russia,e1c3be64-2799-4342-8312-49d076993132,159498618,"Chen canagica (Sevastianov, 1802)"
-2498162,pathway,cbd_2014_pathway:escape_farm,e1c3be64-2799-4342-8312-49d076993132,159498618,"Chen canagica (Sevastianov, 1802)"
-2498162,pathway,cbd_2014_pathway:escape_pet,e1c3be64-2799-4342-8312-49d076993132,159498618,"Chen canagica (Sevastianov, 1802)"
+2498162,native range,Russia,e1c3be64-2799-4342-8312-49d076993132,159498553,"Anser canagicus (Sevastianov, 1802)"
+2498162,pathway,cbd_2014_pathway:escape_farm,e1c3be64-2799-4342-8312-49d076993132,159498553,"Anser canagicus (Sevastianov, 1802)"
+2498162,pathway,cbd_2014_pathway:escape_pet,e1c3be64-2799-4342-8312-49d076993132,159498553,"Anser canagicus (Sevastianov, 1802)"
 2498165,native range,Northern America (WGSRPD:7),e1c3be64-2799-4342-8312-49d076993132,159498616,"Chen caerulescens Linnaeus, 1758"
 2498165,pathway,cbd_2014_pathway:escape_farm,e1c3be64-2799-4342-8312-49d076993132,159498616,"Chen caerulescens Linnaeus, 1758"
 2498165,pathway,cbd_2014_pathway:escape_pet,e1c3be64-2799-4342-8312-49d076993132,159498616,"Chen caerulescens Linnaeus, 1758"
@@ -5690,6 +5691,9 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 3872463,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264598,Tarenaya hassleriana (Chodat) Iltis
 3872463,native range,Southern America (WGSRPD:8),9ff7d317-609b-4c08-bd86-3bc404b77c42,141264598,Tarenaya hassleriana (Chodat) Iltis
 3872463,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264598,Tarenaya hassleriana (Chodat) Iltis
+3874408,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,143605050,Humulus japonicus Sieb. et Zucc.
+3874408,native range,Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,143605050,Humulus japonicus Sieb. et Zucc.
+3874408,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,143605050,Humulus japonicus Sieb. et Zucc.
 3875113,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264995,Ceanothus x delilianus Spach
 3875113,native range,cultivated origin,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264995,Ceanothus x delilianus Spach
 3875113,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264995,Ceanothus x delilianus Spach

@@ -609,7 +609,7 @@ verificationKey,locality,locationId,startYear,endYear,datasetKey,taxonKeys,scien
 2498154,Belgium,ISO_3166:BE,,,e1c3be64-2799-4342-8312-49d076993132,159498592,"Anas americana (Gmelin, 1789)"
 2498156,Belgium,ISO_3166:BE,2005,2005,e1c3be64-2799-4342-8312-49d076993132,159498594,"Anas undulata C.F.Dubois, 1839"
 2498160,Belgium,ISO_3166:BE,1987,2015,e1c3be64-2799-4342-8312-49d076993132,159498617,"Chen rossii (Cassin, 1861)"
-2498162,Belgium,ISO_3166:BE,2002,2002,e1c3be64-2799-4342-8312-49d076993132,159498618,"Chen canagica (Sevastianov, 1802)"
+2498162,Belgium,ISO_3166:BE,2002,2019,e1c3be64-2799-4342-8312-49d076993132,159498553|159498618,"Anser canagicus (Sevastianov, 1802)|Chen canagica (Sevastianov, 1802)"
 2498165,Belgium,ISO_3166:BE,1985,2016,e1c3be64-2799-4342-8312-49d076993132,159498616,"Chen caerulescens Linnaeus, 1758"
 2498181,Belgium,ISO_3166:BE,,,e1c3be64-2799-4342-8312-49d076993132,159498569,"Netta peposaca (Vieillot, 1816)"
 2498252,Belgium,ISO_3166:BE,1984,2019,e1c3be64-2799-4342-8312-49d076993132,159498531,"Alopochen aegyptiaca (Linnaeus, 1766)"
@@ -3816,6 +3816,9 @@ verificationKey,locality,locationId,startYear,endYear,datasetKey,taxonKeys,scien
 3872463,Belgium,ISO_3166:BE,1977,2017,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264598,Tarenaya hassleriana (Chodat) Iltis
 3872463,Flemish Region,ISO_3166:BE-VLG,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264598,Tarenaya hassleriana (Chodat) Iltis
 3872463,Walloon Region,ISO_3166:BE-WAL,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264598,Tarenaya hassleriana (Chodat) Iltis
+3874408,Belgium,ISO_3166:BE,1954,1955,9ff7d317-609b-4c08-bd86-3bc404b77c42,143605050,Humulus japonicus Sieb. et Zucc.
+3874408,Brussels-Capital Region,ISO_3166:BE-BRU,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,143605050,Humulus japonicus Sieb. et Zucc.
+3874408,Flemish Region,ISO_3166:BE-VLG,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,143605050,Humulus japonicus Sieb. et Zucc.
 3875113,Belgium,ISO_3166:BE,1992,1992,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264995,Ceanothus x delilianus Spach
 3875113,Flemish Region,ISO_3166:BE-VLG,1992,1992,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264995,Ceanothus x delilianus Spach
 3883897,Belgium,ISO_3166:BE,1855,2018,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266263,Clinopodium menthifolium (Host) Stace

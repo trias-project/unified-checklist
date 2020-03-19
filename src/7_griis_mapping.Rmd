@@ -4,7 +4,7 @@ In this chapter we export the unified information to an Excel template that can 
 
 ## Read Darwin Core data
 
-```{r echo = TRUE}
+```{r griis_mapping-1 echo = TRUE}
 dwc_taxon <- read_csv(here("data", "processed", "taxon.csv"))
 dwc_distribution <- read_csv(here("data", "processed", "distribution.csv"))
 dwc_speciesprofile <- read_csv(here("data", "processed", "speciesprofile.csv"))
@@ -12,7 +12,7 @@ dwc_speciesprofile <- read_csv(here("data", "processed", "speciesprofile.csv"))
 
 Select only national distributions
 
-```{r}
+```{r griis_mapping-2}
 dwc_distribution <- dwc_distribution %>% filter(locality == "Belgium")
 ```
 
@@ -22,7 +22,7 @@ dwc_distribution <- dwc_distribution %>% filter(locality == "Belgium")
 
 1. Check if the taxon core, distribution extension and species profile extension contain only one row per `taxonID`.
 
-```{r}
+```{r griis_mapping-3}
 nrow(dwc_taxon) == dwc_taxon %>%
   distinct(taxonID) %>%
   nrow()
@@ -36,7 +36,7 @@ nrow(dwc_speciesprofile) == dwc_speciesprofile %>%
 
 2. Join the 3 files into one dataframe `griis`.
 
-```{r}
+```{r griis_mapping-4}
 griis <-
   # taxa
   dwc_taxon %>%
@@ -58,31 +58,31 @@ griis <-
 
 #### taxonID
 
-```{r echo = TRUE}
+```{r griis_mapping-5 echo = TRUE}
 griis %<>% mutate(griis_taxonID = taxonID)
 ```
 
 #### countryCode
 
-```{r echo = TRUE}
+```{r griis_mapping-6 echo = TRUE}
 griis %<>% mutate(griis_countryCode = countryCode)
 ```
 
 #### island
 
-```{r echo = TRUE}
+```{r griis_mapping-7 echo = TRUE}
 griis %<>% mutate(griis_island = "")
 ```
 
 #### scientificName
 
-```{r echo = TRUE}
+```{r griis_mapping-8 echo = TRUE}
 griis %<>% mutate(griis_scientificName = scientificName)
 ```
 
 #### acceptedNameUsage
 
-```{r echo = TRUE}
+```{r griis_mapping-9 echo = TRUE}
 griis %<>% mutate(griis_acceptedNameUsage = case_when(
   acceptedNameUsage != scientificName ~ acceptedNameUsage,
   TRUE ~ ""
@@ -91,61 +91,61 @@ griis %<>% mutate(griis_acceptedNameUsage = case_when(
 
 #### taxonRank
 
-```{r echo = TRUE}
+```{r griis_mapping-10 echo = TRUE}
 griis %<>% mutate(griis_taxonRank = taxonRank)
 ```
 
 #### taxonomicStatus
 
-```{r echo = TRUE}
+```{r griis_mapping-11 echo = TRUE}
 griis %<>% mutate(griis_taxonomicStatus = taxonomicStatus)
 ```
 
 #### kingdom
 
-```{r echo = TRUE}
+```{r griis_mapping-12 echo = TRUE}
 griis %<>% mutate(griis_kingdom = kingdom)
 ```
 
 #### phylum
 
-```{r echo = TRUE}
+```{r griis_mapping-13 echo = TRUE}
 griis %<>% mutate(griis_phylum = phylum)
 ```
 
 #### class
 
-```{r echo = TRUE}
+```{r griis_mapping-14 echo = TRUE}
 griis %<>% mutate(griis_class = class)
 ```
 
 #### order
 
-```{r echo = TRUE}
+```{r griis_mapping-15 echo = TRUE}
 griis %<>% mutate(griis_order = order)
 ```
 
 #### family
 
-```{r echo = TRUE}
+```{r griis_mapping-16 echo = TRUE}
 griis %<>% mutate(griis_family = family)
 ```
 
 #### habitat
 
-```{r echo = TRUE}
+```{r griis_mapping-17 echo = TRUE}
 griis %<>% mutate(griis_habitat = habitat)
 ```
 
 #### occurrenceStatus
 
-```{r echo = TRUE}
+```{r griis_mapping-18 echo = TRUE}
 griis %<>% mutate(griis_occurrenceStatus = occurrenceStatus)
 ```
 
 #### establishmentMeans
 
-```{r echo = TRUE}
+```{r griis_mapping-19 echo = TRUE}
 griis %<>% mutate(griis_establishmentMeans = recode(establishmentMeans,
   "introduced" = "alien",
   .default = "",
@@ -155,7 +155,7 @@ griis %<>% mutate(griis_establishmentMeans = recode(establishmentMeans,
 
 #### isInvasive
 
-```{r echo = TRUE}
+```{r griis_mapping-20 echo = TRUE}
 griis %<>% mutate(griis_isInvasive = case_when(
   is.na(isInvasive) ~ "Null"
 ))
@@ -163,7 +163,7 @@ griis %<>% mutate(griis_isInvasive = case_when(
 
 ### eventDate
 
-```{r echo = TRUE}
+```{r griis_mapping-21 echo = TRUE}
 griis %<>% mutate(griis_eventDate = eventDate)
 ```
 
@@ -171,30 +171,30 @@ griis %<>% mutate(griis_eventDate = eventDate)
 
 1. Only keep the GRIIS columns.
   
-```{r}
+```{r griis_mapping-22}
 griis %<>% select(starts_with("griis_"))
 ```
   
 2. Drop the `griis_` prefix.
   
-```{r}
+```{r griis_mapping-23}
 colnames(griis) <- str_remove(colnames(griis), "griis_")
 ```
 
 3. Sort on `scientificName` (the default for GRIIS lists).
 
-```{r}
+```{r griis_mapping-24}
 griis %<>% arrange(scientificName)
 ```
 
 4. Preview data:
 
-```{r}
+```{r griis_mapping-25}
 griis %>% head()
 ```
 
 5. Save to [Excel](https://github.com/trias-project/unified-checklist/blob/master/data/processed/Belgium_GBIF_GRIIS.xlsx).
 
-```{r}
+```{r griis_mapping-26}
 openxlsx::write.xlsx(griis, here("data", "processed", "Belgium_GBIF_GRIIS.xlsx"))
 ```

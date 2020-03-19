@@ -51,7 +51,7 @@ input_taxa <-
 ```{r get_synonyms-get-synonyms-from-gbif}
 progress_bar <- progress_estimated(nrow(input_taxa))
 
-detach("package:tidylog") # to remove infos interrupting progress bar
+detach("package:tidylog") # to remove info interrupting progress bar
 synonyms <- map_dfr(
   input_taxa$key, 
   function(key) {

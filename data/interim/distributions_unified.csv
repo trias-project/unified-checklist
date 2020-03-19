@@ -1119,8 +1119,6 @@ verificationKey,locality,locationId,startYear,endYear,datasetKey,taxonKeys,scien
 2718302,Flemish Region,ISO_3166:BE-VLG,2018,2018,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267145,Bolboschoenus yagara (Ohwi) Yung C. Yang & M. Zhan
 2718387,Belgium,ISO_3166:BE,2015,2015,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267146,Bolboschoenus glaucus (Lam.) S.G. Sm.
 2718387,Flemish Region,ISO_3166:BE-VLG,2015,2015,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267146,Bolboschoenus glaucus (Lam.) S.G. Sm.
-2722051,Belgium,ISO_3166:BE,2017,2017,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267128,Carex agastachys L.f.
-2722051,Flemish Region,ISO_3166:BE-VLG,2017,2017,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267128,Carex agastachys L.f.
 2722380,Belgium,ISO_3166:BE,1976,2018,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267144,Carex crawfordii Fernald
 2722380,Flemish Region,ISO_3166:BE-VLG,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267144,Carex crawfordii Fernald
 2722380,Walloon Region,ISO_3166:BE-WAL,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267144,Carex crawfordii Fernald
@@ -1130,6 +1128,8 @@ verificationKey,locality,locationId,startYear,endYear,datasetKey,taxonKeys,scien
 2722973,Flemish Region,ISO_3166:BE-VLG,2015,2015,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267159,Carex loliacea L.
 2723271,Belgium,ISO_3166:BE,2010,2018,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267141,Carex melanostachya M. Bieb. ex Willd.
 2723271,Flemish Region,ISO_3166:BE-VLG,2010,2018,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267141,Carex melanostachya M. Bieb. ex Willd.
+2725229,Belgium,ISO_3166:BE,2017,2017,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267128,Carex agastachys L.f.
+2725229,Flemish Region,ISO_3166:BE-VLG,2017,2017,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267128,Carex agastachys L.f.
 2726360,Belgium,ISO_3166:BE,2011,2015,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267142,Carex grayi Carey
 2726360,Flemish Region,ISO_3166:BE-VLG,2011,2015,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267142,Carex grayi Carey
 2726538,Belgium,ISO_3166:BE,2010,2017,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267151,Carex muskingumensis Schweinitz
@@ -6427,6 +6427,8 @@ verificationKey,locality,locationId,startYear,endYear,datasetKey,taxonKeys,scien
 7560711,Belgium,ISO_3166:BE,2006,2017,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266325,Oxalis tetraphylla Cav.
 7560711,Flemish Region,ISO_3166:BE-VLG,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266325,Oxalis tetraphylla Cav.
 7560711,Walloon Region,ISO_3166:BE-WAL,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266325,Oxalis tetraphylla Cav.
+7563173,Belgium,ISO_3166:BE,1927,2016,289244ee-e1c1-49aa-b2d7-d379391ce265,140562987,Orchestia cavimana
+7563173,Flemish Region,ISO_3166:BE-VLG,1927,2016,289244ee-e1c1-49aa-b2d7-d379391ce265,140562987,Orchestia cavimana
 7564934,Belgium,ISO_3166:BE,2003,2010,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266609,Odontites jaubertianus (Boreau) D. Dietrich ex Walp.
 7564934,Flemish Region,ISO_3166:BE-VLG,2003,2010,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266609,Odontites jaubertianus (Boreau) D. Dietrich ex Walp.
 7569785,Belgium,ISO_3166:BE,1890,1890,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265300,Hieracium pilosum Schleich. ex Froel.
@@ -7023,6 +7025,8 @@ verificationKey,locality,locationId,startYear,endYear,datasetKey,taxonKeys,scien
 9772663,Belgium,ISO_3166:BE,,,e1c3be64-2799-4342-8312-49d076993132,159498300,"Leptoptilos crumenifer (Lesson, 1831)"
 9791464,Belgium,ISO_3166:BE,2011,2011,e1c3be64-2799-4342-8312-49d076993132,159498397,"Colinus virginianus (Linnaeus, 1758)"
 9805907,Belgium,ISO_3166:BE,1867,1867,e082b10e-476f-43c1-aa61-f8d92f33029a,157063124,"Cernuella virgata (Da Costa, 1778)"
+9890104,Belgium,ISO_3166:BE,1922,1922,e082b10e-476f-43c1-aa61-f8d92f33029a,157063040,"Candidula intersecta (Poiret, 1801)"
+9890104,Flemish Region,ISO_3166:BE-VLG,1922,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437918,Candidula intersecta
 10172912,Belgium,ISO_3166:BE,2018,2018,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267189,Cerastium x maureri M. Schulze
 10172912,Flemish Region,ISO_3166:BE-VLG,2018,2018,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267189,Cerastium x maureri M. Schulze
 10173593,Belgium,ISO_3166:BE,1952,2015,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266452,Geranium x magnificum Hyl.

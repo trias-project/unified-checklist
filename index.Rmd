@@ -12,7 +12,7 @@ output:
       search: no
       sharing:
         facebook: no
-        twitter: yes
+        twitter: no
         all: []
 ---
 

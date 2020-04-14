@@ -4,7 +4,7 @@ In this chapter we export the unified information to an Excel template that can 
 
 ## Read Darwin Core data
 
-```{r griis_mapping-1 echo = TRUE}
+```{r griis_mapping-1, echo = TRUE}
 dwc_taxon <- read_csv(here("data", "processed", "taxon.csv"))
 dwc_distribution <- read_csv(here("data", "processed", "distribution.csv"))
 dwc_speciesprofile <- read_csv(here("data", "processed", "speciesprofile.csv"))
@@ -58,31 +58,31 @@ griis <-
 
 #### taxonID
 
-```{r griis_mapping-5 echo = TRUE}
+```{r griis_mapping-5, echo = TRUE}
 griis %<>% mutate(griis_taxonID = taxonID)
 ```
 
 #### countryCode
 
-```{r griis_mapping-6 echo = TRUE}
+```{r griis_mapping-6, echo = TRUE}
 griis %<>% mutate(griis_countryCode = countryCode)
 ```
 
 #### island
 
-```{r griis_mapping-7 echo = TRUE}
+```{r griis_mapping-7, echo = TRUE}
 griis %<>% mutate(griis_island = "")
 ```
 
 #### scientificName
 
-```{r griis_mapping-8 echo = TRUE}
+```{r griis_mapping-8, echo = TRUE}
 griis %<>% mutate(griis_scientificName = scientificName)
 ```
 
 #### acceptedNameUsage
 
-```{r griis_mapping-9 echo = TRUE}
+```{r griis_mapping-9, echo = TRUE}
 griis %<>% mutate(griis_acceptedNameUsage = case_when(
   acceptedNameUsage != scientificName ~ acceptedNameUsage,
   TRUE ~ ""
@@ -91,61 +91,61 @@ griis %<>% mutate(griis_acceptedNameUsage = case_when(
 
 #### taxonRank
 
-```{r griis_mapping-10 echo = TRUE}
+```{r griis_mapping-10, echo = TRUE}
 griis %<>% mutate(griis_taxonRank = taxonRank)
 ```
 
 #### taxonomicStatus
 
-```{r griis_mapping-11 echo = TRUE}
+```{r griis_mapping-11, echo = TRUE}
 griis %<>% mutate(griis_taxonomicStatus = taxonomicStatus)
 ```
 
 #### kingdom
 
-```{r griis_mapping-12 echo = TRUE}
+```{r griis_mapping-12, echo = TRUE}
 griis %<>% mutate(griis_kingdom = kingdom)
 ```
 
 #### phylum
 
-```{r griis_mapping-13 echo = TRUE}
+```{r griis_mapping-13, echo = TRUE}
 griis %<>% mutate(griis_phylum = phylum)
 ```
 
 #### class
 
-```{r griis_mapping-14 echo = TRUE}
+```{r griis_mapping-14, echo = TRUE}
 griis %<>% mutate(griis_class = class)
 ```
 
 #### order
 
-```{r griis_mapping-15 echo = TRUE}
+```{r griis_mapping-15, echo = TRUE}
 griis %<>% mutate(griis_order = order)
 ```
 
 #### family
 
-```{r griis_mapping-16 echo = TRUE}
+```{r griis_mapping-16, echo = TRUE}
 griis %<>% mutate(griis_family = family)
 ```
 
 #### habitat
 
-```{r griis_mapping-17 echo = TRUE}
+```{r griis_mapping-17, echo = TRUE}
 griis %<>% mutate(griis_habitat = habitat)
 ```
 
 #### occurrenceStatus
 
-```{r griis_mapping-18 echo = TRUE}
+```{r griis_mapping-18, echo = TRUE}
 griis %<>% mutate(griis_occurrenceStatus = occurrenceStatus)
 ```
 
 #### establishmentMeans
 
-```{r griis_mapping-19 echo = TRUE}
+```{r griis_mapping-19, echo = TRUE}
 griis %<>% mutate(griis_establishmentMeans = recode(establishmentMeans,
   "introduced" = "alien",
   .default = "",
@@ -155,7 +155,7 @@ griis %<>% mutate(griis_establishmentMeans = recode(establishmentMeans,
 
 #### isInvasive
 
-```{r griis_mapping-20 echo = TRUE}
+```{r griis_mapping-20, echo = TRUE}
 griis %<>% mutate(griis_isInvasive = case_when(
   is.na(isInvasive) ~ "Null"
 ))
@@ -163,7 +163,7 @@ griis %<>% mutate(griis_isInvasive = case_when(
 
 ### eventDate
 
-```{r griis_mapping-21 echo = TRUE}
+```{r griis_mapping-21, echo = TRUE}
 griis %<>% mutate(griis_eventDate = eventDate)
 ```
 

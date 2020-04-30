@@ -159,8 +159,27 @@ taxa_unified %>% head()
 
 7. Number of taxa: `r nrow(taxa_unified)`
 
-8. Save to [CSV](https://github.com/trias-project/unified-checklist/blob/master/data/interim/taxa_unified.csv).
+## Explicitely remove incorrect taxa
 
-```{r unify_taxa-11}
+1. Some taxa are purposely excluded in a source checklist (e.g. see [this issue](https://github.com/trias-project/unified-checklist/issues/32#issuecomment-621178197) for [Alien birds](https://doi.org/10.15468/wr3gis)), but still end up in the unified checklist because they are incorrectly included in another no-longer-updated source checklist (e.g. [RINSE pathways](https://doi.org/10.15468/guejza)). Here we explicitely remove those taxa:
+
+```{r unify_taxa-11, echo = TRUE}
+ntaxa <- nrow(taxa_unified)
+
+taxa_unified <-
+  taxa_unified %>% filter(
+    scientificName != "Anser fabalis (Latham, 1787)",
+    scientificName != "Anser anser (Linnaeus, 1758)",
+    scientificName != "Branta leucopsis (Bechstein, 1803)"
+  )
+```
+
+2. Number of removed taxa: `r ntaxa - nrow(taxa_unified)`
+
+3. Total number of taxa: `r nrow(taxa_unified)`
+
+4. Save to [CSV](https://github.com/trias-project/unified-checklist/blob/master/data/interim/taxa_unified.csv).
+
+```{r unify_taxa-12}
 write_csv(taxa_unified, here("data", "interim", "taxa_unified.csv"), na = "")
 ```

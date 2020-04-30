@@ -24,7 +24,7 @@
 <meta name="author" content="Peter Desmet, Lien Reyserhove, Damiano Oldoni" />
 
 
-<meta name="date" content="2020-04-14" />
+<meta name="date" content="2020-04-30" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -158,6 +158,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="4.1" data-path="4_unify_taxa.html"><a href="4_unify_taxa.html#read-taxa-2"><i class="fa fa-check"></i><b>4.1</b> Read taxa</a></li>
 <li class="chapter" data-level="4.2" data-path="4_unify_taxa.html"><a href="4_unify_taxa.html#unify-taxa-1"><i class="fa fa-check"></i><b>4.2</b> Unify taxa</a></li>
 <li class="chapter" data-level="4.3" data-path="4_unify_taxa.html"><a href="4_unify_taxa.html#get-gbif-backbone-taxonomy-information-1"><i class="fa fa-check"></i><b>4.3</b> Get GBIF backbone taxonomy information</a></li>
+<li class="chapter" data-level="4.4" data-path="4_unify_taxa.html"><a href="4_unify_taxa.html#explicitely-remove-incorrect-taxa"><i class="fa fa-check"></i><b>4.4</b> Explicitely remove incorrect taxa</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="5_unify_information.html"><a href="5_unify_information.html"><i class="fa fa-check"></i><b>5</b> Unify related information</a><ul>
 <li class="chapter" data-level="5.1" data-path="5_unify_information.html"><a href="5_unify_information.html#read-data"><i class="fa fa-check"></i><b>5.1</b> Read data</a></li>
@@ -257,7 +258,25 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   </script>
 </div>
 <ol start="7" style="list-style-type: decimal">
-<li><p>Number of taxa: 2883</p></li>
+<li>Number of taxa: 2883</li>
+</ol>
+</div>
+<div id="explicitely-remove-incorrect-taxa" class="section level2">
+<h2><span class="header-section-number">4.4</span> Explicitely remove incorrect taxa</h2>
+<ol style="list-style-type: decimal">
+<li>Some taxa are purposely excluded in a source checklist (e.g. see <a href="https://github.com/trias-project/unified-checklist/issues/32#issuecomment-621178197">this issue</a> for <a href="https://doi.org/10.15468/wr3gis">Alien birds</a>), but still end up in the unified checklist because they are incorrectly included in another no-longer-updated source checklist (e.g. <a href="https://doi.org/10.15468/guejza">RINSE pathways</a>). Here we explicitely remove those taxa:</li>
+</ol>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb6-1" title="1">ntaxa &lt;-<span class="st"> </span><span class="kw">nrow</span>(taxa_unified)</a>
+<a class="sourceLine" id="cb6-2" title="2"></a>
+<a class="sourceLine" id="cb6-3" title="3">taxa_unified &lt;-</a>
+<a class="sourceLine" id="cb6-4" title="4"><span class="st">  </span>taxa_unified <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">filter</span>(</a>
+<a class="sourceLine" id="cb6-5" title="5">    scientificName <span class="op">!=</span><span class="st"> &quot;Anser fabalis (Latham, 1787)&quot;</span>,</a>
+<a class="sourceLine" id="cb6-6" title="6">    scientificName <span class="op">!=</span><span class="st"> &quot;Anser anser (Linnaeus, 1758)&quot;</span>,</a>
+<a class="sourceLine" id="cb6-7" title="7">    scientificName <span class="op">!=</span><span class="st"> &quot;Branta leucopsis (Bechstein, 1803)&quot;</span></a>
+<a class="sourceLine" id="cb6-8" title="8">  )</a></code></pre></div>
+<ol start="2" style="list-style-type: decimal">
+<li><p>Number of removed taxa: 3</p></li>
+<li><p>Total number of taxa: 2880</p></li>
 <li><p>Save to <a href="https://github.com/trias-project/unified-checklist/blob/master/data/interim/taxa_unified.csv">CSV</a>.</p></li>
 </ol>
 

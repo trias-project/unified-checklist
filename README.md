@@ -4,14 +4,17 @@
 
 This repository contains the functionality to create and standardize the _Global Register of Introduced and Invasive Species - Belgium_ to a [Darwin Core checklist](https://www.gbif.org/dataset-classes) that can be harvested by [GBIF](http://www.gbif.org).
 
-This unified checklist is the result of an open and reproducible data publication and data processing pipeline developed for the [TrIAS project](http://trias-project.be). The data publication pipeline is based on the [Checklist recipe](https://github.com/trias-project/checklist-recipe/wiki) and consists of the publication of a selection of authoritative (inter)national checklists as standardized Darwin Core Archives to [GBIF](https://www.gbif.org/dataset/search?type=CHECKLIST&project_id=trias). These are:
+This unified checklist is the result of an open and reproducible data publication and data processing pipeline developed for the [TrIAS project](http://trias-project.be). The data publication pipeline is based on the [Checklist recipe](https://github.com/trias-project/checklist-recipe/wiki) and consists of the publication of a selection of authoritative (inter)national checklists as standardized Darwin Core Archives to [GBIF](https://www.gbif.org/network/b153643d-735a-440f-a0e9-428b4f9d1cd2/dataset). These are:
 
 1. [Verloove et al. (2018)](https://doi.org/10.15468/wtda1m) based on Verloove (2018) for plants
-2. [Boets et al. (2018)](https://doi.org/10.15468/yxcq07) based on Boets et al. (2016) for macroinvertebrates
+2. [Preda et al. (2019](https://doi.org/10.15468/wr3gis) for birds
 3. [Verreycken et al. (2018a)](https://doi.org/10.15468/xvuzfh) based on Verreycken et al. (2018b) for fishes
-4. [Vanderweyen et al. (2018)](https://doi.org/10.15468/2dboyn) based on Vanderweyen & Fraiture (2007, 2008, 2011) for rust fungi
-5. [Reyserhove et al. (2018)](https://doi.org/10.15468/3pmlxs) for various species
-6. [Zieritz et al. (2018)](https://doi.org/10.15468/guejza) based on Zieritz et al. (2017) for pathways.
+4. [Boets et al. (2018)](https://doi.org/10.15468/yxcq07) based on Boets et al. (2016) for macroinvertebrates
+5. [Backeljau et al. (2019)](https://doi.org/10.15468/t13kwo) for terrestrial molluscs
+6. [Vanderweyen et al. (2018)](https://doi.org/10.15468/2dboyn) based on Vanderweyen & Fraiture (2007, 2008, 2011) for rust fungi
+7. [Flanders Marine Institute (2019)](https://doi.org/10.14284/347) for marine species
+8. [Reyserhove et al. (2018)](https://doi.org/10.15468/3pmlxs) for various species
+9. [Zieritz et al. (2018)](https://doi.org/10.15468/guejza) based on Zieritz et al. (2017) for pathways.
 
 Predominantly, these checklists record the presence of alien species in Belgium for a specific taxon group or habitat and are maintained by their respective authors. The data processing consists of the extraction of all Belgian non-native taxa from these checklists and the unification of their taxonomy (using the [GBIF Backbone Taxonomy](https://doi.org/10.15468/39omei)) and related information. This automated process is implemented and documented at https://trias-project.github.io/unified-checklist/
 

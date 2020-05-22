@@ -24,7 +24,7 @@
 <meta name="author" content="Peter Desmet, Lien Reyserhove, Damiano Oldoni" />
 
 
-<meta name="date" content="2020-04-30" />
+<meta name="date" content="2020-05-22" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -55,9 +55,9 @@
 
 
 <style type="text/css">
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode { white-space: pre; position: relative; }
 pre.sourceCode { margin: 0; }
@@ -66,14 +66,16 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
-pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
-pre.numberSource a.sourceLine::before
-  { content: attr(title);
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
     position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
+    border: none; display: inline-block;
     -webkit-touch-callout: none; -webkit-user-select: none;
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
@@ -82,9 +84,9 @@ pre.numberSource a.sourceLine::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {  }
+  {   }
 @media screen {
-a.sourceLine::before { text-decoration: underline; }
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
@@ -227,7 +229,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="header">
 <h1 class="title">Global Register of Introduced and Invasive Species - Belgium</h1>
 <p class="author"><em>Peter Desmet, Lien Reyserhove, Damiano Oldoni</em></p>
-<p class="date"><em>2020-04-30</em></p>
+<p class="date"><em>2020-05-22</em></p>
 </div>
 <p>This document contains and describes all the steps in creating a unified checklist of alien species in Belgium and was developed for the <a href="http://trias-project.be">Tracking Invasive Alien Species (TrIAS) project</a>. By running this document in R, it will create all the necessary data files for the unified checklist.</p>
 <p>For more general information, see:</p>
@@ -236,17 +238,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><a href="https://doi.org/10.15468/xoidmd">Dataset published on GBIF</a></li>
 </ul>
 <p>Load libraries:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">library</span>(tidyverse)      <span class="co"># To do data science</span></a>
-<a class="sourceLine" id="cb1-2" title="2"><span class="kw">library</span>(tidylog)        <span class="co"># To provide feedback on dplyr functions</span></a>
-<a class="sourceLine" id="cb1-3" title="3"><span class="kw">library</span>(magrittr)       <span class="co"># To use %&lt;&gt;% pipes</span></a>
-<a class="sourceLine" id="cb1-4" title="4"><span class="kw">library</span>(here)           <span class="co"># To find files</span></a>
-<a class="sourceLine" id="cb1-5" title="5"><span class="kw">library</span>(janitor)        <span class="co"># To clean input data</span></a>
-<a class="sourceLine" id="cb1-6" title="6"><span class="kw">library</span>(openxlsx)       <span class="co"># To write Excel files</span></a>
-<a class="sourceLine" id="cb1-7" title="7"><span class="kw">library</span>(digest)         <span class="co"># To generate hashes</span></a>
-<a class="sourceLine" id="cb1-8" title="8"><span class="kw">library</span>(rgbif)          <span class="co"># To use GBIF services</span></a>
-<a class="sourceLine" id="cb1-9" title="9"></a>
-<a class="sourceLine" id="cb1-10" title="10"><span class="co"># devtools::install_github(&quot;trias-project/trias&quot;)</span></a>
-<a class="sourceLine" id="cb1-11" title="11"><span class="kw">library</span>(trias)          <span class="co"># To use functions developed for TrIAS</span></a></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="index.html#cb1-1"></a><span class="kw">library</span>(tidyverse)      <span class="co"># To do data science</span></span>
+<span id="cb1-2"><a href="index.html#cb1-2"></a><span class="kw">library</span>(tidylog)        <span class="co"># To provide feedback on dplyr functions</span></span>
+<span id="cb1-3"><a href="index.html#cb1-3"></a><span class="kw">library</span>(magrittr)       <span class="co"># To use %&lt;&gt;% pipes</span></span>
+<span id="cb1-4"><a href="index.html#cb1-4"></a><span class="kw">library</span>(here)           <span class="co"># To find files</span></span>
+<span id="cb1-5"><a href="index.html#cb1-5"></a><span class="kw">library</span>(janitor)        <span class="co"># To clean input data</span></span>
+<span id="cb1-6"><a href="index.html#cb1-6"></a><span class="kw">library</span>(openxlsx)       <span class="co"># To write Excel files</span></span>
+<span id="cb1-7"><a href="index.html#cb1-7"></a><span class="kw">library</span>(digest)         <span class="co"># To generate hashes</span></span>
+<span id="cb1-8"><a href="index.html#cb1-8"></a><span class="kw">library</span>(rgbif)          <span class="co"># To use GBIF services</span></span>
+<span id="cb1-9"><a href="index.html#cb1-9"></a></span>
+<span id="cb1-10"><a href="index.html#cb1-10"></a><span class="co"># devtools::install_github(&quot;trias-project/trias&quot;)</span></span>
+<span id="cb1-11"><a href="index.html#cb1-11"></a><span class="kw">library</span>(trias)          <span class="co"># To use functions developed for TrIAS</span></span></code></pre></div>
 
             </section>
 

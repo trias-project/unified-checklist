@@ -24,7 +24,7 @@
 <meta name="author" content="Peter Desmet, Lien Reyserhove, Damiano Oldoni" />
 
 
-<meta name="date" content="2020-04-30" />
+<meta name="date" content="2020-05-22" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -55,9 +55,9 @@
 
 
 <style type="text/css">
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode { white-space: pre; position: relative; }
 pre.sourceCode { margin: 0; }
@@ -66,14 +66,16 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
-pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
-pre.numberSource a.sourceLine::before
-  { content: attr(title);
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
     position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
+    border: none; display: inline-block;
     -webkit-touch-callout: none; -webkit-user-select: none;
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
@@ -82,9 +84,9 @@ pre.numberSource a.sourceLine::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {  }
+  {   }
 @media screen {
-a.sourceLine::before { text-decoration: underline; }
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
@@ -229,22 +231,22 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>In this chapter we standardize the unified information to a Darwin Core checklist that can be harvested by GBIF.</p>
 <div id="read-unified-data" class="section level2">
 <h2><span class="header-section-number">6.1</span> Read unified data</h2>
-<div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb19-1" title="1">checklists &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="kw">here</span>(<span class="st">&quot;data&quot;</span>, <span class="st">&quot;raw&quot;</span>, <span class="st">&quot;checklists.csv&quot;</span>))</a>
-<a class="sourceLine" id="cb19-2" title="2">input_taxa &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="kw">here</span>(<span class="st">&quot;data&quot;</span>, <span class="st">&quot;interim&quot;</span>, <span class="st">&quot;taxa_unified.csv&quot;</span>))</a>
-<a class="sourceLine" id="cb19-3" title="3">input_distributions &lt;-<span class="st"> </span><span class="kw">read_csv</span>(</a>
-<a class="sourceLine" id="cb19-4" title="4">  <span class="kw">here</span>(<span class="st">&quot;data&quot;</span>, <span class="st">&quot;interim&quot;</span>, <span class="st">&quot;distributions_unified.csv&quot;</span>),</a>
-<a class="sourceLine" id="cb19-5" title="5">  <span class="dt">na =</span> <span class="st">&quot;&quot;</span>,</a>
-<a class="sourceLine" id="cb19-6" title="6">  <span class="dt">col_types =</span> <span class="kw">cols</span>(</a>
-<a class="sourceLine" id="cb19-7" title="7">    <span class="dt">.default =</span> <span class="kw">col_character</span>(),</a>
-<a class="sourceLine" id="cb19-8" title="8">    <span class="dt">verificationKey =</span> <span class="kw">col_double</span>(),</a>
-<a class="sourceLine" id="cb19-9" title="9">    <span class="dt">startYear =</span> <span class="kw">col_double</span>(),</a>
-<a class="sourceLine" id="cb19-10" title="10">    <span class="dt">endYear =</span> <span class="kw">col_double</span>()</a>
-<a class="sourceLine" id="cb19-11" title="11">  )</a>
-<a class="sourceLine" id="cb19-12" title="12">)</a>
-<a class="sourceLine" id="cb19-13" title="13">input_speciesprofiles &lt;-<span class="st"> </span><span class="kw">read_csv</span>(</a>
-<a class="sourceLine" id="cb19-14" title="14">  <span class="kw">here</span>(<span class="st">&quot;data&quot;</span>, <span class="st">&quot;interim&quot;</span>, <span class="st">&quot;speciesprofiles_unified.csv&quot;</span>)</a>
-<a class="sourceLine" id="cb19-15" title="15">)</a>
-<a class="sourceLine" id="cb19-16" title="16">input_descriptions &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="kw">here</span>(<span class="st">&quot;data&quot;</span>, <span class="st">&quot;interim&quot;</span>, <span class="st">&quot;descriptions_unified.csv&quot;</span>))</a></code></pre></div>
+<div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb19-1"><a href="6_dwc_mapping.html#cb19-1"></a>checklists &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="kw">here</span>(<span class="st">&quot;data&quot;</span>, <span class="st">&quot;raw&quot;</span>, <span class="st">&quot;checklists.csv&quot;</span>))</span>
+<span id="cb19-2"><a href="6_dwc_mapping.html#cb19-2"></a>input_taxa &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="kw">here</span>(<span class="st">&quot;data&quot;</span>, <span class="st">&quot;interim&quot;</span>, <span class="st">&quot;taxa_unified.csv&quot;</span>))</span>
+<span id="cb19-3"><a href="6_dwc_mapping.html#cb19-3"></a>input_distributions &lt;-<span class="st"> </span><span class="kw">read_csv</span>(</span>
+<span id="cb19-4"><a href="6_dwc_mapping.html#cb19-4"></a>  <span class="kw">here</span>(<span class="st">&quot;data&quot;</span>, <span class="st">&quot;interim&quot;</span>, <span class="st">&quot;distributions_unified.csv&quot;</span>),</span>
+<span id="cb19-5"><a href="6_dwc_mapping.html#cb19-5"></a>  <span class="dt">na =</span> <span class="st">&quot;&quot;</span>,</span>
+<span id="cb19-6"><a href="6_dwc_mapping.html#cb19-6"></a>  <span class="dt">col_types =</span> <span class="kw">cols</span>(</span>
+<span id="cb19-7"><a href="6_dwc_mapping.html#cb19-7"></a>    <span class="dt">.default =</span> <span class="kw">col_character</span>(),</span>
+<span id="cb19-8"><a href="6_dwc_mapping.html#cb19-8"></a>    <span class="dt">verificationKey =</span> <span class="kw">col_double</span>(),</span>
+<span id="cb19-9"><a href="6_dwc_mapping.html#cb19-9"></a>    <span class="dt">startYear =</span> <span class="kw">col_double</span>(),</span>
+<span id="cb19-10"><a href="6_dwc_mapping.html#cb19-10"></a>    <span class="dt">endYear =</span> <span class="kw">col_double</span>()</span>
+<span id="cb19-11"><a href="6_dwc_mapping.html#cb19-11"></a>  )</span>
+<span id="cb19-12"><a href="6_dwc_mapping.html#cb19-12"></a>)</span>
+<span id="cb19-13"><a href="6_dwc_mapping.html#cb19-13"></a>input_speciesprofiles &lt;-<span class="st"> </span><span class="kw">read_csv</span>(</span>
+<span id="cb19-14"><a href="6_dwc_mapping.html#cb19-14"></a>  <span class="kw">here</span>(<span class="st">&quot;data&quot;</span>, <span class="st">&quot;interim&quot;</span>, <span class="st">&quot;speciesprofiles_unified.csv&quot;</span>)</span>
+<span id="cb19-15"><a href="6_dwc_mapping.html#cb19-15"></a>)</span>
+<span id="cb19-16"><a href="6_dwc_mapping.html#cb19-16"></a>input_descriptions &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="kw">here</span>(<span class="st">&quot;data&quot;</span>, <span class="st">&quot;interim&quot;</span>, <span class="st">&quot;descriptions_unified.csv&quot;</span>))</span></code></pre></div>
 </div>
 <div id="preview-data" class="section level2">
 <h2><span class="header-section-number">6.2</span> Preview data</h2>
@@ -261,19 +263,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <tbody>
 <tr class="odd">
 <td>taxa</td>
-<td>2880</td>
+<td>2891</td>
 </tr>
 <tr class="even">
 <td>distributions</td>
-<td>7047</td>
+<td>7087</td>
 </tr>
 <tr class="odd">
 <td>speciesprofiles</td>
-<td>2839</td>
+<td>2850</td>
 </tr>
 <tr class="even">
 <td>descriptions</td>
-<td>11356</td>
+<td>11389</td>
 </tr>
 </tbody>
 </table>
@@ -282,7 +284,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ol>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
-{"columns":[{"label":["doi"],"name":[1],"type":["chr"],"align":["left"]},{"label":["unique"],"name":[2],"type":["int"],"align":["right"]},{"label":["shared"],"name":[3],"type":["int"],"align":["right"]},{"label":["title"],"name":[4],"type":["chr"],"align":["left"]},{"label":["datasetKey"],"name":[5],"type":["chr"],"align":["left"]}],"data":[{"1":"https://doi.org/10.15468/wtda1m","2":"2158","3":"50","4":"Manual of the Alien Plants of Belgium","5":"9ff7d317-609b-4c08-bd86-3bc404b77c42"},{"1":"https://doi.org/10.15468/wr3gis","2":"228","3":"13","4":"Checklist of alien birds of Belgium","5":"e1c3be64-2799-4342-8312-49d076993132"},{"1":"https://doi.org/10.15468/xvuzfh","2":"8","3":"17","4":"Checklist of non-native freshwater fishes in Flanders, Belgium","5":"98940a79-2bf1-46e6-afd6-ba2e85a26f9f"},{"1":"https://doi.org/10.15468/yxcq07","2":"32","3":"41","4":"Inventory of alien macroinvertebrates in Flanders, Belgium","5":"289244ee-e1c1-49aa-b2d7-d379391ce265"},{"1":"https://doi.org/10.15468/t13kwo","2":"8","3":"13","4":"Registry of introduced terrestrial molluscs in Belgium","5":"e082b10e-476f-43c1-aa61-f8d92f33029a"},{"1":"https://doi.org/10.15468/2dboyn","2":"13","3":"NA","4":"Catalogue of the Rust Fungi of Belgium","5":"b043c480-dd36-4f4f-aa82-e188753ff09d"},{"1":"https://doi.org/10.14284/347","2":"40","3":"38","4":"World Register of Introduced Marine Species (WRiMS)","5":"0a2eaf0c-5504-4f48-a47f-c94229029dc8"},{"1":"https://doi.org/10.15468/3pmlxs","2":"219","3":"38","4":"Ad hoc checklist of alien species in Belgium","5":"1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2"},{"1":"https://doi.org/10.15468/guejza","2":"24","3":"115","4":"RINSE - Pathways and vectors of biological invasions in Northwest Europe","5":"1738f272-6b5d-4f43-9a92-453a8c5ea50a"},{"1":"https://doi.org/10.15468/39omei","2":"NA","3":"NA","4":"GBIF Backbone Taxonomy","5":"d7dddbf4-2cf0-4f39-9b2a-bb099caae36c"},{"1":"Total","2":"2730","3":"325","4":"-","5":"-"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+{"columns":[{"label":["doi"],"name":[1],"type":["chr"],"align":["left"]},{"label":["unique"],"name":[2],"type":["int"],"align":["right"]},{"label":["shared"],"name":[3],"type":["int"],"align":["right"]},{"label":["title"],"name":[4],"type":["chr"],"align":["left"]},{"label":["datasetKey"],"name":[5],"type":["chr"],"align":["left"]}],"data":[{"1":"https://doi.org/10.15468/wtda1m","2":"2169","3":"50","4":"Manual of the Alien Plants of Belgium","5":"9ff7d317-609b-4c08-bd86-3bc404b77c42"},{"1":"https://doi.org/10.15468/wr3gis","2":"228","3":"13","4":"Checklist of alien birds of Belgium","5":"e1c3be64-2799-4342-8312-49d076993132"},{"1":"https://doi.org/10.15468/xvuzfh","2":"8","3":"17","4":"Checklist of non-native freshwater fishes in Flanders, Belgium","5":"98940a79-2bf1-46e6-afd6-ba2e85a26f9f"},{"1":"https://doi.org/10.15468/yxcq07","2":"32","3":"41","4":"Inventory of alien macroinvertebrates in Flanders, Belgium","5":"289244ee-e1c1-49aa-b2d7-d379391ce265"},{"1":"https://doi.org/10.15468/t13kwo","2":"8","3":"13","4":"Registry of introduced terrestrial molluscs in Belgium","5":"e082b10e-476f-43c1-aa61-f8d92f33029a"},{"1":"https://doi.org/10.15468/2dboyn","2":"13","3":"NA","4":"Catalogue of the Rust Fungi of Belgium","5":"b043c480-dd36-4f4f-aa82-e188753ff09d"},{"1":"https://doi.org/10.14284/347","2":"40","3":"38","4":"World Register of Introduced Marine Species (WRiMS)","5":"0a2eaf0c-5504-4f48-a47f-c94229029dc8"},{"1":"https://doi.org/10.15468/3pmlxs","2":"219","3":"38","4":"Ad hoc checklist of alien species in Belgium","5":"1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2"},{"1":"https://doi.org/10.15468/guejza","2":"24","3":"115","4":"RINSE - Pathways and vectors of biological invasions in Northwest Europe","5":"1738f272-6b5d-4f43-9a92-453a8c5ea50a"},{"1":"https://doi.org/10.15468/39omei","2":"NA","3":"NA","4":"GBIF Backbone Taxonomy","5":"d7dddbf4-2cf0-4f39-9b2a-bb099caae36c"},{"1":"Total","2":"2741","3":"325","4":"-","5":"-"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
   </script>
 </div>
 <ol start="3" style="list-style-type: decimal">
@@ -290,7 +292,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ol>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
-{"columns":[{"label":["kingdom"],"name":[1],"type":["chr"],"align":["left"]},{"label":["taxa"],"name":[2],"type":["int"],"align":["right"]}],"data":[{"1":"Animalia","2":"633"},{"1":"Chromista","2":"2"},{"1":"Fungi","2":"23"},{"1":"Plantae","2":"2221"},{"1":"Protozoa","2":"1"},{"1":"Total","2":"2880"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+{"columns":[{"label":["kingdom"],"name":[1],"type":["chr"],"align":["left"]},{"label":["taxa"],"name":[2],"type":["int"],"align":["right"]}],"data":[{"1":"Animalia","2":"633"},{"1":"Chromista","2":"2"},{"1":"Fungi","2":"23"},{"1":"Plantae","2":"2232"},{"1":"Protozoa","2":"1"},{"1":"Total","2":"2891"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
   </script>
 </div>
 <ol start="4" style="list-style-type: decimal">
@@ -298,7 +300,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ol>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
-{"columns":[{"label":["rank"],"name":[1],"type":["chr"],"align":["left"]},{"label":["taxa"],"name":[2],"type":["int"],"align":["right"]}],"data":[{"1":"GENUS","2":"11"},{"1":"SPECIES","2":"2746"},{"1":"SUBSPECIES","2":"103"},{"1":"VARIETY","2":"20"},{"1":"Total","2":"2880"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+{"columns":[{"label":["rank"],"name":[1],"type":["chr"],"align":["left"]},{"label":["taxa"],"name":[2],"type":["int"],"align":["right"]}],"data":[{"1":"GENUS","2":"11"},{"1":"SPECIES","2":"2757"},{"1":"SUBSPECIES","2":"103"},{"1":"VARIETY","2":"20"},{"1":"Total","2":"2891"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
   </script>
 </div>
 <ol start="5" style="list-style-type: decimal">
@@ -306,7 +308,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ol>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
-{"columns":[{"label":["type"],"name":[1],"type":["chr"],"align":["left"]},{"label":["taxa"],"name":[2],"type":["int"],"align":["right"]},{"label":["unique taxa"],"name":[3],"type":["int"],"align":["right"]},{"label":["unique descriptions"],"name":[4],"type":["int"],"align":["right"]}],"data":[{"1":"degree of establishment","2":"68","3":"68","4":"11"},{"1":"Introduced species abundance","2":"102","3":"33","4":"69"},{"1":"Introduced species impact","2":"195","3":"39","4":"135"},{"1":"Introduced species management","2":"4","3":"3","4":"4"},{"1":"Introduced species population trend","2":"25","3":"11","4":"25"},{"1":"Introduced species remark","2":"90","3":"26","4":"90"},{"1":"Introduced species vector dispersal","2":"359","3":"69","4":"216"},{"1":"invasion stage","2":"2469","3":"2466","4":"4"},{"1":"native range","2":"4891","3":"2537","4":"24"},{"1":"pathway","2":"3153","3":"2477","4":"41"},{"1":"Total","2":"11356","3":"7729","4":"619"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+{"columns":[{"label":["type"],"name":[1],"type":["chr"],"align":["left"]},{"label":["taxa"],"name":[2],"type":["int"],"align":["right"]},{"label":["unique taxa"],"name":[3],"type":["int"],"align":["right"]},{"label":["unique descriptions"],"name":[4],"type":["int"],"align":["right"]}],"data":[{"1":"degree of establishment","2":"68","3":"68","4":"11"},{"1":"Introduced species abundance","2":"102","3":"33","4":"69"},{"1":"Introduced species impact","2":"195","3":"39","4":"135"},{"1":"Introduced species management","2":"4","3":"3","4":"4"},{"1":"Introduced species population trend","2":"25","3":"11","4":"25"},{"1":"Introduced species remark","2":"90","3":"26","4":"90"},{"1":"Introduced species vector dispersal","2":"359","3":"69","4":"216"},{"1":"invasion stage","2":"2480","3":"2477","4":"4"},{"1":"native range","2":"4906","3":"2548","4":"24"},{"1":"pathway","2":"3160","3":"2484","4":"41"},{"1":"Total","2":"11389","3":"7758","4":"619"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
   </script>
 </div>
 </div>
@@ -381,7 +383,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Map the data to <a href="http://rs.gbif.org/core/dwc_taxon_2015-04-24.xml">Darwin Core Taxon</a>.</p>
 <div id="language" class="section level4">
 <h4><span class="header-section-number">6.4.2.1</span> language</h4>
-<div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb20-1" title="1">taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_language =</span> <span class="st">&quot;en&quot;</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb20-1"><a href="6_dwc_mapping.html#cb20-1"></a>taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_language =</span> <span class="st">&quot;en&quot;</span>)</span></code></pre></div>
 </div>
 <div id="license" class="section level4">
 <h4><span class="header-section-number">6.4.2.2</span> license</h4>
@@ -400,84 +402,84 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Based on the above <code>ranking</code>, the most restrictive license is:</p>
 <pre><code>## [1] &quot;http://creativecommons.org/licenses/by/4.0/legalcode&quot;</code></pre>
 <p>Which we use for our <code>license</code>:</p>
-<div class="sourceCode" id="cb22"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb22-1" title="1">taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_license =</span> most_restrictive_license)</a></code></pre></div>
+<div class="sourceCode" id="cb22"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb22-1"><a href="6_dwc_mapping.html#cb22-1"></a>taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_license =</span> most_restrictive_license)</span></code></pre></div>
 </div>
 <div id="rightsholder" class="section level4">
 <h4><span class="header-section-number">6.4.2.3</span> rightsHolder</h4>
 <p>We do not set <code>rightsHolder</code> as the taxon and its related information is based on different source checklists (which in turn are based on other sources), published by different organizations, and mostly released under CC0. Instead, we make an effort to cite the sources (see <a href="6_dwc_mapping.html#citing-sources">6.3</a>).</p>
-<div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb23-1" title="1">taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_rightsHolder =</span> <span class="ot">NA</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb23-1"><a href="6_dwc_mapping.html#cb23-1"></a>taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_rightsHolder =</span> <span class="ot">NA</span>)</span></code></pre></div>
 </div>
 <div id="bibliographiccitation" class="section level4">
 <h4><span class="header-section-number">6.4.2.4</span> bibliographicCitation</h4>
 <p>See <a href="6_dwc_mapping.html#citing-sources">6.3</a>:</p>
-<div class="sourceCode" id="cb24"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb24-1" title="1"><span class="co"># Add temporary field with datasetKey of GBIF Backbone Taxonomy</span></a>
-<a class="sourceLine" id="cb24-2" title="2"><span class="co"># taxon %&lt;&gt;% mutate(datasetKey = &quot;d7dddbf4-2cf0-4f39-9b2a-bb099caae36c&quot;)</span></a>
-<a class="sourceLine" id="cb24-3" title="3"></a>
-<a class="sourceLine" id="cb24-4" title="4">taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">add_source_citation</span>(</a>
-<a class="sourceLine" id="cb24-5" title="5">  <span class="dt">new_column =</span> <span class="st">&quot;dwc_bibliographicCitation&quot;</span>,</a>
-<a class="sourceLine" id="cb24-6" title="6">  <span class="dt">dataset_info =</span> checklists,</a>
-<a class="sourceLine" id="cb24-7" title="7">  <span class="dt">taxon_key =</span> <span class="st">&quot;verificationKey&quot;</span></a>
-<a class="sourceLine" id="cb24-8" title="8">)</a></code></pre></div>
+<div class="sourceCode" id="cb24"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb24-1"><a href="6_dwc_mapping.html#cb24-1"></a><span class="co"># Add temporary field with datasetKey of GBIF Backbone Taxonomy</span></span>
+<span id="cb24-2"><a href="6_dwc_mapping.html#cb24-2"></a><span class="co"># taxon %&lt;&gt;% mutate(datasetKey = &quot;d7dddbf4-2cf0-4f39-9b2a-bb099caae36c&quot;)</span></span>
+<span id="cb24-3"><a href="6_dwc_mapping.html#cb24-3"></a></span>
+<span id="cb24-4"><a href="6_dwc_mapping.html#cb24-4"></a>taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">add_source_citation</span>(</span>
+<span id="cb24-5"><a href="6_dwc_mapping.html#cb24-5"></a>  <span class="dt">new_column =</span> <span class="st">&quot;dwc_bibliographicCitation&quot;</span>,</span>
+<span id="cb24-6"><a href="6_dwc_mapping.html#cb24-6"></a>  <span class="dt">dataset_info =</span> checklists,</span>
+<span id="cb24-7"><a href="6_dwc_mapping.html#cb24-7"></a>  <span class="dt">taxon_key =</span> <span class="st">&quot;verificationKey&quot;</span></span>
+<span id="cb24-8"><a href="6_dwc_mapping.html#cb24-8"></a>)</span></code></pre></div>
 </div>
 <div id="datasetid" class="section level4">
 <h4><span class="header-section-number">6.4.2.5</span> datasetID</h4>
-<div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb25-1" title="1">taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_datasetID =</span> <span class="st">&quot;https://doi.org/10.15468/xoidmd&quot;</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb25-1"><a href="6_dwc_mapping.html#cb25-1"></a>taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_datasetID =</span> <span class="st">&quot;https://doi.org/10.15468/xoidmd&quot;</span>)</span></code></pre></div>
 </div>
 <div id="institutioncode" class="section level4">
 <h4><span class="header-section-number">6.4.2.6</span> institutionCode</h4>
-<div class="sourceCode" id="cb26"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb26-1" title="1">taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_institutionCode =</span> <span class="st">&quot;ISSG&quot;</span>) <span class="co"># Invasive Species Specialist Group ISSG</span></a></code></pre></div>
+<div class="sourceCode" id="cb26"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb26-1"><a href="6_dwc_mapping.html#cb26-1"></a>taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_institutionCode =</span> <span class="st">&quot;ISSG&quot;</span>) <span class="co"># Invasive Species Specialist Group ISSG</span></span></code></pre></div>
 </div>
 <div id="datasetname" class="section level4">
 <h4><span class="header-section-number">6.4.2.7</span> datasetName</h4>
-<div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb27-1" title="1">taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_datasetName =</span> <span class="st">&quot;Global Register of Introduced and Invasive Species - Belgium&quot;</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb27-1"><a href="6_dwc_mapping.html#cb27-1"></a>taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_datasetName =</span> <span class="st">&quot;Global Register of Introduced and Invasive Species - Belgium&quot;</span>)</span></code></pre></div>
 </div>
 <div id="references" class="section level4">
 <h4><span class="header-section-number">6.4.2.8</span> references</h4>
 <p>URL of the GBIF Backbone Taxonomy taxon on gbif.org:</p>
-<div class="sourceCode" id="cb28"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb28-1" title="1">taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_references =</span> <span class="kw">paste0</span>(<span class="st">&quot;https://www.gbif.org/species/&quot;</span>, verificationKey))</a></code></pre></div>
+<div class="sourceCode" id="cb28"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb28-1"><a href="6_dwc_mapping.html#cb28-1"></a>taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_references =</span> <span class="kw">paste0</span>(<span class="st">&quot;https://www.gbif.org/species/&quot;</span>, verificationKey))</span></code></pre></div>
 </div>
 <div id="taxonid" class="section level4">
 <h4><span class="header-section-number">6.4.2.9</span> taxonID</h4>
 <p>URL of the GBIF Backbone Taxonomy taxon on gbif.org:</p>
-<div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb29-1" title="1">taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_taxonID =</span> <span class="kw">paste0</span>(<span class="st">&quot;https://www.gbif.org/species/&quot;</span>, verificationKey))</a></code></pre></div>
+<div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb29-1"><a href="6_dwc_mapping.html#cb29-1"></a>taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_taxonID =</span> <span class="kw">paste0</span>(<span class="st">&quot;https://www.gbif.org/species/&quot;</span>, verificationKey))</span></code></pre></div>
 </div>
 <div id="acceptednameusageid" class="section level4">
 <h4><span class="header-section-number">6.4.2.10</span> acceptedNameUsageID</h4>
-<div class="sourceCode" id="cb30"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb30-1" title="1">taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_acceptedNameUsageID =</span> <span class="kw">case_when</span>(</a>
-<a class="sourceLine" id="cb30-2" title="2">  <span class="kw">is.na</span>(acceptedKey) <span class="op">~</span><span class="st"> </span><span class="kw">paste0</span>(<span class="st">&quot;https://www.gbif.org/species/&quot;</span>, verificationKey), <span class="co"># If empty acceptedKey, use verificationKey</span></a>
-<a class="sourceLine" id="cb30-3" title="3">  <span class="ot">TRUE</span> <span class="op">~</span><span class="st"> </span><span class="kw">paste0</span>(<span class="st">&quot;https://www.gbif.org/species/&quot;</span>, acceptedKey)</a>
-<a class="sourceLine" id="cb30-4" title="4">))</a></code></pre></div>
+<div class="sourceCode" id="cb30"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb30-1"><a href="6_dwc_mapping.html#cb30-1"></a>taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_acceptedNameUsageID =</span> <span class="kw">case_when</span>(</span>
+<span id="cb30-2"><a href="6_dwc_mapping.html#cb30-2"></a>  <span class="kw">is.na</span>(acceptedKey) <span class="op">~</span><span class="st"> </span><span class="kw">paste0</span>(<span class="st">&quot;https://www.gbif.org/species/&quot;</span>, verificationKey), <span class="co"># If empty acceptedKey, use verificationKey</span></span>
+<span id="cb30-3"><a href="6_dwc_mapping.html#cb30-3"></a>  <span class="ot">TRUE</span> <span class="op">~</span><span class="st"> </span><span class="kw">paste0</span>(<span class="st">&quot;https://www.gbif.org/species/&quot;</span>, acceptedKey)</span>
+<span id="cb30-4"><a href="6_dwc_mapping.html#cb30-4"></a>))</span></code></pre></div>
 </div>
 <div id="scientificname" class="section level4">
 <h4><span class="header-section-number">6.4.2.11</span> scientificName</h4>
-<div class="sourceCode" id="cb31"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb31-1" title="1">taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_scientificName =</span> scientificName)</a></code></pre></div>
+<div class="sourceCode" id="cb31"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb31-1"><a href="6_dwc_mapping.html#cb31-1"></a>taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_scientificName =</span> scientificName)</span></code></pre></div>
 </div>
 <div id="acceptednameusage" class="section level4">
 <h4><span class="header-section-number">6.4.2.12</span> acceptedNameUsage</h4>
-<div class="sourceCode" id="cb32"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb32-1" title="1">taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_acceptedNameUsage =</span> <span class="kw">case_when</span>(</a>
-<a class="sourceLine" id="cb32-2" title="2">  <span class="kw">is.na</span>(acceptedName) <span class="op">~</span><span class="st"> </span>scientificName, <span class="co"># If empty acceptedName, use scientificName</span></a>
-<a class="sourceLine" id="cb32-3" title="3">  <span class="ot">TRUE</span> <span class="op">~</span><span class="st"> </span><span class="kw">as.character</span>(acceptedName)</a>
-<a class="sourceLine" id="cb32-4" title="4">))</a></code></pre></div>
+<div class="sourceCode" id="cb32"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb32-1"><a href="6_dwc_mapping.html#cb32-1"></a>taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_acceptedNameUsage =</span> <span class="kw">case_when</span>(</span>
+<span id="cb32-2"><a href="6_dwc_mapping.html#cb32-2"></a>  <span class="kw">is.na</span>(acceptedName) <span class="op">~</span><span class="st"> </span>scientificName, <span class="co"># If empty acceptedName, use scientificName</span></span>
+<span id="cb32-3"><a href="6_dwc_mapping.html#cb32-3"></a>  <span class="ot">TRUE</span> <span class="op">~</span><span class="st"> </span><span class="kw">as.character</span>(acceptedName)</span>
+<span id="cb32-4"><a href="6_dwc_mapping.html#cb32-4"></a>))</span></code></pre></div>
 </div>
 <div id="kingdom" class="section level4">
 <h4><span class="header-section-number">6.4.2.13</span> kingdom</h4>
-<div class="sourceCode" id="cb33"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb33-1" title="1">taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_kingdom =</span> kingdom)</a></code></pre></div>
+<div class="sourceCode" id="cb33"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb33-1"><a href="6_dwc_mapping.html#cb33-1"></a>taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_kingdom =</span> kingdom)</span></code></pre></div>
 </div>
 <div id="phylum" class="section level4">
 <h4><span class="header-section-number">6.4.2.14</span> phylum</h4>
-<div class="sourceCode" id="cb34"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb34-1" title="1">taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_phylum =</span> phylum)</a></code></pre></div>
+<div class="sourceCode" id="cb34"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb34-1"><a href="6_dwc_mapping.html#cb34-1"></a>taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_phylum =</span> phylum)</span></code></pre></div>
 </div>
 <div id="class" class="section level4">
 <h4><span class="header-section-number">6.4.2.15</span> class</h4>
-<div class="sourceCode" id="cb35"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb35-1" title="1">taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_class =</span> class)</a></code></pre></div>
+<div class="sourceCode" id="cb35"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb35-1"><a href="6_dwc_mapping.html#cb35-1"></a>taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_class =</span> class)</span></code></pre></div>
 </div>
 <div id="order" class="section level4">
 <h4><span class="header-section-number">6.4.2.16</span> order</h4>
-<div class="sourceCode" id="cb36"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb36-1" title="1">taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_order =</span> order)</a></code></pre></div>
+<div class="sourceCode" id="cb36"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb36-1"><a href="6_dwc_mapping.html#cb36-1"></a>taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_order =</span> order)</span></code></pre></div>
 </div>
 <div id="family" class="section level4">
 <h4><span class="header-section-number">6.4.2.17</span> family</h4>
-<div class="sourceCode" id="cb37"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb37-1" title="1">taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_family =</span> family)</a></code></pre></div>
+<div class="sourceCode" id="cb37"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb37-1"><a href="6_dwc_mapping.html#cb37-1"></a>taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_family =</span> family)</span></code></pre></div>
 </div>
 <div id="genus" class="section level4">
 <h4><span class="header-section-number">6.4.2.18</span> genus</h4>
@@ -487,50 +489,50 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 {"columns":[{"label":["verificationKey"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["scientificName"],"name":[2],"type":["chr"],"align":["left"]},{"label":["genus"],"name":[3],"type":["chr"],"align":["left"]},{"label":["canonicalName_genus"],"name":[4],"type":["chr"],"align":["left"]},{"label":["taxonomicStatus"],"name":[5],"type":["chr"],"align":["left"]}],"data":[{"1":"5356481","2":"Lathyrus cicera L.","3":"Astragalus","4":"Lathyrus","5":"SYNONYM"},{"1":"5386028","2":"Cyanus triumfettii (All.) Dostal ex A. & D.Love","3":"Centaurea","4":"Cyanus","5":"SYNONYM"},{"1":"5679819","2":"Spartina townsendii var. anglica C.E.Hubbard","3":"Sporobolus","4":"Spartina","5":"DOUBTFUL"},{"1":"7331240","2":"Halimium alyssoides K.Koch","3":"Cistus","4":"Halimium","5":"ACCEPTED"},{"1":"8078031","2":"Artemisia afra Jacq.","3":"Ptilostemon","4":"Artemisia","5":"SYNONYM"},{"1":"8180804","2":"Brachycome heterodonta DC.","3":"Vittadinia","4":"Brachycome","5":"DOUBTFUL"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
   </script>
 </div>
-<div class="sourceCode" id="cb38"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb38-1" title="1">taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_genus =</span> genus)</a></code></pre></div>
+<div class="sourceCode" id="cb38"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb38-1"><a href="6_dwc_mapping.html#cb38-1"></a>taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_genus =</span> genus)</span></code></pre></div>
 </div>
 <div id="specificepithet" class="section level4">
 <h4><span class="header-section-number">6.4.2.19</span> specificEpithet</h4>
-<div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb39-1" title="1">taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_specificEpithet =</span> canonicalName_species)</a></code></pre></div>
+<div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb39-1"><a href="6_dwc_mapping.html#cb39-1"></a>taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_specificEpithet =</span> canonicalName_species)</span></code></pre></div>
 </div>
 <div id="infraspecificepithet" class="section level4">
 <h4><span class="header-section-number">6.4.2.20</span> infraspecificEpithet</h4>
-<div class="sourceCode" id="cb40"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb40-1" title="1">taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_infraspecificEpithet =</span> canonicalName_infraspecific)</a></code></pre></div>
+<div class="sourceCode" id="cb40"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb40-1"><a href="6_dwc_mapping.html#cb40-1"></a>taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_infraspecificEpithet =</span> canonicalName_infraspecific)</span></code></pre></div>
 </div>
 <div id="taxonrank" class="section level4">
 <h4><span class="header-section-number">6.4.2.21</span> taxonRank</h4>
 <p>Inspect values:</p>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
-{"columns":[{"label":["rank"],"name":[1],"type":["chr"],"align":["left"]},{"label":["n"],"name":[2],"type":["int"],"align":["right"]}],"data":[{"1":"GENUS","2":"11"},{"1":"SPECIES","2":"2746"},{"1":"SUBSPECIES","2":"103"},{"1":"VARIETY","2":"20"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+{"columns":[{"label":["rank"],"name":[1],"type":["chr"],"align":["left"]},{"label":["n"],"name":[2],"type":["int"],"align":["right"]}],"data":[{"1":"GENUS","2":"11"},{"1":"SPECIES","2":"2757"},{"1":"SUBSPECIES","2":"103"},{"1":"VARIETY","2":"20"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
   </script>
 </div>
 <p>Map values as is, in UPPERCASE, so it is clearer this information comes from the GBIF Backbone Taxonomy:</p>
-<div class="sourceCode" id="cb41"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb41-1" title="1">taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_taxonRank =</span> rank)</a></code></pre></div>
+<div class="sourceCode" id="cb41"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb41-1"><a href="6_dwc_mapping.html#cb41-1"></a>taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_taxonRank =</span> rank)</span></code></pre></div>
 </div>
 <div id="scientificnameauthorship" class="section level4">
 <h4><span class="header-section-number">6.4.2.22</span> scientificNameAuthorship</h4>
-<div class="sourceCode" id="cb42"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb42-1" title="1">taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_scientificNameAuthorship =</span> authorship)</a></code></pre></div>
+<div class="sourceCode" id="cb42"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb42-1"><a href="6_dwc_mapping.html#cb42-1"></a>taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_scientificNameAuthorship =</span> authorship)</span></code></pre></div>
 </div>
 <div id="taxonomicstatus" class="section level4">
 <h4><span class="header-section-number">6.4.2.23</span> taxonomicStatus</h4>
 <p>Inspect values:</p>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
-{"columns":[{"label":["taxonomicStatus"],"name":[1],"type":["chr"],"align":["left"]},{"label":["n"],"name":[2],"type":["int"],"align":["right"]}],"data":[{"1":"ACCEPTED","2":"2813"},{"1":"DOUBTFUL","2":"54"},{"1":"SYNONYM","2":"13"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+{"columns":[{"label":["taxonomicStatus"],"name":[1],"type":["chr"],"align":["left"]},{"label":["n"],"name":[2],"type":["int"],"align":["right"]}],"data":[{"1":"ACCEPTED","2":"2824"},{"1":"DOUBTFUL","2":"54"},{"1":"SYNONYM","2":"13"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
   </script>
 </div>
 <p>Map values as is, in UPPERCASE, so it is clearer this information comes from the GBIF Backbone Taxonomy:</p>
-<div class="sourceCode" id="cb43"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb43-1" title="1">taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_taxonomicStatus =</span> taxonomicStatus)</a></code></pre></div>
+<div class="sourceCode" id="cb43"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb43-1"><a href="6_dwc_mapping.html#cb43-1"></a>taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_taxonomicStatus =</span> taxonomicStatus)</span></code></pre></div>
 </div>
 <div id="taxonremarks" class="section level4">
 <h4><span class="header-section-number">6.4.2.24</span> taxonRemarks</h4>
 <p>Here we list the checklists that were <em>considered</em> for unifying information about a taxon, i.e. the checklists we selected (see <a href="1_get_taxa.html#choose-checklists">1.1</a>) in which the taxon appeared and got through verification (see <a href="3_verify_taxa.html#verification">3.2</a>). In the case of multiple considered checklists, it is possible that not all of them are selected as a source (see <a href="6_dwc_mapping.html#citing-sources">6.3</a>) when unifying information.</p>
 <p>The <code>datasetKey</code>s of the considered checklists are listed in <code>datasetKeys</code>. Since we want the DOI instead, we will separate this information into columns, gather to rows and join with the DOI, and spread and combine again into a single column.</p>
 <p>Map to <code>taxonRemarks</code>:</p>
-<div class="sourceCode" id="cb44"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb44-1" title="1">taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_taxonRemarks =</span> <span class="kw">paste</span>(</a>
-<a class="sourceLine" id="cb44-2" title="2">  <span class="st">&quot;Sources considered for this taxon:&quot;</span>, datasetDOIs</a>
-<a class="sourceLine" id="cb44-3" title="3">))</a></code></pre></div>
+<div class="sourceCode" id="cb44"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb44-1"><a href="6_dwc_mapping.html#cb44-1"></a>taxon <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_taxonRemarks =</span> <span class="kw">paste</span>(</span>
+<span id="cb44-2"><a href="6_dwc_mapping.html#cb44-2"></a>  <span class="st">&quot;Sources considered for this taxon:&quot;</span>, datasetDOIs</span>
+<span id="cb44-3"><a href="6_dwc_mapping.html#cb44-3"></a>))</span></code></pre></div>
 </div>
 </div>
 <div id="post-processing" class="section level3">
@@ -562,47 +564,47 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Map the data to <a href="http://rs.gbif.org/extension/gbif/1.0/distribution.xml">Species Distribution</a>. Because of the scope (see <a href="1_get_taxa.html#filter-on-distribution">1.3</a>) of the dataset, we can set all distributions to <code>occurrenceStatus:present</code> and <code>establishmentMeans:introduced</code>.</p>
 <div id="taxonid-1" class="section level4">
 <h4><span class="header-section-number">6.5.2.1</span> taxonID</h4>
-<div class="sourceCode" id="cb45"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb45-1" title="1">distribution <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_taxonID =</span> <span class="kw">paste0</span>(<span class="st">&quot;https://www.gbif.org/species/&quot;</span>, verificationKey))</a></code></pre></div>
+<div class="sourceCode" id="cb45"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb45-1"><a href="6_dwc_mapping.html#cb45-1"></a>distribution <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_taxonID =</span> <span class="kw">paste0</span>(<span class="st">&quot;https://www.gbif.org/species/&quot;</span>, verificationKey))</span></code></pre></div>
 </div>
 <div id="locationid" class="section level4">
 <h4><span class="header-section-number">6.5.2.2</span> locationID</h4>
-<div class="sourceCode" id="cb46"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb46-1" title="1">distribution <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_locationID =</span> locationId)</a></code></pre></div>
+<div class="sourceCode" id="cb46"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb46-1"><a href="6_dwc_mapping.html#cb46-1"></a>distribution <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_locationID =</span> locationId)</span></code></pre></div>
 </div>
 <div id="locality" class="section level4">
 <h4><span class="header-section-number">6.5.2.3</span> locality</h4>
-<div class="sourceCode" id="cb47"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb47-1" title="1">distribution <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_locality =</span> locality)</a></code></pre></div>
+<div class="sourceCode" id="cb47"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb47-1"><a href="6_dwc_mapping.html#cb47-1"></a>distribution <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_locality =</span> locality)</span></code></pre></div>
 </div>
 <div id="countrycode" class="section level4">
 <h4><span class="header-section-number">6.5.2.4</span> countryCode</h4>
-<div class="sourceCode" id="cb48"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb48-1" title="1">distribution <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_countryCode =</span> <span class="st">&quot;BE&quot;</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb48"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb48-1"><a href="6_dwc_mapping.html#cb48-1"></a>distribution <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_countryCode =</span> <span class="st">&quot;BE&quot;</span>)</span></code></pre></div>
 </div>
 <div id="occurrencestatus" class="section level4">
 <h4><span class="header-section-number">6.5.2.5</span> occurrenceStatus</h4>
-<div class="sourceCode" id="cb49"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb49-1" title="1">distribution <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_occurrenceStatus =</span> <span class="st">&quot;present&quot;</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb49"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb49-1"><a href="6_dwc_mapping.html#cb49-1"></a>distribution <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_occurrenceStatus =</span> <span class="st">&quot;present&quot;</span>)</span></code></pre></div>
 </div>
 <div id="establishmentmeans" class="section level4">
 <h4><span class="header-section-number">6.5.2.6</span> establishmentMeans</h4>
-<div class="sourceCode" id="cb50"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb50-1" title="1">distribution <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_establishmentMeans =</span> <span class="st">&quot;introduced&quot;</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb50"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb50-1"><a href="6_dwc_mapping.html#cb50-1"></a>distribution <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_establishmentMeans =</span> <span class="st">&quot;introduced&quot;</span>)</span></code></pre></div>
 </div>
 <div id="eventdate" class="section level4">
 <h4><span class="header-section-number">6.5.2.7</span> eventDate</h4>
 <p>The distribution information applies to a certain date range, which we will express here as an ISO 8601 date <code>yyyy/yyyy</code> (<code>startYear/endYear</code>). How the information for <code>startYear</code> and <code>endYear</code> is extracted from the source checklists, is described in <a href="5_unify_information.html#unify-distribution">5.3</a>. As a result, each taxon in <code>input_distribution</code> has <em>or</em> an <code>startYear</code> and an <code>endYear</code> <em>or</em> no <code>eventDate</code> information at all.</p>
-<div class="sourceCode" id="cb51"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb51-1" title="1">distribution <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_eventDate =</span> <span class="kw">case_when</span>(</a>
-<a class="sourceLine" id="cb51-2" title="2">  <span class="kw">is.na</span>(startYear) <span class="op">&amp;</span><span class="st"> </span><span class="kw">is.na</span>(endYear) <span class="op">~</span><span class="st"> &quot;&quot;</span>,</a>
-<a class="sourceLine" id="cb51-3" title="3">  <span class="ot">TRUE</span> <span class="op">~</span><span class="st"> </span><span class="kw">paste</span>(startYear, endYear, <span class="dt">sep =</span> <span class="st">&quot;/&quot;</span>)</a>
-<a class="sourceLine" id="cb51-4" title="4">))</a></code></pre></div>
+<div class="sourceCode" id="cb51"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb51-1"><a href="6_dwc_mapping.html#cb51-1"></a>distribution <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_eventDate =</span> <span class="kw">case_when</span>(</span>
+<span id="cb51-2"><a href="6_dwc_mapping.html#cb51-2"></a>  <span class="kw">is.na</span>(startYear) <span class="op">&amp;</span><span class="st"> </span><span class="kw">is.na</span>(endYear) <span class="op">~</span><span class="st"> &quot;&quot;</span>,</span>
+<span id="cb51-3"><a href="6_dwc_mapping.html#cb51-3"></a>  <span class="ot">TRUE</span> <span class="op">~</span><span class="st"> </span><span class="kw">paste</span>(startYear, endYear, <span class="dt">sep =</span> <span class="st">&quot;/&quot;</span>)</span>
+<span id="cb51-4"><a href="6_dwc_mapping.html#cb51-4"></a>))</span></code></pre></div>
 <ul>
 <li>Minimum year: 1201</li>
-<li>Maximum year: 2018</li>
+<li>Maximum year: 2020</li>
 </ul>
 </div>
 <div id="source" class="section level4">
 <h4><span class="header-section-number">6.5.2.8</span> source</h4>
 <p>A distribution can have multiple source taxa (i.e. two verified synonyms from the same checklist). We therefore separate <code>datasetKeys</code> and <code>scientificNames</code> in a maximum of three columns and build a source (see <a href="6_dwc_mapping.html#citing-sources">6.3</a>) for each.</p>
 <p>Combine three source columns and remove <code>NA</code>:</p>
-<div class="sourceCode" id="cb52"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb52-1" title="1">distribution <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(</a>
-<a class="sourceLine" id="cb52-2" title="2">  <span class="dt">dwc_source =</span> <span class="kw">paste</span>(source_<span class="dv">1</span>, source_<span class="dv">2</span>, source_<span class="dv">3</span>, <span class="dt">sep =</span> <span class="st">&quot; | &quot;</span>) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">str_remove_all</span>(<span class="st">&quot; </span><span class="ch">\\</span><span class="st">| NA&quot;</span>)</a>
-<a class="sourceLine" id="cb52-3" title="3">)</a></code></pre></div>
+<div class="sourceCode" id="cb52"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb52-1"><a href="6_dwc_mapping.html#cb52-1"></a>distribution <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(</span>
+<span id="cb52-2"><a href="6_dwc_mapping.html#cb52-2"></a>  <span class="dt">dwc_source =</span> <span class="kw">paste</span>(source_<span class="dv">1</span>, source_<span class="dv">2</span>, source_<span class="dv">3</span>, <span class="dt">sep =</span> <span class="st">&quot; | &quot;</span>) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">str_remove_all</span>(<span class="st">&quot; </span><span class="ch">\\</span><span class="st">| NA&quot;</span>)</span>
+<span id="cb52-3"><a href="6_dwc_mapping.html#cb52-3"></a>)</span></code></pre></div>
 </div>
 </div>
 <div id="post-processing-1" class="section level3">
@@ -631,57 +633,57 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Map the data to <a href="http://rs.gbif.org/extension/gbif/1.0/speciesprofile.xml">Species Profile</a>.</p>
 <div id="taxonid-2" class="section level4">
 <h4><span class="header-section-number">6.6.1.1</span> taxonID</h4>
-<div class="sourceCode" id="cb53"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb53-1" title="1">species_profile <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_taxonID =</span> <span class="kw">paste0</span>(<span class="st">&quot;https://www.gbif.org/species/&quot;</span>, verificationKey))</a></code></pre></div>
+<div class="sourceCode" id="cb53"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb53-1"><a href="6_dwc_mapping.html#cb53-1"></a>species_profile <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_taxonID =</span> <span class="kw">paste0</span>(<span class="st">&quot;https://www.gbif.org/species/&quot;</span>, verificationKey))</span></code></pre></div>
 </div>
 <div id="ismarine" class="section level4">
 <h4><span class="header-section-number">6.6.1.2</span> isMarine</h4>
-<div class="sourceCode" id="cb54"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb54-1" title="1">species_profile <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_isMarine =</span> marine)</a></code></pre></div>
+<div class="sourceCode" id="cb54"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb54-1"><a href="6_dwc_mapping.html#cb54-1"></a>species_profile <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_isMarine =</span> marine)</span></code></pre></div>
 </div>
 <div id="isfreshwater" class="section level4">
 <h4><span class="header-section-number">6.6.1.3</span> isFreshwater</h4>
-<div class="sourceCode" id="cb55"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb55-1" title="1">species_profile <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_isFreshwater =</span> freshwater)</a></code></pre></div>
+<div class="sourceCode" id="cb55"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb55-1"><a href="6_dwc_mapping.html#cb55-1"></a>species_profile <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_isFreshwater =</span> freshwater)</span></code></pre></div>
 </div>
 <div id="isterrestrial" class="section level4">
 <h4><span class="header-section-number">6.6.1.4</span> isTerrestrial</h4>
-<div class="sourceCode" id="cb56"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb56-1" title="1">species_profile <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_isTerrestrial =</span> terrestrial)</a></code></pre></div>
+<div class="sourceCode" id="cb56"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb56-1"><a href="6_dwc_mapping.html#cb56-1"></a>species_profile <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_isTerrestrial =</span> terrestrial)</span></code></pre></div>
 </div>
 <div id="isinvasive" class="section level4">
 <h4><span class="header-section-number">6.6.1.5</span> isInvasive</h4>
 <p>The source checklists currently do not include information on the invasive nature of the taxa. We plan to add that information in an update of the dataset.</p>
-<div class="sourceCode" id="cb57"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb57-1" title="1">species_profile <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_isInvasive =</span> <span class="st">&quot;&quot;</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb57"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb57-1"><a href="6_dwc_mapping.html#cb57-1"></a>species_profile <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_isInvasive =</span> <span class="st">&quot;&quot;</span>)</span></code></pre></div>
 </div>
 <div id="habitat" class="section level4">
 <h4><span class="header-section-number">6.6.1.6</span> habitat</h4>
 <p>ISSG also used the field <code>habitat</code>, in which we will summarize the information from <code>isMarine</code>, <code>isFreshwater</code> and <code>isTerrestrial</code>.</p>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
-{"columns":[{"label":["marine"],"name":[1],"type":["lgl"],"align":["right"]},{"label":["freshwater"],"name":[2],"type":["lgl"],"align":["right"]},{"label":["terrestrial"],"name":[3],"type":["lgl"],"align":["right"]},{"label":["records"],"name":[4],"type":["int"],"align":["right"]}],"data":[{"1":"FALSE","2":"FALSE","3":"TRUE","4":"2536"},{"1":"FALSE","2":"TRUE","3":"FALSE","4":"232"},{"1":"FALSE","2":"TRUE","3":"TRUE","4":"14"},{"1":"TRUE","2":"FALSE","3":"FALSE","4":"49"},{"1":"TRUE","2":"TRUE","3":"FALSE","4":"8"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+{"columns":[{"label":["marine"],"name":[1],"type":["lgl"],"align":["right"]},{"label":["freshwater"],"name":[2],"type":["lgl"],"align":["right"]},{"label":["terrestrial"],"name":[3],"type":["lgl"],"align":["right"]},{"label":["records"],"name":[4],"type":["int"],"align":["right"]}],"data":[{"1":"FALSE","2":"FALSE","3":"TRUE","4":"2547"},{"1":"FALSE","2":"TRUE","3":"FALSE","4":"232"},{"1":"FALSE","2":"TRUE","3":"TRUE","4":"14"},{"1":"TRUE","2":"FALSE","3":"FALSE","4":"49"},{"1":"TRUE","2":"TRUE","3":"FALSE","4":"8"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
   </script>
 </div>
 <p>Map <code>habitat</code>:</p>
-<div class="sourceCode" id="cb58"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb58-1" title="1">species_profile <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_habitat =</span> <span class="kw">case_when</span>(</a>
-<a class="sourceLine" id="cb58-2" title="2">  marine <span class="op">==</span><span class="st"> &quot;FALSE&quot;</span> <span class="op">&amp;</span><span class="st"> </span>freshwater <span class="op">==</span><span class="st"> &quot;FALSE&quot;</span> <span class="op">&amp;</span><span class="st"> </span>terrestrial <span class="op">==</span><span class="st"> &quot;TRUE&quot;</span> <span class="op">~</span><span class="st"> &quot;terrestrial&quot;</span>,</a>
-<a class="sourceLine" id="cb58-3" title="3">  marine <span class="op">==</span><span class="st"> &quot;FALSE&quot;</span> <span class="op">&amp;</span><span class="st"> </span>freshwater <span class="op">==</span><span class="st"> &quot;TRUE&quot;</span> <span class="op">&amp;</span><span class="st"> </span>terrestrial <span class="op">==</span><span class="st"> &quot;FALSE&quot;</span> <span class="op">~</span><span class="st"> &quot;freshwater&quot;</span>,</a>
-<a class="sourceLine" id="cb58-4" title="4">  marine <span class="op">==</span><span class="st"> &quot;FALSE&quot;</span> <span class="op">&amp;</span><span class="st"> </span>freshwater <span class="op">==</span><span class="st"> &quot;TRUE&quot;</span> <span class="op">&amp;</span><span class="st"> </span>terrestrial <span class="op">==</span><span class="st"> &quot;TRUE&quot;</span> <span class="op">~</span><span class="st"> &quot;freshwater|terrestrial&quot;</span>,</a>
-<a class="sourceLine" id="cb58-5" title="5">  marine <span class="op">==</span><span class="st"> &quot;TRUE&quot;</span> <span class="op">&amp;</span><span class="st"> </span>freshwater <span class="op">==</span><span class="st"> &quot;FALSE&quot;</span> <span class="op">&amp;</span><span class="st"> </span>terrestrial <span class="op">==</span><span class="st"> &quot;FALSE&quot;</span> <span class="op">~</span><span class="st"> &quot;marine&quot;</span>,</a>
-<a class="sourceLine" id="cb58-6" title="6">  marine <span class="op">==</span><span class="st"> &quot;TRUE&quot;</span> <span class="op">&amp;</span><span class="st"> </span>freshwater <span class="op">==</span><span class="st"> &quot;FALSE&quot;</span> <span class="op">&amp;</span><span class="st"> </span>terrestrial <span class="op">==</span><span class="st"> &quot;TRUE&quot;</span> <span class="op">~</span><span class="st"> &quot;marine|terrestrial&quot;</span>,</a>
-<a class="sourceLine" id="cb58-7" title="7">  marine <span class="op">==</span><span class="st"> &quot;TRUE&quot;</span> <span class="op">&amp;</span><span class="st"> </span>freshwater <span class="op">==</span><span class="st"> &quot;TRUE&quot;</span> <span class="op">&amp;</span><span class="st"> </span>terrestrial <span class="op">==</span><span class="st"> &quot;FALSE&quot;</span> <span class="op">~</span><span class="st"> &quot;marine|freshwater&quot;</span>,</a>
-<a class="sourceLine" id="cb58-8" title="8">  marine <span class="op">==</span><span class="st"> &quot;TRUE&quot;</span> <span class="op">&amp;</span><span class="st"> </span>freshwater <span class="op">==</span><span class="st"> &quot;TRUE&quot;</span> <span class="op">&amp;</span><span class="st"> </span>terrestrial <span class="op">==</span><span class="st"> &quot;TRUE&quot;</span> <span class="op">~</span><span class="st"> &quot;marine|freshwater|terrestrial&quot;</span></a>
-<a class="sourceLine" id="cb58-9" title="9">))</a></code></pre></div>
+<div class="sourceCode" id="cb58"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb58-1"><a href="6_dwc_mapping.html#cb58-1"></a>species_profile <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_habitat =</span> <span class="kw">case_when</span>(</span>
+<span id="cb58-2"><a href="6_dwc_mapping.html#cb58-2"></a>  marine <span class="op">==</span><span class="st"> &quot;FALSE&quot;</span> <span class="op">&amp;</span><span class="st"> </span>freshwater <span class="op">==</span><span class="st"> &quot;FALSE&quot;</span> <span class="op">&amp;</span><span class="st"> </span>terrestrial <span class="op">==</span><span class="st"> &quot;TRUE&quot;</span> <span class="op">~</span><span class="st"> &quot;terrestrial&quot;</span>,</span>
+<span id="cb58-3"><a href="6_dwc_mapping.html#cb58-3"></a>  marine <span class="op">==</span><span class="st"> &quot;FALSE&quot;</span> <span class="op">&amp;</span><span class="st"> </span>freshwater <span class="op">==</span><span class="st"> &quot;TRUE&quot;</span> <span class="op">&amp;</span><span class="st"> </span>terrestrial <span class="op">==</span><span class="st"> &quot;FALSE&quot;</span> <span class="op">~</span><span class="st"> &quot;freshwater&quot;</span>,</span>
+<span id="cb58-4"><a href="6_dwc_mapping.html#cb58-4"></a>  marine <span class="op">==</span><span class="st"> &quot;FALSE&quot;</span> <span class="op">&amp;</span><span class="st"> </span>freshwater <span class="op">==</span><span class="st"> &quot;TRUE&quot;</span> <span class="op">&amp;</span><span class="st"> </span>terrestrial <span class="op">==</span><span class="st"> &quot;TRUE&quot;</span> <span class="op">~</span><span class="st"> &quot;freshwater|terrestrial&quot;</span>,</span>
+<span id="cb58-5"><a href="6_dwc_mapping.html#cb58-5"></a>  marine <span class="op">==</span><span class="st"> &quot;TRUE&quot;</span> <span class="op">&amp;</span><span class="st"> </span>freshwater <span class="op">==</span><span class="st"> &quot;FALSE&quot;</span> <span class="op">&amp;</span><span class="st"> </span>terrestrial <span class="op">==</span><span class="st"> &quot;FALSE&quot;</span> <span class="op">~</span><span class="st"> &quot;marine&quot;</span>,</span>
+<span id="cb58-6"><a href="6_dwc_mapping.html#cb58-6"></a>  marine <span class="op">==</span><span class="st"> &quot;TRUE&quot;</span> <span class="op">&amp;</span><span class="st"> </span>freshwater <span class="op">==</span><span class="st"> &quot;FALSE&quot;</span> <span class="op">&amp;</span><span class="st"> </span>terrestrial <span class="op">==</span><span class="st"> &quot;TRUE&quot;</span> <span class="op">~</span><span class="st"> &quot;marine|terrestrial&quot;</span>,</span>
+<span id="cb58-7"><a href="6_dwc_mapping.html#cb58-7"></a>  marine <span class="op">==</span><span class="st"> &quot;TRUE&quot;</span> <span class="op">&amp;</span><span class="st"> </span>freshwater <span class="op">==</span><span class="st"> &quot;TRUE&quot;</span> <span class="op">&amp;</span><span class="st"> </span>terrestrial <span class="op">==</span><span class="st"> &quot;FALSE&quot;</span> <span class="op">~</span><span class="st"> &quot;marine|freshwater&quot;</span>,</span>
+<span id="cb58-8"><a href="6_dwc_mapping.html#cb58-8"></a>  marine <span class="op">==</span><span class="st"> &quot;TRUE&quot;</span> <span class="op">&amp;</span><span class="st"> </span>freshwater <span class="op">==</span><span class="st"> &quot;TRUE&quot;</span> <span class="op">&amp;</span><span class="st"> </span>terrestrial <span class="op">==</span><span class="st"> &quot;TRUE&quot;</span> <span class="op">~</span><span class="st"> &quot;marine|freshwater|terrestrial&quot;</span></span>
+<span id="cb58-9"><a href="6_dwc_mapping.html#cb58-9"></a>))</span></code></pre></div>
 <p>Show mapping:</p>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
-{"columns":[{"label":["dwc_isMarine"],"name":[1],"type":["lgl"],"align":["right"]},{"label":["dwc_isFreshwater"],"name":[2],"type":["lgl"],"align":["right"]},{"label":["dwc_isTerrestrial"],"name":[3],"type":["lgl"],"align":["right"]},{"label":["dwc_habitat"],"name":[4],"type":["chr"],"align":["left"]},{"label":["records"],"name":[5],"type":["int"],"align":["right"]}],"data":[{"1":"FALSE","2":"FALSE","3":"TRUE","4":"terrestrial","5":"2536"},{"1":"FALSE","2":"TRUE","3":"FALSE","4":"freshwater","5":"232"},{"1":"FALSE","2":"TRUE","3":"TRUE","4":"freshwater|terrestrial","5":"14"},{"1":"TRUE","2":"FALSE","3":"FALSE","4":"marine","5":"49"},{"1":"TRUE","2":"TRUE","3":"FALSE","4":"marine|freshwater","5":"8"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+{"columns":[{"label":["dwc_isMarine"],"name":[1],"type":["lgl"],"align":["right"]},{"label":["dwc_isFreshwater"],"name":[2],"type":["lgl"],"align":["right"]},{"label":["dwc_isTerrestrial"],"name":[3],"type":["lgl"],"align":["right"]},{"label":["dwc_habitat"],"name":[4],"type":["chr"],"align":["left"]},{"label":["records"],"name":[5],"type":["int"],"align":["right"]}],"data":[{"1":"FALSE","2":"FALSE","3":"TRUE","4":"terrestrial","5":"2547"},{"1":"FALSE","2":"TRUE","3":"FALSE","4":"freshwater","5":"232"},{"1":"FALSE","2":"TRUE","3":"TRUE","4":"freshwater|terrestrial","5":"14"},{"1":"TRUE","2":"FALSE","3":"FALSE","4":"marine","5":"49"},{"1":"TRUE","2":"TRUE","3":"FALSE","4":"marine|freshwater","5":"8"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
   </script>
 </div>
 </div>
 <div id="source-1" class="section level4">
 <h4><span class="header-section-number">6.6.1.7</span> source</h4>
 <p>See <a href="6_dwc_mapping.html#citing-sources">6.3</a>:</p>
-<div class="sourceCode" id="cb59"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb59-1" title="1">species_profile <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">add_source_citation</span>(</a>
-<a class="sourceLine" id="cb59-2" title="2">  <span class="dt">new_column =</span> <span class="st">&quot;dwc_source&quot;</span>,</a>
-<a class="sourceLine" id="cb59-3" title="3">  <span class="dt">dataset_info =</span> checklists</a>
-<a class="sourceLine" id="cb59-4" title="4">)</a></code></pre></div>
+<div class="sourceCode" id="cb59"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb59-1"><a href="6_dwc_mapping.html#cb59-1"></a>species_profile <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">add_source_citation</span>(</span>
+<span id="cb59-2"><a href="6_dwc_mapping.html#cb59-2"></a>  <span class="dt">new_column =</span> <span class="st">&quot;dwc_source&quot;</span>,</span>
+<span id="cb59-3"><a href="6_dwc_mapping.html#cb59-3"></a>  <span class="dt">dataset_info =</span> checklists</span>
+<span id="cb59-4"><a href="6_dwc_mapping.html#cb59-4"></a>)</span></code></pre></div>
 </div>
 </div>
 <div id="post-processing-2" class="section level3">
@@ -713,27 +715,27 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Map the data to <a href="http://rs.gbif.org/extension/gbif/1.0/description.xml">Taxon Description</a>.</p>
 <div id="taxonid-3" class="section level4">
 <h4><span class="header-section-number">6.7.2.1</span> taxonID</h4>
-<div class="sourceCode" id="cb60"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb60-1" title="1">description <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_taxonID =</span> <span class="kw">paste0</span>(<span class="st">&quot;https://www.gbif.org/species/&quot;</span>, verificationKey))</a></code></pre></div>
+<div class="sourceCode" id="cb60"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb60-1"><a href="6_dwc_mapping.html#cb60-1"></a>description <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_taxonID =</span> <span class="kw">paste0</span>(<span class="st">&quot;https://www.gbif.org/species/&quot;</span>, verificationKey))</span></code></pre></div>
 </div>
 <div id="description" class="section level4">
 <h4><span class="header-section-number">6.7.2.2</span> description</h4>
-<div class="sourceCode" id="cb61"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb61-1" title="1">description <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_description =</span> description)</a></code></pre></div>
+<div class="sourceCode" id="cb61"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb61-1"><a href="6_dwc_mapping.html#cb61-1"></a>description <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_description =</span> description)</span></code></pre></div>
 </div>
 <div id="type" class="section level4">
 <h4><span class="header-section-number">6.7.2.3</span> type</h4>
-<div class="sourceCode" id="cb62"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb62-1" title="1">description <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_type =</span> type)</a></code></pre></div>
+<div class="sourceCode" id="cb62"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb62-1"><a href="6_dwc_mapping.html#cb62-1"></a>description <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_type =</span> type)</span></code></pre></div>
 </div>
 <div id="language-1" class="section level4">
 <h4><span class="header-section-number">6.7.2.4</span> language</h4>
-<div class="sourceCode" id="cb63"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb63-1" title="1">description <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_language =</span> <span class="st">&quot;en&quot;</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb63"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb63-1"><a href="6_dwc_mapping.html#cb63-1"></a>description <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">dwc_language =</span> <span class="st">&quot;en&quot;</span>)</span></code></pre></div>
 </div>
 <div id="source-2" class="section level4">
 <h4><span class="header-section-number">6.7.2.5</span> source</h4>
 <p>See <a href="6_dwc_mapping.html#citing-sources">6.3</a>:</p>
-<div class="sourceCode" id="cb64"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb64-1" title="1">description <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">add_source_citation</span>(</a>
-<a class="sourceLine" id="cb64-2" title="2">  <span class="dt">new_column =</span> <span class="st">&quot;dwc_source&quot;</span>,</a>
-<a class="sourceLine" id="cb64-3" title="3">  <span class="dt">dataset_info =</span> checklists</a>
-<a class="sourceLine" id="cb64-4" title="4">)</a></code></pre></div>
+<div class="sourceCode" id="cb64"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb64-1"><a href="6_dwc_mapping.html#cb64-1"></a>description <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">add_source_citation</span>(</span>
+<span id="cb64-2"><a href="6_dwc_mapping.html#cb64-2"></a>  <span class="dt">new_column =</span> <span class="st">&quot;dwc_source&quot;</span>,</span>
+<span id="cb64-3"><a href="6_dwc_mapping.html#cb64-3"></a>  <span class="dt">dataset_info =</span> checklists</span>
+<span id="cb64-4"><a href="6_dwc_mapping.html#cb64-4"></a>)</span></code></pre></div>
 </div>
 </div>
 <div id="post-processing-3" class="section level3">
@@ -746,7 +748,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ol>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
-{"columns":[{"label":["taxonID"],"name":[1],"type":["chr"],"align":["left"]},{"label":["description"],"name":[2],"type":["chr"],"align":["left"]},{"label":["type"],"name":[3],"type":["chr"],"align":["left"]},{"label":["language"],"name":[4],"type":["chr"],"align":["left"]},{"label":["source"],"name":[5],"type":["chr"],"align":["left"]}],"data":[{"1":"https://www.gbif.org/species/1002621","2":"in Belgian part of the North Sea: Other","3":"Introduced species vector dispersal","4":"en","5":"https://www.gbif.org/species/157131084: Keratella tropica (Apstein, 1907) in Flanders Marine Institute (2020). World Register of Introduced Marine Species (WRiMS). Checklist dataset https://doi.org/10.14284/347"},{"1":"https://www.gbif.org/species/1002621","2":"in Belgian part of the North Sea: Ships: accidental with ballast water, sea water systems, live wells or other deck basins","3":"Introduced species vector dispersal","4":"en","5":"https://www.gbif.org/species/157131084: Keratella tropica (Apstein, 1907) in Flanders Marine Institute (2020). World Register of Introduced Marine Species (WRiMS). Checklist dataset https://doi.org/10.14284/347"},{"1":"https://www.gbif.org/species/1008955","2":"in Belgian part of the North Sea: Aquaculture: accidental","3":"Introduced species vector dispersal","4":"en","5":"https://www.gbif.org/species/157130960: Fenestrulina delicia Winston, Hayward & Craig, 2000 in Flanders Marine Institute (2020). World Register of Introduced Marine Species (WRiMS). Checklist dataset https://doi.org/10.14284/347"},{"1":"https://www.gbif.org/species/10172912","2":"established","3":"invasion stage","4":"en","5":"https://www.gbif.org/species/141267189: Cerastium x maureri M. Schulze in Verloove F, Groom Q, Brosens D, Desmet P, Reyserhove L (2019). Manual of the Alien Plants of Belgium. Version 1.8. Botanic Garden Meise. Checklist dataset https://doi.org/10.15468/wtda1m"},{"1":"https://www.gbif.org/species/10173593","2":"casual","3":"invasion stage","4":"en","5":"https://www.gbif.org/species/141266452: Geranium x magnificum Hyl. in Verloove F, Groom Q, Brosens D, Desmet P, Reyserhove L (2019). Manual of the Alien Plants of Belgium. Version 1.8. Botanic Garden Meise. Checklist dataset https://doi.org/10.15468/wtda1m"},{"1":"https://www.gbif.org/species/10173593","2":"cbd_2014_pathway:escape_horticulture","3":"pathway","4":"en","5":"https://www.gbif.org/species/141266452: Geranium x magnificum Hyl. in Verloove F, Groom Q, Brosens D, Desmet P, Reyserhove L (2019). Manual of the Alien Plants of Belgium. Version 1.8. Botanic Garden Meise. Checklist dataset https://doi.org/10.15468/wtda1m"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+{"columns":[{"label":["taxonID"],"name":[1],"type":["chr"],"align":["left"]},{"label":["description"],"name":[2],"type":["chr"],"align":["left"]},{"label":["type"],"name":[3],"type":["chr"],"align":["left"]},{"label":["language"],"name":[4],"type":["chr"],"align":["left"]},{"label":["source"],"name":[5],"type":["chr"],"align":["left"]}],"data":[{"1":"https://www.gbif.org/species/1002621","2":"in Belgian part of the North Sea: Other","3":"Introduced species vector dispersal","4":"en","5":"https://www.gbif.org/species/157131084: Keratella tropica (Apstein, 1907) in Flanders Marine Institute (2020). World Register of Introduced Marine Species (WRiMS). Checklist dataset https://doi.org/10.14284/347"},{"1":"https://www.gbif.org/species/1002621","2":"in Belgian part of the North Sea: Ships: accidental with ballast water, sea water systems, live wells or other deck basins","3":"Introduced species vector dispersal","4":"en","5":"https://www.gbif.org/species/157131084: Keratella tropica (Apstein, 1907) in Flanders Marine Institute (2020). World Register of Introduced Marine Species (WRiMS). Checklist dataset https://doi.org/10.14284/347"},{"1":"https://www.gbif.org/species/1008955","2":"in Belgian part of the North Sea: Aquaculture: accidental","3":"Introduced species vector dispersal","4":"en","5":"https://www.gbif.org/species/157130960: Fenestrulina delicia Winston, Hayward & Craig, 2000 in Flanders Marine Institute (2020). World Register of Introduced Marine Species (WRiMS). Checklist dataset https://doi.org/10.14284/347"},{"1":"https://www.gbif.org/species/10172912","2":"established","3":"invasion stage","4":"en","5":"https://www.gbif.org/species/141267189: Cerastium x maureri M. Schulze in Verloove F, Groom Q, Brosens D, Desmet P, Reyserhove L (2020). Manual of the Alien Plants of Belgium. Version 1.9. Botanic Garden Meise. Checklist dataset https://doi.org/10.15468/wtda1m"},{"1":"https://www.gbif.org/species/10173593","2":"casual","3":"invasion stage","4":"en","5":"https://www.gbif.org/species/141266452: Geranium x magnificum Hyl. in Verloove F, Groom Q, Brosens D, Desmet P, Reyserhove L (2020). Manual of the Alien Plants of Belgium. Version 1.9. Botanic Garden Meise. Checklist dataset https://doi.org/10.15468/wtda1m"},{"1":"https://www.gbif.org/species/10173593","2":"cbd_2014_pathway:escape_horticulture","3":"pathway","4":"en","5":"https://www.gbif.org/species/141266452: Geranium x magnificum Hyl. in Verloove F, Groom Q, Brosens D, Desmet P, Reyserhove L (2020). Manual of the Alien Plants of Belgium. Version 1.9. Botanic Garden Meise. Checklist dataset https://doi.org/10.15468/wtda1m"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
   </script>
 </div>
 <ol start="5" style="list-style-type: decimal">

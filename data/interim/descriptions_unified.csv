@@ -1678,6 +1678,9 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 2703346,native range,Eastern Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265922,Anthoxanthum nitens (Weber) Schouten & Veldkamp
 2703346,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265922,Anthoxanthum nitens (Weber) Schouten & Veldkamp
 2703346,native range,Northern America,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265922,Anthoxanthum nitens (Weber) Schouten & Veldkamp
+2703459,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,163968251,Oryza sativa L.
+2703459,native range,Southern Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,163968251,Oryza sativa L.
+2703459,pathway,cbd_2014_pathway:contaminant_seed,9ff7d317-609b-4c08-bd86-3bc404b77c42,163968251,Oryza sativa L.
 2703670,invasion stage,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265721,Bromus inermis Leyss.
 2703670,native range,Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265721,Bromus inermis Leyss.
 2703670,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265721,Bromus inermis Leyss.
@@ -2159,6 +2162,8 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 2718387,native range,Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267146,Bolboschoenus glaucus (Lam.) S.G. Sm.
 2718387,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267146,Bolboschoenus glaucus (Lam.) S.G. Sm.
 2718387,pathway,cbd_2014_pathway:contaminant_seed,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267146,Bolboschoenus glaucus (Lam.) S.G. Sm.
+2720171,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,163968300,Scirpus cyperinus (L.) Kunth
+2720171,native range,Northern America,9ff7d317-609b-4c08-bd86-3bc404b77c42,163968300,Scirpus cyperinus (L.) Kunth
 2722380,invasion stage,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267144,Carex crawfordii Fernald
 2722380,native range,Northern America,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267144,Carex crawfordii Fernald
 2722380,pathway,cbd_2014_pathway:contaminant_on_animals,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267144,Carex crawfordii Fernald
@@ -2349,6 +2354,9 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 2840931,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264832,Goodyera repens (L.) R. Brown
 2840931,native range,Northern America,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264832,Goodyera repens (L.) R. Brown
 2840931,pathway,cbd_2014_pathway:contaminant_on_plants,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264832,Goodyera repens (L.) R. Brown
+2855338,invasion stage,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,163968182,Galanthus plicatus Bieb.
+2855338,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,163968182,Galanthus plicatus Bieb.
+2855338,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,163968182,Galanthus plicatus Bieb.
 2855356,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267243,Galanthus x warei J. Allen
 2855356,invasion stage,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267246,Galanthus nivalis L. var. scharlockii Caspary
 2855356,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267246,Galanthus nivalis L. var. scharlockii Caspary
@@ -2417,6 +2425,12 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 2858581,invasion stage,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267239,Narcissus poeticus L.
 2858581,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267239,Narcissus poeticus L.
 2858581,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267239,Narcissus poeticus L.
+2858963,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,163968132,Narcissus tazetta L.
+2858963,native range,Africa,9ff7d317-609b-4c08-bd86-3bc404b77c42,163968132,Narcissus tazetta L.
+2858963,native range,Eastern Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,163968132,Narcissus tazetta L.
+2858963,native range,Eastern Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,163968132,Narcissus tazetta L.
+2858963,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,163968132,Narcissus tazetta L.
+2858963,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,163968132,Narcissus tazetta L.
 2859597,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267247,Tristagma uniflorum (Lindl.) Traub
 2859597,native range,South America,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267247,Tristagma uniflorum (Lindl.) Traub
 2859597,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267247,Tristagma uniflorum (Lindl.) Traub
@@ -2511,6 +2525,8 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 2874570,native range,Africa,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266601,Cucumis melo L.
 2874570,native range,Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266601,Cucumis melo L.
 2874570,pathway,cbd_2014_pathway:escape_food_bait,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266601,Cucumis melo L.
+2874574,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,163968280,Cucumis dipsaceus Ehrenb. ex Spach
+2874574,native range,Africa,9ff7d317-609b-4c08-bd86-3bc404b77c42,163968280,Cucumis dipsaceus Ehrenb. ex Spach
 2874621,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266599,Citrullus lanatus (Thunb.) Matsumura & Nakai
 2874621,native range,Africa,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266599,Citrullus lanatus (Thunb.) Matsumura & Nakai
 2874621,pathway,cbd_2014_pathway:escape_food_bait,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266599,Citrullus lanatus (Thunb.) Matsumura & Nakai
@@ -2646,6 +2662,10 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 2888585,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266436,Viburnum tinus L.
 2888588,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266434,Viburnum x rhytidophylloides Suringar
 2888588,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266434,Viburnum x rhytidophylloides Suringar
+2888622,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,163968267,Viburnum plicatum Thunb.
+2888622,native range,Eastern Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,163968267,Viburnum plicatum Thunb.
+2888622,native range,Eastern Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,163968267,Viburnum plicatum Thunb.
+2888622,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,163968267,Viburnum plicatum Thunb.
 2888625,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266433,Viburnum rhytidophyllum Hemsl.
 2888625,native range,Eastern Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266433,Viburnum rhytidophyllum Hemsl.
 2888625,native range,Eastern Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266433,Viburnum rhytidophyllum Hemsl.
@@ -4279,9 +4299,6 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 3040233,invasion stage,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266638,Populus alba L.
 3040233,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266638,Populus alba L.
 3040233,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266638,Populus alba L.
-3040241,invasion stage,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266640,"Populus x jackii Sargent ""Gileadensis"""
-3040241,native range,Northern America,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266640,"Populus x jackii Sargent ""Gileadensis"""
-3040241,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266640,"Populus x jackii Sargent ""Gileadensis"""
 3040253,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264762,Reseda phyteuma L.
 3040253,native range,Africa,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264762,Reseda phyteuma L.
 3040253,native range,Eastern Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264762,Reseda phyteuma L.
@@ -5008,7 +5025,7 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 3102871,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265191,Xerochrysum bracteatum (Vent.) Tzvelev
 3102871,native range,Australia and New Zealand,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265191,Xerochrysum bracteatum (Vent.) Tzvelev
 3102871,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265191,Xerochrysum bracteatum (Vent.) Tzvelev
-3103082,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265231,Gamochaeta pensylvanica (Willd.) Cabrera
+3103082,invasion stage,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265231,Gamochaeta pensylvanica (Willd.) Cabrera
 3103082,native range,Americas,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265231,Gamochaeta pensylvanica (Willd.) Cabrera
 3103082,pathway,cbd_2014_pathway:contaminant_nursery,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265231,Gamochaeta pensylvanica (Willd.) Cabrera
 3103082,pathway,cbd_2014_pathway:stowaway,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265231,Gamochaeta pensylvanica (Willd.) Cabrera
@@ -5826,6 +5843,9 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 3189828,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266291,Aesculus parviflora Walter
 3189828,native range,Northern America,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266291,Aesculus parviflora Walter
 3189828,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266291,Aesculus parviflora Walter
+3189836,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,163968260,Acer pensylvanicum L.
+3189836,native range,Northern America,9ff7d317-609b-4c08-bd86-3bc404b77c42,163968260,Acer pensylvanicum L.
+3189836,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,163968260,Acer pensylvanicum L.
 3189837,invasion stage,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266285,Acer saccharinum L.
 3189837,native range,Northern America,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266285,Acer saccharinum L.
 3189837,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266285,Acer saccharinum L.
@@ -5978,6 +5998,11 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 3666449,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266511,Oenothera fruticosa L. subsp. glauca (Michaux) Straley
 3666449,native range,Northern America,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266511,Oenothera fruticosa L. subsp. glauca (Michaux) Straley
 3666449,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266511,Oenothera fruticosa L. subsp. glauca (Michaux) Straley
+3666776,invasion stage,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,163968272,Oenothera ersteinensis R. Linder & R. Jean
+3666776,native range,Northern America,9ff7d317-609b-4c08-bd86-3bc404b77c42,163968272,Oenothera ersteinensis R. Linder & R. Jean
+3666776,pathway,cbd_2014_pathway:contaminant_habitat_material,9ff7d317-609b-4c08-bd86-3bc404b77c42,163968272,Oenothera ersteinensis R. Linder & R. Jean
+3667007,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,163968273,Oenothera drawertii Renner ex Rostański
+3667007,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,163968273,Oenothera drawertii Renner ex Rostański
 3667238,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266529,Oenothera paradoxa Hudziok
 3667238,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266529,Oenothera paradoxa Hudziok
 3667238,pathway,cbd_2014_pathway:contaminant_habitat_material,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266529,Oenothera paradoxa Hudziok
@@ -6305,6 +6330,8 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 4067302,native range,Eastern Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266330,Symphytum grandiflorum DC.
 4067302,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266330,Symphytum grandiflorum DC.
 4067302,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266330,Symphytum grandiflorum DC.
+4086523,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,163968233,Verbena incompta P.W. Michael
+4086523,native range,South America,9ff7d317-609b-4c08-bd86-3bc404b77c42,163968233,Verbena incompta P.W. Michael
 4090836,invasion stage,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264631,Armeria maritima Willd. subsp. elongata (Hoffmann) Bonnier
 4090836,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264631,Armeria maritima Willd. subsp. elongata (Hoffmann) Bonnier
 4090836,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264631,Armeria maritima Willd. subsp. elongata (Hoffmann) Bonnier
@@ -6476,10 +6503,6 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 4137839,native range,Eastern Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265757,Koeleria glauca (Spreng.) DC.
 4137839,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265757,Koeleria glauca (Spreng.) DC.
 4137839,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265757,Koeleria glauca (Spreng.) DC.
-4138123,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265638,Eremopoa persica (Trin.) Roshev.
-4138123,native range,Eastern Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265638,Eremopoa persica (Trin.) Roshev.
-4138123,native range,Eastern Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265638,Eremopoa persica (Trin.) Roshev.
-4138123,pathway,cbd_2014_pathway:contaminant_seed,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265638,Eremopoa persica (Trin.) Roshev.
 4138669,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265701,Pholiurus pannonicus (Host) Trin.
 4138669,native range,Eastern Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265701,Pholiurus pannonicus (Host) Trin.
 4138669,native range,Eastern Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265701,Pholiurus pannonicus (Host) Trin.
@@ -7725,6 +7748,9 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 5330661,invasion stage,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264974,Arum italicum Mill. s.l.
 5330661,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264974,Arum italicum Mill. s.l.
 5330661,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264974,Arum italicum Mill. s.l.
+5331238,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,163968178,Viola sororia Willd.
+5331238,native range,Northern America,9ff7d317-609b-4c08-bd86-3bc404b77c42,163968178,Viola sororia Willd.
+5331238,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,163968178,Viola sororia Willd.
 5331404,native range,Northern America,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042181,Echinocystis lobata (Michx.) Torr. & A. Gray
 5331404,pathway,cbd_2014_pathway:corridor,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042181,Echinocystis lobata (Michx.) Torr. & A. Gray
 5331404,pathway,cbd_2014_pathway:natural_dispersal,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042181,Echinocystis lobata (Michx.) Torr. & A. Gray
@@ -7849,6 +7875,9 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 5341394,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266224,Perilla frutescens (L.) Britton
 5341394,native range,Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266224,Perilla frutescens (L.) Britton
 5341394,pathway,cbd_2014_pathway:contaminant_seed,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266224,Perilla frutescens (L.) Britton
+5341407,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,163968258,Monarda didyma L.
+5341407,native range,Northern America,9ff7d317-609b-4c08-bd86-3bc404b77c42,163968258,Monarda didyma L.
+5341407,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,163968258,Monarda didyma L.
 5341442,invasion stage,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266242,Thymus vulgaris L.
 5341442,native range,Africa,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266242,Thymus vulgaris L.
 5341442,native range,Eastern Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266242,Thymus vulgaris L.
@@ -8977,6 +9006,10 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 5395475,native range,Eastern Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265147,Ligularia dentata (A. Gray) H. Hara
 5395475,native range,Eastern Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265147,Ligularia dentata (A. Gray) H. Hara
 5395475,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265147,Ligularia dentata (A. Gray) H. Hara
+5395559,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,163968136,Ligularia przewalskii (Maxim.) Diels
+5395559,native range,Eastern Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,163968136,Ligularia przewalskii (Maxim.) Diels
+5395559,native range,Eastern Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,163968136,Ligularia przewalskii (Maxim.) Diels
+5395559,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,163968136,Ligularia przewalskii (Maxim.) Diels
 5396474,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265266,Heliopsis helianthoides (L.) Sweet
 5396474,native range,Northern America,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265266,Heliopsis helianthoides (L.) Sweet
 5396474,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265266,Heliopsis helianthoides (L.) Sweet
@@ -9101,7 +9134,7 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 5411453,invasion stage,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265544,Campanula medium L.
 5411453,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265544,Campanula medium L.
 5411453,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265544,Campanula medium L.
-5414239,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264718,Ilex crenata Thunb.
+5414239,invasion stage,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264718,Ilex crenata Thunb.
 5414239,native range,Eastern Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264718,Ilex crenata Thunb.
 5414239,native range,Eastern Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264718,Ilex crenata Thunb.
 5414239,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264718,Ilex crenata Thunb.
@@ -9702,7 +9735,7 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 6369140,native range,Eastern Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265405,Prunus domestica L. subsp. domestica
 6369140,native range,Eastern Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265405,Prunus domestica L. subsp. domestica
 6369140,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265405,Prunus domestica L. subsp. domestica
-6369819,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266437,Sambucus canadensis L.
+6369819,invasion stage,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266437,Sambucus canadensis L.
 6369819,native range,Northern America,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266437,Sambucus canadensis L.
 6369819,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266437,Sambucus canadensis L.
 6374790,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266877,Clematis integrifolia L.
@@ -10163,9 +10196,6 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 7322529,invasion stage,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266549,Oenothera rubricaulis Kleb.
 7322529,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266549,Oenothera rubricaulis Kleb.
 7322529,pathway,cbd_2014_pathway:contaminant_habitat_material,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266549,Oenothera rubricaulis Kleb.
-7322738,invasion stage,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266523,Oenothera perangusta R.R. Gates
-7322738,native range,Northern America,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266523,Oenothera perangusta R.R. Gates
-7322738,pathway,cbd_2014_pathway:contaminant_habitat_material,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266523,Oenothera perangusta R.R. Gates
 7322773,invasion stage,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266517,Oenothera deflexa R.R. Gates
 7322773,native range,Northern America,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266517,Oenothera deflexa R.R. Gates
 7322773,pathway,cbd_2014_pathway:contaminant_habitat_material,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266517,Oenothera deflexa R.R. Gates
@@ -10851,6 +10881,9 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 8114833,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265515,Anarrhinum bellidifolium (L.) Willd.
 8114833,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265515,Anarrhinum bellidifolium (L.) Willd.
 8114833,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265515,Anarrhinum bellidifolium (L.) Willd.
+8116963,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,163968221,Acanthus hungaricus (Borbás) Baen.
+8116963,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,163968221,Acanthus hungaricus (Borbás) Baen.
+8116963,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,163968221,Acanthus hungaricus (Borbás) Baen.
 8118326,invasion stage,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266230,Teucrium resupinatum Desf.
 8118326,native range,Africa,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266230,Teucrium resupinatum Desf.
 8118326,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266230,Teucrium resupinatum Desf.

@@ -30,7 +30,7 @@ This document contains and describes all the steps in creating a unified checkli
 For more general information, see:
 
 - [GitHub repository](https://github.com/trias-project/unified-checklist)
-- [Dataset published on GBIF](https://doi.org/10.15468/xoidmd)
+- [Dataset on GBIF](https://doi.org/10.15468/xoidmd)
 
 Load libraries:
 

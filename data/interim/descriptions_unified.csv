@@ -11,9 +11,14 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 1043717,degree of establishment,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438201,"Cryptolaemus montrouzieri Mulsant, 1853"
 1043717,native range,Australia and New Zealand,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438201,"Cryptolaemus montrouzieri Mulsant, 1853"
 1043717,pathway,cbd_2014_pathway:release_biological_control,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438201,"Cryptolaemus montrouzieri Mulsant, 1853"
+1047536,degree of establishment,established,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164281991,"Leptinotarsa decemlineata (Say, 1824)"
+1047536,native range,Northern America,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164281991,"Leptinotarsa decemlineata (Say, 1824)"
 1152186,degree of establishment,established,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438193,"Callidiellum rufipenne Niisato, 2007"
 1152186,native range,Eastern Asia,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438193,"Callidiellum rufipenne Niisato, 2007"
 1152186,pathway,cbd_2014_pathway:contaminant_on_plants,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438193,"Callidiellum rufipenne Niisato, 2007"
+1194885,pathway,cbd_2014_pathway:contaminant_on_plants,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164281984,"Otiorhynchus meridionalis Gyllenhal, 1834"
+1194989,pathway,cbd_2014_pathway:contaminant_on_plants,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164281985,"Otiorhynchus cribricollis Gyllenhal, 1834"
+1195013,pathway,cbd_2014_pathway:contaminant_on_plants,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164281983,"Otiorhynchus aurifer Boheman, 1843"
 1311477,degree of establishment,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438120,"Vespa velutina Lepeletier, 1836"
 1311477,native range,Asia,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438120,"Vespa velutina Lepeletier, 1836"
 1311477,pathway,cbd_2014_pathway:unaided,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438120,"Vespa velutina Lepeletier, 1836"
@@ -46,10 +51,13 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 1450317,Introduced species vector dispersal,in Belgian part of the North Sea: Ships: accidental as attached or free-living fouling organisms,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131485,"Telmatogeton japonicus Tokunaga, 1933"
 1450317,Introduced species vector dispersal,in Finnish part of the Gulf of Finland (Marine Region) : Shipping,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131485,"Telmatogeton japonicus Tokunaga, 1933"
 1450317,Introduced species vector dispersal,in Germany (Nation) : Shipping is a likely vector,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131485,"Telmatogeton japonicus Tokunaga, 1933"
+1551754,degree of establishment,established,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164281924,"Phytomyza jucunda Frost & Sasakawa, 1954"
+1551754,native range,Eastern Asia,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164281924,"Phytomyza jucunda Frost & Sasakawa, 1954"
+1551754,pathway,cbd_2014_pathway:contaminant_on_plants,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164281924,"Phytomyza jucunda Frost & Sasakawa, 1954"
 1650106,degree of establishment,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437982,"Anopheles pharoensis Theobald, 1901"
 1650106,native range,Eastern Africa,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437982,"Anopheles pharoensis Theobald, 1901"
 1650106,pathway,cbd_2014_pathway:stowaway_other,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437982,"Anopheles pharoensis Theobald, 1901"
-1651430,degree of establishment,established,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437984,Aedes albopictus Skuse
+1651430,degree of establishment,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437984,Aedes albopictus Skuse
 1651430,native range,Asia,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437984,Aedes albopictus Skuse
 1651430,pathway,cbd_2014_pathway:stowaway_other,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437984,Aedes albopictus Skuse
 1652150,degree of establishment,established,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437985,"Aedes koreicus (Edwards, 1917)"
@@ -58,6 +66,9 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 1652212,degree of establishment,established,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437986,"Aedes japonicus (Theobald, 1901)"
 1652212,native range,Asia,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437986,"Aedes japonicus (Theobald, 1901)"
 1652212,pathway,cbd_2014_pathway:stowaway_other,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437986,"Aedes japonicus (Theobald, 1901)"
+1690276,degree of establishment,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164282008,"Eupholidoptera chabrieri (Charpentier, 1825)"
+1690276,native range,Southern Europe,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164282008,"Eupholidoptera chabrieri (Charpentier, 1825)"
+1690276,pathway,cbd_2014_pathway:stowaway_vehicles,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164282008,"Eupholidoptera chabrieri (Charpentier, 1825)"
 1690429,degree of establishment,established,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438218,"Meconema meridionale Costa & A., 1860"
 1690429,native range,Southern Europe,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438218,"Meconema meridionale Costa & A., 1860"
 1690429,pathway,cbd_2014_pathway:stowaway_vehicles,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438218,"Meconema meridionale Costa & A., 1860"
@@ -671,6 +682,7 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 2294131,pathway,cbd_2014_pathway:contaminant_habitat_material,e082b10e-476f-43c1-aa61-f8d92f33029a,157062962,"Allopeas clavulinum (Potiez & Michaud, 1835)"
 2294131,pathway,cbd_2014_pathway:contaminant_on_plants,e082b10e-476f-43c1-aa61-f8d92f33029a,157062962,"Allopeas clavulinum (Potiez & Michaud, 1835)"
 2294277,degree of establishment,blackburn_et_al_2011:E,e082b10e-476f-43c1-aa61-f8d92f33029a,157063085,"Theba pisana (O.F. Müller, 1774)"
+2294277,degree of establishment,established,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164281806,Theba pisana
 2294277,native range,Europe,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042426,"Theba pisana (Müller, 1774)"
 2294277,native range,Northern Africa,e082b10e-476f-43c1-aa61-f8d92f33029a,157063085,"Theba pisana (O.F. Müller, 1774)"
 2294277,native range,Southern Europe,e082b10e-476f-43c1-aa61-f8d92f33029a,157063085,"Theba pisana (O.F. Müller, 1774)"
@@ -867,6 +879,9 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 2367742,pathway,cbd_2014_pathway:escape_food_bait,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117237,Pimephales promelas
 2367742,pathway,cbd_2014_pathway:release,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042336,"Pimephales promelas (Rafinesque, 1820)"
 2367742,pathway,cbd_2014_pathway:stowaway,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042336,"Pimephales promelas (Rafinesque, 1820)"
+2367919,degree of establishment,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164281667,"Misgurnus anguillicaudatus (Cantor, 1842)"
+2367919,native range,Asia,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164281667,"Misgurnus anguillicaudatus (Cantor, 1842)"
+2367919,pathway,cbd_2014_pathway:escape_pet,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164281667,"Misgurnus anguillicaudatus (Cantor, 1842)"
 2379089,degree of establishment,established,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117247,Neogobius melanostomus
 2379089,native range,Asia,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042344,"Neogobius melanostomus (Pallas, 1814)"
 2379089,native range,Eastern Europe,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117247,Neogobius melanostomus
@@ -924,6 +939,7 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 2426640,native range,Southern Europe,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437865,"Pelophylax bedriagae (Camerano, 1882)"
 2426661,degree of establishment,established,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437864,"Pelophylax ridibundus (Pallas, 1771)"
 2426661,native range,Europe,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437864,"Pelophylax ridibundus (Pallas, 1771)"
+2426661,pathway,cbd_2014_pathway:stowaway_other,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437864,"Pelophylax ridibundus (Pallas, 1771)"
 2427091,degree of establishment,established,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437867,"Lithobates catesbeianus (Shaw, 1802)"
 2427091,native range,Northern America,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437867,"Lithobates catesbeianus (Shaw, 1802)"
 2431821,degree of establishment,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437849,"Pachytriton labiatus (Unterstein, 1930)"
@@ -987,11 +1003,20 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 2440946,native range,Asia,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437842,"Muntiacus reevesi (Ogilby, 1839)"
 2440946,pathway,cbd_2014_pathway:release_hunting,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437842,"Muntiacus reevesi (Ogilby, 1839)"
 2441122,pathway,cbd_2014_pathway:release_hunting,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437833,"Ovis ammon (Linnaeus, 1758)"
+2443002,degree of establishment,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164281780,"Trachemys scripta (Thunberg In Schoepff, 1792)"
+2443002,native range,Northern America,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164281780,"Trachemys scripta (Thunberg In Schoepff, 1792)"
+2443002,pathway,cbd_2014_pathway:escape_pet,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164281780,"Trachemys scripta (Thunberg In Schoepff, 1792)"
+2443002,pathway,cbd_2014_pathway:release_other,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164281780,"Trachemys scripta (Thunberg In Schoepff, 1792)"
+2443876,degree of establishment,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164281769,"Echis carinatus (Schneider, 1801)"
+2443876,pathway,cbd_2014_pathway:stowaway_container,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164281769,"Echis carinatus (Schneider, 1801)"
 2455523,degree of establishment,established,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437874,"Orthriophis taeniurus (Cope, 1861)"
 2455523,native range,Asia,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437874,"Orthriophis taeniurus (Cope, 1861)"
 2455523,pathway,cbd_2014_pathway:escape_pet,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437874,"Orthriophis taeniurus (Cope, 1861)"
+2455615,degree of establishment,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164281766,"Pantherophis guttatus (Linnaeus, 1766)"
+2455615,pathway,cbd_2014_pathway:escape_pet,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164281766,"Pantherophis guttatus (Linnaeus, 1766)"
 2469188,degree of establishment,established,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437880,"Podarcis muralis (Laurenti, 1768)"
 2469188,native range,Europe,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437880,"Podarcis muralis (Laurenti, 1768)"
+2469188,pathway,cbd_2014_pathway:stowaway_other,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437880,"Podarcis muralis (Laurenti, 1768)"
 2473341,native range,Africa,e1c3be64-2799-4342-8312-49d076993132,159498394,"Numida meleagris (Linnaeus, 1758)"
 2473341,pathway,cbd_2014_pathway:escape,e1c3be64-2799-4342-8312-49d076993132,159498394,"Numida meleagris (Linnaeus, 1758)"
 2473421,native range,Europe,e1c3be64-2799-4342-8312-49d076993132,159498423,"Lagopus lagopus (Linnaeus, 1758)"
@@ -1021,9 +1046,14 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 2474944,native range,Eastern Asia,e1c3be64-2799-4342-8312-49d076993132,159498465,"Grus japonensis (Statius Muller, 1776)"
 2475212,native range,Africa,e1c3be64-2799-4342-8312-49d076993132,159498310,"Crinifer zonurus (Rüppell, 1835)"
 2475212,pathway,cbd_2014_pathway:escape,e1c3be64-2799-4342-8312-49d076993132,159498310,"Crinifer zonurus (Rüppell, 1835)"
+2475373,native range,Africa,e1c3be64-2799-4342-8312-49d076993132,159498320,"Coracias abyssinicus Hermann, 1783"
 2475648,degree of establishment,reproducing (blackburn_2011:C2),e1c3be64-2799-4342-8312-49d076993132,159498325,"Dacelo novaeguineae (Hermann, 1783)"
 2475648,native range,Australia and New Zealand,e1c3be64-2799-4342-8312-49d076993132,159498325,"Dacelo novaeguineae (Hermann, 1783)"
 2475648,pathway,cbd_2014_pathway:escape,e1c3be64-2799-4342-8312-49d076993132,159498325,"Dacelo novaeguineae (Hermann, 1783)"
+2475679,native range,Africa,e1c3be64-2799-4342-8312-49d076993132,159498323,"Ceryle rudis (Linnaeus, 1758)"
+2475679,native range,Southeastern Asia,e1c3be64-2799-4342-8312-49d076993132,159498323,"Ceryle rudis (Linnaeus, 1758)"
+2475679,native range,Southern Asia,e1c3be64-2799-4342-8312-49d076993132,159498323,"Ceryle rudis (Linnaeus, 1758)"
+2475679,native range,Western Asia,e1c3be64-2799-4342-8312-49d076993132,159498323,"Ceryle rudis (Linnaeus, 1758)"
 2476041,degree of establishment,casual (blackburn_2011:C1),e1c3be64-2799-4342-8312-49d076993132,159498294,"Bucorvus leadbeateri (Vigors, 1825)"
 2476041,native range,Eastern Africa,e1c3be64-2799-4342-8312-49d076993132,159498294,"Bucorvus leadbeateri (Vigors, 1825)"
 2476041,native range,Middle Africa,e1c3be64-2799-4342-8312-49d076993132,159498294,"Bucorvus leadbeateri (Vigors, 1825)"
@@ -1126,6 +1156,7 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 2480568,native range,Middle Africa,e1c3be64-2799-4342-8312-49d076993132,159498367,"Buteo auguralis Salvadori, 1865"
 2480568,native range,Western Africa,e1c3be64-2799-4342-8312-49d076993132,159498367,"Buteo auguralis Salvadori, 1865"
 2480568,pathway,cbd_2014_pathway:escape,e1c3be64-2799-4342-8312-49d076993132,159498367,"Buteo auguralis Salvadori, 1865"
+2480762,native range,Africa,e1c3be64-2799-4342-8312-49d076993132,159498372,"Pluvianus aegyptius (Linnaeus, 1758)"
 2480764,degree of establishment,casual (blackburn_2011:C1),e1c3be64-2799-4342-8312-49d076993132,159498453,"Threskiornis aethiopicus (Latham, 1790)"
 2480764,native range,Africa,e1c3be64-2799-4342-8312-49d076993132,159498453,"Threskiornis aethiopicus (Latham, 1790)"
 2480764,native range,Western Asia,e1c3be64-2799-4342-8312-49d076993132,159498453,"Threskiornis aethiopicus (Latham, 1790)"
@@ -1157,6 +1188,7 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 2481875,native range,Central America,e1c3be64-2799-4342-8312-49d076993132,159498430,"Phalacrocorax auritus (Lesson, 1831)"
 2481875,native range,Northern America,e1c3be64-2799-4342-8312-49d076993132,159498430,"Phalacrocorax auritus (Lesson, 1831)"
 2481875,pathway,cbd_2014_pathway:escape,e1c3be64-2799-4342-8312-49d076993132,159498430,"Phalacrocorax auritus (Lesson, 1831)"
+2481936,native range,Africa,e1c3be64-2799-4342-8312-49d076993132,159498302,"Mycteria ibis (Linnaeus, 1766)"
 2481936,pathway,cbd_2014_pathway:escape,e1c3be64-2799-4342-8312-49d076993132,159498302,"Mycteria ibis (Linnaeus, 1766)"
 2482478,native range,Africa,e1c3be64-2799-4342-8312-49d076993132,159498674,"Corvus albicollis Latham, 1790"
 2482478,pathway,cbd_2014_pathway:escape,e1c3be64-2799-4342-8312-49d076993132,159498674,"Corvus albicollis Latham, 1790"
@@ -1184,10 +1216,12 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 2488960,pathway,cbd_2014_pathway:escape,e1c3be64-2799-4342-8312-49d076993132,159498678,"Oriolus auratus Vieillot, 1817"
 2489004,native range,Southern Asia,e1c3be64-2799-4342-8312-49d076993132,159498732,"Acridotheres ginginianus (Latham, 1790)"
 2489004,pathway,cbd_2014_pathway:escape_pet,e1c3be64-2799-4342-8312-49d076993132,159498732,"Acridotheres ginginianus (Latham, 1790)"
+2489005,degree of establishment,reproducing (blackburn_2011:C2),e1c3be64-2799-4342-8312-49d076993132,159498733,"Acridotheres tristis (Linnaeus, 1766)"
 2489005,native range,Central Asia,e1c3be64-2799-4342-8312-49d076993132,159498733,"Acridotheres tristis (Linnaeus, 1766)"
 2489005,native range,Southeastern Asia,e1c3be64-2799-4342-8312-49d076993132,159498733,"Acridotheres tristis (Linnaeus, 1766)"
 2489005,native range,Southern Asia,e1c3be64-2799-4342-8312-49d076993132,159498733,"Acridotheres tristis (Linnaeus, 1766)"
 2489005,pathway,cbd_2014_pathway:escape_pet,e1c3be64-2799-4342-8312-49d076993132,159498733,"Acridotheres tristis (Linnaeus, 1766)"
+2489010,degree of establishment,reproducing (blackburn_2011:C2),e1c3be64-2799-4342-8312-49d076993132,159498731,"Acridotheres cristatellus (Linnaeus, 1758)"
 2489010,native range,Eastern Asia,e1c3be64-2799-4342-8312-49d076993132,159498731,"Acridotheres cristatellus (Linnaeus, 1758)"
 2489010,native range,Southeastern Asia,e1c3be64-2799-4342-8312-49d076993132,159498731,"Acridotheres cristatellus (Linnaeus, 1758)"
 2489010,pathway,cbd_2014_pathway:escape_pet,e1c3be64-2799-4342-8312-49d076993132,159498731,"Acridotheres cristatellus (Linnaeus, 1758)"
@@ -1258,9 +1292,11 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 2495342,native range,Eastern Africa,e1c3be64-2799-4342-8312-49d076993132,159498337,"Oena capensis (Linnaeus, 1766)"
 2495342,native range,Western Africa,e1c3be64-2799-4342-8312-49d076993132,159498337,"Oena capensis (Linnaeus, 1766)"
 2495342,pathway,cbd_2014_pathway:escape,e1c3be64-2799-4342-8312-49d076993132,159498337,"Oena capensis (Linnaeus, 1766)"
+2495414,native range,Asia,e1c3be64-2799-4342-8312-49d076993132,159498341,"Columba livia Gmelin, 1789"
 2495414,native range,Europe,e1c3be64-2799-4342-8312-49d076993132,159498341,"Columba livia Gmelin, 1789"
 2495414,pathway,cbd_2014_pathway:escape_farm,e1c3be64-2799-4342-8312-49d076993132,159498341,"Columba livia Gmelin, 1789"
 2495414,pathway,cbd_2014_pathway:escape_pet,e1c3be64-2799-4342-8312-49d076993132,159498341,"Columba livia Gmelin, 1789"
+2495494,native range,Australia and New Zealand,e1c3be64-2799-4342-8312-49d076993132,159498343,"Geopelia cuneata (Latham, 1802)"
 2495494,pathway,cbd_2014_pathway:escape,e1c3be64-2799-4342-8312-49d076993132,159498343,"Geopelia cuneata (Latham, 1802)"
 2495659,native range,Africa,e1c3be64-2799-4342-8312-49d076993132,159498346,"Streptopelia senegalensis (Linnaeus, 1766)"
 2495659,native range,Asia,e1c3be64-2799-4342-8312-49d076993132,159498346,"Streptopelia senegalensis (Linnaeus, 1766)"
@@ -1483,10 +1519,20 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 2501248,Introduced species vector dispersal,"in Israeli part of the Mediterranean Sea - Eastern Basin (Marine Region) : Ships: accidental with ballast water, sea water systems, live wells or other deck basins",0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131449,"Mnemiopsis leidyi A.Agassiz, 1865"
 2501248,Introduced species vector dispersal,"in Slovenian part of the Adriatic Sea (Marine Region) : Ships: accidental with ballast water, sea water systems, live wells or other deck basins",0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131449,"Mnemiopsis leidyi A.Agassiz, 1865"
 2501248,Introduced species vector dispersal,in Ukraine (Nation) : Shipping,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131449,"Mnemiopsis leidyi A.Agassiz, 1865"
+2502805,degree of establishment,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164281800,"Kontikia ventrolineata (Dendy, 1892)"
+2502805,pathway,cbd_2014_pathway:contaminant_nursery,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164281800,"Kontikia ventrolineata (Dendy, 1892)"
+2502810,degree of establishment,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164281803,"Caenoplana coerulea Moseley, 1877"
+2502810,native range,Australia and New Zealand,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164281803,"Caenoplana coerulea Moseley, 1877"
+2502810,pathway,cbd_2014_pathway:contaminant_nursery,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164281803,"Caenoplana coerulea Moseley, 1877"
+2502938,degree of establishment,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437727,"Bipalium kewense Moseley, 1878"
 2502938,native range,Southeastern Asia,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437727,"Bipalium kewense Moseley, 1878"
 2502938,pathway,cbd_2014_pathway:contaminant_habitat_material,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437727,"Bipalium kewense Moseley, 1878"
+2527401,degree of establishment,established,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164281693,Favolaschia calocera R.Heim
+2527401,pathway,cbd_2014_pathway:contaminant_timber,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164281693,Favolaschia calocera R.Heim
 2537743,native range,Eastern Asia,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437737,Lentinula edodes (Berk.) Pegler
 2557469,degree of establishment,established,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437766,Ustilago maydis (DC.) Corda
+2598552,degree of establishment,established,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164281651,Seifertia azaleae (Peck) Partr. & Morgan-Jones
+2598552,pathway,cbd_2014_pathway:contaminant_nursery,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164281651,Seifertia azaleae (Peck) Partr. & Morgan-Jones
 2627503,pathway,cbd_2014_pathway:contaminant_animal_parasite,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437715,"Batrachochytrium dendrobatidis Longcore, Pessier & D.K. Nichols"
 2650107,degree of establishment,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264623,Azolla filiculoides Lam.
 2650107,native range,Americas,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264623,Azolla filiculoides Lam.
@@ -6789,6 +6835,8 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 4410150,degree of establishment,established,289244ee-e1c1-49aa-b2d7-d379391ce265,140562903,Monopylephorus limosus
 4410150,native range,Asia,289244ee-e1c1-49aa-b2d7-d379391ce265,140562903,Monopylephorus limosus
 4410150,pathway,cbd_2014_pathway:stowaway_ballast_water,289244ee-e1c1-49aa-b2d7-d379391ce265,140562903,Monopylephorus limosus
+4416161,degree of establishment,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164281792,"Dolichoplana striata Moseley, 1877"
+4416161,pathway,cbd_2014_pathway:contaminant_nursery,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164281792,"Dolichoplana striata Moseley, 1877"
 4416920,degree of establishment,established,289244ee-e1c1-49aa-b2d7-d379391ce265,140562990,Synurella ambulans
 4416920,native range,Eastern Europe,289244ee-e1c1-49aa-b2d7-d379391ce265,140562990,Synurella ambulans
 4416920,pathway,cbd_2014_pathway:escape_aquaculture,289244ee-e1c1-49aa-b2d7-d379391ce265,140562990,Synurella ambulans
@@ -6798,10 +6846,17 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 4417131,pathway,cbd_2014_pathway:corridor_water,289244ee-e1c1-49aa-b2d7-d379391ce265,140563000,Echinogammarus trichiatus
 4423428,degree of establishment,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438220,"Yersinella raymondii (Yersin, 1860)"
 4423428,pathway,cbd_2014_pathway:unknown,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438220,"Yersinella raymondii (Yersin, 1860)"
+4460066,degree of establishment,established,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164281993,"Chrysolina americana (Linnaeus, 1758)"
+4460066,native range,Southern Europe,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164281993,"Chrysolina americana (Linnaeus, 1758)"
+4467502,pathway,cbd_2014_pathway:contaminant_on_plants,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164281982,"Otiorhynchus indefinitus Reitter, 1912"
+4485843,degree of establishment,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164281905,"Halyomorpha halys (Stål, 1855)"
+4485843,pathway,cbd_2014_pathway:stowaway,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164281905,"Halyomorpha halys (Stål, 1855)"
 4486365,degree of establishment,established,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437965,"Nysius huttoni FB White, 1878"
 4486365,native range,Australia and New Zealand,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437965,"Nysius huttoni FB White, 1878"
 4486365,pathway,cbd_2014_pathway:stowaway,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437965,"Nysius huttoni FB White, 1878"
 4487370,native range,Northern America,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437968,"Tropidosteptes pacificus (Van Duzee, 1921)"
+4487799,degree of establishment,established,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164281916,"Tupiocoris rhododendri (Dolling, 1972)"
+4528099,pathway,cbd_2014_pathway:contaminant_on_plants,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164281932,"Tuta absoluta (Meyrick, 1917)"
 4550810,degree of establishment,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438178,"Cryptachaea veruculata (Urquhart, 1886)"
 4550810,native range,Australia and New Zealand,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438178,"Cryptachaea veruculata (Urquhart, 1886)"
 4553469,degree of establishment,established,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437952,Leiobunum
@@ -6982,10 +7037,16 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 4990176,degree of establishment,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438203,"Rhyzobius forestieri (Mulsant, 1853)"
 4990176,native range,Australia and New Zealand,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438203,"Rhyzobius forestieri (Mulsant, 1853)"
 4990176,pathway,cbd_2014_pathway:release_biological_control,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438203,"Rhyzobius forestieri (Mulsant, 1853)"
+5073820,degree of establishment,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164281898,"Drosophila suzukii (Matsumura, 1931)"
+5073820,native range,Asia,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164281898,"Drosophila suzukii (Matsumura, 1931)"
+5073820,pathway,cbd_2014_pathway:contaminant,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164281898,"Drosophila suzukii (Matsumura, 1931)"
 5104748,degree of establishment,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438079,"Cameraria gaultheriella (Walsingham, 1889)"
 5104748,native range,Northern America,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438079,"Cameraria gaultheriella (Walsingham, 1889)"
 5104748,pathway,cbd_2014_pathway:contaminant_on_plants,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438079,"Cameraria gaultheriella (Walsingham, 1889)"
 5108665,native range,Americas,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438090,"Callopistria floridensis Guenée, 1852"
+5156102,degree of establishment,established,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164281908,"Leptoglossus occidentalis Heidemann, 1910"
+5156102,native range,Northern America,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164281908,"Leptoglossus occidentalis Heidemann, 1910"
+5156102,pathway,cbd_2014_pathway:natural_dispersal,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164281908,"Leptoglossus occidentalis Heidemann, 1910"
 5166489,degree of establishment,established,289244ee-e1c1-49aa-b2d7-d379391ce265,140562981,Megabalanus coccopoma
 5166489,Introduced species population trend,in Gulf of Mexico (IHO Sea Area) : Perreault (2004) found additional non-recruiting and/or dead populations at this location.,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131646,"Megabalanus coccopoma (Darwin, 1854)"
 5166489,Introduced species population trend,"in North Sea (IHO Sea Area) : Francis Kerckhof considers this species to be established in the southern North Sea (Kerckhof 2006, personal communication).",0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131646,"Megabalanus coccopoma (Darwin, 1854)"
@@ -7193,11 +7254,15 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 5216933,native range,Central America,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437858,"Rhinella marina (Linnaeus, 1758)"
 5217334,degree of establishment,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437861,"Xenopus laevis (Daudin, 1802)"
 5217334,native range,Africa,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437861,"Xenopus laevis (Daudin, 1802)"
+5217334,pathway,cbd_2014_pathway:escape_research,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437861,"Xenopus laevis (Daudin, 1802)"
+5218786,degree of establishment,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437821,"Procyon lotor (Linnaeus, 1758)"
 5218786,native range,Northern America,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437821,"Procyon lotor (Linnaeus, 1758)"
 5218786,pathway,cbd_2014_pathway:corridor,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042138,Procyon lotor (Linnaeus 1758)
 5218786,pathway,cbd_2014_pathway:escape,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042138,Procyon lotor (Linnaeus 1758)
+5218786,pathway,cbd_2014_pathway:escape_pet,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437821,"Procyon lotor (Linnaeus, 1758)"
 5218786,pathway,cbd_2014_pathway:natural_dispersal,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042138,Procyon lotor (Linnaeus 1758)
 5218786,pathway,cbd_2014_pathway:release,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042138,Procyon lotor (Linnaeus 1758)
+5218786,pathway,cbd_2014_pathway:unaided,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437821,"Procyon lotor (Linnaeus, 1758)"
 5219380,degree of establishment,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437829,"Mephitis mephitis (Schreber, 1776)"
 5219380,native range,Northern America,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437829,"Mephitis mephitis (Schreber, 1776)"
 5219380,pathway,cbd_2014_pathway:escape_pet,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437829,"Mephitis mephitis (Schreber, 1776)"
@@ -7216,11 +7281,14 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 5220136,degree of establishment,established,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437838,"Dama dama (Linnaeus, 1758)"
 5227775,native range,Eastern Asia,e1c3be64-2799-4342-8312-49d076993132,159498404,"Phasianus versicolor Vieillot, 1825"
 5227775,pathway,cbd_2014_pathway:escape_pet,e1c3be64-2799-4342-8312-49d076993132,159498404,"Phasianus versicolor Vieillot, 1825"
+5227966,native range,Southeastern Asia,e1c3be64-2799-4342-8312-49d076993132,159498416,"Lophura nycthemera (Linnaeus, 1758)"
 5227966,pathway,cbd_2014_pathway:escape_pet,e1c3be64-2799-4342-8312-49d076993132,159498416,"Lophura nycthemera (Linnaeus, 1758)"
 5227993,native range,Eastern Asia,e1c3be64-2799-4342-8312-49d076993132,159498417,"Lophura leucomelanos (Latham, 1790)"
 5227993,native range,Southern Asia,e1c3be64-2799-4342-8312-49d076993132,159498417,"Lophura leucomelanos (Latham, 1790)"
 5227993,pathway,cbd_2014_pathway:escape_pet,e1c3be64-2799-4342-8312-49d076993132,159498417,"Lophura leucomelanos (Latham, 1790)"
+5228033,native range,Eastern Asia,e1c3be64-2799-4342-8312-49d076993132,159498408,"Chrysolophus amherstiae (Leadbeater, 1829)"
 5228033,pathway,cbd_2014_pathway:escape_pet,e1c3be64-2799-4342-8312-49d076993132,159498408,"Chrysolophus amherstiae (Leadbeater, 1829)"
+5228034,native range,Eastern Asia,e1c3be64-2799-4342-8312-49d076993132,159498407,"Chrysolophus pictus (Linnaeus, 1758)"
 5228034,pathway,cbd_2014_pathway:escape_pet,e1c3be64-2799-4342-8312-49d076993132,159498407,"Chrysolophus pictus (Linnaeus, 1758)"
 5228080,native range,Northern America,e1c3be64-2799-4342-8312-49d076993132,159498399,"Callipepla californica (Shaw, 1798)"
 5228080,pathway,cbd_2014_pathway:escape_pet,e1c3be64-2799-4342-8312-49d076993132,159498399,"Callipepla californica (Shaw, 1798)"
@@ -7242,7 +7310,9 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 5229072,pathway,cbd_2014_pathway:escape,e1c3be64-2799-4342-8312-49d076993132,159498494,"Psittacula derbiana (Fraser, 1852)"
 5229110,degree of establishment,released (blackburn_2011:B3),e1c3be64-2799-4342-8312-49d076993132,159498490,"Cyanoramphus novaezelandiae (Sparrman, 1787)"
 5229110,pathway,cbd_2014_pathway:escape,e1c3be64-2799-4342-8312-49d076993132,159498490,"Cyanoramphus novaezelandiae (Sparrman, 1787)"
+5229128,degree of establishment,reproducing (blackburn_2011:C2),e1c3be64-2799-4342-8312-49d076993132,159498375,"Himantopus mexicanus (Statius Muller, 1776)"
 5229128,native range,Americas,e1c3be64-2799-4342-8312-49d076993132,159498375,"Himantopus mexicanus (Statius Muller, 1776)"
+5229128,pathway,cbd_2014_pathway:escape_zoo,e1c3be64-2799-4342-8312-49d076993132,159498375,"Himantopus mexicanus (Statius Muller, 1776)"
 5229134,native range,Australia and New Zealand,e1c3be64-2799-4342-8312-49d076993132,159498379,"Vanellus miles (Boddaert, 1783)"
 5229134,native range,Melanesia,e1c3be64-2799-4342-8312-49d076993132,159498379,"Vanellus miles (Boddaert, 1783)"
 5229136,native range,Eastern Africa,e1c3be64-2799-4342-8312-49d076993132,159498380,"Vanellus armatus (Burchell, 1822)"
@@ -7301,6 +7371,9 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 5232469,degree of establishment,casual (blackburn_2011:C1),e1c3be64-2799-4342-8312-49d076993132,159498549,"Oxyura vittata (Philippi, 1860)"
 5232469,native range,South America,e1c3be64-2799-4342-8312-49d076993132,159498549,"Oxyura vittata (Philippi, 1860)"
 5232469,pathway,cbd_2014_pathway:escape_pet,e1c3be64-2799-4342-8312-49d076993132,159498549,"Oxyura vittata (Philippi, 1860)"
+5241445,degree of establishment,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164281688,Volvariella volvacea (Bull.) Singer
+5241445,native range,Asia,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164281688,Volvariella volvacea (Bull.) Singer
+5241445,pathway,cbd_2014_pathway:agriculture,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164281688,Volvariella volvacea (Bull.) Singer
 5274858,degree of establishment,extinct,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264625,Salvinia natans (L.) All.
 5274858,native range,Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264625,Salvinia natans (L.) All.
 5274858,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264625,Salvinia natans (L.) All.
@@ -9543,7 +9616,6 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 5777912,degree of establishment,established,289244ee-e1c1-49aa-b2d7-d379391ce265,140562925,Lithoglyphus naticoides
 5777912,native range,Eastern Europe,289244ee-e1c1-49aa-b2d7-d379391ce265,140562925,Lithoglyphus naticoides
 5777912,pathway,cbd_2014_pathway:corridor_water,289244ee-e1c1-49aa-b2d7-d379391ce265,140562925,Lithoglyphus naticoides
-5779455,degree of establishment,established,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437911,Arion lusitanicus
 5786666,degree of establishment,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437805,"Hydrochoerus hydrochaeris (Linnaeus, 1766)"
 5786666,native range,South America,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437805,"Hydrochoerus hydrochaeris (Linnaeus, 1766)"
 5788513,native range,South America,e1c3be64-2799-4342-8312-49d076993132,159498357,"Spizaetus melanoleucus (Vieillot, 1816)"
@@ -9688,20 +9760,23 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 6128436,Introduced species vector dispersal,in Gulf of Mexico (IHO Sea Area) : Ships: general,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131628,"Amphibalanus reticulatus (Utinomi, 1967)"
 6128436,Introduced species vector dispersal,in Mexico (Nation) : Ships: general,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131628,"Amphibalanus reticulatus (Utinomi, 1967)"
 6128436,pathway,cbd_2014_pathway:stowaway_hull_fouling,289244ee-e1c1-49aa-b2d7-d379391ce265,140562978,Amphibalanus reticulatus
-6157026,degree of establishment,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437884,"Trachemys scripta subsp. elegans (Wied, 1838)"
-6157026,native range,Northern America,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437884,"Trachemys scripta subsp. elegans (Wied, 1838)"
-6157026,pathway,cbd_2014_pathway:escape_pet,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437884,"Trachemys scripta subsp. elegans (Wied, 1838)"
-6157026,pathway,cbd_2014_pathway:release_other,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437884,"Trachemys scripta subsp. elegans (Wied, 1838)"
-6157035,degree of establishment,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437886,"Trachemys scripta subsp. troostii (Holbrook, 1836)"
-6157035,native range,Northern America,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437886,"Trachemys scripta subsp. troostii (Holbrook, 1836)"
-6157035,pathway,cbd_2014_pathway:escape_pet,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437886,"Trachemys scripta subsp. troostii (Holbrook, 1836)"
-6157035,pathway,cbd_2014_pathway:release_other,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437886,"Trachemys scripta subsp. troostii (Holbrook, 1836)"
+6157026,degree of establishment,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164281781,"Trachemys scripta elegans (Wied, 1838)"
+6157026,native range,Northern America,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164281781,"Trachemys scripta elegans (Wied, 1838)"
+6157026,pathway,cbd_2014_pathway:escape_pet,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164281781,"Trachemys scripta elegans (Wied, 1838)"
+6157026,pathway,cbd_2014_pathway:release_other,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164281781,"Trachemys scripta elegans (Wied, 1838)"
+6157035,degree of establishment,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164281782,"Trachemys scripta troostii (Holbrook, 1836)"
+6157035,native range,Northern America,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164281782,"Trachemys scripta troostii (Holbrook, 1836)"
+6157035,pathway,cbd_2014_pathway:escape_pet,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164281782,"Trachemys scripta troostii (Holbrook, 1836)"
+6157035,pathway,cbd_2014_pathway:release_other,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164281782,"Trachemys scripta troostii (Holbrook, 1836)"
 6157050,degree of establishment,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437889,"Graptemys pseudogeographica subsp. kohnii (Baur, 1890)"
 6157050,native range,Northern America,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437889,"Graptemys pseudogeographica subsp. kohnii (Baur, 1890)"
 6157050,pathway,cbd_2014_pathway:escape_pet,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437889,"Graptemys pseudogeographica subsp. kohnii (Baur, 1890)"
 6157050,pathway,cbd_2014_pathway:release_other,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437889,"Graptemys pseudogeographica subsp. kohnii (Baur, 1890)"
 6159273,degree of establishment,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437877,"Lacerta viridis (Laurenti, 1768) s.l."
 6159273,native range,Southern Europe,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437877,"Lacerta viridis (Laurenti, 1768) s.l."
+6161327,degree of establishment,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164281772,"Natrix tessellata (Laurenti, 1768)"
+6161340,native range,Europe,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164281773,"Natrix maura (Linnaeus, 1758)"
+6161340,pathway,cbd_2014_pathway:contaminant_timber,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164281773,"Natrix maura (Linnaeus, 1758)"
 6290046,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266927,Solanum villosum Mill. subsp. miniatum (Bernh. ex Willd.) Edmonds
 6290046,native range,Africa,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266927,Solanum villosum Mill. subsp. miniatum (Bernh. ex Willd.) Edmonds
 6290046,native range,Eastern Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266927,Solanum villosum Mill. subsp. miniatum (Bernh. ex Willd.) Edmonds
@@ -9845,10 +9920,10 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 7009279,degree of establishment,established,289244ee-e1c1-49aa-b2d7-d379391ce265,140562912,Laonome calida
 7009279,native range,Australia and New Zealand,289244ee-e1c1-49aa-b2d7-d379391ce265,140562912,Laonome calida
 7009279,pathway,cbd_2014_pathway:stowaway_ballast_water,289244ee-e1c1-49aa-b2d7-d379391ce265,140562912,Laonome calida
-7062200,degree of establishment,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437885,"Trachemys scripta subsp. scripta (Schoepff, 1792)"
-7062200,native range,Northern America,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437885,"Trachemys scripta subsp. scripta (Schoepff, 1792)"
-7062200,pathway,cbd_2014_pathway:escape_pet,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437885,"Trachemys scripta subsp. scripta (Schoepff, 1792)"
-7062200,pathway,cbd_2014_pathway:release_other,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437885,"Trachemys scripta subsp. scripta (Schoepff, 1792)"
+7062200,degree of establishment,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164281783,"Trachemys scripta scripta (Schoepff, 1792)"
+7062200,native range,Northern America,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164281783,"Trachemys scripta scripta (Schoepff, 1792)"
+7062200,pathway,cbd_2014_pathway:escape_pet,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164281783,"Trachemys scripta scripta (Schoepff, 1792)"
+7062200,pathway,cbd_2014_pathway:release_other,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164281783,"Trachemys scripta scripta (Schoepff, 1792)"
 7066596,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265247,"Zinnia angustifolia Humb., Bonpl. & Kunth var. angustifolia"
 7066596,native range,Northern America,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265247,"Zinnia angustifolia Humb., Bonpl. & Kunth var. angustifolia"
 7066596,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265247,"Zinnia angustifolia Humb., Bonpl. & Kunth var. angustifolia"
@@ -10419,6 +10494,7 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 7536406,native range,Northern America,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266352,Nemophila menziesii Hook. & Arnott var. integrifolia Parish
 7536406,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266352,Nemophila menziesii Hook. & Arnott var. integrifolia Parish
 7540164,degree of establishment,blackburn_et_al_2011:E,e082b10e-476f-43c1-aa61-f8d92f33029a,157063238,"Arion vulgaris Moquin-Tandon, 1855"
+7540164,degree of establishment,established,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164281805,Arion vulgaris
 7540164,native range,Europe,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042480,"Arion vulgaris (Moquin-Tandon, 1855)"
 7540164,pathway,cbd_2014_pathway:contaminant,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042480,"Arion vulgaris (Moquin-Tandon, 1855)"
 7540164,pathway,cbd_2014_pathway:contaminant_habitat_material,e082b10e-476f-43c1-aa61-f8d92f33029a,157063238,"Arion vulgaris Moquin-Tandon, 1855"
@@ -10495,6 +10571,9 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 7664179,degree of establishment,established,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148438128,"Technomyrmex vitiensis (Smith, 1861)"
 7670473,native range,Asia,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437713,"Batrachochytrium salamandrivorans A. Martel, Blooi, Bossuyt & Pasmans, 2013"
 7670473,pathway,cbd_2014_pathway:contaminant_animal_parasite,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437713,"Batrachochytrium salamandrivorans A. Martel, Blooi, Bossuyt & Pasmans, 2013"
+7675186,degree of establishment,established,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164281939,"Choreutis nemorana (Hubner, 1799)"
+7675186,native range,Southern Europe,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164281939,"Choreutis nemorana (Hubner, 1799)"
+7675186,pathway,cbd_2014_pathway:contaminant_on_plants,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164281939,"Choreutis nemorana (Hubner, 1799)"
 7678610,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265932,Raphanus sativus L.
 7678610,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265932,Raphanus sativus L.
 7678610,pathway,cbd_2014_pathway:escape_agriculture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265932,Raphanus sativus L.
@@ -10794,6 +10873,8 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 8014163,pathway,cbd_2014_pathway:contaminant_on_plants,e082b10e-476f-43c1-aa61-f8d92f33029a,157063061,"Ambigolimax valentianus (A. Férussac, 1822)"
 8014163,pathway,cbd_2014_pathway:stowaway,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042439,"Lehmannia valentiana (Férussac, 1822)"
 8014163,pathway,cbd_2014_pathway:unaided,e082b10e-476f-43c1-aa61-f8d92f33029a,157063061,"Ambigolimax valentianus (A. Férussac, 1822)"
+8014966,native range,Africa,e1c3be64-2799-4342-8312-49d076993132,159498390,"Falco biarmicus Temminck, 1825"
+8014966,native range,Southern Europe,e1c3be64-2799-4342-8312-49d076993132,159498390,"Falco biarmicus Temminck, 1825"
 8014966,pathway,cbd_2014_pathway:escape_pet,e1c3be64-2799-4342-8312-49d076993132,159498390,"Falco biarmicus Temminck, 1825"
 8018277,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265341,Centaurea pectinata L.
 8018277,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265341,Centaurea pectinata L.
@@ -11145,12 +11226,14 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 8690876,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265030,Abronia fragrans Nutt.
 8690876,native range,Northern America,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265030,Abronia fragrans Nutt.
 8690876,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265030,Abronia fragrans Nutt.
+8701771,degree of establishment,established,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164281794,"Obama nungara Carbayo, Alvarez-Presas, Jones & Riutort, 2016"
+8701771,native range,South America,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164281794,"Obama nungara Carbayo, Alvarez-Presas, Jones & Riutort, 2016"
+8701771,pathway,cbd_2014_pathway:contaminant_habitat_material,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164281794,"Obama nungara Carbayo, Alvarez-Presas, Jones & Riutort, 2016"
+8701771,pathway,cbd_2014_pathway:contaminant_nursery,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164281794,"Obama nungara Carbayo, Alvarez-Presas, Jones & Riutort, 2016"
 8720751,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266430,Aconogonon divaricatum (L.) Nakai
 8720751,native range,Eastern Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266430,Aconogonon divaricatum (L.) Nakai
 8720751,native range,Eastern Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266430,Aconogonon divaricatum (L.) Nakai
 8720751,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266430,Aconogonon divaricatum (L.) Nakai
-8740315,native range,Australia and New Zealand,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437723,"Marionfyfea adventor Jones & Sluys, 2016"
-8740315,pathway,cbd_2014_pathway:contaminant_habitat_material,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437723,"Marionfyfea adventor Jones & Sluys, 2016"
 8745918,degree of establishment,blackburn_et_al_2011:E,e082b10e-476f-43c1-aa61-f8d92f33029a,157063248,"Deroceras invadens Reise, Hutchinson, Schunack & Schlitt, 2011"
 8745918,native range,Europe,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042406,"Deroceras invadens Reise, Hutchinson, Schunack & Schlitt, 2011"
 8745918,native range,Western Africa,e082b10e-476f-43c1-aa61-f8d92f33029a,157063248,"Deroceras invadens Reise, Hutchinson, Schunack & Schlitt, 2011"
@@ -11262,7 +11345,7 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 9288303,pathway,cbd_2014_pathway:contaminant_on_animals,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266974,Solanum triflorum Nutt. var. triflorum
 9288303,pathway,cbd_2014_pathway:contaminant_seed,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266974,Solanum triflorum Nutt. var. triflorum
 9291405,degree of establishment,blackburn_et_al_2011:C3,e082b10e-476f-43c1-aa61-f8d92f33029a,157063067,"Massylaea vermiculata (O.F. Müller, 1774)"
-9291405,degree of establishment,established,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437903,"Eobania vermiculata (O.F.Müller, 1774)"
+9291405,degree of establishment,established,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164281808,Massylaea vermiculata
 9291405,native range,Southern Europe,e082b10e-476f-43c1-aa61-f8d92f33029a,157063067,"Massylaea vermiculata (O.F. Müller, 1774)"
 9291405,pathway,cbd_2014_pathway:escape_pet,e082b10e-476f-43c1-aa61-f8d92f33029a,157063067,"Massylaea vermiculata (O.F. Müller, 1774)"
 9291405,pathway,cbd_2014_pathway:escape_research,e082b10e-476f-43c1-aa61-f8d92f33029a,157063067,"Massylaea vermiculata (O.F. Müller, 1774)"
@@ -11276,6 +11359,8 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 9297163,pathway,cbd_2014_pathway:contaminant_on_animals,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266455,Erodium malacoides (L.) L'Hérit.
 9297163,pathway,cbd_2014_pathway:contaminant_seed,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266455,Erodium malacoides (L.) L'Hérit.
 9321334,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265333,Pilosella x prussica (Naeg. & Peter) Soják
+9326020,native range,Southeastern Asia,e1c3be64-2799-4342-8312-49d076993132,159498410,"Gallus gallus (Linnaeus, 1758)"
+9326020,native range,Southern Asia,e1c3be64-2799-4342-8312-49d076993132,159498410,"Gallus gallus (Linnaeus, 1758)"
 9326020,pathway,cbd_2014_pathway:escape_farm,e1c3be64-2799-4342-8312-49d076993132,159498410,"Gallus gallus (Linnaeus, 1758)"
 9350124,degree of establishment,established,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437871,"Natrix helvetica Lacépède, 1789"
 9350124,native range,Europe,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,148437871,"Natrix helvetica Lacépède, 1789"

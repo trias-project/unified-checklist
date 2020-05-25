@@ -6811,7 +6811,7 @@ taxonKey,locationId,locality,country,status,temporal,establishmentMeans,remarks,
 163968280,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2018,INTRODUCED,,
 163968300,ISO_3166-2:BE,Belgium,BE,PRESENT,2018,INTRODUCED,,
 163968300,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2018,INTRODUCED,,
-159498294,ISO_3166-2:BE-VLG,Flanders,BE,PRESENT,2018/2018,INTRODUCED,,
+159498294,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2018/2018,INTRODUCED,,
 159498298,ISO_3166-2:BE,Belgium,BE,PRESENT,,INTRODUCED,"records form 2018, GBIF and http://observations.be",
 159498300,ISO_3166-2:BE,Belgium,BE,PRESENT,,INTRODUCED,"1 occurrence in GBIF, 2002, unverified, http://waarnemingen.be",
 159498302,ISO_3166-2:BE,Belgium,BE,PRESENT,,INTRODUCED,,
@@ -6821,7 +6821,7 @@ taxonKey,locationId,locality,country,status,temporal,establishmentMeans,remarks,
 159498316,ISO_3166-2:BE,Belgium,BE,PRESENT,2007,INTRODUCED,"3 occurrences in GBIF, one in 2007 and two in 2015; http://waarnemingen.be",
 159498320,ISO_3166-2:BE,Belgium,BE,PRESENT,,INTRODUCED,,
 159498323,ISO_3166-2:BE,Belgium,BE,PRESENT,,INTRODUCED,,
-159498325,ISO_3166-2:BE-VLG,Flanders,BE,PRESENT,2005/2009,INTRODUCED,,"Verbelen D. 2009 Gewone Kookaburra Dacelo novaeguineae, exoot de pas afgesneden. Natuur. Oriolus, 75(2):49-52."
+159498325,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2005/2009,INTRODUCED,,"Verbelen D. 2009 Gewone Kookaburra Dacelo novaeguineae, exoot de pas afgesneden. Natuur. Oriolus, 75(2):49-52."
 159498329,ISO_3166-2:BE,Belgium,BE,PRESENT,,INTRODUCED,,
 159498331,ISO_3166-2:BE,Belgium,BE,PRESENT,,INTRODUCED,,
 159498332,ISO_3166-2:BE,Belgium,BE,PRESENT,,INTRODUCED,,
@@ -6835,7 +6835,7 @@ taxonKey,locationId,locality,country,status,temporal,establishmentMeans,remarks,
 159498347,ISO_3166-2:BE,Belgium,BE,PRESENT,,INTRODUCED,,
 159498348,ISO_3166-2:BE,Belgium,BE,PRESENT,,INTRODUCED,"1 occurrence in GBIF, 2015, unverified; http://waarnemingen.be",
 159498349,ISO_3166-2:BE,Belgium,BE,PRESENT,,INTRODUCED,"2 occurrences in 2016 and 2017, http://observations.be",
-159498353,ISO_3166-2:BE-VLG,Flanders,BE,PRESENT,2018,INTRODUCED,"1 occurrence in GBIF, 2016, http://waarnemingen.be ; occurrences in 2018 in http://observations.be",
+159498353,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2018,INTRODUCED,"1 occurrence in GBIF, 2016, http://waarnemingen.be ; occurrences in 2018 in http://observations.be",
 159498357,ISO_3166-2:BE,Belgium,BE,PRESENT,2017,INTRODUCED,"occurrences in 2017, https://http://observations.be",
 159498359,ISO_3166-2:BE,Belgium,BE,PRESENT,2013/2016,INTRODUCED,"15 occurrences in GBIF, one in 2013, the rest in 2015 and 2016; http://waarnemingen.be",
 159498360,ISO_3166-2:BE,Belgium,BE,PRESENT,2009,INTRODUCED,"1 occurrence in GBIF, 2009; http://waarnemingen.be ; VU in IUCN red list",
@@ -6845,7 +6845,7 @@ taxonKey,locationId,locality,country,status,temporal,establishmentMeans,remarks,
 159498367,ISO_3166-2:BE,Belgium,BE,PRESENT,,INTRODUCED,,
 159498368,ISO_3166-2:BE,Belgium,BE,PRESENT,,INTRODUCED,,
 159498372,ISO_3166-2:BE,Belgium,BE,PRESENT,,INTRODUCED,,
-159498375,ISO_3166-2:BE,Belgium,BE,PRESENT,,INTRODUCED,,
+159498375,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2019/2020,INTRODUCED,confirmed breeding in 2020,
 159498378,ISO_3166-2:BE,Belgium,BE,PRESENT,,INTRODUCED,,
 159498379,ISO_3166-2:BE,Belgium,BE,PRESENT,,INTRODUCED,,
 159498380,ISO_3166-2:BE,Belgium,BE,PRESENT,,INTRODUCED,,
@@ -6870,8 +6870,8 @@ taxonKey,locationId,locality,country,status,temporal,establishmentMeans,remarks,
 159498417,ISO_3166-2:BE,Belgium,BE,PRESENT,2012,INTRODUCED,occurrences between 2012 and 2016 on http://waarnemingen.be and http://observations.be,
 159498419,ISO_3166-2:BE,Belgium,BE,PRESENT,,INTRODUCED,154 occurrences in GBIF,
 159498421,ISO_3166-2:BE,Belgium,BE,PRESENT,,INTRODUCED,,
-159498423,ISO_3166-2:BE-WAL,Wallonia,BE,PRESENT,1890,INTRODUCED,"introduced and established in eastern Belgium, 70 pairs released at Hoch Venn in the early 1890s (Long 1981)","Long J.L. 1981 Introduced birds of the world. The worldwide history, distribution, and influence of birds introduced to new environments."
-159498426,ISO_3166-2:BE,Belgium,BE,PRESENT,,INTRODUCED,,
+159498423,ISO_3166-2:BE-WAL,Walloon Region,BE,PRESENT,1890,INTRODUCED,"introduced and established in eastern Belgium, 70 pairs released at Hoch Venn in the early 1890s (Long 1981)","Long J.L. 1981 Introduced birds of the world. The worldwide history, distribution, and influence of birds introduced to new environments."
+159498426,ISO_3166-2:BE,Belgium,BE,PRESENT,,INTRODUCED,NT in IUCN red list,
 159498430,ISO_3166-2:BE,Belgium,BE,PRESENT,,INTRODUCED,,
 159498434,ISO_3166-2:BE,Belgium,BE,PRESENT,,INTRODUCED,"31 occurrences in GBIF, 2015 and 2016, http://waarnemingen.be",
 159498437,ISO_3166-2:BE,Belgium,BE,PRESENT,,INTRODUCED,,
@@ -6882,86 +6882,86 @@ taxonKey,locationId,locality,country,status,temporal,establishmentMeans,remarks,
 159498447,ISO_3166-2:BE,Belgium,BE,PRESENT,1988,INTRODUCED,248 occurrences in GBIF between 1988 and 2016; http://waarnemingen.be,
 159498449,ISO_3166-2:BE,Belgium,BE,PRESENT,,INTRODUCED,,
 159498451,ISO_3166-2:BE,Belgium,BE,PRESENT,2003,INTRODUCED,"occurrences in 2003 and 2013 in http://observations.be, EN in IUCN red list",
-159498452,ISO_3166-2:BE-VLG,Flanders,BE,PRESENT,2008/2018,INTRODUCED,,http://waarnemingen.be
-159498453,ISO_3166-2:BE-VLG,Flanders,BE,PRESENT,1989/2019,INTRODUCED,,
+159498452,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2008/2018,INTRODUCED,,http://waarnemingen.be
+159498453,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,1989/2019,INTRODUCED,,
 159498455,ISO_3166-2:BE,Belgium,BE,PRESENT,,INTRODUCED,,
 159498457,ISO_3166-2:BE,Belgium,BE,PRESENT,2015,INTRODUCED,"18 occ in GBIF in 2015, http://waarnemingen.be",
 159498458,ISO_3166-2:BE,Belgium,BE,PRESENT,2004/2018,INTRODUCED,,http://waarnemingen.be
 159498462,ISO_3166-2:BE,Belgium,BE,PRESENT,,INTRODUCED,extant & vagrant (non-breeding) acc. to IUCN red list,
 159498465,ISO_3166-2:BE,Belgium,BE,PRESENT,,INTRODUCED,,
-159498466,ISO_3166-2:BE-VLG,Flanders,BE,PRESENT,2011,INTRODUCED,recorded in 2011 in Flanders,
+159498466,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2011,INTRODUCED,recorded in 2011 in Flanders,
 159498468,ISO_3166-2:BE,Belgium,BE,PRESENT,,INTRODUCED,,
 159498470,ISO_3166-2:BE,Belgium,BE,PRESENT,2016,INTRODUCED,"1 occurrence in GBIF, 2016; http://waarnemingen.be ; VU in IUCN red list",
 159498471,ISO_3166-2:BE,Belgium,BE,PRESENT,,INTRODUCED,"look for Aves, 53/3 | 2016 | 105-128",
-159498475,ISO_3166-2:BE-WAL,Wallonia,BE,PRESENT,2017/2017,INTRODUCED,"1 occurrence in 2017, http://observations.be; VU in IUCN red list",GBIF (data download not possible on 21/02/2019 - gbif download error)
-159498477,ISO_3166-2:BE-VLG,Flanders,BE,PRESENT,2016/2016,INTRODUCED,"8 occurrences in GBIF in 2016, http://waarnemingen.be",GBIF (data download not possible on 21/02/2019 - gbif download error)
-159498479,ISO_3166-2:BE-VLG,Flanders,BE,PRESENT,1975/2016,INTRODUCED,,GBIF (data download not possible on 21/02/2019 - gbif download error)
-159498481,ISO_3166-2:BE-VLG,Flanders,BE,PRESENT,1975/2016,INTRODUCED,,GBIF (data download not possible on 21/02/2019 - gbif download error)
-159498483,ISO_3166-2:BE-VLG,Flanders,BE,PRESENT,2015/2016,INTRODUCED,"2 occurrences in GBIF, 2015 and 2016 and another 2 occurrences for T. haematodus moluccanus, in 2015 and 2016; http://waarnemingen.be ;",GBIF (data download not possible on 21/02/2019 - gbif download error)
+159498475,ISO_3166-2:BE-WAL,Walloon Region,BE,PRESENT,2017/2017,INTRODUCED,"1 occurrence in 2017, http://observations.be; VU in IUCN red list",GBIF (data download not possible on 21/02/2019 - gbif download error)
+159498477,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2016/2016,INTRODUCED,"8 occurrences in GBIF in 2016, http://waarnemingen.be",GBIF (data download not possible on 21/02/2019 - gbif download error)
+159498479,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,1975/2016,INTRODUCED,,GBIF (data download not possible on 21/02/2019 - gbif download error)
+159498481,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,1975/2016,INTRODUCED,,GBIF (data download not possible on 21/02/2019 - gbif download error)
+159498483,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2015/2016,INTRODUCED,"2 occurrences in GBIF, 2015 and 2016 and another 2 occurrences for T. haematodus moluccanus, in 2015 and 2016; http://waarnemingen.be ;",GBIF (data download not possible on 21/02/2019 - gbif download error)
 159498485,ISO_3166-2:BE-BRU,Brussels-Capital Region,BE,PRESENT,1989/2016,INTRODUCED,,GBIF (data download not possible on 21/02/2019 - gbif download error)
-159498485,ISO_3166-2:BE-VLG,Flanders,BE,PRESENT,1989/2016,INTRODUCED,,GBIF (data download not possible on 21/02/2019 - gbif download error)
-159498486,ISO_3166-2:BE-VLG,Flanders,BE,PRESENT,2001/2001,INTRODUCED,"1 occurrence in GBIF, 2001, http://waarnemingen.be",GBIF (data download not possible on 21/02/2019 - gbif download error)
-159498488,ISO_3166-2:BE-VLG,Flanders,BE,PRESENT,2010/2014,INTRODUCED,"occurrences in 2014, http://observations.be",GBIF (data download not possible on 21/02/2019 - gbif download error)
-159498490,ISO_3166-2:BE-VLG,Flanders,BE,PRESENT,2013/2014,INTRODUCED,,GBIF (data download not possible on 21/02/2019 - gbif download error)
-159498492,ISO_3166-2:BE-VLG,Flanders,BE,PRESENT,2004/2016,INTRODUCED,,GBIF (data download not possible on 21/02/2019 - gbif download error)
-159498494,ISO_3166-2:BE-VLG,Flanders,BE,PRESENT,2016/2016,INTRODUCED,"1 occurrence in GBIF in 2016 unverified, http://waarnemingen.be",GBIF (data download not possible on 21/02/2019 - gbif download error)
+159498485,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,1989/2016,INTRODUCED,,GBIF (data download not possible on 21/02/2019 - gbif download error)
+159498486,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2001/2001,INTRODUCED,"1 occurrence in GBIF, 2001, http://waarnemingen.be",GBIF (data download not possible on 21/02/2019 - gbif download error)
+159498488,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2010/2014,INTRODUCED,"occurrences in 2014, http://observations.be",GBIF (data download not possible on 21/02/2019 - gbif download error)
+159498490,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2013/2014,INTRODUCED,,GBIF (data download not possible on 21/02/2019 - gbif download error)
+159498492,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2004/2016,INTRODUCED,,GBIF (data download not possible on 21/02/2019 - gbif download error)
+159498494,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2016/2016,INTRODUCED,"1 occurrence in GBIF in 2016 unverified, http://waarnemingen.be",GBIF (data download not possible on 21/02/2019 - gbif download error)
 159498495,ISO_3166-2:BE-BRU,Brussels-Capital Region,BE,PRESENT,1974/2019,INTRODUCED,The current population stems from 40 to 45 birds that were intentionally released by the Meli zoo in 1974,"Weiserbs A. 2010. Espèces invasives : le cas des Psittacidés en Belgique. Incidences, évaluation des risques et éventail de mesures. Aves 47(1):21-35."
-159498495,ISO_3166-2:BE-VLG,Flanders,BE,PRESENT,1966/1967,INTRODUCED,"Report of a succesful breeding pair in Tervuren, but not seen anymore aftwerwards (this was not the start of the Belgian parakeet population). Not sure whether the label 'reproducing' is correct - should in face be 'failed' or 'extinct' for this population.","de Schaetzen, R (1991) Halsbandparkieten broeden te Brussel. Mens en Vogel: 59-61"
+159498495,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,1966/1967,INTRODUCED,"Report of a succesful breeding pair in Tervuren, but not seen anymore aftwerwards (this was not the start of the Belgian parakeet population). Not sure whether the label 'reproducing' is correct - should in face be 'failed' or 'extinct' for this population.","de Schaetzen, R (1991) Halsbandparkieten broeden te Brussel. Mens en Vogel: 59-61"
 159498496,ISO_3166-2:BE-BRU,Brussels-Capital Region,BE,PRESENT,1998/2019,INTRODUCED,,"Weiserbs A. 2010. Espèces invasives : le cas des Psittacidés en Belgique. Incidences, évaluation des risques et éventail de mesures. Aves 47(1):21-35."
-159498497,ISO_3166-2:BE-VLG,Flanders,BE,PRESENT,2014/2016,INTRODUCED,"9 occurrences in GBIF, 2014-2016",GBIF (data download not possible on 21/02/2019 - gbif download error)
-159498498,ISO_3166-2:BE-VLG,Flanders,BE,PRESENT,2008/2014,INTRODUCED,"2 occurrences in GBIF, 2008 and 2014, waarnemingem.be",GBIF (data download not possible on 21/02/2019 - gbif download error)
-159498500,ISO_3166-2:BE-VLG,Flanders,BE,PRESENT,2007/2007,INTRODUCED,,GBIF (data download not possible on 21/02/2019 - gbif download error)
-159498501,ISO_3166-2:BE-VLG,Flanders,BE,PRESENT,2002/2015,INTRODUCED,,GBIF (data download not possible on 21/02/2019 - gbif download error)
-159498503,ISO_3166-2:BE-WAL,Wallonia,BE,PRESENT,2018/2018,INTRODUCED,"1 occurrence in 2018, http://observations.be",GBIF (data download not possible on 21/02/2019 - gbif download error)
-159498504,ISO_3166-2:BE-WAL,Wallonia,BE,PRESENT,2017/2018,INTRODUCED,"occurrences in 2017 and 2018, http://observations.be",GBIF (data download not possible on 21/02/2019 - gbif download error)
+159498497,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2014/2016,INTRODUCED,"9 occurrences in GBIF, 2014-2016",GBIF (data download not possible on 21/02/2019 - gbif download error)
+159498498,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2008/2014,INTRODUCED,"2 occurrences in GBIF, 2008 and 2014, waarnemingem.be",GBIF (data download not possible on 21/02/2019 - gbif download error)
+159498500,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2007/2007,INTRODUCED,,GBIF (data download not possible on 21/02/2019 - gbif download error)
+159498501,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2002/2015,INTRODUCED,,GBIF (data download not possible on 21/02/2019 - gbif download error)
+159498503,ISO_3166-2:BE-WAL,Walloon Region,BE,PRESENT,2018/2018,INTRODUCED,"1 occurrence in 2018, http://observations.be",GBIF (data download not possible on 21/02/2019 - gbif download error)
+159498504,ISO_3166-2:BE-WAL,Walloon Region,BE,PRESENT,2017/2018,INTRODUCED,"occurrences in 2017 and 2018, http://observations.be",GBIF (data download not possible on 21/02/2019 - gbif download error)
 159498506,ISO_3166-2:BE-BRU,Brussels-Capital Region,BE,PRESENT,1979/2019,INTRODUCED,,"Weiserbs A. 2010. Espèces invasives: le cas des Psittacidés en Belgique. Incidences, évaluation des risques et éventail de mesures. Aves 47(1):21-35."
-159498508,ISO_3166-2:BE-VLG,Flanders,BE,PRESENT,1993/2006,INTRODUCED,,GBIF (data download not possible on 21/02/2019 - gbif download error)
-159498510,ISO_3166-2:BE-VLG,Flanders,BE,PRESENT,2002/2002,INTRODUCED,,GBIF (data download not possible on 21/02/2019 - gbif download error)
-159498511,ISO_3166-2:BE-VLG,Flanders,BE,PRESENT,2007/2014,INTRODUCED,,GBIF (data download not possible on 21/02/2019 - gbif download error)
-159498513,ISO_3166-2:BE-VLG,Flanders,BE,PRESENT,2014/2016,INTRODUCED,"occurrences in 2014, 2016, 2018; http://observations.be",GBIF (data download not possible on 21/02/2019 - gbif download error)
-159498514,ISO_3166-2:BE-VLG,Flanders,BE,PRESENT,1983/2016,INTRODUCED,,GBIF (data download not possible on 21/02/2019 - gbif download error)
-159498515,ISO_3166-2:BE-VLG,Flanders,BE,PRESENT,2009/2016,INTRODUCED,"3 occurrences in GBIF, 2014 and 2016; http://waarnemingen.be",GBIF Occurrence Download https://doi.org/10.15468/dl.btde22
-159498516,ISO_3166-2:BE-VLG,Flanders,BE,PRESENT,1985/1985,INTRODUCED,,GBIF Occurrence Download https://doi.org/10.15468/dl.ltslq6
-159498518,ISO_3166-2:BE-VLG,Flanders,BE,PRESENT,2013/2013,INTRODUCED,"1 occurrence in 2013 in GBIF, unverified; http://waarnemingen.be",GBIF (data download not possible on 21/02/2019 - gbif download error)
-159498520,ISO_3166-2:BE-VLG,Flanders,BE,PRESENT,2009/2016,INTRODUCED,,GBIF (data download not possible on 21/02/2019 - gbif download error)
-159498521,ISO_3166-2:BE-VLG,Flanders,BE,PRESENT,2009/2016,INTRODUCED,,GBIF (data download not possible on 21/02/2019 - gbif download error)
-159498522,ISO_3166-2:BE-VLG,Flanders,BE,PRESENT,2015/2015,INTRODUCED,"3 occurrences in GBIF, 2015, http://waarnemingen.be",GBIF (data download not possible on 21/02/2019 - gbif download error)
-159498523,ISO_3166-2:BE-WAL,Wallonia,BE,PRESENT,2012/2012,INTRODUCED,"occurrences in 2012, http://observations.be",http://observations.be
+159498508,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,1993/2006,INTRODUCED,,GBIF (data download not possible on 21/02/2019 - gbif download error)
+159498510,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2002/2002,INTRODUCED,,GBIF (data download not possible on 21/02/2019 - gbif download error)
+159498511,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2007/2014,INTRODUCED,,GBIF (data download not possible on 21/02/2019 - gbif download error)
+159498513,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2014/2016,INTRODUCED,"occurrences in 2014, 2016, 2018; http://observations.be",GBIF (data download not possible on 21/02/2019 - gbif download error)
+159498514,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,1983/2016,INTRODUCED,,GBIF (data download not possible on 21/02/2019 - gbif download error)
+159498515,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2009/2016,INTRODUCED,"3 occurrences in GBIF, 2014 and 2016; http://waarnemingen.be",GBIF Occurrence Download https://doi.org/10.15468/dl.btde22
+159498516,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,1985/1985,INTRODUCED,,GBIF Occurrence Download https://doi.org/10.15468/dl.ltslq6
+159498518,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2013/2013,INTRODUCED,"1 occurrence in 2013 in GBIF, unverified; http://waarnemingen.be",GBIF (data download not possible on 21/02/2019 - gbif download error)
+159498520,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2009/2016,INTRODUCED,,GBIF (data download not possible on 21/02/2019 - gbif download error)
+159498521,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2009/2016,INTRODUCED,,GBIF (data download not possible on 21/02/2019 - gbif download error)
+159498522,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2015/2015,INTRODUCED,"3 occurrences in GBIF, 2015, http://waarnemingen.be",GBIF (data download not possible on 21/02/2019 - gbif download error)
+159498523,ISO_3166-2:BE-WAL,Walloon Region,BE,PRESENT,2012/2012,INTRODUCED,"occurrences in 2012, http://observations.be",http://observations.be
 159498527,ISO_3166-2:BE,Belgium,BE,PRESENT,2011,INTRODUCED,"1 occurrence in 2011, http://observations.be; NT in IUCN red list",
 159498529,ISO_3166-2:BE,Belgium,BE,PRESENT,1986/2014,INTRODUCED,"52 occurrences in GBIF between 1986 and 2014, http://waarnemingen.be",
-159498531,ISO_3166-2:BE-VLG,Flanders,BE,PRESENT,1984/2019,INTRODUCED,,
+159498531,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,1984/2019,INTRODUCED,,
 159498533,ISO_3166-2:BE,Belgium,BE,PRESENT,,INTRODUCED,,
-159498535,ISO_3166-2:BE-VLG,Flanders,BE,PRESENT,2017,INTRODUCED,"1 occurrence in 2017, http://observations.be",
+159498535,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2017,INTRODUCED,"1 occurrence in 2017, http://observations.be",
 159498536,ISO_3166-2:BE,Belgium,BE,PRESENT,,INTRODUCED,,
 159498538,ISO_3166-2:BE,Belgium,BE,PRESENT,,INTRODUCED,,
 159498540,ISO_3166-2:BE,Belgium,BE,PRESENT,,INTRODUCED,,
-159498542,ISO_3166-2:BE-WAL,Wallonia,BE,PRESENT,2016,INTRODUCED,1 record on http://observations.be,
+159498542,ISO_3166-2:BE-WAL,Walloon Region,BE,PRESENT,2016,INTRODUCED,1 record on http://observations.be,
 159498544,ISO_3166-2:BE,Belgium,BE,PRESENT,,INTRODUCED,,
 159498546,ISO_3166-2:BE,Belgium,BE,PRESENT,,INTRODUCED,VU in IUCN red list,
-159498548,ISO_3166-2:BE-VLG,Flanders,BE,PRESENT,1979/2018,INTRODUCED,"introduced into UK in the 1940's, escaped or released from captivity (Hughes et al 1999)",Spanoghe et al. 2010. Broedende Rosse Stekelstaarten Oxyura jamaicensis in Vlaanderen: een aanwinst ? Natuur.oriolus 76(1):1-7 | Hughes et al. 1999. The status of the North American Ruddy Duck Oxyura jamaicensis in the  Western Palearctic: towards an action plan for eradication. Council of Europe Publication T-PVS/Birds (99) 9. Council of Europe Publishing. Strasbourg
-159498548,ISO_3166-2:BE-WAL,Wallonia,BE,PRESENT,2018,INTRODUCED,"introduced into UK in the 1940's, escaped or released from captivity (Hughes et al 1999)",Spanoghe et al. 2010. Broedende Rosse Stekelstaarten Oxyura jamaicensis in Vlaanderen: een aanwinst ? Natuur.oriolus 76(1):1-7| Hughes et al. 1999. The status of the North American Ruddy Duck Oxyura jamaicensis in the Western Palearctic: towards an action plan for eradication. Council of Europe Publication T-PVS/Birds (99) 9. Council of Europe Publishing. Strasbourg
-159498549,ISO_3166-2:BE-VLG,Flanders,BE,PRESENT,2014,INTRODUCED,"1 occurrence in GBIF in Flanders in 2014, http://waarnemingen.be",http://observations.be
+159498548,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,1979/2018,INTRODUCED,"introduced into UK in the 1940's, escaped or released from captivity (Hughes et al 1999)",Spanoghe et al. 2010. Broedende Rosse Stekelstaarten Oxyura jamaicensis in Vlaanderen: een aanwinst ? Natuur.oriolus 76(1):1-7 | Hughes et al. 1999. The status of the North American Ruddy Duck Oxyura jamaicensis in the  Western Palearctic: towards an action plan for eradication. Council of Europe Publication T-PVS/Birds (99) 9. Council of Europe Publishing. Strasbourg
+159498548,ISO_3166-2:BE-WAL,Walloon Region,BE,PRESENT,2018,INTRODUCED,"introduced into UK in the 1940's, escaped or released from captivity (Hughes et al 1999)",Spanoghe et al. 2010. Broedende Rosse Stekelstaarten Oxyura jamaicensis in Vlaanderen: een aanwinst ? Natuur.oriolus 76(1):1-7| Hughes et al. 1999. The status of the North American Ruddy Duck Oxyura jamaicensis in the Western Palearctic: towards an action plan for eradication. Council of Europe Publication T-PVS/Birds (99) 9. Council of Europe Publishing. Strasbourg
+159498549,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2014,INTRODUCED,"1 occurrence in GBIF in Flanders in 2014, http://waarnemingen.be",http://observations.be
 159498551,ISO_3166-2:BE,Belgium,BE,PRESENT,,INTRODUCED,VU in IUCN red list,
 159498553,ISO_3166-2:BE,Belgium,BE,PRESENT,2005/2019,INTRODUCED,records from 2005 to 2019 on observation.be,
-159498554,ISO_3166-2:BE-VLG,Flanders,BE,PRESENT,1966/2019,INTRODUCED,,
+159498554,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,1966/2019,INTRODUCED,,
 159498555,ISO_3166-2:BE,Belgium,BE,PRESENT,,INTRODUCED,VU in IUCN red list,
 159498557,ISO_3166-2:BE,Belgium,BE,PRESENT,,INTRODUCED,,
 159498559,ISO_3166-2:BE,Belgium,BE,PRESENT,,INTRODUCED,"4 occurrences in GBIF, one in 2000 and 3 in 2016",
 159498561,ISO_3166-2:BE,Belgium,BE,PRESENT,1975,INTRODUCED,"10 occurrences in GBIF starting 1975 to 2015, waarnemimgen.be data set",
-159498562,ISO_3166-2:BE-VLG,Flanders,BE,PRESENT,1970,INTRODUCED,,
+159498562,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,1970,INTRODUCED,,
 159498563,ISO_3166-2:BE,Belgium,BE,PRESENT,2005,INTRODUCED,occurrences in 2005 acc. to http://observations.be,
-159498565,ISO_3166-2:BE-VLG,Flanders,BE,PRESENT,1950/2019,INTRODUCED,,"Beck O., Anselin A. & Kuijken E. 2002. Beheer van verwilderde watervogels in Vlaanderen. Instituut voor Natuurbehoud, Brussel. 146 pp."
+159498565,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,1950/2019,INTRODUCED,,"Beck O., Anselin A. & Kuijken E. 2002. Beheer van verwilderde watervogels in Vlaanderen. Instituut voor Natuurbehoud, Brussel. 146 pp."
 159498566,ISO_3166-2:BE,Belgium,BE,PRESENT,,INTRODUCED,,
 159498567,ISO_3166-2:BE,Belgium,BE,PRESENT,,INTRODUCED,,
 159498569,ISO_3166-2:BE,Belgium,BE,PRESENT,,INTRODUCED,,
 159498571,ISO_3166-2:BE,Belgium,BE,PRESENT,,INTRODUCED,,
 159498572,ISO_3166-2:BE,Belgium,BE,PRESENT,,INTRODUCED,,
 159498573,ISO_3166-2:BE,Belgium,BE,PRESENT,,INTRODUCED,,
-159498574,ISO_3166-2:BE-VLG,Flanders,BE,PRESENT,1880,INTRODUCED,,
-159498576,ISO_3166-2:BE-VLG,Flanders,BE,PRESENT,1953/2019,INTRODUCED,,
-159498577,ISO_3166-2:BE-VLG,Flanders,BE,PRESENT,1957/2019,INTRODUCED,,
+159498574,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,1880,INTRODUCED,,
+159498576,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,1953/2019,INTRODUCED,,
+159498577,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,1957/2019,INTRODUCED,,
 159498579,ISO_3166-2:BE,Belgium,BE,PRESENT,2001/2018,INTRODUCED,"2 occurrences in GBIF, 2013 and 2016; http://waarnemingen.be ; occurrences between 2001 and 2018 in http://observations.be",
-159498581,ISO_3166-2:BE-VLG,Flanders,BE,PRESENT,1993,INTRODUCED,,
+159498581,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,1993,INTRODUCED,,
 159498582,ISO_3166-2:BE,Belgium,BE,PRESENT,,INTRODUCED,,
 159498583,ISO_3166-2:BE,Belgium,BE,PRESENT,1982,INTRODUCED,"2 occurrences in GBIF one in 1982, one in 2013; http://waarnemingen.be datatset",
 159498585,ISO_3166-2:BE,Belgium,BE,PRESENT,,INTRODUCED,,
@@ -6981,9 +6981,9 @@ taxonKey,locationId,locality,country,status,temporal,establishmentMeans,remarks,
 159498600,ISO_3166-2:BE,Belgium,BE,PRESENT,,INTRODUCED,,
 159498601,ISO_3166-2:BE,Belgium,BE,PRESENT,,INTRODUCED,,
 159498602,ISO_3166-2:BE,Belgium,BE,PRESENT,2012,INTRODUCED,2 occurrences in GBIF in 2012,
-159498603,ISO_3166-2:BE-WAL,Wallonia,BE,PRESENT,2012,INTRODUCED,"1 occurrence in 2012, http://observations.be; CR in IUCN red list",
+159498603,ISO_3166-2:BE-WAL,Walloon Region,BE,PRESENT,2012,INTRODUCED,"1 occurrence in 2012, http://observations.be; CR in IUCN red list",
 159498604,ISO_3166-2:BE,Belgium,BE,PRESENT,,INTRODUCED,,
-159498605,ISO_3166-2:BE-VLG,Flanders,BE,PRESENT,2011,INTRODUCED,"1 occurrencesurrence in 2011, http://observations.be; NT in IUCN red list",
+159498605,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2011,INTRODUCED,"1 occurrencesurrence in 2011, http://observations.be; NT in IUCN red list",
 159498606,ISO_3166-2:BE,Belgium,BE,PRESENT,,INTRODUCED,,
 159498608,ISO_3166-2:BE,Belgium,BE,PRESENT,,INTRODUCED,,
 159498609,ISO_3166-2:BE,Belgium,BE,PRESENT,2000,INTRODUCED,"1 occurrence in GBIF in 2000, http://waarnemingen.be",
@@ -7004,7 +7004,7 @@ taxonKey,locationId,locality,country,status,temporal,establishmentMeans,remarks,
 159498639,ISO_3166-2:BE,Belgium,BE,PRESENT,2013,INTRODUCED,"1 occurrence in GBIF, 2013, unverified, http://waarnemingen.be",
 159498640,ISO_3166-2:BE,Belgium,BE,PRESENT,,INTRODUCED,,
 159498643,ISO_3166-2:BE,Belgium,BE,PRESENT,,INTRODUCED,,
-159498646,ISO_3166-2:BE-VLG,Flanders,BE,PRESENT,1973/1973,INTRODUCED,"occurrences in 1973, http://observations.be","Claes G., publicatie: IJsvogel (1973) 2 : 15, Viversel, gebiedswaarneming"
+159498646,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,1973/1973,INTRODUCED,"occurrences in 1973, http://observations.be","Claes G., publicatie: IJsvogel (1973) 2 : 15, Viversel, gebiedswaarneming"
 159498648,ISO_3166-2:BE,Belgium,BE,PRESENT,1994/2018,INTRODUCED,"13 occurrences in GBIF, between 1994 and 2014; http://waarnemingen.be ; occurrences between 1994 and 2018 on http://observations.be",
 159498651,ISO_3166-2:BE,Belgium,BE,PRESENT,,INTRODUCED,,
 159498653,ISO_3166-2:BE,Belgium,BE,PRESENT,,INTRODUCED,,
@@ -7013,7 +7013,7 @@ taxonKey,locationId,locality,country,status,temporal,establishmentMeans,remarks,
 159498658,ISO_3166-2:BE,Belgium,BE,PRESENT,,INTRODUCED,,
 159498660,ISO_3166-2:BE,Belgium,BE,PRESENT,2005,INTRODUCED,"1 occurrence in GBIF, 2005, unverified, http://waarnemingen.be",
 159498662,ISO_3166-2:BE,Belgium,BE,PRESENT,2003,INTRODUCED,"1 occurrence in GBIF, 2003, unverified; http://waarnemingen.be",
-159498664,ISO_3166-2:BE-WAL,Wallonia,BE,PRESENT,2004/2004,INTRODUCED,"1 occurrence in 2004, http://observations.be",
+159498664,ISO_3166-2:BE-WAL,Walloon Region,BE,PRESENT,2004/2004,INTRODUCED,"1 occurrence in 2004, http://observations.be",
 159498666,ISO_3166-2:BE,Belgium,BE,PRESENT,1995/2016,INTRODUCED,"13 occurrences in GBIF, between 1995 and 2016, http://waarnemingen.be",
 159498669,ISO_3166-2:BE,Belgium,BE,PRESENT,2015/2016,INTRODUCED,"4 occurrences in GBIF, 2015 and 2016, unverified, http://waarnemingen.be",
 159498671,ISO_3166-2:BE,Belgium,BE,PRESENT,2017,INTRODUCED,"1 occurrence in 2017, http://observations.be",
@@ -7023,7 +7023,7 @@ taxonKey,locationId,locality,country,status,temporal,establishmentMeans,remarks,
 159498678,ISO_3166-2:BE,Belgium,BE,PRESENT,2017,INTRODUCED,"occurrences in 2017, http://observations.be",
 159498681,ISO_3166-2:BE,Belgium,BE,PRESENT,,INTRODUCED,,
 159498683,ISO_3166-2:BE,Belgium,BE,PRESENT,,INTRODUCED,,
-159498685,ISO_3166-2:BE-VLG,Flanders,BE,PRESENT,2018,INTRODUCED,"1 occurrence in 2018, http://observations.be",
+159498685,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2018,INTRODUCED,"1 occurrence in 2018, http://observations.be",
 159498687,ISO_3166-2:BE,Belgium,BE,PRESENT,,INTRODUCED,,
 159498688,ISO_3166-2:BE,Belgium,BE,PRESENT,2012,INTRODUCED,"1 occurrence in GBIF, 2012, http://waarnemingen.be",
 159498690,ISO_3166-2:BE,Belgium,BE,PRESENT,,INTRODUCED,,
@@ -7044,17 +7044,18 @@ taxonKey,locationId,locality,country,status,temporal,establishmentMeans,remarks,
 159498720,ISO_3166-2:BE,Belgium,BE,PRESENT,2016,INTRODUCED,"1 occurrence in GBIF 2016, http://waarnemingen.be",
 159498721,ISO_3166-2:BE,Belgium,BE,PRESENT,2009,INTRODUCED,"2 occurrences in 2009 and 2016, http://observations.be",
 159498722,ISO_3166-2:BE,Belgium,BE,PRESENT,,INTRODUCED,"4 occurrences in GBIF, 2014, 2015 and 2016; http://waarnemingen.be; endangered in native range acc to IUCN red list",
-159498724,ISO_3166-2:BE-WAL,Wallonia,BE,PRESENT,2013/2013,INTRODUCED,"1 occurrence in 2013, http://observations.be",
+159498724,ISO_3166-2:BE-WAL,Walloon Region,BE,PRESENT,2013/2013,INTRODUCED,"1 occurrence in 2013, http://observations.be",
 159498726,ISO_3166-2:BE,Belgium,BE,PRESENT,2009/2013,INTRODUCED,"2 occurrences in GBIF 2009 and 2013, http://waarnemingen.be",
 159498729,ISO_3166-2:BE,Belgium,BE,PRESENT,,INTRODUCED,,
-159498731,ISO_3166-2:BE,Belgium,BE,PRESENT,,INTRODUCED,,
+159498731,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2004/2018,INTRODUCED,"breeding confirmed in 2005 Antwerpse Linkeroevergebied, Prosperdorp","Vermeersch G., A. Anselin & K. Devos 2006. Bijzondere broedvogels in Vlaanderen in de periode 1994-2005. Populatietrends en recente status van zeldzame, kolonievormende en exotische broedvogels in Vlaanderen. Mededeling INBO.M.2006.2. Instituut voor Natuur- en Bosonderzoek, Brussel."
+159498731,ISO_3166-2:BE-WAL,Walloon Region,BE,PRESENT,2009,INTRODUCED,Offagne,observations.be
 159498732,ISO_3166-2:BE,Belgium,BE,PRESENT,,INTRODUCED,,
-159498733,ISO_3166-2:BE,Belgium,BE,PRESENT,,INTRODUCED,,
+159498733,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2005/2017,INTRODUCED,,Bosmans J. 2009 Eerste broedgevallen van Treurmaina Acridotheres tristis voor België in Heist-op-den-Berg (A). Natuur.oriolus 75(4): 122-123
 159498735,ISO_3166-2:BE,Belgium,BE,PRESENT,,INTRODUCED,,
 159498737,ISO_3166-2:BE,Belgium,BE,PRESENT,,INTRODUCED,,
 159498739,ISO_3166-2:BE,Belgium,BE,PRESENT,2007,INTRODUCED,"2 occurrences in GBIF, 2007, unverified, http://waarnemingen.be",
-159498740,ISO_3166-2:BE-VLG,Flanders,BE,PRESENT,2018,INTRODUCED,"1 occurrence in 2018, http://observations.be",
-159498741,ISO_3166-2:BE-VLG,Flanders,BE,PRESENT,2018,INTRODUCED,"1 incertain occurrence in 2018 unverified, http://observations.be",http://observations.be/waarneming/view/157503659
+159498740,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2018,INTRODUCED,"1 occurrence in 2018, http://observations.be",
+159498741,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2018,INTRODUCED,"1 incertain occurrence in 2018 unverified, http://observations.be",http://observations.be/waarneming/view/157503659
 159498742,ISO_3166-2:BE,Belgium,BE,PRESENT,1983/2014,INTRODUCED,"2 occurrences in GBIF, 1983 and 2014, http://waarnemingen.be",
 159498743,ISO_3166-2:BE,Belgium,BE,PRESENT,,INTRODUCED,,
 141117231,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,1980/2018,INTRODUCED,,
@@ -7366,6 +7367,7 @@ taxonKey,locationId,locality,country,status,temporal,establishmentMeans,remarks,
 157132458,http://marineregions.org/mrgid/26567,Belgian part of the North Sea,BE,,,INTRODUCED,,"Fofonoff, P.W.; Ruiz, G.M.; Steves, B.; Carlton, J.T. (2014). National Exotic Marine and Estuarine Species Information System (NEMESIS)"
 157132458,http://marineregions.org/mrgid/26567,Belgian part of the North Sea,BE,PRESENT,,INTRODUCED,Location: Belgian coast,"Kerckhof, F.; Haelters, J. (2005). Enkele opmerkelijke waarnemingen en strandingen in 2004 en 2005. <em>De Strandvlo.</em> 25(3-4): 101-105."
 157132458,http://marineregions.org/mrgid/3293,Belgian Exclusive Economic Zone,BE,PRESENT,,INTRODUCED,non-indigenous,VLIZ Alien Species Consortium. (2010).
+148437680,ISO_3166-2:BE,Belgium,BE,PRESENT,2018/2018,INTRODUCED,,
 148437687,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2011/2018,INTRODUCED,,"De Blauwe, H., Faasse, M. (2001). Extension of the range of the Bryozoans Tricellaria inopinata and Bugula simplex in the north-east Atlantic ocean (Bryozoa: Cheilostomatida) Ned. Faunist. Meded. 14: 103-112"
 148437689,ISO_3166-2:BE,Belgium,BE,PRESENT,2018/2018,INTRODUCED,,
 148437697,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2018/2018,INTRODUCED,,Jan Soors pers comm
@@ -7373,14 +7375,16 @@ taxonKey,locationId,locality,country,status,temporal,establishmentMeans,remarks,
 148437706,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2008/2012,INTRODUCED,,"Fraiture A, Di Giangregorio M (2013) Amanita inopinata, its ecology and expansion in Europe. Cryptogamie, Mycology 34: 211-222. https://doi.org/10.7872/crym.v34.iss2.2013.211"
 148437706,ISO_3166-2:BE-WAL,Walloon Region,BE,PRESENT,2012/2018,INTRODUCED,,"Fraiture A, Di Giangregorio M (2013) Amanita inopinata, its ecology and expansion in Europe. Cryptogamie, Mycology 34: 211-222. https://doi.org/10.7872/crym.v34.iss2.2013.211"
 148437708,ISO_3166-2:BE-WAL,Walloon Region,BE,PRESENT,2011/2018,INTRODUCED,,"Vandamme N, Waeyenberge L, Viaene N (2013) First report of the root-knot nematode Meloidogyne artiellia in Belgium. Plant Disease 97: 152. https://doi.org/10.1094/PDIS-08-12-0720-PDN"
+148437708,ISO_3166-2:BE-WAL,Walloon Region,BE,PRESENT,2011/2018,INTRODUCED,,https://doi.org/10.1094/PDIS-08-12-0720-PDN
 148437709,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2004/2011,INTRODUCED,,"Dozieres, A., Pisanu, B., Gerriet, O., Lapeyre, C., Stuyck, J. & Cha- ` puis, J.-L. (2010) Macroparasites of Pallas’s squirrels, Callosciurus erythraeus, introduced into Europe. Veterinary Parasitology, 172, 172–176."
 148437713,ISO_3166-2:BE-WAL,Walloon Region,BE,PRESENT,2013/2018,INTRODUCED,,
 148437715,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2018/2018,INTRODUCED,,
 148437718,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2011/2018,INTRODUCED,,"Huyse T, Vanhove MPM, Mombaerts M, Volckaert FAM, Verreycken H (2015) Parasite introduction with an invasive goby in Belgium: double trouble? Parasitology Research 114: 2789-2793. https://doi.org/10.1007/s00436-015-4544-6"
-148437723,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2018/2018,INTRODUCED,,
-148437727,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2018/2018,INTRODUCED,,
+148437727,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,1906/2018,INTRODUCED,,Vandewoestijne (1907). La découverte en Belgique de Placocephalus kewensis. Société Royale zoologique et malacologique de Belgique.
+148437727,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2018/2018,INTRODUCED,,Tom Van den Neucker
 148437729,ISO_3166-2:BE,Belgium,BE,PRESENT,1894-06/2018,INTRODUCED,,"Vanderweyen A & Fraiture A (2014) Catalogue des Ustilaginales sl de Belgique. Lejeunia, Revue de Botanique."
-148437730,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2015/2017,INTRODUCED,,
+148437730,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2015/2017,INTRODUCED,,bopco
+148437734,ISO_3166-2:BE,Belgium,BE,PRESENT,2018/2018,INTRODUCED,,
 148437737,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2018/2018,INTRODUCED,,Steeman & Veraghtert 2011 Natuur.Focus
 148437742,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2018/2018,INTRODUCED,,
 148437743,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2018/2018,INTRODUCED,,Steeman & Veraghtert 2011 Natuur.Focus
@@ -7413,7 +7417,8 @@ taxonKey,locationId,locality,country,status,temporal,establishmentMeans,remarks,
 148437814,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,1945/2018,INTRODUCED,,Stieperaere & Jacques 1995
 148437817,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2018/2018,INTRODUCED,,"Verbeylen, G. (2003) in Verkem, S., De Maeseneer, J., Vandendriessche, B., Verbeylen, G. & Yskout, S. Zoogdieren in Vlaanderen. Ecologie en verspreiding van 1987 tot 2002. Natuurpunt Studie en JNM-Zoogdierenwerkgroep, Mechelen en Gent, België."
 148437820,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2006/2018,INTRODUCED,,Van den Berge Zoogdier http://www.zoogdierwinkel.nl/sites/default/files/imce/nieuwesite/Winkel/pdf%20download/Zoogdier_Jaargang_19_2_2008_JUN_0.pdf
-148437821,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2018/2018,INTRODUCED,,
+148437821,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,1980/2018,INTRODUCED,,"Verkem et al., 2003"
+148437821,ISO_3166-2:BE-WAL,Walloon Region,BE,PRESENT,1986/2020,INTRODUCED,,"Libois, R.M. (1987). Atlas des mammifères sauvages de Wallonie: le raton laveur, Procyon lotor (L., 1758). Cahiers Ethol. appl., 7 (2): 140-142."
 148437823,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2007/2018,INTRODUCED,,Van den Berge Zoogdier http://www.zoogdierwinkel.nl/sites/default/files/imce/nieuwesite/Winkel/pdf%20download/Zoogdier_Jaargang_19_2_2008_JUN_0.pdf
 148437826,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,1987/2018,INTRODUCED,,Van den Berge Zoogdier http://www.zoogdierwinkel.nl/sites/default/files/imce/nieuwesite/Winkel/pdf%20download/Zoogdier_Jaargang_19_2_2008_JUN_0.pdf
 148437829,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2014/2014,INTRODUCED,,Van den Berge Zoogdier http://www.zoogdierwinkel.nl/sites/default/files/imce/nieuwesite/Winkel/pdf%20download/Zoogdier_Jaargang_19_2_2008_JUN_0.pdf
@@ -7422,24 +7427,21 @@ taxonKey,locationId,locality,country,status,temporal,establishmentMeans,remarks,
 148437838,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2018/2018,INTRODUCED,,
 148437840,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2018/2018,INTRODUCED,,
 148437842,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2005/2018,INTRODUCED,,"Casaer, J., Boone, N., Devisscher, S., Vercammen J., Adriaens T. (2015). Best practice voor beheer van Chinese muntjak Muntiacus reevesi in Vlaanderen. Rapporten van het Instituut voor Natuur- en Bosonderzoek 2015 (INBO.R.2015.7092003). Instituut voor Natuur- en Bosonderzoek, Brussel."
-148437847,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2018/2018,INTRODUCED,,
+148437847,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2018/2018,INTRODUCED,,https://waarnemingen.be/waarneming/view/150305908
 148437849,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2001/2007,INTRODUCED,,Hyla databank
 148437851,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2011/2012,INTRODUCED,,https://www.natuurpunt.be/nieuws/spaanse-ribbensalamanders-weggevangen-neeroeteren-20120710
 148437854,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2018/2018,INTRODUCED,,Verreycken pers comm
 148437858,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2010/2018,INTRODUCED,,Thonissen_Jagen
-148437861,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2018/2018,INTRODUCED,,
+148437861,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2008/2018,INTRODUCED,,Hyla database
 148437864,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,1975/2018,INTRODUCED,,"Burny & Parent 1985 | Jooris 2002 | Anonymus 2008 | Holsbeek et al. 2008, 2009, 2010"
-148437865,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2000/2018,INTRODUCED,,"Holsbeek et al. 2008, 2009, 2010"
+148437865,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2000/2018,INTRODUCED,,"Holsbeek et al. 2008, 2009, 2010; https://www.hylawerkgroep.be/static/files/0206/Groene%20kikkers%20in%20Vlaanderen%20en%20BHG%2015_07_2010.pdf"
 148437867,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,1996/2018,INTRODUCED,,"Jooris 2001, 2005 | Adriaens et al. 2010 | Sharifian-Fard 2011"
 148437871,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,1968/2018,INTRODUCED,,
-148437874,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2006/2017,INTRODUCED,,https://www.natuurpunt.be/nieuws/taiwanese-rattenslang-plant-zich-voort-dankzij-microklimaat-20160707
+148437874,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2006/2018,INTRODUCED,,https://www.natuurpunt.be/nieuws/taiwanese-rattenslang-plant-zich-voort-dankzij-microklimaat-20160707; https://www.natuurpunt.be/nieuws/een-beetje-china-hasselt-20181025
 148437877,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2006/2017,INTRODUCED,,http://www.hylawerkgroep.be/files/0048/hyla_flits_017_censuur.pdf
 148437879,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2004/2017,INTRODUCED,,http://www.hylawerkgroep.be/files/0048/hyla_flits_017_censuur.pdf
 148437880,ISO_3166-2:BE-BRU,Brussels-Capital Region,BE,PRESENT,2018/2018,INTRODUCED,,Jooris & Lehouck 2007. De Muurhagedis in Vlaandern. Natuur.Focus 6(4): 123-129
-148437880,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2004/2018,INTRODUCED,,Jooris & Lehouck 2007. De Muurhagedis in Vlaandern.  Natuur.Focus 6(4): 123-129
-148437884,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,1975/2018,INTRODUCED,,Anonymus 2008
-148437885,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2018/2018,INTRODUCED,,Anonymus 2008
-148437886,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2003/2018,INTRODUCED,,Anonymus 2008
+148437880,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2004/2018,INTRODUCED,,Jooris & Lehouck 2007. De Muurhagedis in Vlaanderen.  Natuur.Focus 6(4): 123-129
 148437888,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2005/2018,INTRODUCED,,Anonymus 2008
 148437889,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2005/2018,INTRODUCED,,Anonymus 2008
 148437891,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2018/2018,INTRODUCED,,
@@ -7452,9 +7454,7 @@ taxonKey,locationId,locality,country,status,temporal,establishmentMeans,remarks,
 148437897,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,1971/2018,INTRODUCED,,
 148437898,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,1869/2018,INTRODUCED,,"Adam, 1960 Adam, 1947"
 148437899,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,1899/2018,INTRODUCED,,VLIZ list
-148437900,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,1866/2018,INTRODUCED,,Van Loen et al. 2006 rode lijst
 148437901,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,1972/2018,INTRODUCED,,Van Goethem & Backeljau 2002
-148437903,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2014/2018,INTRODUCED,,"Ronsmans, J. & Van den Neucker T. (2016) A persistent population of the chocolate-band snail Eobania vermiculata (Gastropoda: Helicidae) in Belgium. Belg. J. Zool., 146 (1): 66-68"
 148437904,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,1976/2018,INTRODUCED,,Van Loen et al. 2006 rode lijst
 148437905,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,1924/2018,INTRODUCED,,"Adam, 1947"
 148437906,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,1969/2018,INTRODUCED,,VLIZ list
@@ -7462,8 +7462,6 @@ taxonKey,locationId,locality,country,status,temporal,establishmentMeans,remarks,
 148437908,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,1834/2018,INTRODUCED,,"Adam, 1947"
 148437909,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,1800/2018,INTRODUCED,,Kerckhof_2002_BulletinKBIN
 148437910,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2009/2018,INTRODUCED,,"Sablon et al., 2010"
-148437911,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2018/2018,INTRODUCED,,
-148437912,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,1946/2018,INTRODUCED,,
 148437913,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,1946/2018,INTRODUCED,,Van Loen et al. 2006 rode lijst
 148437914,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2004/2018,INTRODUCED,,"Verween et al., 2006, P. Jacobs unpublished"
 148437915,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,1937/2018,INTRODUCED,,Van Loen et al. 2006 rode lijst
@@ -7517,7 +7515,6 @@ taxonKey,locationId,locality,country,status,temporal,establishmentMeans,remarks,
 148438008,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2007/2013,INTRODUCED,,"Henrard, A., Van Keer, J. & Jocqué, R. (2014). On the spider species Oecobius amboseli Shear & Benoit, 1974 (Araneae; Oecobiidae) newly found in Belgium and Rwanda. Nieuwsbrief van de Belgische Arachnologische Vereniging, 29(1,2): 1-8."
 148438009,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,1985/2004,INTRODUCED,,"Van Keer, K. 2007. Exotic spiders (Araneae): Verified reports from Belgium of imported species (1976-2006) and some notes on apparent neozoan invasive species. Nieuwsbrief van de Belgische Arachnologische Vereniging, 22(2):45-54."
 148438011,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2018/2018,INTRODUCED,,ARABEL exotendatabank (2018-08-10)
-148438012,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2008/2018,INTRODUCED,,"Chérot, F., Aukema,B., Bruers,J.& Viskens,G. (2011) Exotic species of Aradidae nad Miridae recently found in Antwerp harbour, bull KBVE 147: 15-19"
 148438015,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2001/2006,INTRODUCED,,"Van Keer, K. & Van Keer, J. 2001. Ingeburgerde exotische trilspinnen (Araneae: Pholcidae) in Antwerpse haven en enkele algemene bedenkingen bij spinnenmigratie. Nieuwsbrief van de Belgische Arachnologische Vereniging, 16(3):81-86."
 148438016,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2015/2015,INTRODUCED,,ARABEL exotendatabank (2018-08-10)
 148438018,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,1994/2010,INTRODUCED,,"Van Keer, K. & Van Keer, J. 2001. Ingeburgerde exotische trilspinnen (Araneae: Pholcidae) in Antwerpse haven en enkele algemene bedenkingen bij spinnenmigratie. Nieuwsbrief van de Belgische Arachnologische Vereniging, 16(3):81-86."
@@ -7654,6 +7651,52 @@ taxonKey,locationId,locality,country,status,temporal,establishmentMeans,remarks,
 148438247,ISO_3166-2:BE,Belgium,BE,PRESENT,2018/2018,INTRODUCED,,
 148438248,ISO_3166-2:BE,Belgium,BE,PRESENT,2018/2018,INTRODUCED,,
 148438249,ISO_3166-2:BE,Belgium,BE,PRESENT,2018/2018,INTRODUCED,,
+164281651,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2002/2020,INTRODUCED,,
+164281667,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2006/2019,INTRODUCED,,caught by Hugo Verreycken
+164281667,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2019/2018,INTRODUCED,,caught by Hugo Verreycken
+164281688,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2018/2018,INTRODUCED,,https://www.natuurpunt.be/nieuws/tropische-beurszwam-voor-het-eerst-belgi%C3%AB-20181027
+164281693,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2019/2018,INTRODUCED,,https://www.natuurpunt.be/nieuws/favolaschia-calocera-een-nieuwkomer-uit-de-tropen-20191031
+164281766,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2015/2018,INTRODUCED,,
+164281769,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2018/2018,INTRODUCED,,Jooris & Lehouck 2007. De Muurhagedis in Vlaanderen.  Natuur.Focus 6(4): 123-129
+164281772,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2007/2018,INTRODUCED,,Jooris & Lehouck 2007. De Muurhagedis in Vlaanderen.  Natuur.Focus 6(4): 123-129
+164281773,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2015/2019,INTRODUCED,,Hyla database 2015; 2019 intercepted in company importing wood products from Portugal
+164281780,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,1975/2020,INTRODUCED,,Anonymus 2008
+164281781,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,1975/2018,INTRODUCED,,Anonymus 2008
+164281782,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2003/2018,INTRODUCED,,Anonymus 2008
+164281783,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,1997/2018,INTRODUCED,,Anonymus 2008
+164281792,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2018/2018,INTRODUCED,,Tom Van den Neucker
+164281794,ISO_3166-2:BE-BRU,Brussels-Capital Region,BE,PRESENT,2017/2019,INTRODUCED,,Jan Soors
+164281794,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2019/2018,INTRODUCED,,wnm.be; https://waarnemingen.be/species/806336/observations/?after_date=2009-08-11&before_date=2019-09-10&province=&search=&user=&location=&sex=&life_stage=&activity=&method=
+164281800,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2016/2018,INTRODUCED,,Tom Van den Neucker
+164281802,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2018/2018,INTRODUCED,,Tom Van den Neucker
+164281803,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2018/2018,INTRODUCED,,Tom Van den Neucker
+164281805,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2018/2018,INTRODUCED,,
+164281806,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,1866/2018,INTRODUCED,,Van Loen et al. 2006 rode lijst
+164281808,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2014/2018,INTRODUCED,,"Ronsmans, J. & Van den Neucker T. (2016) A persistent population of the chocolate-band snail Eobania vermiculata (Gastropoda: Helicidae) in Belgium. Belg. J. Zool., 146 (1): 66-68"
+164281809,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,1946/2018,INTRODUCED,,
+164281898,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2011/2019,INTRODUCED,,"Mortelmans J, Casteels H, Beliën T (2012) Drosophila suzukii (Diptera: Drosophilidae): A pest species new to Belgium. Belg J Zool 142:143-6"
+164281905,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2017/2019,INTRODUCED,,
+164281905,ISO_3166-2:BE-WAL,Walloon Region,BE,PRESENT,2019/2018,INTRODUCED,,
+164281908,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2007/2019,INTRODUCED,,"Aukema, B., Libeer, R. (2007): Eerste waarneming van Leptoglossus occidentalis in België (Heteroptera: Coreidae). [First record of Leptoglossus occidentalis in Belgium (Heteroptera: Coreidae)]. Bulletin de la Société Royale Belge d’Entomologie / Bulletin van de Koninklijke Belgische Vereniging voor Entomologie 143: 92– 93. [in Dutch, French and English summaries without titles]."
+164281908,ISO_3166-2:BE-WAL,Walloon Region,BE,PRESENT,2008/2019,INTRODUCED,,https://pureportal.inbo.be/portal/files/2237142/INBO.A.2013.138.pdf
+164281913,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2008/2018,INTRODUCED,,"Chérot, F., Aukema,B., Bruers,J.& Viskens,G. (2011) Exotic species of Aradidae nad Miridae recently found in Antwerp harbour, bull KBVE 147: 15-19"
+164281916,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2007/2018,INTRODUCED,,Aukema et al. 2007 Bull Soc Roy Ent
+164281924,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2015/2019,INTRODUCED,,https://www.naturetoday.com/intl/nl/nature-reports/message/?msg=24929
+164281932,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2009/2018,INTRODUCED,,
+164281939,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2015/2018,INTRODUCED,,https://www.natuurpunt.be/nieuws/vijgenskeletteermot-profiteert-van-vijgenbomen-tuinen-20170607
+164281939,ISO_3166-2:BE-WAL,Walloon Region,BE,PRESENT,2009/2018,INTRODUCED,,https://www.natuurpunt.be/nieuws/vijgenskeletteermot-profiteert-van-vijgenbomen-tuinen-20170607
+164281982,ISO_3166-2:BE-WAL,Walloon Region,BE,PRESENT,2016/2018,INTRODUCED,,"Drumont et al. 2018 Note sur quelques espèces invasives d'Otiorhynchus Germar, 1822 en Belgique (Coleoptera: Curculionidae). Bulletin de la Société royale belge d’Entomologie/Bulletin van de Koninklijke Belgische vereniging voor entomologie 154 : 97–104"
+164281983,ISO_3166-2:BE-BRU,Brussels-Capital Region,BE,PRESENT,2015/2018,INTRODUCED,,"Drumont et al. 2018 Note sur quelques espèces invasives d'Otiorhynchus Germar, 1822 en Belgique (Coleoptera: Curculionidae). Bulletin de la Société royale belge d’Entomologie/Bulletin van de Koninklijke Belgische vereniging voor entomologie 154 : 97–104"
+164281983,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2017/2018,INTRODUCED,,"Drumont et al. 2018 Note sur quelques espèces invasives d'Otiorhynchus Germar, 1822 en Belgique (Coleoptera: Curculionidae). Bulletin de la Société royale belge d’Entomologie/Bulletin van de Koninklijke Belgische vereniging voor entomologie 154 : 97–104"
+164281983,ISO_3166-2:BE-WAL,Walloon Region,BE,PRESENT,1999/2018,INTRODUCED,,"Drumont et al. 2018 Note sur quelques espèces invasives d'Otiorhynchus Germar, 1822 en Belgique (Coleoptera: Curculionidae). Bulletin de la Société royale belge d’Entomologie/Bulletin van de Koninklijke Belgische vereniging voor entomologie 154 : 97–104"
+164281984,ISO_3166-2:BE-BRU,Brussels-Capital Region,BE,PRESENT,2016/2018,INTRODUCED,,"Drumont et al. 2018 Note sur quelques espèces invasives d'Otiorhynchus Germar, 1822 en Belgique (Coleoptera: Curculionidae). Bulletin de la Société royale belge d’Entomologie/Bulletin van de Koninklijke Belgische vereniging voor entomologie 154 : 97–104"
+164281984,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2016/2018,INTRODUCED,,"Drumont et al. 2018 Note sur quelques espèces invasives d'Otiorhynchus Germar, 1822 en Belgique (Coleoptera: Curculionidae). Bulletin de la Société royale belge d’Entomologie/Bulletin van de Koninklijke Belgische vereniging voor entomologie 154 : 97–104"
+164281984,ISO_3166-2:BE-WAL,Walloon Region,BE,PRESENT,2003/2016,INTRODUCED,,"Drumont et al. 2018 Note sur quelques espèces invasives d'Otiorhynchus Germar, 1822 en Belgique (Coleoptera: Curculionidae). Bulletin de la Société royale belge d’Entomologie/Bulletin van de Koninklijke Belgische vereniging voor entomologie 154 : 97–104"
+164281985,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2002/2018,INTRODUCED,,"Drumont et al. 2018 Note sur quelques espèces invasives d'Otiorhynchus Germar, 1822 en Belgique (Coleoptera: Curculionidae). Bulletin de la Société royale belge d’Entomologie/Bulletin van de Koninklijke Belgische vereniging voor entomologie 154 : 97–104"
+164281985,ISO_3166-2:BE-WAL,Walloon Region,BE,PRESENT,2016/2018,INTRODUCED,,"Drumont et al. 2018 Note sur quelques espèces invasives d'Otiorhynchus Germar, 1822 en Belgique (Coleoptera: Curculionidae). Bulletin de la Société royale belge d’Entomologie/Bulletin van de Koninklijke Belgische vereniging voor entomologie 154 : 97–104"
+164281991,ISO_3166-2:BE,Belgium,BE,PRESENT,2018/2018,INTRODUCED,,
+164281993,ISO_3166-2:BE,Belgium,BE,PRESENT,2018/2018,INTRODUCED,,"Lays, P. Chrysolina americana a Mediterranean leaf-beetle species recorded for the first time in Belgium. Bulletin en Annalen van de Koninklijke Belgische Vereniging voor Entomologie (1988)."
+164282008,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2019/2019,INTRODUCED,,Saltabel
 146042122,ISO_3166-2:BE,Belgium,BE,PRESENT,1869/2017,INTRODUCED,,http://www.cabi.org/isc | http://www.europe-aliens.org | https://secure.fera.defra.gov.uk/nonnativespecies/home/index.cfm | http://ias.biodiversity.be | http://alienplantsbelgium.be/sites/alienplantsbelgium.be/files/tabel_2.pdf | http://www.nobanis.org | http://www.nederlandsesoorten.nl
 146042126,ISO_3166-2:BE,Belgium,BE,PRESENT,1904/2017,INTRODUCED,,http://www.cabi.org/isc | http://www.europe-aliens.org | http://www.eppo.int/INVASIVE_PLANTS/ias_lists.htm | http://www.issg.org/database | https://secure.fera.defra.gov.uk/nonnativespecies/home/index.cfm | http://ias.biodiversity.be | http://alienplantsbelgium.be/sites/alienplantsbelgium.be/files/tabel_2.pdf | http://www.nobanis.org | http://www.nederlandsesoorten.nl
 146042128,ISO_3166-2:BE,Belgium,BE,PRESENT,1885/2017,INTRODUCED,,http://www.cabi.org/isc | http://www.europe-aliens.org | http://www.eppo.int/INVASIVE_PLANTS/ias_lists.htm | https://secure.fera.defra.gov.uk/nonnativespecies/home/index.cfm | http://ias.biodiversity.be | http://alienplantsbelgium.be/sites/alienplantsbelgium.be/files/tabel_2.pdf | http://www.nobanis.org | http://www.nederlandsesoorten.nl

@@ -70,11 +70,12 @@ checklists <- head(checklists, -1)
 
 ```{r get_taxa-get_checklist_taxa_from_gbif, cache = TRUE}
 taxa <-
-  map_df(checklists$datasetKey, function(x) name_usage(
+  map_df(checklists$datasetKey, function(x) {
+    rgbif::name_usage(
       datasetKey = x,
-      limit = 99999, # Should be more than total taxa for all checklists
-      return = "data"
-    ))
+      limit = 99999 # Should be more than total taxa for all checklists
+    )$data
+  })
 ```
 
 2. Keep only source taxa, not denormed higher classification taxa (= taxa added by GBIF if `kingdom`, `phylum`, etc. was populated)
@@ -146,9 +147,8 @@ distributions <-
     progress_bar$tick()$print()
     rgbif::name_usage(
       key = x,
-      return = "data",
       data = "distribution"
-    )
+    )$data
   })
 ```
 
@@ -224,9 +224,8 @@ backbone_info <-
   map_dfr(nub_keys, function(x) {
     progress_bar$tick()$print()
     rgbif::name_usage(
-      key = x,
-      return = "data"
-    )
+      key = x
+    )$data
   })
 ```
 

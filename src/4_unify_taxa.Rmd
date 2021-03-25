@@ -87,9 +87,8 @@ backbone_info <-
   map_dfr(verification_keys, function(x) {
     progress_bar$tick()$print()
     rgbif::name_usage(
-      key = x,
-      return = "data"
-    )
+      key = x
+    )$data
   })
 ```
 

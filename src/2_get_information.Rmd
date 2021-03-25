@@ -34,9 +34,8 @@ speciesprofiles <-
     progress_bar$tick()$print()
     rgbif::name_usage(
       key = x,
-      return = "data",
       data = "speciesProfiles"
-    )
+    )$data
   })
 ```
 
@@ -58,9 +57,8 @@ descriptions <-
     progress_bar$tick()$print()
     rgbif::name_usage(
       key = x,
-      return = "data",
       data = "description"
-    )
+    )$data
   })
 ```
 

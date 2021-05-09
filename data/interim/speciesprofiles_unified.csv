@@ -24,6 +24,7 @@ verificationKey,marine,freshwater,terrestrial,datasetKey,taxonKey,scientificName
 1043717,FALSE,FALSE,TRUE,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164301260,"Cryptolaemus montrouzieri Mulsant, 1853"
 1043978,FALSE,FALSE,TRUE,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164301236,"Stelidota geminata (Say, 1825)"
 1047536,FALSE,FALSE,TRUE,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164301253,"Leptinotarsa decemlineata (Say, 1824)"
+1152186,FALSE,FALSE,TRUE,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164301247,"Callidiellum rufipenne Niisato, 2007"
 1194885,FALSE,FALSE,TRUE,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164301243,"Otiorhynchus meridionalis Gyllenhal, 1834"
 1194989,FALSE,FALSE,TRUE,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164301244,"Otiorhynchus cribricollis Gyllenhal, 1834"
 1195013,FALSE,FALSE,TRUE,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164301242,"Otiorhynchus aurifer Boheman, 1843"
@@ -70,6 +71,7 @@ verificationKey,marine,freshwater,terrestrial,datasetKey,taxonKey,scientificName
 1722299,FALSE,FALSE,TRUE,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164301287,"Gryllodes sigillatus (Walker & F., 1869)"
 1728965,FALSE,FALSE,TRUE,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164301271,"Tachycines asynamorus Adelung, 1902"
 1749449,FALSE,FALSE,TRUE,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164301144,"Cameraria ohridella Deschka & Dimic, 1986"
+1749886,FALSE,FALSE,TRUE,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164301147,"Macrosaccus robiniella (Clemens, 1859)"
 1932752,FALSE,FALSE,TRUE,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164301156,"Cacyreus marshalli Butler, 1898"
 1941864,FALSE,FALSE,TRUE,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164301153,"Paysandisia archon (Burmeister, 1880)"
 2020688,FALSE,FALSE,TRUE,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,168130913,"Stephanitis rhododendri Horváth, 1905"
@@ -1789,7 +1791,7 @@ verificationKey,marine,freshwater,terrestrial,datasetKey,taxonKey,scientificName
 4423428,FALSE,FALSE,TRUE,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164301281,"Yersinella raymondii (Yersin, 1860)"
 4453195,FALSE,FALSE,TRUE,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164301234,"Carpophilus obsoletus Erichson, 1843"
 4460066,FALSE,FALSE,TRUE,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164301255,"Chrysolina americana (Linnaeus, 1758)"
-4467502,FALSE,FALSE,TRUE,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164301241,"Otiorhynchus indefinitus Reitter, 1912"
+4467502,FALSE,FALSE,TRUE,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164301231,"Otiorhynchus dieckmanni Magnano, 1979"
 4485843,FALSE,FALSE,TRUE,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164301110,"Halyomorpha halys (Stål, 1855)"
 4486365,FALSE,FALSE,TRUE,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164301116,"Nysius huttoni FB White, 1878"
 4487282,FALSE,FALSE,TRUE,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164301120,Fulvius anthocoroides
@@ -2465,6 +2467,7 @@ verificationKey,marine,freshwater,terrestrial,datasetKey,taxonKey,scientificName
 5851603,FALSE,TRUE,FALSE,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117238,Aspius aspius
 5864277,FALSE,TRUE,FALSE,289244ee-e1c1-49aa-b2d7-d379391ce265,140562997,Gammarus roeseli
 5879783,FALSE,FALSE,TRUE,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164301141,"Thaumatotibia leucotreta (Meyrick, 1913)"
+5890148,TRUE,TRUE,FALSE,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164300685,"Anguillicola crassus Kuwahara, Niimi & Itagaki, 1974"
 5892120,FALSE,TRUE,FALSE,289244ee-e1c1-49aa-b2d7-d379391ce265,140562916,Dugesia tigrina
 5914287,FALSE,FALSE,TRUE,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264585,Melia azedarach L.
 5930559,FALSE,FALSE,TRUE,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264719,Ilex x altaclerensis
@@ -2653,6 +2656,7 @@ verificationKey,marine,freshwater,terrestrial,datasetKey,taxonKey,scientificName
 7407436,FALSE,FALSE,TRUE,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266156,Chenopodiastrum simplex (Torr.) Fuentes & al.
 7415922,FALSE,FALSE,TRUE,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266413,Rumex pulcher L. subsp. woodsii (De Not.) Arcang.
 7421129,FALSE,FALSE,TRUE,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267153,Cyperus longus L. subsp. badius (Desf.) Bonnier & Layens
+7425750,FALSE,FALSE,TRUE,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164300742,Stropharia aurantiaca (Cooke) M. Imai
 7426824,FALSE,FALSE,TRUE,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266802,Vicia melanops Smith
 7427650,FALSE,FALSE,TRUE,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264948,Convolvulus tricolor L. subsp. cupanianus (Tod.) Cavara & Grande
 7433196,FALSE,FALSE,TRUE,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264864,Euonymus latifolius (L.) Mill.
@@ -2780,6 +2784,7 @@ verificationKey,marine,freshwater,terrestrial,datasetKey,taxonKey,scientificName
 8077391,FALSE,FALSE,TRUE,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264609,Citrus aurantium L.
 8078031,FALSE,FALSE,TRUE,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265347,Artemisia afra Jacq.
 8080300,FALSE,FALSE,TRUE,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266065,Pimpinella anisum L.
+8091002,FALSE,FALSE,TRUE,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265035,Jovibarba sobolifera (Sims) Opiz
 8114833,FALSE,FALSE,TRUE,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265515,Anarrhinum bellidifolium (L.) Willd.
 8116963,FALSE,FALSE,TRUE,9ff7d317-609b-4c08-bd86-3bc404b77c42,163968221,Acanthus hungaricus (Borbás) Baen.
 8118326,FALSE,FALSE,TRUE,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266230,Teucrium resupinatum Desf.
@@ -2905,6 +2910,7 @@ verificationKey,marine,freshwater,terrestrial,datasetKey,taxonKey,scientificName
 9484350,FALSE,FALSE,TRUE,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265917,Lachnagrostis eriantha (Hack.) A.J. Br.
 9491873,TRUE,TRUE,FALSE,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042309,"Tetraodon fluviatilis F. Hamilton, 1822"
 9508942,FALSE,FALSE,TRUE,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266232,Origanum vulgare L. subsp. hirtum (Link) A. Terrac.
+9513097,FALSE,FALSE,TRUE,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164300735,Amanita inopinata D.A. Reid & Bas
 9518324,FALSE,FALSE,TRUE,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164300843,Procyon cancrivorus
 9520065,FALSE,TRUE,FALSE,289244ee-e1c1-49aa-b2d7-d379391ce265,140562956,Ferrissia fragilis
 9529916,FALSE,TRUE,TRUE,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,168131188,"Bufotes viridis (Laurenti, 1768)"
@@ -2912,8 +2918,10 @@ verificationKey,marine,freshwater,terrestrial,datasetKey,taxonKey,scientificName
 9606290,FALSE,FALSE,TRUE,e1c3be64-2799-4342-8312-49d076993132,159498421,"Meleagris gallopavo Linnaeus, 1758"
 9685907,FALSE,FALSE,TRUE,e1c3be64-2799-4342-8312-49d076993132,159498388,"Falco sparverius Linnaeus, 1758"
 9691034,FALSE,FALSE,TRUE,e1c3be64-2799-4342-8312-49d076993132,159498332,Phoenicopterus ruber
+9738098,FALSE,TRUE,FALSE,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164300939,"Bellamya chinensis (Gray, 1834)"
 9752149,FALSE,FALSE,TRUE,e1c3be64-2799-4342-8312-49d076993132,159498405,Phasianus colchicus
 9791464,FALSE,FALSE,TRUE,e1c3be64-2799-4342-8312-49d076993132,159498397,"Colinus virginianus (Linnaeus, 1758)"
+9852138,FALSE,FALSE,TRUE,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266840,Verbascum x angulosum Teyber
 10172912,FALSE,FALSE,TRUE,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267189,Cerastium x maureri M. Schulze
 10269496,FALSE,FALSE,TRUE,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164301238,"Epuraea imperialis (Reitter, 1877)"
 10329298,FALSE,FALSE,TRUE,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164300984,"Haplodrassus securifer Bosmans & Abrous, 2018"

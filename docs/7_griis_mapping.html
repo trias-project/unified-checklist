@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>7 GRIIS mapping | Global Register of Introduced and Invasive Species - Belgium</title>
   <meta name="description" content="7 GRIIS mapping | Global Register of Introduced and Invasive Species - Belgium" />
-  <meta name="generator" content="bookdown 0.18 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
   <meta property="og:title" content="7 GRIIS mapping | Global Register of Introduced and Invasive Species - Belgium" />
   <meta property="og:type" content="book" />
@@ -24,7 +24,7 @@
 <meta name="author" content="Peter Desmet, Lien Reyserhove, Damiano Oldoni" />
 
 
-<meta name="date" content="2020-05-25" />
+<meta name="date" content="2021-05-09" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,6 +33,7 @@
   
 <link rel="prev" href="6_dwc_mapping.html"/>
 <link rel="next" href="8_get_synonyms.html"/>
+<script src="libs/header-attrs-2.7/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -55,18 +56,17 @@
 
 
 <style type="text/css">
-code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
-code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
 pre.sourceCode { margin: 0; }
 @media screen {
 div.sourceCode { overflow: auto; }
 }
 @media print {
-code.sourceCode { white-space: pre-wrap; }
-code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -86,7 +86,7 @@ pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-le
 div.sourceCode
   {   }
 @media screen {
-code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
@@ -131,24 +131,28 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <nav role="navigation">
 
 <ul class="summary">
-<li class="chapter" data-level="1" data-path="1_get_taxa.html"><a href="1_get_taxa.html"><i class="fa fa-check"></i><b>1</b> Get taxa from checklists</a><ul>
+<li class="chapter" data-level="1" data-path="1_get_taxa.html"><a href="1_get_taxa.html"><i class="fa fa-check"></i><b>1</b> Get taxa from checklists</a>
+<ul>
 <li class="chapter" data-level="1.1" data-path="1_get_taxa.html"><a href="1_get_taxa.html#choose-checklists"><i class="fa fa-check"></i><b>1.1</b> Choose checklists</a></li>
 <li class="chapter" data-level="1.2" data-path="1_get_taxa.html"><a href="1_get_taxa.html#get-taxa"><i class="fa fa-check"></i><b>1.2</b> Get taxa</a></li>
 <li class="chapter" data-level="1.3" data-path="1_get_taxa.html"><a href="1_get_taxa.html#filter-on-distribution"><i class="fa fa-check"></i><b>1.3</b> Filter on distributions</a></li>
 <li class="chapter" data-level="1.4" data-path="1_get_taxa.html"><a href="1_get_taxa.html#get-gbif-backbone-taxonomy-information"><i class="fa fa-check"></i><b>1.4</b> Get GBIF backbone taxonomy information</a></li>
 <li class="chapter" data-level="1.5" data-path="1_get_taxa.html"><a href="1_get_taxa.html#show-summary-and-save"><i class="fa fa-check"></i><b>1.5</b> Show summary and save</a></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="2_get_information.html"><a href="2_get_information.html"><i class="fa fa-check"></i><b>2</b> Get related information</a><ul>
+<li class="chapter" data-level="2" data-path="2_get_information.html"><a href="2_get_information.html"><i class="fa fa-check"></i><b>2</b> Get related information</a>
+<ul>
 <li class="chapter" data-level="2.1" data-path="2_get_information.html"><a href="2_get_information.html#read-taxa"><i class="fa fa-check"></i><b>2.1</b> Read taxa</a></li>
 <li class="chapter" data-level="2.2" data-path="2_get_information.html"><a href="2_get_information.html#get-distributions"><i class="fa fa-check"></i><b>2.2</b> Get distributions</a></li>
 <li class="chapter" data-level="2.3" data-path="2_get_information.html"><a href="2_get_information.html#get-species-profiles"><i class="fa fa-check"></i><b>2.3</b> Get species profiles</a></li>
 <li class="chapter" data-level="2.4" data-path="2_get_information.html"><a href="2_get_information.html#get-descriptions"><i class="fa fa-check"></i><b>2.4</b> Get descriptions</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="3_verify_taxa.html"><a href="3_verify_taxa.html"><i class="fa fa-check"></i><b>3</b> Verify taxa</a><ul>
+<li class="chapter" data-level="3" data-path="3_verify_taxa.html"><a href="3_verify_taxa.html"><i class="fa fa-check"></i><b>3</b> Verify taxa</a>
+<ul>
 <li class="chapter" data-level="3.1" data-path="3_verify_taxa.html"><a href="3_verify_taxa.html#read-taxa-1"><i class="fa fa-check"></i><b>3.1</b> Read taxa</a></li>
 <li class="chapter" data-level="3.2" data-path="3_verify_taxa.html"><a href="3_verify_taxa.html#verification"><i class="fa fa-check"></i><b>3.2</b> Read verification information</a></li>
 <li class="chapter" data-level="3.3" data-path="3_verify_taxa.html"><a href="3_verify_taxa.html#run-and-save-verification"><i class="fa fa-check"></i><b>3.3</b> Run and save verification</a></li>
-<li class="chapter" data-level="3.4" data-path="3_verify_taxa.html"><a href="3_verify_taxa.html#show-verification-status"><i class="fa fa-check"></i><b>3.4</b> Show verification status</a><ul>
+<li class="chapter" data-level="3.4" data-path="3_verify_taxa.html"><a href="3_verify_taxa.html#show-verification-status"><i class="fa fa-check"></i><b>3.4</b> Show verification status</a>
+<ul>
 <li class="chapter" data-level="3.4.1" data-path="3_verify_taxa.html"><a href="3_verify_taxa.html#unmatched-taxa"><i class="fa fa-check"></i><b>3.4.1</b> Unmatched taxa</a></li>
 <li class="chapter" data-level="3.4.2" data-path="3_verify_taxa.html"><a href="3_verify_taxa.html#synonyms"><i class="fa fa-check"></i><b>3.4.2</b> Synonyms</a></li>
 <li class="chapter" data-level="3.4.3" data-path="3_verify_taxa.html"><a href="3_verify_taxa.html#accepted-taxa"><i class="fa fa-check"></i><b>3.4.3</b> Accepted taxa</a></li>
@@ -156,57 +160,68 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.4.5" data-path="3_verify_taxa.html"><a href="3_verify_taxa.html#additional-information"><i class="fa fa-check"></i><b>3.4.5</b> Additional information</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="4_unify_taxa.html"><a href="4_unify_taxa.html"><i class="fa fa-check"></i><b>4</b> Unify taxa</a><ul>
+<li class="chapter" data-level="4" data-path="4_unify_taxa.html"><a href="4_unify_taxa.html"><i class="fa fa-check"></i><b>4</b> Unify taxa</a>
+<ul>
 <li class="chapter" data-level="4.1" data-path="4_unify_taxa.html"><a href="4_unify_taxa.html#read-taxa-2"><i class="fa fa-check"></i><b>4.1</b> Read taxa</a></li>
 <li class="chapter" data-level="4.2" data-path="4_unify_taxa.html"><a href="4_unify_taxa.html#unify-taxa-1"><i class="fa fa-check"></i><b>4.2</b> Unify taxa</a></li>
 <li class="chapter" data-level="4.3" data-path="4_unify_taxa.html"><a href="4_unify_taxa.html#get-gbif-backbone-taxonomy-information-1"><i class="fa fa-check"></i><b>4.3</b> Get GBIF backbone taxonomy information</a></li>
 <li class="chapter" data-level="4.4" data-path="4_unify_taxa.html"><a href="4_unify_taxa.html#explicitely-remove-incorrect-taxa"><i class="fa fa-check"></i><b>4.4</b> Explicitely remove incorrect taxa</a></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="5_unify_information.html"><a href="5_unify_information.html"><i class="fa fa-check"></i><b>5</b> Unify related information</a><ul>
+<li class="chapter" data-level="5" data-path="5_unify_information.html"><a href="5_unify_information.html"><i class="fa fa-check"></i><b>5</b> Unify related information</a>
+<ul>
 <li class="chapter" data-level="5.1" data-path="5_unify_information.html"><a href="5_unify_information.html#read-data"><i class="fa fa-check"></i><b>5.1</b> Read data</a></li>
 <li class="chapter" data-level="5.2" data-path="5_unify_information.html"><a href="5_unify_information.html#assign-checklist-order"><i class="fa fa-check"></i><b>5.2</b> Assign checklist order</a></li>
 <li class="chapter" data-level="5.3" data-path="5_unify_information.html"><a href="5_unify_information.html#unify-distribution"><i class="fa fa-check"></i><b>5.3</b> Unify distribution</a></li>
 <li class="chapter" data-level="5.4" data-path="5_unify_information.html"><a href="5_unify_information.html#unify-species-profiles"><i class="fa fa-check"></i><b>5.4</b> Unify species profiles</a></li>
-<li class="chapter" data-level="5.5" data-path="5_unify_information.html"><a href="5_unify_information.html#unify-descriptions"><i class="fa fa-check"></i><b>5.5</b> Unify descriptions</a><ul>
+<li class="chapter" data-level="5.5" data-path="5_unify_information.html"><a href="5_unify_information.html#unify-descriptions"><i class="fa fa-check"></i><b>5.5</b> Unify descriptions</a>
+<ul>
 <li class="chapter" data-level="5.5.1" data-path="5_unify_information.html"><a href="5_unify_information.html#native-range"><i class="fa fa-check"></i><b>5.5.1</b> Native range</a></li>
 <li class="chapter" data-level="5.5.2" data-path="5_unify_information.html"><a href="5_unify_information.html#degree-of-establishment"><i class="fa fa-check"></i><b>5.5.2</b> Degree of establishment</a></li>
 <li class="chapter" data-level="5.5.3" data-path="5_unify_information.html"><a href="5_unify_information.html#combine-and-process-descriptions"><i class="fa fa-check"></i><b>5.5.3</b> Combine and process descriptions</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="6_dwc_mapping.html"><a href="6_dwc_mapping.html"><i class="fa fa-check"></i><b>6</b> Darwin Core mapping</a><ul>
+<li class="chapter" data-level="6" data-path="6_dwc_mapping.html"><a href="6_dwc_mapping.html"><i class="fa fa-check"></i><b>6</b> Darwin Core mapping</a>
+<ul>
 <li class="chapter" data-level="6.1" data-path="6_dwc_mapping.html"><a href="6_dwc_mapping.html#read-unified-data"><i class="fa fa-check"></i><b>6.1</b> Read unified data</a></li>
 <li class="chapter" data-level="6.2" data-path="6_dwc_mapping.html"><a href="6_dwc_mapping.html#preview-data"><i class="fa fa-check"></i><b>6.2</b> Preview data</a></li>
 <li class="chapter" data-level="6.3" data-path="6_dwc_mapping.html"><a href="6_dwc_mapping.html#citing-sources"><i class="fa fa-check"></i><b>6.3</b> How we cite our sources</a></li>
-<li class="chapter" data-level="6.4" data-path="6_dwc_mapping.html"><a href="6_dwc_mapping.html#taxon-core"><i class="fa fa-check"></i><b>6.4</b> Taxon core</a><ul>
+<li class="chapter" data-level="6.4" data-path="6_dwc_mapping.html"><a href="6_dwc_mapping.html#taxon-core"><i class="fa fa-check"></i><b>6.4</b> Taxon core</a>
+<ul>
 <li class="chapter" data-level="6.4.1" data-path="6_dwc_mapping.html"><a href="6_dwc_mapping.html#pre-processing"><i class="fa fa-check"></i><b>6.4.1</b> Pre-processing</a></li>
 <li class="chapter" data-level="6.4.2" data-path="6_dwc_mapping.html"><a href="6_dwc_mapping.html#term-mapping"><i class="fa fa-check"></i><b>6.4.2</b> Term mapping</a></li>
 <li class="chapter" data-level="6.4.3" data-path="6_dwc_mapping.html"><a href="6_dwc_mapping.html#post-processing"><i class="fa fa-check"></i><b>6.4.3</b> Post-processing</a></li>
 </ul></li>
-<li class="chapter" data-level="6.5" data-path="6_dwc_mapping.html"><a href="6_dwc_mapping.html#distribution-extension"><i class="fa fa-check"></i><b>6.5</b> Distribution extension</a><ul>
+<li class="chapter" data-level="6.5" data-path="6_dwc_mapping.html"><a href="6_dwc_mapping.html#distribution-extension"><i class="fa fa-check"></i><b>6.5</b> Distribution extension</a>
+<ul>
 <li class="chapter" data-level="6.5.1" data-path="6_dwc_mapping.html"><a href="6_dwc_mapping.html#pre-processing-1"><i class="fa fa-check"></i><b>6.5.1</b> Pre-processing</a></li>
 <li class="chapter" data-level="6.5.2" data-path="6_dwc_mapping.html"><a href="6_dwc_mapping.html#term-mapping-1"><i class="fa fa-check"></i><b>6.5.2</b> Term mapping</a></li>
 <li class="chapter" data-level="6.5.3" data-path="6_dwc_mapping.html"><a href="6_dwc_mapping.html#post-processing-1"><i class="fa fa-check"></i><b>6.5.3</b> Post-processing</a></li>
 </ul></li>
-<li class="chapter" data-level="6.6" data-path="6_dwc_mapping.html"><a href="6_dwc_mapping.html#species-profile-extension"><i class="fa fa-check"></i><b>6.6</b> Species profile extension</a><ul>
+<li class="chapter" data-level="6.6" data-path="6_dwc_mapping.html"><a href="6_dwc_mapping.html#species-profile-extension"><i class="fa fa-check"></i><b>6.6</b> Species profile extension</a>
+<ul>
 <li class="chapter" data-level="6.6.1" data-path="6_dwc_mapping.html"><a href="6_dwc_mapping.html#term-mapping-2"><i class="fa fa-check"></i><b>6.6.1</b> Term mapping</a></li>
 <li class="chapter" data-level="6.6.2" data-path="6_dwc_mapping.html"><a href="6_dwc_mapping.html#post-processing-2"><i class="fa fa-check"></i><b>6.6.2</b> Post-processing</a></li>
 </ul></li>
-<li class="chapter" data-level="6.7" data-path="6_dwc_mapping.html"><a href="6_dwc_mapping.html#description-extension"><i class="fa fa-check"></i><b>6.7</b> Description extension</a><ul>
+<li class="chapter" data-level="6.7" data-path="6_dwc_mapping.html"><a href="6_dwc_mapping.html#description-extension"><i class="fa fa-check"></i><b>6.7</b> Description extension</a>
+<ul>
 <li class="chapter" data-level="6.7.1" data-path="6_dwc_mapping.html"><a href="6_dwc_mapping.html#pre-processing-2"><i class="fa fa-check"></i><b>6.7.1</b> Pre-processing</a></li>
 <li class="chapter" data-level="6.7.2" data-path="6_dwc_mapping.html"><a href="6_dwc_mapping.html#term-mapping-3"><i class="fa fa-check"></i><b>6.7.2</b> Term mapping</a></li>
 <li class="chapter" data-level="6.7.3" data-path="6_dwc_mapping.html"><a href="6_dwc_mapping.html#post-processing-3"><i class="fa fa-check"></i><b>6.7.3</b> Post-processing</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="7" data-path="7_griis_mapping.html"><a href="7_griis_mapping.html"><i class="fa fa-check"></i><b>7</b> GRIIS mapping</a><ul>
+<li class="chapter" data-level="7" data-path="7_griis_mapping.html"><a href="7_griis_mapping.html"><i class="fa fa-check"></i><b>7</b> GRIIS mapping</a>
+<ul>
 <li class="chapter" data-level="7.1" data-path="7_griis_mapping.html"><a href="7_griis_mapping.html#read-darwin-core-data"><i class="fa fa-check"></i><b>7.1</b> Read Darwin Core data</a></li>
-<li class="chapter" data-level="7.2" data-path="7_griis_mapping.html"><a href="7_griis_mapping.html#griis-format"><i class="fa fa-check"></i><b>7.2</b> GRIIS format</a><ul>
+<li class="chapter" data-level="7.2" data-path="7_griis_mapping.html"><a href="7_griis_mapping.html#griis-format"><i class="fa fa-check"></i><b>7.2</b> GRIIS format</a>
+<ul>
 <li class="chapter" data-level="7.2.1" data-path="7_griis_mapping.html"><a href="7_griis_mapping.html#pre-processing-3"><i class="fa fa-check"></i><b>7.2.1</b> Pre-processing</a></li>
 <li class="chapter" data-level="7.2.2" data-path="7_griis_mapping.html"><a href="7_griis_mapping.html#term-mapping-4"><i class="fa fa-check"></i><b>7.2.2</b> Term mapping</a></li>
 <li class="chapter" data-level="7.2.3" data-path="7_griis_mapping.html"><a href="7_griis_mapping.html#eventdate-1"><i class="fa fa-check"></i><b>7.2.3</b> eventDate</a></li>
 </ul></li>
 <li class="chapter" data-level="7.3" data-path="7_griis_mapping.html"><a href="7_griis_mapping.html#post-processing-4"><i class="fa fa-check"></i><b>7.3</b> Post-processing</a></li>
 </ul></li>
-<li class="chapter" data-level="8" data-path="8_get_synonyms.html"><a href="8_get_synonyms.html"><i class="fa fa-check"></i><b>8</b> Get synonyms of all accepted taxa</a><ul>
+<li class="chapter" data-level="8" data-path="8_get_synonyms.html"><a href="8_get_synonyms.html"><i class="fa fa-check"></i><b>8</b> Get synonyms of all accepted taxa</a>
+<ul>
 <li class="chapter" data-level="8.1" data-path="8_get_synonyms.html"><a href="8_get_synonyms.html#get-unified-taxa"><i class="fa fa-check"></i><b>8.1</b> Get unified taxa</a></li>
 <li class="chapter" data-level="8.2" data-path="8_get_synonyms.html"><a href="8_get_synonyms.html#find-synonyms"><i class="fa fa-check"></i><b>8.2</b> Find synonyms</a></li>
 </ul></li>
@@ -227,19 +242,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="griis-mapping" class="section level1">
+<div id="griis-mapping" class="section level1" number="7">
 <h1><span class="header-section-number">7</span> GRIIS mapping</h1>
 <p>In this chapter we export the unified information to an Excel template that can be used by the Global Register of Introduced and Invasive Species (GRIIS).</p>
-<div id="read-darwin-core-data" class="section level2">
+<div id="read-darwin-core-data" class="section level2" number="7.1">
 <h2><span class="header-section-number">7.1</span> Read Darwin Core data</h2>
-<div class="sourceCode" id="cb65"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb65-1"><a href="7_griis_mapping.html#cb65-1"></a>dwc_taxon &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="kw">here</span>(<span class="st">&quot;data&quot;</span>, <span class="st">&quot;processed&quot;</span>, <span class="st">&quot;taxon.csv&quot;</span>))</span>
-<span id="cb65-2"><a href="7_griis_mapping.html#cb65-2"></a>dwc_distribution &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="kw">here</span>(<span class="st">&quot;data&quot;</span>, <span class="st">&quot;processed&quot;</span>, <span class="st">&quot;distribution.csv&quot;</span>))</span>
-<span id="cb65-3"><a href="7_griis_mapping.html#cb65-3"></a>dwc_speciesprofile &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="kw">here</span>(<span class="st">&quot;data&quot;</span>, <span class="st">&quot;processed&quot;</span>, <span class="st">&quot;speciesprofile.csv&quot;</span>))</span></code></pre></div>
+<div class="sourceCode" id="cb65"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb65-1"><a href="7_griis_mapping.html#cb65-1" aria-hidden="true" tabindex="-1"></a>dwc_taxon <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="fu">here</span>(<span class="st">&quot;data&quot;</span>, <span class="st">&quot;processed&quot;</span>, <span class="st">&quot;taxon.csv&quot;</span>))</span>
+<span id="cb65-2"><a href="7_griis_mapping.html#cb65-2" aria-hidden="true" tabindex="-1"></a>dwc_distribution <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="fu">here</span>(<span class="st">&quot;data&quot;</span>, <span class="st">&quot;processed&quot;</span>, <span class="st">&quot;distribution.csv&quot;</span>))</span>
+<span id="cb65-3"><a href="7_griis_mapping.html#cb65-3" aria-hidden="true" tabindex="-1"></a>dwc_speciesprofile <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="fu">here</span>(<span class="st">&quot;data&quot;</span>, <span class="st">&quot;processed&quot;</span>, <span class="st">&quot;speciesprofile.csv&quot;</span>))</span></code></pre></div>
 <p>Select only national distributions</p>
 </div>
-<div id="griis-format" class="section level2">
+<div id="griis-format" class="section level2" number="7.2">
 <h2><span class="header-section-number">7.2</span> GRIIS format</h2>
-<div id="pre-processing-3" class="section level3">
+<div id="pre-processing-3" class="section level3" number="7.2.1">
 <h3><span class="header-section-number">7.2.1</span> Pre-processing</h3>
 <ol style="list-style-type: decimal">
 <li>Check if the taxon core, distribution extension and species profile extension contain only one row per <code>taxonID</code>.</li>
@@ -251,88 +266,88 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>Join the 3 files into one dataframe <code>griis</code>.</li>
 </ol>
 </div>
-<div id="term-mapping-4" class="section level3">
+<div id="term-mapping-4" class="section level3" number="7.2.2">
 <h3><span class="header-section-number">7.2.2</span> Term mapping</h3>
-<div id="taxonid-4" class="section level4">
+<div id="taxonid-4" class="section level4" number="7.2.2.1">
 <h4><span class="header-section-number">7.2.2.1</span> taxonID</h4>
-<div class="sourceCode" id="cb69"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb69-1"><a href="7_griis_mapping.html#cb69-1"></a>griis <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">griis_taxonID =</span> taxonID)</span></code></pre></div>
+<div class="sourceCode" id="cb69"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb69-1"><a href="7_griis_mapping.html#cb69-1" aria-hidden="true" tabindex="-1"></a>griis <span class="sc">%&lt;&gt;%</span> <span class="fu">mutate</span>(<span class="at">griis_taxonID =</span> taxonID)</span></code></pre></div>
 </div>
-<div id="countrycode-1" class="section level4">
+<div id="countrycode-1" class="section level4" number="7.2.2.2">
 <h4><span class="header-section-number">7.2.2.2</span> countryCode</h4>
-<div class="sourceCode" id="cb70"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb70-1"><a href="7_griis_mapping.html#cb70-1"></a>griis <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">griis_countryCode =</span> countryCode)</span></code></pre></div>
+<div class="sourceCode" id="cb70"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb70-1"><a href="7_griis_mapping.html#cb70-1" aria-hidden="true" tabindex="-1"></a>griis <span class="sc">%&lt;&gt;%</span> <span class="fu">mutate</span>(<span class="at">griis_countryCode =</span> countryCode)</span></code></pre></div>
 </div>
-<div id="island" class="section level4">
+<div id="island" class="section level4" number="7.2.2.3">
 <h4><span class="header-section-number">7.2.2.3</span> island</h4>
-<div class="sourceCode" id="cb71"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb71-1"><a href="7_griis_mapping.html#cb71-1"></a>griis <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">griis_island =</span> <span class="st">&quot;&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb71"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb71-1"><a href="7_griis_mapping.html#cb71-1" aria-hidden="true" tabindex="-1"></a>griis <span class="sc">%&lt;&gt;%</span> <span class="fu">mutate</span>(<span class="at">griis_island =</span> <span class="st">&quot;&quot;</span>)</span></code></pre></div>
 </div>
-<div id="scientificname-1" class="section level4">
+<div id="scientificname-1" class="section level4" number="7.2.2.4">
 <h4><span class="header-section-number">7.2.2.4</span> scientificName</h4>
-<div class="sourceCode" id="cb72"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb72-1"><a href="7_griis_mapping.html#cb72-1"></a>griis <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">griis_scientificName =</span> scientificName)</span></code></pre></div>
+<div class="sourceCode" id="cb72"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb72-1"><a href="7_griis_mapping.html#cb72-1" aria-hidden="true" tabindex="-1"></a>griis <span class="sc">%&lt;&gt;%</span> <span class="fu">mutate</span>(<span class="at">griis_scientificName =</span> scientificName)</span></code></pre></div>
 </div>
-<div id="acceptednameusage-1" class="section level4">
+<div id="acceptednameusage-1" class="section level4" number="7.2.2.5">
 <h4><span class="header-section-number">7.2.2.5</span> acceptedNameUsage</h4>
-<div class="sourceCode" id="cb73"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb73-1"><a href="7_griis_mapping.html#cb73-1"></a>griis <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">griis_acceptedNameUsage =</span> <span class="kw">case_when</span>(</span>
-<span id="cb73-2"><a href="7_griis_mapping.html#cb73-2"></a>  acceptedNameUsage <span class="op">!=</span><span class="st"> </span>scientificName <span class="op">~</span><span class="st"> </span>acceptedNameUsage,</span>
-<span id="cb73-3"><a href="7_griis_mapping.html#cb73-3"></a>  <span class="ot">TRUE</span> <span class="op">~</span><span class="st"> &quot;&quot;</span></span>
-<span id="cb73-4"><a href="7_griis_mapping.html#cb73-4"></a>))</span></code></pre></div>
+<div class="sourceCode" id="cb73"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb73-1"><a href="7_griis_mapping.html#cb73-1" aria-hidden="true" tabindex="-1"></a>griis <span class="sc">%&lt;&gt;%</span> <span class="fu">mutate</span>(<span class="at">griis_acceptedNameUsage =</span> <span class="fu">case_when</span>(</span>
+<span id="cb73-2"><a href="7_griis_mapping.html#cb73-2" aria-hidden="true" tabindex="-1"></a>  acceptedNameUsage <span class="sc">!=</span> scientificName <span class="sc">~</span> acceptedNameUsage,</span>
+<span id="cb73-3"><a href="7_griis_mapping.html#cb73-3" aria-hidden="true" tabindex="-1"></a>  <span class="cn">TRUE</span> <span class="sc">~</span> <span class="st">&quot;&quot;</span></span>
+<span id="cb73-4"><a href="7_griis_mapping.html#cb73-4" aria-hidden="true" tabindex="-1"></a>))</span></code></pre></div>
 </div>
-<div id="taxonrank-1" class="section level4">
+<div id="taxonrank-1" class="section level4" number="7.2.2.6">
 <h4><span class="header-section-number">7.2.2.6</span> taxonRank</h4>
-<div class="sourceCode" id="cb74"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb74-1"><a href="7_griis_mapping.html#cb74-1"></a>griis <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">griis_taxonRank =</span> taxonRank)</span></code></pre></div>
+<div class="sourceCode" id="cb74"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb74-1"><a href="7_griis_mapping.html#cb74-1" aria-hidden="true" tabindex="-1"></a>griis <span class="sc">%&lt;&gt;%</span> <span class="fu">mutate</span>(<span class="at">griis_taxonRank =</span> taxonRank)</span></code></pre></div>
 </div>
-<div id="taxonomicstatus-1" class="section level4">
+<div id="taxonomicstatus-1" class="section level4" number="7.2.2.7">
 <h4><span class="header-section-number">7.2.2.7</span> taxonomicStatus</h4>
-<div class="sourceCode" id="cb75"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb75-1"><a href="7_griis_mapping.html#cb75-1"></a>griis <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">griis_taxonomicStatus =</span> taxonomicStatus)</span></code></pre></div>
+<div class="sourceCode" id="cb75"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb75-1"><a href="7_griis_mapping.html#cb75-1" aria-hidden="true" tabindex="-1"></a>griis <span class="sc">%&lt;&gt;%</span> <span class="fu">mutate</span>(<span class="at">griis_taxonomicStatus =</span> taxonomicStatus)</span></code></pre></div>
 </div>
-<div id="kingdom-1" class="section level4">
+<div id="kingdom-1" class="section level4" number="7.2.2.8">
 <h4><span class="header-section-number">7.2.2.8</span> kingdom</h4>
-<div class="sourceCode" id="cb76"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb76-1"><a href="7_griis_mapping.html#cb76-1"></a>griis <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">griis_kingdom =</span> kingdom)</span></code></pre></div>
+<div class="sourceCode" id="cb76"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb76-1"><a href="7_griis_mapping.html#cb76-1" aria-hidden="true" tabindex="-1"></a>griis <span class="sc">%&lt;&gt;%</span> <span class="fu">mutate</span>(<span class="at">griis_kingdom =</span> kingdom)</span></code></pre></div>
 </div>
-<div id="phylum-1" class="section level4">
+<div id="phylum-1" class="section level4" number="7.2.2.9">
 <h4><span class="header-section-number">7.2.2.9</span> phylum</h4>
-<div class="sourceCode" id="cb77"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb77-1"><a href="7_griis_mapping.html#cb77-1"></a>griis <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">griis_phylum =</span> phylum)</span></code></pre></div>
+<div class="sourceCode" id="cb77"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb77-1"><a href="7_griis_mapping.html#cb77-1" aria-hidden="true" tabindex="-1"></a>griis <span class="sc">%&lt;&gt;%</span> <span class="fu">mutate</span>(<span class="at">griis_phylum =</span> phylum)</span></code></pre></div>
 </div>
-<div id="class-1" class="section level4">
+<div id="class-1" class="section level4" number="7.2.2.10">
 <h4><span class="header-section-number">7.2.2.10</span> class</h4>
-<div class="sourceCode" id="cb78"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb78-1"><a href="7_griis_mapping.html#cb78-1"></a>griis <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">griis_class =</span> class)</span></code></pre></div>
+<div class="sourceCode" id="cb78"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb78-1"><a href="7_griis_mapping.html#cb78-1" aria-hidden="true" tabindex="-1"></a>griis <span class="sc">%&lt;&gt;%</span> <span class="fu">mutate</span>(<span class="at">griis_class =</span> class)</span></code></pre></div>
 </div>
-<div id="order-1" class="section level4">
+<div id="order-1" class="section level4" number="7.2.2.11">
 <h4><span class="header-section-number">7.2.2.11</span> order</h4>
-<div class="sourceCode" id="cb79"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb79-1"><a href="7_griis_mapping.html#cb79-1"></a>griis <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">griis_order =</span> order)</span></code></pre></div>
+<div class="sourceCode" id="cb79"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb79-1"><a href="7_griis_mapping.html#cb79-1" aria-hidden="true" tabindex="-1"></a>griis <span class="sc">%&lt;&gt;%</span> <span class="fu">mutate</span>(<span class="at">griis_order =</span> order)</span></code></pre></div>
 </div>
-<div id="family-1" class="section level4">
+<div id="family-1" class="section level4" number="7.2.2.12">
 <h4><span class="header-section-number">7.2.2.12</span> family</h4>
-<div class="sourceCode" id="cb80"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb80-1"><a href="7_griis_mapping.html#cb80-1"></a>griis <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">griis_family =</span> family)</span></code></pre></div>
+<div class="sourceCode" id="cb80"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb80-1"><a href="7_griis_mapping.html#cb80-1" aria-hidden="true" tabindex="-1"></a>griis <span class="sc">%&lt;&gt;%</span> <span class="fu">mutate</span>(<span class="at">griis_family =</span> family)</span></code></pre></div>
 </div>
-<div id="habitat-1" class="section level4">
+<div id="habitat-1" class="section level4" number="7.2.2.13">
 <h4><span class="header-section-number">7.2.2.13</span> habitat</h4>
-<div class="sourceCode" id="cb81"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb81-1"><a href="7_griis_mapping.html#cb81-1"></a>griis <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">griis_habitat =</span> habitat)</span></code></pre></div>
+<div class="sourceCode" id="cb81"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb81-1"><a href="7_griis_mapping.html#cb81-1" aria-hidden="true" tabindex="-1"></a>griis <span class="sc">%&lt;&gt;%</span> <span class="fu">mutate</span>(<span class="at">griis_habitat =</span> habitat)</span></code></pre></div>
 </div>
-<div id="occurrencestatus-1" class="section level4">
+<div id="occurrencestatus-1" class="section level4" number="7.2.2.14">
 <h4><span class="header-section-number">7.2.2.14</span> occurrenceStatus</h4>
-<div class="sourceCode" id="cb82"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb82-1"><a href="7_griis_mapping.html#cb82-1"></a>griis <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">griis_occurrenceStatus =</span> occurrenceStatus)</span></code></pre></div>
+<div class="sourceCode" id="cb82"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb82-1"><a href="7_griis_mapping.html#cb82-1" aria-hidden="true" tabindex="-1"></a>griis <span class="sc">%&lt;&gt;%</span> <span class="fu">mutate</span>(<span class="at">griis_occurrenceStatus =</span> occurrenceStatus)</span></code></pre></div>
 </div>
-<div id="establishmentmeans-1" class="section level4">
+<div id="establishmentmeans-1" class="section level4" number="7.2.2.15">
 <h4><span class="header-section-number">7.2.2.15</span> establishmentMeans</h4>
-<div class="sourceCode" id="cb83"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb83-1"><a href="7_griis_mapping.html#cb83-1"></a>griis <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">griis_establishmentMeans =</span> <span class="kw">recode</span>(establishmentMeans,</span>
-<span id="cb83-2"><a href="7_griis_mapping.html#cb83-2"></a>  <span class="st">&quot;introduced&quot;</span> =<span class="st"> &quot;alien&quot;</span>,</span>
-<span id="cb83-3"><a href="7_griis_mapping.html#cb83-3"></a>  <span class="dt">.default =</span> <span class="st">&quot;&quot;</span>,</span>
-<span id="cb83-4"><a href="7_griis_mapping.html#cb83-4"></a>  <span class="dt">.missing =</span> <span class="st">&quot;&quot;</span></span>
-<span id="cb83-5"><a href="7_griis_mapping.html#cb83-5"></a>))</span></code></pre></div>
+<div class="sourceCode" id="cb83"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb83-1"><a href="7_griis_mapping.html#cb83-1" aria-hidden="true" tabindex="-1"></a>griis <span class="sc">%&lt;&gt;%</span> <span class="fu">mutate</span>(<span class="at">griis_establishmentMeans =</span> <span class="fu">recode</span>(establishmentMeans,</span>
+<span id="cb83-2"><a href="7_griis_mapping.html#cb83-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;introduced&quot;</span> <span class="ot">=</span> <span class="st">&quot;alien&quot;</span>,</span>
+<span id="cb83-3"><a href="7_griis_mapping.html#cb83-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">.default =</span> <span class="st">&quot;&quot;</span>,</span>
+<span id="cb83-4"><a href="7_griis_mapping.html#cb83-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">.missing =</span> <span class="st">&quot;&quot;</span></span>
+<span id="cb83-5"><a href="7_griis_mapping.html#cb83-5" aria-hidden="true" tabindex="-1"></a>))</span></code></pre></div>
 </div>
-<div id="isinvasive-1" class="section level4">
+<div id="isinvasive-1" class="section level4" number="7.2.2.16">
 <h4><span class="header-section-number">7.2.2.16</span> isInvasive</h4>
-<div class="sourceCode" id="cb84"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb84-1"><a href="7_griis_mapping.html#cb84-1"></a>griis <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">griis_isInvasive =</span> <span class="kw">case_when</span>(</span>
-<span id="cb84-2"><a href="7_griis_mapping.html#cb84-2"></a>  <span class="kw">is.na</span>(isInvasive) <span class="op">~</span><span class="st"> &quot;Null&quot;</span></span>
-<span id="cb84-3"><a href="7_griis_mapping.html#cb84-3"></a>))</span></code></pre></div>
+<div class="sourceCode" id="cb84"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb84-1"><a href="7_griis_mapping.html#cb84-1" aria-hidden="true" tabindex="-1"></a>griis <span class="sc">%&lt;&gt;%</span> <span class="fu">mutate</span>(<span class="at">griis_isInvasive =</span> <span class="fu">case_when</span>(</span>
+<span id="cb84-2"><a href="7_griis_mapping.html#cb84-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">is.na</span>(isInvasive) <span class="sc">~</span> <span class="st">&quot;Null&quot;</span></span>
+<span id="cb84-3"><a href="7_griis_mapping.html#cb84-3" aria-hidden="true" tabindex="-1"></a>))</span></code></pre></div>
 </div>
 </div>
-<div id="eventdate-1" class="section level3">
+<div id="eventdate-1" class="section level3" number="7.2.3">
 <h3><span class="header-section-number">7.2.3</span> eventDate</h3>
-<div class="sourceCode" id="cb85"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb85-1"><a href="7_griis_mapping.html#cb85-1"></a>griis <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">griis_eventDate =</span> eventDate)</span></code></pre></div>
+<div class="sourceCode" id="cb85"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb85-1"><a href="7_griis_mapping.html#cb85-1" aria-hidden="true" tabindex="-1"></a>griis <span class="sc">%&lt;&gt;%</span> <span class="fu">mutate</span>(<span class="at">griis_eventDate =</span> eventDate)</span></code></pre></div>
 </div>
 </div>
-<div id="post-processing-4" class="section level2">
+<div id="post-processing-4" class="section level2" number="7.3">
 <h2><span class="header-section-number">7.3</span> Post-processing</h2>
 <ol style="list-style-type: decimal">
 <li><p>Only keep the GRIIS columns.</p></li>
@@ -342,7 +357,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ol>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
-{"columns":[{"label":["taxonID"],"name":[1],"type":["chr"],"align":["left"]},{"label":["countryCode"],"name":[2],"type":["chr"],"align":["left"]},{"label":["island"],"name":[3],"type":["chr"],"align":["left"]},{"label":["scientificName"],"name":[4],"type":["chr"],"align":["left"]},{"label":["acceptedNameUsage"],"name":[5],"type":["chr"],"align":["left"]},{"label":["taxonRank"],"name":[6],"type":["chr"],"align":["left"]},{"label":["taxonomicStatus"],"name":[7],"type":["chr"],"align":["left"]},{"label":["kingdom"],"name":[8],"type":["chr"],"align":["left"]},{"label":["phylum"],"name":[9],"type":["chr"],"align":["left"]},{"label":["class"],"name":[10],"type":["chr"],"align":["left"]},{"label":["order"],"name":[11],"type":["chr"],"align":["left"]},{"label":["family"],"name":[12],"type":["chr"],"align":["left"]},{"label":["habitat"],"name":[13],"type":["chr"],"align":["left"]},{"label":["occurrenceStatus"],"name":[14],"type":["chr"],"align":["left"]},{"label":["establishmentMeans"],"name":[15],"type":["chr"],"align":["left"]},{"label":["isInvasive"],"name":[16],"type":["chr"],"align":["left"]},{"label":["eventDate"],"name":[17],"type":["chr"],"align":["left"]}],"data":[{"1":"https://www.gbif.org/species/3095938","2":"BE","3":"","4":"×Conyzigeron huelsenii (Vatke) Rauschert","5":"","6":"SPECIES","7":"ACCEPTED","8":"Plantae","9":"Tracheophyta","10":"Magnoliopsida","11":"Asterales","12":"Asteraceae","13":"terrestrial","14":"present","15":"alien","16":"Null","17":"2008/2008"},{"1":"https://www.gbif.org/species/2685484","2":"BE","3":"","4":"Abies alba Mill.","5":"","6":"SPECIES","7":"ACCEPTED","8":"Plantae","9":"Tracheophyta","10":"Pinopsida","11":"Pinales","12":"Pinaceae","13":"terrestrial","14":"present","15":"alien","16":"Null","17":"2008/2017"},{"1":"https://www.gbif.org/species/2685361","2":"BE","3":"","4":"Abies grandis (Douglas ex D.Don) Lindl.","5":"","6":"SPECIES","7":"ACCEPTED","8":"Plantae","9":"Tracheophyta","10":"Pinopsida","11":"Pinales","12":"Pinaceae","13":"terrestrial","14":"present","15":"alien","16":"Null","17":"2009/2018"},{"1":"https://www.gbif.org/species/2685552","2":"BE","3":"","4":"Abies nordmanniana Spach","5":"","6":"SPECIES","7":"ACCEPTED","8":"Plantae","9":"Tracheophyta","10":"Pinopsida","11":"Pinales","12":"Pinaceae","13":"terrestrial","14":"present","15":"alien","16":"Null","17":"2016/2019"},{"1":"https://www.gbif.org/species/8690876","2":"BE","3":"","4":"Abronia fragrans Nutt.","5":"","6":"SPECIES","7":"DOUBTFUL","8":"Plantae","9":"Tracheophyta","10":"Magnoliopsida","11":"Caryophyllales","12":"Nyctaginaceae","13":"terrestrial","14":"present","15":"alien","16":"Null","17":"1951/1951"},{"1":"https://www.gbif.org/species/3152614","2":"BE","3":"","4":"Abutilon theophrasti Medik.","5":"","6":"SPECIES","7":"ACCEPTED","8":"Plantae","9":"Tracheophyta","10":"Magnoliopsida","11":"Malvales","12":"Malvaceae","13":"terrestrial","14":"present","15":"alien","16":"Null","17":"1929/2020"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+{"columns":[{"label":["taxonID"],"name":[1],"type":["chr"],"align":["left"]},{"label":["countryCode"],"name":[2],"type":["chr"],"align":["left"]},{"label":["island"],"name":[3],"type":["chr"],"align":["left"]},{"label":["scientificName"],"name":[4],"type":["chr"],"align":["left"]},{"label":["acceptedNameUsage"],"name":[5],"type":["chr"],"align":["left"]},{"label":["taxonRank"],"name":[6],"type":["chr"],"align":["left"]},{"label":["taxonomicStatus"],"name":[7],"type":["chr"],"align":["left"]},{"label":["kingdom"],"name":[8],"type":["chr"],"align":["left"]},{"label":["phylum"],"name":[9],"type":["chr"],"align":["left"]},{"label":["class"],"name":[10],"type":["chr"],"align":["left"]},{"label":["order"],"name":[11],"type":["chr"],"align":["left"]},{"label":["family"],"name":[12],"type":["chr"],"align":["left"]},{"label":["habitat"],"name":[13],"type":["chr"],"align":["left"]},{"label":["occurrenceStatus"],"name":[14],"type":["chr"],"align":["left"]},{"label":["establishmentMeans"],"name":[15],"type":["chr"],"align":["left"]},{"label":["isInvasive"],"name":[16],"type":["chr"],"align":["left"]},{"label":["eventDate"],"name":[17],"type":["chr"],"align":["left"]}],"data":[{"1":"https://www.gbif.org/species/4038524","2":"BE","3":"","4":"×Reyllopia conollyana (J.P.Bailey) Galasso","5":"","6":"SPECIES","7":"ACCEPTED","8":"Plantae","9":"Tracheophyta","10":"Magnoliopsida","11":"Caryophyllales","12":"Polygonaceae","13":"terrestrial","14":"present","15":"alien","16":"Null","17":"2008/2018"},{"1":"https://www.gbif.org/species/2685484","2":"BE","3":"","4":"Abies alba Mill.","5":"","6":"SPECIES","7":"ACCEPTED","8":"Plantae","9":"Tracheophyta","10":"Pinopsida","11":"Pinales","12":"Pinaceae","13":"terrestrial","14":"present","15":"alien","16":"Null","17":"2008/2017"},{"1":"https://www.gbif.org/species/2685361","2":"BE","3":"","4":"Abies grandis (Douglas ex D.Don) Lindl.","5":"","6":"SPECIES","7":"ACCEPTED","8":"Plantae","9":"Tracheophyta","10":"Pinopsida","11":"Pinales","12":"Pinaceae","13":"terrestrial","14":"present","15":"alien","16":"Null","17":"2009/2018"},{"1":"https://www.gbif.org/species/2685663","2":"BE","3":"","4":"Abies homolepis Siebold & Zucc.","5":"","6":"SPECIES","7":"ACCEPTED","8":"Plantae","9":"Tracheophyta","10":"Pinopsida","11":"Pinales","12":"Pinaceae","13":"terrestrial","14":"present","15":"alien","16":"Null","17":"2019/2019"},{"1":"https://www.gbif.org/species/2685552","2":"BE","3":"","4":"Abies nordmanniana (Steven) Spach","5":"","6":"SPECIES","7":"ACCEPTED","8":"Plantae","9":"Tracheophyta","10":"Pinopsida","11":"Pinales","12":"Pinaceae","13":"terrestrial","14":"present","15":"alien","16":"Null","17":"2016/2019"},{"1":"https://www.gbif.org/species/3152614","2":"BE","3":"","4":"Abutilon theophrasti Medik.","5":"","6":"SPECIES","7":"ACCEPTED","8":"Plantae","9":"Tracheophyta","10":"Magnoliopsida","11":"Malvales","12":"Malvaceae","13":"terrestrial","14":"present","15":"alien","16":"Null","17":"1929/2020"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
   </script>
 </div>
 <ol start="5" style="list-style-type: decimal">

@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>5 Unify related information | Global Register of Introduced and Invasive Species - Belgium</title>
   <meta name="description" content="5 Unify related information | Global Register of Introduced and Invasive Species - Belgium" />
-  <meta name="generator" content="bookdown 0.18 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
   <meta property="og:title" content="5 Unify related information | Global Register of Introduced and Invasive Species - Belgium" />
   <meta property="og:type" content="book" />
@@ -24,7 +24,7 @@
 <meta name="author" content="Peter Desmet, Lien Reyserhove, Damiano Oldoni" />
 
 
-<meta name="date" content="2020-05-25" />
+<meta name="date" content="2021-05-09" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,6 +33,7 @@
   
 <link rel="prev" href="4_unify_taxa.html"/>
 <link rel="next" href="6_dwc_mapping.html"/>
+<script src="libs/header-attrs-2.7/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -55,18 +56,17 @@
 
 
 <style type="text/css">
-code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
-code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
 pre.sourceCode { margin: 0; }
 @media screen {
 div.sourceCode { overflow: auto; }
 }
 @media print {
-code.sourceCode { white-space: pre-wrap; }
-code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -86,7 +86,7 @@ pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-le
 div.sourceCode
   {   }
 @media screen {
-code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
@@ -131,24 +131,28 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <nav role="navigation">
 
 <ul class="summary">
-<li class="chapter" data-level="1" data-path="1_get_taxa.html"><a href="1_get_taxa.html"><i class="fa fa-check"></i><b>1</b> Get taxa from checklists</a><ul>
+<li class="chapter" data-level="1" data-path="1_get_taxa.html"><a href="1_get_taxa.html"><i class="fa fa-check"></i><b>1</b> Get taxa from checklists</a>
+<ul>
 <li class="chapter" data-level="1.1" data-path="1_get_taxa.html"><a href="1_get_taxa.html#choose-checklists"><i class="fa fa-check"></i><b>1.1</b> Choose checklists</a></li>
 <li class="chapter" data-level="1.2" data-path="1_get_taxa.html"><a href="1_get_taxa.html#get-taxa"><i class="fa fa-check"></i><b>1.2</b> Get taxa</a></li>
 <li class="chapter" data-level="1.3" data-path="1_get_taxa.html"><a href="1_get_taxa.html#filter-on-distribution"><i class="fa fa-check"></i><b>1.3</b> Filter on distributions</a></li>
 <li class="chapter" data-level="1.4" data-path="1_get_taxa.html"><a href="1_get_taxa.html#get-gbif-backbone-taxonomy-information"><i class="fa fa-check"></i><b>1.4</b> Get GBIF backbone taxonomy information</a></li>
 <li class="chapter" data-level="1.5" data-path="1_get_taxa.html"><a href="1_get_taxa.html#show-summary-and-save"><i class="fa fa-check"></i><b>1.5</b> Show summary and save</a></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="2_get_information.html"><a href="2_get_information.html"><i class="fa fa-check"></i><b>2</b> Get related information</a><ul>
+<li class="chapter" data-level="2" data-path="2_get_information.html"><a href="2_get_information.html"><i class="fa fa-check"></i><b>2</b> Get related information</a>
+<ul>
 <li class="chapter" data-level="2.1" data-path="2_get_information.html"><a href="2_get_information.html#read-taxa"><i class="fa fa-check"></i><b>2.1</b> Read taxa</a></li>
 <li class="chapter" data-level="2.2" data-path="2_get_information.html"><a href="2_get_information.html#get-distributions"><i class="fa fa-check"></i><b>2.2</b> Get distributions</a></li>
 <li class="chapter" data-level="2.3" data-path="2_get_information.html"><a href="2_get_information.html#get-species-profiles"><i class="fa fa-check"></i><b>2.3</b> Get species profiles</a></li>
 <li class="chapter" data-level="2.4" data-path="2_get_information.html"><a href="2_get_information.html#get-descriptions"><i class="fa fa-check"></i><b>2.4</b> Get descriptions</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="3_verify_taxa.html"><a href="3_verify_taxa.html"><i class="fa fa-check"></i><b>3</b> Verify taxa</a><ul>
+<li class="chapter" data-level="3" data-path="3_verify_taxa.html"><a href="3_verify_taxa.html"><i class="fa fa-check"></i><b>3</b> Verify taxa</a>
+<ul>
 <li class="chapter" data-level="3.1" data-path="3_verify_taxa.html"><a href="3_verify_taxa.html#read-taxa-1"><i class="fa fa-check"></i><b>3.1</b> Read taxa</a></li>
 <li class="chapter" data-level="3.2" data-path="3_verify_taxa.html"><a href="3_verify_taxa.html#verification"><i class="fa fa-check"></i><b>3.2</b> Read verification information</a></li>
 <li class="chapter" data-level="3.3" data-path="3_verify_taxa.html"><a href="3_verify_taxa.html#run-and-save-verification"><i class="fa fa-check"></i><b>3.3</b> Run and save verification</a></li>
-<li class="chapter" data-level="3.4" data-path="3_verify_taxa.html"><a href="3_verify_taxa.html#show-verification-status"><i class="fa fa-check"></i><b>3.4</b> Show verification status</a><ul>
+<li class="chapter" data-level="3.4" data-path="3_verify_taxa.html"><a href="3_verify_taxa.html#show-verification-status"><i class="fa fa-check"></i><b>3.4</b> Show verification status</a>
+<ul>
 <li class="chapter" data-level="3.4.1" data-path="3_verify_taxa.html"><a href="3_verify_taxa.html#unmatched-taxa"><i class="fa fa-check"></i><b>3.4.1</b> Unmatched taxa</a></li>
 <li class="chapter" data-level="3.4.2" data-path="3_verify_taxa.html"><a href="3_verify_taxa.html#synonyms"><i class="fa fa-check"></i><b>3.4.2</b> Synonyms</a></li>
 <li class="chapter" data-level="3.4.3" data-path="3_verify_taxa.html"><a href="3_verify_taxa.html#accepted-taxa"><i class="fa fa-check"></i><b>3.4.3</b> Accepted taxa</a></li>
@@ -156,57 +160,68 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.4.5" data-path="3_verify_taxa.html"><a href="3_verify_taxa.html#additional-information"><i class="fa fa-check"></i><b>3.4.5</b> Additional information</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="4_unify_taxa.html"><a href="4_unify_taxa.html"><i class="fa fa-check"></i><b>4</b> Unify taxa</a><ul>
+<li class="chapter" data-level="4" data-path="4_unify_taxa.html"><a href="4_unify_taxa.html"><i class="fa fa-check"></i><b>4</b> Unify taxa</a>
+<ul>
 <li class="chapter" data-level="4.1" data-path="4_unify_taxa.html"><a href="4_unify_taxa.html#read-taxa-2"><i class="fa fa-check"></i><b>4.1</b> Read taxa</a></li>
 <li class="chapter" data-level="4.2" data-path="4_unify_taxa.html"><a href="4_unify_taxa.html#unify-taxa-1"><i class="fa fa-check"></i><b>4.2</b> Unify taxa</a></li>
 <li class="chapter" data-level="4.3" data-path="4_unify_taxa.html"><a href="4_unify_taxa.html#get-gbif-backbone-taxonomy-information-1"><i class="fa fa-check"></i><b>4.3</b> Get GBIF backbone taxonomy information</a></li>
 <li class="chapter" data-level="4.4" data-path="4_unify_taxa.html"><a href="4_unify_taxa.html#explicitely-remove-incorrect-taxa"><i class="fa fa-check"></i><b>4.4</b> Explicitely remove incorrect taxa</a></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="5_unify_information.html"><a href="5_unify_information.html"><i class="fa fa-check"></i><b>5</b> Unify related information</a><ul>
+<li class="chapter" data-level="5" data-path="5_unify_information.html"><a href="5_unify_information.html"><i class="fa fa-check"></i><b>5</b> Unify related information</a>
+<ul>
 <li class="chapter" data-level="5.1" data-path="5_unify_information.html"><a href="5_unify_information.html#read-data"><i class="fa fa-check"></i><b>5.1</b> Read data</a></li>
 <li class="chapter" data-level="5.2" data-path="5_unify_information.html"><a href="5_unify_information.html#assign-checklist-order"><i class="fa fa-check"></i><b>5.2</b> Assign checklist order</a></li>
 <li class="chapter" data-level="5.3" data-path="5_unify_information.html"><a href="5_unify_information.html#unify-distribution"><i class="fa fa-check"></i><b>5.3</b> Unify distribution</a></li>
 <li class="chapter" data-level="5.4" data-path="5_unify_information.html"><a href="5_unify_information.html#unify-species-profiles"><i class="fa fa-check"></i><b>5.4</b> Unify species profiles</a></li>
-<li class="chapter" data-level="5.5" data-path="5_unify_information.html"><a href="5_unify_information.html#unify-descriptions"><i class="fa fa-check"></i><b>5.5</b> Unify descriptions</a><ul>
+<li class="chapter" data-level="5.5" data-path="5_unify_information.html"><a href="5_unify_information.html#unify-descriptions"><i class="fa fa-check"></i><b>5.5</b> Unify descriptions</a>
+<ul>
 <li class="chapter" data-level="5.5.1" data-path="5_unify_information.html"><a href="5_unify_information.html#native-range"><i class="fa fa-check"></i><b>5.5.1</b> Native range</a></li>
 <li class="chapter" data-level="5.5.2" data-path="5_unify_information.html"><a href="5_unify_information.html#degree-of-establishment"><i class="fa fa-check"></i><b>5.5.2</b> Degree of establishment</a></li>
 <li class="chapter" data-level="5.5.3" data-path="5_unify_information.html"><a href="5_unify_information.html#combine-and-process-descriptions"><i class="fa fa-check"></i><b>5.5.3</b> Combine and process descriptions</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="6_dwc_mapping.html"><a href="6_dwc_mapping.html"><i class="fa fa-check"></i><b>6</b> Darwin Core mapping</a><ul>
+<li class="chapter" data-level="6" data-path="6_dwc_mapping.html"><a href="6_dwc_mapping.html"><i class="fa fa-check"></i><b>6</b> Darwin Core mapping</a>
+<ul>
 <li class="chapter" data-level="6.1" data-path="6_dwc_mapping.html"><a href="6_dwc_mapping.html#read-unified-data"><i class="fa fa-check"></i><b>6.1</b> Read unified data</a></li>
 <li class="chapter" data-level="6.2" data-path="6_dwc_mapping.html"><a href="6_dwc_mapping.html#preview-data"><i class="fa fa-check"></i><b>6.2</b> Preview data</a></li>
 <li class="chapter" data-level="6.3" data-path="6_dwc_mapping.html"><a href="6_dwc_mapping.html#citing-sources"><i class="fa fa-check"></i><b>6.3</b> How we cite our sources</a></li>
-<li class="chapter" data-level="6.4" data-path="6_dwc_mapping.html"><a href="6_dwc_mapping.html#taxon-core"><i class="fa fa-check"></i><b>6.4</b> Taxon core</a><ul>
+<li class="chapter" data-level="6.4" data-path="6_dwc_mapping.html"><a href="6_dwc_mapping.html#taxon-core"><i class="fa fa-check"></i><b>6.4</b> Taxon core</a>
+<ul>
 <li class="chapter" data-level="6.4.1" data-path="6_dwc_mapping.html"><a href="6_dwc_mapping.html#pre-processing"><i class="fa fa-check"></i><b>6.4.1</b> Pre-processing</a></li>
 <li class="chapter" data-level="6.4.2" data-path="6_dwc_mapping.html"><a href="6_dwc_mapping.html#term-mapping"><i class="fa fa-check"></i><b>6.4.2</b> Term mapping</a></li>
 <li class="chapter" data-level="6.4.3" data-path="6_dwc_mapping.html"><a href="6_dwc_mapping.html#post-processing"><i class="fa fa-check"></i><b>6.4.3</b> Post-processing</a></li>
 </ul></li>
-<li class="chapter" data-level="6.5" data-path="6_dwc_mapping.html"><a href="6_dwc_mapping.html#distribution-extension"><i class="fa fa-check"></i><b>6.5</b> Distribution extension</a><ul>
+<li class="chapter" data-level="6.5" data-path="6_dwc_mapping.html"><a href="6_dwc_mapping.html#distribution-extension"><i class="fa fa-check"></i><b>6.5</b> Distribution extension</a>
+<ul>
 <li class="chapter" data-level="6.5.1" data-path="6_dwc_mapping.html"><a href="6_dwc_mapping.html#pre-processing-1"><i class="fa fa-check"></i><b>6.5.1</b> Pre-processing</a></li>
 <li class="chapter" data-level="6.5.2" data-path="6_dwc_mapping.html"><a href="6_dwc_mapping.html#term-mapping-1"><i class="fa fa-check"></i><b>6.5.2</b> Term mapping</a></li>
 <li class="chapter" data-level="6.5.3" data-path="6_dwc_mapping.html"><a href="6_dwc_mapping.html#post-processing-1"><i class="fa fa-check"></i><b>6.5.3</b> Post-processing</a></li>
 </ul></li>
-<li class="chapter" data-level="6.6" data-path="6_dwc_mapping.html"><a href="6_dwc_mapping.html#species-profile-extension"><i class="fa fa-check"></i><b>6.6</b> Species profile extension</a><ul>
+<li class="chapter" data-level="6.6" data-path="6_dwc_mapping.html"><a href="6_dwc_mapping.html#species-profile-extension"><i class="fa fa-check"></i><b>6.6</b> Species profile extension</a>
+<ul>
 <li class="chapter" data-level="6.6.1" data-path="6_dwc_mapping.html"><a href="6_dwc_mapping.html#term-mapping-2"><i class="fa fa-check"></i><b>6.6.1</b> Term mapping</a></li>
 <li class="chapter" data-level="6.6.2" data-path="6_dwc_mapping.html"><a href="6_dwc_mapping.html#post-processing-2"><i class="fa fa-check"></i><b>6.6.2</b> Post-processing</a></li>
 </ul></li>
-<li class="chapter" data-level="6.7" data-path="6_dwc_mapping.html"><a href="6_dwc_mapping.html#description-extension"><i class="fa fa-check"></i><b>6.7</b> Description extension</a><ul>
+<li class="chapter" data-level="6.7" data-path="6_dwc_mapping.html"><a href="6_dwc_mapping.html#description-extension"><i class="fa fa-check"></i><b>6.7</b> Description extension</a>
+<ul>
 <li class="chapter" data-level="6.7.1" data-path="6_dwc_mapping.html"><a href="6_dwc_mapping.html#pre-processing-2"><i class="fa fa-check"></i><b>6.7.1</b> Pre-processing</a></li>
 <li class="chapter" data-level="6.7.2" data-path="6_dwc_mapping.html"><a href="6_dwc_mapping.html#term-mapping-3"><i class="fa fa-check"></i><b>6.7.2</b> Term mapping</a></li>
 <li class="chapter" data-level="6.7.3" data-path="6_dwc_mapping.html"><a href="6_dwc_mapping.html#post-processing-3"><i class="fa fa-check"></i><b>6.7.3</b> Post-processing</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="7" data-path="7_griis_mapping.html"><a href="7_griis_mapping.html"><i class="fa fa-check"></i><b>7</b> GRIIS mapping</a><ul>
+<li class="chapter" data-level="7" data-path="7_griis_mapping.html"><a href="7_griis_mapping.html"><i class="fa fa-check"></i><b>7</b> GRIIS mapping</a>
+<ul>
 <li class="chapter" data-level="7.1" data-path="7_griis_mapping.html"><a href="7_griis_mapping.html#read-darwin-core-data"><i class="fa fa-check"></i><b>7.1</b> Read Darwin Core data</a></li>
-<li class="chapter" data-level="7.2" data-path="7_griis_mapping.html"><a href="7_griis_mapping.html#griis-format"><i class="fa fa-check"></i><b>7.2</b> GRIIS format</a><ul>
+<li class="chapter" data-level="7.2" data-path="7_griis_mapping.html"><a href="7_griis_mapping.html#griis-format"><i class="fa fa-check"></i><b>7.2</b> GRIIS format</a>
+<ul>
 <li class="chapter" data-level="7.2.1" data-path="7_griis_mapping.html"><a href="7_griis_mapping.html#pre-processing-3"><i class="fa fa-check"></i><b>7.2.1</b> Pre-processing</a></li>
 <li class="chapter" data-level="7.2.2" data-path="7_griis_mapping.html"><a href="7_griis_mapping.html#term-mapping-4"><i class="fa fa-check"></i><b>7.2.2</b> Term mapping</a></li>
 <li class="chapter" data-level="7.2.3" data-path="7_griis_mapping.html"><a href="7_griis_mapping.html#eventdate-1"><i class="fa fa-check"></i><b>7.2.3</b> eventDate</a></li>
 </ul></li>
 <li class="chapter" data-level="7.3" data-path="7_griis_mapping.html"><a href="7_griis_mapping.html#post-processing-4"><i class="fa fa-check"></i><b>7.3</b> Post-processing</a></li>
 </ul></li>
-<li class="chapter" data-level="8" data-path="8_get_synonyms.html"><a href="8_get_synonyms.html"><i class="fa fa-check"></i><b>8</b> Get synonyms of all accepted taxa</a><ul>
+<li class="chapter" data-level="8" data-path="8_get_synonyms.html"><a href="8_get_synonyms.html"><i class="fa fa-check"></i><b>8</b> Get synonyms of all accepted taxa</a>
+<ul>
 <li class="chapter" data-level="8.1" data-path="8_get_synonyms.html"><a href="8_get_synonyms.html#get-unified-taxa"><i class="fa fa-check"></i><b>8.1</b> Get unified taxa</a></li>
 <li class="chapter" data-level="8.2" data-path="8_get_synonyms.html"><a href="8_get_synonyms.html#find-synonyms"><i class="fa fa-check"></i><b>8.2</b> Find synonyms</a></li>
 </ul></li>
@@ -227,149 +242,149 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="unify-related-information" class="section level1">
+<div id="unify-related-information" class="section level1" number="5">
 <h1><span class="header-section-number">5</span> Unify related information</h1>
 <p>In this chapter we unify related information for each verified taxon.</p>
-<div id="read-data" class="section level2">
+<div id="read-data" class="section level2" number="5.1">
 <h2><span class="header-section-number">5.1</span> Read data</h2>
-<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="5_unify_information.html#cb7-1"></a><span class="co"># Read checklists</span></span>
-<span id="cb7-2"><a href="5_unify_information.html#cb7-2"></a>checklists &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="kw">here</span>(<span class="st">&quot;data&quot;</span>, <span class="st">&quot;raw&quot;</span>, <span class="st">&quot;checklists.csv&quot;</span>))</span>
-<span id="cb7-3"><a href="5_unify_information.html#cb7-3"></a></span>
-<span id="cb7-4"><a href="5_unify_information.html#cb7-4"></a><span class="co"># Read data</span></span>
-<span id="cb7-5"><a href="5_unify_information.html#cb7-5"></a>taxa &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="kw">here</span>(<span class="st">&quot;data&quot;</span>, <span class="st">&quot;interim&quot;</span>, <span class="st">&quot;taxa_with_verification.csv&quot;</span>))</span>
-<span id="cb7-6"><a href="5_unify_information.html#cb7-6"></a>distributions &lt;-<span class="st"> </span><span class="kw">read_csv</span>(</span>
-<span id="cb7-7"><a href="5_unify_information.html#cb7-7"></a>  <span class="kw">here</span>(<span class="st">&quot;data&quot;</span>, <span class="st">&quot;raw&quot;</span>, <span class="st">&quot;distributions.csv&quot;</span>),</span>
-<span id="cb7-8"><a href="5_unify_information.html#cb7-8"></a>  <span class="dt">col_types =</span> <span class="kw">cols</span>(</span>
-<span id="cb7-9"><a href="5_unify_information.html#cb7-9"></a>    <span class="dt">.default =</span> <span class="kw">col_character</span>(),</span>
-<span id="cb7-10"><a href="5_unify_information.html#cb7-10"></a>    <span class="dt">taxonKey =</span> <span class="kw">col_double</span>()</span>
-<span id="cb7-11"><a href="5_unify_information.html#cb7-11"></a>  )</span>
-<span id="cb7-12"><a href="5_unify_information.html#cb7-12"></a>)</span>
-<span id="cb7-13"><a href="5_unify_information.html#cb7-13"></a>speciesprofiles &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="kw">here</span>(<span class="st">&quot;data&quot;</span>, <span class="st">&quot;raw&quot;</span>, <span class="st">&quot;speciesprofiles.csv&quot;</span>))</span>
-<span id="cb7-14"><a href="5_unify_information.html#cb7-14"></a>descriptions &lt;-<span class="st"> </span><span class="kw">read_csv</span>(</span>
-<span id="cb7-15"><a href="5_unify_information.html#cb7-15"></a>  <span class="kw">here</span>(<span class="st">&quot;data&quot;</span>, <span class="st">&quot;raw&quot;</span>, <span class="st">&quot;descriptions.csv&quot;</span>),</span>
-<span id="cb7-16"><a href="5_unify_information.html#cb7-16"></a>  <span class="dt">col_types =</span> <span class="kw">cols</span>(</span>
-<span id="cb7-17"><a href="5_unify_information.html#cb7-17"></a>    <span class="dt">.default =</span> <span class="kw">col_character</span>(),</span>
-<span id="cb7-18"><a href="5_unify_information.html#cb7-18"></a>    <span class="dt">key =</span> <span class="kw">col_double</span>(),</span>
-<span id="cb7-19"><a href="5_unify_information.html#cb7-19"></a>    <span class="dt">taxonKey =</span> <span class="kw">col_double</span>()</span>
-<span id="cb7-20"><a href="5_unify_information.html#cb7-20"></a>  )</span>
-<span id="cb7-21"><a href="5_unify_information.html#cb7-21"></a>)</span></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="5_unify_information.html#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Read checklists</span></span>
+<span id="cb7-2"><a href="5_unify_information.html#cb7-2" aria-hidden="true" tabindex="-1"></a>checklists <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="fu">here</span>(<span class="st">&quot;data&quot;</span>, <span class="st">&quot;raw&quot;</span>, <span class="st">&quot;checklists.csv&quot;</span>))</span>
+<span id="cb7-3"><a href="5_unify_information.html#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-4"><a href="5_unify_information.html#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Read data</span></span>
+<span id="cb7-5"><a href="5_unify_information.html#cb7-5" aria-hidden="true" tabindex="-1"></a>taxa <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="fu">here</span>(<span class="st">&quot;data&quot;</span>, <span class="st">&quot;interim&quot;</span>, <span class="st">&quot;taxa_with_verification.csv&quot;</span>))</span>
+<span id="cb7-6"><a href="5_unify_information.html#cb7-6" aria-hidden="true" tabindex="-1"></a>distributions <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(</span>
+<span id="cb7-7"><a href="5_unify_information.html#cb7-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">here</span>(<span class="st">&quot;data&quot;</span>, <span class="st">&quot;raw&quot;</span>, <span class="st">&quot;distributions.csv&quot;</span>),</span>
+<span id="cb7-8"><a href="5_unify_information.html#cb7-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">col_types =</span> <span class="fu">cols</span>(</span>
+<span id="cb7-9"><a href="5_unify_information.html#cb7-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">.default =</span> <span class="fu">col_character</span>(),</span>
+<span id="cb7-10"><a href="5_unify_information.html#cb7-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">taxonKey =</span> <span class="fu">col_double</span>()</span>
+<span id="cb7-11"><a href="5_unify_information.html#cb7-11" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb7-12"><a href="5_unify_information.html#cb7-12" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb7-13"><a href="5_unify_information.html#cb7-13" aria-hidden="true" tabindex="-1"></a>speciesprofiles <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="fu">here</span>(<span class="st">&quot;data&quot;</span>, <span class="st">&quot;raw&quot;</span>, <span class="st">&quot;speciesprofiles.csv&quot;</span>))</span>
+<span id="cb7-14"><a href="5_unify_information.html#cb7-14" aria-hidden="true" tabindex="-1"></a>descriptions <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(</span>
+<span id="cb7-15"><a href="5_unify_information.html#cb7-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">here</span>(<span class="st">&quot;data&quot;</span>, <span class="st">&quot;raw&quot;</span>, <span class="st">&quot;descriptions.csv&quot;</span>),</span>
+<span id="cb7-16"><a href="5_unify_information.html#cb7-16" aria-hidden="true" tabindex="-1"></a>  <span class="at">col_types =</span> <span class="fu">cols</span>(</span>
+<span id="cb7-17"><a href="5_unify_information.html#cb7-17" aria-hidden="true" tabindex="-1"></a>    <span class="at">.default =</span> <span class="fu">col_character</span>(),</span>
+<span id="cb7-18"><a href="5_unify_information.html#cb7-18" aria-hidden="true" tabindex="-1"></a>    <span class="at">key =</span> <span class="fu">col_double</span>(),</span>
+<span id="cb7-19"><a href="5_unify_information.html#cb7-19" aria-hidden="true" tabindex="-1"></a>    <span class="at">taxonKey =</span> <span class="fu">col_double</span>()</span>
+<span id="cb7-20"><a href="5_unify_information.html#cb7-20" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb7-21"><a href="5_unify_information.html#cb7-21" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div>
 </div>
-<div id="assign-checklist-order" class="section level2">
+<div id="assign-checklist-order" class="section level2" number="5.2">
 <h2><span class="header-section-number">5.2</span> Assign checklist order</h2>
 <ol style="list-style-type: decimal">
 <li><p>Get checklist keys as (ordered) vector.</p></li>
 <li><p>Assign the checklist order (= index of checklist keys) as an extra column to taxa.</p></li>
 </ol>
 </div>
-<div id="unify-distribution" class="section level2">
+<div id="unify-distribution" class="section level2" number="5.3">
 <h2><span class="header-section-number">5.3</span> Unify distribution</h2>
 <ol style="list-style-type: decimal">
 <li>Parse <code>temporal</code> (eventDate) information.</li>
 </ol>
-<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="5_unify_information.html#cb8-1"></a>distributions_unified &lt;-</span>
-<span id="cb8-2"><a href="5_unify_information.html#cb8-2"></a><span class="st">  </span>distributions <span class="op">%&gt;%</span></span>
-<span id="cb8-3"><a href="5_unify_information.html#cb8-3"></a></span>
-<span id="cb8-4"><a href="5_unify_information.html#cb8-4"></a><span class="st">  </span><span class="co"># Split temporal on &quot;/&quot; into startYear and endYear</span></span>
-<span id="cb8-5"><a href="5_unify_information.html#cb8-5"></a><span class="st">  </span><span class="co"># If temporal only contains a single year, then endYear will be empty</span></span>
-<span id="cb8-6"><a href="5_unify_information.html#cb8-6"></a><span class="st">  </span><span class="kw">separate</span>(</span>
-<span id="cb8-7"><a href="5_unify_information.html#cb8-7"></a>    temporal,</span>
-<span id="cb8-8"><a href="5_unify_information.html#cb8-8"></a>    <span class="dt">into =</span> <span class="kw">c</span>(<span class="st">&quot;startYear&quot;</span>, <span class="st">&quot;endYear&quot;</span>),</span>
-<span id="cb8-9"><a href="5_unify_information.html#cb8-9"></a>    <span class="dt">sep =</span> <span class="st">&quot;/&quot;</span>,</span>
-<span id="cb8-10"><a href="5_unify_information.html#cb8-10"></a>    <span class="dt">remove =</span> <span class="ot">FALSE</span>,</span>
-<span id="cb8-11"><a href="5_unify_information.html#cb8-11"></a>    <span class="dt">convert =</span> <span class="ot">TRUE</span>,</span>
-<span id="cb8-12"><a href="5_unify_information.html#cb8-12"></a>    <span class="dt">extra =</span> <span class="st">&quot;drop&quot;</span>,</span>
-<span id="cb8-13"><a href="5_unify_information.html#cb8-13"></a>    <span class="dt">fill =</span> <span class="st">&quot;right&quot;</span></span>
-<span id="cb8-14"><a href="5_unify_information.html#cb8-14"></a>  ) <span class="op">%&gt;%</span></span>
-<span id="cb8-15"><a href="5_unify_information.html#cb8-15"></a></span>
-<span id="cb8-16"><a href="5_unify_information.html#cb8-16"></a><span class="st">  </span><span class="co"># Only keep the first 4 characters: 1968-11-21 -&gt; 1968</span></span>
-<span id="cb8-17"><a href="5_unify_information.html#cb8-17"></a><span class="st">  </span><span class="kw">mutate</span>(</span>
-<span id="cb8-18"><a href="5_unify_information.html#cb8-18"></a>    <span class="dt">startYear =</span> <span class="kw">as.integer</span>(<span class="kw">str_sub</span>(startYear, <span class="dv">1</span>, <span class="dv">4</span>)),</span>
-<span id="cb8-19"><a href="5_unify_information.html#cb8-19"></a>    <span class="dt">endYear =</span> <span class="kw">as.integer</span>(<span class="kw">str_sub</span>(endYear, <span class="dv">1</span>, <span class="dv">4</span>))</span>
-<span id="cb8-20"><a href="5_unify_information.html#cb8-20"></a>  ) <span class="op">%&gt;%</span></span>
-<span id="cb8-21"><a href="5_unify_information.html#cb8-21"></a></span>
-<span id="cb8-22"><a href="5_unify_information.html#cb8-22"></a><span class="st">  </span><span class="co"># If endYear is empty (no range), populate it with startYear: 2018 &amp; 2018</span></span>
-<span id="cb8-23"><a href="5_unify_information.html#cb8-23"></a><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">endYear =</span> <span class="kw">if_else</span>(<span class="kw">is.na</span>(endYear), startYear, endYear))</span></code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="5_unify_information.html#cb8-1" aria-hidden="true" tabindex="-1"></a>distributions_unified <span class="ot">&lt;-</span></span>
+<span id="cb8-2"><a href="5_unify_information.html#cb8-2" aria-hidden="true" tabindex="-1"></a>  distributions <span class="sc">%&gt;%</span></span>
+<span id="cb8-3"><a href="5_unify_information.html#cb8-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-4"><a href="5_unify_information.html#cb8-4" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Split temporal on &quot;/&quot; into startYear and endYear</span></span>
+<span id="cb8-5"><a href="5_unify_information.html#cb8-5" aria-hidden="true" tabindex="-1"></a>  <span class="co"># If temporal only contains a single year, then endYear will be empty</span></span>
+<span id="cb8-6"><a href="5_unify_information.html#cb8-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">separate</span>(</span>
+<span id="cb8-7"><a href="5_unify_information.html#cb8-7" aria-hidden="true" tabindex="-1"></a>    temporal,</span>
+<span id="cb8-8"><a href="5_unify_information.html#cb8-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">into =</span> <span class="fu">c</span>(<span class="st">&quot;startYear&quot;</span>, <span class="st">&quot;endYear&quot;</span>),</span>
+<span id="cb8-9"><a href="5_unify_information.html#cb8-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">sep =</span> <span class="st">&quot;/&quot;</span>,</span>
+<span id="cb8-10"><a href="5_unify_information.html#cb8-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">remove =</span> <span class="cn">FALSE</span>,</span>
+<span id="cb8-11"><a href="5_unify_information.html#cb8-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">convert =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb8-12"><a href="5_unify_information.html#cb8-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">extra =</span> <span class="st">&quot;drop&quot;</span>,</span>
+<span id="cb8-13"><a href="5_unify_information.html#cb8-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">fill =</span> <span class="st">&quot;right&quot;</span></span>
+<span id="cb8-14"><a href="5_unify_information.html#cb8-14" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb8-15"><a href="5_unify_information.html#cb8-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-16"><a href="5_unify_information.html#cb8-16" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Only keep the first 4 characters: 1968-11-21 -&gt; 1968</span></span>
+<span id="cb8-17"><a href="5_unify_information.html#cb8-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb8-18"><a href="5_unify_information.html#cb8-18" aria-hidden="true" tabindex="-1"></a>    <span class="at">startYear =</span> <span class="fu">as.integer</span>(<span class="fu">str_sub</span>(startYear, <span class="dv">1</span>, <span class="dv">4</span>)),</span>
+<span id="cb8-19"><a href="5_unify_information.html#cb8-19" aria-hidden="true" tabindex="-1"></a>    <span class="at">endYear =</span> <span class="fu">as.integer</span>(<span class="fu">str_sub</span>(endYear, <span class="dv">1</span>, <span class="dv">4</span>))</span>
+<span id="cb8-20"><a href="5_unify_information.html#cb8-20" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb8-21"><a href="5_unify_information.html#cb8-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-22"><a href="5_unify_information.html#cb8-22" aria-hidden="true" tabindex="-1"></a>  <span class="co"># If endYear is empty (no range), populate it with startYear: 2018 &amp; 2018</span></span>
+<span id="cb8-23"><a href="5_unify_information.html#cb8-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">endYear =</span> <span class="fu">if_else</span>(<span class="fu">is.na</span>(endYear), startYear, endYear))</span></code></pre></div>
 <ol start="2" style="list-style-type: decimal">
 <li><p>Filter distributions: this was already done in <a href="1_get_taxa.html#filter-on-distribution">1.3</a>, where only distributions of interest were kept.</p></li>
 <li><p>Convert specific localities (from WRIMS) to regional or national localities:</p></li>
 </ol>
-<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="5_unify_information.html#cb9-1"></a>distributions_unified &lt;-</span>
-<span id="cb9-2"><a href="5_unify_information.html#cb9-2"></a><span class="st">  </span>distributions_unified <span class="op">%&gt;%</span></span>
-<span id="cb9-3"><a href="5_unify_information.html#cb9-3"></a><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">locality =</span> <span class="kw">recode</span>(locality,</span>
-<span id="cb9-4"><a href="5_unify_information.html#cb9-4"></a>    <span class="st">&quot;Belgian part of the North Sea&quot;</span> =<span class="st"> &quot;Belgium&quot;</span>,</span>
-<span id="cb9-5"><a href="5_unify_information.html#cb9-5"></a>    <span class="st">&quot;Belgian Exclusive Economic Zone&quot;</span> =<span class="st"> &quot;Belgium&quot;</span>,</span>
-<span id="cb9-6"><a href="5_unify_information.html#cb9-6"></a>    <span class="st">&quot;Baai van Heist&quot;</span> =<span class="st"> &quot;Flemish Region&quot;</span>,</span>
-<span id="cb9-7"><a href="5_unify_information.html#cb9-7"></a>    <span class="st">&quot;Belgian Coast&quot;</span> =<span class="st"> &quot;Flemish Region&quot;</span>,</span>
-<span id="cb9-8"><a href="5_unify_information.html#cb9-8"></a>    <span class="st">&quot;Blankenberge Harbour&quot;</span> =<span class="st"> &quot;Flemish Region&quot;</span>,</span>
-<span id="cb9-9"><a href="5_unify_information.html#cb9-9"></a>    <span class="st">&quot;Bredene&quot;</span> =<span class="st"> &quot;Flemish Region&quot;</span>,</span>
-<span id="cb9-10"><a href="5_unify_information.html#cb9-10"></a>    <span class="st">&quot;Coastal Polders&quot;</span> =<span class="st"> &quot;Flemish Region&quot;</span>,</span>
-<span id="cb9-11"><a href="5_unify_information.html#cb9-11"></a>    <span class="st">&quot;De Panne&quot;</span> =<span class="st"> &quot;Flemish Region&quot;</span>,</span>
-<span id="cb9-12"><a href="5_unify_information.html#cb9-12"></a>    <span class="st">&quot;Haven van Antwerpen&quot;</span> =<span class="st"> &quot;Flemish Region&quot;</span>,</span>
-<span id="cb9-13"><a href="5_unify_information.html#cb9-13"></a>    <span class="st">&quot;Kanaal Gent - Terneuzen&quot;</span> =<span class="st"> &quot;Flemish Region&quot;</span>,</span>
-<span id="cb9-14"><a href="5_unify_information.html#cb9-14"></a>    <span class="st">&quot;Knokke-Heist&quot;</span> =<span class="st"> &quot;Flemish Region&quot;</span>,</span>
-<span id="cb9-15"><a href="5_unify_information.html#cb9-15"></a>    <span class="st">&quot;Koksijde&quot;</span> =<span class="st"> &quot;Flemish Region&quot;</span>,</span>
-<span id="cb9-16"><a href="5_unify_information.html#cb9-16"></a>    <span class="st">&quot;Nieuwpoort Harbour&quot;</span> =<span class="st"> &quot;Flemish Region&quot;</span>,</span>
-<span id="cb9-17"><a href="5_unify_information.html#cb9-17"></a>    <span class="st">&quot;Oostende&quot;</span> =<span class="st"> &quot;Flemish Region&quot;</span>,</span>
-<span id="cb9-18"><a href="5_unify_information.html#cb9-18"></a>    <span class="st">&quot;Oostende&quot;</span> =<span class="st"> &quot;Flemish Region&quot;</span>,</span>
-<span id="cb9-19"><a href="5_unify_information.html#cb9-19"></a>    <span class="st">&quot;Oostende Harbour&quot;</span> =<span class="st"> &quot;Flemish Region&quot;</span>,</span>
-<span id="cb9-20"><a href="5_unify_information.html#cb9-20"></a>    <span class="st">&quot;port of Bruges-Zeebrugge&quot;</span> =<span class="st"> &quot;Flemish Region&quot;</span>,</span>
-<span id="cb9-21"><a href="5_unify_information.html#cb9-21"></a>    <span class="st">&quot;Port of Ghent&quot;</span> =<span class="st"> &quot;Flemish Region&quot;</span>,</span>
-<span id="cb9-22"><a href="5_unify_information.html#cb9-22"></a>    <span class="st">&quot;Spuikom&quot;</span> =<span class="st"> &quot;Flemish Region&quot;</span>,</span>
-<span id="cb9-23"><a href="5_unify_information.html#cb9-23"></a>    <span class="st">&quot;Zeebrugge&quot;</span> =<span class="st"> &quot;Flemish Region&quot;</span>,</span>
-<span id="cb9-24"><a href="5_unify_information.html#cb9-24"></a>    <span class="st">&quot;Flanders&quot;</span> =<span class="st"> &quot;Flemish Region&quot;</span>,</span>
-<span id="cb9-25"><a href="5_unify_information.html#cb9-25"></a>    <span class="st">&quot;Wallonia&quot;</span> =<span class="st"> &quot;Walloon Region&quot;</span></span>
-<span id="cb9-26"><a href="5_unify_information.html#cb9-26"></a>  )) <span class="op">%&gt;%</span></span>
-<span id="cb9-27"><a href="5_unify_information.html#cb9-27"></a><span class="st">  </span></span>
-<span id="cb9-28"><a href="5_unify_information.html#cb9-28"></a><span class="st">  </span><span class="co"># Standardize locationId for all</span></span>
-<span id="cb9-29"><a href="5_unify_information.html#cb9-29"></a><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">locationId =</span> <span class="kw">case_when</span>(</span>
-<span id="cb9-30"><a href="5_unify_information.html#cb9-30"></a>    locality <span class="op">==</span><span class="st"> &quot;Belgium&quot;</span> <span class="op">~</span><span class="st"> &quot;ISO_3166:BE&quot;</span>,</span>
-<span id="cb9-31"><a href="5_unify_information.html#cb9-31"></a>    locality <span class="op">==</span><span class="st"> &quot;Brussels-Capital Region&quot;</span> <span class="op">~</span><span class="st"> &quot;ISO_3166:BE-BRU&quot;</span>,</span>
-<span id="cb9-32"><a href="5_unify_information.html#cb9-32"></a>    locality <span class="op">==</span><span class="st"> &quot;Flemish Region&quot;</span> <span class="op">~</span><span class="st"> &quot;ISO_3166:BE-VLG&quot;</span>,</span>
-<span id="cb9-33"><a href="5_unify_information.html#cb9-33"></a>    locality <span class="op">==</span><span class="st"> &quot;Walloon Region&quot;</span> <span class="op">~</span><span class="st"> &quot;ISO_3166:BE-WAL&quot;</span>,</span>
-<span id="cb9-34"><a href="5_unify_information.html#cb9-34"></a>    <span class="ot">TRUE</span> <span class="op">~</span><span class="st"> </span><span class="ot">NA_character_</span></span>
-<span id="cb9-35"><a href="5_unify_information.html#cb9-35"></a>  ))</span></code></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="5_unify_information.html#cb9-1" aria-hidden="true" tabindex="-1"></a>distributions_unified <span class="ot">&lt;-</span></span>
+<span id="cb9-2"><a href="5_unify_information.html#cb9-2" aria-hidden="true" tabindex="-1"></a>  distributions_unified <span class="sc">%&gt;%</span></span>
+<span id="cb9-3"><a href="5_unify_information.html#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">locality =</span> <span class="fu">recode</span>(locality,</span>
+<span id="cb9-4"><a href="5_unify_information.html#cb9-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Belgian part of the North Sea&quot;</span> <span class="ot">=</span> <span class="st">&quot;Belgium&quot;</span>,</span>
+<span id="cb9-5"><a href="5_unify_information.html#cb9-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Belgian Exclusive Economic Zone&quot;</span> <span class="ot">=</span> <span class="st">&quot;Belgium&quot;</span>,</span>
+<span id="cb9-6"><a href="5_unify_information.html#cb9-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Baai van Heist&quot;</span> <span class="ot">=</span> <span class="st">&quot;Flemish Region&quot;</span>,</span>
+<span id="cb9-7"><a href="5_unify_information.html#cb9-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Belgian Coast&quot;</span> <span class="ot">=</span> <span class="st">&quot;Flemish Region&quot;</span>,</span>
+<span id="cb9-8"><a href="5_unify_information.html#cb9-8" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Blankenberge Harbour&quot;</span> <span class="ot">=</span> <span class="st">&quot;Flemish Region&quot;</span>,</span>
+<span id="cb9-9"><a href="5_unify_information.html#cb9-9" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Bredene&quot;</span> <span class="ot">=</span> <span class="st">&quot;Flemish Region&quot;</span>,</span>
+<span id="cb9-10"><a href="5_unify_information.html#cb9-10" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Coastal Polders&quot;</span> <span class="ot">=</span> <span class="st">&quot;Flemish Region&quot;</span>,</span>
+<span id="cb9-11"><a href="5_unify_information.html#cb9-11" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;De Panne&quot;</span> <span class="ot">=</span> <span class="st">&quot;Flemish Region&quot;</span>,</span>
+<span id="cb9-12"><a href="5_unify_information.html#cb9-12" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Haven van Antwerpen&quot;</span> <span class="ot">=</span> <span class="st">&quot;Flemish Region&quot;</span>,</span>
+<span id="cb9-13"><a href="5_unify_information.html#cb9-13" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Kanaal Gent - Terneuzen&quot;</span> <span class="ot">=</span> <span class="st">&quot;Flemish Region&quot;</span>,</span>
+<span id="cb9-14"><a href="5_unify_information.html#cb9-14" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Knokke-Heist&quot;</span> <span class="ot">=</span> <span class="st">&quot;Flemish Region&quot;</span>,</span>
+<span id="cb9-15"><a href="5_unify_information.html#cb9-15" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Koksijde&quot;</span> <span class="ot">=</span> <span class="st">&quot;Flemish Region&quot;</span>,</span>
+<span id="cb9-16"><a href="5_unify_information.html#cb9-16" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Nieuwpoort Harbour&quot;</span> <span class="ot">=</span> <span class="st">&quot;Flemish Region&quot;</span>,</span>
+<span id="cb9-17"><a href="5_unify_information.html#cb9-17" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Oostende&quot;</span> <span class="ot">=</span> <span class="st">&quot;Flemish Region&quot;</span>,</span>
+<span id="cb9-18"><a href="5_unify_information.html#cb9-18" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Oostende&quot;</span> <span class="ot">=</span> <span class="st">&quot;Flemish Region&quot;</span>,</span>
+<span id="cb9-19"><a href="5_unify_information.html#cb9-19" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Oostende Harbour&quot;</span> <span class="ot">=</span> <span class="st">&quot;Flemish Region&quot;</span>,</span>
+<span id="cb9-20"><a href="5_unify_information.html#cb9-20" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;port of Bruges-Zeebrugge&quot;</span> <span class="ot">=</span> <span class="st">&quot;Flemish Region&quot;</span>,</span>
+<span id="cb9-21"><a href="5_unify_information.html#cb9-21" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Port of Ghent&quot;</span> <span class="ot">=</span> <span class="st">&quot;Flemish Region&quot;</span>,</span>
+<span id="cb9-22"><a href="5_unify_information.html#cb9-22" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Spuikom&quot;</span> <span class="ot">=</span> <span class="st">&quot;Flemish Region&quot;</span>,</span>
+<span id="cb9-23"><a href="5_unify_information.html#cb9-23" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Zeebrugge&quot;</span> <span class="ot">=</span> <span class="st">&quot;Flemish Region&quot;</span>,</span>
+<span id="cb9-24"><a href="5_unify_information.html#cb9-24" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Flanders&quot;</span> <span class="ot">=</span> <span class="st">&quot;Flemish Region&quot;</span>,</span>
+<span id="cb9-25"><a href="5_unify_information.html#cb9-25" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Wallonia&quot;</span> <span class="ot">=</span> <span class="st">&quot;Walloon Region&quot;</span></span>
+<span id="cb9-26"><a href="5_unify_information.html#cb9-26" aria-hidden="true" tabindex="-1"></a>  )) <span class="sc">%&gt;%</span></span>
+<span id="cb9-27"><a href="5_unify_information.html#cb9-27" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb9-28"><a href="5_unify_information.html#cb9-28" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Standardize locationId for all</span></span>
+<span id="cb9-29"><a href="5_unify_information.html#cb9-29" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">locationId =</span> <span class="fu">case_when</span>(</span>
+<span id="cb9-30"><a href="5_unify_information.html#cb9-30" aria-hidden="true" tabindex="-1"></a>    locality <span class="sc">==</span> <span class="st">&quot;Belgium&quot;</span> <span class="sc">~</span> <span class="st">&quot;ISO_3166:BE&quot;</span>,</span>
+<span id="cb9-31"><a href="5_unify_information.html#cb9-31" aria-hidden="true" tabindex="-1"></a>    locality <span class="sc">==</span> <span class="st">&quot;Brussels-Capital Region&quot;</span> <span class="sc">~</span> <span class="st">&quot;ISO_3166:BE-BRU&quot;</span>,</span>
+<span id="cb9-32"><a href="5_unify_information.html#cb9-32" aria-hidden="true" tabindex="-1"></a>    locality <span class="sc">==</span> <span class="st">&quot;Flemish Region&quot;</span> <span class="sc">~</span> <span class="st">&quot;ISO_3166:BE-VLG&quot;</span>,</span>
+<span id="cb9-33"><a href="5_unify_information.html#cb9-33" aria-hidden="true" tabindex="-1"></a>    locality <span class="sc">==</span> <span class="st">&quot;Walloon Region&quot;</span> <span class="sc">~</span> <span class="st">&quot;ISO_3166:BE-WAL&quot;</span>,</span>
+<span id="cb9-34"><a href="5_unify_information.html#cb9-34" aria-hidden="true" tabindex="-1"></a>    <span class="cn">TRUE</span> <span class="sc">~</span> <span class="cn">NA_character_</span></span>
+<span id="cb9-35"><a href="5_unify_information.html#cb9-35" aria-hidden="true" tabindex="-1"></a>  ))</span></code></pre></div>
 <ol start="4" style="list-style-type: decimal">
 <li>Add a Belgian distribution from regional distributions within a checklist if not present.</li>
 </ol>
-<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="5_unify_information.html#cb10-1"></a>distributions_belgium_from_regions &lt;-</span>
-<span id="cb10-2"><a href="5_unify_information.html#cb10-2"></a><span class="st">  </span>distributions_unified <span class="op">%&gt;%</span></span>
-<span id="cb10-3"><a href="5_unify_information.html#cb10-3"></a></span>
-<span id="cb10-4"><a href="5_unify_information.html#cb10-4"></a><span class="st">  </span><span class="co"># Group by taxonKey within a checklist</span></span>
-<span id="cb10-5"><a href="5_unify_information.html#cb10-5"></a><span class="st">  </span><span class="kw">group_by</span>(taxonKey) <span class="op">%&gt;%</span></span>
-<span id="cb10-6"><a href="5_unify_information.html#cb10-6"></a></span>
-<span id="cb10-7"><a href="5_unify_information.html#cb10-7"></a><span class="st">  </span><span class="co"># Filter on those groups without a national distribution</span></span>
-<span id="cb10-8"><a href="5_unify_information.html#cb10-8"></a><span class="st">  </span><span class="kw">filter</span>(<span class="op">!</span><span class="st">&quot;Belgium&quot;</span> <span class="op">%in%</span><span class="st"> </span>locality) <span class="op">%&gt;%</span></span>
-<span id="cb10-9"><a href="5_unify_information.html#cb10-9"></a></span>
-<span id="cb10-10"><a href="5_unify_information.html#cb10-10"></a><span class="st">  </span><span class="co"># Take earliest and latest year from regional distributions</span></span>
-<span id="cb10-11"><a href="5_unify_information.html#cb10-11"></a><span class="st">  </span><span class="co"># Don&#39;t copy source and remarks</span></span>
-<span id="cb10-12"><a href="5_unify_information.html#cb10-12"></a><span class="st">  </span><span class="kw">summarize</span>(</span>
-<span id="cb10-13"><a href="5_unify_information.html#cb10-13"></a>    <span class="dt">startYear =</span> <span class="kw">min</span>(startYear, <span class="dt">na.rm =</span> <span class="ot">TRUE</span>),</span>
-<span id="cb10-14"><a href="5_unify_information.html#cb10-14"></a>    <span class="dt">endYear =</span> <span class="kw">max</span>(endYear, <span class="dt">na.rm =</span> <span class="ot">TRUE</span>)</span>
-<span id="cb10-15"><a href="5_unify_information.html#cb10-15"></a>  ) <span class="op">%&gt;%</span></span>
-<span id="cb10-16"><a href="5_unify_information.html#cb10-16"></a><span class="st">  </span><span class="kw">ungroup</span>() <span class="op">%&gt;%</span></span>
-<span id="cb10-17"><a href="5_unify_information.html#cb10-17"></a></span>
-<span id="cb10-18"><a href="5_unify_information.html#cb10-18"></a><span class="st">  </span><span class="co"># Convert dates to integers and set Inf to NA</span></span>
-<span id="cb10-19"><a href="5_unify_information.html#cb10-19"></a><span class="st">  </span><span class="kw">mutate</span>(</span>
-<span id="cb10-20"><a href="5_unify_information.html#cb10-20"></a>    <span class="dt">startYear =</span> <span class="kw">ifelse</span>(<span class="op">!</span><span class="kw">is.infinite</span>(startYear), <span class="kw">as.integer</span>(startYear), <span class="ot">NA_integer_</span>),</span>
-<span id="cb10-21"><a href="5_unify_information.html#cb10-21"></a>    <span class="dt">endYear =</span> <span class="kw">ifelse</span>(<span class="op">!</span><span class="kw">is.infinite</span>(endYear), <span class="kw">as.integer</span>(endYear), <span class="ot">NA_integer_</span>)</span>
-<span id="cb10-22"><a href="5_unify_information.html#cb10-22"></a>  ) <span class="op">%&gt;%</span></span>
-<span id="cb10-23"><a href="5_unify_information.html#cb10-23"></a></span>
-<span id="cb10-24"><a href="5_unify_information.html#cb10-24"></a><span class="st">  </span><span class="co"># Add locality and locationId</span></span>
-<span id="cb10-25"><a href="5_unify_information.html#cb10-25"></a><span class="st">  </span><span class="kw">mutate</span>(</span>
-<span id="cb10-26"><a href="5_unify_information.html#cb10-26"></a>    <span class="dt">locality =</span> <span class="st">&quot;Belgium&quot;</span>,</span>
-<span id="cb10-27"><a href="5_unify_information.html#cb10-27"></a>    <span class="dt">locationId =</span> <span class="st">&quot;ISO_3166:BE&quot;</span></span>
-<span id="cb10-28"><a href="5_unify_information.html#cb10-28"></a>  ) <span class="op">%&gt;%</span></span>
-<span id="cb10-29"><a href="5_unify_information.html#cb10-29"></a></span>
-<span id="cb10-30"><a href="5_unify_information.html#cb10-30"></a><span class="st">  </span><span class="co"># Order columns</span></span>
-<span id="cb10-31"><a href="5_unify_information.html#cb10-31"></a><span class="st">  </span><span class="kw">select</span>(<span class="kw">one_of</span>(<span class="kw">names</span>(distributions_unified)))</span>
-<span id="cb10-32"><a href="5_unify_information.html#cb10-32"></a></span>
-<span id="cb10-33"><a href="5_unify_information.html#cb10-33"></a><span class="co"># Add newly created Belgian distributions to distributions</span></span>
-<span id="cb10-34"><a href="5_unify_information.html#cb10-34"></a>distributions_unified &lt;-</span>
-<span id="cb10-35"><a href="5_unify_information.html#cb10-35"></a><span class="st">  </span>distributions_unified <span class="op">%&gt;%</span></span>
-<span id="cb10-36"><a href="5_unify_information.html#cb10-36"></a><span class="st">  </span><span class="kw">bind_rows</span>(distributions_belgium_from_regions) <span class="op">%&gt;%</span></span>
-<span id="cb10-37"><a href="5_unify_information.html#cb10-37"></a></span>
-<span id="cb10-38"><a href="5_unify_information.html#cb10-38"></a><span class="st">  </span><span class="co"># Sort by taxonKey</span></span>
-<span id="cb10-39"><a href="5_unify_information.html#cb10-39"></a><span class="st">  </span><span class="kw">arrange</span>(taxonKey)</span></code></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="5_unify_information.html#cb10-1" aria-hidden="true" tabindex="-1"></a>distributions_belgium_from_regions <span class="ot">&lt;-</span></span>
+<span id="cb10-2"><a href="5_unify_information.html#cb10-2" aria-hidden="true" tabindex="-1"></a>  distributions_unified <span class="sc">%&gt;%</span></span>
+<span id="cb10-3"><a href="5_unify_information.html#cb10-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-4"><a href="5_unify_information.html#cb10-4" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Group by taxonKey within a checklist</span></span>
+<span id="cb10-5"><a href="5_unify_information.html#cb10-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(taxonKey) <span class="sc">%&gt;%</span></span>
+<span id="cb10-6"><a href="5_unify_information.html#cb10-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-7"><a href="5_unify_information.html#cb10-7" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Filter on those groups without a national distribution</span></span>
+<span id="cb10-8"><a href="5_unify_information.html#cb10-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="st">&quot;Belgium&quot;</span> <span class="sc">%in%</span> locality) <span class="sc">%&gt;%</span></span>
+<span id="cb10-9"><a href="5_unify_information.html#cb10-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-10"><a href="5_unify_information.html#cb10-10" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Take earliest and latest year from regional distributions</span></span>
+<span id="cb10-11"><a href="5_unify_information.html#cb10-11" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Don&#39;t copy source and remarks</span></span>
+<span id="cb10-12"><a href="5_unify_information.html#cb10-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(</span>
+<span id="cb10-13"><a href="5_unify_information.html#cb10-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">startYear =</span> <span class="fu">min</span>(startYear, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb10-14"><a href="5_unify_information.html#cb10-14" aria-hidden="true" tabindex="-1"></a>    <span class="at">endYear =</span> <span class="fu">max</span>(endYear, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb10-15"><a href="5_unify_information.html#cb10-15" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb10-16"><a href="5_unify_information.html#cb10-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ungroup</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb10-17"><a href="5_unify_information.html#cb10-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-18"><a href="5_unify_information.html#cb10-18" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Convert dates to integers and set Inf to NA</span></span>
+<span id="cb10-19"><a href="5_unify_information.html#cb10-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb10-20"><a href="5_unify_information.html#cb10-20" aria-hidden="true" tabindex="-1"></a>    <span class="at">startYear =</span> <span class="fu">ifelse</span>(<span class="sc">!</span><span class="fu">is.infinite</span>(startYear), <span class="fu">as.integer</span>(startYear), <span class="cn">NA_integer_</span>),</span>
+<span id="cb10-21"><a href="5_unify_information.html#cb10-21" aria-hidden="true" tabindex="-1"></a>    <span class="at">endYear =</span> <span class="fu">ifelse</span>(<span class="sc">!</span><span class="fu">is.infinite</span>(endYear), <span class="fu">as.integer</span>(endYear), <span class="cn">NA_integer_</span>)</span>
+<span id="cb10-22"><a href="5_unify_information.html#cb10-22" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb10-23"><a href="5_unify_information.html#cb10-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-24"><a href="5_unify_information.html#cb10-24" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Add locality and locationId</span></span>
+<span id="cb10-25"><a href="5_unify_information.html#cb10-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb10-26"><a href="5_unify_information.html#cb10-26" aria-hidden="true" tabindex="-1"></a>    <span class="at">locality =</span> <span class="st">&quot;Belgium&quot;</span>,</span>
+<span id="cb10-27"><a href="5_unify_information.html#cb10-27" aria-hidden="true" tabindex="-1"></a>    <span class="at">locationId =</span> <span class="st">&quot;ISO_3166:BE&quot;</span></span>
+<span id="cb10-28"><a href="5_unify_information.html#cb10-28" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb10-29"><a href="5_unify_information.html#cb10-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-30"><a href="5_unify_information.html#cb10-30" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Order columns</span></span>
+<span id="cb10-31"><a href="5_unify_information.html#cb10-31" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="fu">one_of</span>(<span class="fu">names</span>(distributions_unified)))</span>
+<span id="cb10-32"><a href="5_unify_information.html#cb10-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-33"><a href="5_unify_information.html#cb10-33" aria-hidden="true" tabindex="-1"></a><span class="co"># Add newly created Belgian distributions to distributions</span></span>
+<span id="cb10-34"><a href="5_unify_information.html#cb10-34" aria-hidden="true" tabindex="-1"></a>distributions_unified <span class="ot">&lt;-</span></span>
+<span id="cb10-35"><a href="5_unify_information.html#cb10-35" aria-hidden="true" tabindex="-1"></a>  distributions_unified <span class="sc">%&gt;%</span></span>
+<span id="cb10-36"><a href="5_unify_information.html#cb10-36" aria-hidden="true" tabindex="-1"></a>  <span class="fu">bind_rows</span>(distributions_belgium_from_regions) <span class="sc">%&gt;%</span></span>
+<span id="cb10-37"><a href="5_unify_information.html#cb10-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-38"><a href="5_unify_information.html#cb10-38" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Sort by taxonKey</span></span>
+<span id="cb10-39"><a href="5_unify_information.html#cb10-39" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(taxonKey)</span></code></pre></div>
 <ol start="5" style="list-style-type: decimal">
 <li>Choose a single distribution per locality within a checklist.</li>
 </ol>
@@ -393,339 +408,339 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </tbody>
 </table>
 <p>Both are considered (verified) synonyms of <a href="https://www.gbif.org/species/2965226">Medicago monantha Trautv.</a>, so their distribution information is merged to <code>1885/1955</code>. We note both in <code>taxonKeys</code> and <code>scientificNames</code>.</p>
-<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="5_unify_information.html#cb11-1"></a>distributions_unified &lt;-</span>
-<span id="cb11-2"><a href="5_unify_information.html#cb11-2"></a><span class="st">  </span>distributions_unified <span class="op">%&gt;%</span></span>
-<span id="cb11-3"><a href="5_unify_information.html#cb11-3"></a></span>
-<span id="cb11-4"><a href="5_unify_information.html#cb11-4"></a><span class="st">  </span><span class="co"># Join distribution with taxon to get verificationKey and checklistOrder</span></span>
-<span id="cb11-5"><a href="5_unify_information.html#cb11-5"></a><span class="st">  </span><span class="kw">left_join</span>(taxa, <span class="dt">by =</span> <span class="st">&quot;taxonKey&quot;</span>) <span class="op">%&gt;%</span></span>
-<span id="cb11-6"><a href="5_unify_information.html#cb11-6"></a></span>
-<span id="cb11-7"><a href="5_unify_information.html#cb11-7"></a><span class="st">  </span><span class="co"># Remove records that have no verificationKey (e.g. one wasn&#39;t assigned yet)</span></span>
-<span id="cb11-8"><a href="5_unify_information.html#cb11-8"></a><span class="st">  </span><span class="kw">filter</span>(<span class="op">!</span><span class="kw">is.na</span>(verificationKey)) <span class="op">%&gt;%</span></span>
-<span id="cb11-9"><a href="5_unify_information.html#cb11-9"></a></span>
-<span id="cb11-10"><a href="5_unify_information.html#cb11-10"></a><span class="st">  </span><span class="co"># Group by verificationKey and locality within a checklist</span></span>
-<span id="cb11-11"><a href="5_unify_information.html#cb11-11"></a><span class="st">  </span><span class="kw">group_by</span>(</span>
-<span id="cb11-12"><a href="5_unify_information.html#cb11-12"></a>    datasetKey,</span>
-<span id="cb11-13"><a href="5_unify_information.html#cb11-13"></a>    checklistOrder,</span>
-<span id="cb11-14"><a href="5_unify_information.html#cb11-14"></a>    verificationKey,</span>
-<span id="cb11-15"><a href="5_unify_information.html#cb11-15"></a>    locality,</span>
-<span id="cb11-16"><a href="5_unify_information.html#cb11-16"></a>    locationId</span>
-<span id="cb11-17"><a href="5_unify_information.html#cb11-17"></a>  ) <span class="op">%&gt;%</span></span>
-<span id="cb11-18"><a href="5_unify_information.html#cb11-18"></a></span>
-<span id="cb11-19"><a href="5_unify_information.html#cb11-19"></a><span class="st">  </span><span class="co"># Take earliest year, latest year and note taxonKey(s) and scientificName(s)</span></span>
-<span id="cb11-20"><a href="5_unify_information.html#cb11-20"></a><span class="st">  </span><span class="kw">summarize</span>(</span>
-<span id="cb11-21"><a href="5_unify_information.html#cb11-21"></a>    <span class="dt">startYear =</span> <span class="kw">min</span>(startYear, <span class="dt">na.rm =</span> <span class="ot">TRUE</span>),</span>
-<span id="cb11-22"><a href="5_unify_information.html#cb11-22"></a>    <span class="dt">endYear =</span> <span class="kw">max</span>(endYear, <span class="dt">na.rm =</span> <span class="ot">TRUE</span>),</span>
-<span id="cb11-23"><a href="5_unify_information.html#cb11-23"></a>    <span class="dt">taxonKeys =</span> <span class="kw">paste</span>(<span class="kw">unique</span>(taxonKey), <span class="dt">collapse =</span> <span class="st">&quot;|&quot;</span>),</span>
-<span id="cb11-24"><a href="5_unify_information.html#cb11-24"></a>    <span class="dt">scientificNames =</span> <span class="kw">paste</span>(<span class="kw">unique</span>(scientificName), <span class="dt">collapse =</span> <span class="st">&quot;|&quot;</span>)</span>
-<span id="cb11-25"><a href="5_unify_information.html#cb11-25"></a>  ) <span class="op">%&gt;%</span></span>
-<span id="cb11-26"><a href="5_unify_information.html#cb11-26"></a><span class="st">  </span><span class="kw">ungroup</span>() <span class="op">%&gt;%</span></span>
-<span id="cb11-27"><a href="5_unify_information.html#cb11-27"></a></span>
-<span id="cb11-28"><a href="5_unify_information.html#cb11-28"></a><span class="st">  </span><span class="co"># Convert dates to integers and set Inf to NA</span></span>
-<span id="cb11-29"><a href="5_unify_information.html#cb11-29"></a><span class="st">  </span><span class="kw">mutate</span>(</span>
-<span id="cb11-30"><a href="5_unify_information.html#cb11-30"></a>    <span class="dt">startYear =</span> <span class="kw">ifelse</span>(<span class="op">!</span><span class="kw">is.infinite</span>(startYear), <span class="kw">as.integer</span>(startYear), <span class="ot">NA_integer_</span>),</span>
-<span id="cb11-31"><a href="5_unify_information.html#cb11-31"></a>    <span class="dt">endYear =</span> <span class="kw">ifelse</span>(<span class="op">!</span><span class="kw">is.infinite</span>(endYear), <span class="kw">as.integer</span>(endYear), <span class="ot">NA_integer_</span>)</span>
-<span id="cb11-32"><a href="5_unify_information.html#cb11-32"></a>  )</span></code></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="5_unify_information.html#cb11-1" aria-hidden="true" tabindex="-1"></a>distributions_unified <span class="ot">&lt;-</span></span>
+<span id="cb11-2"><a href="5_unify_information.html#cb11-2" aria-hidden="true" tabindex="-1"></a>  distributions_unified <span class="sc">%&gt;%</span></span>
+<span id="cb11-3"><a href="5_unify_information.html#cb11-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-4"><a href="5_unify_information.html#cb11-4" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Join distribution with taxon to get verificationKey and checklistOrder</span></span>
+<span id="cb11-5"><a href="5_unify_information.html#cb11-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(taxa, <span class="at">by =</span> <span class="st">&quot;taxonKey&quot;</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb11-6"><a href="5_unify_information.html#cb11-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-7"><a href="5_unify_information.html#cb11-7" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Remove records that have no verificationKey (e.g. one wasn&#39;t assigned yet)</span></span>
+<span id="cb11-8"><a href="5_unify_information.html#cb11-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(verificationKey)) <span class="sc">%&gt;%</span></span>
+<span id="cb11-9"><a href="5_unify_information.html#cb11-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-10"><a href="5_unify_information.html#cb11-10" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Group by verificationKey and locality within a checklist</span></span>
+<span id="cb11-11"><a href="5_unify_information.html#cb11-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(</span>
+<span id="cb11-12"><a href="5_unify_information.html#cb11-12" aria-hidden="true" tabindex="-1"></a>    datasetKey,</span>
+<span id="cb11-13"><a href="5_unify_information.html#cb11-13" aria-hidden="true" tabindex="-1"></a>    checklistOrder,</span>
+<span id="cb11-14"><a href="5_unify_information.html#cb11-14" aria-hidden="true" tabindex="-1"></a>    verificationKey,</span>
+<span id="cb11-15"><a href="5_unify_information.html#cb11-15" aria-hidden="true" tabindex="-1"></a>    locality,</span>
+<span id="cb11-16"><a href="5_unify_information.html#cb11-16" aria-hidden="true" tabindex="-1"></a>    locationId</span>
+<span id="cb11-17"><a href="5_unify_information.html#cb11-17" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb11-18"><a href="5_unify_information.html#cb11-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-19"><a href="5_unify_information.html#cb11-19" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Take earliest year, latest year and note taxonKey(s) and scientificName(s)</span></span>
+<span id="cb11-20"><a href="5_unify_information.html#cb11-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(</span>
+<span id="cb11-21"><a href="5_unify_information.html#cb11-21" aria-hidden="true" tabindex="-1"></a>    <span class="at">startYear =</span> <span class="fu">min</span>(startYear, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb11-22"><a href="5_unify_information.html#cb11-22" aria-hidden="true" tabindex="-1"></a>    <span class="at">endYear =</span> <span class="fu">max</span>(endYear, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb11-23"><a href="5_unify_information.html#cb11-23" aria-hidden="true" tabindex="-1"></a>    <span class="at">taxonKeys =</span> <span class="fu">paste</span>(<span class="fu">unique</span>(taxonKey), <span class="at">collapse =</span> <span class="st">&quot;|&quot;</span>),</span>
+<span id="cb11-24"><a href="5_unify_information.html#cb11-24" aria-hidden="true" tabindex="-1"></a>    <span class="at">scientificNames =</span> <span class="fu">paste</span>(<span class="fu">unique</span>(scientificName), <span class="at">collapse =</span> <span class="st">&quot;|&quot;</span>)</span>
+<span id="cb11-25"><a href="5_unify_information.html#cb11-25" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb11-26"><a href="5_unify_information.html#cb11-26" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ungroup</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb11-27"><a href="5_unify_information.html#cb11-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-28"><a href="5_unify_information.html#cb11-28" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Convert dates to integers and set Inf to NA</span></span>
+<span id="cb11-29"><a href="5_unify_information.html#cb11-29" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb11-30"><a href="5_unify_information.html#cb11-30" aria-hidden="true" tabindex="-1"></a>    <span class="at">startYear =</span> <span class="fu">ifelse</span>(<span class="sc">!</span><span class="fu">is.infinite</span>(startYear), <span class="fu">as.integer</span>(startYear), <span class="cn">NA_integer_</span>),</span>
+<span id="cb11-31"><a href="5_unify_information.html#cb11-31" aria-hidden="true" tabindex="-1"></a>    <span class="at">endYear =</span> <span class="fu">ifelse</span>(<span class="sc">!</span><span class="fu">is.infinite</span>(endYear), <span class="fu">as.integer</span>(endYear), <span class="cn">NA_integer_</span>)</span>
+<span id="cb11-32"><a href="5_unify_information.html#cb11-32" aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div>
 <ol start="6" style="list-style-type: decimal">
 <li>Choose a single distribution per locality across checklists.</li>
 </ol>
-<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="5_unify_information.html#cb12-1"></a>distributions_unified &lt;-</span>
-<span id="cb12-2"><a href="5_unify_information.html#cb12-2"></a><span class="st">  </span>distributions_unified <span class="op">%&gt;%</span></span>
-<span id="cb12-3"><a href="5_unify_information.html#cb12-3"></a></span>
-<span id="cb12-4"><a href="5_unify_information.html#cb12-4"></a><span class="st">  </span><span class="co"># Sort by checklist order (trustworthiness)</span></span>
-<span id="cb12-5"><a href="5_unify_information.html#cb12-5"></a><span class="st">  </span><span class="kw">arrange</span>(checklistOrder) <span class="op">%&gt;%</span></span>
-<span id="cb12-6"><a href="5_unify_information.html#cb12-6"></a></span>
-<span id="cb12-7"><a href="5_unify_information.html#cb12-7"></a><span class="st">  </span><span class="co"># Group by verificationKey and locality across checklists</span></span>
-<span id="cb12-8"><a href="5_unify_information.html#cb12-8"></a><span class="st">  </span><span class="kw">group_by</span>(</span>
-<span id="cb12-9"><a href="5_unify_information.html#cb12-9"></a>    verificationKey,</span>
-<span id="cb12-10"><a href="5_unify_information.html#cb12-10"></a>    locality,</span>
-<span id="cb12-11"><a href="5_unify_information.html#cb12-11"></a>    locationId</span>
-<span id="cb12-12"><a href="5_unify_information.html#cb12-12"></a>  ) <span class="op">%&gt;%</span></span>
-<span id="cb12-13"><a href="5_unify_information.html#cb12-13"></a></span>
-<span id="cb12-14"><a href="5_unify_information.html#cb12-14"></a><span class="st">  </span><span class="co"># Select year of most trustworthy checklist (first one)</span></span>
-<span id="cb12-15"><a href="5_unify_information.html#cb12-15"></a><span class="st">  </span><span class="co"># and note that checklist and its taxonKey(s) and scientificName(s)</span></span>
-<span id="cb12-16"><a href="5_unify_information.html#cb12-16"></a><span class="st">  </span><span class="kw">summarize</span>(</span>
-<span id="cb12-17"><a href="5_unify_information.html#cb12-17"></a>    <span class="dt">startYear =</span> <span class="kw">first</span>(startYear),</span>
-<span id="cb12-18"><a href="5_unify_information.html#cb12-18"></a>    <span class="dt">endYear =</span> <span class="kw">first</span>(endYear),</span>
-<span id="cb12-19"><a href="5_unify_information.html#cb12-19"></a>    <span class="dt">datasetKey =</span> <span class="kw">first</span>(datasetKey),</span>
-<span id="cb12-20"><a href="5_unify_information.html#cb12-20"></a>    <span class="dt">taxonKeys =</span> <span class="kw">first</span>(taxonKeys),</span>
-<span id="cb12-21"><a href="5_unify_information.html#cb12-21"></a>    <span class="dt">scientificNames =</span> <span class="kw">first</span>(scientificNames)</span>
-<span id="cb12-22"><a href="5_unify_information.html#cb12-22"></a>  ) <span class="op">%&gt;%</span></span>
-<span id="cb12-23"><a href="5_unify_information.html#cb12-23"></a><span class="st">  </span><span class="kw">ungroup</span>() <span class="op">%&gt;%</span></span>
-<span id="cb12-24"><a href="5_unify_information.html#cb12-24"></a></span>
-<span id="cb12-25"><a href="5_unify_information.html#cb12-25"></a><span class="st">  </span><span class="co"># Sort by verificationKey</span></span>
-<span id="cb12-26"><a href="5_unify_information.html#cb12-26"></a><span class="st">  </span><span class="kw">arrange</span>(verificationKey)</span></code></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="5_unify_information.html#cb12-1" aria-hidden="true" tabindex="-1"></a>distributions_unified <span class="ot">&lt;-</span></span>
+<span id="cb12-2"><a href="5_unify_information.html#cb12-2" aria-hidden="true" tabindex="-1"></a>  distributions_unified <span class="sc">%&gt;%</span></span>
+<span id="cb12-3"><a href="5_unify_information.html#cb12-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-4"><a href="5_unify_information.html#cb12-4" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Sort by checklist order (trustworthiness)</span></span>
+<span id="cb12-5"><a href="5_unify_information.html#cb12-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(checklistOrder) <span class="sc">%&gt;%</span></span>
+<span id="cb12-6"><a href="5_unify_information.html#cb12-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-7"><a href="5_unify_information.html#cb12-7" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Group by verificationKey and locality across checklists</span></span>
+<span id="cb12-8"><a href="5_unify_information.html#cb12-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(</span>
+<span id="cb12-9"><a href="5_unify_information.html#cb12-9" aria-hidden="true" tabindex="-1"></a>    verificationKey,</span>
+<span id="cb12-10"><a href="5_unify_information.html#cb12-10" aria-hidden="true" tabindex="-1"></a>    locality,</span>
+<span id="cb12-11"><a href="5_unify_information.html#cb12-11" aria-hidden="true" tabindex="-1"></a>    locationId</span>
+<span id="cb12-12"><a href="5_unify_information.html#cb12-12" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb12-13"><a href="5_unify_information.html#cb12-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-14"><a href="5_unify_information.html#cb12-14" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Select year of most trustworthy checklist (first one)</span></span>
+<span id="cb12-15"><a href="5_unify_information.html#cb12-15" aria-hidden="true" tabindex="-1"></a>  <span class="co"># and note that checklist and its taxonKey(s) and scientificName(s)</span></span>
+<span id="cb12-16"><a href="5_unify_information.html#cb12-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(</span>
+<span id="cb12-17"><a href="5_unify_information.html#cb12-17" aria-hidden="true" tabindex="-1"></a>    <span class="at">startYear =</span> <span class="fu">first</span>(startYear),</span>
+<span id="cb12-18"><a href="5_unify_information.html#cb12-18" aria-hidden="true" tabindex="-1"></a>    <span class="at">endYear =</span> <span class="fu">first</span>(endYear),</span>
+<span id="cb12-19"><a href="5_unify_information.html#cb12-19" aria-hidden="true" tabindex="-1"></a>    <span class="at">datasetKey =</span> <span class="fu">first</span>(datasetKey),</span>
+<span id="cb12-20"><a href="5_unify_information.html#cb12-20" aria-hidden="true" tabindex="-1"></a>    <span class="at">taxonKeys =</span> <span class="fu">first</span>(taxonKeys),</span>
+<span id="cb12-21"><a href="5_unify_information.html#cb12-21" aria-hidden="true" tabindex="-1"></a>    <span class="at">scientificNames =</span> <span class="fu">first</span>(scientificNames)</span>
+<span id="cb12-22"><a href="5_unify_information.html#cb12-22" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb12-23"><a href="5_unify_information.html#cb12-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ungroup</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb12-24"><a href="5_unify_information.html#cb12-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-25"><a href="5_unify_information.html#cb12-25" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Sort by verificationKey</span></span>
+<span id="cb12-26"><a href="5_unify_information.html#cb12-26" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(verificationKey)</span></code></pre></div>
 <ol start="7" style="list-style-type: decimal">
 <li>Save to <a href="https://github.com/trias-project/unified-checklist/blob/master/data/interim/distributions_unified.csv">CSV</a>.</li>
 </ol>
 </div>
-<div id="unify-species-profiles" class="section level2">
+<div id="unify-species-profiles" class="section level2" number="5.4">
 <h2><span class="header-section-number">5.4</span> Unify species profiles</h2>
 <ol style="list-style-type: decimal">
 <li>Filter species profiles.</li>
 </ol>
-<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="5_unify_information.html#cb13-1"></a>speciesprofiles_unified &lt;-</span>
-<span id="cb13-2"><a href="5_unify_information.html#cb13-2"></a><span class="st">  </span>speciesprofiles <span class="op">%&gt;%</span></span>
-<span id="cb13-3"><a href="5_unify_information.html#cb13-3"></a></span>
-<span id="cb13-4"><a href="5_unify_information.html#cb13-4"></a><span class="st">  </span><span class="co"># Remove species profiles that contain NA for any of the attributes</span></span>
-<span id="cb13-5"><a href="5_unify_information.html#cb13-5"></a><span class="st">  </span><span class="co"># This is rare: normally all attributes are populated or there just isn&#39;t a</span></span>
-<span id="cb13-6"><a href="5_unify_information.html#cb13-6"></a><span class="st">  </span><span class="co"># species profile for that species</span></span>
-<span id="cb13-7"><a href="5_unify_information.html#cb13-7"></a><span class="st">  </span><span class="kw">filter</span>(</span>
-<span id="cb13-8"><a href="5_unify_information.html#cb13-8"></a>    <span class="op">!</span><span class="kw">is.na</span>(marine) <span class="op">&amp;</span></span>
-<span id="cb13-9"><a href="5_unify_information.html#cb13-9"></a><span class="st">    </span><span class="op">!</span><span class="kw">is.na</span>(freshwater) <span class="op">&amp;</span></span>
-<span id="cb13-10"><a href="5_unify_information.html#cb13-10"></a><span class="st">    </span><span class="op">!</span><span class="kw">is.na</span>(terrestrial)</span>
-<span id="cb13-11"><a href="5_unify_information.html#cb13-11"></a>  )</span></code></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="5_unify_information.html#cb13-1" aria-hidden="true" tabindex="-1"></a>speciesprofiles_unified <span class="ot">&lt;-</span></span>
+<span id="cb13-2"><a href="5_unify_information.html#cb13-2" aria-hidden="true" tabindex="-1"></a>  speciesprofiles <span class="sc">%&gt;%</span></span>
+<span id="cb13-3"><a href="5_unify_information.html#cb13-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-4"><a href="5_unify_information.html#cb13-4" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Remove species profiles that contain NA for any of the attributes</span></span>
+<span id="cb13-5"><a href="5_unify_information.html#cb13-5" aria-hidden="true" tabindex="-1"></a>  <span class="co"># This is rare: normally all attributes are populated or there just isn&#39;t a</span></span>
+<span id="cb13-6"><a href="5_unify_information.html#cb13-6" aria-hidden="true" tabindex="-1"></a>  <span class="co"># species profile for that species</span></span>
+<span id="cb13-7"><a href="5_unify_information.html#cb13-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(</span>
+<span id="cb13-8"><a href="5_unify_information.html#cb13-8" aria-hidden="true" tabindex="-1"></a>    <span class="sc">!</span><span class="fu">is.na</span>(marine) <span class="sc">&amp;</span></span>
+<span id="cb13-9"><a href="5_unify_information.html#cb13-9" aria-hidden="true" tabindex="-1"></a>    <span class="sc">!</span><span class="fu">is.na</span>(freshwater) <span class="sc">&amp;</span></span>
+<span id="cb13-10"><a href="5_unify_information.html#cb13-10" aria-hidden="true" tabindex="-1"></a>    <span class="sc">!</span><span class="fu">is.na</span>(terrestrial)</span>
+<span id="cb13-11"><a href="5_unify_information.html#cb13-11" aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div>
 <ol start="2" style="list-style-type: decimal">
 <li>Choose a single species profile within a checklist.</li>
 </ol>
-<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="5_unify_information.html#cb14-1"></a>speciesprofiles_unified &lt;-</span>
-<span id="cb14-2"><a href="5_unify_information.html#cb14-2"></a><span class="st">  </span>speciesprofiles_unified <span class="op">%&gt;%</span></span>
-<span id="cb14-3"><a href="5_unify_information.html#cb14-3"></a></span>
-<span id="cb14-4"><a href="5_unify_information.html#cb14-4"></a><span class="st">  </span><span class="co"># Join species profile with taxon to get verificationKey and checklist order</span></span>
-<span id="cb14-5"><a href="5_unify_information.html#cb14-5"></a><span class="st">  </span><span class="kw">left_join</span>(taxa, <span class="dt">on =</span> taxonKey) <span class="op">%&gt;%</span></span>
-<span id="cb14-6"><a href="5_unify_information.html#cb14-6"></a></span>
-<span id="cb14-7"><a href="5_unify_information.html#cb14-7"></a><span class="st">  </span><span class="co"># Remove records that have no verificationKey (e.g. one wasn&#39;t assigned yet)</span></span>
-<span id="cb14-8"><a href="5_unify_information.html#cb14-8"></a><span class="st">  </span><span class="kw">filter</span>(<span class="op">!</span><span class="kw">is.na</span>(verificationKey)) <span class="op">%&gt;%</span></span>
-<span id="cb14-9"><a href="5_unify_information.html#cb14-9"></a></span>
-<span id="cb14-10"><a href="5_unify_information.html#cb14-10"></a><span class="st">  </span><span class="co"># Group by verificationKey within checklist</span></span>
-<span id="cb14-11"><a href="5_unify_information.html#cb14-11"></a><span class="st">  </span><span class="kw">group_by</span>(</span>
-<span id="cb14-12"><a href="5_unify_information.html#cb14-12"></a>    datasetKey,</span>
-<span id="cb14-13"><a href="5_unify_information.html#cb14-13"></a>    checklistOrder,</span>
-<span id="cb14-14"><a href="5_unify_information.html#cb14-14"></a>    verificationKey</span>
-<span id="cb14-15"><a href="5_unify_information.html#cb14-15"></a>  ) <span class="op">%&gt;%</span></span>
-<span id="cb14-16"><a href="5_unify_information.html#cb14-16"></a></span>
-<span id="cb14-17"><a href="5_unify_information.html#cb14-17"></a><span class="st">  </span><span class="co"># Take first species profile and note taxonKey</span></span>
-<span id="cb14-18"><a href="5_unify_information.html#cb14-18"></a><span class="st">  </span><span class="kw">summarize</span>(</span>
-<span id="cb14-19"><a href="5_unify_information.html#cb14-19"></a>    <span class="dt">marine =</span> <span class="kw">first</span>(marine),</span>
-<span id="cb14-20"><a href="5_unify_information.html#cb14-20"></a>    <span class="dt">freshwater =</span> <span class="kw">first</span>(freshwater),</span>
-<span id="cb14-21"><a href="5_unify_information.html#cb14-21"></a>    <span class="dt">terrestrial =</span> <span class="kw">first</span>(terrestrial),</span>
-<span id="cb14-22"><a href="5_unify_information.html#cb14-22"></a>    <span class="dt">taxonKey =</span> <span class="kw">first</span>(taxonKey),</span>
-<span id="cb14-23"><a href="5_unify_information.html#cb14-23"></a>    <span class="dt">scientificName =</span> <span class="kw">first</span>(scientificName)</span>
-<span id="cb14-24"><a href="5_unify_information.html#cb14-24"></a>  )</span></code></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="5_unify_information.html#cb14-1" aria-hidden="true" tabindex="-1"></a>speciesprofiles_unified <span class="ot">&lt;-</span></span>
+<span id="cb14-2"><a href="5_unify_information.html#cb14-2" aria-hidden="true" tabindex="-1"></a>  speciesprofiles_unified <span class="sc">%&gt;%</span></span>
+<span id="cb14-3"><a href="5_unify_information.html#cb14-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-4"><a href="5_unify_information.html#cb14-4" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Join species profile with taxon to get verificationKey and checklist order</span></span>
+<span id="cb14-5"><a href="5_unify_information.html#cb14-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(taxa, <span class="at">on =</span> taxonKey) <span class="sc">%&gt;%</span></span>
+<span id="cb14-6"><a href="5_unify_information.html#cb14-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-7"><a href="5_unify_information.html#cb14-7" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Remove records that have no verificationKey (e.g. one wasn&#39;t assigned yet)</span></span>
+<span id="cb14-8"><a href="5_unify_information.html#cb14-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(verificationKey)) <span class="sc">%&gt;%</span></span>
+<span id="cb14-9"><a href="5_unify_information.html#cb14-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-10"><a href="5_unify_information.html#cb14-10" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Group by verificationKey within checklist</span></span>
+<span id="cb14-11"><a href="5_unify_information.html#cb14-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(</span>
+<span id="cb14-12"><a href="5_unify_information.html#cb14-12" aria-hidden="true" tabindex="-1"></a>    datasetKey,</span>
+<span id="cb14-13"><a href="5_unify_information.html#cb14-13" aria-hidden="true" tabindex="-1"></a>    checklistOrder,</span>
+<span id="cb14-14"><a href="5_unify_information.html#cb14-14" aria-hidden="true" tabindex="-1"></a>    verificationKey</span>
+<span id="cb14-15"><a href="5_unify_information.html#cb14-15" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb14-16"><a href="5_unify_information.html#cb14-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-17"><a href="5_unify_information.html#cb14-17" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Take first species profile and note taxonKey</span></span>
+<span id="cb14-18"><a href="5_unify_information.html#cb14-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(</span>
+<span id="cb14-19"><a href="5_unify_information.html#cb14-19" aria-hidden="true" tabindex="-1"></a>    <span class="at">marine =</span> <span class="fu">first</span>(marine),</span>
+<span id="cb14-20"><a href="5_unify_information.html#cb14-20" aria-hidden="true" tabindex="-1"></a>    <span class="at">freshwater =</span> <span class="fu">first</span>(freshwater),</span>
+<span id="cb14-21"><a href="5_unify_information.html#cb14-21" aria-hidden="true" tabindex="-1"></a>    <span class="at">terrestrial =</span> <span class="fu">first</span>(terrestrial),</span>
+<span id="cb14-22"><a href="5_unify_information.html#cb14-22" aria-hidden="true" tabindex="-1"></a>    <span class="at">taxonKey =</span> <span class="fu">first</span>(taxonKey),</span>
+<span id="cb14-23"><a href="5_unify_information.html#cb14-23" aria-hidden="true" tabindex="-1"></a>    <span class="at">scientificName =</span> <span class="fu">first</span>(scientificName)</span>
+<span id="cb14-24"><a href="5_unify_information.html#cb14-24" aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div>
 <ol start="3" style="list-style-type: decimal">
 <li>Choose a single species profile across checklists.</li>
 </ol>
-<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="5_unify_information.html#cb15-1"></a>speciesprofiles_unified &lt;-</span>
-<span id="cb15-2"><a href="5_unify_information.html#cb15-2"></a><span class="st">  </span>speciesprofiles_unified <span class="op">%&gt;%</span></span>
-<span id="cb15-3"><a href="5_unify_information.html#cb15-3"></a></span>
-<span id="cb15-4"><a href="5_unify_information.html#cb15-4"></a><span class="st">  </span><span class="co"># Sort by checklist order (trustworthiness)</span></span>
-<span id="cb15-5"><a href="5_unify_information.html#cb15-5"></a><span class="st">  </span><span class="kw">arrange</span>(checklistOrder) <span class="op">%&gt;%</span></span>
-<span id="cb15-6"><a href="5_unify_information.html#cb15-6"></a></span>
-<span id="cb15-7"><a href="5_unify_information.html#cb15-7"></a><span class="st">  </span><span class="co"># Group by verificationKey across checklists</span></span>
-<span id="cb15-8"><a href="5_unify_information.html#cb15-8"></a><span class="st">  </span><span class="kw">group_by</span>(verificationKey) <span class="op">%&gt;%</span></span>
-<span id="cb15-9"><a href="5_unify_information.html#cb15-9"></a></span>
-<span id="cb15-10"><a href="5_unify_information.html#cb15-10"></a><span class="st">  </span><span class="co"># Select species profile of most trustworthy checklist (first one)</span></span>
-<span id="cb15-11"><a href="5_unify_information.html#cb15-11"></a><span class="st">  </span><span class="co"># and note that checklist and its taxonKey</span></span>
-<span id="cb15-12"><a href="5_unify_information.html#cb15-12"></a><span class="st">  </span><span class="kw">summarize</span>(</span>
-<span id="cb15-13"><a href="5_unify_information.html#cb15-13"></a>    <span class="dt">marine =</span> <span class="kw">first</span>(marine),</span>
-<span id="cb15-14"><a href="5_unify_information.html#cb15-14"></a>    <span class="dt">freshwater =</span> <span class="kw">first</span>(freshwater),</span>
-<span id="cb15-15"><a href="5_unify_information.html#cb15-15"></a>    <span class="dt">terrestrial =</span> <span class="kw">first</span>(terrestrial),</span>
-<span id="cb15-16"><a href="5_unify_information.html#cb15-16"></a>    <span class="dt">datasetKey =</span> <span class="kw">first</span>(datasetKey),</span>
-<span id="cb15-17"><a href="5_unify_information.html#cb15-17"></a>    <span class="dt">taxonKey =</span> <span class="kw">first</span>(taxonKey),</span>
-<span id="cb15-18"><a href="5_unify_information.html#cb15-18"></a>    <span class="dt">scientificName =</span> <span class="kw">first</span>(scientificName)</span>
-<span id="cb15-19"><a href="5_unify_information.html#cb15-19"></a>  ) <span class="op">%&gt;%</span></span>
-<span id="cb15-20"><a href="5_unify_information.html#cb15-20"></a></span>
-<span id="cb15-21"><a href="5_unify_information.html#cb15-21"></a><span class="st">  </span><span class="co"># Sort by verificationKey</span></span>
-<span id="cb15-22"><a href="5_unify_information.html#cb15-22"></a><span class="st">  </span><span class="kw">arrange</span>(verificationKey)</span></code></pre></div>
+<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="5_unify_information.html#cb15-1" aria-hidden="true" tabindex="-1"></a>speciesprofiles_unified <span class="ot">&lt;-</span></span>
+<span id="cb15-2"><a href="5_unify_information.html#cb15-2" aria-hidden="true" tabindex="-1"></a>  speciesprofiles_unified <span class="sc">%&gt;%</span></span>
+<span id="cb15-3"><a href="5_unify_information.html#cb15-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-4"><a href="5_unify_information.html#cb15-4" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Sort by checklist order (trustworthiness)</span></span>
+<span id="cb15-5"><a href="5_unify_information.html#cb15-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(checklistOrder) <span class="sc">%&gt;%</span></span>
+<span id="cb15-6"><a href="5_unify_information.html#cb15-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-7"><a href="5_unify_information.html#cb15-7" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Group by verificationKey across checklists</span></span>
+<span id="cb15-8"><a href="5_unify_information.html#cb15-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(verificationKey) <span class="sc">%&gt;%</span></span>
+<span id="cb15-9"><a href="5_unify_information.html#cb15-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-10"><a href="5_unify_information.html#cb15-10" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Select species profile of most trustworthy checklist (first one)</span></span>
+<span id="cb15-11"><a href="5_unify_information.html#cb15-11" aria-hidden="true" tabindex="-1"></a>  <span class="co"># and note that checklist and its taxonKey</span></span>
+<span id="cb15-12"><a href="5_unify_information.html#cb15-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(</span>
+<span id="cb15-13"><a href="5_unify_information.html#cb15-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">marine =</span> <span class="fu">first</span>(marine),</span>
+<span id="cb15-14"><a href="5_unify_information.html#cb15-14" aria-hidden="true" tabindex="-1"></a>    <span class="at">freshwater =</span> <span class="fu">first</span>(freshwater),</span>
+<span id="cb15-15"><a href="5_unify_information.html#cb15-15" aria-hidden="true" tabindex="-1"></a>    <span class="at">terrestrial =</span> <span class="fu">first</span>(terrestrial),</span>
+<span id="cb15-16"><a href="5_unify_information.html#cb15-16" aria-hidden="true" tabindex="-1"></a>    <span class="at">datasetKey =</span> <span class="fu">first</span>(datasetKey),</span>
+<span id="cb15-17"><a href="5_unify_information.html#cb15-17" aria-hidden="true" tabindex="-1"></a>    <span class="at">taxonKey =</span> <span class="fu">first</span>(taxonKey),</span>
+<span id="cb15-18"><a href="5_unify_information.html#cb15-18" aria-hidden="true" tabindex="-1"></a>    <span class="at">scientificName =</span> <span class="fu">first</span>(scientificName)</span>
+<span id="cb15-19"><a href="5_unify_information.html#cb15-19" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb15-20"><a href="5_unify_information.html#cb15-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-21"><a href="5_unify_information.html#cb15-21" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Sort by verificationKey</span></span>
+<span id="cb15-22"><a href="5_unify_information.html#cb15-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(verificationKey)</span></code></pre></div>
 <ol start="4" style="list-style-type: decimal">
 <li>Save to <a href="https://github.com/trias-project/unified-checklist/blob/master/data/interim/speciesprofiles_unified.csv">CSV</a>.</li>
 </ol>
 </div>
-<div id="unify-descriptions" class="section level2">
+<div id="unify-descriptions" class="section level2" number="5.5">
 <h2><span class="header-section-number">5.5</span> Unify descriptions</h2>
-<div id="native-range" class="section level3">
+<div id="native-range" class="section level3" number="5.5.1">
 <h3><span class="header-section-number">5.5.1</span> Native range</h3>
 <ol style="list-style-type: decimal">
 <li><p>Retrieve native range.</p></li>
 <li><p>Standardize native range:</p></li>
 </ol>
-<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="5_unify_information.html#cb16-1"></a>native_range &lt;-</span>
-<span id="cb16-2"><a href="5_unify_information.html#cb16-2"></a><span class="st">  </span>native_range <span class="op">%&gt;%</span></span>
-<span id="cb16-3"><a href="5_unify_information.html#cb16-3"></a><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">description =</span> <span class="kw">recode</span>(description,</span>
-<span id="cb16-4"><a href="5_unify_information.html#cb16-4"></a>    <span class="st">&quot;Africa&quot;</span> =<span class="st"> &quot;Africa&quot;</span>,</span>
-<span id="cb16-5"><a href="5_unify_information.html#cb16-5"></a>    <span class="st">&quot;Africa (WGSRPD:2)&quot;</span> =<span class="st"> &quot;Africa&quot;</span>,</span>
-<span id="cb16-6"><a href="5_unify_information.html#cb16-6"></a>    <span class="st">&quot;Algeria&quot;</span> =<span class="st"> &quot;Northern Africa&quot;</span>,</span>
-<span id="cb16-7"><a href="5_unify_information.html#cb16-7"></a>    <span class="st">&quot;America&quot;</span> =<span class="st"> &quot;Americas&quot;</span>,</span>
-<span id="cb16-8"><a href="5_unify_information.html#cb16-8"></a>    <span class="st">&quot;Arctic&quot;</span> =<span class="st"> &quot;&quot;</span>,</span>
-<span id="cb16-9"><a href="5_unify_information.html#cb16-9"></a>    <span class="st">&quot;Asia&quot;</span> =<span class="st"> &quot;Asia&quot;</span>,</span>
-<span id="cb16-10"><a href="5_unify_information.html#cb16-10"></a>    <span class="st">&quot;Asia And Pacific Islands&quot;</span> =<span class="st"> &quot;Asia | Asia | Micronesia | Polynesia&quot;</span>,</span>
-<span id="cb16-11"><a href="5_unify_information.html#cb16-11"></a>    <span class="st">&quot;Australasia (WGSRPD:5)&quot;</span> =<span class="st"> &quot;Australia and New Zealand&quot;</span>,</span>
-<span id="cb16-12"><a href="5_unify_information.html#cb16-12"></a>    <span class="st">&quot;Australia&quot;</span> =<span class="st"> &quot;Australia and New Zealand&quot;</span>,</span>
-<span id="cb16-13"><a href="5_unify_information.html#cb16-13"></a>    <span class="st">&quot;Australia (WGSRPD:50)&quot;</span> =<span class="st"> &quot;Australia and New Zealand&quot;</span>,</span>
-<span id="cb16-14"><a href="5_unify_information.html#cb16-14"></a>    <span class="st">&quot;Austria&quot;</span> =<span class="st"> &quot;Western Europe&quot;</span>,</span>
-<span id="cb16-15"><a href="5_unify_information.html#cb16-15"></a>    <span class="st">&quot;Balearic Islands&quot;</span> =<span class="st"> &quot;Southern Europe&quot;</span>,</span>
-<span id="cb16-16"><a href="5_unify_information.html#cb16-16"></a>    <span class="st">&quot;Balkan&quot;</span> =<span class="st"> &quot;Southern Europe | Southern Europe&quot;</span>,</span>
-<span id="cb16-17"><a href="5_unify_information.html#cb16-17"></a>    <span class="st">&quot;Bolivia, Chile, Argentina&quot;</span> =<span class="st"> &quot;South America&quot;</span>,</span>
-<span id="cb16-18"><a href="5_unify_information.html#cb16-18"></a>    <span class="st">&quot;Brazil, Uruguay, Paraguay, Argentina&quot;</span> =<span class="st"> &quot;South America&quot;</span>,</span>
-<span id="cb16-19"><a href="5_unify_information.html#cb16-19"></a>    <span class="st">&quot;Canada To Peru, Caribbean&quot;</span> =<span class="st"> &quot;Americas&quot;</span>,</span>
-<span id="cb16-20"><a href="5_unify_information.html#cb16-20"></a>    <span class="st">&quot;Canary Is. To Turkey&quot;</span> =<span class="st"> &quot;Northern Africa | Northern Africa&quot;</span>,</span>
-<span id="cb16-21"><a href="5_unify_information.html#cb16-21"></a>    <span class="st">&quot;Canary Islands (WGSRPD:21_CNY)&quot;</span> =<span class="st"> &quot;Northern Africa&quot;</span>,</span>
-<span id="cb16-22"><a href="5_unify_information.html#cb16-22"></a>    <span class="st">&quot;Cape Verde Is., Africa, Madagascar, Comoros&quot;</span> =<span class="st"> &quot;Africa&quot;</span>,</span>
-<span id="cb16-23"><a href="5_unify_information.html#cb16-23"></a>    <span class="st">&quot;Caribbean (WGSRPD:81)&quot;</span> =<span class="st"> &quot;Caribbean&quot;</span>,</span>
-<span id="cb16-24"><a href="5_unify_information.html#cb16-24"></a>    <span class="st">&quot;Caribbean To Brazil&quot;</span> =<span class="st"> &quot;Caribbean | Caribbean&quot;</span>,</span>
-<span id="cb16-25"><a href="5_unify_information.html#cb16-25"></a>    <span class="st">&quot;Carpathians&quot;</span> =<span class="st"> &quot;Eastern Europe&quot;</span>,</span>
-<span id="cb16-26"><a href="5_unify_information.html#cb16-26"></a>    <span class="st">&quot;Caucasus region&quot;</span> =<span class="st"> &quot;Western Asia&quot;</span>,</span>
-<span id="cb16-27"><a href="5_unify_information.html#cb16-27"></a>    <span class="st">&quot;Central America (WGSRPD:80)&quot;</span> =<span class="st"> &quot;Central America&quot;</span>,</span>
-<span id="cb16-28"><a href="5_unify_information.html#cb16-28"></a>    <span class="st">&quot;Central And South America&quot;</span> =<span class="st"> &quot;Central America | Central America&quot;</span>,</span>
-<span id="cb16-29"><a href="5_unify_information.html#cb16-29"></a>    <span class="st">&quot;Central Asia&quot;</span> =<span class="st"> &quot;Central Asia&quot;</span>,</span>
-<span id="cb16-30"><a href="5_unify_information.html#cb16-30"></a>    <span class="st">&quot;central Europe&quot;</span> =<span class="st"> &quot;Western Europe | Western Europe | Eastern Europe&quot;</span>,</span>
-<span id="cb16-31"><a href="5_unify_information.html#cb16-31"></a>    <span class="st">&quot;central Italy&quot;</span> =<span class="st"> &quot;Southern Europe&quot;</span>,</span>
-<span id="cb16-32"><a href="5_unify_information.html#cb16-32"></a>    <span class="st">&quot;central Mediterranean coastal areas&quot;</span> =<span class="st"> &quot;Southern Europe | Southern Europe&quot;</span>,</span>
-<span id="cb16-33"><a href="5_unify_information.html#cb16-33"></a>    <span class="st">&quot;central Turkey&quot;</span> =<span class="st"> &quot;Western Asia&quot;</span>,</span>
-<span id="cb16-34"><a href="5_unify_information.html#cb16-34"></a>    <span class="st">&quot;Central, South America&quot;</span> =<span class="st"> &quot;Central America | Central America&quot;</span>,</span>
-<span id="cb16-35"><a href="5_unify_information.html#cb16-35"></a>    <span class="st">&quot;China&quot;</span> =<span class="st"> &quot;Eastern Asia&quot;</span>,</span>
-<span id="cb16-36"><a href="5_unify_information.html#cb16-36"></a>    <span class="st">&quot;China (WGSRPD:36)&quot;</span> =<span class="st"> &quot;Eastern Asia&quot;</span>,</span>
-<span id="cb16-37"><a href="5_unify_information.html#cb16-37"></a>    <span class="st">&quot;circum western Mediterranean coastal areas&quot;</span> =<span class="st"> &quot;Southern Europe | Southern Europe&quot;</span>,</span>
-<span id="cb16-38"><a href="5_unify_information.html#cb16-38"></a>    <span class="st">&quot;circum-Mediterranean&quot;</span> =<span class="st"> &quot;Southern Europe | Southern Europe&quot;</span>,</span>
-<span id="cb16-39"><a href="5_unify_information.html#cb16-39"></a>    <span class="st">&quot;coastal areas of the western Balkan&quot;</span> =<span class="st"> &quot;Southern Europe&quot;</span>,</span>
-<span id="cb16-40"><a href="5_unify_information.html#cb16-40"></a>    <span class="st">&quot;Corsica&quot;</span> =<span class="st"> &quot;Southern Europe&quot;</span>,</span>
-<span id="cb16-41"><a href="5_unify_information.html#cb16-41"></a>    <span class="st">&quot;Cosmopolitan&quot;</span> =<span class="st"> &quot;&quot;</span>,</span>
-<span id="cb16-42"><a href="5_unify_information.html#cb16-42"></a>    <span class="st">&quot;Costa Rica (WGSRPD:80_COS)&quot;</span> =<span class="st"> &quot;Central America&quot;</span>,</span>
-<span id="cb16-43"><a href="5_unify_information.html#cb16-43"></a>    <span class="st">&quot;Costa Rica, Panama&quot;</span> =<span class="st"> &quot;Central America&quot;</span>,</span>
-<span id="cb16-44"><a href="5_unify_information.html#cb16-44"></a>    <span class="st">&quot;Crete&quot;</span> =<span class="st"> &quot;Southern Europe&quot;</span>,</span>
-<span id="cb16-45"><a href="5_unify_information.html#cb16-45"></a>    <span class="st">&quot;cultivated origin&quot;</span> =<span class="st"> &quot;&quot;</span>,</span>
-<span id="cb16-46"><a href="5_unify_information.html#cb16-46"></a>    <span class="st">&quot;Cyprus, Turkey, Middle East, Egypt, Sudan&quot;</span> =<span class="st"> &quot;Western Asia | Western Asia&quot;</span>,</span>
-<span id="cb16-47"><a href="5_unify_information.html#cb16-47"></a>    <span class="st">&quot;East Asia&quot;</span> =<span class="st"> &quot;Eastern Asia&quot;</span>,</span>
-<span id="cb16-48"><a href="5_unify_information.html#cb16-48"></a>    <span class="st">&quot;eastern Africa&quot;</span> =<span class="st"> &quot;Eastern Africa&quot;</span>,</span>
-<span id="cb16-49"><a href="5_unify_information.html#cb16-49"></a>    <span class="st">&quot;Eastern Africa&quot;</span> =<span class="st"> &quot;Eastern Africa&quot;</span>,</span>
-<span id="cb16-50"><a href="5_unify_information.html#cb16-50"></a>    <span class="st">&quot;Eastern Asia (WGSRPD:38)&quot;</span> =<span class="st"> &quot;Eastern Asia&quot;</span>,</span>
-<span id="cb16-51"><a href="5_unify_information.html#cb16-51"></a>    <span class="st">&quot;Eastern Asian Russia&quot;</span> =<span class="st"> &quot;Eastern Asia | Eastern Asia&quot;</span>,</span>
-<span id="cb16-52"><a href="5_unify_information.html#cb16-52"></a>    <span class="st">&quot;Eastern Europe&quot;</span> =<span class="st"> &quot;Eastern Europe&quot;</span>,</span>
-<span id="cb16-53"><a href="5_unify_information.html#cb16-53"></a>    <span class="st">&quot;Eastern Europe (WGSRPD:14)&quot;</span> =<span class="st"> &quot;Eastern Europe&quot;</span>,</span>
-<span id="cb16-54"><a href="5_unify_information.html#cb16-54"></a>    <span class="st">&quot;Eastern North America&quot;</span> =<span class="st"> &quot;Northern America&quot;</span>,</span>
-<span id="cb16-55"><a href="5_unify_information.html#cb16-55"></a>    <span class="st">&quot;Eastern Palearctic Including China, Korea, Japan&quot;</span> =<span class="st"> &quot;Eastern Asia&quot;</span>,</span>
-<span id="cb16-56"><a href="5_unify_information.html#cb16-56"></a>    <span class="st">&quot;Egypt, Ethiopia, Kenya, Uganda, Rwanda&quot;</span> =<span class="st"> &quot;Northern Africa | Northern Africa&quot;</span>,</span>
-<span id="cb16-57"><a href="5_unify_information.html#cb16-57"></a>    <span class="st">&quot;Ethiopia&quot;</span> =<span class="st"> &quot;Northern Africa&quot;</span>,</span>
-<span id="cb16-58"><a href="5_unify_information.html#cb16-58"></a>    <span class="st">&quot;Eurasia&quot;</span> =<span class="st"> &quot;Europe | Europe&quot;</span>,</span>
-<span id="cb16-59"><a href="5_unify_information.html#cb16-59"></a>    <span class="st">&quot;Eurasia Africa&quot;</span> =<span class="st"> &quot;Europe | Europe | Africa&quot;</span>,</span>
-<span id="cb16-60"><a href="5_unify_information.html#cb16-60"></a>    <span class="st">&quot;Europe (WGSRPD:1)&quot;</span> =<span class="st"> &quot;Europe&quot;</span>,</span>
-<span id="cb16-61"><a href="5_unify_information.html#cb16-61"></a>    <span class="st">&quot;Europe To Azerbaijan, Egypt&quot;</span> =<span class="st"> &quot;Europe | Europe | Northern Africa&quot;</span>,</span>
-<span id="cb16-62"><a href="5_unify_information.html#cb16-62"></a>    <span class="st">&quot;Europe To Northern Africa&quot;</span> =<span class="st"> &quot;Europe | Europe&quot;</span>,</span>
-<span id="cb16-63"><a href="5_unify_information.html#cb16-63"></a>    <span class="st">&quot;Europe, Africa, Yemen, Pakistan, Philippines&quot;</span> =<span class="st"> &quot;Europe | Europe | Asia&quot;</span>,</span>
-<span id="cb16-64"><a href="5_unify_information.html#cb16-64"></a>    <span class="st">&quot;Europe, North Africa To Near East, Turkey, Caucasus, Russia To Central Asia, Iran, Afghanistan, China, Mongolia, Korea&quot;</span> =<span class="st"> &quot;Europe | Europe | Western Asia&quot;</span>,</span>
-<span id="cb16-65"><a href="5_unify_information.html#cb16-65"></a>    <span class="st">&quot;Galapagos (WGSRPD:GAL)&quot;</span> =<span class="st"> &quot;South America&quot;</span>,</span>
-<span id="cb16-66"><a href="5_unify_information.html#cb16-66"></a>    <span class="st">&quot;Greece&quot;</span> =<span class="st"> &quot;Southern Europe&quot;</span>,</span>
-<span id="cb16-67"><a href="5_unify_information.html#cb16-67"></a>    <span class="st">&quot;Hawaiian Islands (WGSRPD:HI)&quot;</span> =<span class="st"> &quot;Northern America&quot;</span>,</span>
-<span id="cb16-68"><a href="5_unify_information.html#cb16-68"></a>    <span class="st">&quot;hybrid origin&quot;</span> =<span class="st"> &quot;&quot;</span>,</span>
-<span id="cb16-69"><a href="5_unify_information.html#cb16-69"></a>    <span class="st">&quot;Iberia&quot;</span> =<span class="st"> &quot;Southern Europe&quot;</span>,</span>
-<span id="cb16-70"><a href="5_unify_information.html#cb16-70"></a>    <span class="st">&quot;Iberian Peninsula&quot;</span> =<span class="st"> &quot;Southern Europe&quot;</span>,</span>
-<span id="cb16-71"><a href="5_unify_information.html#cb16-71"></a>    <span class="st">&quot;India, Southeast Asia To Australia, New Zealand&quot;</span> =<span class="st"> &quot;Southern Asia | Southern Asia | Australia and New Zealand&quot;</span>,</span>
-<span id="cb16-72"><a href="5_unify_information.html#cb16-72"></a>    <span class="st">&quot;Indian Subcontinent (WGSRPD:40)&quot;</span> =<span class="st"> &quot;Southern Asia&quot;</span>,</span>
-<span id="cb16-73"><a href="5_unify_information.html#cb16-73"></a>    <span class="st">&quot;Indo-Pacific&quot;</span> =<span class="st"> &quot;Africa | Africa | Australia and New Zealand&quot;</span>,</span>
-<span id="cb16-74"><a href="5_unify_information.html#cb16-74"></a>    <span class="st">&quot;Indonesia (WGSRPD:ID)&quot;</span> =<span class="st"> &quot;Southeastern Asia&quot;</span>,</span>
-<span id="cb16-75"><a href="5_unify_information.html#cb16-75"></a>    <span class="st">&quot;Italian Peninsula&quot;</span> =<span class="st"> &quot;Southern Europe&quot;</span>,</span>
-<span id="cb16-76"><a href="5_unify_information.html#cb16-76"></a>    <span class="st">&quot;Italy&quot;</span> =<span class="st"> &quot;Southern Europe&quot;</span>,</span>
-<span id="cb16-77"><a href="5_unify_information.html#cb16-77"></a>    <span class="st">&quot;Japan (WGSRPD:38_JAP)&quot;</span> =<span class="st"> &quot;Eastern Asia&quot;</span>,</span>
-<span id="cb16-78"><a href="5_unify_information.html#cb16-78"></a>    <span class="st">&quot;Japan (WGSRPD:JAP)&quot;</span> =<span class="st"> &quot;Eastern Asia&quot;</span>,</span>
-<span id="cb16-79"><a href="5_unify_information.html#cb16-79"></a>    <span class="st">&quot;Macaronesia&quot;</span> =<span class="st"> &quot;Northern Africa&quot;</span>,</span>
-<span id="cb16-80"><a href="5_unify_information.html#cb16-80"></a>    <span class="st">&quot;Macaronesia, Europe, North Africa To Turkey, Caucasus, Turkmenistan, Iran&quot;</span> =<span class="st"> &quot;Northern Africa | Northern Africa | Western Asia&quot;</span>,</span>
-<span id="cb16-81"><a href="5_unify_information.html#cb16-81"></a>    <span class="st">&quot;Macaronesia, North Africa, Europe, Turkey, Caucasus, Near East, Kazakhstan&quot;</span> =<span class="st"> &quot;Northern Africa | Northern Africa | Western Asia&quot;</span>,</span>
-<span id="cb16-82"><a href="5_unify_information.html#cb16-82"></a>    <span class="st">&quot;Madagascar (WGSRPD:MDG)&quot;</span> =<span class="st"> &quot;Eastern Africa&quot;</span>,</span>
-<span id="cb16-83"><a href="5_unify_information.html#cb16-83"></a>    <span class="st">&quot;Mallorca&quot;</span> =<span class="st"> &quot;Southern Europe&quot;</span>,</span>
-<span id="cb16-84"><a href="5_unify_information.html#cb16-84"></a>    <span class="st">&quot;Mediterranean&quot;</span> =<span class="st"> &quot;Southern Europe&quot;</span>,</span>
-<span id="cb16-85"><a href="5_unify_information.html#cb16-85"></a>    <span class="st">&quot;Mediterranean &amp; Portugal&quot;</span> =<span class="st"> &quot;Southern Europe&quot;</span>,</span>
-<span id="cb16-86"><a href="5_unify_information.html#cb16-86"></a>    <span class="st">&quot;Mediterranean To Central Asia&quot;</span> =<span class="st"> &quot;Southern Europe | Southern Europe&quot;</span>,</span>
-<span id="cb16-87"><a href="5_unify_information.html#cb16-87"></a>    <span class="st">&quot;Mediterranean To Russia&quot;</span> =<span class="st"> &quot;Southern Europe | Southern Europe&quot;</span>,</span>
-<span id="cb16-88"><a href="5_unify_information.html#cb16-88"></a>    <span class="st">&quot;Mediterranean To Turkey, Israel&quot;</span> =<span class="st"> &quot;Southern Europe | Southern Europe&quot;</span>,</span>
-<span id="cb16-89"><a href="5_unify_information.html#cb16-89"></a>    <span class="st">&quot;Mediterranean, Africa, India, Myanmar, China&quot;</span> =<span class="st"> &quot;Southern Europe | Southern Europe | Asia&quot;</span>,</span>
-<span id="cb16-90"><a href="5_unify_information.html#cb16-90"></a>    <span class="st">&quot;Mediterranean, Northern Africa&quot;</span> =<span class="st"> &quot;Southern Europe | Southern Europe&quot;</span>,</span>
-<span id="cb16-91"><a href="5_unify_information.html#cb16-91"></a>    <span class="st">&quot;Middle Africa&quot;</span> =<span class="st"> &quot;Middle Africa&quot;</span>,</span>
-<span id="cb16-92"><a href="5_unify_information.html#cb16-92"></a>    <span class="st">&quot;Middle East&quot;</span> =<span class="st"> &quot;Western Asia&quot;</span>,</span>
-<span id="cb16-93"><a href="5_unify_information.html#cb16-93"></a>    <span class="st">&quot;Morocco&quot;</span> =<span class="st"> &quot;Northern Africa&quot;</span>,</span>
-<span id="cb16-94"><a href="5_unify_information.html#cb16-94"></a>    <span class="st">&quot;Nam&quot;</span> =<span class="st"> &quot;Northern America&quot;</span>,</span>
-<span id="cb16-95"><a href="5_unify_information.html#cb16-95"></a>    <span class="st">&quot;Near East&quot;</span> =<span class="st"> &quot;Western Asia&quot;</span>,</span>
-<span id="cb16-96"><a href="5_unify_information.html#cb16-96"></a>    <span class="st">&quot;Nearctic&quot;</span> =<span class="st"> &quot;&quot;</span>,</span>
-<span id="cb16-97"><a href="5_unify_information.html#cb16-97"></a>    <span class="st">&quot;Neotropic&quot;</span> =<span class="st"> &quot;&quot;</span>,</span>
-<span id="cb16-98"><a href="5_unify_information.html#cb16-98"></a>    <span class="st">&quot;New Zealand&quot;</span> =<span class="st"> &quot;Australia and New Zealand&quot;</span>,</span>
-<span id="cb16-99"><a href="5_unify_information.html#cb16-99"></a>    <span class="st">&quot;New Zealand (WGSRPD:51)&quot;</span> =<span class="st"> &quot;Australia and New Zealand&quot;</span>,</span>
-<span id="cb16-100"><a href="5_unify_information.html#cb16-100"></a>    <span class="st">&quot;North Africa&quot;</span> =<span class="st"> &quot;Northern Africa&quot;</span>,</span>
-<span id="cb16-101"><a href="5_unify_information.html#cb16-101"></a>    <span class="st">&quot;North America&quot;</span> =<span class="st"> &quot;Northern America&quot;</span>,</span>
-<span id="cb16-102"><a href="5_unify_information.html#cb16-102"></a>    <span class="st">&quot;North America, Europe, North Africa, Turkey, Israel, Caucasus, Russia (European To Far East), Central Asia, China, Korea&quot;</span> =<span class="st"> &quot;Northern America | Northern America | Asia | North Africa&quot;</span>,</span>
-<span id="cb16-103"><a href="5_unify_information.html#cb16-103"></a>    <span class="st">&quot;North Pacific Ocean&quot;</span> =<span class="st"> &quot;&quot;</span>,</span>
-<span id="cb16-104"><a href="5_unify_information.html#cb16-104"></a>    <span class="st">&quot;North, Central And South America&quot;</span> =<span class="st"> &quot;Americas&quot;</span>,</span>
-<span id="cb16-105"><a href="5_unify_information.html#cb16-105"></a>    <span class="st">&quot;Northeast Asia&quot;</span> =<span class="st"> &quot;Eastern Asia&quot;</span>,</span>
-<span id="cb16-106"><a href="5_unify_information.html#cb16-106"></a>    <span class="st">&quot;Northern Africa&quot;</span> =<span class="st"> &quot;Northern Africa&quot;</span>,</span>
-<span id="cb16-107"><a href="5_unify_information.html#cb16-107"></a>    <span class="st">&quot;Northern Africa And Middle East&quot;</span> =<span class="st"> &quot;Northern Africa | Northern Africa&quot;</span>,</span>
-<span id="cb16-108"><a href="5_unify_information.html#cb16-108"></a>    <span class="st">&quot;Northern Africa, Southern Europe To Turkey&quot;</span> =<span class="st"> &quot;Northern Africa | Northern Africa | Western Asia&quot;</span>,</span>
-<span id="cb16-109"><a href="5_unify_information.html#cb16-109"></a>    <span class="st">&quot;Northern America&quot;</span> =<span class="st"> &quot;Northern America&quot;</span>,</span>
-<span id="cb16-110"><a href="5_unify_information.html#cb16-110"></a>    <span class="st">&quot;Northern America (WGSRPD:7)&quot;</span> =<span class="st"> &quot;Northern America&quot;</span>,</span>
-<span id="cb16-111"><a href="5_unify_information.html#cb16-111"></a>    <span class="st">&quot;northern Balkan&quot;</span> =<span class="st"> &quot;Eastern Europe&quot;</span>,</span>
-<span id="cb16-112"><a href="5_unify_information.html#cb16-112"></a>    <span class="st">&quot;northern coastal areas of the western Mediterranean&quot;</span> =<span class="st"> &quot;Southern Europe&quot;</span>,</span>
-<span id="cb16-113"><a href="5_unify_information.html#cb16-113"></a>    <span class="st">&quot;northern Italy&quot;</span> =<span class="st"> &quot;Southern Europe&quot;</span>,</span>
-<span id="cb16-114"><a href="5_unify_information.html#cb16-114"></a>    <span class="st">&quot;northern part of the Iberian Peninsula&quot;</span> =<span class="st"> &quot;Southern Europe&quot;</span>,</span>
-<span id="cb16-115"><a href="5_unify_information.html#cb16-115"></a>    <span class="st">&quot;northwestern Croatia&quot;</span> =<span class="st"> &quot;Southern Europe&quot;</span>,</span>
-<span id="cb16-116"><a href="5_unify_information.html#cb16-116"></a>    <span class="st">&quot;northwestern Italy&quot;</span> =<span class="st"> &quot;Southern Europe&quot;</span>,</span>
-<span id="cb16-117"><a href="5_unify_information.html#cb16-117"></a>    <span class="st">&quot;nortwestern Africa&quot;</span> =<span class="st"> &quot;Northern Africa&quot;</span>,</span>
-<span id="cb16-118"><a href="5_unify_information.html#cb16-118"></a>    <span class="st">&quot;Palearctic&quot;</span> =<span class="st"> &quot;&quot;</span>,</span>
-<span id="cb16-119"><a href="5_unify_information.html#cb16-119"></a>    <span class="st">&quot;pan-American&quot;</span> =<span class="st"> &quot;Americas&quot;</span>,</span>
-<span id="cb16-120"><a href="5_unify_information.html#cb16-120"></a>    <span class="st">&quot;Panama (WGSRPD:PAN)&quot;</span> =<span class="st"> &quot;Central America&quot;</span>,</span>
-<span id="cb16-121"><a href="5_unify_information.html#cb16-121"></a>    <span class="st">&quot;Pantropical&quot;</span> =<span class="st"> &quot;&quot;</span>,</span>
-<span id="cb16-122"><a href="5_unify_information.html#cb16-122"></a>    <span class="st">&quot;Papua New Guinea&quot;</span> =<span class="st"> &quot;Melanesia&quot;</span>,</span>
-<span id="cb16-123"><a href="5_unify_information.html#cb16-123"></a>    <span class="st">&quot;Philippines (WGSRPD:PHI)&quot;</span> =<span class="st"> &quot;Southeastern Asia&quot;</span>,</span>
-<span id="cb16-124"><a href="5_unify_information.html#cb16-124"></a>    <span class="st">&quot;Ponto-Caspian&quot;</span> =<span class="st"> &quot;Eastern Europe&quot;</span>,</span>
-<span id="cb16-125"><a href="5_unify_information.html#cb16-125"></a>    <span class="st">&quot;Portugal (WGSRPD:POR)&quot;</span> =<span class="st"> &quot;Southern Europe&quot;</span>,</span>
-<span id="cb16-126"><a href="5_unify_information.html#cb16-126"></a>    <span class="st">&quot;Probably Native To North America Only&quot;</span> =<span class="st"> &quot;Northern America&quot;</span>,</span>
-<span id="cb16-127"><a href="5_unify_information.html#cb16-127"></a>    <span class="st">&quot;Russia&quot;</span> =<span class="st"> &quot;Eastern Europe&quot;</span>,</span>
-<span id="cb16-128"><a href="5_unify_information.html#cb16-128"></a>    <span class="st">&quot;Sardinia&quot;</span> =<span class="st"> &quot;Southern Europe&quot;</span>,</span>
-<span id="cb16-129"><a href="5_unify_information.html#cb16-129"></a>    <span class="st">&quot;Sicily&quot;</span> =<span class="st"> &quot;Southern Europe&quot;</span>,</span>
-<span id="cb16-130"><a href="5_unify_information.html#cb16-130"></a>    <span class="st">&quot;Slovenia&quot;</span> =<span class="st"> &quot;Eastern Europe&quot;</span>,</span>
-<span id="cb16-131"><a href="5_unify_information.html#cb16-131"></a>    <span class="st">&quot;South America&quot;</span> =<span class="st"> &quot;South America&quot;</span>,</span>
-<span id="cb16-132"><a href="5_unify_information.html#cb16-132"></a>    <span class="st">&quot;Southeast Asia&quot;</span> =<span class="st"> &quot;Southeastern Asia&quot;</span>,</span>
-<span id="cb16-133"><a href="5_unify_information.html#cb16-133"></a>    <span class="st">&quot;southeastern Alps&quot;</span> =<span class="st"> &quot;Southern Europe&quot;</span>,</span>
-<span id="cb16-134"><a href="5_unify_information.html#cb16-134"></a>    <span class="st">&quot;Southeastern Asia&quot;</span> =<span class="st"> &quot;Southeastern Asia&quot;</span>,</span>
-<span id="cb16-135"><a href="5_unify_information.html#cb16-135"></a>    <span class="st">&quot;southeastern Europe&quot;</span> =<span class="st"> &quot;Southern Europe&quot;</span>,</span>
-<span id="cb16-136"><a href="5_unify_information.html#cb16-136"></a>    <span class="st">&quot;Southeastern Europe (WGSRPD:13)&quot;</span> =<span class="st"> &quot;Southern Europe&quot;</span>,</span>
-<span id="cb16-137"><a href="5_unify_information.html#cb16-137"></a>    <span class="st">&quot;southeastern France&quot;</span> =<span class="st"> &quot;Western Europe&quot;</span>,</span>
-<span id="cb16-138"><a href="5_unify_information.html#cb16-138"></a>    <span class="st">&quot;Southern Africa&quot;</span> =<span class="st"> &quot;Southern Africa&quot;</span>,</span>
-<span id="cb16-139"><a href="5_unify_information.html#cb16-139"></a>    <span class="st">&quot;Southern Africa (WGSRPD:27)&quot;</span> =<span class="st"> &quot;Southern Africa&quot;</span>,</span>
-<span id="cb16-140"><a href="5_unify_information.html#cb16-140"></a>    <span class="st">&quot;southern Alps&quot;</span> =<span class="st"> &quot;Southern Europe&quot;</span>,</span>
-<span id="cb16-141"><a href="5_unify_information.html#cb16-141"></a>    <span class="st">&quot;Southern America (WGSRPD:8)&quot;</span> =<span class="st"> &quot;South America&quot;</span>,</span>
-<span id="cb16-142"><a href="5_unify_information.html#cb16-142"></a>    <span class="st">&quot;Southern Asia&quot;</span> =<span class="st"> &quot;Southern Asia&quot;</span>,</span>
-<span id="cb16-143"><a href="5_unify_information.html#cb16-143"></a>    <span class="st">&quot;southern Europe&quot;</span> =<span class="st"> &quot;Southern Europe&quot;</span>,</span>
-<span id="cb16-144"><a href="5_unify_information.html#cb16-144"></a>    <span class="st">&quot;Southern Europe&quot;</span> =<span class="st"> &quot;Southern Europe&quot;</span>,</span>
-<span id="cb16-145"><a href="5_unify_information.html#cb16-145"></a>    <span class="st">&quot;Southern Europe, Africa, Turkey, Caucasus, Near East, Iran&quot;</span> =<span class="st"> &quot;Southern Europe | Southern Europe | Western Asia&quot;</span>,</span>
-<span id="cb16-146"><a href="5_unify_information.html#cb16-146"></a>    <span class="st">&quot;southern France&quot;</span> =<span class="st"> &quot;Western Europe&quot;</span>,</span>
-<span id="cb16-147"><a href="5_unify_information.html#cb16-147"></a>    <span class="st">&quot;Southern Hemisphere&quot;</span> =<span class="st"> &quot;&quot;</span>,</span>
-<span id="cb16-148"><a href="5_unify_information.html#cb16-148"></a>    <span class="st">&quot;Southwestern Africa&quot;</span> =<span class="st"> &quot;Southern Africa&quot;</span>,</span>
-<span id="cb16-149"><a href="5_unify_information.html#cb16-149"></a>    <span class="st">&quot;southwestern France&quot;</span> =<span class="st"> &quot;Western Europe&quot;</span>,</span>
-<span id="cb16-150"><a href="5_unify_information.html#cb16-150"></a>    <span class="st">&quot;southwestern Germany&quot;</span> =<span class="st"> &quot;Western Europe&quot;</span>,</span>
-<span id="cb16-151"><a href="5_unify_information.html#cb16-151"></a>    <span class="st">&quot;Spain&quot;</span> =<span class="st"> &quot;Southern Europe&quot;</span>,</span>
-<span id="cb16-152"><a href="5_unify_information.html#cb16-152"></a>    <span class="st">&quot;Spain (WGSRPD:SPA)&quot;</span> =<span class="st"> &quot;Southern Europe&quot;</span>,</span>
-<span id="cb16-153"><a href="5_unify_information.html#cb16-153"></a>    <span class="st">&quot;Spain, Italy, North Africa&quot;</span> =<span class="st"> &quot;Southern Europe | Southern Europe&quot;</span>,</span>
-<span id="cb16-154"><a href="5_unify_information.html#cb16-154"></a>    <span class="st">&quot;Sub-Saharan Africa&quot;</span> =<span class="st"> &quot;Western Africa | Western Africa | Eastern Africa | Southern Africa&quot;</span>,</span>
-<span id="cb16-155"><a href="5_unify_information.html#cb16-155"></a>    <span class="st">&quot;Switzerland&quot;</span> =<span class="st"> &quot;Western Europe&quot;</span>,</span>
-<span id="cb16-156"><a href="5_unify_information.html#cb16-156"></a>    <span class="st">&quot;Tanzania (WGSRPD:TAN)&quot;</span> =<span class="st"> &quot;Eastern Africa&quot;</span>,</span>
-<span id="cb16-157"><a href="5_unify_information.html#cb16-157"></a>    <span class="st">&quot;Tasmania (WGSRPD:50_TAS)&quot;</span> =<span class="st"> &quot;Australia and New Zealand&quot;</span>,</span>
-<span id="cb16-158"><a href="5_unify_information.html#cb16-158"></a>    <span class="st">&quot;Temperate Asia&quot;</span> =<span class="st"> &quot;Eastern Asia | Eastern Asia | Eastern Europe | Western Asia&quot;</span>,</span>
-<span id="cb16-159"><a href="5_unify_information.html#cb16-159"></a>    <span class="st">&quot;temperate Asia (WGSRPD:3)&quot;</span> =<span class="st"> &quot;Eastern Asia | Eastern Asia | Eastern Europe | Western Asia&quot;</span>,</span>
-<span id="cb16-160"><a href="5_unify_information.html#cb16-160"></a>    <span class="st">&quot;Tropical Africa&quot;</span> =<span class="st"> &quot;&quot;</span>,</span>
-<span id="cb16-161"><a href="5_unify_information.html#cb16-161"></a>    <span class="st">&quot;Tropical and warm seas&quot;</span> =<span class="st"> &quot;&quot;</span>,</span>
-<span id="cb16-162"><a href="5_unify_information.html#cb16-162"></a>    <span class="st">&quot;Tropical Asia&quot;</span> =<span class="st"> &quot;Southern Asia | Southern Asia&quot;</span>,</span>
-<span id="cb16-163"><a href="5_unify_information.html#cb16-163"></a>    <span class="st">&quot;tropical Asia (WGSRPD:4)&quot;</span> =<span class="st"> &quot;Southern Asia | Southern Asia&quot;</span>,</span>
-<span id="cb16-164"><a href="5_unify_information.html#cb16-164"></a>    <span class="st">&quot;tropical western Africa&quot;</span> =<span class="st"> &quot;Western Africa&quot;</span>,</span>
-<span id="cb16-165"><a href="5_unify_information.html#cb16-165"></a>    <span class="st">&quot;Tunisia&quot;</span> =<span class="st"> &quot;Northern Africa&quot;</span>,</span>
-<span id="cb16-166"><a href="5_unify_information.html#cb16-166"></a>    <span class="st">&quot;unclear&quot;</span> =<span class="st"> &quot;&quot;</span>,</span>
-<span id="cb16-167"><a href="5_unify_information.html#cb16-167"></a>    <span class="st">&quot;United States&quot;</span> =<span class="st"> &quot;Northern America&quot;</span>,</span>
-<span id="cb16-168"><a href="5_unify_information.html#cb16-168"></a>    <span class="st">&quot;Usa To Guatemala&quot;</span> =<span class="st"> &quot;Northern America | Northern America&quot;</span>,</span>
-<span id="cb16-169"><a href="5_unify_information.html#cb16-169"></a>    <span class="st">&quot;West Africa&quot;</span> =<span class="st"> &quot;Western Africa&quot;</span>,</span>
-<span id="cb16-170"><a href="5_unify_information.html#cb16-170"></a>    <span class="st">&quot;Western Africa&quot;</span> =<span class="st"> &quot;Western Africa&quot;</span>,</span>
-<span id="cb16-171"><a href="5_unify_information.html#cb16-171"></a>    <span class="st">&quot;Western Asia (WGSRPD:34)&quot;</span> =<span class="st"> &quot;Western Asia&quot;</span>,</span>
-<span id="cb16-172"><a href="5_unify_information.html#cb16-172"></a>    <span class="st">&quot;Western Atlantic&quot;</span> =<span class="st"> &quot;&quot;</span>,</span>
-<span id="cb16-173"><a href="5_unify_information.html#cb16-173"></a>    <span class="st">&quot;western Balkan&quot;</span> =<span class="st"> &quot;Southern Europe&quot;</span>,</span>
-<span id="cb16-174"><a href="5_unify_information.html#cb16-174"></a>    <span class="st">&quot;western circum-Mediterranean&quot;</span> =<span class="st"> &quot;Southern Europe | Southern Europe&quot;</span>,</span>
-<span id="cb16-175"><a href="5_unify_information.html#cb16-175"></a>    <span class="st">&quot;western Italy&quot;</span> =<span class="st"> &quot;Southern Europe&quot;</span>,</span>
-<span id="cb16-176"><a href="5_unify_information.html#cb16-176"></a>    <span class="st">&quot;western Mediterranean&quot;</span> =<span class="st"> &quot;Southern Europe&quot;</span>,</span>
-<span id="cb16-177"><a href="5_unify_information.html#cb16-177"></a>    <span class="st">&quot;western Mediterranean coastal areas&quot;</span> =<span class="st"> &quot;Southern Europe&quot;</span>,</span>
-<span id="cb16-178"><a href="5_unify_information.html#cb16-178"></a>    <span class="st">&quot;western Mediterranean region&quot;</span> =<span class="st"> &quot;Southern Europe&quot;</span>,</span>
-<span id="cb16-179"><a href="5_unify_information.html#cb16-179"></a>    <span class="dt">.default =</span> <span class="st">&quot;&quot;</span> <span class="co"># Change to description to discover new values</span></span>
-<span id="cb16-180"><a href="5_unify_information.html#cb16-180"></a>  ))</span></code></pre></div>
+<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="5_unify_information.html#cb16-1" aria-hidden="true" tabindex="-1"></a>native_range <span class="ot">&lt;-</span></span>
+<span id="cb16-2"><a href="5_unify_information.html#cb16-2" aria-hidden="true" tabindex="-1"></a>  native_range <span class="sc">%&gt;%</span></span>
+<span id="cb16-3"><a href="5_unify_information.html#cb16-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">description =</span> <span class="fu">recode</span>(description,</span>
+<span id="cb16-4"><a href="5_unify_information.html#cb16-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Africa&quot;</span> <span class="ot">=</span> <span class="st">&quot;Africa&quot;</span>,</span>
+<span id="cb16-5"><a href="5_unify_information.html#cb16-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Africa (WGSRPD:2)&quot;</span> <span class="ot">=</span> <span class="st">&quot;Africa&quot;</span>,</span>
+<span id="cb16-6"><a href="5_unify_information.html#cb16-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Algeria&quot;</span> <span class="ot">=</span> <span class="st">&quot;Northern Africa&quot;</span>,</span>
+<span id="cb16-7"><a href="5_unify_information.html#cb16-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;America&quot;</span> <span class="ot">=</span> <span class="st">&quot;Americas&quot;</span>,</span>
+<span id="cb16-8"><a href="5_unify_information.html#cb16-8" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Arctic&quot;</span> <span class="ot">=</span> <span class="st">&quot;&quot;</span>,</span>
+<span id="cb16-9"><a href="5_unify_information.html#cb16-9" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Asia&quot;</span> <span class="ot">=</span> <span class="st">&quot;Asia&quot;</span>,</span>
+<span id="cb16-10"><a href="5_unify_information.html#cb16-10" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Asia And Pacific Islands&quot;</span> <span class="ot">=</span> <span class="st">&quot;Asia | Asia | Micronesia | Polynesia&quot;</span>,</span>
+<span id="cb16-11"><a href="5_unify_information.html#cb16-11" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Australasia (WGSRPD:5)&quot;</span> <span class="ot">=</span> <span class="st">&quot;Australia and New Zealand&quot;</span>,</span>
+<span id="cb16-12"><a href="5_unify_information.html#cb16-12" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Australia&quot;</span> <span class="ot">=</span> <span class="st">&quot;Australia and New Zealand&quot;</span>,</span>
+<span id="cb16-13"><a href="5_unify_information.html#cb16-13" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Australia (WGSRPD:50)&quot;</span> <span class="ot">=</span> <span class="st">&quot;Australia and New Zealand&quot;</span>,</span>
+<span id="cb16-14"><a href="5_unify_information.html#cb16-14" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Austria&quot;</span> <span class="ot">=</span> <span class="st">&quot;Western Europe&quot;</span>,</span>
+<span id="cb16-15"><a href="5_unify_information.html#cb16-15" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Balearic Islands&quot;</span> <span class="ot">=</span> <span class="st">&quot;Southern Europe&quot;</span>,</span>
+<span id="cb16-16"><a href="5_unify_information.html#cb16-16" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Balkan&quot;</span> <span class="ot">=</span> <span class="st">&quot;Southern Europe | Southern Europe&quot;</span>,</span>
+<span id="cb16-17"><a href="5_unify_information.html#cb16-17" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Bolivia, Chile, Argentina&quot;</span> <span class="ot">=</span> <span class="st">&quot;South America&quot;</span>,</span>
+<span id="cb16-18"><a href="5_unify_information.html#cb16-18" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Brazil, Uruguay, Paraguay, Argentina&quot;</span> <span class="ot">=</span> <span class="st">&quot;South America&quot;</span>,</span>
+<span id="cb16-19"><a href="5_unify_information.html#cb16-19" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Canada To Peru, Caribbean&quot;</span> <span class="ot">=</span> <span class="st">&quot;Americas&quot;</span>,</span>
+<span id="cb16-20"><a href="5_unify_information.html#cb16-20" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Canary Is. To Turkey&quot;</span> <span class="ot">=</span> <span class="st">&quot;Northern Africa | Northern Africa&quot;</span>,</span>
+<span id="cb16-21"><a href="5_unify_information.html#cb16-21" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Canary Islands (WGSRPD:21_CNY)&quot;</span> <span class="ot">=</span> <span class="st">&quot;Northern Africa&quot;</span>,</span>
+<span id="cb16-22"><a href="5_unify_information.html#cb16-22" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Cape Verde Is., Africa, Madagascar, Comoros&quot;</span> <span class="ot">=</span> <span class="st">&quot;Africa&quot;</span>,</span>
+<span id="cb16-23"><a href="5_unify_information.html#cb16-23" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Caribbean (WGSRPD:81)&quot;</span> <span class="ot">=</span> <span class="st">&quot;Caribbean&quot;</span>,</span>
+<span id="cb16-24"><a href="5_unify_information.html#cb16-24" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Caribbean To Brazil&quot;</span> <span class="ot">=</span> <span class="st">&quot;Caribbean | Caribbean&quot;</span>,</span>
+<span id="cb16-25"><a href="5_unify_information.html#cb16-25" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Carpathians&quot;</span> <span class="ot">=</span> <span class="st">&quot;Eastern Europe&quot;</span>,</span>
+<span id="cb16-26"><a href="5_unify_information.html#cb16-26" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Caucasus region&quot;</span> <span class="ot">=</span> <span class="st">&quot;Western Asia&quot;</span>,</span>
+<span id="cb16-27"><a href="5_unify_information.html#cb16-27" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Central America (WGSRPD:80)&quot;</span> <span class="ot">=</span> <span class="st">&quot;Central America&quot;</span>,</span>
+<span id="cb16-28"><a href="5_unify_information.html#cb16-28" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Central And South America&quot;</span> <span class="ot">=</span> <span class="st">&quot;Central America | Central America&quot;</span>,</span>
+<span id="cb16-29"><a href="5_unify_information.html#cb16-29" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Central Asia&quot;</span> <span class="ot">=</span> <span class="st">&quot;Central Asia&quot;</span>,</span>
+<span id="cb16-30"><a href="5_unify_information.html#cb16-30" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;central Europe&quot;</span> <span class="ot">=</span> <span class="st">&quot;Western Europe | Western Europe | Eastern Europe&quot;</span>,</span>
+<span id="cb16-31"><a href="5_unify_information.html#cb16-31" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;central Italy&quot;</span> <span class="ot">=</span> <span class="st">&quot;Southern Europe&quot;</span>,</span>
+<span id="cb16-32"><a href="5_unify_information.html#cb16-32" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;central Mediterranean coastal areas&quot;</span> <span class="ot">=</span> <span class="st">&quot;Southern Europe | Southern Europe&quot;</span>,</span>
+<span id="cb16-33"><a href="5_unify_information.html#cb16-33" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;central Turkey&quot;</span> <span class="ot">=</span> <span class="st">&quot;Western Asia&quot;</span>,</span>
+<span id="cb16-34"><a href="5_unify_information.html#cb16-34" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Central, South America&quot;</span> <span class="ot">=</span> <span class="st">&quot;Central America | Central America&quot;</span>,</span>
+<span id="cb16-35"><a href="5_unify_information.html#cb16-35" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;China&quot;</span> <span class="ot">=</span> <span class="st">&quot;Eastern Asia&quot;</span>,</span>
+<span id="cb16-36"><a href="5_unify_information.html#cb16-36" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;China (WGSRPD:36)&quot;</span> <span class="ot">=</span> <span class="st">&quot;Eastern Asia&quot;</span>,</span>
+<span id="cb16-37"><a href="5_unify_information.html#cb16-37" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;circum western Mediterranean coastal areas&quot;</span> <span class="ot">=</span> <span class="st">&quot;Southern Europe | Southern Europe&quot;</span>,</span>
+<span id="cb16-38"><a href="5_unify_information.html#cb16-38" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;circum-Mediterranean&quot;</span> <span class="ot">=</span> <span class="st">&quot;Southern Europe | Southern Europe&quot;</span>,</span>
+<span id="cb16-39"><a href="5_unify_information.html#cb16-39" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;coastal areas of the western Balkan&quot;</span> <span class="ot">=</span> <span class="st">&quot;Southern Europe&quot;</span>,</span>
+<span id="cb16-40"><a href="5_unify_information.html#cb16-40" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Corsica&quot;</span> <span class="ot">=</span> <span class="st">&quot;Southern Europe&quot;</span>,</span>
+<span id="cb16-41"><a href="5_unify_information.html#cb16-41" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Cosmopolitan&quot;</span> <span class="ot">=</span> <span class="st">&quot;&quot;</span>,</span>
+<span id="cb16-42"><a href="5_unify_information.html#cb16-42" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Costa Rica (WGSRPD:80_COS)&quot;</span> <span class="ot">=</span> <span class="st">&quot;Central America&quot;</span>,</span>
+<span id="cb16-43"><a href="5_unify_information.html#cb16-43" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Costa Rica, Panama&quot;</span> <span class="ot">=</span> <span class="st">&quot;Central America&quot;</span>,</span>
+<span id="cb16-44"><a href="5_unify_information.html#cb16-44" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Crete&quot;</span> <span class="ot">=</span> <span class="st">&quot;Southern Europe&quot;</span>,</span>
+<span id="cb16-45"><a href="5_unify_information.html#cb16-45" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;cultivated origin&quot;</span> <span class="ot">=</span> <span class="st">&quot;&quot;</span>,</span>
+<span id="cb16-46"><a href="5_unify_information.html#cb16-46" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Cyprus, Turkey, Middle East, Egypt, Sudan&quot;</span> <span class="ot">=</span> <span class="st">&quot;Western Asia | Western Asia&quot;</span>,</span>
+<span id="cb16-47"><a href="5_unify_information.html#cb16-47" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;East Asia&quot;</span> <span class="ot">=</span> <span class="st">&quot;Eastern Asia&quot;</span>,</span>
+<span id="cb16-48"><a href="5_unify_information.html#cb16-48" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;eastern Africa&quot;</span> <span class="ot">=</span> <span class="st">&quot;Eastern Africa&quot;</span>,</span>
+<span id="cb16-49"><a href="5_unify_information.html#cb16-49" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Eastern Africa&quot;</span> <span class="ot">=</span> <span class="st">&quot;Eastern Africa&quot;</span>,</span>
+<span id="cb16-50"><a href="5_unify_information.html#cb16-50" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Eastern Asia (WGSRPD:38)&quot;</span> <span class="ot">=</span> <span class="st">&quot;Eastern Asia&quot;</span>,</span>
+<span id="cb16-51"><a href="5_unify_information.html#cb16-51" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Eastern Asian Russia&quot;</span> <span class="ot">=</span> <span class="st">&quot;Eastern Asia | Eastern Asia&quot;</span>,</span>
+<span id="cb16-52"><a href="5_unify_information.html#cb16-52" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Eastern Europe&quot;</span> <span class="ot">=</span> <span class="st">&quot;Eastern Europe&quot;</span>,</span>
+<span id="cb16-53"><a href="5_unify_information.html#cb16-53" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Eastern Europe (WGSRPD:14)&quot;</span> <span class="ot">=</span> <span class="st">&quot;Eastern Europe&quot;</span>,</span>
+<span id="cb16-54"><a href="5_unify_information.html#cb16-54" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Eastern North America&quot;</span> <span class="ot">=</span> <span class="st">&quot;Northern America&quot;</span>,</span>
+<span id="cb16-55"><a href="5_unify_information.html#cb16-55" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Eastern Palearctic Including China, Korea, Japan&quot;</span> <span class="ot">=</span> <span class="st">&quot;Eastern Asia&quot;</span>,</span>
+<span id="cb16-56"><a href="5_unify_information.html#cb16-56" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Egypt, Ethiopia, Kenya, Uganda, Rwanda&quot;</span> <span class="ot">=</span> <span class="st">&quot;Northern Africa | Northern Africa&quot;</span>,</span>
+<span id="cb16-57"><a href="5_unify_information.html#cb16-57" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Ethiopia&quot;</span> <span class="ot">=</span> <span class="st">&quot;Northern Africa&quot;</span>,</span>
+<span id="cb16-58"><a href="5_unify_information.html#cb16-58" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Eurasia&quot;</span> <span class="ot">=</span> <span class="st">&quot;Europe | Europe&quot;</span>,</span>
+<span id="cb16-59"><a href="5_unify_information.html#cb16-59" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Eurasia Africa&quot;</span> <span class="ot">=</span> <span class="st">&quot;Europe | Europe | Africa&quot;</span>,</span>
+<span id="cb16-60"><a href="5_unify_information.html#cb16-60" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Europe (WGSRPD:1)&quot;</span> <span class="ot">=</span> <span class="st">&quot;Europe&quot;</span>,</span>
+<span id="cb16-61"><a href="5_unify_information.html#cb16-61" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Europe To Azerbaijan, Egypt&quot;</span> <span class="ot">=</span> <span class="st">&quot;Europe | Europe | Northern Africa&quot;</span>,</span>
+<span id="cb16-62"><a href="5_unify_information.html#cb16-62" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Europe To Northern Africa&quot;</span> <span class="ot">=</span> <span class="st">&quot;Europe | Europe&quot;</span>,</span>
+<span id="cb16-63"><a href="5_unify_information.html#cb16-63" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Europe, Africa, Yemen, Pakistan, Philippines&quot;</span> <span class="ot">=</span> <span class="st">&quot;Europe | Europe | Asia&quot;</span>,</span>
+<span id="cb16-64"><a href="5_unify_information.html#cb16-64" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Europe, North Africa To Near East, Turkey, Caucasus, Russia To Central Asia, Iran, Afghanistan, China, Mongolia, Korea&quot;</span> <span class="ot">=</span> <span class="st">&quot;Europe | Europe | Western Asia&quot;</span>,</span>
+<span id="cb16-65"><a href="5_unify_information.html#cb16-65" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Galapagos (WGSRPD:GAL)&quot;</span> <span class="ot">=</span> <span class="st">&quot;South America&quot;</span>,</span>
+<span id="cb16-66"><a href="5_unify_information.html#cb16-66" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Greece&quot;</span> <span class="ot">=</span> <span class="st">&quot;Southern Europe&quot;</span>,</span>
+<span id="cb16-67"><a href="5_unify_information.html#cb16-67" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Hawaiian Islands (WGSRPD:HI)&quot;</span> <span class="ot">=</span> <span class="st">&quot;Northern America&quot;</span>,</span>
+<span id="cb16-68"><a href="5_unify_information.html#cb16-68" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;hybrid origin&quot;</span> <span class="ot">=</span> <span class="st">&quot;&quot;</span>,</span>
+<span id="cb16-69"><a href="5_unify_information.html#cb16-69" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Iberia&quot;</span> <span class="ot">=</span> <span class="st">&quot;Southern Europe&quot;</span>,</span>
+<span id="cb16-70"><a href="5_unify_information.html#cb16-70" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Iberian Peninsula&quot;</span> <span class="ot">=</span> <span class="st">&quot;Southern Europe&quot;</span>,</span>
+<span id="cb16-71"><a href="5_unify_information.html#cb16-71" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;India, Southeast Asia To Australia, New Zealand&quot;</span> <span class="ot">=</span> <span class="st">&quot;Southern Asia | Southern Asia | Australia and New Zealand&quot;</span>,</span>
+<span id="cb16-72"><a href="5_unify_information.html#cb16-72" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Indian Subcontinent (WGSRPD:40)&quot;</span> <span class="ot">=</span> <span class="st">&quot;Southern Asia&quot;</span>,</span>
+<span id="cb16-73"><a href="5_unify_information.html#cb16-73" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Indo-Pacific&quot;</span> <span class="ot">=</span> <span class="st">&quot;Africa | Africa | Australia and New Zealand&quot;</span>,</span>
+<span id="cb16-74"><a href="5_unify_information.html#cb16-74" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Indonesia (WGSRPD:ID)&quot;</span> <span class="ot">=</span> <span class="st">&quot;Southeastern Asia&quot;</span>,</span>
+<span id="cb16-75"><a href="5_unify_information.html#cb16-75" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Italian Peninsula&quot;</span> <span class="ot">=</span> <span class="st">&quot;Southern Europe&quot;</span>,</span>
+<span id="cb16-76"><a href="5_unify_information.html#cb16-76" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Italy&quot;</span> <span class="ot">=</span> <span class="st">&quot;Southern Europe&quot;</span>,</span>
+<span id="cb16-77"><a href="5_unify_information.html#cb16-77" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Japan (WGSRPD:38_JAP)&quot;</span> <span class="ot">=</span> <span class="st">&quot;Eastern Asia&quot;</span>,</span>
+<span id="cb16-78"><a href="5_unify_information.html#cb16-78" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Japan (WGSRPD:JAP)&quot;</span> <span class="ot">=</span> <span class="st">&quot;Eastern Asia&quot;</span>,</span>
+<span id="cb16-79"><a href="5_unify_information.html#cb16-79" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Macaronesia&quot;</span> <span class="ot">=</span> <span class="st">&quot;Northern Africa&quot;</span>,</span>
+<span id="cb16-80"><a href="5_unify_information.html#cb16-80" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Macaronesia, Europe, North Africa To Turkey, Caucasus, Turkmenistan, Iran&quot;</span> <span class="ot">=</span> <span class="st">&quot;Northern Africa | Northern Africa | Western Asia&quot;</span>,</span>
+<span id="cb16-81"><a href="5_unify_information.html#cb16-81" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Macaronesia, North Africa, Europe, Turkey, Caucasus, Near East, Kazakhstan&quot;</span> <span class="ot">=</span> <span class="st">&quot;Northern Africa | Northern Africa | Western Asia&quot;</span>,</span>
+<span id="cb16-82"><a href="5_unify_information.html#cb16-82" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Madagascar (WGSRPD:MDG)&quot;</span> <span class="ot">=</span> <span class="st">&quot;Eastern Africa&quot;</span>,</span>
+<span id="cb16-83"><a href="5_unify_information.html#cb16-83" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Mallorca&quot;</span> <span class="ot">=</span> <span class="st">&quot;Southern Europe&quot;</span>,</span>
+<span id="cb16-84"><a href="5_unify_information.html#cb16-84" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Mediterranean&quot;</span> <span class="ot">=</span> <span class="st">&quot;Southern Europe&quot;</span>,</span>
+<span id="cb16-85"><a href="5_unify_information.html#cb16-85" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Mediterranean &amp; Portugal&quot;</span> <span class="ot">=</span> <span class="st">&quot;Southern Europe&quot;</span>,</span>
+<span id="cb16-86"><a href="5_unify_information.html#cb16-86" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Mediterranean To Central Asia&quot;</span> <span class="ot">=</span> <span class="st">&quot;Southern Europe | Southern Europe&quot;</span>,</span>
+<span id="cb16-87"><a href="5_unify_information.html#cb16-87" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Mediterranean To Russia&quot;</span> <span class="ot">=</span> <span class="st">&quot;Southern Europe | Southern Europe&quot;</span>,</span>
+<span id="cb16-88"><a href="5_unify_information.html#cb16-88" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Mediterranean To Turkey, Israel&quot;</span> <span class="ot">=</span> <span class="st">&quot;Southern Europe | Southern Europe&quot;</span>,</span>
+<span id="cb16-89"><a href="5_unify_information.html#cb16-89" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Mediterranean, Africa, India, Myanmar, China&quot;</span> <span class="ot">=</span> <span class="st">&quot;Southern Europe | Southern Europe | Asia&quot;</span>,</span>
+<span id="cb16-90"><a href="5_unify_information.html#cb16-90" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Mediterranean, Northern Africa&quot;</span> <span class="ot">=</span> <span class="st">&quot;Southern Europe | Southern Europe&quot;</span>,</span>
+<span id="cb16-91"><a href="5_unify_information.html#cb16-91" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Middle Africa&quot;</span> <span class="ot">=</span> <span class="st">&quot;Middle Africa&quot;</span>,</span>
+<span id="cb16-92"><a href="5_unify_information.html#cb16-92" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Middle East&quot;</span> <span class="ot">=</span> <span class="st">&quot;Western Asia&quot;</span>,</span>
+<span id="cb16-93"><a href="5_unify_information.html#cb16-93" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Morocco&quot;</span> <span class="ot">=</span> <span class="st">&quot;Northern Africa&quot;</span>,</span>
+<span id="cb16-94"><a href="5_unify_information.html#cb16-94" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Nam&quot;</span> <span class="ot">=</span> <span class="st">&quot;Northern America&quot;</span>,</span>
+<span id="cb16-95"><a href="5_unify_information.html#cb16-95" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Near East&quot;</span> <span class="ot">=</span> <span class="st">&quot;Western Asia&quot;</span>,</span>
+<span id="cb16-96"><a href="5_unify_information.html#cb16-96" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Nearctic&quot;</span> <span class="ot">=</span> <span class="st">&quot;&quot;</span>,</span>
+<span id="cb16-97"><a href="5_unify_information.html#cb16-97" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Neotropic&quot;</span> <span class="ot">=</span> <span class="st">&quot;&quot;</span>,</span>
+<span id="cb16-98"><a href="5_unify_information.html#cb16-98" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;New Zealand&quot;</span> <span class="ot">=</span> <span class="st">&quot;Australia and New Zealand&quot;</span>,</span>
+<span id="cb16-99"><a href="5_unify_information.html#cb16-99" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;New Zealand (WGSRPD:51)&quot;</span> <span class="ot">=</span> <span class="st">&quot;Australia and New Zealand&quot;</span>,</span>
+<span id="cb16-100"><a href="5_unify_information.html#cb16-100" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;North Africa&quot;</span> <span class="ot">=</span> <span class="st">&quot;Northern Africa&quot;</span>,</span>
+<span id="cb16-101"><a href="5_unify_information.html#cb16-101" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;North America&quot;</span> <span class="ot">=</span> <span class="st">&quot;Northern America&quot;</span>,</span>
+<span id="cb16-102"><a href="5_unify_information.html#cb16-102" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;North America, Europe, North Africa, Turkey, Israel, Caucasus, Russia (European To Far East), Central Asia, China, Korea&quot;</span> <span class="ot">=</span> <span class="st">&quot;Northern America | Northern America | Asia | North Africa&quot;</span>,</span>
+<span id="cb16-103"><a href="5_unify_information.html#cb16-103" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;North Pacific Ocean&quot;</span> <span class="ot">=</span> <span class="st">&quot;&quot;</span>,</span>
+<span id="cb16-104"><a href="5_unify_information.html#cb16-104" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;North, Central And South America&quot;</span> <span class="ot">=</span> <span class="st">&quot;Americas&quot;</span>,</span>
+<span id="cb16-105"><a href="5_unify_information.html#cb16-105" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Northeast Asia&quot;</span> <span class="ot">=</span> <span class="st">&quot;Eastern Asia&quot;</span>,</span>
+<span id="cb16-106"><a href="5_unify_information.html#cb16-106" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Northern Africa&quot;</span> <span class="ot">=</span> <span class="st">&quot;Northern Africa&quot;</span>,</span>
+<span id="cb16-107"><a href="5_unify_information.html#cb16-107" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Northern Africa And Middle East&quot;</span> <span class="ot">=</span> <span class="st">&quot;Northern Africa | Northern Africa&quot;</span>,</span>
+<span id="cb16-108"><a href="5_unify_information.html#cb16-108" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Northern Africa, Southern Europe To Turkey&quot;</span> <span class="ot">=</span> <span class="st">&quot;Northern Africa | Northern Africa | Western Asia&quot;</span>,</span>
+<span id="cb16-109"><a href="5_unify_information.html#cb16-109" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Northern America&quot;</span> <span class="ot">=</span> <span class="st">&quot;Northern America&quot;</span>,</span>
+<span id="cb16-110"><a href="5_unify_information.html#cb16-110" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Northern America (WGSRPD:7)&quot;</span> <span class="ot">=</span> <span class="st">&quot;Northern America&quot;</span>,</span>
+<span id="cb16-111"><a href="5_unify_information.html#cb16-111" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;northern Balkan&quot;</span> <span class="ot">=</span> <span class="st">&quot;Eastern Europe&quot;</span>,</span>
+<span id="cb16-112"><a href="5_unify_information.html#cb16-112" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;northern coastal areas of the western Mediterranean&quot;</span> <span class="ot">=</span> <span class="st">&quot;Southern Europe&quot;</span>,</span>
+<span id="cb16-113"><a href="5_unify_information.html#cb16-113" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;northern Italy&quot;</span> <span class="ot">=</span> <span class="st">&quot;Southern Europe&quot;</span>,</span>
+<span id="cb16-114"><a href="5_unify_information.html#cb16-114" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;northern part of the Iberian Peninsula&quot;</span> <span class="ot">=</span> <span class="st">&quot;Southern Europe&quot;</span>,</span>
+<span id="cb16-115"><a href="5_unify_information.html#cb16-115" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;northwestern Croatia&quot;</span> <span class="ot">=</span> <span class="st">&quot;Southern Europe&quot;</span>,</span>
+<span id="cb16-116"><a href="5_unify_information.html#cb16-116" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;northwestern Italy&quot;</span> <span class="ot">=</span> <span class="st">&quot;Southern Europe&quot;</span>,</span>
+<span id="cb16-117"><a href="5_unify_information.html#cb16-117" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;nortwestern Africa&quot;</span> <span class="ot">=</span> <span class="st">&quot;Northern Africa&quot;</span>,</span>
+<span id="cb16-118"><a href="5_unify_information.html#cb16-118" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Palearctic&quot;</span> <span class="ot">=</span> <span class="st">&quot;&quot;</span>,</span>
+<span id="cb16-119"><a href="5_unify_information.html#cb16-119" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;pan-American&quot;</span> <span class="ot">=</span> <span class="st">&quot;Americas&quot;</span>,</span>
+<span id="cb16-120"><a href="5_unify_information.html#cb16-120" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Panama (WGSRPD:PAN)&quot;</span> <span class="ot">=</span> <span class="st">&quot;Central America&quot;</span>,</span>
+<span id="cb16-121"><a href="5_unify_information.html#cb16-121" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Pantropical&quot;</span> <span class="ot">=</span> <span class="st">&quot;&quot;</span>,</span>
+<span id="cb16-122"><a href="5_unify_information.html#cb16-122" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Papua New Guinea&quot;</span> <span class="ot">=</span> <span class="st">&quot;Melanesia&quot;</span>,</span>
+<span id="cb16-123"><a href="5_unify_information.html#cb16-123" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Philippines (WGSRPD:PHI)&quot;</span> <span class="ot">=</span> <span class="st">&quot;Southeastern Asia&quot;</span>,</span>
+<span id="cb16-124"><a href="5_unify_information.html#cb16-124" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Ponto-Caspian&quot;</span> <span class="ot">=</span> <span class="st">&quot;Eastern Europe&quot;</span>,</span>
+<span id="cb16-125"><a href="5_unify_information.html#cb16-125" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Portugal (WGSRPD:POR)&quot;</span> <span class="ot">=</span> <span class="st">&quot;Southern Europe&quot;</span>,</span>
+<span id="cb16-126"><a href="5_unify_information.html#cb16-126" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Probably Native To North America Only&quot;</span> <span class="ot">=</span> <span class="st">&quot;Northern America&quot;</span>,</span>
+<span id="cb16-127"><a href="5_unify_information.html#cb16-127" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Russia&quot;</span> <span class="ot">=</span> <span class="st">&quot;Eastern Europe&quot;</span>,</span>
+<span id="cb16-128"><a href="5_unify_information.html#cb16-128" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Sardinia&quot;</span> <span class="ot">=</span> <span class="st">&quot;Southern Europe&quot;</span>,</span>
+<span id="cb16-129"><a href="5_unify_information.html#cb16-129" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Sicily&quot;</span> <span class="ot">=</span> <span class="st">&quot;Southern Europe&quot;</span>,</span>
+<span id="cb16-130"><a href="5_unify_information.html#cb16-130" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Slovenia&quot;</span> <span class="ot">=</span> <span class="st">&quot;Eastern Europe&quot;</span>,</span>
+<span id="cb16-131"><a href="5_unify_information.html#cb16-131" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;South America&quot;</span> <span class="ot">=</span> <span class="st">&quot;South America&quot;</span>,</span>
+<span id="cb16-132"><a href="5_unify_information.html#cb16-132" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Southeast Asia&quot;</span> <span class="ot">=</span> <span class="st">&quot;Southeastern Asia&quot;</span>,</span>
+<span id="cb16-133"><a href="5_unify_information.html#cb16-133" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;southeastern Alps&quot;</span> <span class="ot">=</span> <span class="st">&quot;Southern Europe&quot;</span>,</span>
+<span id="cb16-134"><a href="5_unify_information.html#cb16-134" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Southeastern Asia&quot;</span> <span class="ot">=</span> <span class="st">&quot;Southeastern Asia&quot;</span>,</span>
+<span id="cb16-135"><a href="5_unify_information.html#cb16-135" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;southeastern Europe&quot;</span> <span class="ot">=</span> <span class="st">&quot;Southern Europe&quot;</span>,</span>
+<span id="cb16-136"><a href="5_unify_information.html#cb16-136" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Southeastern Europe (WGSRPD:13)&quot;</span> <span class="ot">=</span> <span class="st">&quot;Southern Europe&quot;</span>,</span>
+<span id="cb16-137"><a href="5_unify_information.html#cb16-137" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;southeastern France&quot;</span> <span class="ot">=</span> <span class="st">&quot;Western Europe&quot;</span>,</span>
+<span id="cb16-138"><a href="5_unify_information.html#cb16-138" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Southern Africa&quot;</span> <span class="ot">=</span> <span class="st">&quot;Southern Africa&quot;</span>,</span>
+<span id="cb16-139"><a href="5_unify_information.html#cb16-139" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Southern Africa (WGSRPD:27)&quot;</span> <span class="ot">=</span> <span class="st">&quot;Southern Africa&quot;</span>,</span>
+<span id="cb16-140"><a href="5_unify_information.html#cb16-140" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;southern Alps&quot;</span> <span class="ot">=</span> <span class="st">&quot;Southern Europe&quot;</span>,</span>
+<span id="cb16-141"><a href="5_unify_information.html#cb16-141" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Southern America (WGSRPD:8)&quot;</span> <span class="ot">=</span> <span class="st">&quot;South America&quot;</span>,</span>
+<span id="cb16-142"><a href="5_unify_information.html#cb16-142" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Southern Asia&quot;</span> <span class="ot">=</span> <span class="st">&quot;Southern Asia&quot;</span>,</span>
+<span id="cb16-143"><a href="5_unify_information.html#cb16-143" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;southern Europe&quot;</span> <span class="ot">=</span> <span class="st">&quot;Southern Europe&quot;</span>,</span>
+<span id="cb16-144"><a href="5_unify_information.html#cb16-144" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Southern Europe&quot;</span> <span class="ot">=</span> <span class="st">&quot;Southern Europe&quot;</span>,</span>
+<span id="cb16-145"><a href="5_unify_information.html#cb16-145" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Southern Europe, Africa, Turkey, Caucasus, Near East, Iran&quot;</span> <span class="ot">=</span> <span class="st">&quot;Southern Europe | Southern Europe | Western Asia&quot;</span>,</span>
+<span id="cb16-146"><a href="5_unify_information.html#cb16-146" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;southern France&quot;</span> <span class="ot">=</span> <span class="st">&quot;Western Europe&quot;</span>,</span>
+<span id="cb16-147"><a href="5_unify_information.html#cb16-147" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Southern Hemisphere&quot;</span> <span class="ot">=</span> <span class="st">&quot;&quot;</span>,</span>
+<span id="cb16-148"><a href="5_unify_information.html#cb16-148" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Southwestern Africa&quot;</span> <span class="ot">=</span> <span class="st">&quot;Southern Africa&quot;</span>,</span>
+<span id="cb16-149"><a href="5_unify_information.html#cb16-149" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;southwestern France&quot;</span> <span class="ot">=</span> <span class="st">&quot;Western Europe&quot;</span>,</span>
+<span id="cb16-150"><a href="5_unify_information.html#cb16-150" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;southwestern Germany&quot;</span> <span class="ot">=</span> <span class="st">&quot;Western Europe&quot;</span>,</span>
+<span id="cb16-151"><a href="5_unify_information.html#cb16-151" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Spain&quot;</span> <span class="ot">=</span> <span class="st">&quot;Southern Europe&quot;</span>,</span>
+<span id="cb16-152"><a href="5_unify_information.html#cb16-152" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Spain (WGSRPD:SPA)&quot;</span> <span class="ot">=</span> <span class="st">&quot;Southern Europe&quot;</span>,</span>
+<span id="cb16-153"><a href="5_unify_information.html#cb16-153" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Spain, Italy, North Africa&quot;</span> <span class="ot">=</span> <span class="st">&quot;Southern Europe | Southern Europe&quot;</span>,</span>
+<span id="cb16-154"><a href="5_unify_information.html#cb16-154" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Sub-Saharan Africa&quot;</span> <span class="ot">=</span> <span class="st">&quot;Western Africa | Western Africa | Eastern Africa | Southern Africa&quot;</span>,</span>
+<span id="cb16-155"><a href="5_unify_information.html#cb16-155" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Switzerland&quot;</span> <span class="ot">=</span> <span class="st">&quot;Western Europe&quot;</span>,</span>
+<span id="cb16-156"><a href="5_unify_information.html#cb16-156" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Tanzania (WGSRPD:TAN)&quot;</span> <span class="ot">=</span> <span class="st">&quot;Eastern Africa&quot;</span>,</span>
+<span id="cb16-157"><a href="5_unify_information.html#cb16-157" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Tasmania (WGSRPD:50_TAS)&quot;</span> <span class="ot">=</span> <span class="st">&quot;Australia and New Zealand&quot;</span>,</span>
+<span id="cb16-158"><a href="5_unify_information.html#cb16-158" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Temperate Asia&quot;</span> <span class="ot">=</span> <span class="st">&quot;Eastern Asia | Eastern Asia | Eastern Europe | Western Asia&quot;</span>,</span>
+<span id="cb16-159"><a href="5_unify_information.html#cb16-159" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;temperate Asia (WGSRPD:3)&quot;</span> <span class="ot">=</span> <span class="st">&quot;Eastern Asia | Eastern Asia | Eastern Europe | Western Asia&quot;</span>,</span>
+<span id="cb16-160"><a href="5_unify_information.html#cb16-160" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Tropical Africa&quot;</span> <span class="ot">=</span> <span class="st">&quot;&quot;</span>,</span>
+<span id="cb16-161"><a href="5_unify_information.html#cb16-161" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Tropical and warm seas&quot;</span> <span class="ot">=</span> <span class="st">&quot;&quot;</span>,</span>
+<span id="cb16-162"><a href="5_unify_information.html#cb16-162" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Tropical Asia&quot;</span> <span class="ot">=</span> <span class="st">&quot;Southern Asia | Southern Asia&quot;</span>,</span>
+<span id="cb16-163"><a href="5_unify_information.html#cb16-163" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;tropical Asia (WGSRPD:4)&quot;</span> <span class="ot">=</span> <span class="st">&quot;Southern Asia | Southern Asia&quot;</span>,</span>
+<span id="cb16-164"><a href="5_unify_information.html#cb16-164" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;tropical western Africa&quot;</span> <span class="ot">=</span> <span class="st">&quot;Western Africa&quot;</span>,</span>
+<span id="cb16-165"><a href="5_unify_information.html#cb16-165" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Tunisia&quot;</span> <span class="ot">=</span> <span class="st">&quot;Northern Africa&quot;</span>,</span>
+<span id="cb16-166"><a href="5_unify_information.html#cb16-166" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;unclear&quot;</span> <span class="ot">=</span> <span class="st">&quot;&quot;</span>,</span>
+<span id="cb16-167"><a href="5_unify_information.html#cb16-167" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;United States&quot;</span> <span class="ot">=</span> <span class="st">&quot;Northern America&quot;</span>,</span>
+<span id="cb16-168"><a href="5_unify_information.html#cb16-168" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Usa To Guatemala&quot;</span> <span class="ot">=</span> <span class="st">&quot;Northern America | Northern America&quot;</span>,</span>
+<span id="cb16-169"><a href="5_unify_information.html#cb16-169" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;West Africa&quot;</span> <span class="ot">=</span> <span class="st">&quot;Western Africa&quot;</span>,</span>
+<span id="cb16-170"><a href="5_unify_information.html#cb16-170" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Western Africa&quot;</span> <span class="ot">=</span> <span class="st">&quot;Western Africa&quot;</span>,</span>
+<span id="cb16-171"><a href="5_unify_information.html#cb16-171" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Western Asia (WGSRPD:34)&quot;</span> <span class="ot">=</span> <span class="st">&quot;Western Asia&quot;</span>,</span>
+<span id="cb16-172"><a href="5_unify_information.html#cb16-172" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Western Atlantic&quot;</span> <span class="ot">=</span> <span class="st">&quot;&quot;</span>,</span>
+<span id="cb16-173"><a href="5_unify_information.html#cb16-173" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;western Balkan&quot;</span> <span class="ot">=</span> <span class="st">&quot;Southern Europe&quot;</span>,</span>
+<span id="cb16-174"><a href="5_unify_information.html#cb16-174" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;western circum-Mediterranean&quot;</span> <span class="ot">=</span> <span class="st">&quot;Southern Europe | Southern Europe&quot;</span>,</span>
+<span id="cb16-175"><a href="5_unify_information.html#cb16-175" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;western Italy&quot;</span> <span class="ot">=</span> <span class="st">&quot;Southern Europe&quot;</span>,</span>
+<span id="cb16-176"><a href="5_unify_information.html#cb16-176" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;western Mediterranean&quot;</span> <span class="ot">=</span> <span class="st">&quot;Southern Europe&quot;</span>,</span>
+<span id="cb16-177"><a href="5_unify_information.html#cb16-177" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;western Mediterranean coastal areas&quot;</span> <span class="ot">=</span> <span class="st">&quot;Southern Europe&quot;</span>,</span>
+<span id="cb16-178"><a href="5_unify_information.html#cb16-178" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;western Mediterranean region&quot;</span> <span class="ot">=</span> <span class="st">&quot;Southern Europe&quot;</span>,</span>
+<span id="cb16-179"><a href="5_unify_information.html#cb16-179" aria-hidden="true" tabindex="-1"></a>    <span class="at">.default =</span> <span class="st">&quot;&quot;</span> <span class="co"># Change to description to discover new values</span></span>
+<span id="cb16-180"><a href="5_unify_information.html#cb16-180" aria-hidden="true" tabindex="-1"></a>  ))</span></code></pre></div>
 </div>
-<div id="degree-of-establishment" class="section level3">
+<div id="degree-of-establishment" class="section level3" number="5.5.2">
 <h3><span class="header-section-number">5.5.2</span> Degree of establishment</h3>
 <ol style="list-style-type: decimal">
 <li>Rename invasion stage to degree of establishment, so the values can be combined.</li>
 </ol>
 </div>
-<div id="combine-and-process-descriptions" class="section level3">
+<div id="combine-and-process-descriptions" class="section level3" number="5.5.3">
 <h3><span class="header-section-number">5.5.3</span> Combine and process descriptions</h3>
 <ol style="list-style-type: decimal">
 <li><p>Combine descriptions.</p></li>
@@ -733,57 +748,57 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><p>Remove <code>NA</code> and empty descriptions.</p></li>
 <li><p>Select unique descriptions (within their type) within a checklist.</p></li>
 </ol>
-<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="5_unify_information.html#cb17-1"></a>descriptions_unified &lt;-</span>
-<span id="cb17-2"><a href="5_unify_information.html#cb17-2"></a><span class="st">  </span>descriptions_unified <span class="op">%&gt;%</span></span>
-<span id="cb17-3"><a href="5_unify_information.html#cb17-3"></a></span>
-<span id="cb17-4"><a href="5_unify_information.html#cb17-4"></a><span class="st">  </span><span class="co"># Join species profile with taxon to get verificationKey and checklist order</span></span>
-<span id="cb17-5"><a href="5_unify_information.html#cb17-5"></a><span class="st">  </span><span class="kw">left_join</span>(taxa, <span class="dt">on =</span> taxonKey) <span class="op">%&gt;%</span></span>
-<span id="cb17-6"><a href="5_unify_information.html#cb17-6"></a></span>
-<span id="cb17-7"><a href="5_unify_information.html#cb17-7"></a><span class="st">  </span><span class="co"># Remove records that have no verificationKey (e.g. one wasn&#39;t assigned yet)</span></span>
-<span id="cb17-8"><a href="5_unify_information.html#cb17-8"></a><span class="st">  </span><span class="kw">filter</span>(<span class="op">!</span><span class="kw">is.na</span>(verificationKey)) <span class="op">%&gt;%</span></span>
-<span id="cb17-9"><a href="5_unify_information.html#cb17-9"></a></span>
-<span id="cb17-10"><a href="5_unify_information.html#cb17-10"></a><span class="st">  </span><span class="co"># Group by type and verificationKey within checklist</span></span>
-<span id="cb17-11"><a href="5_unify_information.html#cb17-11"></a><span class="st">  </span><span class="kw">group_by</span>(</span>
-<span id="cb17-12"><a href="5_unify_information.html#cb17-12"></a>    datasetKey,</span>
-<span id="cb17-13"><a href="5_unify_information.html#cb17-13"></a>    checklistOrder,</span>
-<span id="cb17-14"><a href="5_unify_information.html#cb17-14"></a>    verificationKey,</span>
-<span id="cb17-15"><a href="5_unify_information.html#cb17-15"></a>    type,</span>
-<span id="cb17-16"><a href="5_unify_information.html#cb17-16"></a>    description</span>
-<span id="cb17-17"><a href="5_unify_information.html#cb17-17"></a>  ) <span class="op">%&gt;%</span></span>
-<span id="cb17-18"><a href="5_unify_information.html#cb17-18"></a></span>
-<span id="cb17-19"><a href="5_unify_information.html#cb17-19"></a><span class="st">  </span><span class="co"># Take first taxonKey and scientificName</span></span>
-<span id="cb17-20"><a href="5_unify_information.html#cb17-20"></a><span class="st">  </span><span class="kw">summarize</span>(</span>
-<span id="cb17-21"><a href="5_unify_information.html#cb17-21"></a>    <span class="dt">taxonKey =</span> <span class="kw">first</span>(taxonKey),</span>
-<span id="cb17-22"><a href="5_unify_information.html#cb17-22"></a>    <span class="dt">scientificName =</span> <span class="kw">first</span>(scientificName)</span>
-<span id="cb17-23"><a href="5_unify_information.html#cb17-23"></a>  )</span></code></pre></div>
+<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="5_unify_information.html#cb17-1" aria-hidden="true" tabindex="-1"></a>descriptions_unified <span class="ot">&lt;-</span></span>
+<span id="cb17-2"><a href="5_unify_information.html#cb17-2" aria-hidden="true" tabindex="-1"></a>  descriptions_unified <span class="sc">%&gt;%</span></span>
+<span id="cb17-3"><a href="5_unify_information.html#cb17-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-4"><a href="5_unify_information.html#cb17-4" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Join species profile with taxon to get verificationKey and checklist order</span></span>
+<span id="cb17-5"><a href="5_unify_information.html#cb17-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(taxa, <span class="at">on =</span> taxonKey) <span class="sc">%&gt;%</span></span>
+<span id="cb17-6"><a href="5_unify_information.html#cb17-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-7"><a href="5_unify_information.html#cb17-7" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Remove records that have no verificationKey (e.g. one wasn&#39;t assigned yet)</span></span>
+<span id="cb17-8"><a href="5_unify_information.html#cb17-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(verificationKey)) <span class="sc">%&gt;%</span></span>
+<span id="cb17-9"><a href="5_unify_information.html#cb17-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-10"><a href="5_unify_information.html#cb17-10" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Group by type and verificationKey within checklist</span></span>
+<span id="cb17-11"><a href="5_unify_information.html#cb17-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(</span>
+<span id="cb17-12"><a href="5_unify_information.html#cb17-12" aria-hidden="true" tabindex="-1"></a>    datasetKey,</span>
+<span id="cb17-13"><a href="5_unify_information.html#cb17-13" aria-hidden="true" tabindex="-1"></a>    checklistOrder,</span>
+<span id="cb17-14"><a href="5_unify_information.html#cb17-14" aria-hidden="true" tabindex="-1"></a>    verificationKey,</span>
+<span id="cb17-15"><a href="5_unify_information.html#cb17-15" aria-hidden="true" tabindex="-1"></a>    type,</span>
+<span id="cb17-16"><a href="5_unify_information.html#cb17-16" aria-hidden="true" tabindex="-1"></a>    description</span>
+<span id="cb17-17"><a href="5_unify_information.html#cb17-17" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb17-18"><a href="5_unify_information.html#cb17-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-19"><a href="5_unify_information.html#cb17-19" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Take first taxonKey and scientificName</span></span>
+<span id="cb17-20"><a href="5_unify_information.html#cb17-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(</span>
+<span id="cb17-21"><a href="5_unify_information.html#cb17-21" aria-hidden="true" tabindex="-1"></a>    <span class="at">taxonKey =</span> <span class="fu">first</span>(taxonKey),</span>
+<span id="cb17-22"><a href="5_unify_information.html#cb17-22" aria-hidden="true" tabindex="-1"></a>    <span class="at">scientificName =</span> <span class="fu">first</span>(scientificName)</span>
+<span id="cb17-23"><a href="5_unify_information.html#cb17-23" aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div>
 <ol start="5" style="list-style-type: decimal">
 <li>Select unique descriptions (within their type) across checklists:</li>
 </ol>
-<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="5_unify_information.html#cb18-1"></a>descriptions_unified &lt;-</span>
-<span id="cb18-2"><a href="5_unify_information.html#cb18-2"></a><span class="st">  </span>descriptions_unified <span class="op">%&gt;%</span></span>
-<span id="cb18-3"><a href="5_unify_information.html#cb18-3"></a></span>
-<span id="cb18-4"><a href="5_unify_information.html#cb18-4"></a><span class="st">  </span><span class="co"># Sort by checklist order (trustworthiness)</span></span>
-<span id="cb18-5"><a href="5_unify_information.html#cb18-5"></a><span class="st">  </span><span class="kw">arrange</span>(checklistOrder) <span class="op">%&gt;%</span></span>
-<span id="cb18-6"><a href="5_unify_information.html#cb18-6"></a></span>
-<span id="cb18-7"><a href="5_unify_information.html#cb18-7"></a><span class="st">  </span><span class="co"># Group by type and verificationKey across checklists</span></span>
-<span id="cb18-8"><a href="5_unify_information.html#cb18-8"></a><span class="st">  </span><span class="kw">group_by</span>(</span>
-<span id="cb18-9"><a href="5_unify_information.html#cb18-9"></a>    type,</span>
-<span id="cb18-10"><a href="5_unify_information.html#cb18-10"></a>    description,</span>
-<span id="cb18-11"><a href="5_unify_information.html#cb18-11"></a>    verificationKey</span>
-<span id="cb18-12"><a href="5_unify_information.html#cb18-12"></a>  ) <span class="op">%&gt;%</span></span>
-<span id="cb18-13"><a href="5_unify_information.html#cb18-13"></a></span>
-<span id="cb18-14"><a href="5_unify_information.html#cb18-14"></a><span class="st">  </span><span class="co"># Select first datasetKey, taxonKey and scientificName</span></span>
-<span id="cb18-15"><a href="5_unify_information.html#cb18-15"></a><span class="st">  </span><span class="kw">summarize</span>(</span>
-<span id="cb18-16"><a href="5_unify_information.html#cb18-16"></a>    <span class="dt">datasetKey =</span> <span class="kw">first</span>(datasetKey),</span>
-<span id="cb18-17"><a href="5_unify_information.html#cb18-17"></a>    <span class="dt">taxonKey =</span> <span class="kw">first</span>(taxonKey),</span>
-<span id="cb18-18"><a href="5_unify_information.html#cb18-18"></a>    <span class="dt">scientificName =</span> <span class="kw">first</span>(scientificName)</span>
-<span id="cb18-19"><a href="5_unify_information.html#cb18-19"></a>  ) <span class="op">%&gt;%</span></span>
-<span id="cb18-20"><a href="5_unify_information.html#cb18-20"></a></span>
-<span id="cb18-21"><a href="5_unify_information.html#cb18-21"></a><span class="st">  </span><span class="co"># Move verificationKey to beginning and drop checklist_order</span></span>
-<span id="cb18-22"><a href="5_unify_information.html#cb18-22"></a><span class="st">  </span><span class="kw">select</span>(verificationKey, <span class="kw">everything</span>()) <span class="op">%&gt;%</span></span>
-<span id="cb18-23"><a href="5_unify_information.html#cb18-23"></a></span>
-<span id="cb18-24"><a href="5_unify_information.html#cb18-24"></a><span class="st">  </span><span class="co"># Sort by verificationKey and type</span></span>
-<span id="cb18-25"><a href="5_unify_information.html#cb18-25"></a><span class="st">  </span><span class="kw">arrange</span>(verificationKey, type)</span></code></pre></div>
+<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="5_unify_information.html#cb18-1" aria-hidden="true" tabindex="-1"></a>descriptions_unified <span class="ot">&lt;-</span></span>
+<span id="cb18-2"><a href="5_unify_information.html#cb18-2" aria-hidden="true" tabindex="-1"></a>  descriptions_unified <span class="sc">%&gt;%</span></span>
+<span id="cb18-3"><a href="5_unify_information.html#cb18-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-4"><a href="5_unify_information.html#cb18-4" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Sort by checklist order (trustworthiness)</span></span>
+<span id="cb18-5"><a href="5_unify_information.html#cb18-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(checklistOrder) <span class="sc">%&gt;%</span></span>
+<span id="cb18-6"><a href="5_unify_information.html#cb18-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-7"><a href="5_unify_information.html#cb18-7" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Group by type and verificationKey across checklists</span></span>
+<span id="cb18-8"><a href="5_unify_information.html#cb18-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(</span>
+<span id="cb18-9"><a href="5_unify_information.html#cb18-9" aria-hidden="true" tabindex="-1"></a>    type,</span>
+<span id="cb18-10"><a href="5_unify_information.html#cb18-10" aria-hidden="true" tabindex="-1"></a>    description,</span>
+<span id="cb18-11"><a href="5_unify_information.html#cb18-11" aria-hidden="true" tabindex="-1"></a>    verificationKey</span>
+<span id="cb18-12"><a href="5_unify_information.html#cb18-12" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb18-13"><a href="5_unify_information.html#cb18-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-14"><a href="5_unify_information.html#cb18-14" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Select first datasetKey, taxonKey and scientificName</span></span>
+<span id="cb18-15"><a href="5_unify_information.html#cb18-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(</span>
+<span id="cb18-16"><a href="5_unify_information.html#cb18-16" aria-hidden="true" tabindex="-1"></a>    <span class="at">datasetKey =</span> <span class="fu">first</span>(datasetKey),</span>
+<span id="cb18-17"><a href="5_unify_information.html#cb18-17" aria-hidden="true" tabindex="-1"></a>    <span class="at">taxonKey =</span> <span class="fu">first</span>(taxonKey),</span>
+<span id="cb18-18"><a href="5_unify_information.html#cb18-18" aria-hidden="true" tabindex="-1"></a>    <span class="at">scientificName =</span> <span class="fu">first</span>(scientificName)</span>
+<span id="cb18-19"><a href="5_unify_information.html#cb18-19" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb18-20"><a href="5_unify_information.html#cb18-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-21"><a href="5_unify_information.html#cb18-21" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Move verificationKey to beginning and drop checklist_order</span></span>
+<span id="cb18-22"><a href="5_unify_information.html#cb18-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(verificationKey, <span class="fu">everything</span>()) <span class="sc">%&gt;%</span></span>
+<span id="cb18-23"><a href="5_unify_information.html#cb18-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-24"><a href="5_unify_information.html#cb18-24" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Sort by verificationKey and type</span></span>
+<span id="cb18-25"><a href="5_unify_information.html#cb18-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(verificationKey, type)</span></code></pre></div>
 <ol start="6" style="list-style-type: decimal">
 <li>Save to <a href="https://github.com/trias-project/unified-checklist/blob/master/data/interim/descriptions_unified.csv">CSV</a>.</li>
 </ol>

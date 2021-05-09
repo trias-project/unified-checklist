@@ -14,6 +14,9 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 1043717,pathway,cbd_2014_pathway:release_biological_control,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164301260,"Cryptolaemus montrouzieri Mulsant, 1853"
 1047536,degree of establishment,established,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164301253,"Leptinotarsa decemlineata (Say, 1824)"
 1047536,native range,Northern America,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164301253,"Leptinotarsa decemlineata (Say, 1824)"
+1152186,degree of establishment,established,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164301247,"Callidiellum rufipenne Niisato, 2007"
+1152186,native range,Eastern Asia,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164301247,"Callidiellum rufipenne Niisato, 2007"
+1152186,pathway,cbd_2014_pathway:contaminant_on_plants,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164301247,"Callidiellum rufipenne Niisato, 2007"
 1194885,pathway,cbd_2014_pathway:contaminant_on_plants,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164301243,"Otiorhynchus meridionalis Gyllenhal, 1834"
 1194989,pathway,cbd_2014_pathway:contaminant_on_plants,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164301244,"Otiorhynchus cribricollis Gyllenhal, 1834"
 1195013,pathway,cbd_2014_pathway:contaminant_on_plants,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164301242,"Otiorhynchus aurifer Boheman, 1843"
@@ -1597,9 +1600,11 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 2498181,native range,South America,e1c3be64-2799-4342-8312-49d076993132,159498569,"Netta peposaca (Vieillot, 1816)"
 2498181,pathway,cbd_2014_pathway:escape_pet,e1c3be64-2799-4342-8312-49d076993132,159498569,"Netta peposaca (Vieillot, 1816)"
 2498252,native range,Africa,e1c3be64-2799-4342-8312-49d076993132,159498531,"Alopochen aegyptiaca (Linnaeus, 1766)"
+2498252,pathway,cbd_2014_pathway:escape,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042280,Alopochen aegyptiacus (Linnaeus 1766)
 2498252,pathway,cbd_2014_pathway:escape_farm,e1c3be64-2799-4342-8312-49d076993132,159498531,"Alopochen aegyptiaca (Linnaeus, 1766)"
 2498252,pathway,cbd_2014_pathway:escape_pet,e1c3be64-2799-4342-8312-49d076993132,159498531,"Alopochen aegyptiaca (Linnaeus, 1766)"
 2498252,pathway,cbd_2014_pathway:escape_zoo,e1c3be64-2799-4342-8312-49d076993132,159498531,"Alopochen aegyptiaca (Linnaeus, 1766)"
+2498252,pathway,cbd_2014_pathway:release,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042280,Alopochen aegyptiacus (Linnaeus 1766)
 2498283,native range,Central America,e1c3be64-2799-4342-8312-49d076993132,159498538,Cairina moschata (Established Feral)
 2498283,native range,South America,e1c3be64-2799-4342-8312-49d076993132,159498538,Cairina moschata (Established Feral)
 2498283,pathway,cbd_2014_pathway:escape_farm,e1c3be64-2799-4342-8312-49d076993132,159498538,Cairina moschata (Established Feral)
@@ -9958,24 +9963,8 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 5864277,native range,Southern Europe,289244ee-e1c1-49aa-b2d7-d379391ce265,140562997,Gammarus roeseli
 5864277,pathway,cbd_2014_pathway:corridor_water,289244ee-e1c1-49aa-b2d7-d379391ce265,140562997,Gammarus roeseli
 5879783,native range,Africa,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164301141,"Thaumatotibia leucotreta (Meyrick, 1913)"
-5890148,Introduced species abundance,in United Kingdom part of the Celtic Sea (Marine Region) : Common,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157127989,"Anguillicoloides crassus (Kuwahara, Niimi & Itagaki, 1974) Moravec & Taraschewski, 1988"
-5890148,Introduced species abundance,in United Kingdom part of the English Channel (Marine Region) : Common,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157127989,"Anguillicoloides crassus (Kuwahara, Niimi & Itagaki, 1974) Moravec & Taraschewski, 1988"
-5890148,Introduced species abundance,in United Kingdom part of the North Sea (Marine Region) : Common,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157127989,"Anguillicoloides crassus (Kuwahara, Niimi & Itagaki, 1974) Moravec & Taraschewski, 1988"
-5890148,Introduced species impact,in Germany (Nation) : Pathogen/parasite or carrier of a pathogen/parasite,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157127989,"Anguillicoloides crassus (Kuwahara, Niimi & Itagaki, 1974) Moravec & Taraschewski, 1988"
-5890148,Introduced species impact,in United Kingdom part of the North Sea (Marine Region) : Pathogen/parasite or carrier of a pathogen/parasite,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157127989,"Anguillicoloides crassus (Kuwahara, Niimi & Itagaki, 1974) Moravec & Taraschewski, 1988"
-5890148,Introduced species impact,in United States part of the North Atlantic Ocean (Marine Region) : Pathogen/parasite or carrier of a pathogen/parasite,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157127989,"Anguillicoloides crassus (Kuwahara, Niimi & Itagaki, 1974) Moravec & Taraschewski, 1988"
-5890148,Introduced species impact,Polish part of the Baltic Sea  (Marine Region) Pathogen/parasite or carrier of a pathogen/parasite,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157127989,"Anguillicoloides crassus (Kuwahara, Niimi & Itagaki, 1974) Moravec & Taraschewski, 1988"
-5890148,Introduced species impact,Russian part of the Baltic Sea  (Marine Region) Pathogen/parasite or carrier of a pathogen/parasite,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157127989,"Anguillicoloides crassus (Kuwahara, Niimi & Itagaki, 1974) Moravec & Taraschewski, 1988"
-5890148,Introduced species vector dispersal,in Belgian part of the North Sea: Aquaculture: accidental,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157127989,"Anguillicoloides crassus (Kuwahara, Niimi & Itagaki, 1974) Moravec & Taraschewski, 1988"
-5890148,Introduced species vector dispersal,in French part of the Mediterranean Sea - Western Basin (Marine Region) : Fisheries: accidental with deliberate translocations of fish or shellfish,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157127989,"Anguillicoloides crassus (Kuwahara, Niimi & Itagaki, 1974) Moravec & Taraschewski, 1988"
-5890148,Introduced species vector dispersal,in French part of the Mediterranean Sea - Western Basin (Marine Region) : Shipping,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157127989,"Anguillicoloides crassus (Kuwahara, Niimi & Itagaki, 1974) Moravec & Taraschewski, 1988"
-5890148,Introduced species vector dispersal,in Germany (Nation) : Fisheries: deliberate translocations of fish or shellfish to establish or support fishery,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157127989,"Anguillicoloides crassus (Kuwahara, Niimi & Itagaki, 1974) Moravec & Taraschewski, 1988"
-5890148,Introduced species vector dispersal,in United Kingdom part of the Celtic Sea (Marine Region) : Fisheries: accidental with deliberate translocations of fish or shellfish<br/>Most likely pathway of spread: eel transport. Endoparasite of Anguilla anguilla,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157127989,"Anguillicoloides crassus (Kuwahara, Niimi & Itagaki, 1974) Moravec & Taraschewski, 1988"
-5890148,Introduced species vector dispersal,in United Kingdom part of the English Channel (Marine Region) : Fisheries: accidental with deliberate translocations of fish or shellfish<br/>Most likely pathway of spread: eel transport. Endoparasite of Anguilla anguilla,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157127989,"Anguillicoloides crassus (Kuwahara, Niimi & Itagaki, 1974) Moravec & Taraschewski, 1988"
-5890148,Introduced species vector dispersal,in United Kingdom part of the North Sea (Marine Region) : Ships: general<br/>Most likely pathway of spread: eel transport. Endoparasite of Anguilla anguilla,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157127989,"Anguillicoloides crassus (Kuwahara, Niimi & Itagaki, 1974) Moravec & Taraschewski, 1988"
-5890148,Introduced species vector dispersal,in United States part of the North Atlantic Ocean (Marine Region) : Fisheries: deliberate translocations of fish or shellfish to establish or support fishery,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157127989,"Anguillicoloides crassus (Kuwahara, Niimi & Itagaki, 1974) Moravec & Taraschewski, 1988"
-5890148,Introduced species vector dispersal,Polish part of the Baltic Sea  (Marine Region) Fisheries: deliberate translocations of fish or shellfish to establish or support fishery,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157127989,"Anguillicoloides crassus (Kuwahara, Niimi & Itagaki, 1974) Moravec & Taraschewski, 1988"
-5890148,Introduced species vector dispersal,Russian part of the Baltic Sea (Marine Region) Fisheries: deliberate translocations of fish or shellfish to establish or support fishery,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157127989,"Anguillicoloides crassus (Kuwahara, Niimi & Itagaki, 1974) Moravec & Taraschewski, 1988"
+5890148,degree of establishment,established,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164300685,"Anguillicola crassus Kuwahara, Niimi & Itagaki, 1974"
+5890148,pathway,cbd_2014_pathway:contaminant_animal_parasite,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164300685,"Anguillicola crassus Kuwahara, Niimi & Itagaki, 1974"
 5892120,degree of establishment,established,289244ee-e1c1-49aa-b2d7-d379391ce265,140562916,Dugesia tigrina
 5892120,native range,Northern America,289244ee-e1c1-49aa-b2d7-d379391ce265,140562916,Dugesia tigrina
 5892120,pathway,cbd_2014_pathway:stowaway_other,289244ee-e1c1-49aa-b2d7-d379391ce265,140562916,Dugesia tigrina
@@ -11257,6 +11246,11 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 8080300,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266065,Pimpinella anisum L.
 8080300,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266065,Pimpinella anisum L.
 8080300,pathway,cbd_2014_pathway:escape_agriculture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266065,Pimpinella anisum L.
+8091002,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265035,Jovibarba sobolifera (Sims) Opiz
+8091002,native range,Eastern Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265035,Jovibarba sobolifera (Sims) Opiz
+8091002,native range,Eastern Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265035,Jovibarba sobolifera (Sims) Opiz
+8091002,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265035,Jovibarba sobolifera (Sims) Opiz
+8091002,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265035,Jovibarba sobolifera (Sims) Opiz
 8114833,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265515,Anarrhinum bellidifolium (L.) Willd.
 8114833,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265515,Anarrhinum bellidifolium (L.) Willd.
 8114833,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265515,Anarrhinum bellidifolium (L.) Willd.
@@ -11723,6 +11717,8 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 9508942,native range,Eastern Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266232,Origanum vulgare L. subsp. hirtum (Link) A. Terrac.
 9508942,native range,Eastern Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266232,Origanum vulgare L. subsp. hirtum (Link) A. Terrac.
 9508942,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266232,Origanum vulgare L. subsp. hirtum (Link) A. Terrac.
+9513097,degree of establishment,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164300735,Amanita inopinata D.A. Reid & Bas
+9513097,native range,Australia and New Zealand,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164300735,Amanita inopinata D.A. Reid & Bas
 9518324,degree of establishment,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164300843,Procyon cancrivorus
 9520065,degree of establishment,established,289244ee-e1c1-49aa-b2d7-d379391ce265,140562956,Ferrissia fragilis
 9520065,native range,Northern Africa,289244ee-e1c1-49aa-b2d7-d379391ce265,140562956,Ferrissia fragilis
@@ -11741,11 +11737,21 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 9691034,native range,Central America,e1c3be64-2799-4342-8312-49d076993132,159498332,Phoenicopterus ruber
 9691034,native range,South America,e1c3be64-2799-4342-8312-49d076993132,159498332,Phoenicopterus ruber
 9691034,pathway,cbd_2014_pathway:escape,e1c3be64-2799-4342-8312-49d076993132,159498332,Phoenicopterus ruber
+9738098,degree of establishment,established,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164300939,"Bellamya chinensis (Gray, 1834)"
+9738098,native range,Southeastern Asia,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164300939,"Bellamya chinensis (Gray, 1834)"
+9738098,pathway,cbd_2014_pathway:escape_pet,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164300939,"Bellamya chinensis (Gray, 1834)"
 9752149,degree of establishment,established (blackburn_2011:C3),e1c3be64-2799-4342-8312-49d076993132,159498405,Phasianus colchicus
 9752149,pathway,cbd_2014_pathway:escape_pet,e1c3be64-2799-4342-8312-49d076993132,159498405,Phasianus colchicus
 9752149,pathway,cbd_2014_pathway:release_hunting,e1c3be64-2799-4342-8312-49d076993132,159498405,Phasianus colchicus
 9791464,native range,Northern America,e1c3be64-2799-4342-8312-49d076993132,159498397,"Colinus virginianus (Linnaeus, 1758)"
 9791464,pathway,cbd_2014_pathway:escape_pet,e1c3be64-2799-4342-8312-49d076993132,159498397,"Colinus virginianus (Linnaeus, 1758)"
+9805907,degree of establishment,blackburn_et_al_2011:E,e082b10e-476f-43c1-aa61-f8d92f33029a,157063124,"Cernuella virgata (Da Costa, 1778)"
+9805907,native range,Southern Europe,e082b10e-476f-43c1-aa61-f8d92f33029a,157063124,"Cernuella virgata (Da Costa, 1778)"
+9805907,pathway,cbd_2014_pathway:release_other,e082b10e-476f-43c1-aa61-f8d92f33029a,157063124,"Cernuella virgata (Da Costa, 1778)"
+9805907,pathway,cbd_2014_pathway:stowaway_people_luggage,e082b10e-476f-43c1-aa61-f8d92f33029a,157063124,"Cernuella virgata (Da Costa, 1778)"
+9805907,pathway,cbd_2014_pathway:stowaway_vehicles,e082b10e-476f-43c1-aa61-f8d92f33029a,157063124,"Cernuella virgata (Da Costa, 1778)"
+9805907,pathway,cbd_2014_pathway:unaided,e082b10e-476f-43c1-aa61-f8d92f33029a,157063124,"Cernuella virgata (Da Costa, 1778)"
+9852138,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266840,Verbascum x angulosum Teyber
 9890104,degree of establishment,blackburn_et_al_2011:E,e082b10e-476f-43c1-aa61-f8d92f33029a,157063040,"Candidula intersecta (Poiret, 1801)"
 9890104,native range,Southern Europe,e082b10e-476f-43c1-aa61-f8d92f33029a,157063040,"Candidula intersecta (Poiret, 1801)"
 9890104,native range,Western Europe,e082b10e-476f-43c1-aa61-f8d92f33029a,157063040,"Candidula intersecta (Poiret, 1801)"

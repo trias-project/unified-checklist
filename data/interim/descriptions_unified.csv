@@ -1849,6 +1849,9 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 2701618,pathway,cbd_2014_pathway:contaminant_on_animals,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266982,Juncus imbricatus Laharpe
 2701649,degree of establishment,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266987,Juncus xiphioides E. Mey.
 2701649,native range,Northern America,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266987,Juncus xiphioides E. Mey.
+2701879,degree of establishment,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,168400558,Juncus striatus Schousbou
+2701879,native range,Africa,9ff7d317-609b-4c08-bd86-3bc404b77c42,168400558,Juncus striatus Schousbou
+2701879,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,168400558,Juncus striatus Schousbou
 2701986,degree of establishment,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266992,Juncus canadensis J. Gay ex Laharpe
 2701986,native range,Northern America,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266992,Juncus canadensis J. Gay ex Laharpe
 2701986,pathway,cbd_2014_pathway:contaminant_on_animals,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266992,Juncus canadensis J. Gay ex Laharpe
@@ -2002,6 +2005,8 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 2703765,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265910,Bromus arenarius Labill.
 2703765,native range,Australia and New Zealand,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265910,Bromus arenarius Labill.
 2703765,pathway,cbd_2014_pathway:contaminant_on_animals,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265910,Bromus arenarius Labill.
+2703776,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265586,Bromus polyanthus Scribn.
+2703776,native range,Northern America,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265586,Bromus polyanthus Scribn.
 2703892,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265728,Enneapogon desvauxii Beauv.
 2703892,native range,Africa,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265728,Enneapogon desvauxii Beauv.
 2703892,native range,Americas,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265728,Enneapogon desvauxii Beauv.
@@ -2533,6 +2538,10 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 2769493,degree of establishment,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267001,Maianthemum stellatum (L.) Link
 2769493,native range,Northern America,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267001,Maianthemum stellatum (L.) Link
 2769493,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267001,Maianthemum stellatum (L.) Link
+2769620,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,168400563,Muscari azureum Fenzl
+2769620,native range,Eastern Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,168400563,Muscari azureum Fenzl
+2769620,native range,Eastern Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,168400563,Muscari azureum Fenzl
+2769620,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,168400563,Muscari azureum Fenzl
 2769766,degree of establishment,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267014,Ruscus aculeatus L.
 2769766,native range,Africa,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267014,Ruscus aculeatus L.
 2769766,native range,Eastern Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267014,Ruscus aculeatus L.
@@ -2868,6 +2877,10 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 2882443,pathway,cbd_2014_pathway:escape,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042215,Cabomba caroliniana A. Gray
 2882443,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264668,Cabomba caroliniana A. Gray
 2882443,pathway,cbd_2014_pathway:release,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042215,Cabomba caroliniana A. Gray
+2882631,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,168400471,Pieris japonica (Thunb.) D. Don
+2882631,native range,Eastern Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,168400471,Pieris japonica (Thunb.) D. Don
+2882631,native range,Eastern Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,168400471,Pieris japonica (Thunb.) D. Don
+2882631,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,168400471,Pieris japonica (Thunb.) D. Don
 2882753,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264939,Gaultheria procumbens L.
 2882753,native range,Northern America,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264939,Gaultheria procumbens L.
 2882753,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264939,Gaultheria procumbens L.
@@ -4459,6 +4472,9 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 3036033,native range,Eastern Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264822,Hedera colchica K. Koch
 3036033,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264822,Hedera colchica K. Koch
 3036033,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264822,Hedera colchica K. Koch
+3036157,degree of establishment,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264821,Hedera hibernica (Kirchner) Bean
+3036157,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264821,Hedera hibernica (Kirchner) Bean
+3036157,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264821,Hedera hibernica (Kirchner) Bean
 3036169,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264823,Hedera maroccana McAllister
 3036169,native range,Africa,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264823,Hedera maroccana McAllister
 3036169,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264823,Hedera maroccana McAllister
@@ -6472,6 +6488,11 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 3966627,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266682,Cullen cinereum (Lindl.) J.W. Grimes
 3966627,native range,Australia and New Zealand,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266682,Cullen cinereum (Lindl.) J.W. Grimes
 3966627,pathway,cbd_2014_pathway:contaminant_on_animals,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266682,Cullen cinereum (Lindl.) J.W. Grimes
+3967193,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266697,Halimodendron halodendron (Pallas) Voss
+3967193,native range,Eastern Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266697,Halimodendron halodendron (Pallas) Voss
+3967193,native range,Eastern Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266697,Halimodendron halodendron (Pallas) Voss
+3967193,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266697,Halimodendron halodendron (Pallas) Voss
+3967193,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266697,Halimodendron halodendron (Pallas) Voss
 3973636,degree of establishment,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266819,Vicia dalmatica A. Kerner
 3973636,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266819,Vicia dalmatica A. Kerner
 3973636,pathway,cbd_2014_pathway:contaminant_habitat_material,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266819,Vicia dalmatica A. Kerner
@@ -6585,6 +6606,12 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 4095244,native range,Eastern Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267068,Valerianella vesicaria (L.) Moench
 4095244,native range,Eastern Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267068,Valerianella vesicaria (L.) Moench
 4095244,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267068,Valerianella vesicaria (L.) Moench
+4096047,degree of establishment,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,168400573,Centranthus calcitrapae (L.) Dufr.
+4096047,native range,Africa,9ff7d317-609b-4c08-bd86-3bc404b77c42,168400573,Centranthus calcitrapae (L.) Dufr.
+4096047,native range,Eastern Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,168400573,Centranthus calcitrapae (L.) Dufr.
+4096047,native range,Eastern Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,168400573,Centranthus calcitrapae (L.) Dufr.
+4096047,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,168400573,Centranthus calcitrapae (L.) Dufr.
+4096047,pathway,cbd_2014_pathway:contaminant_habitat_material,9ff7d317-609b-4c08-bd86-3bc404b77c42,168400573,Centranthus calcitrapae (L.) Dufr.
 4097656,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264774,Alnus x spaethii Callier
 4097656,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264774,Alnus x spaethii Callier
 4102909,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267064,Lomelosia stellata (L.) Raf.
@@ -6856,6 +6883,11 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 4210773,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265135,Carduus vivariensis Jord.
 4210773,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265135,Carduus vivariensis Jord.
 4210773,pathway,cbd_2014_pathway:contaminant_seed,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265135,Carduus vivariensis Jord.
+4211590,degree of establishment,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265187,Cicerbita macrophylla (Willd.) Wallr. subsp. uralensis (Rouy) P.D. Sell
+4211590,native range,Eastern Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265187,Cicerbita macrophylla (Willd.) Wallr. subsp. uralensis (Rouy) P.D. Sell
+4211590,native range,Eastern Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265187,Cicerbita macrophylla (Willd.) Wallr. subsp. uralensis (Rouy) P.D. Sell
+4211590,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265187,Cicerbita macrophylla (Willd.) Wallr. subsp. uralensis (Rouy) P.D. Sell
+4211590,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265187,Cicerbita macrophylla (Willd.) Wallr. subsp. uralensis (Rouy) P.D. Sell
 4217250,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265129,Erigeron x flahaultianus Thell.
 4219118,degree of establishment,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265155,Hieracium glaucinum Jord. subsp. recensitum (Jord. ex Boreau) Gottschlich
 4219118,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265155,Hieracium glaucinum Jord. subsp. recensitum (Jord. ex Boreau) Gottschlich
@@ -7665,6 +7697,9 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 5241445,degree of establishment,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164300749,Volvariella volvacea (Bull.) Singer
 5241445,native range,Asia,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164300749,Volvariella volvacea (Bull.) Singer
 5241445,pathway,cbd_2014_pathway:agriculture,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164300749,Volvariella volvacea (Bull.) Singer
+5270720,degree of establishment,established,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164300779,Chara braunii S.G.Gmel.
+5270720,native range,Southern Europe,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164300779,Chara braunii S.G.Gmel.
+5270720,pathway,cbd_2014_pathway:contaminant_on_animals,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164300779,Chara braunii S.G.Gmel.
 5274858,degree of establishment,extinct,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264625,Salvinia natans (L.) All.
 5274858,native range,Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264625,Salvinia natans (L.) All.
 5274858,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264625,Salvinia natans (L.) All.
@@ -8067,6 +8102,9 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 5303040,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264619,Thalia dealbata Fraser
 5303040,native range,Northern America,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264619,Thalia dealbata Fraser
 5303040,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264619,Thalia dealbata Fraser
+5303524,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264894,Tinantia erecta (Jacq.) Schlecht.
+5303524,native range,Northern America,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264894,Tinantia erecta (Jacq.) Schlecht.
+5303524,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264894,Tinantia erecta (Jacq.) Schlecht.
 5303891,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267006,Danae racemosa (L.) Moench
 5303891,native range,Eastern Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267006,Danae racemosa (L.) Moench
 5303891,native range,Eastern Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267006,Danae racemosa (L.) Moench
@@ -8392,12 +8430,23 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 5353705,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266714,Hippocrepis emerus (L.) Lassen
 5353770,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266692,Arachis hypogaea L.
 5353770,native range,South America,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266692,Arachis hypogaea L.
+5354530,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266798,Cytisus hirsutus L.
+5354530,native range,Eastern Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266798,Cytisus hirsutus L.
+5354530,native range,Eastern Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266798,Cytisus hirsutus L.
+5354530,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266798,Cytisus hirsutus L.
+5354530,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266798,Cytisus hirsutus L.
 5354676,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266679,Cytisus decumbens (Durande) Spach
 5354676,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266679,Cytisus decumbens (Durande) Spach
 5354676,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266679,Cytisus decumbens (Durande) Spach
 5354707,degree of establishment,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266769,Cytisus striatus (Hill) Rothm.
 5354707,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266769,Cytisus striatus (Hill) Rothm.
 5354707,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266769,Cytisus striatus (Hill) Rothm.
+5354799,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266800,Dorycnium hirsutum (L.) Seringe
+5354799,native range,Africa,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266800,Dorycnium hirsutum (L.) Seringe
+5354799,native range,Eastern Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266800,Dorycnium hirsutum (L.) Seringe
+5354799,native range,Eastern Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266800,Dorycnium hirsutum (L.) Seringe
+5354799,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266800,Dorycnium hirsutum (L.) Seringe
+5354799,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266800,Dorycnium hirsutum (L.) Seringe
 5355395,degree of establishment,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266784,Spartium junceum L.
 5355395,native range,Africa,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266784,Spartium junceum L.
 5355395,native range,Eastern Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266784,Spartium junceum L.
@@ -9254,6 +9303,9 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 5384852,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267182,Silene conoidea L.
 5384852,pathway,cbd_2014_pathway:contaminant_on_animals,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267182,Silene conoidea L.
 5384852,pathway,cbd_2014_pathway:contaminant_seed,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267182,Silene conoidea L.
+5384889,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265030,Abronia fragrans Nutt.
+5384889,native range,Northern America,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265030,Abronia fragrans Nutt.
+5384889,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265030,Abronia fragrans Nutt.
 5384931,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264750,Houttuynia cordata Thunb.
 5384931,native range,Eastern Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264750,Houttuynia cordata Thunb.
 5384931,native range,Eastern Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264750,Houttuynia cordata Thunb.
@@ -10700,6 +10752,9 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 7372514,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265933,Malcolmia maritima (L.) R. Brown
 7372514,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265933,Malcolmia maritima (L.) R. Brown
 7372514,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265933,Malcolmia maritima (L.) R. Brown
+7393329,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266600,Cucurbita moschata Duchesne
+7393329,native range,Americas,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266600,Cucurbita moschata Duchesne
+7393329,pathway,cbd_2014_pathway:escape_food_bait,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266600,Cucurbita moschata Duchesne
 7393432,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266771,Pisum sativum L. var. arvense (L.) Poiret
 7393432,native range,Africa,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266771,Pisum sativum L. var. arvense (L.) Poiret
 7393432,native range,Eastern Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266771,Pisum sativum L. var. arvense (L.) Poiret
@@ -10876,6 +10931,12 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 7619206,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266444,Erodium trifolium (Cav.) Cav.
 7619206,native range,Africa,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266444,Erodium trifolium (Cav.) Cav.
 7619206,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266444,Erodium trifolium (Cav.) Cav.
+7627205,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,168400496,Glebionis coronaria (L.) Cass. ex Spach
+7627205,native range,Africa,9ff7d317-609b-4c08-bd86-3bc404b77c42,168400496,Glebionis coronaria (L.) Cass. ex Spach
+7627205,native range,Eastern Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,168400496,Glebionis coronaria (L.) Cass. ex Spach
+7627205,native range,Eastern Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,168400496,Glebionis coronaria (L.) Cass. ex Spach
+7627205,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,168400496,Glebionis coronaria (L.) Cass. ex Spach
+7627205,pathway,cbd_2014_pathway:contaminant_seed,9ff7d317-609b-4c08-bd86-3bc404b77c42,168400496,Glebionis coronaria (L.) Cass. ex Spach
 7628663,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264699,Viola cornuta L.
 7628663,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264699,Viola cornuta L.
 7628663,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264699,Viola cornuta L.
@@ -10885,6 +10946,11 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 7644304,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266147,Chenopodium borbasioides A. Ludwig
 7644304,native range,South America,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266147,Chenopodium borbasioides A. Ludwig
 7644304,pathway,cbd_2014_pathway:contaminant_on_animals,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266147,Chenopodium borbasioides A. Ludwig
+7645889,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266728,Sesbania cannabina (Retz.) Pers.
+7645889,native range,Africa,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266728,Sesbania cannabina (Retz.) Pers.
+7645889,native range,Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266728,Sesbania cannabina (Retz.) Pers.
+7645889,native range,Australia and New Zealand,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266728,Sesbania cannabina (Retz.) Pers.
+7645889,pathway,cbd_2014_pathway:contaminant_on_animals,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266728,Sesbania cannabina (Retz.) Pers.
 7645931,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266631,Salix acutifolia Willd.
 7645931,native range,Eastern Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266631,Salix acutifolia Willd.
 7645931,native range,Eastern Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266631,Salix acutifolia Willd.
@@ -11071,6 +11137,10 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 7862391,native range,Africa,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264903,Lysimachia monelli (L.) U. Manns & Anderb.
 7862391,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264903,Lysimachia monelli (L.) U. Manns & Anderb.
 7862391,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264903,Lysimachia monelli (L.) U. Manns & Anderb.
+7877018,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266287,Acer cissifolium (Siebold & Zucc.) K. Koch
+7877018,native range,Eastern Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266287,Acer cissifolium (Siebold & Zucc.) K. Koch
+7877018,native range,Eastern Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266287,Acer cissifolium (Siebold & Zucc.) K. Koch
+7877018,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266287,Acer cissifolium (Siebold & Zucc.) K. Koch
 7877091,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266137,Dysphania pseudomultiflora (J. Murr) Verloove & Lambinon
 7877091,native range,Africa,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266137,Dysphania pseudomultiflora (J. Murr) Verloove & Lambinon
 7877091,pathway,cbd_2014_pathway:contaminant_on_animals,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266137,Dysphania pseudomultiflora (J. Murr) Verloove & Lambinon
@@ -11251,6 +11321,12 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 8091002,native range,Eastern Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265035,Jovibarba sobolifera (Sims) Opiz
 8091002,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265035,Jovibarba sobolifera (Sims) Opiz
 8091002,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265035,Jovibarba sobolifera (Sims) Opiz
+8096233,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,168400582,Spergula bocconei (Scheele) Pedersen
+8096233,native range,Africa,9ff7d317-609b-4c08-bd86-3bc404b77c42,168400582,Spergula bocconei (Scheele) Pedersen
+8096233,native range,Eastern Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,168400582,Spergula bocconei (Scheele) Pedersen
+8096233,native range,Eastern Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,168400582,Spergula bocconei (Scheele) Pedersen
+8096233,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,168400582,Spergula bocconei (Scheele) Pedersen
+8096233,pathway,cbd_2014_pathway:stowaway_people_luggage,9ff7d317-609b-4c08-bd86-3bc404b77c42,168400582,Spergula bocconei (Scheele) Pedersen
 8114833,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265515,Anarrhinum bellidifolium (L.) Willd.
 8114833,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265515,Anarrhinum bellidifolium (L.) Willd.
 8114833,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265515,Anarrhinum bellidifolium (L.) Willd.
@@ -11406,6 +11482,9 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 8323119,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265227,"Bidens triplinervia Humb., Bonpl. & Kunth var. macrantha (Wedd.) Sherff"
 8323485,native range,Northern America,e1c3be64-2799-4342-8312-49d076993132,159498666,"Haemorhous mexicanus (P.L.Statius Müller, 1776)"
 8323485,pathway,cbd_2014_pathway:escape,e1c3be64-2799-4342-8312-49d076993132,159498666,"Haemorhous mexicanus (P.L.Statius Müller, 1776)"
+8324845,degree of establishment,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164301263,Rhyzobius lophantae (Blaisdell)
+8324845,native range,Australia and New Zealand,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164301263,Rhyzobius lophantae (Blaisdell)
+8324845,pathway,cbd_2014_pathway:release_biological_control,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164301263,Rhyzobius lophantae (Blaisdell)
 8325800,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267069,Lonicera x italica Tausch
 8325800,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267069,Lonicera x italica Tausch
 8332019,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265907,Hordeum distichon L.
@@ -11758,6 +11837,9 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 9890104,pathway,cbd_2014_pathway:stowaway_people_luggage,e082b10e-476f-43c1-aa61-f8d92f33029a,157063040,"Candidula intersecta (Poiret, 1801)"
 9890104,pathway,cbd_2014_pathway:stowaway_vehicles,e082b10e-476f-43c1-aa61-f8d92f33029a,157063040,"Candidula intersecta (Poiret, 1801)"
 9890104,pathway,cbd_2014_pathway:unaided,e082b10e-476f-43c1-aa61-f8d92f33029a,157063040,"Candidula intersecta (Poiret, 1801)"
+10071055,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265441,Sorbus intermedia (Ehrh.) Pers.
+10071055,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265441,Sorbus intermedia (Ehrh.) Pers.
+10071055,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265441,Sorbus intermedia (Ehrh.) Pers.
 10172912,degree of establishment,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267189,Cerastium x maureri M. Schulze
 10269496,native range,Australia and New Zealand,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164301238,"Epuraea imperialis (Reitter, 1877)"
 10329298,degree of establishment,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164300984,"Haplodrassus securifer Bosmans & Abrous, 2018"
@@ -11767,3 +11849,10 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 10545407,native range,Africa,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,168131333,"Pelomedusa subrufa (Lacépède, 1788)"
 10545407,pathway,cbd_2014_pathway:escape_pet,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,168131333,"Pelomedusa subrufa (Lacépède, 1788)"
 10545407,pathway,cbd_2014_pathway:release_other,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,168131333,"Pelomedusa subrufa (Lacépède, 1788)"
+10966302,degree of establishment,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265798,Digitaria sanguinalis (L.) Scop. subsp. sanguinalis
+10966302,native range,Africa,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265798,Digitaria sanguinalis (L.) Scop. subsp. sanguinalis
+10966302,native range,Eastern Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265798,Digitaria sanguinalis (L.) Scop. subsp. sanguinalis
+10966302,native range,Eastern Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265798,Digitaria sanguinalis (L.) Scop. subsp. sanguinalis
+10966302,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265798,Digitaria sanguinalis (L.) Scop. subsp. sanguinalis
+10966302,pathway,cbd_2014_pathway:contaminant_on_animals,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265798,Digitaria sanguinalis (L.) Scop. subsp. sanguinalis
+10966302,pathway,cbd_2014_pathway:contaminant_seed,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265798,Digitaria sanguinalis (L.) Scop. subsp. sanguinalis

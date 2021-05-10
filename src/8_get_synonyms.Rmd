@@ -41,7 +41,7 @@ input_taxa <-
   input_taxa %>%
   rename(key = verificationKey) %>%
   rename(accepted = acceptedName) %>%
-  select(selected_columns)
+  select(all_of(selected_columns))
 ```
 
 ## Find synonyms
@@ -58,8 +58,7 @@ synonyms <- map_dfr(
     progress_bar$tick()$print()
       name_usage(
         key = key, 
-        data = "synonyms", 
-        return = "data") %>%
+        data = "synonyms")$data %>%
       select(-contains("issues"))
   }
 )
@@ -71,7 +70,7 @@ library(tidylog)
 ```{r get_synonyms-4}
 synonyms <-
   synonyms %>%
-  select(selected_columns)
+  select(all_of(selected_columns))
 ```
 
 3. Merge input taxa with their synonyms.

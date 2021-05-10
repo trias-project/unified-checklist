@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>3 Verify taxa | Global Register of Introduced and Invasive Species - Belgium</title>
   <meta name="description" content="3 Verify taxa | Global Register of Introduced and Invasive Species - Belgium" />
-  <meta name="generator" content="bookdown 0.18 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
   <meta property="og:title" content="3 Verify taxa | Global Register of Introduced and Invasive Species - Belgium" />
   <meta property="og:type" content="book" />
@@ -24,7 +24,7 @@
 <meta name="author" content="Peter Desmet, Lien Reyserhove, Damiano Oldoni" />
 
 
-<meta name="date" content="2020-05-25" />
+<meta name="date" content="2021-05-09" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,6 +33,7 @@
   
 <link rel="prev" href="2_get_information.html"/>
 <link rel="next" href="4_unify_taxa.html"/>
+<script src="libs/header-attrs-2.7/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -55,18 +56,17 @@
 
 
 <style type="text/css">
-code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
-code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
 pre.sourceCode { margin: 0; }
 @media screen {
 div.sourceCode { overflow: auto; }
 }
 @media print {
-code.sourceCode { white-space: pre-wrap; }
-code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -86,7 +86,7 @@ pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-le
 div.sourceCode
   {   }
 @media screen {
-code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
@@ -131,24 +131,28 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <nav role="navigation">
 
 <ul class="summary">
-<li class="chapter" data-level="1" data-path="1_get_taxa.html"><a href="1_get_taxa.html"><i class="fa fa-check"></i><b>1</b> Get taxa from checklists</a><ul>
+<li class="chapter" data-level="1" data-path="1_get_taxa.html"><a href="1_get_taxa.html"><i class="fa fa-check"></i><b>1</b> Get taxa from checklists</a>
+<ul>
 <li class="chapter" data-level="1.1" data-path="1_get_taxa.html"><a href="1_get_taxa.html#choose-checklists"><i class="fa fa-check"></i><b>1.1</b> Choose checklists</a></li>
 <li class="chapter" data-level="1.2" data-path="1_get_taxa.html"><a href="1_get_taxa.html#get-taxa"><i class="fa fa-check"></i><b>1.2</b> Get taxa</a></li>
 <li class="chapter" data-level="1.3" data-path="1_get_taxa.html"><a href="1_get_taxa.html#filter-on-distribution"><i class="fa fa-check"></i><b>1.3</b> Filter on distributions</a></li>
 <li class="chapter" data-level="1.4" data-path="1_get_taxa.html"><a href="1_get_taxa.html#get-gbif-backbone-taxonomy-information"><i class="fa fa-check"></i><b>1.4</b> Get GBIF backbone taxonomy information</a></li>
 <li class="chapter" data-level="1.5" data-path="1_get_taxa.html"><a href="1_get_taxa.html#show-summary-and-save"><i class="fa fa-check"></i><b>1.5</b> Show summary and save</a></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="2_get_information.html"><a href="2_get_information.html"><i class="fa fa-check"></i><b>2</b> Get related information</a><ul>
+<li class="chapter" data-level="2" data-path="2_get_information.html"><a href="2_get_information.html"><i class="fa fa-check"></i><b>2</b> Get related information</a>
+<ul>
 <li class="chapter" data-level="2.1" data-path="2_get_information.html"><a href="2_get_information.html#read-taxa"><i class="fa fa-check"></i><b>2.1</b> Read taxa</a></li>
 <li class="chapter" data-level="2.2" data-path="2_get_information.html"><a href="2_get_information.html#get-distributions"><i class="fa fa-check"></i><b>2.2</b> Get distributions</a></li>
 <li class="chapter" data-level="2.3" data-path="2_get_information.html"><a href="2_get_information.html#get-species-profiles"><i class="fa fa-check"></i><b>2.3</b> Get species profiles</a></li>
 <li class="chapter" data-level="2.4" data-path="2_get_information.html"><a href="2_get_information.html#get-descriptions"><i class="fa fa-check"></i><b>2.4</b> Get descriptions</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="3_verify_taxa.html"><a href="3_verify_taxa.html"><i class="fa fa-check"></i><b>3</b> Verify taxa</a><ul>
+<li class="chapter" data-level="3" data-path="3_verify_taxa.html"><a href="3_verify_taxa.html"><i class="fa fa-check"></i><b>3</b> Verify taxa</a>
+<ul>
 <li class="chapter" data-level="3.1" data-path="3_verify_taxa.html"><a href="3_verify_taxa.html#read-taxa-1"><i class="fa fa-check"></i><b>3.1</b> Read taxa</a></li>
 <li class="chapter" data-level="3.2" data-path="3_verify_taxa.html"><a href="3_verify_taxa.html#verification"><i class="fa fa-check"></i><b>3.2</b> Read verification information</a></li>
 <li class="chapter" data-level="3.3" data-path="3_verify_taxa.html"><a href="3_verify_taxa.html#run-and-save-verification"><i class="fa fa-check"></i><b>3.3</b> Run and save verification</a></li>
-<li class="chapter" data-level="3.4" data-path="3_verify_taxa.html"><a href="3_verify_taxa.html#show-verification-status"><i class="fa fa-check"></i><b>3.4</b> Show verification status</a><ul>
+<li class="chapter" data-level="3.4" data-path="3_verify_taxa.html"><a href="3_verify_taxa.html#show-verification-status"><i class="fa fa-check"></i><b>3.4</b> Show verification status</a>
+<ul>
 <li class="chapter" data-level="3.4.1" data-path="3_verify_taxa.html"><a href="3_verify_taxa.html#unmatched-taxa"><i class="fa fa-check"></i><b>3.4.1</b> Unmatched taxa</a></li>
 <li class="chapter" data-level="3.4.2" data-path="3_verify_taxa.html"><a href="3_verify_taxa.html#synonyms"><i class="fa fa-check"></i><b>3.4.2</b> Synonyms</a></li>
 <li class="chapter" data-level="3.4.3" data-path="3_verify_taxa.html"><a href="3_verify_taxa.html#accepted-taxa"><i class="fa fa-check"></i><b>3.4.3</b> Accepted taxa</a></li>
@@ -156,57 +160,68 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.4.5" data-path="3_verify_taxa.html"><a href="3_verify_taxa.html#additional-information"><i class="fa fa-check"></i><b>3.4.5</b> Additional information</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="4_unify_taxa.html"><a href="4_unify_taxa.html"><i class="fa fa-check"></i><b>4</b> Unify taxa</a><ul>
+<li class="chapter" data-level="4" data-path="4_unify_taxa.html"><a href="4_unify_taxa.html"><i class="fa fa-check"></i><b>4</b> Unify taxa</a>
+<ul>
 <li class="chapter" data-level="4.1" data-path="4_unify_taxa.html"><a href="4_unify_taxa.html#read-taxa-2"><i class="fa fa-check"></i><b>4.1</b> Read taxa</a></li>
 <li class="chapter" data-level="4.2" data-path="4_unify_taxa.html"><a href="4_unify_taxa.html#unify-taxa-1"><i class="fa fa-check"></i><b>4.2</b> Unify taxa</a></li>
 <li class="chapter" data-level="4.3" data-path="4_unify_taxa.html"><a href="4_unify_taxa.html#get-gbif-backbone-taxonomy-information-1"><i class="fa fa-check"></i><b>4.3</b> Get GBIF backbone taxonomy information</a></li>
 <li class="chapter" data-level="4.4" data-path="4_unify_taxa.html"><a href="4_unify_taxa.html#explicitely-remove-incorrect-taxa"><i class="fa fa-check"></i><b>4.4</b> Explicitely remove incorrect taxa</a></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="5_unify_information.html"><a href="5_unify_information.html"><i class="fa fa-check"></i><b>5</b> Unify related information</a><ul>
+<li class="chapter" data-level="5" data-path="5_unify_information.html"><a href="5_unify_information.html"><i class="fa fa-check"></i><b>5</b> Unify related information</a>
+<ul>
 <li class="chapter" data-level="5.1" data-path="5_unify_information.html"><a href="5_unify_information.html#read-data"><i class="fa fa-check"></i><b>5.1</b> Read data</a></li>
 <li class="chapter" data-level="5.2" data-path="5_unify_information.html"><a href="5_unify_information.html#assign-checklist-order"><i class="fa fa-check"></i><b>5.2</b> Assign checklist order</a></li>
 <li class="chapter" data-level="5.3" data-path="5_unify_information.html"><a href="5_unify_information.html#unify-distribution"><i class="fa fa-check"></i><b>5.3</b> Unify distribution</a></li>
 <li class="chapter" data-level="5.4" data-path="5_unify_information.html"><a href="5_unify_information.html#unify-species-profiles"><i class="fa fa-check"></i><b>5.4</b> Unify species profiles</a></li>
-<li class="chapter" data-level="5.5" data-path="5_unify_information.html"><a href="5_unify_information.html#unify-descriptions"><i class="fa fa-check"></i><b>5.5</b> Unify descriptions</a><ul>
+<li class="chapter" data-level="5.5" data-path="5_unify_information.html"><a href="5_unify_information.html#unify-descriptions"><i class="fa fa-check"></i><b>5.5</b> Unify descriptions</a>
+<ul>
 <li class="chapter" data-level="5.5.1" data-path="5_unify_information.html"><a href="5_unify_information.html#native-range"><i class="fa fa-check"></i><b>5.5.1</b> Native range</a></li>
 <li class="chapter" data-level="5.5.2" data-path="5_unify_information.html"><a href="5_unify_information.html#degree-of-establishment"><i class="fa fa-check"></i><b>5.5.2</b> Degree of establishment</a></li>
 <li class="chapter" data-level="5.5.3" data-path="5_unify_information.html"><a href="5_unify_information.html#combine-and-process-descriptions"><i class="fa fa-check"></i><b>5.5.3</b> Combine and process descriptions</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="6_dwc_mapping.html"><a href="6_dwc_mapping.html"><i class="fa fa-check"></i><b>6</b> Darwin Core mapping</a><ul>
+<li class="chapter" data-level="6" data-path="6_dwc_mapping.html"><a href="6_dwc_mapping.html"><i class="fa fa-check"></i><b>6</b> Darwin Core mapping</a>
+<ul>
 <li class="chapter" data-level="6.1" data-path="6_dwc_mapping.html"><a href="6_dwc_mapping.html#read-unified-data"><i class="fa fa-check"></i><b>6.1</b> Read unified data</a></li>
 <li class="chapter" data-level="6.2" data-path="6_dwc_mapping.html"><a href="6_dwc_mapping.html#preview-data"><i class="fa fa-check"></i><b>6.2</b> Preview data</a></li>
 <li class="chapter" data-level="6.3" data-path="6_dwc_mapping.html"><a href="6_dwc_mapping.html#citing-sources"><i class="fa fa-check"></i><b>6.3</b> How we cite our sources</a></li>
-<li class="chapter" data-level="6.4" data-path="6_dwc_mapping.html"><a href="6_dwc_mapping.html#taxon-core"><i class="fa fa-check"></i><b>6.4</b> Taxon core</a><ul>
+<li class="chapter" data-level="6.4" data-path="6_dwc_mapping.html"><a href="6_dwc_mapping.html#taxon-core"><i class="fa fa-check"></i><b>6.4</b> Taxon core</a>
+<ul>
 <li class="chapter" data-level="6.4.1" data-path="6_dwc_mapping.html"><a href="6_dwc_mapping.html#pre-processing"><i class="fa fa-check"></i><b>6.4.1</b> Pre-processing</a></li>
 <li class="chapter" data-level="6.4.2" data-path="6_dwc_mapping.html"><a href="6_dwc_mapping.html#term-mapping"><i class="fa fa-check"></i><b>6.4.2</b> Term mapping</a></li>
 <li class="chapter" data-level="6.4.3" data-path="6_dwc_mapping.html"><a href="6_dwc_mapping.html#post-processing"><i class="fa fa-check"></i><b>6.4.3</b> Post-processing</a></li>
 </ul></li>
-<li class="chapter" data-level="6.5" data-path="6_dwc_mapping.html"><a href="6_dwc_mapping.html#distribution-extension"><i class="fa fa-check"></i><b>6.5</b> Distribution extension</a><ul>
+<li class="chapter" data-level="6.5" data-path="6_dwc_mapping.html"><a href="6_dwc_mapping.html#distribution-extension"><i class="fa fa-check"></i><b>6.5</b> Distribution extension</a>
+<ul>
 <li class="chapter" data-level="6.5.1" data-path="6_dwc_mapping.html"><a href="6_dwc_mapping.html#pre-processing-1"><i class="fa fa-check"></i><b>6.5.1</b> Pre-processing</a></li>
 <li class="chapter" data-level="6.5.2" data-path="6_dwc_mapping.html"><a href="6_dwc_mapping.html#term-mapping-1"><i class="fa fa-check"></i><b>6.5.2</b> Term mapping</a></li>
 <li class="chapter" data-level="6.5.3" data-path="6_dwc_mapping.html"><a href="6_dwc_mapping.html#post-processing-1"><i class="fa fa-check"></i><b>6.5.3</b> Post-processing</a></li>
 </ul></li>
-<li class="chapter" data-level="6.6" data-path="6_dwc_mapping.html"><a href="6_dwc_mapping.html#species-profile-extension"><i class="fa fa-check"></i><b>6.6</b> Species profile extension</a><ul>
+<li class="chapter" data-level="6.6" data-path="6_dwc_mapping.html"><a href="6_dwc_mapping.html#species-profile-extension"><i class="fa fa-check"></i><b>6.6</b> Species profile extension</a>
+<ul>
 <li class="chapter" data-level="6.6.1" data-path="6_dwc_mapping.html"><a href="6_dwc_mapping.html#term-mapping-2"><i class="fa fa-check"></i><b>6.6.1</b> Term mapping</a></li>
 <li class="chapter" data-level="6.6.2" data-path="6_dwc_mapping.html"><a href="6_dwc_mapping.html#post-processing-2"><i class="fa fa-check"></i><b>6.6.2</b> Post-processing</a></li>
 </ul></li>
-<li class="chapter" data-level="6.7" data-path="6_dwc_mapping.html"><a href="6_dwc_mapping.html#description-extension"><i class="fa fa-check"></i><b>6.7</b> Description extension</a><ul>
+<li class="chapter" data-level="6.7" data-path="6_dwc_mapping.html"><a href="6_dwc_mapping.html#description-extension"><i class="fa fa-check"></i><b>6.7</b> Description extension</a>
+<ul>
 <li class="chapter" data-level="6.7.1" data-path="6_dwc_mapping.html"><a href="6_dwc_mapping.html#pre-processing-2"><i class="fa fa-check"></i><b>6.7.1</b> Pre-processing</a></li>
 <li class="chapter" data-level="6.7.2" data-path="6_dwc_mapping.html"><a href="6_dwc_mapping.html#term-mapping-3"><i class="fa fa-check"></i><b>6.7.2</b> Term mapping</a></li>
 <li class="chapter" data-level="6.7.3" data-path="6_dwc_mapping.html"><a href="6_dwc_mapping.html#post-processing-3"><i class="fa fa-check"></i><b>6.7.3</b> Post-processing</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="7" data-path="7_griis_mapping.html"><a href="7_griis_mapping.html"><i class="fa fa-check"></i><b>7</b> GRIIS mapping</a><ul>
+<li class="chapter" data-level="7" data-path="7_griis_mapping.html"><a href="7_griis_mapping.html"><i class="fa fa-check"></i><b>7</b> GRIIS mapping</a>
+<ul>
 <li class="chapter" data-level="7.1" data-path="7_griis_mapping.html"><a href="7_griis_mapping.html#read-darwin-core-data"><i class="fa fa-check"></i><b>7.1</b> Read Darwin Core data</a></li>
-<li class="chapter" data-level="7.2" data-path="7_griis_mapping.html"><a href="7_griis_mapping.html#griis-format"><i class="fa fa-check"></i><b>7.2</b> GRIIS format</a><ul>
+<li class="chapter" data-level="7.2" data-path="7_griis_mapping.html"><a href="7_griis_mapping.html#griis-format"><i class="fa fa-check"></i><b>7.2</b> GRIIS format</a>
+<ul>
 <li class="chapter" data-level="7.2.1" data-path="7_griis_mapping.html"><a href="7_griis_mapping.html#pre-processing-3"><i class="fa fa-check"></i><b>7.2.1</b> Pre-processing</a></li>
 <li class="chapter" data-level="7.2.2" data-path="7_griis_mapping.html"><a href="7_griis_mapping.html#term-mapping-4"><i class="fa fa-check"></i><b>7.2.2</b> Term mapping</a></li>
 <li class="chapter" data-level="7.2.3" data-path="7_griis_mapping.html"><a href="7_griis_mapping.html#eventdate-1"><i class="fa fa-check"></i><b>7.2.3</b> eventDate</a></li>
 </ul></li>
 <li class="chapter" data-level="7.3" data-path="7_griis_mapping.html"><a href="7_griis_mapping.html#post-processing-4"><i class="fa fa-check"></i><b>7.3</b> Post-processing</a></li>
 </ul></li>
-<li class="chapter" data-level="8" data-path="8_get_synonyms.html"><a href="8_get_synonyms.html"><i class="fa fa-check"></i><b>8</b> Get synonyms of all accepted taxa</a><ul>
+<li class="chapter" data-level="8" data-path="8_get_synonyms.html"><a href="8_get_synonyms.html"><i class="fa fa-check"></i><b>8</b> Get synonyms of all accepted taxa</a>
+<ul>
 <li class="chapter" data-level="8.1" data-path="8_get_synonyms.html"><a href="8_get_synonyms.html#get-unified-taxa"><i class="fa fa-check"></i><b>8.1</b> Get unified taxa</a></li>
 <li class="chapter" data-level="8.2" data-path="8_get_synonyms.html"><a href="8_get_synonyms.html#find-synonyms"><i class="fa fa-check"></i><b>8.2</b> Find synonyms</a></li>
 </ul></li>
@@ -227,32 +242,32 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="verify-taxa" class="section level1">
+<div id="verify-taxa" class="section level1" number="3">
 <h1><span class="header-section-number">3</span> Verify taxa</h1>
 <p>In this chapter we verify taxonomic information returned by the <a href="https://doi.org/10.15468/39omei">GBIF Backbone Taxonomy</a>. We do this because we want to use the backbone information to unify taxa that can be considered the same within or across checklists. This is straightforward for (accepted) taxa with the same backbone key (<code>bb_key</code>), but requires verification for taxa the backbone does not recognize (no backbone match) or will lump under another name (synonyms). See <a href="3_verify_taxa.html#verification">3.2</a>.</p>
-<div id="read-taxa-1" class="section level2">
+<div id="read-taxa-1" class="section level2" number="3.1">
 <h2><span class="header-section-number">3.1</span> Read taxa</h2>
 <p>Read taxa from <a href="https://github.com/trias-project/unified-checklist/blob/master/data/interim/taxa_with_verification.csv"><code>data/interim/taxa_with_verification.csv</code></a>.</p>
 </div>
-<div id="verification" class="section level2">
+<div id="verification" class="section level2" number="3.2">
 <h2><span class="header-section-number">3.2</span> Read verification information</h2>
 <p>Verification information consists of a manually assigned <code>verificationKey</code> for taxa the backbone does not recognize (no backbone match) or will lump under another name (synonyms). Those <code>checklist/backbone/accepted</code> taxon combinations are stored in <a href="https://github.com/trias-project/unified-checklist/blob/master/references/verification.tsv"><code>references/verification.tsv</code></a>, which was created/updated in previous runs of this chapter and then manually annoted with a <code>verificationKey</code>.</p>
 </div>
-<div id="run-and-save-verification" class="section level2">
+<div id="run-and-save-verification" class="section level2" number="3.3">
 <h2><span class="header-section-number">3.3</span> Run and save verification</h2>
 <ol style="list-style-type: decimal">
 <li>Use the existing verification information to verify taxa with the function <code>trias::verify_taxa</code>:</li>
 </ol>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="3_verify_taxa.html#cb5-1"></a>verification &lt;-<span class="st"> </span>trias<span class="op">::</span><span class="kw">verify_taxa</span>(taxa, verification)</span></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="3_verify_taxa.html#cb5-1" aria-hidden="true" tabindex="-1"></a>verification <span class="ot">&lt;-</span> trias<span class="sc">::</span><span class="fu">verify_taxa</span>(taxa, verification)</span></code></pre></div>
 <p><strong>Note</strong>: to start a verification from scratch, use <code>trias::verify_taxa(taxa)</code>.</p>
 <ol start="2" style="list-style-type: decimal">
 <li><p>Save taxa with populated <code>verificationKey</code> back to <a href="https://github.com/trias-project/unified-checklist/blob/master/data/interim/taxa_with_verification.csv"><code>data/interim/taxa_with_verification.csv</code></a>.</p></li>
 <li><p>Save updated verification back to <a href="https://github.com/trias-project/unified-checklist/blob/master/references/verification.tsv"><code>references/verification.tsv</code></a> (sorted on <code>scientificName</code>)</p></li>
 </ol>
 </div>
-<div id="show-verification-status" class="section level2">
+<div id="show-verification-status" class="section level2" number="3.4">
 <h2><span class="header-section-number">3.4</span> Show verification status</h2>
-<div id="unmatched-taxa" class="section level3">
+<div id="unmatched-taxa" class="section level3" number="3.4.1">
 <h3><span class="header-section-number">3.4.1</span> Unmatched taxa</h3>
 <table>
 <thead>
@@ -268,7 +283,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </tr>
 <tr class="even">
 <td>Unverified</td>
-<td>80</td>
+<td>94</td>
 </tr>
 <tr class="odd">
 <td>New in this run</td>
@@ -276,14 +291,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </tr>
 <tr class="even">
 <td>No longer used</td>
-<td>3</td>
+<td>12</td>
 </tr>
 </tbody>
 </table>
 <p>Unmatched taxa are those for which the automatic backbone matching on the scientific name failed (have <a href="http://gbif.github.io/parsers/apidocs/org/gbif/api/vocabulary/NameUsageIssue.html"><code>BACKBONE_MATCH_NONE</code></a> in <code>issues</code>), either because the scientific name could not be parsed or because it is not listed in the backbone.</p>
 <p>Verification (see <a href="3_verify_taxa.html#verification">3.2</a>) involves setting the <code>verificationKey</code> to a manually found <code>bb_key</code>. One could even set multiple <code>bb_key</code>s, e.g. to split a hybrid formula into its hybrid parents.</p>
 </div>
-<div id="synonyms" class="section level3">
+<div id="synonyms" class="section level3" number="3.4.2">
 <h3><span class="header-section-number">3.4.2</span> Synonyms</h3>
 <table>
 <thead>
@@ -295,19 +310,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <tbody>
 <tr class="odd">
 <td>Previously verified</td>
-<td>199</td>
+<td>165</td>
 </tr>
 <tr class="even">
 <td>Unverified</td>
-<td>233</td>
+<td>295</td>
 </tr>
 <tr class="odd">
 <td>New in this run</td>
-<td>2</td>
+<td>0</td>
 </tr>
 <tr class="even">
 <td>No longer used</td>
-<td>81</td>
+<td>135</td>
 </tr>
 </tbody>
 </table>
@@ -319,7 +334,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><strong><code>bb_key</code> of taxon itself</strong>: backbone synonymy is rejected, taxon will be considered as separate taxon.</li>
 </ul>
 </div>
-<div id="accepted-taxa" class="section level3">
+<div id="accepted-taxa" class="section level3" number="3.4.3">
 <h3><span class="header-section-number">3.4.3</span> Accepted taxa</h3>
 <table>
 <thead>
@@ -331,7 +346,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <tbody>
 <tr class="odd">
 <td>Verified (automatic)</td>
-<td>2910</td>
+<td>2995</td>
 </tr>
 <tr class="even">
 <td>Unverified</td>
@@ -342,7 +357,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Accepted taxa are those the backbone considers own entities (<code>taxonomicStatus</code> = <code>ACCEPTED</code> or <code>DOUBTFUL</code>) that won’t be lumped.</p>
 <p>No verification is required for these: <code>verificationKey</code> is automatically set to their <code>bb_key</code>.</p>
 </div>
-<div id="erroneous-verificationkeys" class="section level3">
+<div id="erroneous-verificationkeys" class="section level3" number="3.4.4">
 <h3><span class="header-section-number">3.4.4</span> Erroneous verificationKeys</h3>
 <p>Provided verification keys that are not found in the GBIF backbone:</p>
 <div data-pagedtable="false">
@@ -351,7 +366,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   </script>
 </div>
 </div>
-<div id="additional-information" class="section level3">
+<div id="additional-information" class="section level3" number="3.4.5">
 <h3><span class="header-section-number">3.4.5</span> Additional information</h3>
 <p>Additional information regarding the verification information that is of no further consequence.</p>
 <ul>
@@ -359,7 +374,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
-{"columns":[{"label":["n"],"name":[1],"type":["int"],"align":["right"]},{"label":["taxa"],"name":[2],"type":["int"],"align":["right"]}],"data":[{"1":"2","2":"88"},{"1":"3","2":"15"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+{"columns":[{"label":["n"],"name":[1],"type":["int"],"align":["right"]},{"label":["taxa"],"name":[2],"type":["int"],"align":["right"]}],"data":[{"1":"2","2":"90"},{"1":"3","2":"21"},{"1":"4","2":"12"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
   </script>
 </div>
 <ul>

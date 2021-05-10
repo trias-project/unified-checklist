@@ -7411,3 +7411,5 @@ verificationKey,locality,locationId,startYear,endYear,datasetKey,taxonKeys,scien
 10966302,Brussels-Capital Region,ISO_3166:BE-BRU,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265798,Digitaria sanguinalis (L.) Scop. subsp. sanguinalis
 10966302,Flemish Region,ISO_3166:BE-VLG,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265798,Digitaria sanguinalis (L.) Scop. subsp. sanguinalis
 10966302,Walloon Region,ISO_3166:BE-WAL,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265798,Digitaria sanguinalis (L.) Scop. subsp. sanguinalis
+11041878,Belgium,ISO_3166:BE,2013,2018,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661120,"Hemidactylus (Oken, 1817)"
+11041878,Flemish Region,ISO_3166:BE-VLG,2013,2018,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661120,"Hemidactylus (Oken, 1817)"

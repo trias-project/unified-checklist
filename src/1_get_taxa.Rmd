@@ -13,8 +13,10 @@ checklist_keys <- c(
   "9ff7d317-609b-4c08-bd86-3bc404b77c42", # alien-plants-belgium
   "e1c3be64-2799-4342-8312-49d076993132", # alien-birds-checklist
   "98940a79-2bf1-46e6-afd6-ba2e85a26f9f", # alien-fishes-checklist
+  "a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63", # alien-herpetofauna-belgium
   "289244ee-e1c1-49aa-b2d7-d379391ce265", # alien-macroinvertebrates
   "e082b10e-476f-43c1-aa61-f8d92f33029a", # alien-mollusca-checklist
+  "22211949-9a6e-445f-86c0-6a0e019bc055", # alien-scheldt-checklist
   "b043c480-dd36-4f4f-aa82-e188753ff09d", # uredinales-belgium-checklist
   "0a2eaf0c-5504-4f48-a47f-c94229029dc8", # wrims-checklist
   "1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2", # ad-hoc-checklist

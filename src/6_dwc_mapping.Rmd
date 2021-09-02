@@ -311,57 +311,39 @@ URL of the GBIF Backbone Taxonomy taxon on gbif.org:
 taxon %<>% mutate(dwc_taxonID = paste0("https://www.gbif.org/species/", verificationKey))
 ```
 
-#### acceptedNameUsageID
-
-```{r dwc_mapping-21, echo = TRUE}
-taxon %<>% mutate(dwc_acceptedNameUsageID = case_when(
-  is.na(acceptedKey) ~ paste0("https://www.gbif.org/species/", verificationKey), # If empty acceptedKey, use verificationKey
-  TRUE ~ paste0("https://www.gbif.org/species/", acceptedKey)
-))
-```
-
 #### scientificName
 
-```{r dwc_mapping-22, echo = TRUE}
+```{r dwc_mapping-21, echo = TRUE}
 taxon %<>% mutate(dwc_scientificName = scientificName)
-```
-
-#### acceptedNameUsage
-
-```{r dwc_mapping-23, echo = TRUE}
-taxon %<>% mutate(dwc_acceptedNameUsage = case_when(
-  is.na(acceptedName) ~ scientificName, # If empty acceptedName, use scientificName
-  TRUE ~ as.character(acceptedName)
-))
 ```
 
 #### kingdom
 
-```{r dwc_mapping-24, echo = TRUE}
+```{r dwc_mapping-22, echo = TRUE}
 taxon %<>% mutate(dwc_kingdom = kingdom)
 ```
 
 #### phylum
 
-```{r dwc_mapping-25, echo = TRUE}
+```{r dwc_mapping-23, echo = TRUE}
 taxon %<>% mutate(dwc_phylum = phylum)
 ```
 
 #### class
 
-```{r dwc_mapping-26, echo = TRUE}
+```{r dwc_mapping-24, echo = TRUE}
 taxon %<>% mutate(dwc_class = class)
 ```
 
 #### order
 
-```{r dwc_mapping-27, echo = TRUE}
+```{r dwc_mapping-25, echo = TRUE}
 taxon %<>% mutate(dwc_order = order)
 ```
 
 #### family
 
-```{r dwc_mapping-28, echo = TRUE}
+```{r dwc_mapping-26, echo = TRUE}
 taxon %<>% mutate(dwc_family = family)
 ```
 
@@ -369,25 +351,25 @@ taxon %<>% mutate(dwc_family = family)
 
 `genus` is part of the higher classification, which is provided by the GBIF Backbone Taxonomy. We will use that, but note that for some synonyms it might differ from the genus in the scientific name:
 
-```{r dwc_mapping-29}
+```{r dwc_mapping-27}
 taxon %>%
   filter(genus != canonicalName_genus) %>%
-  select(verificationKey, scientificName, genus, canonicalName_genus, taxonomicStatus)
+  select(verificationKey, scientificName, genus, canonicalName_genus)
 ```
 
-```{r dwc_mapping-30, echo = TRUE}
+```{r dwc_mapping-28, echo = TRUE}
 taxon %<>% mutate(dwc_genus = genus)
 ```
 
 #### specificEpithet
 
-```{r dwc_mapping-31, echo = TRUE}
+```{r dwc_mapping-29, echo = TRUE}
 taxon %<>% mutate(dwc_specificEpithet = canonicalName_species)
 ```
 
 #### infraspecificEpithet
 
-```{r dwc_mapping-32, echo = TRUE}
+```{r dwc_mapping-30, echo = TRUE}
 taxon %<>% mutate(dwc_infraspecificEpithet = canonicalName_infraspecific)
 ```
 
@@ -395,7 +377,7 @@ taxon %<>% mutate(dwc_infraspecificEpithet = canonicalName_infraspecific)
 
 Inspect values:
 
-```{r dwc_mapping-33}
+```{r dwc_mapping-31}
 taxon %>%
   group_by(rank) %>%
   count()
@@ -403,30 +385,14 @@ taxon %>%
 
 Map values as is, in UPPERCASE, so it is clearer this information comes from the GBIF Backbone Taxonomy:
 
-```{r dwc_mapping-34, echo = TRUE}
+```{r dwc_mapping-32, echo = TRUE}
 taxon %<>% mutate(dwc_taxonRank = rank)
 ```
 
 #### scientificNameAuthorship
 
-```{r dwc_mapping-35, echo = TRUE}
+```{r dwc_mapping-33, echo = TRUE}
 taxon %<>% mutate(dwc_scientificNameAuthorship = authorship)
-```
-
-#### taxonomicStatus
-
-Inspect values:
-
-```{r dwc_mapping-36}
-taxon %>%
-  group_by(taxonomicStatus) %>%
-  count()
-```
-
-Map values as is, in UPPERCASE, so it is clearer this information comes from the GBIF Backbone Taxonomy:
-
-```{r dwc_mapping-37, echo = TRUE}
-taxon %<>% mutate(dwc_taxonomicStatus = taxonomicStatus)
 ```
 
 #### taxonRemarks
@@ -435,7 +401,7 @@ Here we list the checklists that were _considered_ for unifying information abou
 
 The `datasetKey`s of the considered checklists are listed in `datasetKeys`. Since we want the DOI instead, we will separate this information into columns, gather to rows and join with the DOI, and spread and combine again into a single column.
 
-```{r dwc_mapping-38}
+```{r dwc_mapping-34}
 taxon <-
   taxon %>%
 
@@ -483,7 +449,7 @@ taxon <-
   
 Map to `taxonRemarks`:
 
-```{r dwc_mapping-39, echo = TRUE}
+```{r dwc_mapping-35, echo = TRUE}
 taxon %<>% mutate(dwc_taxonRemarks = paste(
   "Sources considered for this taxon:", datasetDOIs
 ))
@@ -493,31 +459,31 @@ taxon %<>% mutate(dwc_taxonRemarks = paste(
 
 1. Only keep the Darwin Core columns.
   
-```{r dwc_mapping-40}
+```{r dwc_mapping-36}
 taxon %<>% select(starts_with("dwc_"))
 ```
   
 2. Drop the `dwc_` prefix.
   
-```{r dwc_mapping-41}
+```{r dwc_mapping-37}
 colnames(taxon) <- str_remove(colnames(taxon), "dwc_")
 ```
 
 3. Sort on `taxonID`.
 
-```{r dwc_mapping-42}
+```{r dwc_mapping-38}
 taxon %<>% arrange(taxonID)
 ```
 
 4. Preview data:
 
-```{r dwc_mapping-43}
+```{r dwc_mapping-39}
 taxon %>% head()
 ```
 
 5. Save to [CSV](https://github.com/trias-project/unified-checklist/blob/master/data/processed/taxon.csv).
 
-```{r dwc_mapping-44}
+```{r dwc_mapping-40}
 write_csv(taxon, here("data", "processed", "taxon.csv"), na = "")
 ```
 
@@ -527,7 +493,7 @@ write_csv(taxon, here("data", "processed", "taxon.csv"), na = "")
 
 Create a dataframe `distribution` from the unified distributions.
 
-```{r dwc_mapping-45}
+```{r dwc_mapping-41}
 distribution <- input_distributions
 ```
 
@@ -537,37 +503,37 @@ Map the data to [Species Distribution](http://rs.gbif.org/extension/gbif/1.0/dis
 
 #### taxonID
 
-```{r dwc_mapping-46, echo = TRUE}
+```{r dwc_mapping-42, echo = TRUE}
 distribution %<>% mutate(dwc_taxonID = paste0("https://www.gbif.org/species/", verificationKey))
 ```
 
 #### locationID
 
-```{r dwc_mapping-47, echo = TRUE}
+```{r dwc_mapping-43, echo = TRUE}
 distribution %<>% mutate(dwc_locationID = locationId)
 ```
 
 #### locality
 
-```{r dwc_mapping-48, echo = TRUE}
+```{r dwc_mapping-44, echo = TRUE}
 distribution %<>% mutate(dwc_locality = locality)
 ```
 
 #### countryCode
 
-```{r dwc_mapping-49, echo = TRUE}
+```{r dwc_mapping-45, echo = TRUE}
 distribution %<>% mutate(dwc_countryCode = "BE")
 ```
 
 #### occurrenceStatus
 
-```{r dwc_mapping-50, echo = TRUE}
+```{r dwc_mapping-46, echo = TRUE}
 distribution %<>% mutate(dwc_occurrenceStatus = "present")
 ```
 
 #### establishmentMeans
 
-```{r dwc_mapping-51, echo = TRUE}
+```{r dwc_mapping-47, echo = TRUE}
 distribution %<>% mutate(dwc_establishmentMeans = "introduced")
 ```
 
@@ -575,7 +541,7 @@ distribution %<>% mutate(dwc_establishmentMeans = "introduced")
 
 The distribution information applies to a certain date range, which we will express here as an ISO 8601 date `yyyy/yyyy` (`startYear/endYear`). How the information for `startYear` and `endYear` is extracted from the source checklists, is described in \@ref(unify-distribution). As a result, each taxon in `input_distribution` has _or_ an `startYear` and an `endYear` _or_ no `eventDate` information at all.
 
-```{r dwc_mapping-52, echo = TRUE}
+```{r dwc_mapping-48, echo = TRUE}
 distribution %<>% mutate(dwc_eventDate = case_when(
   is.na(startYear) & is.na(endYear) ~ "",
   TRUE ~ paste(startYear, endYear, sep = "/")
@@ -589,7 +555,7 @@ distribution %<>% mutate(dwc_eventDate = case_when(
 
 A distribution can have multiple source taxa (i.e. two verified synonyms from the same checklist). We therefore separate `datasetKeys` and `scientificNames` in a maximum of three columns and build a source (see \@ref(citing-sources)) for each.
 
-```{r dwc_mapping-53}
+```{r dwc_mapping-49}
 distribution <-
   distribution %>%
 
@@ -638,7 +604,7 @@ distribution <-
 
 Combine three source columns and remove `NA`:
 
-```{r dwc_mapping-54, echo = TRUE}
+```{r dwc_mapping-50, echo = TRUE}
 distribution %<>% mutate(
   dwc_source = paste(source_1, source_2, source_3, sep = " | ") %>% str_remove_all(" \\| NA")
 )
@@ -648,31 +614,31 @@ distribution %<>% mutate(
 
 1. Only keep the Darwin Core columns.
   
-```{r dwc_mapping-55}
+```{r dwc_mapping-51}
 distribution %<>% select(starts_with("dwc_"))
 ```
   
 2. Drop the `dwc_` prefix.
   
-```{r dwc_mapping-56}
+```{r dwc_mapping-52}
 colnames(distribution) <- str_remove(colnames(distribution), "dwc_")
 ```
 
 3. Sort on `taxonID`.
 
-```{r dwc_mapping-57}
+```{r dwc_mapping-53}
 distribution %<>% arrange(taxonID)
 ```
 
 4. Preview data:
 
-```{r dwc_mapping-58}
+```{r dwc_mapping-54}
 distribution %>% head()
 ```
 
 5. Save to [CSV](https://github.com/trias-project/unified-checklist/blob/master/data/processed/distribution.csv).
 
-```{r dwc_mapping-59}
+```{r dwc_mapping-55}
 write_csv(distribution, here("data", "processed", "distribution.csv"), na = "")
 ```
 
@@ -680,7 +646,7 @@ write_csv(distribution, here("data", "processed", "distribution.csv"), na = "")
 
 Create a dataframe `species_profile` from the unified species profiles.
 
-```{r dwc_mapping-60}
+```{r dwc_mapping-56}
 species_profile <- input_speciesprofiles
 ```
 
@@ -690,25 +656,25 @@ Map the data to [Species Profile](http://rs.gbif.org/extension/gbif/1.0/speciesp
 
 #### taxonID
 
-```{r dwc_mapping-61, echo = TRUE}
+```{r dwc_mapping-57, echo = TRUE}
 species_profile %<>% mutate(dwc_taxonID = paste0("https://www.gbif.org/species/", verificationKey))
 ```
 
 #### isMarine
 
-```{r dwc_mapping-62, echo = TRUE}
+```{r dwc_mapping-58, echo = TRUE}
 species_profile %<>% mutate(dwc_isMarine = marine)
 ```
 
 #### isFreshwater
 
-```{r dwc_mapping-63, echo = TRUE}
+```{r dwc_mapping-59, echo = TRUE}
 species_profile %<>% mutate(dwc_isFreshwater = freshwater)
 ```
 
 #### isTerrestrial
 
-```{r dwc_mapping-64, echo = TRUE}
+```{r dwc_mapping-60, echo = TRUE}
 species_profile %<>% mutate(dwc_isTerrestrial = terrestrial)
 ```
 
@@ -716,7 +682,7 @@ species_profile %<>% mutate(dwc_isTerrestrial = terrestrial)
 
 The source checklists currently do not include information on the invasive nature of the taxa. We plan to add that information in an update of the dataset.
 
-```{r dwc_mapping-65, echo = TRUE}
+```{r dwc_mapping-61, echo = TRUE}
 species_profile %<>% mutate(dwc_isInvasive = "")
 ```
 
@@ -724,7 +690,7 @@ species_profile %<>% mutate(dwc_isInvasive = "")
 
 ISSG also used the field `habitat`, in which we will summarize the information from `isMarine`, `isFreshwater` and `isTerrestrial`. 
 
-```{r dwc_mapping-66}
+```{r dwc_mapping-62}
 species_profile %>%
   group_by(marine, freshwater, terrestrial) %>%
   summarize(records = n()) %>%
@@ -733,7 +699,7 @@ species_profile %>%
 
 Map `habitat`:
 
-```{r dwc_mapping-67, echo = TRUE}
+```{r dwc_mapping-63, echo = TRUE}
 species_profile %<>% mutate(dwc_habitat = case_when(
   marine == "FALSE" & freshwater == "FALSE" & terrestrial == "TRUE" ~ "terrestrial",
   marine == "FALSE" & freshwater == "TRUE" & terrestrial == "FALSE" ~ "freshwater",
@@ -747,7 +713,7 @@ species_profile %<>% mutate(dwc_habitat = case_when(
 
 Show mapping:
 
-```{r dwc_mapping-68}
+```{r dwc_mapping-64}
 species_profile %>%
   group_by(dwc_isMarine, dwc_isFreshwater, dwc_isTerrestrial, dwc_habitat) %>%
   summarize(records = n())
@@ -757,7 +723,7 @@ species_profile %>%
 
 See \@ref(citing-sources):
 
-```{r dwc_mapping-69, echo = TRUE}
+```{r dwc_mapping-65, echo = TRUE}
 species_profile %<>% add_source_citation(
   new_column = "dwc_source",
   dataset_info = checklists
@@ -768,31 +734,31 @@ species_profile %<>% add_source_citation(
 
 1. Only keep the Darwin Core columns.
   
-```{r dwc_mapping-70}
+```{r dwc_mapping-66}
 species_profile %<>% select(starts_with("dwc_"))
 ```
   
 2. Drop the `dwc_` prefix.
   
-```{r dwc_mapping-71}
+```{r dwc_mapping-67}
 colnames(species_profile) <- str_remove(colnames(species_profile), "dwc_")
 ```
 
 3. Sort on `taxonID`.
 
-```{r dwc_mapping-72}
+```{r dwc_mapping-68}
 species_profile %<>% arrange(taxonID)
 ```
 
 4. Preview data:
 
-```{r dwc_mapping-73}
+```{r dwc_mapping-69}
 species_profile %>% head()
 ```
 
 5. Save to [CSV](https://github.com/trias-project/unified-checklist/blob/master/data/processed/speciesprofile.csv).
 
-```{r dwc_mapping-74}
+```{r dwc_mapping-70}
 write_csv(species_profile, here("data", "processed", "speciesprofile.csv"), na = "")
 ```
 
@@ -802,7 +768,7 @@ write_csv(species_profile, here("data", "processed", "speciesprofile.csv"), na =
 
 Create a dataframe `description` from the unified descriptions.
 
-```{r dwc_mapping-75}
+```{r dwc_mapping-71}
 description <- input_descriptions
 ```
 
@@ -812,25 +778,25 @@ Map the data to [Taxon Description](http://rs.gbif.org/extension/gbif/1.0/descri
 
 #### taxonID
 
-```{r dwc_mapping-76, echo = TRUE}
+```{r dwc_mapping-72, echo = TRUE}
 description %<>% mutate(dwc_taxonID = paste0("https://www.gbif.org/species/", verificationKey))
 ```
 
 #### description
 
-```{r dwc_mapping-77, echo = TRUE}
+```{r dwc_mapping-73, echo = TRUE}
 description %<>% mutate(dwc_description = description)
 ```
 
 #### type
 
-```{r dwc_mapping-78, echo = TRUE}
+```{r dwc_mapping-74, echo = TRUE}
 description %<>% mutate(dwc_type = type)
 ```
 
 #### language
 
-```{r dwc_mapping-79, echo = TRUE}
+```{r dwc_mapping-75, echo = TRUE}
 description %<>% mutate(dwc_language = "en")
 ```
 
@@ -838,7 +804,7 @@ description %<>% mutate(dwc_language = "en")
 
 See \@ref(citing-sources):
 
-```{r dwc_mapping-80, echo = TRUE}
+```{r dwc_mapping-76, echo = TRUE}
 description %<>% add_source_citation(
   new_column = "dwc_source",
   dataset_info = checklists
@@ -849,30 +815,30 @@ description %<>% add_source_citation(
 
 1. Only keep the Darwin Core columns.
   
-```{r dwc_mapping-81}
+```{r dwc_mapping-77}
 description %<>% select(starts_with("dwc_"))
 ```
   
 2. Drop the `dwc_` prefix.
   
-```{r dwc_mapping-82}
+```{r dwc_mapping-78}
 colnames(description) <- str_remove(colnames(description), "dwc_")
 ```
 
 3. Sort on `taxonID`.
 
-```{r dwc_mapping-83}
+```{r dwc_mapping-79}
 description %<>% arrange(taxonID)
 ```
 
 4. Preview data:
 
-```{r dwc_mapping-84}
+```{r dwc_mapping-80}
 description %>% head()
 ```
 
 5. Save to [CSV](https://github.com/trias-project/unified-checklist/blob/master/data/processed/description.csv).
 
-```{r dwc_mapping-85}
+```{r dwc_mapping-81}
 write_csv(description, here("data", "processed", "description.csv"), na = "")
 ```

@@ -49,9 +49,7 @@ institutioncode
 datasetname
 references
 taxonid
-acceptednameusageid
 scientificname
-acceptednameusage
 kingdom
 phylum
 class
@@ -62,7 +60,6 @@ specificepithet
 infraspecificepithet
 taxonrank
 scientificnameauthorship
-taxonomicstatus
 taxonremarks
 post-processing
 distribution-extension
@@ -105,9 +102,9 @@ taxonid-4
 countrycode-1
 island
 scientificname-1
-acceptednameusage-1
+acceptednameusage
 taxonrank-1
-taxonomicstatus-1
+taxonomicstatus
 kingdom-1
 phylum-1
 class-1

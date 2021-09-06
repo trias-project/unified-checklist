@@ -124,6 +124,7 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 2114446,Introduced species abundance,in Black Sea (IHO Sea Area) : Common,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131836,"Acartia tonsa Dana, 1849"
 2114446,Introduced species impact,in Black Sea (IHO Sea Area) : Other impact - undefined or uncertain,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131836,"Acartia tonsa Dana, 1849"
 2114446,Introduced species population trend,in Black Sea (IHO Sea Area) : Increasing,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131836,"Acartia tonsa Dana, 1849"
+2114446,Introduced species vector dispersal,Greek part of the Ionian Sea  (Marine Region) Ships: accidental as attached or free-living fouling organisms,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131836,"Acartia tonsa Dana, 1849"
 2114446,Introduced species vector dispersal,"in Belgian part of the North Sea: Ships: accidental with ballast water, sea water systems, live wells or other deck basins",0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131836,"Acartia tonsa Dana, 1849"
 2114446,Introduced species vector dispersal,"in Black Sea (IHO Sea Area) : Ships: accidental with ballast water, sea water systems, live wells or other deck basins<br/>Ballast water seems to be the most likely means of transferring this species, or its eggs between coastal waters of different continents. The fact that A. tonsa can produce highly resistant diapause eggs as well as eggs that can be induced into quiescence has probably played an important role for its wide distribution.",0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131836,"Acartia tonsa Dana, 1849"
 2114446,Introduced species vector dispersal,in Denmark (Nation) : Fisheries: accidental with deliberate translocations of fish or shellfish,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131836,"Acartia tonsa Dana, 1849"
@@ -148,6 +149,7 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 2115724,Introduced species remark,In Slovenian part of the Adriatic Sea (Marine Region) : B. trigonus was reported at many stations in the upper & lower mediolittoral horizonts at different sampling stations along the Slovenian coast in 2008-2009,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131652,"Balanus trigonus Darwin, 1854"
 2115724,Introduced species vector dispersal,Argentinean part of the South Atlantic Ocean  (Marine Region) Ships: accidental as attached or free-living fouling organisms,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131652,"Balanus trigonus Darwin, 1854"
 2115724,Introduced species vector dispersal,Croatian part of the Adriatic Sea  (Marine Region) Ships: general,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131652,"Balanus trigonus Darwin, 1854"
+2115724,Introduced species vector dispersal,Greek part of the Aegean Sea  (Marine Region) Ships: accidental as attached or free-living fouling organisms,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131652,"Balanus trigonus Darwin, 1854"
 2115724,Introduced species vector dispersal,in Portugal (Nation) : Shipping,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131652,"Balanus trigonus Darwin, 1854"
 2115724,Introduced species vector dispersal,in Slovenian part of the Adriatic Sea (Marine Region) : Ships: accidental as attached or free-living fouling organisms,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131652,"Balanus trigonus Darwin, 1854"
 2115724,Introduced species vector dispersal,Madeiran part of the North Atlantic Ocean (Marine Region) Ships: accidental as attached or free-living fouling organisms,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131652,"Balanus trigonus Darwin, 1854"
@@ -1093,6 +1095,13 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 2399874,Introduced species vector dispersal,Chinese part of the Yellow Sea (Marine Region) Aquaculture,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157130149,"Micropogonias undulatus (Linnaeus, 1766)"
 2399874,Introduced species vector dispersal,in Belgian part of the North Sea : Shipping,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157130149,"Micropogonias undulatus (Linnaeus, 1766)"
 2399874,Introduced species vector dispersal,"in Belgian part of the North Sea: Ships: accidental with ballast water, sea water systems, live wells or other deck basins",0a2eaf0c-5504-4f48-a47f-c94229029dc8,157130149,"Micropogonias undulatus (Linnaeus, 1766)"
+2399874,native range,Northern America,1738f272-6b5d-4f43-9a92-453a8c5ea50a,181974248,"Micropogonias undulatus (Linnaeus, 1766)"
+2399874,native range,South America,1738f272-6b5d-4f43-9a92-453a8c5ea50a,181974248,"Micropogonias undulatus (Linnaeus, 1766)"
+2399874,pathway,cbd_2014_pathway:contaminant,1738f272-6b5d-4f43-9a92-453a8c5ea50a,181974248,"Micropogonias undulatus (Linnaeus, 1766)"
+2399874,pathway,cbd_2014_pathway:corridor,1738f272-6b5d-4f43-9a92-453a8c5ea50a,181974248,"Micropogonias undulatus (Linnaeus, 1766)"
+2399874,pathway,cbd_2014_pathway:natural_dispersal,1738f272-6b5d-4f43-9a92-453a8c5ea50a,181974248,"Micropogonias undulatus (Linnaeus, 1766)"
+2399874,pathway,cbd_2014_pathway:release,1738f272-6b5d-4f43-9a92-453a8c5ea50a,181974248,"Micropogonias undulatus (Linnaeus, 1766)"
+2399874,pathway,cbd_2014_pathway:stowaway,1738f272-6b5d-4f43-9a92-453a8c5ea50a,181974248,"Micropogonias undulatus (Linnaeus, 1766)"
 2402129,degree of establishment,casual,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117250,Acipenser guldenstaedti
 2402129,native range,Eastern Europe,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117250,Acipenser guldenstaedti
 2402129,pathway,cbd_2014_pathway:escape_aquaculture,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117250,Acipenser guldenstaedti
@@ -4465,6 +4474,8 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 3026585,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265379,Spiraea alba Du Roi
 3026585,pathway,cbd_2014_pathway:natural_dispersal,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042141,Spiraea alba Du Roi
 3026585,pathway,cbd_2014_pathway:release,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042141,Spiraea alba Du Roi
+3026622,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265482,Spiraea x vanhouttei (Briot) Carr.
+3026622,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265482,Spiraea x vanhouttei (Briot) Carr.
 3026819,degree of establishment,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265475,Spiraea tomentosa L.
 3026819,native range,Northern America,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265475,Spiraea tomentosa L.
 3026819,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265475,Spiraea tomentosa L.
@@ -4520,6 +4531,10 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 3032698,degree of establishment,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265007,Tellima grandiflora (Pursh) Dougl. ex Lindl.
 3032698,native range,Northern America,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265007,Tellima grandiflora (Pursh) Dougl. ex Lindl.
 3032698,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265007,Tellima grandiflora (Pursh) Dougl. ex Lindl.
+3032762,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265019,Saxifraga stolonifera Meerb.
+3032762,native range,Eastern Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265019,Saxifraga stolonifera Meerb.
+3032762,native range,Eastern Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265019,Saxifraga stolonifera Meerb.
+3032762,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265019,Saxifraga stolonifera Meerb.
 3033077,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264583,Aucuba japonica Thunb.
 3033077,native range,Eastern Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264583,Aucuba japonica Thunb.
 3033077,native range,Eastern Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264583,Aucuba japonica Thunb.
@@ -5002,6 +5017,10 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 3048288,pathway,cbd_2014_pathway:contaminant_seed,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266026,Erysimum diffusum Ehrh.
 3048532,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265993,Erysimum x marshallii (Henfr.) Bois
 3048532,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265993,Erysimum x marshallii (Henfr.) Bois
+3049314,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265997,Euclidium syriacum (L.) R. Brown
+3049314,native range,Eastern Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265997,Euclidium syriacum (L.) R. Brown
+3049314,native range,Eastern Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265997,Euclidium syriacum (L.) R. Brown
+3049314,pathway,cbd_2014_pathway:contaminant_seed,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265997,Euclidium syriacum (L.) R. Brown
 3050357,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266011,Bunias erucago L.
 3050357,native range,Africa,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266011,Bunias erucago L.
 3050357,native range,Eastern Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266011,Bunias erucago L.
@@ -5773,6 +5792,9 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 3122924,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265173,Pilosella aurantiaca (L.) F.W. Schultz & Schultz-Bip.
 3122924,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265173,Pilosella aurantiaca (L.) F.W. Schultz & Schultz-Bip.
 3123249,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265290,Pilosella x stoloniflora (Waldst. et Kit.) F.W. Schultz & Schultz-Bip.
+3123262,degree of establishment,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265259,Pilosella flagellaris (Willd. ex Schlecht.) P.D. Sell & C. West
+3123262,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265259,Pilosella flagellaris (Willd. ex Schlecht.) P.D. Sell & C. West
+3123262,pathway,cbd_2014_pathway:contaminant_habitat_material,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265259,Pilosella flagellaris (Willd. ex Schlecht.) P.D. Sell & C. West
 3123300,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265154,Pilosella x fuscoatra (Nägeli & Peter) Soják
 3123663,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265091,Pilosella caespitosa (Dum.) P.D. Sell & C. West
 3123663,native range,Eastern Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265091,Pilosella caespitosa (Dum.) P.D. Sell & C. West
@@ -5942,6 +5964,9 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 3143034,degree of establishment,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265334,Doronicum columnae Ten.
 3143034,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265334,Doronicum columnae Ten.
 3143034,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265334,Doronicum columnae Ten.
+3144548,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265185,Brachycome heterodonta DC.
+3144548,native range,Australia and New Zealand,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265185,Brachycome heterodonta DC.
+3144548,pathway,cbd_2014_pathway:contaminant_on_animals,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265185,Brachycome heterodonta DC.
 3145214,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265202,Silybum marianum (L.) Gaertn.
 3145214,native range,Africa,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265202,Silybum marianum (L.) Gaertn.
 3145214,native range,Eastern Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265202,Silybum marianum (L.) Gaertn.
@@ -6150,6 +6175,10 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 3171304,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264876,Mazus pumilus (Burm. f.) Steenis
 3171304,native range,Eastern Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264876,Mazus pumilus (Burm. f.) Steenis
 3171304,native range,Eastern Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264876,Mazus pumilus (Burm. f.) Steenis
+3171882,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264600,Lindernia procumbens (Krocker) Borbás
+3171882,native range,Eastern Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264600,Lindernia procumbens (Krocker) Borbás
+3171882,native range,Eastern Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264600,Lindernia procumbens (Krocker) Borbás
+3171882,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264600,Lindernia procumbens (Krocker) Borbás
 3171888,degree of establishment,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264601,Lindernia dubia (L.) Pennell
 3171888,native range,Northern America,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264601,Lindernia dubia (L.) Pennell
 3171946,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266830,Verbascum sinuatum L.
@@ -6740,6 +6769,10 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 3967193,native range,Eastern Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266697,Halimodendron halodendron (Pallas) Voss
 3967193,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266697,Halimodendron halodendron (Pallas) Voss
 3967193,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266697,Halimodendron halodendron (Pallas) Voss
+3973001,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266705,Lens culinaris Med.
+3973001,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266705,Lens culinaris Med.
+3973001,pathway,cbd_2014_pathway:contaminant_on_animals,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266705,Lens culinaris Med.
+3973001,pathway,cbd_2014_pathway:escape_agriculture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266705,Lens culinaris Med.
 3973636,degree of establishment,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266819,Vicia dalmatica A. Kerner
 3973636,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266819,Vicia dalmatica A. Kerner
 3973636,pathway,cbd_2014_pathway:contaminant_habitat_material,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266819,Vicia dalmatica A. Kerner
@@ -7423,6 +7456,7 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 4565134,pathway,cbd_2014_pathway:stowaway_people_luggage,e082b10e-476f-43c1-aa61-f8d92f33029a,157063120,"Cernuella aginnica (Locard, 1882)"
 4565134,pathway,cbd_2014_pathway:stowaway_vehicles,e082b10e-476f-43c1-aa61-f8d92f33029a,157063120,"Cernuella aginnica (Locard, 1882)"
 4565140,degree of establishment,blackburn_et_al_2011:E,e082b10e-476f-43c1-aa61-f8d92f33029a,157063191,"Cernuella cisalpina (Rossmässler, 1837)"
+4565140,native range,Europe,1738f272-6b5d-4f43-9a92-453a8c5ea50a,181974250,"Cernuella cisalpina (Rossmässler, 1837)"
 4565140,native range,Southern Europe,e082b10e-476f-43c1-aa61-f8d92f33029a,157063191,"Cernuella cisalpina (Rossmässler, 1837)"
 4565140,pathway,cbd_2014_pathway:stowaway_people_luggage,e082b10e-476f-43c1-aa61-f8d92f33029a,157063191,"Cernuella cisalpina (Rossmässler, 1837)"
 4565140,pathway,cbd_2014_pathway:stowaway_vehicles,e082b10e-476f-43c1-aa61-f8d92f33029a,157063191,"Cernuella cisalpina (Rossmässler, 1837)"
@@ -9661,6 +9695,7 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 5389017,degree of establishment,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265194,Solidago gigantea Ait.
 5389017,native range,Northern America,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265194,Solidago gigantea Ait.
 5389017,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265194,Solidago gigantea Ait.
+5389017,pathway,cbd_2014_pathway:release,1738f272-6b5d-4f43-9a92-453a8c5ea50a,181974246,Solidago gigantea Aiton
 5389029,degree of establishment,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265104,Solidago canadensis L.
 5389029,native range,Northern America,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265104,Solidago canadensis L.
 5389029,pathway,cbd_2014_pathway:corridor,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042252,Solidago canadensis Linnaeus
@@ -10342,6 +10377,10 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 5914287,native range,Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264585,Melia azedarach L.
 5914287,native range,Australia and New Zealand,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264585,Melia azedarach L.
 5914287,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264585,Melia azedarach L.
+5928735,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266779,Sulla coronaria (L.) Med.
+5928735,native range,Africa,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266779,Sulla coronaria (L.) Med.
+5928735,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266779,Sulla coronaria (L.) Med.
+5928735,pathway,cbd_2014_pathway:contaminant_seed,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266779,Sulla coronaria (L.) Med.
 5930559,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264719,Ilex x altaclerensis
 5930559,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264719,Ilex x altaclerensis
 5959118,pathway,cbd_2014_pathway:escape_pet,e1c3be64-2799-4342-8312-49d076993132,159498316,"Bubo virginianus (Gmelin, 1788)"
@@ -10483,6 +10522,9 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 6290046,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266927,Solanum villosum Mill. subsp. miniatum (Bernh. ex Willd.) Edmonds
 6290046,pathway,cbd_2014_pathway:contaminant_on_animals,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266927,Solanum villosum Mill. subsp. miniatum (Bernh. ex Willd.) Edmonds
 6290046,pathway,cbd_2014_pathway:contaminant_seed,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266927,Solanum villosum Mill. subsp. miniatum (Bernh. ex Willd.) Edmonds
+6295486,degree of establishment,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265112,Hieracium amplexicaule L. subsp. speluncarum (Arv.-Touv.) Zahn
+6295486,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265112,Hieracium amplexicaule L. subsp. speluncarum (Arv.-Touv.) Zahn
+6295486,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265112,Hieracium amplexicaule L. subsp. speluncarum (Arv.-Touv.) Zahn
 6300805,degree of establishment,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265117,Pilosella bauhini (Schult. ex Besser) Arv.-Touv.
 6300805,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265117,Pilosella bauhini (Schult. ex Besser) Arv.-Touv.
 6300805,pathway,cbd_2014_pathway:contaminant_habitat_material,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265117,Pilosella bauhini (Schult. ex Besser) Arv.-Touv.
@@ -11077,6 +11119,9 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 7346102,native range,Northern America,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042137,Mimulus guttatus DC.
 7346102,pathway,cbd_2014_pathway:escape,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042137,Mimulus guttatus DC.
 7346102,pathway,cbd_2014_pathway:release,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042137,Mimulus guttatus DC.
+7350944,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266066,Daucus carota L. subsp. sativus (Hoffmann) Arcang.
+7350944,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266066,Daucus carota L. subsp. sativus (Hoffmann) Arcang.
+7350944,pathway,cbd_2014_pathway:escape_agriculture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266066,Daucus carota L. subsp. sativus (Hoffmann) Arcang.
 7350989,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266264,Nepeta x faassenii Bergm. ex Stearn
 7350989,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266264,Nepeta x faassenii Bergm. ex Stearn
 7351929,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265496,Chaenorhinum origanifolium (L.) Kostel.
@@ -11084,6 +11129,8 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 7351929,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265496,Chaenorhinum origanifolium (L.) Kostel.
 7351929,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265496,Chaenorhinum origanifolium (L.) Kostel.
 7353862,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266846,Verbascum x divaricatum Kittel
+7358677,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266634,Populus nigra L. var. italica Muenchh.
+7358677,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266634,Populus nigra L. var. italica Muenchh.
 7358948,degree of establishment,established,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164301216,"Lasius neglectus van Loon, Boomsma & Andrásfalvy, 1990"
 7358948,native range,Europe,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164301216,"Lasius neglectus van Loon, Boomsma & Andrásfalvy, 1990"
 7358948,pathway,cbd_2014_pathway:contaminant_on_plants,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164301216,"Lasius neglectus van Loon, Boomsma & Andrásfalvy, 1990"
@@ -11105,6 +11152,11 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 7397079,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264592,Mentzelia albicaulis (Dougl. ex Hook.) Dougl. ex Hook.
 7397079,native range,Northern America,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264592,Mentzelia albicaulis (Dougl. ex Hook.) Dougl. ex Hook.
 7397079,pathway,cbd_2014_pathway:contaminant_seed,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264592,Mentzelia albicaulis (Dougl. ex Hook.) Dougl. ex Hook.
+7397268,degree of establishment,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266337,Trachystemon orientalis (L.) G. Don f.
+7397268,native range,Eastern Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266337,Trachystemon orientalis (L.) G. Don f.
+7397268,native range,Eastern Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266337,Trachystemon orientalis (L.) G. Don f.
+7397268,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266337,Trachystemon orientalis (L.) G. Don f.
+7397268,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266337,Trachystemon orientalis (L.) G. Don f.
 7403263,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265360,Lactuca sativa L.
 7403263,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265360,Lactuca sativa L.
 7403263,pathway,cbd_2014_pathway:escape_agriculture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265360,Lactuca sativa L.
@@ -11309,6 +11361,10 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 7668385,Introduced species vector dispersal,Argentinean part of the South Atlantic Ocean  (Marine Region) Ships: accidental as attached or free-living fouling organisms,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131016,"Bugulina simplex (Hincks, 1886)"
 7670473,native range,Asia,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164300684,"Batrachochytrium salamandrivorans A. Martel, Blooi, Bossuyt & Pasmans, 2013"
 7670473,pathway,cbd_2014_pathway:contaminant_animal_parasite,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164300684,"Batrachochytrium salamandrivorans A. Martel, Blooi, Bossuyt & Pasmans, 2013"
+7671397,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266592,Phuopsis stylosa (Trin.) Benth. & Hook. f. ex B.D. Jackson
+7671397,native range,Eastern Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266592,Phuopsis stylosa (Trin.) Benth. & Hook. f. ex B.D. Jackson
+7671397,native range,Eastern Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266592,Phuopsis stylosa (Trin.) Benth. & Hook. f. ex B.D. Jackson
+7671397,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266592,Phuopsis stylosa (Trin.) Benth. & Hook. f. ex B.D. Jackson
 7675186,degree of establishment,established,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164301159,"Choreutis nemorana (Hubner, 1799)"
 7675186,native range,Southern Europe,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164301159,"Choreutis nemorana (Hubner, 1799)"
 7675186,pathway,cbd_2014_pathway:contaminant_on_plants,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164301159,"Choreutis nemorana (Hubner, 1799)"
@@ -11600,6 +11656,8 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 8014966,native range,Africa,e1c3be64-2799-4342-8312-49d076993132,159498390,"Falco biarmicus Temminck, 1825"
 8014966,native range,Southern Europe,e1c3be64-2799-4342-8312-49d076993132,159498390,"Falco biarmicus Temminck, 1825"
 8014966,pathway,cbd_2014_pathway:escape_pet,e1c3be64-2799-4342-8312-49d076993132,159498390,"Falco biarmicus Temminck, 1825"
+8016281,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,143605107,Populus x berolinensis Dippel
+8016281,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,143605107,Populus x berolinensis Dippel
 8018277,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265341,Centaurea pectinata L.
 8018277,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265341,Centaurea pectinata L.
 8018483,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265732,Eragrostis neomexicana Vasey
@@ -11650,6 +11708,8 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 8050384,Introduced species vector dispersal,in French part of the Bay of Biscay (Marine Region) : Ships: general,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157126485,"Bonamia ostreae Pichot, Comps, Tigé, Grizel & Rabouin, 1980"
 8050384,Introduced species vector dispersal,in United Kingdom part of the Celtic Sea (Marine Region) : Ships: general,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157126485,"Bonamia ostreae Pichot, Comps, Tigé, Grizel & Rabouin, 1980"
 8050384,Introduced species vector dispersal,United States part of the North Pacific Ocean  (Marine Region)  Aquaculture: accidental,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157126485,"Bonamia ostreae Pichot, Comps, Tigé, Grizel & Rabouin, 1980"
+8059430,degree of establishment,colonizing,22211949-9a6e-445f-86c0-6a0e019bc055,181974150,"Heleobia charruana (d'Orbigny, 1840)"
+8059430,pathway of introduction,stowaway_ballast_water,22211949-9a6e-445f-86c0-6a0e019bc055,181974150,"Heleobia charruana (d'Orbigny, 1840)"
 8060423,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264605,Cercidiphyllum japonicum Siebold
 8060423,native range,Eastern Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264605,Cercidiphyllum japonicum Siebold
 8060423,native range,Eastern Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264605,Cercidiphyllum japonicum Siebold
@@ -11693,6 +11753,10 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 8144599,native range,Eastern Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267106,Papaver nudicaule L.
 8144599,native range,Eastern Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267106,Papaver nudicaule L.
 8144599,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267106,Papaver nudicaule L.
+8149923,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265393,Prunus persica (L.) Batsch
+8149923,native range,Eastern Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265393,Prunus persica (L.) Batsch
+8149923,native range,Eastern Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265393,Prunus persica (L.) Batsch
+8149923,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265393,Prunus persica (L.) Batsch
 8150863,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267205,Silene cretica L.
 8150863,native range,Eastern Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267205,Silene cretica L.
 8150863,native range,Eastern Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267205,Silene cretica L.
@@ -11842,6 +11906,12 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 8332019,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265907,Hordeum distichon L.
 8332019,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265907,Hordeum distichon L.
 8332019,pathway,cbd_2014_pathway:escape_agriculture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265907,Hordeum distichon L.
+8336551,degree of establishment,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266404,Polygonum arenarium Waldst. & Kit. subsp. pulchellum (Loisel.) D.A. Webb & Chater
+8336551,native range,Africa,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266404,Polygonum arenarium Waldst. & Kit. subsp. pulchellum (Loisel.) D.A. Webb & Chater
+8336551,native range,Eastern Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266404,Polygonum arenarium Waldst. & Kit. subsp. pulchellum (Loisel.) D.A. Webb & Chater
+8336551,native range,Eastern Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266404,Polygonum arenarium Waldst. & Kit. subsp. pulchellum (Loisel.) D.A. Webb & Chater
+8336551,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266404,Polygonum arenarium Waldst. & Kit. subsp. pulchellum (Loisel.) D.A. Webb & Chater
+8336551,pathway,cbd_2014_pathway:contaminant_seed,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266404,Polygonum arenarium Waldst. & Kit. subsp. pulchellum (Loisel.) D.A. Webb & Chater
 8338793,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266489,Modiola caroliniana (L.) G. Don f.
 8338793,native range,South America,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266489,Modiola caroliniana (L.) G. Don f.
 8338793,pathway,cbd_2014_pathway:contaminant_on_animals,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266489,Modiola caroliniana (L.) G. Don f.
@@ -11854,6 +11924,10 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 8346536,native range,South America,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265184,Schkuhria pinnata (Lam.) O. Kuntze ex Thell. var. pinnata
 8346536,pathway,cbd_2014_pathway:contaminant_on_animals,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265184,Schkuhria pinnata (Lam.) O. Kuntze ex Thell. var. pinnata
 8346536,pathway,cbd_2014_pathway:contaminant_seed,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265184,Schkuhria pinnata (Lam.) O. Kuntze ex Thell. var. pinnata
+8350395,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266060,Cyclospermum leptophyllum (Pers.) Sprague ex Britton & P.G. Wilson
+8350395,native range,Americas,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266060,Cyclospermum leptophyllum (Pers.) Sprague ex Britton & P.G. Wilson
+8350395,pathway,cbd_2014_pathway:contaminant_on_animals,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266060,Cyclospermum leptophyllum (Pers.) Sprague ex Britton & P.G. Wilson
+8350395,pathway,cbd_2014_pathway:contaminant_seed,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266060,Cyclospermum leptophyllum (Pers.) Sprague ex Britton & P.G. Wilson
 8355821,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267073,Cephalaria syriaca (L.) Roem. & Schult.
 8355821,native range,Africa,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267073,Cephalaria syriaca (L.) Roem. & Schult.
 8355821,native range,Eastern Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267073,Cephalaria syriaca (L.) Roem. & Schult.
@@ -11928,6 +12002,12 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 8428595,Introduced species vector dispersal,in Belgian part of the North Sea: Ships: general,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131014,"Bugulina stolonifera (Ryland, 1960)"
 8428595,Introduced species vector dispersal,Japanese part of the North Pacific Ocean (Marine Region) Debris: transport of species on human generated debris (dock),0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131014,"Bugulina stolonifera (Ryland, 1960)"
 8428595,Introduced species vector dispersal,United States part of the North Pacific Ocean  (Marine Region) Aquaculture: accidental,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131014,"Bugulina stolonifera (Ryland, 1960)"
+8429888,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265886,Avena sterilis L. subsp. ludoviciana (Durieu) Nyman
+8429888,native range,Africa,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265886,Avena sterilis L. subsp. ludoviciana (Durieu) Nyman
+8429888,native range,Eastern Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265886,Avena sterilis L. subsp. ludoviciana (Durieu) Nyman
+8429888,native range,Eastern Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265886,Avena sterilis L. subsp. ludoviciana (Durieu) Nyman
+8429888,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265886,Avena sterilis L. subsp. ludoviciana (Durieu) Nyman
+8429888,pathway,cbd_2014_pathway:contaminant_seed,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265886,Avena sterilis L. subsp. ludoviciana (Durieu) Nyman
 8455382,degree of establishment,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164301207,"Hypoponera schauinslandi (Emery, 1899)"
 8485639,Introduced species vector dispersal,"in Belgian part of the North Sea: Ships: accidental with ballast water, sea water systems, live wells or other deck basins",0a2eaf0c-5504-4f48-a47f-c94229029dc8,157128522,"Ensis leei M.Huber, 2015"
 8510990,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266001,Crambe abyssinica Hochst. ex R.E. Fries
@@ -12194,6 +12274,9 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 9529916,native range,Europe,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,168131188,"Bufotes viridis (Laurenti, 1768)"
 9529916,pathway,cbd_2014_pathway:escape_pet,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,168131188,"Bufotes viridis (Laurenti, 1768)"
 9529916,pathway,cbd_2014_pathway:release_other,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,168131188,"Bufotes viridis (Laurenti, 1768)"
+9567226,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266123,Oxybasis glauca (L.) Fuentes & al. var. salina (Standley) Verloove
+9567226,native range,Northern America,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266123,Oxybasis glauca (L.) Fuentes & al. var. salina (Standley) Verloove
+9567226,pathway,cbd_2014_pathway:contaminant_seed,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266123,Oxybasis glauca (L.) Fuentes & al. var. salina (Standley) Verloove
 9601519,degree of establishment,casual,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661208,"Pseudemys rubriventris (LeConte, 1830)"
 9601519,degree of establishment,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,168131340,"Pseudemys rubriventris (LeConte, 1830)"
 9601519,introduction pathway,escape_pet,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661208,"Pseudemys rubriventris (LeConte, 1830)"
@@ -12246,6 +12329,10 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 10545407,pathway,cbd_2014_pathway:release_other,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,168131333,"Pelomedusa subrufa (Lacépède, 1788)"
 10578411,degree of establishment,casual,22211949-9a6e-445f-86c0-6a0e019bc055,181972017,"Laonome xeprovala Bick & Bastrop, 2018"
 10578411,pathway of introduction,stowaway_ship,22211949-9a6e-445f-86c0-6a0e019bc055,181972017,"Laonome xeprovala Bick & Bastrop, 2018"
+10730110,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265040,Crassula peduncularis (Smith) F. Meigen
+10730110,native range,Australia and New Zealand,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265040,Crassula peduncularis (Smith) F. Meigen
+10730110,native range,South America,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265040,Crassula peduncularis (Smith) F. Meigen
+10730110,pathway,cbd_2014_pathway:contaminant_on_animals,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265040,Crassula peduncularis (Smith) F. Meigen
 10966302,degree of establishment,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265798,Digitaria sanguinalis (L.) Scop. subsp. sanguinalis
 10966302,native range,Africa,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265798,Digitaria sanguinalis (L.) Scop. subsp. sanguinalis
 10966302,native range,Eastern Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265798,Digitaria sanguinalis (L.) Scop. subsp. sanguinalis

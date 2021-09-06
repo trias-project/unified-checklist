@@ -139,7 +139,7 @@ taxonKey	scientificName	datasetKey	bb_key	bb_scientificName	bb_kingdom	bb_rank	b
 145959247	Cephalaria syriaca	3f5e930b-52a5-461d-87ec-26ecd66f14a3	2888796	Cephalaria syriaca (L.) Roem. & Schult.	Plantae	SPECIES	SYNONYM	8355821	Cephalaria syriaca Schrad.	Plantae	SPECIES	ACCEPTED	8355821	accept	Quentin Groom	2018-12-20	TRUE
 141267073	Cephalaria syriaca (L.) Roem. & Schult.	9ff7d317-609b-4c08-bd86-3bc404b77c42	2888796	Cephalaria syriaca (L.) Roem. & Schult.	Plantae	SPECIES	SYNONYM	8355821	Cephalaria syriaca (L.) Schrad.	Plantae	SPECIES	ACCEPTED	8355821	accept	Quentin Groom	2018-12-20	FALSE
 141267189	Cerastium x maureri M. Schulze	9ff7d317-609b-4c08-bd86-3bc404b77c42	7925372	Cerastium ×maureri Schulze	Plantae	SPECIES	SYNONYM	10172912	Cerastium arvense subsp. arvense x tomentosum	Plantae	SPECIES	ACCEPTED	10172912	accept	Quentin Groom	2019-10-12	FALSE
-146042474	Cernuella cisalpine (Rossmässler, 1837)	1738f272-6b5d-4f43-9a92-453a8c5ea50a														2018-12-20	FALSE
+146042474	Cernuella cisalpine (Rossmässler, 1837)	1738f272-6b5d-4f43-9a92-453a8c5ea50a														2018-12-20	TRUE
 148437917	Cernuella neglecta	1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2	4565061	Cernuella neglecta (Draparnaud, 1805)	Animalia	SPECIES	HOMOTYPIC_SYNONYM	4598006	Xerocincta neglecta (Draparnaud, 1805)	Animalia	SPECIES	ACCEPTED	4598006	accept: homotypic	Tim Adriaens	2018-12-20	TRUE
 157063180	Cernuella neglecta (Draparnaud, 1805)	e082b10e-476f-43c1-aa61-f8d92f33029a	4565061	Cernuella neglecta (Draparnaud, 1805)	Animalia	SPECIES	HOMOTYPIC_SYNONYM	4598006	Xerocincta neglecta (Draparnaud, 1805)	Animalia	SPECIES	ACCEPTED	4598006	accept: homotypic	Tim Adriaens	2019-05-09	TRUE
 146042438	Cernuella neglecta (Draparnaud, 1805)	1738f272-6b5d-4f43-9a92-453a8c5ea50a	4565061	Cernuella neglecta (Draparnaud, 1805)	Animalia	SPECIES	HOMOTYPIC_SYNONYM	4598006	Xerocincta neglecta (Draparnaud, 1805)	Animalia	SPECIES	ACCEPTED	4598006	accept: homotypic	Tim Adriaens	2018-12-20	TRUE
@@ -422,7 +422,7 @@ taxonKey	scientificName	datasetKey	bb_key	bb_scientificName	bb_kingdom	bb_rank	b
 141266244	Mentha spicata L. subsp. glabrata (Lej. & Court.) Lebeau	9ff7d317-609b-4c08-bd86-3bc404b77c42	3895556	Mentha spicata subsp. glabrata (Lej. & Courtois) Lebeau	Plantae	SUBSPECIES	SYNONYM	7308335	Mentha spicata subsp. spicata	Plantae	SUBSPECIES	ACCEPTED				2018-12-20	FALSE
 141266216	Mentha x piperita L. nsubsp. piperita (M. aquatica L. x spicata subsp. glabrata)	9ff7d317-609b-4c08-bd86-3bc404b77c42														2018-12-20	FALSE
 141266278	Mentha x smithiana R.A. Graham	9ff7d317-609b-4c08-bd86-3bc404b77c42	2927185	Mentha smithiana R.A.Graham	Plantae	SPECIES	SYNONYM	3893979	Mentha wirtgeniana F.W.Schultz	Plantae	SPECIES	ACCEPTED				2018-12-20	FALSE
-146042327	Micropogonias undulatus (Linnaeus, 1766)	1738f272-6b5d-4f43-9a92-453a8c5ea50a														2018-12-20	FALSE
+146042327	Micropogonias undulatus (Linnaeus, 1766)	1738f272-6b5d-4f43-9a92-453a8c5ea50a														2018-12-20	TRUE
 146042378	Micropterus dolomieui Lacepède, 1802	1738f272-6b5d-4f43-9a92-453a8c5ea50a	5211251	Micropterus dolomieui Lacepède, 1802	Animalia	SPECIES	SYNONYM	5211250	Micropterus dolomieu Lacepède, 1802	Animalia	SPECIES	ACCEPTED	5211250	accept	Tim Adriaens	2018-12-20	FALSE
 146042137	Mimulus guttatus DC.	1738f272-6b5d-4f43-9a92-453a8c5ea50a	6070603	Mimulus guttatus Fisch. ex DC.	Plantae	SPECIES	SYNONYM	7346102	Erythranthe guttata (DC.) G.L.Nesom	Plantae	SPECIES	ACCEPTED	7346102	accept	Tim Adriaens	2018-12-20	FALSE
 141267216	Minuartia mediterranea (Link) K. Malý	9ff7d317-609b-4c08-bd86-3bc404b77c42	7895013	Minuartia mediterranea (Link) K.Malý	Plantae	SPECIES	HETEROTYPIC_SYNONYM	5587011	Sabulina mediterranea (Link) Rchb.	Plantae	SPECIES	ACCEPTED				2018-12-20	FALSE
@@ -622,7 +622,7 @@ taxonKey	scientificName	datasetKey	bb_key	bb_scientificName	bb_kingdom	bb_rank	b
 141266933	Solanum rostratum Dun.	9ff7d317-609b-4c08-bd86-3bc404b77c42	2930922	Solanum rostratum Dunal	Plantae	SPECIES	SYNONYM	2929800	Solanum angustifolium Houst. ex Mill.	Plantae	SPECIES	ACCEPTED				2018-12-20	FALSE
 141266957	Solanum triflorum Nutt. var. ponticum (Prodan) Borza	9ff7d317-609b-4c08-bd86-3bc404b77c42	2931238	Solanum triflorum var. ponticum (Prodan) Borza	Plantae	VARIETY	SYNONYM	2931237	Solanum triflorum Nutt.	Plantae	SPECIES	ACCEPTED				2018-12-20	FALSE
 141266974	Solanum triflorum Nutt. var. triflorum	9ff7d317-609b-4c08-bd86-3bc404b77c42														2021-05-08	FALSE
-146042122	Solidago gigantean Aiton	1738f272-6b5d-4f43-9a92-453a8c5ea50a														2018-12-20	FALSE
+146042122	Solidago gigantean Aiton	1738f272-6b5d-4f43-9a92-453a8c5ea50a														2018-12-20	TRUE
 141265297	Soliva pterosperma (Juss.) Less.	9ff7d317-609b-4c08-bd86-3bc404b77c42	3092698	Soliva pterosperma (Juss.) Less.	Plantae	SPECIES	SYNONYM	3092691	Soliva sessilis Ruiz & Pav.	Plantae	SPECIES	ACCEPTED				2018-12-20	FALSE
 148437420	Sonchus asper (L.) Hill subsp. glaucescens (Jord.) Ball	9ff7d317-609b-4c08-bd86-3bc404b77c42	4250676	Sonchus asper subsp. glaucescens (Jord.) Ball	Plantae	SUBSPECIES	SYNONYM	4250117	Sonchus glaucescens Jord.	Plantae	SPECIES	ACCEPTED				2018-12-20	FALSE
 141265479	Sorbus domestica L.	9ff7d317-609b-4c08-bd86-3bc404b77c42	3013206	Sorbus domestica L.	Plantae	SPECIES	SYNONYM	3013215	Cormus domestica (L.) Spach	Plantae	SPECIES	ACCEPTED				2019-10-12	FALSE

@@ -345,7 +345,7 @@ verificationKey,locality,locationId,startYear,endYear,datasetKey,taxonKeys,scien
 2308605,Flemish Region,ISO_3166:BE-VLG,2009,2016,289244ee-e1c1-49aa-b2d7-d379391ce265,140562899,Potamothrix vejdovskyi
 2308609,Belgium,ISO_3166:BE,2008,2008,22211949-9a6e-445f-86c0-6a0e019bc055,181972049,"Potamothrix moldaviensis (Vejdovský & Mrázek, 1903)"
 2308609,Flemish Region,ISO_3166:BE-VLG,2008,2008,22211949-9a6e-445f-86c0-6a0e019bc055,181972049,"Potamothrix moldaviensis (Vejdovský & Mrázek, 1903)"
-2320810,Belgium,ISO_3166:BE,2011,2011,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157127100,"Boccardia proboscidea Hartman, 1940"
+2320810,Belgium,ISO_3166:BE,2000,2000,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157127100,"Boccardia proboscidea Hartman, 1940"
 2320810,Flemish Region,ISO_3166:BE-VLG,2011,2011,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157127100,"Boccardia proboscidea Hartman, 1940"
 2320998,Belgium,ISO_3166:BE,2011,2011,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157127087,"Boccardiella hamata (Webster, 1879)"
 2320998,Flemish Region,ISO_3166:BE-VLG,2011,2011,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157127087,"Boccardiella hamata (Webster, 1879)"
@@ -2539,6 +2539,9 @@ verificationKey,locality,locationId,startYear,endYear,datasetKey,taxonKeys,scien
 3026585,Brussels-Capital Region,ISO_3166:BE-BRU,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265379,Spiraea alba Du Roi
 3026585,Flemish Region,ISO_3166:BE-VLG,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265379,Spiraea alba Du Roi
 3026585,Walloon Region,ISO_3166:BE-WAL,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265379,Spiraea alba Du Roi
+3026622,Belgium,ISO_3166:BE,1959,2018,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265482,Spiraea x vanhouttei (Briot) Carr.
+3026622,Flemish Region,ISO_3166:BE-VLG,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265482,Spiraea x vanhouttei (Briot) Carr.
+3026622,Walloon Region,ISO_3166:BE-WAL,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265482,Spiraea x vanhouttei (Briot) Carr.
 3026819,Belgium,ISO_3166:BE,1870,2020,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265475,Spiraea tomentosa L.
 3026819,Flemish Region,ISO_3166:BE-VLG,1870,2020,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265475,Spiraea tomentosa L.
 3027138,Belgium,ISO_3166:BE,2001,2017,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265415,Spiraea canescens D. Don
@@ -2588,6 +2591,8 @@ verificationKey,locality,locationId,startYear,endYear,datasetKey,taxonKeys,scien
 3032698,Brussels-Capital Region,ISO_3166:BE-BRU,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265007,Tellima grandiflora (Pursh) Dougl. ex Lindl.
 3032698,Flemish Region,ISO_3166:BE-VLG,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265007,Tellima grandiflora (Pursh) Dougl. ex Lindl.
 3032698,Walloon Region,ISO_3166:BE-WAL,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265007,Tellima grandiflora (Pursh) Dougl. ex Lindl.
+3032762,Belgium,ISO_3166:BE,1955,1955,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265019,Saxifraga stolonifera Meerb.
+3032762,Walloon Region,ISO_3166:BE-WAL,1955,1955,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265019,Saxifraga stolonifera Meerb.
 3033077,Belgium,ISO_3166:BE,1997,2020,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264583,Aucuba japonica Thunb.
 3033077,Brussels-Capital Region,ISO_3166:BE-BRU,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264583,Aucuba japonica Thunb.
 3033077,Flemish Region,ISO_3166:BE-VLG,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264583,Aucuba japonica Thunb.
@@ -2906,6 +2911,9 @@ verificationKey,locality,locationId,startYear,endYear,datasetKey,taxonKeys,scien
 3048288,Flemish Region,ISO_3166:BE-VLG,1877,1896,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266026,Erysimum diffusum Ehrh.
 3048532,Belgium,ISO_3166:BE,2000,2000,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265993,Erysimum x marshallii (Henfr.) Bois
 3048532,Flemish Region,ISO_3166:BE-VLG,2000,2000,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265993,Erysimum x marshallii (Henfr.) Bois
+3049314,Belgium,ISO_3166:BE,1885,2011,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265997,Euclidium syriacum (L.) R. Brown
+3049314,Flemish Region,ISO_3166:BE-VLG,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265997,Euclidium syriacum (L.) R. Brown
+3049314,Walloon Region,ISO_3166:BE-WAL,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265997,Euclidium syriacum (L.) R. Brown
 3050357,Belgium,ISO_3166:BE,1854,1969,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266011,Bunias erucago L.
 3050357,Brussels-Capital Region,ISO_3166:BE-BRU,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266011,Bunias erucago L.
 3050357,Flemish Region,ISO_3166:BE-VLG,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266011,Bunias erucago L.
@@ -3426,6 +3434,10 @@ verificationKey,locality,locationId,startYear,endYear,datasetKey,taxonKeys,scien
 3122924,Walloon Region,ISO_3166:BE-WAL,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265173,Pilosella aurantiaca (L.) F.W. Schultz & Schultz-Bip.
 3123249,Belgium,ISO_3166:BE,2016,2016,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265290,Pilosella x stoloniflora (Waldst. et Kit.) F.W. Schultz & Schultz-Bip.
 3123249,Flemish Region,ISO_3166:BE-VLG,2016,2016,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265290,Pilosella x stoloniflora (Waldst. et Kit.) F.W. Schultz & Schultz-Bip.
+3123262,Belgium,ISO_3166:BE,1999,2020,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265259,Pilosella flagellaris (Willd. ex Schlecht.) P.D. Sell & C. West
+3123262,Brussels-Capital Region,ISO_3166:BE-BRU,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265259,Pilosella flagellaris (Willd. ex Schlecht.) P.D. Sell & C. West
+3123262,Flemish Region,ISO_3166:BE-VLG,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265259,Pilosella flagellaris (Willd. ex Schlecht.) P.D. Sell & C. West
+3123262,Walloon Region,ISO_3166:BE-WAL,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265259,Pilosella flagellaris (Willd. ex Schlecht.) P.D. Sell & C. West
 3123300,Belgium,ISO_3166:BE,2006,2006,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265154,Pilosella x fuscoatra (Nägeli & Peter) Soják
 3123300,Flemish Region,ISO_3166:BE-VLG,2006,2006,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265154,Pilosella x fuscoatra (Nägeli & Peter) Soják
 3123663,Belgium,ISO_3166:BE,1850,2015,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265091,Pilosella caespitosa (Dum.) P.D. Sell & C. West
@@ -3543,6 +3555,8 @@ verificationKey,locality,locationId,startYear,endYear,datasetKey,taxonKeys,scien
 3143034,Belgium,ISO_3166:BE,1886,2020,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265334,Doronicum columnae Ten.
 3143034,Flemish Region,ISO_3166:BE-VLG,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265334,Doronicum columnae Ten.
 3143034,Walloon Region,ISO_3166:BE-WAL,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265334,Doronicum columnae Ten.
+3144548,Belgium,ISO_3166:BE,1892,1892,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265185,Brachycome heterodonta DC.
+3144548,Walloon Region,ISO_3166:BE-WAL,1892,1892,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265185,Brachycome heterodonta DC.
 3145214,Belgium,ISO_3166:BE,1803,2018,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265202,Silybum marianum (L.) Gaertn.
 3145214,Brussels-Capital Region,ISO_3166:BE-BRU,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265202,Silybum marianum (L.) Gaertn.
 3145214,Flemish Region,ISO_3166:BE-VLG,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265202,Silybum marianum (L.) Gaertn.
@@ -3692,6 +3706,8 @@ verificationKey,locality,locationId,startYear,endYear,datasetKey,taxonKeys,scien
 3170878,Walloon Region,ISO_3166:BE-WAL,1901,1901,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266835,Scrophularia lanceolata Pursh
 3171304,Belgium,ISO_3166:BE,2014,2018,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264876,Mazus pumilus (Burm. f.) Steenis
 3171304,Flemish Region,ISO_3166:BE-VLG,2014,2018,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264876,Mazus pumilus (Burm. f.) Steenis
+3171882,Belgium,ISO_3166:BE,1995,1995,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264600,Lindernia procumbens (Krocker) Borbás
+3171882,Flemish Region,ISO_3166:BE-VLG,1995,1995,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264600,Lindernia procumbens (Krocker) Borbás
 3171888,Belgium,ISO_3166:BE,1993,2020,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264601,Lindernia dubia (L.) Pennell
 3171888,Flemish Region,ISO_3166:BE-VLG,1993,2020,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264601,Lindernia dubia (L.) Pennell
 3171946,Belgium,ISO_3166:BE,1831,1949,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266830,Verbascum sinuatum L.
@@ -4113,6 +4129,10 @@ verificationKey,locality,locationId,startYear,endYear,datasetKey,taxonKeys,scien
 3966627,Walloon Region,ISO_3166:BE-WAL,1911,1947,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266682,Cullen cinereum (Lindl.) J.W. Grimes
 3967193,Belgium,ISO_3166:BE,1953,1953,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266697,Halimodendron halodendron (Pallas) Voss
 3967193,Brussels-Capital Region,ISO_3166:BE-BRU,1953,1953,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266697,Halimodendron halodendron (Pallas) Voss
+3973001,Belgium,ISO_3166:BE,1852,2014,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266705,Lens culinaris Med.
+3973001,Brussels-Capital Region,ISO_3166:BE-BRU,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266705,Lens culinaris Med.
+3973001,Flemish Region,ISO_3166:BE-VLG,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266705,Lens culinaris Med.
+3973001,Walloon Region,ISO_3166:BE-WAL,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266705,Lens culinaris Med.
 3973636,Belgium,ISO_3166:BE,1937,2020,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266819,Vicia dalmatica A. Kerner
 3973636,Walloon Region,ISO_3166:BE-WAL,1937,2020,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266819,Vicia dalmatica A. Kerner
 3981543,Belgium,ISO_3166:BE,2003,2020,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264919,Berberis julianae C.K. Schneider
@@ -6216,6 +6236,8 @@ verificationKey,locality,locationId,startYear,endYear,datasetKey,taxonKeys,scien
 5892120,Flemish Region,ISO_3166:BE-VLG,2004,2016,289244ee-e1c1-49aa-b2d7-d379391ce265,140562916,Dugesia tigrina
 5914287,Belgium,ISO_3166:BE,2006,2006,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264585,Melia azedarach L.
 5914287,Flemish Region,ISO_3166:BE-VLG,2006,2006,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264585,Melia azedarach L.
+5928735,Belgium,ISO_3166:BE,1995,1995,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266779,Sulla coronaria (L.) Med.
+5928735,Flemish Region,ISO_3166:BE-VLG,1995,1995,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266779,Sulla coronaria (L.) Med.
 5930559,Belgium,ISO_3166:BE,2006,2018,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264719,Ilex x altaclerensis
 5930559,Flemish Region,ISO_3166:BE-VLG,2006,2018,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264719,Ilex x altaclerensis
 5959118,Belgium,ISO_3166:BE,2007,2007,e1c3be64-2799-4342-8312-49d076993132,159498316,"Bubo virginianus (Gmelin, 1788)"
@@ -6303,6 +6325,8 @@ verificationKey,locality,locationId,startYear,endYear,datasetKey,taxonKeys,scien
 6290046,Belgium,ISO_3166:BE,1899,2018,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266927,Solanum villosum Mill. subsp. miniatum (Bernh. ex Willd.) Edmonds
 6290046,Flemish Region,ISO_3166:BE-VLG,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266927,Solanum villosum Mill. subsp. miniatum (Bernh. ex Willd.) Edmonds
 6290046,Walloon Region,ISO_3166:BE-WAL,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266927,Solanum villosum Mill. subsp. miniatum (Bernh. ex Willd.) Edmonds
+6295486,Belgium,ISO_3166:BE,1873,2020,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265112,Hieracium amplexicaule L. subsp. speluncarum (Arv.-Touv.) Zahn
+6295486,Flemish Region,ISO_3166:BE-VLG,1873,2020,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265112,Hieracium amplexicaule L. subsp. speluncarum (Arv.-Touv.) Zahn
 6300805,Belgium,ISO_3166:BE,1909,2020,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265117,Pilosella bauhini (Schult. ex Besser) Arv.-Touv.
 6300805,Brussels-Capital Region,ISO_3166:BE-BRU,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265117,Pilosella bauhini (Schult. ex Besser) Arv.-Touv.
 6300805,Flemish Region,ISO_3166:BE-VLG,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265117,Pilosella bauhini (Schult. ex Besser) Arv.-Touv.
@@ -6673,6 +6697,9 @@ verificationKey,locality,locationId,startYear,endYear,datasetKey,taxonKeys,scien
 7346090,Flemish Region,ISO_3166:BE-VLG,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267252,Erythranthe moschata ( Douglas ex Lindl. ) G.L. Nesom
 7346090,Walloon Region,ISO_3166:BE-WAL,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267252,Erythranthe moschata ( Douglas ex Lindl. ) G.L. Nesom
 7346102,Belgium,ISO_3166:BE,1953,2017,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042137,Mimulus guttatus DC.
+7350944,Belgium,ISO_3166:BE,2018,2018,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266066,Daucus carota L. subsp. sativus (Hoffmann) Arcang.
+7350944,Flemish Region,ISO_3166:BE-VLG,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266066,Daucus carota L. subsp. sativus (Hoffmann) Arcang.
+7350944,Walloon Region,ISO_3166:BE-WAL,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266066,Daucus carota L. subsp. sativus (Hoffmann) Arcang.
 7350989,Belgium,ISO_3166:BE,1946,2020,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266264,Nepeta x faassenii Bergm. ex Stearn
 7350989,Flemish Region,ISO_3166:BE-VLG,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266264,Nepeta x faassenii Bergm. ex Stearn
 7350989,Walloon Region,ISO_3166:BE-WAL,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266264,Nepeta x faassenii Bergm. ex Stearn
@@ -6682,6 +6709,8 @@ verificationKey,locality,locationId,startYear,endYear,datasetKey,taxonKeys,scien
 7351929,Walloon Region,ISO_3166:BE-WAL,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265496,Chaenorhinum origanifolium (L.) Kostel.
 7353862,Belgium,ISO_3166:BE,1954,1954,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266846,Verbascum x divaricatum Kittel
 7353862,Flemish Region,ISO_3166:BE-VLG,1954,1954,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266846,Verbascum x divaricatum Kittel
+7358677,Belgium,ISO_3166:BE,2018,2018,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266634,Populus nigra L. var. italica Muenchh.
+7358677,Flemish Region,ISO_3166:BE-VLG,2018,2018,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266634,Populus nigra L. var. italica Muenchh.
 7358948,Belgium,ISO_3166:BE,1978,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164301216,"Lasius neglectus van Loon, Boomsma & Andrásfalvy, 1990"
 7358948,Flemish Region,ISO_3166:BE-VLG,1978,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164301216,"Lasius neglectus van Loon, Boomsma & Andrásfalvy, 1990"
 7361239,Belgium,ISO_3166:BE,1899,1947,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265801,Triraphis mollis R. Brown
@@ -6699,6 +6728,8 @@ verificationKey,locality,locationId,startYear,endYear,datasetKey,taxonKeys,scien
 7393432,Walloon Region,ISO_3166:BE-WAL,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266771,Pisum sativum L. var. arvense (L.) Poiret
 7397079,Belgium,ISO_3166:BE,1893,1893,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264592,Mentzelia albicaulis (Dougl. ex Hook.) Dougl. ex Hook.
 7397079,Flemish Region,ISO_3166:BE-VLG,1893,1893,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264592,Mentzelia albicaulis (Dougl. ex Hook.) Dougl. ex Hook.
+7397268,Belgium,ISO_3166:BE,1955,2020,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266337,Trachystemon orientalis (L.) G. Don f.
+7397268,Flemish Region,ISO_3166:BE-VLG,1955,2020,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266337,Trachystemon orientalis (L.) G. Don f.
 7403263,Belgium,ISO_3166:BE,1857,2020,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265360,Lactuca sativa L.
 7403263,Brussels-Capital Region,ISO_3166:BE-BRU,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265360,Lactuca sativa L.
 7403263,Flemish Region,ISO_3166:BE-VLG,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265360,Lactuca sativa L.
@@ -6829,6 +6860,9 @@ verificationKey,locality,locationId,startYear,endYear,datasetKey,taxonKeys,scien
 7668385,Flemish Region,ISO_3166:BE-VLG,,,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131016,"Bugulina simplex (Hincks, 1886)"
 7670473,Belgium,ISO_3166:BE,2013,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164300684,"Batrachochytrium salamandrivorans A. Martel, Blooi, Bossuyt & Pasmans, 2013"
 7670473,Walloon Region,ISO_3166:BE-WAL,2013,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164300684,"Batrachochytrium salamandrivorans A. Martel, Blooi, Bossuyt & Pasmans, 2013"
+7671397,Belgium,ISO_3166:BE,2000,2018,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266592,Phuopsis stylosa (Trin.) Benth. & Hook. f. ex B.D. Jackson
+7671397,Flemish Region,ISO_3166:BE-VLG,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266592,Phuopsis stylosa (Trin.) Benth. & Hook. f. ex B.D. Jackson
+7671397,Walloon Region,ISO_3166:BE-WAL,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266592,Phuopsis stylosa (Trin.) Benth. & Hook. f. ex B.D. Jackson
 7675186,Belgium,ISO_3166:BE,2009,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164301159,"Choreutis nemorana (Hubner, 1799)"
 7675186,Flemish Region,ISO_3166:BE-VLG,2015,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164301159,"Choreutis nemorana (Hubner, 1799)"
 7675186,Walloon Region,ISO_3166:BE-WAL,2009,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164301159,"Choreutis nemorana (Hubner, 1799)"
@@ -7000,6 +7034,8 @@ verificationKey,locality,locationId,startYear,endYear,datasetKey,taxonKeys,scien
 8014163,Belgium,ISO_3166:BE,1946,1946,e082b10e-476f-43c1-aa61-f8d92f33029a,157063061,"Ambigolimax valentianus (A. Férussac, 1822)"
 8014163,Flemish Region,ISO_3166:BE-VLG,1946,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164300936,Ambigolimax valentianus
 8014966,Belgium,ISO_3166:BE,,,e1c3be64-2799-4342-8312-49d076993132,159498390,"Falco biarmicus Temminck, 1825"
+8016281,Belgium,ISO_3166:BE,2015,2015,9ff7d317-609b-4c08-bd86-3bc404b77c42,143605107,Populus x berolinensis Dippel
+8016281,Walloon Region,ISO_3166:BE-WAL,2015,2015,9ff7d317-609b-4c08-bd86-3bc404b77c42,143605107,Populus x berolinensis Dippel
 8018277,Belgium,ISO_3166:BE,2004,2004,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265341,Centaurea pectinata L.
 8018277,Walloon Region,ISO_3166:BE-WAL,2004,2004,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265341,Centaurea pectinata L.
 8018483,Belgium,ISO_3166:BE,1947,2011,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265732,Eragrostis neomexicana Vasey
@@ -7022,6 +7058,8 @@ verificationKey,locality,locationId,startYear,endYear,datasetKey,taxonKeys,scien
 8049400,Flemish Region,ISO_3166:BE-VLG,2016,2018,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266616,Parentucellia latifolia (L.) Caruel
 8050384,Belgium,ISO_3166:BE,1980,1980,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157126485,"Bonamia ostreae Pichot, Comps, Tigé, Grizel & Rabouin, 1980"
 8050384,Flemish Region,ISO_3166:BE-VLG,,,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157126485,"Bonamia ostreae Pichot, Comps, Tigé, Grizel & Rabouin, 1980"
+8059430,Belgium,ISO_3166:BE,2017,2017,22211949-9a6e-445f-86c0-6a0e019bc055,181974150,"Heleobia charruana (d'Orbigny, 1840)"
+8059430,Flemish Region,ISO_3166:BE-VLG,2017,2017,22211949-9a6e-445f-86c0-6a0e019bc055,181974150,"Heleobia charruana (d'Orbigny, 1840)"
 8060423,Belgium,ISO_3166:BE,2014,2018,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264605,Cercidiphyllum japonicum Siebold
 8060423,Flemish Region,ISO_3166:BE-VLG,2014,2018,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264605,Cercidiphyllum japonicum Siebold
 8077391,Belgium,ISO_3166:BE,1949,1949,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264609,Citrus aurantium L.
@@ -7048,6 +7086,10 @@ verificationKey,locality,locationId,startYear,endYear,datasetKey,taxonKeys,scien
 8133114,Brussels-Capital Region,ISO_3166:BE-BRU,1951,1951,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265206,Aster amellus L.
 8144599,Belgium,ISO_3166:BE,2014,2014,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267106,Papaver nudicaule L.
 8144599,Flemish Region,ISO_3166:BE-VLG,2014,2014,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267106,Papaver nudicaule L.
+8149923,Belgium,ISO_3166:BE,2004,2020,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265393,Prunus persica (L.) Batsch
+8149923,Brussels-Capital Region,ISO_3166:BE-BRU,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265393,Prunus persica (L.) Batsch
+8149923,Flemish Region,ISO_3166:BE-VLG,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265393,Prunus persica (L.) Batsch
+8149923,Walloon Region,ISO_3166:BE-WAL,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265393,Prunus persica (L.) Batsch
 8150863,Belgium,ISO_3166:BE,1950,1950,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267205,Silene cretica L.
 8150863,Walloon Region,ISO_3166:BE-WAL,1950,1950,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267205,Silene cretica L.
 8153538,Belgium,ISO_3166:BE,1884,2018,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266526,Oenothera oehlkersii Kappus
@@ -7158,6 +7200,9 @@ verificationKey,locality,locationId,startYear,endYear,datasetKey,taxonKeys,scien
 8332019,Belgium,ISO_3166:BE,1871,2020,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265907,Hordeum distichon L.
 8332019,Flemish Region,ISO_3166:BE-VLG,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265907,Hordeum distichon L.
 8332019,Walloon Region,ISO_3166:BE-WAL,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265907,Hordeum distichon L.
+8336551,Belgium,ISO_3166:BE,1943,2020,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266404,Polygonum arenarium Waldst. & Kit. subsp. pulchellum (Loisel.) D.A. Webb & Chater
+8336551,Brussels-Capital Region,ISO_3166:BE-BRU,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266404,Polygonum arenarium Waldst. & Kit. subsp. pulchellum (Loisel.) D.A. Webb & Chater
+8336551,Flemish Region,ISO_3166:BE-VLG,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266404,Polygonum arenarium Waldst. & Kit. subsp. pulchellum (Loisel.) D.A. Webb & Chater
 8338793,Belgium,ISO_3166:BE,1893,2017,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266489,Modiola caroliniana (L.) G. Don f.
 8338793,Flemish Region,ISO_3166:BE-VLG,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266489,Modiola caroliniana (L.) G. Don f.
 8338793,Walloon Region,ISO_3166:BE-WAL,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266489,Modiola caroliniana (L.) G. Don f.
@@ -7166,6 +7211,9 @@ verificationKey,locality,locationId,startYear,endYear,datasetKey,taxonKeys,scien
 8346536,Belgium,ISO_3166:BE,1921,2013,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265184,Schkuhria pinnata (Lam.) O. Kuntze ex Thell. var. pinnata
 8346536,Flemish Region,ISO_3166:BE-VLG,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265184,Schkuhria pinnata (Lam.) O. Kuntze ex Thell. var. pinnata
 8346536,Walloon Region,ISO_3166:BE-WAL,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265184,Schkuhria pinnata (Lam.) O. Kuntze ex Thell. var. pinnata
+8350395,Belgium,ISO_3166:BE,1893,2016,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266060,Cyclospermum leptophyllum (Pers.) Sprague ex Britton & P.G. Wilson
+8350395,Flemish Region,ISO_3166:BE-VLG,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266060,Cyclospermum leptophyllum (Pers.) Sprague ex Britton & P.G. Wilson
+8350395,Walloon Region,ISO_3166:BE-WAL,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266060,Cyclospermum leptophyllum (Pers.) Sprague ex Britton & P.G. Wilson
 8351995,Belgium,ISO_3166:BE,2018,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164301173,Frankliniella occidentalis (Pergande 1895)
 8355821,Belgium,ISO_3166:BE,1891,2011,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267073,Cephalaria syriaca (L.) Roem. & Schult.
 8355821,Flemish Region,ISO_3166:BE-VLG,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267073,Cephalaria syriaca (L.) Roem. & Schult.
@@ -7215,6 +7263,9 @@ verificationKey,locality,locationId,startYear,endYear,datasetKey,taxonKeys,scien
 8427624,Walloon Region,ISO_3166:BE-WAL,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266320,Oxalis corniculata L.
 8428595,Belgium,ISO_3166:BE,,,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131014,"Bugulina stolonifera (Ryland, 1960)"
 8428595,Flemish Region,ISO_3166:BE-VLG,,,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131014,"Bugulina stolonifera (Ryland, 1960)"
+8429888,Belgium,ISO_3166:BE,1877,2005,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265886,Avena sterilis L. subsp. ludoviciana (Durieu) Nyman
+8429888,Flemish Region,ISO_3166:BE-VLG,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265886,Avena sterilis L. subsp. ludoviciana (Durieu) Nyman
+8429888,Walloon Region,ISO_3166:BE-WAL,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265886,Avena sterilis L. subsp. ludoviciana (Durieu) Nyman
 8455382,Belgium,ISO_3166:BE,1911,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164301207,"Hypoponera schauinslandi (Emery, 1899)"
 8455382,Flemish Region,ISO_3166:BE-VLG,1911,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164301207,"Hypoponera schauinslandi (Emery, 1899)"
 8485639,Belgium,ISO_3166:BE,,,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157128522,"Ensis leei M.Huber, 2015"
@@ -7375,6 +7426,9 @@ verificationKey,locality,locationId,startYear,endYear,datasetKey,taxonKeys,scien
 9520065,Flemish Region,ISO_3166:BE-VLG,1937,2016,289244ee-e1c1-49aa-b2d7-d379391ce265,140562956,Ferrissia fragilis
 9529916,Belgium,ISO_3166:BE,2015,2015,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661048,"Bufotes viridis (Laurenti, 1768)"
 9529916,Brussels-Capital Region,ISO_3166:BE-BRU,2015,2015,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661048,"Bufotes viridis (Laurenti, 1768)"
+9567226,Belgium,ISO_3166:BE,2003,2018,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266123,Oxybasis glauca (L.) Fuentes & al. var. salina (Standley) Verloove
+9567226,Flemish Region,ISO_3166:BE-VLG,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266123,Oxybasis glauca (L.) Fuentes & al. var. salina (Standley) Verloove
+9567226,Walloon Region,ISO_3166:BE-WAL,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266123,Oxybasis glauca (L.) Fuentes & al. var. salina (Standley) Verloove
 9601519,Belgium,ISO_3166:BE,2015,2015,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661208,"Pseudemys rubriventris (LeConte, 1830)"
 9601519,Flemish Region,ISO_3166:BE-VLG,2015,2015,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661208,"Pseudemys rubriventris (LeConte, 1830)"
 9606290,Belgium,ISO_3166:BE,,,e1c3be64-2799-4342-8312-49d076993132,159498421,"Meleagris gallopavo Linnaeus, 1758"
@@ -7407,6 +7461,9 @@ verificationKey,locality,locationId,startYear,endYear,datasetKey,taxonKeys,scien
 10545407,Flemish Region,ISO_3166:BE-VLG,2020,2020,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,168131333,"Pelomedusa subrufa (Lacépède, 1788)"
 10578411,Belgium,ISO_3166:BE,2017,2017,22211949-9a6e-445f-86c0-6a0e019bc055,181972017,"Laonome xeprovala Bick & Bastrop, 2018"
 10578411,Flemish Region,ISO_3166:BE-VLG,2017,2017,22211949-9a6e-445f-86c0-6a0e019bc055,181972017,"Laonome xeprovala Bick & Bastrop, 2018"
+10730110,Belgium,ISO_3166:BE,1894,1920,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265040,Crassula peduncularis (Smith) F. Meigen
+10730110,Walloon Region,ISO_3166:BE-WAL,1894,1920,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265040,Crassula peduncularis (Smith) F. Meigen
+10797854,Belgium,ISO_3166:BE,,,b043c480-dd36-4f4f-aa82-e188753ff09d,143611062,Puccinia grisea (F. Strauss) G. Winter
 10966302,Belgium,ISO_3166:BE,1803,2020,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265798,Digitaria sanguinalis (L.) Scop. subsp. sanguinalis
 10966302,Brussels-Capital Region,ISO_3166:BE-BRU,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265798,Digitaria sanguinalis (L.) Scop. subsp. sanguinalis
 10966302,Flemish Region,ISO_3166:BE-VLG,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265798,Digitaria sanguinalis (L.) Scop. subsp. sanguinalis

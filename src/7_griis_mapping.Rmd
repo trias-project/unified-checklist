@@ -83,10 +83,7 @@ griis %<>% mutate(griis_scientificName = scientificName)
 #### acceptedNameUsage
 
 ```{r griis_mapping-9, echo = TRUE}
-griis %<>% mutate(griis_acceptedNameUsage = case_when(
-  acceptedNameUsage != scientificName ~ acceptedNameUsage,
-  TRUE ~ ""
-))
+griis %<>% mutate(griis_acceptedNameUsage = scientificName)
 ```
 
 #### taxonRank
@@ -98,7 +95,8 @@ griis %<>% mutate(griis_taxonRank = taxonRank)
 #### taxonomicStatus
 
 ```{r griis_mapping-11, echo = TRUE}
-griis %<>% mutate(griis_taxonomicStatus = taxonomicStatus)
+# From TriAS perspective, all taxa are considered accepted
+griis %<>% mutate(griis_taxonomicStatus = "ACCEPTED")
 ```
 
 #### kingdom

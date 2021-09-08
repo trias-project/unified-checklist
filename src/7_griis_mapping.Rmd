@@ -194,5 +194,5 @@ griis %>% head()
 5. Save to [Excel](https://github.com/trias-project/unified-checklist/blob/master/data/processed/Belgium_GBIF_GRIIS.xlsx).
 
 ```{r griis_mapping-26}
-openxlsx::write.xlsx(griis, here("data", "processed", "Belgium_GBIF_GRIIS.xlsx"))
+openxlsx::write.xlsx(griis, here("data", "processed", "Belgium_GBIF_GRIIS.xlsx"), overwrite = TRUE)
 ```

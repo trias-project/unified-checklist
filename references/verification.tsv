@@ -522,7 +522,7 @@ taxonKey	scientificName	datasetKey	bb_key	bb_scientificName	bb_kingdom	bb_rank	b
 141266627	Populus trichocarpa Torr. & A. Gray ex Hook.	9ff7d317-609b-4c08-bd86-3bc404b77c42	6362904	Populus trichocarpa Torr. & A.Gray ex Hook.	Plantae	SPECIES	SYNONYM	3806052	Populus balsamifera subsp. trichocarpa (Torr. & A.Gray) Brayshaw	Plantae	SUBSPECIES	ACCEPTED				2018-12-20	FALSE
 143605107	Populus x berolinensis Dippel	9ff7d317-609b-4c08-bd86-3bc404b77c42	3040238	Populus ×berolinensis Dippel	Plantae	SPECIES	HETEROTYPIC_SYNONYM	8016281	Populus ×berolinensis C.Koch	Plantae	SPECIES	ACCEPTED	8016281	accept: same canonical	Peter Desmet	2018-12-20	FALSE
 141266633	Populus x generosa A. Henry	9ff7d317-609b-4c08-bd86-3bc404b77c42	3040245	Populus ×generosa A.Henry	Plantae	SPECIES	SYNONYM	3040241	Populus ×jackii Sarg.	Plantae	SPECIES	ACCEPTED				2018-12-20	FALSE
-141266640	"Populus x jackii Sargent ""Gileadensis"""	9ff7d317-609b-4c08-bd86-3bc404b77c42														2020-05-22	TRUE
+141266640	Populus x jackii Sargent 'Gileadensis'	9ff7d317-609b-4c08-bd86-3bc404b77c42														2020-05-22	TRUE
 141264811	Portulaca papillatostellulata (Danin & H.G. Baker) Danin	9ff7d317-609b-4c08-bd86-3bc404b77c42	4022463	Portulaca papillatostellulata (Danin & H.G.Baker) Danin	Plantae	SPECIES	SYNONYM	4022910	Portulaca macrantha (Maire) Ricceri & Arrigoni	Plantae	SPECIES	ACCEPTED				2018-12-20	FALSE
 163968244	Potentilla atrosanguinea G.Lodd. ex D.Don	9ff7d317-609b-4c08-bd86-3bc404b77c42	5366332	Potentilla atrosanguinea Lodd. ex D.Don	Plantae	SPECIES	SYNONYM	5365494	Potentilla argyrophylla var. atrosanguinea (Lodd.) Hook.fil.	Plantae	VARIETY	ACCEPTED				2020-05-22	FALSE
 141264837	Proboscidea louisianica (Mill.) Thell.	9ff7d317-609b-4c08-bd86-3bc404b77c42	5415100	Proboscidea louisianica Thell.	Plantae	SPECIES	SYNONYM	7226243	Proboscidea louisianica subsp. louisianica	Plantae	SUBSPECIES	ACCEPTED	5415100	reject	Quentin Groom	2018-12-20	TRUE
@@ -581,7 +581,7 @@ taxonKey	scientificName	datasetKey	bb_key	bb_scientificName	bb_kingdom	bb_rank	b
 141265153	Scorzonera hispanica L.	9ff7d317-609b-4c08-bd86-3bc404b77c42	3110905	Scorzonera hispanica L.	Plantae	SPECIES	SYNONYM	10769750	Pseudopodospermum hispanicum subsp. hispanicum	Plantae	SUBSPECIES	ACCEPTED				2021-05-08	FALSE
 141265718	Secale strictum (C. Presl) C. Presl	9ff7d317-609b-4c08-bd86-3bc404b77c42	4121049	Secale strictum (C.Presl) C.Presl	Plantae	SPECIES	SYNONYM	2705967	Secale montanum Guss.	Plantae	SPECIES	ACCEPTED				2018-12-20	FALSE
 141265773	Secale xderzhavinii Tzvelev	9ff7d317-609b-4c08-bd86-3bc404b77c42														2018-12-20	FALSE
-141265044	"Sedum ""Autumn Joy"" (S. spectabile Boreau x telephium L.)"	9ff7d317-609b-4c08-bd86-3bc404b77c42														2018-12-20	FALSE
+141265044	Sedum 'Autumn Joy' (S. spectabile Boreau x telephium L.)	9ff7d317-609b-4c08-bd86-3bc404b77c42														2018-12-20	FALSE
 141265033	Sedum aizoon L.	9ff7d317-609b-4c08-bd86-3bc404b77c42	5361976	Sedum aizoon L.	Plantae	SPECIES	HETEROTYPIC_SYNONYM	7172831	Phedimus aizoon (L.) 't Hart	Plantae	SPECIES	ACCEPTED				2018-12-20	FALSE
 141265043	Sedum anacampseros L.	9ff7d317-609b-4c08-bd86-3bc404b77c42	5687999	Sedum anacampseros L.	Plantae	SPECIES	SYNONYM	4202184	Hylotelephium anacampseros (L.) H.Ohba	Plantae	SPECIES	ACCEPTED				2018-12-20	FALSE
 141265039	Sedum anopetalum DC.	9ff7d317-609b-4c08-bd86-3bc404b77c42	5362017	Sedum anopetalum DC.	Plantae	SPECIES	SYNONYM	4201784	Petrosedum sediforme (Jacq.) Grulich	Plantae	SPECIES	ACCEPTED				2021-05-08	FALSE

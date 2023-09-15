@@ -271,7 +271,7 @@ speciesprofiles_unified <-
   speciesprofiles_unified %>%
 
   # Join species profile with taxon to get verificationKey and checklist order
-  left_join(taxa, on = taxonKey) %>%
+  left_join(taxa, by = "taxonKey") %>%
 
   # Remove records that have no verificationKey (e.g. one wasn't assigned yet)
   filter(!is.na(verificationKey)) %>%
@@ -593,7 +593,7 @@ descriptions_unified <-
   descriptions_unified %>%
 
   # Join species profile with taxon to get verificationKey and checklist order
-  left_join(taxa, on = taxonKey) %>%
+  left_join(taxa, by = "taxonKey") %>%
 
   # Remove records that have no verificationKey (e.g. one wasn't assigned yet)
   filter(!is.na(verificationKey)) %>%

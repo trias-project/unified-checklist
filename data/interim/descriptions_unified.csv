@@ -1801,11 +1801,22 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 2498108,pathway,cbd_2014_pathway:escape_pet,e1c3be64-2799-4342-8312-49d076993132,159498589,"Anas luzonica Fraser, 1839"
 2498109,native range,Northern America,e1c3be64-2799-4342-8312-49d076993132,159498603,"Anas laysanensis Rothschild, 1892"
 2498109,pathway,cbd_2014_pathway:escape_pet,e1c3be64-2799-4342-8312-49d076993132,159498603,"Anas laysanensis Rothschild, 1892"
+2498155,native range,Central America,e1c3be64-2799-4342-8312-49d076993132,159498592,"Anas americana (Gmelin, 1789)"
+2498155,native range,Europe,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042289,"Anas americana Gmelin, 1789"
+2498155,native range,Northern America,e1c3be64-2799-4342-8312-49d076993132,159498592,"Anas americana (Gmelin, 1789)"
+2498155,pathway,cbd_2014_pathway:escape,e1c3be64-2799-4342-8312-49d076993132,159498592,"Anas americana (Gmelin, 1789)"
 2498156,native range,Africa,e1c3be64-2799-4342-8312-49d076993132,159498594,"Anas undulata C.F.Dubois, 1839"
 2498156,pathway,cbd_2014_pathway:escape_pet,e1c3be64-2799-4342-8312-49d076993132,159498594,"Anas undulata C.F.Dubois, 1839"
+2498161,native range,Northern America,e1c3be64-2799-4342-8312-49d076993132,159498617,"Chen rossii (Cassin, 1861)"
+2498161,pathway,cbd_2014_pathway:escape_farm,e1c3be64-2799-4342-8312-49d076993132,159498617,"Chen rossii (Cassin, 1861)"
+2498161,pathway,cbd_2014_pathway:escape_pet,e1c3be64-2799-4342-8312-49d076993132,159498617,"Chen rossii (Cassin, 1861)"
+2498163,native range,Eastern Asia,e1c3be64-2799-4342-8312-49d076993132,159498618,"Chen canagica (Sevastianov, 1802)"
 2498163,native range,Eastern Europe,e1c3be64-2799-4342-8312-49d076993132,159498553,"Anser canagicus (Sevastianov, 1802)"
 2498163,pathway,cbd_2014_pathway:escape_farm,e1c3be64-2799-4342-8312-49d076993132,159498553,"Anser canagicus (Sevastianov, 1802)"
 2498163,pathway,cbd_2014_pathway:escape_pet,e1c3be64-2799-4342-8312-49d076993132,159498553,"Anser canagicus (Sevastianov, 1802)"
+2498167,native range,Northern America,e1c3be64-2799-4342-8312-49d076993132,159498616,"Chen caerulescens Linnaeus, 1758"
+2498167,pathway,cbd_2014_pathway:escape_farm,e1c3be64-2799-4342-8312-49d076993132,159498616,"Chen caerulescens Linnaeus, 1758"
+2498167,pathway,cbd_2014_pathway:escape_pet,e1c3be64-2799-4342-8312-49d076993132,159498616,"Chen caerulescens Linnaeus, 1758"
 2498181,native range,South America,e1c3be64-2799-4342-8312-49d076993132,159498569,"Netta peposaca (Vieillot, 1816)"
 2498181,pathway,cbd_2014_pathway:escape_pet,e1c3be64-2799-4342-8312-49d076993132,159498569,"Netta peposaca (Vieillot, 1816)"
 2498252,native range,Africa,e1c3be64-2799-4342-8312-49d076993132,159498531,"Alopochen aegyptiaca (Linnaeus, 1766)"
@@ -2444,6 +2455,9 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 2705932,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265901,Axonopus fissifolius (Raddi) Kuhlm.
 2705932,native range,Americas,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265901,Axonopus fissifolius (Raddi) Kuhlm.
 2705932,pathway,cbd_2014_pathway:contaminant_nursery,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265901,Axonopus fissifolius (Raddi) Kuhlm.
+2705953,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265617,Eleusine indica (L.) Gaertn. subsp. indica
+2705953,pathway,cbd_2014_pathway:contaminant_on_animals,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265617,Eleusine indica (L.) Gaertn. subsp. indica
+2705953,pathway,cbd_2014_pathway:contaminant_seed,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265617,Eleusine indica (L.) Gaertn. subsp. indica
 2705955,degree of establishment,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265577,Eleusine tristachya (Lam.) Lam.
 2705955,native range,South America,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265577,Eleusine tristachya (Lam.) Lam.
 2705955,pathway,cbd_2014_pathway:contaminant_on_animals,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265577,Eleusine tristachya (Lam.) Lam.
@@ -4134,6 +4148,10 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 2984676,native range,Eastern Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264683,Pachysandra terminalis Siebold & Zucc.
 2984676,native range,Eastern Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264683,Pachysandra terminalis Siebold & Zucc.
 2984676,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264683,Pachysandra terminalis Siebold & Zucc.
+2985863,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265054,Sedum spectabile Boreau
+2985863,native range,Eastern Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265054,Sedum spectabile Boreau
+2985863,native range,Eastern Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265054,Sedum spectabile Boreau
+2985863,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265054,Sedum spectabile Boreau
 2985944,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265036,Kalanchoe blossfeldiana Poelln.
 2985944,native range,Africa,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265036,Kalanchoe blossfeldiana Poelln.
 2985944,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265036,Kalanchoe blossfeldiana Poelln.
@@ -5905,6 +5923,7 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 3151755,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265303,Symphyotrichum pilosum (Willd.) Nesom
 3151811,degree of establishment,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265292,Symphyotrichum x salignum (Willd.) Nesom
 3151811,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265292,Symphyotrichum x salignum (Willd.) Nesom
+3151811,pathway,cbd_2014_pathway:release,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042148,Aster X salignus Willd.
 3152264,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266473,Malvastrum americanum (L.) Torr.
 3152264,native range,South America,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266473,Malvastrum americanum (L.) Torr.
 3152264,pathway,cbd_2014_pathway:contaminant_on_animals,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266473,Malvastrum americanum (L.) Torr.
@@ -6369,6 +6388,11 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 3664589,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266552,Oenothera lindheimeri (Engelmann & A. Gray) W.L. Wagner & Hoch
 3665817,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266553,Oenothera rubricauloides Rostański
 3665966,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266558,Epilobium x floridulum Smejkal
+3666422,degree of establishment,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266535,Chamaenerion dodonaei (Vill.) Schur
+3666422,native range,Eastern Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266535,Chamaenerion dodonaei (Vill.) Schur
+3666422,native range,Eastern Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266535,Chamaenerion dodonaei (Vill.) Schur
+3666422,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266535,Chamaenerion dodonaei (Vill.) Schur
+3666422,pathway,cbd_2014_pathway:contaminant_habitat_material,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266535,Chamaenerion dodonaei (Vill.) Schur
 3666776,degree of establishment,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,163968272,Oenothera ersteinensis R. Linder & R. Jean
 3666776,native range,Northern America,9ff7d317-609b-4c08-bd86-3bc404b77c42,163968272,Oenothera ersteinensis R. Linder & R. Jean
 3666776,pathway,cbd_2014_pathway:contaminant_habitat_material,9ff7d317-609b-4c08-bd86-3bc404b77c42,163968272,Oenothera ersteinensis R. Linder & R. Jean
@@ -6684,6 +6708,11 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 4055853,native range,Eastern Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266844,Buddleja albiflora Hemsl.
 4055853,native range,Eastern Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266844,Buddleja albiflora Hemsl.
 4055853,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266844,Buddleja albiflora Hemsl.
+4063383,degree of establishment,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266337,Trachystemon orientalis (L.) G. Don f.
+4063383,native range,Eastern Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266337,Trachystemon orientalis (L.) G. Don f.
+4063383,native range,Eastern Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266337,Trachystemon orientalis (L.) G. Don f.
+4063383,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266337,Trachystemon orientalis (L.) G. Don f.
+4063383,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266337,Trachystemon orientalis (L.) G. Don f.
 4064572,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266339,Cynoglossum clandestinum Desf.
 4064572,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266339,Cynoglossum clandestinum Desf.
 4064572,pathway,cbd_2014_pathway:contaminant_on_animals,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266339,Cynoglossum clandestinum Desf.
@@ -9215,6 +9244,10 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 5373368,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266003,Rapistrum rugosum (L.) All. s.l.
 5373368,pathway,cbd_2014_pathway:contaminant_on_animals,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266003,Rapistrum rugosum (L.) All. s.l.
 5373368,pathway,cbd_2014_pathway:contaminant_seed,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266003,Rapistrum rugosum (L.) All. s.l.
+5373483,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266001,Crambe abyssinica Hochst. ex R.E. Fries
+5373483,native range,Africa,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266001,Crambe abyssinica Hochst. ex R.E. Fries
+5373483,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266001,Crambe abyssinica Hochst. ex R.E. Fries
+5373483,pathway,cbd_2014_pathway:escape_agriculture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266001,Crambe abyssinica Hochst. ex R.E. Fries
 5374118,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265988,Isatis tinctoria L.
 5374118,native range,Africa,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265988,Isatis tinctoria L.
 5374118,native range,Eastern Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265988,Isatis tinctoria L.
@@ -10930,6 +10963,9 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 7346090,degree of establishment,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267252,Erythranthe moschata ( Douglas ex Lindl. ) G.L. Nesom
 7346090,native range,Northern America,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267252,Erythranthe moschata ( Douglas ex Lindl. ) G.L. Nesom
 7346090,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267252,Erythranthe moschata ( Douglas ex Lindl. ) G.L. Nesom
+7346102,native range,Northern America,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042137,Mimulus guttatus DC.
+7346102,pathway,cbd_2014_pathway:escape,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042137,Mimulus guttatus DC.
+7346102,pathway,cbd_2014_pathway:release,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042137,Mimulus guttatus DC.
 7350989,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266264,Nepeta x faassenii Bergm. ex Stearn
 7350989,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266264,Nepeta x faassenii Bergm. ex Stearn
 7353862,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266846,Verbascum x divaricatum Kittel
@@ -11424,6 +11460,9 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 8012084,degree of establishment,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267183,Dianthus subacaulis Vill.
 8012084,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267183,Dianthus subacaulis Vill.
 8012084,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267183,Dianthus subacaulis Vill.
+8012439,degree of establishment,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267078,Symphoricarpos albus (L.) S.F. Blake
+8012439,native range,Northern America,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267078,Symphoricarpos albus (L.) S.F. Blake
+8012439,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267078,Symphoricarpos albus (L.) S.F. Blake
 8012649,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266419,Rumex x hybridus Kindb.
 8014163,degree of establishment,blackburn_et_al_2011:E,e082b10e-476f-43c1-aa61-f8d92f33029a,157063061,"Ambigolimax valentianus (A. Férussac, 1822)"
 8014163,native range,Europe,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042439,"Lehmannia valentiana (Férussac, 1822)"
@@ -11513,11 +11552,22 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 8080743,native range,Eastern Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267019,Scilla siberica Haw.
 8080743,native range,Eastern Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267019,Scilla siberica Haw.
 8080743,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267019,Scilla siberica Haw.
+8082581,native range,Australia and New Zealand,e1c3be64-2799-4342-8312-49d076993132,159498425,"Coturnix chinensis (Linnaeus, 1766)"
+8082581,native range,Southeastern Asia,e1c3be64-2799-4342-8312-49d076993132,159498425,"Coturnix chinensis (Linnaeus, 1766)"
+8082581,native range,Southern Asia,e1c3be64-2799-4342-8312-49d076993132,159498425,"Coturnix chinensis (Linnaeus, 1766)"
+8082581,pathway,cbd_2014_pathway:escape_farm,e1c3be64-2799-4342-8312-49d076993132,159498425,"Coturnix chinensis (Linnaeus, 1766)"
+8082581,pathway,cbd_2014_pathway:escape_pet,e1c3be64-2799-4342-8312-49d076993132,159498425,"Coturnix chinensis (Linnaeus, 1766)"
 8091002,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265035,Jovibarba sobolifera (Sims) Opiz
 8091002,native range,Eastern Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265035,Jovibarba sobolifera (Sims) Opiz
 8091002,native range,Eastern Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265035,Jovibarba sobolifera (Sims) Opiz
 8091002,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265035,Jovibarba sobolifera (Sims) Opiz
 8091002,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265035,Jovibarba sobolifera (Sims) Opiz
+8096233,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,168400582,Spergula bocconei (Scheele) Pedersen
+8096233,native range,Africa,9ff7d317-609b-4c08-bd86-3bc404b77c42,168400582,Spergula bocconei (Scheele) Pedersen
+8096233,native range,Eastern Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,168400582,Spergula bocconei (Scheele) Pedersen
+8096233,native range,Eastern Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,168400582,Spergula bocconei (Scheele) Pedersen
+8096233,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,168400582,Spergula bocconei (Scheele) Pedersen
+8096233,pathway,cbd_2014_pathway:stowaway_people_luggage,9ff7d317-609b-4c08-bd86-3bc404b77c42,168400582,Spergula bocconei (Scheele) Pedersen
 8114833,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265515,Anarrhinum bellidifolium (L.) Willd.
 8114833,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265515,Anarrhinum bellidifolium (L.) Willd.
 8114833,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265515,Anarrhinum bellidifolium (L.) Willd.
@@ -11549,6 +11599,9 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 8153538,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266526,Oenothera oehlkersii Kappus
 8153538,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266526,Oenothera oehlkersii Kappus
 8153538,pathway,cbd_2014_pathway:contaminant_habitat_material,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266526,Oenothera oehlkersii Kappus
+8168344,degree of establishment,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264821,Hedera hibernica (Kirchner) Bean
+8168344,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264821,Hedera hibernica (Kirchner) Bean
+8168344,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264821,Hedera hibernica (Kirchner) Bean
 8170635,degree of establishment,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265467,Spiraea japonica L. f.
 8170635,native range,Eastern Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265467,Spiraea japonica L. f.
 8170635,native range,Eastern Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265467,Spiraea japonica L. f.
@@ -11702,6 +11755,8 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 8342911,native range,Eastern Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267122,Papaver setiferum Goldblatt
 8342911,native range,Eastern Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267122,Papaver setiferum Goldblatt
 8342911,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267122,Papaver setiferum Goldblatt
+8345607,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,143605107,Populus x berolinensis Dippel
+8345607,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,143605107,Populus x berolinensis Dippel
 8346536,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265184,Schkuhria pinnata (Lam.) O. Kuntze ex Thell. var. pinnata
 8346536,native range,South America,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265184,Schkuhria pinnata (Lam.) O. Kuntze ex Thell. var. pinnata
 8346536,pathway,cbd_2014_pathway:contaminant_on_animals,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265184,Schkuhria pinnata (Lam.) O. Kuntze ex Thell. var. pinnata
@@ -11905,6 +11960,9 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 8969026,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266967,Physalis philadelphica Lam.
 8969026,native range,South America,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266967,Physalis philadelphica Lam.
 8969026,pathway,cbd_2014_pathway:escape_food_bait,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266967,Physalis philadelphica Lam.
+8991514,native range,Central America,e1c3be64-2799-4342-8312-49d076993132,159498384,"Caracara cheriway (Jacquin, 1784)"
+8991514,native range,South America,e1c3be64-2799-4342-8312-49d076993132,159498384,"Caracara cheriway (Jacquin, 1784)"
+8991514,pathway,cbd_2014_pathway:escape_pet,e1c3be64-2799-4342-8312-49d076993132,159498384,"Caracara cheriway (Jacquin, 1784)"
 8993502,degree of establishment,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267186,Silene italica (L.) Pers.
 8993502,native range,Africa,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267186,Silene italica (L.) Pers.
 8993502,native range,Eastern Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267186,Silene italica (L.) Pers.
@@ -11998,6 +12056,10 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 9231612,native range,Eastern Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265909,Lolium subulatum Vis.
 9231612,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265909,Lolium subulatum Vis.
 9231612,pathway,cbd_2014_pathway:contaminant_seed,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265909,Lolium subulatum Vis.
+9235549,native range,Eastern Asia,e1c3be64-2799-4342-8312-49d076993132,159498600,"Anas formosa Georgi, 1775"
+9235549,pathway,cbd_2014_pathway:escape_pet,e1c3be64-2799-4342-8312-49d076993132,159498600,"Anas formosa Georgi, 1775"
+9288935,native range,Australia and New Zealand,e1c3be64-2799-4342-8312-49d076993132,159498604,"Anas rhynchotis Latham, 1802"
+9288935,pathway,cbd_2014_pathway:escape_pet,e1c3be64-2799-4342-8312-49d076993132,159498604,"Anas rhynchotis Latham, 1802"
 9297163,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266455,Erodium malacoides (L.) L'Hérit.
 9297163,native range,Africa,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266455,Erodium malacoides (L.) L'Hérit.
 9297163,native range,Eastern Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266455,Erodium malacoides (L.) L'Hérit.
@@ -12024,6 +12086,13 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 9393876,Introduced species abundance,Irish part of the Irish Sea and St. George's Channel  (Marine Region): Rare to common,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157127259,"Spartina townsendii H. & J.Groves, 1881"
 9393876,Introduced species abundance,in Denmark (Nation) : Common to dominant,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157127259,"Spartina townsendii H. & J.Groves, 1881"
 9393876,degree of establishment,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265808,Spartina x townsendii H. & J. Groves
+9405036,native range,Central America,e1c3be64-2799-4342-8312-49d076993132,159498606,"Anas cyanoptera Vieillot, 1816"
+9405036,native range,Northern America,e1c3be64-2799-4342-8312-49d076993132,159498606,"Anas cyanoptera Vieillot, 1816"
+9405036,native range,South America,e1c3be64-2799-4342-8312-49d076993132,159498606,"Anas cyanoptera Vieillot, 1816"
+9405036,pathway,cbd_2014_pathway:escape_pet,e1c3be64-2799-4342-8312-49d076993132,159498606,"Anas cyanoptera Vieillot, 1816"
+9405645,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266377,Anchusa ovata Lehm.
+9405645,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266377,Anchusa ovata Lehm.
+9405645,pathway,cbd_2014_pathway:contaminant_seed,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266377,Anchusa ovata Lehm.
 9419993,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266440,Erodium moschatum (L.) L'Hérit. var. moschatum
 9419993,native range,Africa,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266440,Erodium moschatum (L.) L'Hérit. var. moschatum
 9419993,native range,Eastern Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266440,Erodium moschatum (L.) L'Hérit. var. moschatum
@@ -12054,15 +12123,26 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 9450106,pathway,cbd_2014_pathway:escape_pet,e1c3be64-2799-4342-8312-49d076993132,159498596,"Anas poecilorhyncha J.R.Forster, 1781"
 9451184,pathway,cbd_2014_pathway:escape_pet,e1c3be64-2799-4342-8312-49d076993132,159498419,"Pavo cristatus Linnaeus, 1758"
 9451184,pathway,cbd_2014_pathway:escape_zoo,e1c3be64-2799-4342-8312-49d076993132,159498419,"Pavo cristatus Linnaeus, 1758"
+9462721,native range,South America,e1c3be64-2799-4342-8312-49d076993132,159498597,"Anas versicolor Vieillot, 1816"
+9462721,pathway,cbd_2014_pathway:escape_pet,e1c3be64-2799-4342-8312-49d076993132,159498597,"Anas versicolor Vieillot, 1816"
 9479629,degree of establishment,established,289244ee-e1c1-49aa-b2d7-d379391ce265,140562900,Tasserkidrilus americanus
 9479629,native range,Northern America,289244ee-e1c1-49aa-b2d7-d379391ce265,140562900,Tasserkidrilus americanus
 9479629,pathway,cbd_2014_pathway:stowaway_ballast_water,289244ee-e1c1-49aa-b2d7-d379391ce265,140562900,Tasserkidrilus americanus
 9479629,pathway of introduction,stowaway,22211949-9a6e-445f-86c0-6a0e019bc055,181972032,"Tasserkidrilus americanus (Brinkhurst & Cook, 1966)"
+9480191,native range,Asia,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042276,Anas falcata (Georgi 1775)
+9480191,native range,Eastern Asia,e1c3be64-2799-4342-8312-49d076993132,159498591,"Anas falcata Georgi, 1775"
+9480191,pathway,cbd_2014_pathway:escape,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042276,Anas falcata (Georgi 1775)
+9480191,pathway,cbd_2014_pathway:escape_pet,e1c3be64-2799-4342-8312-49d076993132,159498591,"Anas falcata Georgi, 1775"
 9484350,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265917,Lachnagrostis eriantha (Hack.) A.J. Br.
 9484350,native range,Africa,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265917,Lachnagrostis eriantha (Hack.) A.J. Br.
 9484350,pathway,cbd_2014_pathway:contaminant_on_animals,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265917,Lachnagrostis eriantha (Hack.) A.J. Br.
 9491873,native range,Asia,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042309,"Tetraodon fluviatilis F. Hamilton, 1822"
 9491873,pathway,cbd_2014_pathway:release,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042309,"Tetraodon fluviatilis F. Hamilton, 1822"
+9496048,native range,Africa,e1c3be64-2799-4342-8312-49d076993132,159498593,"Anas hottentota (Eyton, 1838)"
+9496048,pathway,cbd_2014_pathway:escape_pet,e1c3be64-2799-4342-8312-49d076993132,159498593,"Anas hottentota (Eyton, 1838)"
+9508460,native range,South America,e1c3be64-2799-4342-8312-49d076993132,159498595,"Anas sibilatrix Poeppig, 1829"
+9508460,pathway,cbd_2014_pathway:escape,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042236,"Anas sibilatrix Poeppig, 1829"
+9508460,pathway,cbd_2014_pathway:escape_pet,e1c3be64-2799-4342-8312-49d076993132,159498595,"Anas sibilatrix Poeppig, 1829"
 9508942,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266232,Origanum vulgare L. subsp. hirtum (Link) A. Terrac.
 9508942,native range,Africa,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266232,Origanum vulgare L. subsp. hirtum (Link) A. Terrac.
 9508942,native range,Eastern Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266232,Origanum vulgare L. subsp. hirtum (Link) A. Terrac.
@@ -12084,6 +12164,8 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 9567226,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266123,Oxybasis glauca (L.) Fuentes & al. var. salina (Standley) Verloove
 9567226,native range,Northern America,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266123,Oxybasis glauca (L.) Fuentes & al. var. salina (Standley) Verloove
 9567226,pathway,cbd_2014_pathway:contaminant_seed,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266123,Oxybasis glauca (L.) Fuentes & al. var. salina (Standley) Verloove
+9583342,native range,South America,e1c3be64-2799-4342-8312-49d076993132,159498602,"Anas puna Tschudi, 1844"
+9583342,pathway,cbd_2014_pathway:escape_pet,e1c3be64-2799-4342-8312-49d076993132,159498602,"Anas puna Tschudi, 1844"
 9601519,degree of establishment,casual,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661208,"Pseudemys rubriventris (LeConte, 1830)"
 9601519,degree of establishment,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,168131340,"Pseudemys rubriventris (LeConte, 1830)"
 9601519,introduction pathway,escape_pet,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661208,"Pseudemys rubriventris (LeConte, 1830)"

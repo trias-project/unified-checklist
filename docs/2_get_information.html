@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>2 Get related information | Global Register of Introduced and Invasive Species - Belgium</title>
   <meta name="description" content="2 Get related information | Global Register of Introduced and Invasive Species - Belgium" />
-  <meta name="generator" content="bookdown 0.23.5 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.35 and GitBook 2.6.7" />
 
   <meta property="og:title" content="2 Get related information | Global Register of Introduced and Invasive Species - Belgium" />
   <meta property="og:type" content="book" />
-  
   
   
   <meta name="github-repo" content="trias-project/unified-checklist" />
@@ -24,7 +23,7 @@
 <meta name="author" content="Peter Desmet, Lien Reyserhove, Damiano Oldoni" />
 
 
-<meta name="date" content="2021-09-08" />
+<meta name="date" content="2023-09-15" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,7 +32,6 @@
   
 <link rel="prev" href="1_get_taxa.html"/>
 <link rel="next" href="3_verify_taxa.html"/>
-<script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -52,14 +50,16 @@
 
 <link href="libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
 <script src="libs/pagedtable-1.1/js/pagedtable.js"></script>
-<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 
 
 <style type="text/css">
 pre > code.sourceCode { white-space: pre; position: relative; }
 pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
 pre.sourceCode { margin: 0; }
 @media screen {
@@ -93,7 +93,7 @@ code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
 code span.at { color: #7d9029; } /* Attribute */
 code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
+code span.bu { color: #008000; } /* BuiltIn */
 code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
 code span.ch { color: #4070a0; } /* Char */
 code span.cn { color: #880000; } /* Constant */
@@ -106,7 +106,7 @@ code span.er { color: #ff0000; font-weight: bold; } /* Error */
 code span.ex { } /* Extension */
 code span.fl { color: #40a070; } /* Float */
 code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
+code span.im { color: #008000; font-weight: bold; } /* Import */
 code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
 code span.kw { color: #007020; font-weight: bold; } /* Keyword */
 code span.op { color: #666666; } /* Operator */
@@ -120,6 +120,10 @@ code span.vs { color: #4070a0; } /* VerbatimString */
 code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
 
 </head>
 
@@ -244,29 +248,29 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="get-related-information" class="section level1" number="2">
-<h1><span class="header-section-number">2</span> Get related information</h1>
+<div id="get-related-information" class="section level1 hasAnchor" number="2">
+<h1><span class="header-section-number">2</span> Get related information<a href="2_get_information.html#get-related-information" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p>In this chapter we retrieve related information for taxa on the checklists (with a valid distribution).</p>
-<div id="read-taxa" class="section level2" number="2.1">
-<h2><span class="header-section-number">2.1</span> Read taxa</h2>
+<div id="read-taxa" class="section level2 hasAnchor" number="2.1">
+<h2><span class="header-section-number">2.1</span> Read taxa<a href="2_get_information.html#read-taxa" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <ol style="list-style-type: decimal">
 <li><p>Read taxa from <a href="https://github.com/trias-project/unified-checklist/blob/master/data/interim/taxa_with_verification.csv"><code>data/interim/taxa_with_verification.csv</code></a>.</p></li>
 <li><p>Extract <code>taxonKeys</code> as a vector.</p></li>
 </ol>
 </div>
-<div id="get-distributions" class="section level2" number="2.2">
-<h2><span class="header-section-number">2.2</span> Get distributions</h2>
+<div id="get-distributions" class="section level2 hasAnchor" number="2.2">
+<h2><span class="header-section-number">2.2</span> Get distributions<a href="2_get_information.html#get-distributions" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>This was already done in <a href="1_get_taxa.html#filter-on-distribution">1.3</a>, where only distributions of interest were kept.</p>
 </div>
-<div id="get-species-profiles" class="section level2" number="2.3">
-<h2><span class="header-section-number">2.3</span> Get species profiles</h2>
+<div id="get-species-profiles" class="section level2 hasAnchor" number="2.3">
+<h2><span class="header-section-number">2.3</span> Get species profiles<a href="2_get_information.html#get-species-profiles" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <ol style="list-style-type: decimal">
 <li><p>Get species profiles for our taxa from GBIF.</p></li>
 <li><p>Save to <a href="https://github.com/trias-project/unified-checklist/blob/master/data/raw/speciesprofiles.csv">CSV</a>.</p></li>
 </ol>
 </div>
-<div id="get-descriptions" class="section level2" number="2.4">
-<h2><span class="header-section-number">2.4</span> Get descriptions</h2>
+<div id="get-descriptions" class="section level2 hasAnchor" number="2.4">
+<h2><span class="header-section-number">2.4</span> Get descriptions<a href="2_get_information.html#get-descriptions" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <ol style="list-style-type: decimal">
 <li><p>Get descriptions for our taxa from GBIF.</p></li>
 <li><p>Save to <a href="https://github.com/trias-project/unified-checklist/blob/master/data/raw/descriptions.csv">CSV</a>.</p></li>

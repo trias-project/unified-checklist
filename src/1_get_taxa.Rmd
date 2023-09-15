@@ -60,7 +60,7 @@ checklists <-
 write_csv(checklists, here("data", "raw", "checklists.csv"), na = "")
 ```
 
-6. Remove the GBIF Backbone Taxonomy for further querying steps.
+6. Remove the GBIF Backbone Taxonomy from further querying steps.
 
 ```{r get_taxa-5}
 checklists <- head(checklists, -1)
@@ -105,7 +105,7 @@ taxa <-
   rename(taxonKey = key)
 ```
 
-5. Fix `scientificName` spelling issues.
+5. Fix `scientificName` spelling issues (i.e. double quotes).
 
 ```{r get_taxa-9}
 taxa <-
@@ -215,7 +215,7 @@ taxa <-
 
 A taxon can occur on more than one checklist. To identify these duplicates, we cannot rely on the _scientific name_ as there might be spelling variations (e.g. with or without authorship) and it does not account for synonyms that should be lumped with the accepted taxon. To have **unifying taxon identifiers across taxa**, we rely on the [GBIF backbone taxonomy](https://doi.org/10.15468/39omei), to which every checklist taxon (re)published to GBIF is automatically matched. If a match in the backbone is found, the checklist taxon will have a `nubKey`.
 
-1. Filter taxa on having valid distribution and `nubKey` and create vector of unique `nubKey`s.
+1. Filter taxa on having valid distribution and `nubKey` (`bb_key`) and create vector of unique `nubKey`s.
 
 ```{r get_taxa-17}
 nub_keys <-
@@ -267,8 +267,7 @@ backbone_info <-
     "bb_rank",
     "bb_taxonomicStatus",
     "bb_acceptedKey",
-    "bb_acceptedName",
-    "bb_speciesKey"
+    "bb_acceptedName"
   )
 ```
 

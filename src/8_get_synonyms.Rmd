@@ -49,19 +49,20 @@ input_taxa <-
 1. Retrieve all synonyms (from the GBIF Backbone Taxonomy) of the taxa in our list. Synonym taxa won't return results, but are fine to leave in the list. _Note: this step can take few minutes._
 
 ```{r get_synonyms-get-synonyms-from-gbif}
-progress_bar <- progress_estimated(nrow(input_taxa))
-
 detach("package:tidylog") # to remove info interrupting progress bar
-synonyms <- map_dfr(
-  input_taxa$key, 
-  function(key) {
-    progress_bar$tick()$print()
-      name_usage(
+progressr::with_progress({
+  progress_bar <- progressor(steps = length(input_taxa))
+  synonyms <- future_map_dfr(
+    input_taxa$key,
+    function(key) {
+      progress_bar()
+      rgbif::name_usage(
         key = key, 
         data = "synonyms")$data %>%
-      select(-contains("issues"))
-  }
-)
+        select(-contains("issues"))
+    }, .options = furrr_options(seed = TRUE)
+  )
+})
 library(tidylog)
 ```
 

@@ -81,15 +81,17 @@ Even though we stored some backbone information for most of our taxa in the prev
 1. Get GBIF backbone taxonomy information.
 
 ```{r unify_taxa-get_backbone_info_from_gbif, cache = TRUE}
-progress_bar <- progress_estimated(length(verification_keys))
 
+progressr::with_progress({
+  progress_bar <- progressor(steps = length(verification_keys))
 backbone_info <-
-  map_dfr(verification_keys, function(x) {
-    progress_bar$tick()$print()
+  future_map_dfr(verification_keys, function(x) {
+    progress_bar()
     rgbif::name_usage(
       key = x
     )$data
-  })
+  }, .options = furrr_options(seed = TRUE))
+})
 ```
 
 2. Rename `accepted` to `acceptedName`.

@@ -54,3 +54,7 @@ Setup the script to download data from GBIF using two workers simultaneously.
 ```{r echo = FALSE}
 plan(multisession, workers = 2)
 ```
+Setup the progress bars for fetching data from GBIF.
+```{r echo = FALSE}
+handlers(handler_progress("[:bar] | :percent ~:eta remaining"))
+```

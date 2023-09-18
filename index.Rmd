@@ -43,7 +43,9 @@ library(janitor)        # To clean input data
 library(openxlsx)       # To write Excel files
 library(digest)         # To generate hashes
 library(rgbif)          # To use GBIF services
-library(furrr)          # functions in parallel for downloads
+library(furrr)          # To map functions in parallel for downloads
+if(!require(progressr)){install.packages("progressr")}
+library(progressr)      # To show a progress bar for parallel functions
 
 # devtools::install_github("trias-project/trias")
 library(trias)          # To use functions developed for TrIAS

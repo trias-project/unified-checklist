@@ -50,3 +50,7 @@ library(progressr)      # To show a progress bar for parallel functions
 # devtools::install_github("trias-project/trias")
 library(trias)          # To use functions developed for TrIAS
 ```
+Setup the script to download data from GBIF using two workers simultaneously.
+```{r echo = FALSE}
+plan(multisession, workers = 2)
+```

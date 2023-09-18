@@ -23,7 +23,7 @@ unify-taxa
 read-taxa-2
 unify-taxa-1
 get-gbif-backbone-taxonomy-information-1
-explicitely-remove-incorrect-taxa
+explicitly-remove-incorrect-taxa
 unify-related-information
 read-data
 assign-checklist-order

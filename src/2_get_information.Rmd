@@ -27,16 +27,22 @@ This was already done in \@ref(filter-on-distribution), where only distributions
 1. Get species profiles for our taxa from GBIF.
 
 ```{r get_information-get_speciesprofiles_from_gbif, cache = TRUE}
-progress_bar <- progress_estimated(length(taxon_keys))
 
-speciesprofiles <-
-  map_dfr(taxon_keys, function(x) {
-    progress_bar$tick()$print()
-    rgbif::name_usage(
-      key = x,
-      data = "speciesProfiles"
-    )$data
-  })
+progressr::with_progress({
+  progress_bar <- progressor(steps = length(taxon_keys))
+  speciesprofiles <-
+    future_map_dfr(
+      taxon_keys,
+      function(x) {
+        progress_bar()
+        rgbif::name_usage(
+          key = x,
+          data = "speciesProfiles"
+        )$data
+      },
+      .options = furrr_options(seed = TRUE)
+    )
+})
 ```
 
 2. Save to [CSV](https://github.com/trias-project/unified-checklist/blob/master/data/raw/speciesprofiles.csv).
@@ -50,16 +56,22 @@ write_csv(speciesprofiles, here("data", "raw", "speciesprofiles.csv"), na = "")
 1. Get descriptions for our taxa from GBIF.
 
 ```{r get_information-get_descriptions_from_gbif, cache = TRUE}
-progress_bar <- progress_estimated(length(taxon_keys))
 
-descriptions <-
-  map_dfr(taxon_keys, function(x) {
-    progress_bar$tick()$print()
-    rgbif::name_usage(
-      key = x,
-      data = "description"
-    )$data
-  })
+progressr::with_progress({
+  progress_bar <- progressor(steps = length(taxon_keys))
+  descriptions <-
+    future_map_dfr(
+      taxon_keys,
+      function(x) {
+        progress_bar()
+        rgbif::name_usage(
+          key = x,
+          data = "description"
+        )$data
+      },
+      .options = furrr_options(seed = TRUE)
+    )
+})
 ```
 
 2. Save to [CSV](https://github.com/trias-project/unified-checklist/blob/master/data/raw/descriptions.csv).

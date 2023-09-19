@@ -43,7 +43,21 @@ library(janitor)        # To clean input data
 library(openxlsx)       # To write Excel files
 library(digest)         # To generate hashes
 library(rgbif)          # To use GBIF services
+library(furrr)          # To allow parallel downloads
+library(progressr)      # To show progress bar for parallel downloads
 
 # devtools::install_github("trias-project/trias")
 library(trias)          # To use functions developed for TrIAS
+```
+
+Setup the number of simultaneous workers for parallel downloads.
+
+```{r echo = FALSE}
+future::plan(multisession, workers = 2)
+```
+
+Setup the progress bars for fetching data from GBIF.
+
+```{r echo = FALSE}
+progressr::handlers(progressr::handler_progress("[:bar] | :percent ~:eta remaining"))
 ```

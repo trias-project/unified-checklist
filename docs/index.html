@@ -268,9 +268,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb1-6"><a href="index.html#cb1-6" tabindex="-1"></a><span class="fu">library</span>(openxlsx)       <span class="co"># To write Excel files</span></span>
 <span id="cb1-7"><a href="index.html#cb1-7" tabindex="-1"></a><span class="fu">library</span>(digest)         <span class="co"># To generate hashes</span></span>
 <span id="cb1-8"><a href="index.html#cb1-8" tabindex="-1"></a><span class="fu">library</span>(rgbif)          <span class="co"># To use GBIF services</span></span>
-<span id="cb1-9"><a href="index.html#cb1-9" tabindex="-1"></a></span>
-<span id="cb1-10"><a href="index.html#cb1-10" tabindex="-1"></a><span class="co"># devtools::install_github(&quot;trias-project/trias&quot;)</span></span>
-<span id="cb1-11"><a href="index.html#cb1-11" tabindex="-1"></a><span class="fu">library</span>(trias)          <span class="co"># To use functions developed for TrIAS</span></span></code></pre></div>
+<span id="cb1-9"><a href="index.html#cb1-9" tabindex="-1"></a><span class="fu">library</span>(furrr)          <span class="co"># To allow parallel downloads</span></span>
+<span id="cb1-10"><a href="index.html#cb1-10" tabindex="-1"></a><span class="fu">library</span>(progressr)      <span class="co"># To show progress bar for parallel downloads</span></span>
+<span id="cb1-11"><a href="index.html#cb1-11" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="index.html#cb1-12" tabindex="-1"></a><span class="co"># devtools::install_github(&quot;trias-project/trias&quot;)</span></span>
+<span id="cb1-13"><a href="index.html#cb1-13" tabindex="-1"></a><span class="fu">library</span>(trias)          <span class="co"># To use functions developed for TrIAS</span></span></code></pre></div>
+<p>Setup the number of simultaneous workers for parallel downloads.</p>
+<p>Setup the progress bars for fetching data from GBIF.</p>
 
             </section>
 

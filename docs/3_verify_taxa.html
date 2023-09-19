@@ -23,7 +23,7 @@
 <meta name="author" content="Peter Desmet, Lien Reyserhove, Damiano Oldoni" />
 
 
-<meta name="date" content="2023-09-15" />
+<meta name="date" content="2023-09-19" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -171,7 +171,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="4.1" data-path="4_unify_taxa.html"><a href="4_unify_taxa.html#read-taxa-2"><i class="fa fa-check"></i><b>4.1</b> Read taxa</a></li>
 <li class="chapter" data-level="4.2" data-path="4_unify_taxa.html"><a href="4_unify_taxa.html#unify-taxa-1"><i class="fa fa-check"></i><b>4.2</b> Unify taxa</a></li>
 <li class="chapter" data-level="4.3" data-path="4_unify_taxa.html"><a href="4_unify_taxa.html#get-gbif-backbone-taxonomy-information-1"><i class="fa fa-check"></i><b>4.3</b> Get GBIF backbone taxonomy information</a></li>
-<li class="chapter" data-level="4.4" data-path="4_unify_taxa.html"><a href="4_unify_taxa.html#explicitely-remove-incorrect-taxa"><i class="fa fa-check"></i><b>4.4</b> Explicitely remove incorrect taxa</a></li>
+<li class="chapter" data-level="4.4" data-path="4_unify_taxa.html"><a href="4_unify_taxa.html#explicitly-remove-incorrect-taxa"><i class="fa fa-check"></i><b>4.4</b> Explicitly remove incorrect taxa</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="5_unify_information.html"><a href="5_unify_information.html"><i class="fa fa-check"></i><b>5</b> Unify related information</a>
 <ul>
@@ -297,7 +297,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </tr>
 <tr class="even">
 <td>No longer used</td>
-<td>23</td>
+<td>21</td>
 </tr>
 </tbody>
 </table>
@@ -316,19 +316,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <tbody>
 <tr class="odd">
 <td>Previously verified</td>
-<td>174</td>
+<td>205</td>
 </tr>
 <tr class="even">
 <td>Unverified</td>
-<td>330</td>
+<td>578</td>
 </tr>
 <tr class="odd">
 <td>New in this run</td>
-<td>171</td>
+<td>0</td>
 </tr>
 <tr class="even">
 <td>No longer used</td>
-<td>268</td>
+<td>212</td>
 </tr>
 </tbody>
 </table>
@@ -352,7 +352,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <tbody>
 <tr class="odd">
 <td>Verified (automatic)</td>
-<td>3145</td>
+<td>5258</td>
 </tr>
 <tr class="even">
 <td>Unverified</td>
@@ -380,7 +380,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
-{"columns":[{"label":["n"],"name":[1],"type":["int"],"align":["right"]},{"label":["taxa"],"name":[2],"type":["int"],"align":["right"]}],"data":[{"1":"2","2":"112"},{"1":"3","2":"18"},{"1":"4","2":"16"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+{"columns":[{"label":["n"],"name":[1],"type":["int"],"align":["right"]},{"label":["taxa"],"name":[2],"type":["int"],"align":["right"]}],"data":[{"1":"2","2":"306"},{"1":"3","2":"33"},{"1":"4","2":"16"},{"1":"5","2":"5"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
   </script>
 </div>
 <ul>
@@ -388,7 +388,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
-{"columns":[{"label":["taxonKey"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["bb_key"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["bb_acceptedKey"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["bb_scientificName"],"name":[4],"type":["chr"],"align":["left"]},{"label":["updated_bb_scientificName"],"name":[5],"type":["chr"],"align":["left"]}],"data":[{"1":"141117250","2":"2402131","3":"2402129","4":"Acipenser güldenstaedti Brandt & Ratzeberg, 1833","5":"Acipenser guldenstaedti Brandt & Ratzeberg, 1833"},{"1":"141266380","2":"6391389","3":"9018536","4":"Aconogonon campanulatum (Hook.fil.) Hara","5":"Aconogonon campanulatum (Hook.fil.) H.Hara"},{"1":"141266850","2":"3724078","3":"7331548","4":"Alonsoa intermedia Lodd.","5":"Alonsoa intermedia G.Lodd."},{"1":"141266106","2":"5384333","3":"7323251","4":"Amaranthus acutilobus Uline & Bray","5":"Amaranthus acutilobus Uline & W.L.Bray"},{"1":"164300939","2":"7951273","3":"9738098","4":"Bellamya chinensis (Gray, 1834)","5":"Bellamya chinensis (J.E.Gray, 1833)"},{"1":"141265274","2":"4207003","3":"6076279","4":"Centaurea algeriensis Durand & Coss.","5":"Centaurea algeriensis Coss. & Durieu"},{"1":"141267021","2":"2767230","3":"2767229","4":"Chionodoxa sardensis Whittall ex Barr & Sayden","5":"Chionodoxa sardensis Whittall ex Barr & Sugden"},{"1":"141264958","2":"3679953","3":"3678949","4":"Convolvulus dubius J.L.Gilbert","5":"Convolvulus ×dubius J.L.Gilbert"},{"1":"141265243","2":"5831068","3":"7223177","4":"Crepis sancta subsp. nemausensis (Gouan) Babc.","5":"Crepis sancta subsp. nemausensis (P.Fourn.) Babc."},{"1":"141266911","2":"3586380","3":"2747750","4":"Crocus stellaris Haw.","5":"Crocus ×stellaris Haw."},{"1":"141265700","2":"8002116","3":"2702820","4":"Echinochloa hispidula (Retz.) Nees ex Royle, 1840","5":"Echinochloa hispidula (Retz.) Nees ex Royle"},{"1":"141265894","2":"2702817","3":"2702820","4":"Echinochloa oryzicola Vasinger","5":"Echinochloa oryzicola (Vasinger) Vasinger"},{"1":"141265035","2":"8990928","3":"6709129","4":"Jovibarba sobolifera (J.Sims) Opiz","5":"Jovibarba sobolifera (Sims) Opiz"},{"1":"180661186","2":"5224481","3":"8170369","4":"Lampropeltis getula californiae Crother, 2000","5":"Lampropeltis getula californiae (Blainville, 1835)"},{"1":"168131315","2":"5224481","3":"8170369","4":"Lampropeltis getula californiae Crother, 2000","5":"Lampropeltis getula californiae (Blainville, 1835)"},{"1":"146042439","2":"5190784","3":"8014163","4":"Lehmannia valentiana (A.Férussac, 1822)","5":"Lehmannia valentiana (A.Férussac, 1821)"},{"1":"141265081","2":"8258539","3":"8370958","4":"Matricaria recutita var. coronata (J.Gay ex Boiss.) Fertig","5":"Matricaria recutita var. coronata (J.Gay) Fertig"},{"1":"141266278","2":"2927185","3":"3893979","4":"Mentha smithiana R.A.Graham","5":"Mentha ×smithiana R.A.Graham"},{"1":"141267216","2":"7895013","3":"5587011","4":"Minuartia mediterranea (Link) K.Malý","5":"Minuartia mediterranea (Ledeb. ex Link) K.Malý"},{"1":"141265829","2":"4134826","3":"2705090","4":"Panicum miliaceum subsp. agricola H.Scholz & Mikolá","5":"Panicum miliaceum subsp. agricola H.Scholz & Mikoláš"},{"1":"141266460","2":"8112856","3":"9711656","4":"Pelargonium capitatum (L.) Aiton, 1789","5":"Pelargonium capitatum (L.) Aiton"},{"1":"141265259","2":"7764066","3":"3123262","4":"Pilosella flagellaris (Willd.) P.D.Sell & C.West","5":"Pilosella flagellaris (Willd.) P.D.Sell & C.West, 1965"},{"1":"163968244","2":"5366332","3":"5365494","4":"Potentilla atrosanguinea Lodd. ex D.Don","5":"Potentilla atrosanguinea G.Lodd. ex D.Don"},{"1":"141266421","2":"4037343","3":"8848208","4":"Rubrivena polystachya (Wall.) M.Král","5":"Rubrivena polystachya (Wall. ex Meisn.) M.Král"},{"1":"141266620","2":"9306497","3":"5372639","4":"Salix babylonica var. pekinensis Henry","5":"Salix babylonica var. pekinensis A.Henry"},{"1":"157127259","2":"5290034","3":"9393876","4":"Spartina townsendii H.Groves & J.Groves","5":"Spartina ×townsendii H.Groves & J.Groves"},{"1":"141265808","2":"5290034","3":"9393876","4":"Spartina townsendii H.Groves & J.Groves","5":"Spartina ×townsendii H.Groves & J.Groves"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+{"columns":[{"label":["taxonKey"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["bb_key"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["bb_acceptedKey"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["bb_scientificName"],"name":[4],"type":["chr"],"align":["left"]},{"label":["updated_bb_scientificName"],"name":[5],"type":["chr"],"align":["left"]}],"data":[],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
   </script>
 </div>
 <ul>
@@ -396,7 +396,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
-{"columns":[{"label":["taxonKey"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["bb_key"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["bb_acceptedKey"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["bb_acceptedName"],"name":[4],"type":["chr"],"align":["left"]},{"label":["updated_bb_acceptedName"],"name":[5],"type":["chr"],"align":["left"]}],"data":[{"1":"141266152","2":"7323675","3":"3084939","4":"Alternanthera sessilis (L.) DC.","5":"Alternanthera sessilis (L.) R.Br. ex DC."},{"1":"141265660","2":"5927747","3":"4124881","4":"Bromus ferronii Mabille","5":"Bromus ×ferronii Mabille"},{"1":"141264955","2":"2928622","3":"2928538","4":"Ipomoea hederacea (L.) Jacq.","5":"Ipomoea hederacea Jacq."},{"1":"141266951","2":"5829065","3":"9537212","4":"Alkekengi officinarum var. franchetii (Mast.)","5":"Alkekengi officinarum var. franchetii (Mast.) R.J.Wang"},{"1":"141267184","2":"5384787","3":"3814157","4":"Eudianthe coeli-rosa (L.) Endl.","5":"Eudianthe coeli-rosa (L.) Fenzl ex Endl."},{"1":"141265441","2":"3012254","3":"10071055","4":"Scandosorbus intermedia (Ehrh.) Sennikov","5":"Scandosorbus ×intermedia (Ehrh.) Sennikov"},{"1":"141267247","2":"2859569","3":"2859597","4":"Ipheion uniflorum (Lindl.) Raf.","5":"Ipheion uniflorum (Graham) Raf."},{"1":"164300939","2":"7951273","3":"9738098","4":"Cipangopaludina chinensis (Gray, 1833)","5":"Cipangopaludina chinensis (J.E.Gray, 1833)"},{"1":"141267021","2":"2767230","3":"2767229","4":"Scilla sardensis (Whittall ex Barr & Sayden) Speta","5":"Scilla sardensis (Whittall ex Barr & Sugden) Speta"},{"1":"141264958","2":"3679953","3":"3678949","4":"Calystegia pulchra Brumm. & Heywood","5":"Calystegia ×pulchra Brumm. & Heywood"},{"1":"141266911","2":"3586380","3":"2747750","4":"Crocus luteus Lam.","5":"Crocus ×luteus Lam."},{"1":"141266278","2":"2927185","3":"3893979","4":"Mentha wirtgeniana F.W.Schultz","5":"Mentha ×wirtgeniana F.W.Schultz"},{"1":"141267216","2":"7895013","3":"5587011","4":"Sabulina mediterranea (Link) Rchb.","5":"Sabulina mediterranea (Ledeb. ex Link) Rchb."},{"1":"163968244","2":"5366332","3":"5365494","4":"Potentilla argyrophylla var. atrosanguinea (Lodd.) Hook.fil.","5":"Potentilla argyrophylla var. atrosanguinea (G.Lodd. ex D.Don) Hook.fil."},{"1":"157127259","2":"5290034","3":"9393876","4":"Sporobolus townsendii (H.Groves & J.Groves) P.M.Peterson & Saarela","5":"Sporobolus ×townsendii (H.Groves & J.Groves) P.M.Peterson & Saarela"},{"1":"141265808","2":"5290034","3":"9393876","4":"Sporobolus townsendii (H.Groves & J.Groves) P.M.Peterson & Saarela","5":"Sporobolus ×townsendii (H.Groves & J.Groves) P.M.Peterson & Saarela"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+{"columns":[{"label":["taxonKey"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["bb_key"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["bb_acceptedKey"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["bb_acceptedName"],"name":[4],"type":["chr"],"align":["left"]},{"label":["updated_bb_acceptedName"],"name":[5],"type":["chr"],"align":["left"]}],"data":[],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
   </script>
 </div>
 

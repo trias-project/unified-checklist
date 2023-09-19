@@ -7187,33 +7187,44 @@ taxonKey,locationId,locality,country,status,temporal,establishmentMeans,remarks,
 159498741,ISO_3166-2:BE-VLG,Flemish Region,BE,,2018,INTRODUCED,"1 incertain occurrence in 2018 unverified, http://observations.be",http://observations.be/waarneming/view/157503659
 159498742,ISO_3166-2:BE,Belgium,BE,,1983/2014,INTRODUCED,"2 occurrences in GBIF, 1983 and 2014, http://waarnemingen.be",
 159498743,ISO_3166-2:BE,Belgium,BE,,,INTRODUCED,,
-141117231,ISO_3166-2:BE-VLG,Flemish Region,BE,,1980/2018,INTRODUCED,,
-141117232,ISO_3166-2:BE-VLG,Flemish Region,BE,,1201/2018,INTRODUCED,,
-141117233,ISO_3166-2:BE-VLG,Flemish Region,BE,,2012/2018,INTRODUCED,,
-141117234,ISO_3166-2:BE-VLG,Flemish Region,BE,,2001/2018,INTRODUCED,,
-141117235,ISO_3166-2:BE-VLG,Flemish Region,BE,,1975/2018,INTRODUCED,,
-141117236,ISO_3166-2:BE-VLG,Flemish Region,BE,,1601/2018,INTRODUCED,,
-141117237,ISO_3166-2:BE-VLG,Flemish Region,BE,,1984/2018,INTRODUCED,,
-141117238,ISO_3166-2:BE-VLG,Flemish Region,BE,,1984/2018,INTRODUCED,,
-141117240,ISO_3166-2:BE-VLG,Flemish Region,BE,,1601/2018,INTRODUCED,,
-141117241,ISO_3166-2:BE-VLG,Flemish Region,BE,,2015/2018,INTRODUCED,,
-141117242,ISO_3166-2:BE-VLG,Flemish Region,BE,,1890/2018,INTRODUCED,,
-141117243,ISO_3166-2:BE-VLG,Flemish Region,BE,,1885/2018,INTRODUCED,,
-141117244,ISO_3166-2:BE-VLG,Flemish Region,BE,,1871/2018,INTRODUCED,,
-141117245,ISO_3166-2:BE-VLG,Flemish Region,BE,,1884/2018,INTRODUCED,,
-141117246,ISO_3166-2:BE-VLG,Flemish Region,BE,,2016/2018,INTRODUCED,,
-141117247,ISO_3166-2:BE-VLG,Flemish Region,BE,,2010/2018,INTRODUCED,,
-141117248,ISO_3166-2:BE-VLG,Flemish Region,BE,,1884/2018,INTRODUCED,,
-141117249,ISO_3166-2:BE-VLG,Flemish Region,BE,,1975/2018,INTRODUCED,,
-141117250,ISO_3166-2:BE-VLG,Flemish Region,BE,,2005/2018,INTRODUCED,,
-141117251,ISO_3166-2:BE-VLG,Flemish Region,BE,,1990/2018,INTRODUCED,,
-141117252,ISO_3166-2:BE-VLG,Flemish Region,BE,,1992/2018,INTRODUCED,,
-141117253,ISO_3166-2:BE-VLG,Flemish Region,BE,,1920/2018,INTRODUCED,,
-141117254,ISO_3166-2:BE-VLG,Flemish Region,BE,,1967/2018,INTRODUCED,,
-141117255,ISO_3166-2:BE-VLG,Flemish Region,BE,,2000/2018,INTRODUCED,,
-143611964,ISO_3166-2:BE-VLG,Flemish Region,BE,,2010/2018,INTRODUCED,,
+141117231,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,1980/,INTRODUCED,,
+141117232,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,1201/,INTRODUCED,,
+141117233,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2012/,INTRODUCED,,
+141117233,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2012/,INTRODUCED,,
+141117234,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2001/,INTRODUCED,,
+141117234,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2001/,INTRODUCED,,
+141117235,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,1975/,INTRODUCED,,
+141117236,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,1601/,INTRODUCED,,
+141117237,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,1984/,INTRODUCED,,
+141117238,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,1984/,INTRODUCED,,
+141117240,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,1601/,INTRODUCED,,
+141117241,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2015/,INTRODUCED,,
+141117241,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2015/,INTRODUCED,,
+141117242,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,1890/,INTRODUCED,,
+141117243,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,1885/,INTRODUCED,,
+141117244,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,1871/,INTRODUCED,,
+141117244,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,1871/,INTRODUCED,,
+141117245,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,1884/,INTRODUCED,,
+141117245,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,1884/,INTRODUCED,,
+141117246,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2016/,INTRODUCED,,
+141117247,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2010/,INTRODUCED,,
+141117247,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2010/,INTRODUCED,,
+141117248,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,1884/,INTRODUCED,,
+141117249,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,1975/,INTRODUCED,,
+141117250,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2005/,INTRODUCED,,
+141117250,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2005/,INTRODUCED,,
+141117251,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,1990/,INTRODUCED,,
+141117252,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,1992/,INTRODUCED,,
+141117252,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,1992/,INTRODUCED,,
+141117253,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,1920/,INTRODUCED,,
+141117253,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,1920/,INTRODUCED,,
+141117254,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,1967/,INTRODUCED,,
+141117255,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2000/,INTRODUCED,,
+141117255,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2000/,INTRODUCED,,
+143611964,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2010/,INTRODUCED,,
 180661031,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2018/2019,INTRODUCED,,"Vanreusel W, Swinnen K, Gielen K, Vercayie D, Driessens G, Veraghtert W, Desmet P, Herremans M (2021). Waarnemingen.be - Non-native animal occurrences in Flanders and the Brussels Capital Region, Belgium. Version 1.25. Natuurpunt. Occurrence dataset https://doi.org/10.15468/k2aiak"
 180661034,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2014,INTRODUCED,in eel shipment,SOS reptiel
+180661037,ISO_3166-2:BE-BRU,Brussels-Capital Region,BE,PRESENT,1877/1897,INTRODUCED,,Weiserbs and Jacob 2005
 180661037,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2018/2020,INTRODUCED,,"Vanreusel W, Swinnen K, Gielen K, Vercayie D, Driessens G, Veraghtert W, Desmet P, Herremans M (2021). Waarnemingen.be - Non-native animal occurrences in Flanders and the Brussels Capital Region, Belgium. Version 1.25. Natuurpunt. Occurrence dataset https://doi.org/10.15468/k2aiak"
 180661039,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2001/2007,INTRODUCED,,Hyla databank
 180661041,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2011/2012,INTRODUCED,eradicated,https://www.natuurpunt.be/nieuws/spaanse-ribbensalamanders-weggevangen-neeroeteren-20120710
@@ -7221,8 +7232,8 @@ taxonKey,locationId,locality,country,status,temporal,establishmentMeans,remarks,
 180661044,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2017,INTRODUCED,,"Vanreusel W, Swinnen K, Gielen K, Vercayie D, Driessens G, Veraghtert W, Desmet P, Herremans M (2021). Waarnemingen.be - Non-native animal occurrences in Flanders and the Brussels Capital Region, Belgium. Version 1.25. Natuurpunt. Occurrence dataset https://doi.org/10.15468/k2aiak"
 180661048,ISO_3166-2:BE-BRU,Brussels-Capital Region,BE,PRESENT,2015,INTRODUCED,,"Vanreusel W, Swinnen K, Gielen K, Vercayie D, Driessens G, Veraghtert W, Desmet P, Herremans M (2021). Waarnemingen.be - Non-native animal occurrences in Flanders and the Brussels Capital Region, Belgium. Version 1.25. Natuurpunt. Occurrence dataset https://doi.org/10.15468/k2aiak"
 180661050,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2010/2019,INTRODUCED,,SOS reptiel
-180661053,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2006/2016,INTRODUCED,"campus Drie Eiken Antwerp University, pond with 30 larvae, obs. Bart Vervust","Hyla database | Vogelbescherming Vlaanderen | Vanreusel W, Swinnen K, Gielen K, Vercayie D, Driessens G, Veraghtert W, Desmet P, Herremans M (2021). Waarnemingen.be - Non-native animal occurrences in Flanders and the Brussels Capital Region, Belgium. Version 1.25. Natuurpunt. Occurrence dataset https://doi.org/10.15468/k2aiak"
-180661053,ISO_3166-2:BE-WAL,Walloon Region,BE,PRESENT,2006/2016,INTRODUCED,,Natagora
+180661053,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2006/2022,INTRODUCED,"campus Drie Eiken Antwerp University, pond with 30 larvae, obs. Bart Vervust","Hyla database | Vogelbescherming Vlaanderen | Vanreusel W, Swinnen K, Gielen K, Vercayie D, Driessens G, Veraghtert W, Desmet P, Herremans M (2021). Waarnemingen.be - Non-native animal occurrences in Flanders and the Brussels Capital Region, Belgium. Version 1.25. Natuurpunt. Occurrence dataset https://doi.org/10.15468/k2aiak"
+180661053,ISO_3166-2:BE-WAL,Walloon Region,BE,PRESENT,2006/2022,INTRODUCED,,Natagora
 180661056,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2020,INTRODUCED,,SOS reptiel
 180661059,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2009/2019,INTRODUCED,,"Vanreusel W, Swinnen K, Gielen K, Vercayie D, Driessens G, Veraghtert W, Desmet P, Herremans M (2021). Waarnemingen.be - Non-native animal occurrences in Flanders and the Brussels Capital Region, Belgium. Version 1.25. Natuurpunt. Occurrence dataset https://doi.org/10.15468/k2aiak"
 180661062,ISO_3166-2:BE-BRU,Brussels-Capital Region,BE,PRESENT,2006/2020,INTRODUCED,Putatively introduced by Bulgarian trucker in Wetteren Belgium in 1975,"Holsbeek, G., Mergeay, J., Volckaert, F.A.M. et al. Genetic detection of multiple exotic water frog species in Belgium illustrates the need for monitoring and immediate action. Biol Invasions 12, 1459–1463 (2010). https://doi.org/10.1007/s10530-009-9570-9 | Hyla werkgroep"
@@ -7249,8 +7260,10 @@ taxonKey,locationId,locality,country,status,temporal,establishmentMeans,remarks,
 180661096,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2018,INTRODUCED,,Vogelbescherming Vlaanderen
 180661099,ISO_3166-2:BE-BRU,Brussels-Capital Region,BE,PRESENT,1996/2020,INTRODUCED,,Own observations | Firsthand accounts
 180661099,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,1968/2020,INTRODUCED,,Hyla werkgroep
+180661100,ISO_3166-2:BE-BRU,Brussels-Capital Region,BE,PRESENT,1962,INTRODUCED,,Weiserbs and Jacob 2005
 180661100,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2007/2014,INTRODUCED,vicinity of railway station of Leuven,"Jooris, R. & Lehouck, M. (2007). De Muurhagedis in Vlaanderen. Natuur.focus 6(4):123-129"
 180661100,ISO_3166-2:BE-WAL,Walloon Region,BE,PRESENT,,INTRODUCED,,Natagora
+180661101,ISO_3166-2:BE-BRU,Brussels-Capital Region,BE,PRESENT,1967,INTRODUCED,,Weiserbs and Jacob 2005
 180661101,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2015/2019,INTRODUCED,Eke - Schelde Eke - Schelde t.h.v. Bolveerput (OV),Hyla database
 180661103,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2013,INTRODUCED,,Vogelbescherming Vlaanderen
 180661105,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2010/2019,INTRODUCED,,"Vanreusel W, Swinnen K, Gielen K, Vercayie D, Driessens G, Veraghtert W, Desmet P, Herremans M (2021). Waarnemingen.be - Non-native animal occurrences in Flanders and the Brussels Capital Region, Belgium. Version 1.25. Natuurpunt. Occurrence dataset https://doi.org/10.15468/k2aiak | Vogelbescherming Vlaanderen"
@@ -7258,18 +7271,19 @@ taxonKey,locationId,locality,country,status,temporal,establishmentMeans,remarks,
 180661110,ISO_3166-2:BE-BRU,Brussels-Capital Region,BE,PRESENT,2017,INTRODUCED,Container with stone from India,"Jooris, R. & Lehouck, M. (2007). De Muurhagedis in Vlaanderen. Natuur.focus 6(4):123-129 | SOS reptiel"
 180661112,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2013/2020,INTRODUCED,,SOS reptiel | Vogelbescherming Vlaanderen
 180661113,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2015,INTRODUCED,,Vogelbescherming Vlaanderen
-180661116,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2013/2018,INTRODUCED,,"Vanreusel W, Swinnen K, Gielen K, Vercayie D, Driessens G, Veraghtert W, Desmet P, Herremans M (2021). Waarnemingen.be - Non-native animal occurrences in Flanders and the Brussels Capital Region, Belgium. Version 1.25. Natuurpunt. Occurrence dataset https://doi.org/10.15468/k2aiak | Vogelbescherming Vlaanderen"
+180661116,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2013/2022,INTRODUCED,,"Vanreusel W, Swinnen K, Gielen K, Vercayie D, Driessens G, Veraghtert W, Desmet P, Herremans M (2021). Waarnemingen.be - Non-native animal occurrences in Flanders and the Brussels Capital Region, Belgium. Version 1.25. Natuurpunt. Occurrence dataset https://doi.org/10.15468/k2aiak | Vogelbescherming Vlaanderen"
 180661116,ISO_3166-2:BE-WAL,Walloon Region,BE,PRESENT,2015/2018,INTRODUCED,,Natagora
 180661119,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2010/2012,INTRODUCED,,Vogelbescherming Vlaanderen
 180661120,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2013/2018,INTRODUCED,,Vogelbescherming Vlaanderen
 180661122,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2014/2016,INTRODUCED,,Vogelbescherming Vlaanderen
-180661124,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2006/2020,INTRODUCED,,https://www.hln.be/dentergem/man-ontdekt-boa-constrictor-in-zijn-dakgoot-slang-blijkt-ontsnapt-bij-de-buren~a13151f6/ | Vogelbescherming Vlaanderen
-180661124,ISO_3166-2:BE-WAL,Walloon Region,BE,PRESENT,,INTRODUCED,,Natagora
+180661124,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2006/2023,INTRODUCED,,https://www.hln.be/dentergem/man-ontdekt-boa-constrictor-in-zijn-dakgoot-slang-blijkt-ontsnapt-bij-de-buren~a13151f6/ | Vogelbescherming Vlaanderen
+180661124,ISO_3166-2:BE-WAL,Walloon Region,BE,PRESENT,2022,INTRODUCED,,Natagora
 180661127,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2020,INTRODUCED,,https://www.hln.be/gent/baby-van-gevaarlijke-afrikaanse-boscobra-gevangen-in-houtbedrijf-haven~a053b826/ | SOS reptiel
 180661130,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2006/2017,INTRODUCED,,News article | Vogelbescherming Vlaanderen
 180661131,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2017,INTRODUCED,,Firsthand accounts
+180661133,ISO_3166-2:BE-BRU,Brussels-Capital Region,BE,PRESENT,1998,INTRODUCED,,Weiserbs and Jacob 2005
 180661133,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2004/2017,INTRODUCED,,Anonymus (2008). Hagedissen uit meer zuidelijke regio’s van Europa nu ook in Vlaanderen. Hyla flits 2008/3
-180661134,ISO_3166-2:BE-BRU,Brussels-Capital Region,BE,PRESENT,1999/2020,INTRODUCED,presumably introduced as stowaway in transport of goods per train,"Jooris, R. & Lehouck, M. (2007). De Muurhagedis in Vlaanderen. Natuur.focus 6(4):123-129"
+180661134,ISO_3166-2:BE-BRU,Brussels-Capital Region,BE,PRESENT,1970/2020,INTRODUCED,presumably introduced as stowaway in transport of goods per train,"Jooris, R. & Lehouck, M. (2007). De Muurhagedis in Vlaanderen. Natuur.focus 6(4):123-129"
 180661134,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2004/2020,INTRODUCED,presumably introduced as stowaway in transport of goods per train,"Jooris, R. & Lehouck, M. (2007). De Muurhagedis in Vlaanderen. Natuur.focus 6(4):123-129 | Vogelbescherming Vlaanderen"
 180661135,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2011/2019,INTRODUCED,,SOS reptiel | Vogelbescherming Vlaanderen
 180661137,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2013/2018,INTRODUCED,,SOS reptiel | Vogelbescherming Vlaanderen | Own observation
@@ -7284,13 +7298,14 @@ taxonKey,locationId,locality,country,status,temporal,establishmentMeans,remarks,
 180661150,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2020,INTRODUCED,,SOS reptiel
 180661152,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2012/2015,INTRODUCED,,SOS reptiel | Vogelbescherming Vlaanderen
 180661153,ISO_3166-2:BE-BRU,Brussels-Capital Region,BE,PRESENT,2018,INTRODUCED,,SOS reptiel
+180661153,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2022,INTRODUCED,,waarnemingen.be
 180661156,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2019,INTRODUCED,,Vogelbescherming Vlaanderen
 180661158,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2014/2020,INTRODUCED,,"Vanreusel W, Swinnen K, Gielen K, Vercayie D, Driessens G, Veraghtert W, Desmet P, Herremans M (2021). Waarnemingen.be - Non-native animal occurrences in Flanders and the Brussels Capital Region, Belgium. Version 1.25. Natuurpunt. Occurrence dataset https://doi.org/10.15468/k2aiak"
 180661160,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2015,INTRODUCED,,SOS reptiel
-180661163,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2020,INTRODUCED,,SOS reptiel
+180661163,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2020/2021,INTRODUCED,,SOS reptiel
 180661165,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2013,INTRODUCED,,Vogelbescherming Vlaanderen
 180661167,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2014,INTRODUCED,,SOS reptiel
-180661169,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2016/2020,INTRODUCED,,"Vanreusel W, Swinnen K, Gielen K, Vercayie D, Driessens G, Veraghtert W, Desmet P, Herremans M (2021). Waarnemingen.be - Non-native animal occurrences in Flanders and the Brussels Capital Region, Belgium. Version 1.25. Natuurpunt. Occurrence dataset https://doi.org/10.15468/k2aiak"
+180661169,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2016/2021,INTRODUCED,,"Vanreusel W, Swinnen K, Gielen K, Vercayie D, Driessens G, Veraghtert W, Desmet P, Herremans M (2021). Waarnemingen.be - Non-native animal occurrences in Flanders and the Brussels Capital Region, Belgium. Version 1.25. Natuurpunt. Occurrence dataset https://doi.org/10.15468/k2aiak"
 180661171,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2006/2020,INTRODUCED,subspecies taeniura from china (Elaphe taeniura taeniura),https://www.natuurpunt.be/nieuws/taiwanese-rattenslang-plant-zich-voort-vlaanderen-20150625 | GBIF-waarnemingen
 180661173,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2013/2020,INTRODUCED,,https://www.hbvl.be/cnt/dmf20200724_95741235 | Vogelbescherming Vlaanderen
 180661173,ISO_3166-2:BE-WAL,Walloon Region,BE,PRESENT,,INTRODUCED,,Natagora
@@ -7308,8 +7323,8 @@ taxonKey,locationId,locality,country,status,temporal,establishmentMeans,remarks,
 180661186,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2014/2019,INTRODUCED,,"Vanreusel W, Swinnen K, Gielen K, Vercayie D, Driessens G, Veraghtert W, Desmet P, Herremans M (2021). Waarnemingen.be - Non-native animal occurrences in Flanders and the Brussels Capital Region, Belgium. Version 1.25. Natuurpunt. Occurrence dataset https://doi.org/10.15468/k2aiak"
 180661186,ISO_3166-2:BE-WAL,Walloon Region,BE,PRESENT,2019,INTRODUCED,,https://lameuse-namur.sudinfo.be/429768/article/2019-08-28/beaumont-les-pompiers-ont-capture-un-serpent
 180661187,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2017,INTRODUCED,,"Vanreusel W, Swinnen K, Gielen K, Vercayie D, Driessens G, Veraghtert W, Desmet P, Herremans M (2021). Waarnemingen.be - Non-native animal occurrences in Flanders and the Brussels Capital Region, Belgium. Version 1.25. Natuurpunt. Occurrence dataset https://doi.org/10.15468/k2aiak"
-180661188,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2010/2019,INTRODUCED,,"Vanreusel W, Swinnen K, Gielen K, Vercayie D, Driessens G, Veraghtert W, Desmet P, Herremans M (2021). Waarnemingen.be - Non-native animal occurrences in Flanders and the Brussels Capital Region, Belgium. Version 1.25. Natuurpunt. Occurrence dataset https://doi.org/10.15468/k2aiak | Vogelbescherming Vlaanderen"
-180661190,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2010/2014,INTRODUCED,,Vogelbescherming Vlaanderen
+180661190,ISO_3166-2:BE-BRU,Brussels-Capital Region,BE,PRESENT,1894/1967,INTRODUCED,,Weiserbs and Jacob 2005
+180661190,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2010/2023,INTRODUCED,,Vogelbescherming Vlaanderen
 180661194,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2020,INTRODUCED,,SOS reptiel
 180661197,ISO_3166-2:BE-BRU,Brussels-Capital Region,BE,PRESENT,2018,INTRODUCED,,https://www.hln.be/dieren/brussel-zit-vol-verboden-schildpadden~a117b570/
 180661197,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2006/2016,INTRODUCED,,"Vanreusel W, Swinnen K, Gielen K, Vercayie D, Driessens G, Veraghtert W, Desmet P, Herremans M (2021). Waarnemingen.be - Non-native animal occurrences in Flanders and the Brussels Capital Region, Belgium. Version 1.25. Natuurpunt. Occurrence dataset https://doi.org/10.15468/k2aiak"
@@ -7322,7 +7337,7 @@ taxonKey,locationId,locality,country,status,temporal,establishmentMeans,remarks,
 180661211,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2012,INTRODUCED,,Vogelbescherming Vlaanderen
 180661213,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2018,INTRODUCED,,"Vanreusel W, Swinnen K, Gielen K, Vercayie D, Driessens G, Veraghtert W, Desmet P, Herremans M (2021). Waarnemingen.be - Non-native animal occurrences in Flanders and the Brussels Capital Region, Belgium. Version 1.25. Natuurpunt. Occurrence dataset https://doi.org/10.15468/k2aiak"
 180661214,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2014/2017,INTRODUCED,,SOS reptiel | Vogelbescherming Vlaanderen
-180661216,ISO_3166-2:BE-BRU,Brussels-Capital Region,BE,PRESENT,2018,INTRODUCED,,Own observation
+180661216,ISO_3166-2:BE-BRU,Brussels-Capital Region,BE,PRESENT,1990/2018,INTRODUCED,,Own observation
 180661216,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2010/2020,INTRODUCED,,"Vanreusel W, Swinnen K, Gielen K, Vercayie D, Driessens G, Veraghtert W, Desmet P, Herremans M (2021). Waarnemingen.be - Non-native animal occurrences in Flanders and the Brussels Capital Region, Belgium. Version 1.25. Natuurpunt. Occurrence dataset https://doi.org/10.15468/k2aiak"
 180661216,ISO_3166-2:BE-WAL,Walloon Region,BE,PRESENT,,INTRODUCED,,Natagora
 180661218,ISO_3166-2:BE-BRU,Brussels-Capital Region,BE,PRESENT,2009/2020,INTRODUCED,,"Vanreusel W, Swinnen K, Gielen K, Vercayie D, Driessens G, Veraghtert W, Desmet P, Herremans M (2021). Waarnemingen.be - Non-native animal occurrences in Flanders and the Brussels Capital Region, Belgium. Version 1.25. Natuurpunt. Occurrence dataset https://doi.org/10.15468/k2aiak"
@@ -7337,23 +7352,44 @@ taxonKey,locationId,locality,country,status,temporal,establishmentMeans,remarks,
 180661221,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,1997/2020,INTRODUCED,,"Vanreusel W, Swinnen K, Gielen K, Vercayie D, Driessens G, Veraghtert W, Desmet P, Herremans M (2021). Waarnemingen.be - Non-native animal occurrences in Flanders and the Brussels Capital Region, Belgium. Version 1.25. Natuurpunt. Occurrence dataset https://doi.org/10.15468/k2aiak | Vogelbescherming Vlaanderen"
 180661221,ISO_3166-2:BE-WAL,Walloon Region,BE,PRESENT,2010/2018,INTRODUCED,,Natagora
 180661223,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2009,INTRODUCED,,"Vanreusel W, Swinnen K, Gielen K, Vercayie D, Driessens G, Veraghtert W, Desmet P, Herremans M (2021). Waarnemingen.be - Non-native animal occurrences in Flanders and the Brussels Capital Region, Belgium. Version 1.25. Natuurpunt. Occurrence dataset https://doi.org/10.15468/k2aiak"
-180661224,ISO_3166-2:BE-BRU,Brussels-Capital Region,BE,PRESENT,2018,INTRODUCED,,"Vanreusel W, Swinnen K, Gielen K, Vercayie D, Driessens G, Veraghtert W, Desmet P, Herremans M (2021). Waarnemingen.be - Non-native animal occurrences in Flanders and the Brussels Capital Region, Belgium. Version 1.25. Natuurpunt. Occurrence dataset https://doi.org/10.15468/k2aiak"
-180661224,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2012,INTRODUCED,,"Vanreusel W, Swinnen K, Gielen K, Vercayie D, Driessens G, Veraghtert W, Desmet P, Herremans M (2021). Waarnemingen.be - Non-native animal occurrences in Flanders and the Brussels Capital Region, Belgium. Version 1.25. Natuurpunt. Occurrence dataset https://doi.org/10.15468/k2aiak"
 180661226,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2010/2014,INTRODUCED,,Vogelbescherming Vlaanderen
 180661227,ISO_3166-2:BE-BRU,Brussels-Capital Region,BE,PRESENT,2014/2019,INTRODUCED,,"Vanreusel W, Swinnen K, Gielen K, Vercayie D, Driessens G, Veraghtert W, Desmet P, Herremans M (2021). Waarnemingen.be - Non-native animal occurrences in Flanders and the Brussels Capital Region, Belgium. Version 1.25. Natuurpunt. Occurrence dataset https://doi.org/10.15468/k2aiak"
 180661227,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2010/2019,INTRODUCED,,"Vanreusel W, Swinnen K, Gielen K, Vercayie D, Driessens G, Veraghtert W, Desmet P, Herremans M (2021). Waarnemingen.be - Non-native animal occurrences in Flanders and the Brussels Capital Region, Belgium. Version 1.25. Natuurpunt. Occurrence dataset https://doi.org/10.15468/k2aiak | Vogelbescherming Vlaanderen"
 180661227,ISO_3166-2:BE-WAL,Walloon Region,BE,PRESENT,2013/2020,INTRODUCED,,Natagora
 180661228,ISO_3166-2:BE-BRU,Brussels-Capital Region,BE,PRESENT,2018,INTRODUCED,,"Vanreusel W, Swinnen K, Gielen K, Vercayie D, Driessens G, Veraghtert W, Desmet P, Herremans M (2021). Waarnemingen.be - Non-native animal occurrences in Flanders and the Brussels Capital Region, Belgium. Version 1.25. Natuurpunt. Occurrence dataset https://doi.org/10.15468/k2aiak"
 180661228,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2018,INTRODUCED,,https://www.gbif.org/occurrence/download/0055570-200613084148143
-180661229,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2005/2018,INTRODUCED,,"Vanreusel W, Swinnen K, Gielen K, Vercayie D, Driessens G, Veraghtert W, Desmet P, Herremans M (2021). Waarnemingen.be - Non-native animal occurrences in Flanders and the Brussels Capital Region, Belgium. Version 1.25. Natuurpunt. Occurrence dataset https://doi.org/10.15468/k2aiak | Vogelbescherming Vlaanderen"
-180661230,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2005/2018,INTRODUCED,,"Vanreusel W, Swinnen K, Gielen K, Vercayie D, Driessens G, Veraghtert W, Desmet P, Herremans M (2021). Waarnemingen.be - Non-native animal occurrences in Flanders and the Brussels Capital Region, Belgium. Version 1.25. Natuurpunt. Occurrence dataset https://doi.org/10.15468/k2aiak | Vogelbescherming Vlaanderen"
 180661233,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2017,INTRODUCED,,Vogelbescherming Vlaanderen
 180661234,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2010/2019,INTRODUCED,,Vogelbescherming Vlaanderen
-180661235,ISO_3166-2:BE-BRU,Brussels-Capital Region,BE,PRESENT,2017,INTRODUCED,,"Vanreusel W, Swinnen K, Gielen K, Vercayie D, Driessens G, Veraghtert W, Desmet P, Herremans M (2021). Waarnemingen.be - Non-native animal occurrences in Flanders and the Brussels Capital Region, Belgium. Version 1.25. Natuurpunt. Occurrence dataset https://doi.org/10.15468/k2aiak"
+180661235,ISO_3166-2:BE-BRU,Brussels-Capital Region,BE,PRESENT,1935/2017,INTRODUCED,,"Vanreusel W, Swinnen K, Gielen K, Vercayie D, Driessens G, Veraghtert W, Desmet P, Herremans M (2021). Waarnemingen.be - Non-native animal occurrences in Flanders and the Brussels Capital Region, Belgium. Version 1.25. Natuurpunt. Occurrence dataset https://doi.org/10.15468/k2aiak"
 180661235,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2010/2020,INTRODUCED,,"Vanreusel W, Swinnen K, Gielen K, Vercayie D, Driessens G, Veraghtert W, Desmet P, Herremans M (2021). Waarnemingen.be - Non-native animal occurrences in Flanders and the Brussels Capital Region, Belgium. Version 1.25. Natuurpunt. Occurrence dataset https://doi.org/10.15468/k2aiak | Vogelbescherming Vlaanderen"
 180661235,ISO_3166-2:BE-WAL,Walloon Region,BE,PRESENT,2019/2020,INTRODUCED,,Natagora
+180661237,ISO_3166-2:BE-BRU,Brussels-Capital Region,BE,PRESENT,1935/NA,INTRODUCED,,Weiserbs and Jacob 2005
 180661237,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2013/2020,INTRODUCED,,"Vanreusel W, Swinnen K, Gielen K, Vercayie D, Driessens G, Veraghtert W, Desmet P, Herremans M (2021). Waarnemingen.be - Non-native animal occurrences in Flanders and the Brussels Capital Region, Belgium. Version 1.25. Natuurpunt. Occurrence dataset https://doi.org/10.15468/k2aiak | Vogelbescherming Vlaanderen"
 180661237,ISO_3166-2:BE-WAL,Walloon Region,BE,PRESENT,,INTRODUCED,,Natagora
+213158974,ISO_3166-2:BE-BRU,Brussels-Capital Region,BE,PRESENT,1970,INTRODUCED,,Weiserbs and Jacob 2005
+213158981,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2021,INTRODUCED,,SOS reptiel
+213158993,ISO_3166-2:BE-BRU,Brussels-Capital Region,BE,PRESENT,2005/NA,INTRODUCED,,Weiserbs and Jacob 2005
+213159001,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2022,INTRODUCED,,"https://www.vrt.be/vrtnws/nl/2022/04/06/giftige-adder-pelt/#:~:text=De%20Palestijnse%20adder%20kroop%20rond,Belgi%C3%AB%20geen%20tegengif%20voor%20bestaat.&text=Dilissen%20Logistics%20in%20Pelt%20verwittigde,in%20een%20lading%20uit%20Isra%C3%ABl."
+213159014,ISO_3166-2:BE-WAL,Walloon Region,BE,PRESENT,2009,INTRODUCED,,https://rainne.natagora.be/fileadmin/Rainne/Echo_des_rainettes/EDR_septembre_12.pdf
+213159022,ISO_3166-2:BE-BRU,Brussels-Capital Region,BE,PRESENT,1993/1994,INTRODUCED,,Weiserbs and Jacob 2005
+213159023,ISO_3166-2:BE-BRU,Brussels-Capital Region,BE,PRESENT,1993/1994,INTRODUCED,,Weiserbs and Jacob 2005
+213159025,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2021,INTRODUCED,,personal communication
+213159043,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2021,INTRODUCED,,Hyla werkgroep
+213159045,ISO_3166-2:BE-WAL,Walloon Region,BE,PRESENT,2011,INTRODUCED,,https://rainne.natagora.be/fileadmin/Rainne/Echo_des_rainettes/EDR_septembre_12.pdf
+213159049,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2021/2022,INTRODUCED,,SOS reptiel
+213159053,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2021,INTRODUCED,,SOS reptiel
+213159066,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2021,INTRODUCED,,SOS reptiel
+213159069,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2023,INTRODUCED,,SOS reptiel
+213159072,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2023,INTRODUCED,,waarnemingen.be
+213159073,ISO_3166-2:BE-BRU,Brussels-Capital Region,BE,PRESENT,2018,INTRODUCED,,"Graitson, Paquet and Verbelen, 2021"
+213159075,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2022,INTRODUCED,,SOS reptiel
+213159078,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2021,INTRODUCED,,Hyla werkgroep
+213159078,ISO_3166-2:BE-WAL,Walloon Region,BE,PRESENT,2022,INTRODUCED,,Natagora
+213159081,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2010/2019,INTRODUCED,,"Vanreusel W, Swinnen K, Gielen K, Vercayie D, Driessens G, Veraghtert W, Desmet P, Herremans M (2021). Waarnemingen.be - Non-native animal occurrences in Flanders and the Brussels Capital Region, Belgium. Version 1.25. Natuurpunt. Occurrence dataset https://doi.org/10.15468/k2aiak | Vogelbescherming Vlaanderen"
+213159098,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2005/2018,INTRODUCED,,"Vanreusel W, Swinnen K, Gielen K, Vercayie D, Driessens G, Veraghtert W, Desmet P, Herremans M (2021). Waarnemingen.be - Non-native animal occurrences in Flanders and the Brussels Capital Region, Belgium. Version 1.25. Natuurpunt. Occurrence dataset https://doi.org/10.15468/k2aiak | Vogelbescherming Vlaanderen"
+213159099,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2005/2018,INTRODUCED,,"Vanreusel W, Swinnen K, Gielen K, Vercayie D, Driessens G, Veraghtert W, Desmet P, Herremans M (2021). Waarnemingen.be - Non-native animal occurrences in Flanders and the Brussels Capital Region, Belgium. Version 1.25. Natuurpunt. Occurrence dataset https://doi.org/10.15468/k2aiak | Vogelbescherming Vlaanderen"
+213159101,ISO_3166-2:BE-BRU,Brussels-Capital Region,BE,PRESENT,2018,INTRODUCED,,"Vanreusel W, Swinnen K, Gielen K, Vercayie D, Driessens G, Veraghtert W, Desmet P, Herremans M (2021). Waarnemingen.be - Non-native animal occurrences in Flanders and the Brussels Capital Region, Belgium. Version 1.25. Natuurpunt. Occurrence dataset https://doi.org/10.15468/k2aiak"
+213159101,ISO_3166-2:BE-VLG,Flemish Region,BE,PRESENT,2012,INTRODUCED,,"Vanreusel W, Swinnen K, Gielen K, Vercayie D, Driessens G, Veraghtert W, Desmet P, Herremans M (2021). Waarnemingen.be - Non-native animal occurrences in Flanders and the Brussels Capital Region, Belgium. Version 1.25. Natuurpunt. Occurrence dataset https://doi.org/10.15468/k2aiak"
 140562891,ISO_3166-2:BE-VLG,Flemish Region,BE,,2000/2016,INTRODUCED,,"Vercauteren T, De Smedt S, Warmoes T, Goddeeris B, Wouters K (2005) Drie nieuwe Ponto-Kaspische inwijkelingen dringen door tot in kanalen in de provincie Antwerpen: de zoetwaterpolychaet Hypania invalida (Grube, 1860) en, voor het eerst in België, de platworm Dendrocoelum romanodanubiale (Codreanu, 1949) en de Donaupissebed Jaera istri Veuille, 1979. In: Nieuwborg H (ed), Natuurstudie in de provincie Antwerpen. Antwerpse Koepel voor Natuurstudie (ANKONA) Jaarboek 2003, pp 83–97"
 140562894,ISO_3166-2:BE-VLG,Flemish Region,BE,,2002/2016,INTRODUCED,,"Soors J, van Haaren T, Timm T, Speybroeck J (2013) Bratislavia dadayi (Michaelsen, 1905) (Annelida: Clitellata: Naididae): a new non-indigenous species for Europe, and other non-native annelids in the Schelde estuary. Aquatic Invasions 8: 37–44, https://doi.org/10.3391/ai.2013.8.1.04"
 140562895,ISO_3166-2:BE-VLG,Flemish Region,BE,,2010/2016,INTRODUCED,,"Soors J, van Haaren T, Timm T, Speybroeck J (2013) Bratislavia dadayi (Michaelsen, 1905) (Annelida: Clitellata: Naididae): a new non-indigenous species for Europe, and other non-native annelids in the Schelde estuary. Aquatic Invasions 8: 37–44, https://doi.org/10.3391/ai.2013.8.1.04"

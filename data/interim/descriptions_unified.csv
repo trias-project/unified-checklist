@@ -973,11 +973,8 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 2340977,native range,Northern America,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042376,"Ameiurus melas Rafinesque, 1820"
 2340977,pathway,cbd_2014_pathway:escape,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042376,"Ameiurus melas Rafinesque, 1820"
 2340977,pathway,cbd_2014_pathway:release,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042376,"Ameiurus melas Rafinesque, 1820"
-2340989,degree of establishment,established,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117244,Ameiurus nebulosus
 2340989,native range,Northern America,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042360,"Ameiurus nebulosus Lesueur, 1819"
 2340989,pathway,cbd_2014_pathway:corridor,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042360,"Ameiurus nebulosus Lesueur, 1819"
-2340989,pathway,cbd_2014_pathway:escape_aquaculture,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117244,Ameiurus nebulosus
-2340989,pathway,cbd_2014_pathway:escape_ornamental,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117244,Ameiurus nebulosus
 2340989,pathway,cbd_2014_pathway:natural_dispersal,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042360,"Ameiurus nebulosus Lesueur, 1819"
 2351064,native range,Europe,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042384,"Coregonus nasus Pallas, 1776"
 2351064,native range,Northern America,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042384,"Coregonus nasus Pallas, 1776"
@@ -992,33 +989,24 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 2351413,native range,Europe,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042377,"Hucho hucho (Linnaeus, 1758)"
 2351413,pathway,cbd_2014_pathway:release,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042377,"Hucho hucho (Linnaeus, 1758)"
 2360504,native range,Europe,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042330,"Vimba vimba (Linnaeus, 1758)"
-2362030,degree of establishment,casual,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117254,Ctenopharyngodon idella
 2362030,native range,Asia,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117254,Ctenopharyngodon idella
 2362030,native range,Europe,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042361,"Ctenopharyngodon idella (Valenciennes in Cuvier & Valenciennes, 1844)"
 2362030,pathway,cbd_2014_pathway:corridor,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042361,"Ctenopharyngodon idella (Valenciennes in Cuvier & Valenciennes, 1844)"
 2362030,pathway,cbd_2014_pathway:natural_dispersal,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042361,"Ctenopharyngodon idella (Valenciennes in Cuvier & Valenciennes, 1844)"
 2362030,pathway,cbd_2014_pathway:release,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042361,"Ctenopharyngodon idella (Valenciennes in Cuvier & Valenciennes, 1844)"
-2362030,pathway,cbd_2014_pathway:release_biological_control,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117254,Ctenopharyngodon idella
-2362473,degree of establishment,casual,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117235,Hypophthalmichthys molitrix
 2362473,native range,Asia,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117235,Hypophthalmichthys molitrix
 2362473,pathway,cbd_2014_pathway:corridor,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042370,"Hypophthalmichthys molitrix (Valenciennes, 1844)"
 2362473,pathway,cbd_2014_pathway:escape,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042370,"Hypophthalmichthys molitrix (Valenciennes, 1844)"
 2362473,pathway,cbd_2014_pathway:natural_dispersal,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042370,"Hypophthalmichthys molitrix (Valenciennes, 1844)"
 2362473,pathway,cbd_2014_pathway:release,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042370,"Hypophthalmichthys molitrix (Valenciennes, 1844)"
-2362473,pathway,cbd_2014_pathway:release_biological_control,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117235,Hypophthalmichthys molitrix
-2362486,degree of establishment,casual,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117249,Hypophthalmichthys nobilis
 2362486,native range,Asia,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117249,Hypophthalmichthys nobilis
-2362486,pathway,cbd_2014_pathway:release_biological_control,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117249,Hypophthalmichthys nobilis
-2362868,degree of establishment,established,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117252,Pseudorasbora parva
 2362868,native range,Asia,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117252,Pseudorasbora parva
 2362868,pathway,cbd_2014_pathway:contaminant,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042316,"Pseudorasbora parva Temminck & Schlegels, 1846"
 2362868,pathway,cbd_2014_pathway:corridor,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042316,"Pseudorasbora parva Temminck & Schlegels, 1846"
 2362868,pathway,cbd_2014_pathway:escape,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042316,"Pseudorasbora parva Temminck & Schlegels, 1846"
-2362868,pathway,cbd_2014_pathway:escape_food_bait,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117252,Pseudorasbora parva
 2362868,pathway,cbd_2014_pathway:natural_dispersal,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042316,"Pseudorasbora parva Temminck & Schlegels, 1846"
 2362868,pathway,cbd_2014_pathway:release,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042316,"Pseudorasbora parva Temminck & Schlegels, 1846"
 2362868,pathway,cbd_2014_pathway:stowaway,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042316,"Pseudorasbora parva Temminck & Schlegels, 1846"
-2362868,pathway,unintentional,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117252,Pseudorasbora parva
 2362881,native range,Asia,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042356,"Leucaspius delineatus Heckel, 1843"
 2362881,native range,Europe,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042356,"Leucaspius delineatus Heckel, 1843"
 2362881,pathway,cbd_2014_pathway:contaminant,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042356,"Leucaspius delineatus Heckel, 1843"
@@ -1026,20 +1014,14 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 2362881,pathway,cbd_2014_pathway:escape,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042356,"Leucaspius delineatus Heckel, 1843"
 2362881,pathway,cbd_2014_pathway:natural_dispersal,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042356,"Leucaspius delineatus Heckel, 1843"
 2362881,pathway,cbd_2014_pathway:stowaway,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042356,"Leucaspius delineatus Heckel, 1843"
-2366634,degree of establishment,established,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117236,Carassius gibelio
 2366634,native range,Asia,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117236,Carassius gibelio
 2366634,native range,Eastern Europe,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117236,Carassius gibelio
 2366634,native range,Europe,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042333,"Carassius gibelio (Bloch, 1782)"
 2366634,pathway,cbd_2014_pathway:release,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042333,"Carassius gibelio (Bloch, 1782)"
-2366634,pathway,unintentional,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117236,Carassius gibelio
-2367033,degree of establishment,established,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117246,Ballerus ballerus
 2367033,native range,Eastern Europe,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117246,Ballerus ballerus
-2367033,pathway,cbd_2014_pathway:escape_food_bait,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117246,Ballerus ballerus
-2367742,degree of establishment,established,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117237,Pimephales promelas
 2367742,native range,Northern America,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042336,"Pimephales promelas (Rafinesque, 1820)"
 2367742,pathway,cbd_2014_pathway:contaminant,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042336,"Pimephales promelas (Rafinesque, 1820)"
 2367742,pathway,cbd_2014_pathway:escape,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042336,"Pimephales promelas (Rafinesque, 1820)"
-2367742,pathway,cbd_2014_pathway:escape_food_bait,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117237,Pimephales promelas
 2367742,pathway,cbd_2014_pathway:release,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042336,"Pimephales promelas (Rafinesque, 1820)"
 2367742,pathway,cbd_2014_pathway:stowaway,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042336,"Pimephales promelas (Rafinesque, 1820)"
 2367919,degree of establishment,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164300706,"Misgurnus anguillicaudatus (Cantor, 1842)"
@@ -1048,42 +1030,30 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 2374521,native range,Africa,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,168131164,"Terapon jarbua (Forsskål, 1775)"
 2374521,native range,Australia and New Zealand,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,168131164,"Terapon jarbua (Forsskål, 1775)"
 2374521,pathway,cbd_2014_pathway:escape_pet,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,168131164,"Terapon jarbua (Forsskål, 1775)"
-2379089,degree of establishment,established,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117247,Neogobius melanostomus
 2379089,native range,Asia,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042344,"Neogobius melanostomus (Pallas, 1814)"
 2379089,native range,Eastern Europe,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117247,Neogobius melanostomus
 2379089,native range,Europe,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042344,"Neogobius melanostomus (Pallas, 1814)"
 2379089,pathway,cbd_2014_pathway:contaminant,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042344,"Neogobius melanostomus (Pallas, 1814)"
 2379089,pathway,cbd_2014_pathway:corridor,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042344,"Neogobius melanostomus (Pallas, 1814)"
-2379089,pathway,cbd_2014_pathway:corridor_water,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117247,Neogobius melanostomus
 2379089,pathway,cbd_2014_pathway:natural_dispersal,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042344,"Neogobius melanostomus (Pallas, 1814)"
 2379089,pathway,cbd_2014_pathway:stowaway,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042344,"Neogobius melanostomus (Pallas, 1814)"
-2379089,pathway,cbd_2014_pathway:stowaway_ballast_water,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117247,Neogobius melanostomus
-2379105,degree of establishment,established,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117241,Neogobius fluviatilis
 2379105,native range,Eastern Europe,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117241,Neogobius fluviatilis
-2379105,pathway,cbd_2014_pathway:corridor_water,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117241,Neogobius fluviatilis
-2379105,pathway,cbd_2014_pathway:stowaway_ballast_water,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117241,Neogobius fluviatilis
-2379245,degree of establishment,established,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,143611964,Proterorhinus semilunaris
 2379245,native range,Asia,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042326,"Proterorhinus semilunaris (Heckel, 1837)"
 2379245,native range,Eastern Europe,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,143611964,Proterorhinus semilunaris
 2379245,native range,Europe,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042326,"Proterorhinus semilunaris (Heckel, 1837)"
 2379245,pathway,cbd_2014_pathway:contaminant,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042326,"Proterorhinus semilunaris (Heckel, 1837)"
 2379245,pathway,cbd_2014_pathway:corridor,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042326,"Proterorhinus semilunaris (Heckel, 1837)"
-2379245,pathway,cbd_2014_pathway:corridor_water,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,143611964,Proterorhinus semilunaris
 2379245,pathway,cbd_2014_pathway:natural_dispersal,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042326,"Proterorhinus semilunaris (Heckel, 1837)"
 2379245,pathway,cbd_2014_pathway:stowaway,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042326,"Proterorhinus semilunaris (Heckel, 1837)"
-2382155,degree of establishment,established,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117242,Sander lucioperca
 2382155,native range,Asia,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042335,"Sander lucioperca (Linnaeus, 1758)"
 2382155,native range,Eastern Europe,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117242,Sander lucioperca
 2382155,native range,Europe,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042335,"Sander lucioperca (Linnaeus, 1758)"
 2382155,pathway,cbd_2014_pathway:corridor,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042335,"Sander lucioperca (Linnaeus, 1758)"
-2382155,pathway,cbd_2014_pathway:escape_food_bait,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117242,Sander lucioperca
 2382155,pathway,cbd_2014_pathway:natural_dispersal,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042335,"Sander lucioperca (Linnaeus, 1758)"
 2382155,pathway,cbd_2014_pathway:release,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042335,"Sander lucioperca (Linnaeus, 1758)"
-2394486,degree of establishment,established,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117243,Lepomis gibbosus
 2394486,native range,Northern America,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042341,"Lepomis gibbosus (Linnaeus, 1758)"
 2394486,pathway,cbd_2014_pathway:contaminant,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042341,"Lepomis gibbosus (Linnaeus, 1758)"
 2394486,pathway,cbd_2014_pathway:escape,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042341,"Lepomis gibbosus (Linnaeus, 1758)"
-2394486,pathway,cbd_2014_pathway:escape_ornamental,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117243,Lepomis gibbosus
 2394486,pathway,cbd_2014_pathway:release,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042341,"Lepomis gibbosus (Linnaeus, 1758)"
 2394486,pathway,cbd_2014_pathway:stowaway,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042341,"Lepomis gibbosus (Linnaeus, 1758)"
 2394563,native range,Northern America,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042312,"Micropterus salmoides (Lacépède, 1802)"
@@ -1101,14 +1071,8 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 2399874,pathway,cbd_2014_pathway:natural_dispersal,1738f272-6b5d-4f43-9a92-453a8c5ea50a,181974248,"Micropogonias undulatus (Linnaeus, 1766)"
 2399874,pathway,cbd_2014_pathway:release,1738f272-6b5d-4f43-9a92-453a8c5ea50a,181974248,"Micropogonias undulatus (Linnaeus, 1766)"
 2399874,pathway,cbd_2014_pathway:stowaway,1738f272-6b5d-4f43-9a92-453a8c5ea50a,181974248,"Micropogonias undulatus (Linnaeus, 1766)"
-2402129,degree of establishment,casual,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117250,Acipenser guldenstaedti
 2402129,native range,Eastern Europe,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117250,Acipenser guldenstaedti
-2402129,pathway,cbd_2014_pathway:escape_aquaculture,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117250,Acipenser guldenstaedti
-2402129,pathway,cbd_2014_pathway:escape_ornamental,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117250,Acipenser guldenstaedti
-2402168,degree of establishment,casual,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117255,Acipenser ruthenus
 2402168,native range,Eastern Europe,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117255,Acipenser ruthenus
-2402168,pathway,cbd_2014_pathway:escape_aquaculture,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117255,Acipenser ruthenus
-2402168,pathway,cbd_2014_pathway:escape_ornamental,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117255,Acipenser ruthenus
 2423441,degree of establishment,casual,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661059,"Bombina orientalis (Boulenger, 1890)"
 2423441,degree of establishment,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,168131194,"Bombina orientalis (Boulenger, 1890)"
 2423441,introduction pathway,escape_pet,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661059,"Bombina orientalis (Boulenger, 1890)"
@@ -1122,6 +1086,9 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 2426640,native range,Southern Europe,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164300746,"Pelophylax bedriagae (Camerano, 1882)"
 2426640,pathway,cbd_2014_pathway:escape_pet,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,168131197,"Pelophylax cf bedriagae (Camerano, 1882)"
 2426640,pathway,cbd_2014_pathway:release_other,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,168131197,"Pelophylax cf bedriagae (Camerano, 1882)"
+2426658,degree of establishment,casual,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213158993,"Pelophylax perezi (López-Seoane, 1885)"
+2426658,introduction pathway,escape_pet,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213158993,"Pelophylax perezi (López-Seoane, 1885)"
+2426658,introduction pathway,release_other,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213158993,"Pelophylax perezi (López-Seoane, 1885)"
 2426661,degree of establishment,established,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661062,"Pelophylax ridibundus (Pallas, 1771)"
 2426661,introduction pathway,escape_pet,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661062,"Pelophylax ridibundus (Pallas, 1771)"
 2426661,introduction pathway,release_other,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661062,"Pelophylax ridibundus (Pallas, 1771)"
@@ -1144,20 +1111,22 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 2431875,introduction pathway,release_landscape_improvement,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661041,"Pleurodeles waltl Michahelles, 1830"
 2431875,native range,Southern Europe,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164300729,"Pleurodeles waltl Michahelles, 1830"
 2431875,pathway,cbd_2014_pathway:release_landscape_improvement,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164300729,"Pleurodeles waltl Michahelles, 1830"
-2431886,degree of establishment,casual,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661037,"Triturus marmoratus (Latreille, 1800)"
+2431886,degree of establishment,established,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661037,"Triturus marmoratus (Latreille, 1800)"
 2431886,degree of establishment,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164300722,"Triturus marmoratus (Latreille, 1800)"
 2431886,introduction pathway,escape_pet,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661037,"Triturus marmoratus (Latreille, 1800)"
-2431886,introduction pathway,release_landscape_improvement,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661037,"Triturus marmoratus (Latreille, 1800)"
-2431886,native range,Southern Europe,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661037,"Triturus marmoratus (Latreille, 1800)"
+2431886,introduction pathway,release_other,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661037,"Triturus marmoratus (Latreille, 1800)"
+2431886,native range,Southern Europe,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164300722,"Triturus marmoratus (Latreille, 1800)"
 2431886,pathway,cbd_2014_pathway:escape_pet,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164300722,"Triturus marmoratus (Latreille, 1800)"
 2431886,pathway,cbd_2014_pathway:release_landscape_improvement,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164300722,"Triturus marmoratus (Latreille, 1800)"
 2431965,degree of establishment,casual,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661031,"Ambystoma macrodactylum (Baird, 1849)"
 2431965,degree of establishment,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,168131176,"Ambystoma macrodactylum (Baird, 1849)"
-2431965,introduction pathway,contaminant,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661031,"Ambystoma macrodactylum (Baird, 1849)"
-2431965,introduction pathway,nursery,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661031,"Ambystoma macrodactylum (Baird, 1849)"
+2431965,introduction pathway,contaminant_nursery,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661031,"Ambystoma macrodactylum (Baird, 1849)"
 2431965,native range,Northern America,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661031,"Ambystoma macrodactylum (Baird, 1849)"
 2431965,pathway,cbd_2014_pathway:contaminant,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,168131176,"Ambystoma macrodactylum (Baird, 1849)"
 2431965,pathway,cbd_2014_pathway:nursery,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,168131176,"Ambystoma macrodactylum (Baird, 1849)"
+2431993,degree of establishment,casual,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213158974,"Ambystoma tigrinum (Green, 1825)"
+2431993,introduction pathway,escape_pet,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213158974,"Ambystoma tigrinum (Green, 1825)"
+2431993,introduction pathway,release_other,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213158974,"Ambystoma tigrinum (Green, 1825)"
 2432063,degree of establishment,casual,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661034,"Siren intermedia (Barnes, 1826)"
 2432063,degree of establishment,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,168131179,"Siren intermedia (Barnes, 1826)"
 2432063,introduction pathway,stowaway_other,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661034,"Siren intermedia (Barnes, 1826)"
@@ -1283,6 +1252,9 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 2443173,degree of establishment,casual,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661211,"Terrapene carolina (Linnaeus, 1758)"
 2443173,introduction pathway,escape_pet,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661211,"Terrapene carolina (Linnaeus, 1758)"
 2443173,introduction pathway,release_other,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661211,"Terrapene carolina (Linnaeus, 1758)"
+2443339,degree of establishment,casual,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661213,"Mauremys (Gray, 1869)"
+2443339,introduction pathway,escape_pet,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661213,"Mauremys (Gray, 1869)"
+2443339,introduction pathway,release_other,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661213,"Mauremys (Gray, 1869)"
 2443597,degree of establishment,casual,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661214,"Mauremys reevesii (Gray, 1831)"
 2443597,degree of establishment,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,168131350,"Mauremys reevesii (Gray, 1831)"
 2443597,introduction pathway,escape_pet,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661214,"Mauremys reevesii (Gray, 1831)"
@@ -1316,6 +1288,10 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 2445034,degree of establishment,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,168131282,"Tarentola mauritanica (Linnaeus, 1758)"
 2445034,introduction pathway,stowaway_other,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661116,"Tarentola mauritanica (Linnaeus, 1758)"
 2445034,pathway,cbd_2014_pathway:stowaway_other,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,168131282,"Tarentola mauritanica (Linnaeus, 1758)"
+2445496,degree of establishment,casual,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661139,"Pachydactylus (Wiegmann, 1834)"
+2445496,introduction pathway,escape_pet,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661139,"Pachydactylus (Wiegmann, 1834)"
+2445496,introduction pathway,release_other,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661139,"Pachydactylus (Wiegmann, 1834)"
+2445496,native range,Africa,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661139,"Pachydactylus (Wiegmann, 1834)"
 2447367,degree of establishment,casual,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661119,"Gekko gecko (Linnaeus, 1758)"
 2447367,introduction pathway,escape_pet,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661119,"Gekko gecko (Linnaeus, 1758)"
 2447367,introduction pathway,release_other,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661119,"Gekko gecko (Linnaeus, 1758)"
@@ -1351,13 +1327,21 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 2455676,native range,Northern America,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661173,"Pantherophis obsoletus (Say, 1823)"
 2455676,pathway,cbd_2014_pathway:escape_pet,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,168131308,"Pantherophis obsoletus (Say, 1823)"
 2455676,pathway,cbd_2014_pathway:release_other,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,168131308,"Pantherophis obsoletus (Say, 1823)"
+2457224,degree of establishment,casual,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213159066,"Dolichophis caspius (Gmelin, 1789)"
+2457224,introduction pathway,stowaway_container,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213159066,"Dolichophis caspius (Gmelin, 1789)"
 2457378,degree of establishment,casual,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661113,"Rhamphiophis (Peters, 1854)"
 2457378,introduction pathway,escape_pet,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661113,"Rhamphiophis (Peters, 1854)"
 2457378,introduction pathway,release_other,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661113,"Rhamphiophis (Peters, 1854)"
 2457378,native range,Africa,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661113,"Rhamphiophis (Peters, 1854)"
+2457577,degree of establishment,casual,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213159022,"Thamnophis saurita (Linnaeus, 1766)"
+2457577,introduction pathway,escape_pet,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213159022,"Thamnophis saurita (Linnaeus, 1766)"
+2457577,introduction pathway,release_other,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213159022,"Thamnophis saurita (Linnaeus, 1766)"
+2457577,native range,Northern America,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213159022,"Thamnophis saurita (Linnaeus, 1766)"
 2457825,degree of establishment,casual,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661180,"Thamnophis (Fitzinger, 1843)"
 2457825,introduction pathway,escape_pet,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661180,"Thamnophis (Fitzinger, 1843)"
 2457825,introduction pathway,release_other,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661180,"Thamnophis (Fitzinger, 1843)"
+2458374,degree of establishment,casual,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213159073,"Zamenis situla (Linnaeus, 1758)"
+2458374,introduction pathway,stowaway_other,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213159073,"Zamenis situla (Linnaeus, 1758)"
 2458386,degree of establishment,casual,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661182,"Elaphe sauromates (Pallas, 1814)"
 2458386,degree of establishment,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,168131312,"Elaphe sauromates (Pallas, 1814)"
 2458386,introduction pathway,escape_pet,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661182,"Elaphe sauromates (Pallas, 1814)"
@@ -1372,9 +1356,13 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 2458438,pathway,cbd_2014_pathway:release_other,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,168131313,"Elaphe schrenckii (Strauch, 1873)"
 2458538,degree of establishment,casual,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661169,"Zamenis longissimus (Laurenti, 1768)"
 2458538,degree of establishment,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,168131306,"Zamenis longissimus (Laurenti, 1768)"
+2458538,introduction pathway,escape_pet,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661169,"Zamenis longissimus (Laurenti, 1768)"
+2458538,introduction pathway,release_other,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661169,"Zamenis longissimus (Laurenti, 1768)"
 2458538,introduction pathway,stowaway_container,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661169,"Zamenis longissimus (Laurenti, 1768)"
 2458538,pathway,cbd_2014_pathway:stowaway_container,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,168131306,"Zamenis longissimus (Laurenti, 1768)"
 2458916,degree of establishment,casual,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661190,"Hierophis viridiflavus (Lacépède, 1987)"
+2459603,degree of establishment,casual,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213159049,"Ctenosaura similis (Gray, 1831)"
+2459603,introduction pathway,stowaway_container,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213159049,"Ctenosaura similis (Gray, 1831)"
 2459658,degree of establishment,casual,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661105,"Iguana iguana (Linnaeus, 1758)"
 2459658,degree of establishment,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,168131269,"Iguana iguana (Linnaeus, 1758)"
 2459658,introduction pathway,escape_pet,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661105,"Iguana iguana (Linnaeus, 1758)"
@@ -1389,6 +1377,7 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 2464899,degree of establishment,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,168131285,"Boa constrictor (Linnaeus, 1758)"
 2464899,introduction pathway,escape_pet,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661124,"Boa constrictor (Linnaeus, 1758)"
 2464899,introduction pathway,release_other,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661124,"Boa constrictor (Linnaeus, 1758)"
+2464899,introduction pathway,stowaway_container,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661124,"Boa constrictor (Linnaeus, 1758)"
 2464899,native range,South America,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661124,"Boa constrictor (Linnaeus, 1758)"
 2464899,pathway,cbd_2014_pathway:escape_pet,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,168131285,"Boa constrictor (Linnaeus, 1758)"
 2464899,pathway,cbd_2014_pathway:release_other,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,168131285,"Boa constrictor (Linnaeus, 1758)"
@@ -1399,11 +1388,11 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 2465003,native range,Australia and New Zealand,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661096,"Antaresia childreni (Gray, 1842)"
 2465003,pathway,cbd_2014_pathway:escape_pet,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,168131260,"Antaresia childreni (Gray, 1842)"
 2465003,pathway,cbd_2014_pathway:release_other,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,168131260,"Antaresia childreni (Gray, 1842)"
-2465369,degree of establishment,casual,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661092,"Python molurus (Linnaeus, 1758)"
+2465369,degree of establishment,casual,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661092,"Python molurus (Linnaeus, 1758)"
 2465369,degree of establishment,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,168131262,"Python molurus (Linnaeus, 1758)"
-2465369,introduction pathway,escape_pet,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661092,"Python molurus (Linnaeus, 1758)"
-2465369,introduction pathway,release_other,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661092,"Python molurus (Linnaeus, 1758)"
-2465369,native range,Asia,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661092,"Python molurus (Linnaeus, 1758)"
+2465369,introduction pathway,escape_pet,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661092,"Python molurus (Linnaeus, 1758)"
+2465369,introduction pathway,release_other,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661092,"Python molurus (Linnaeus, 1758)"
+2465369,native range,Asia,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661092,"Python molurus (Linnaeus, 1758)"
 2465369,pathway,cbd_2014_pathway:escape_pet,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,168131262,"Python molurus (Linnaeus, 1758)"
 2465369,pathway,cbd_2014_pathway:release_other,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,168131262,"Python molurus (Linnaeus, 1758)"
 2465380,degree of establishment,casual,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661094,"Python regius (Shaw, 1802)"
@@ -1450,6 +1439,8 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 2470656,introduction pathway,escape_pet,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661074,"Varanus niloticus (Linnaeus, 1766)"
 2470656,introduction pathway,release_other,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661074,"Varanus niloticus (Linnaeus, 1766)"
 2470656,native range,Africa,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661074,"Varanus niloticus (Linnaeus, 1766)"
+2473221,degree of establishment,casual,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213159025,"Blanus (Wagler, 1830)"
+2473221,native range,Southern Europe,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213159025,"Blanus (Wagler, 1830)"
 2473341,native range,Africa,e1c3be64-2799-4342-8312-49d076993132,159498394,"Numida meleagris (Linnaeus, 1758)"
 2473341,pathway,cbd_2014_pathway:escape,e1c3be64-2799-4342-8312-49d076993132,159498394,"Numida meleagris (Linnaeus, 1758)"
 2473421,native range,Europe,e1c3be64-2799-4342-8312-49d076993132,159498423,"Lagopus lagopus (Linnaeus, 1758)"
@@ -7087,30 +7078,18 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 4283395,Introduced species vector dispersal,in United Kingdom part of the Celtic Sea (Marine Region) : Fisheries: accidental with deliberate translocations of fish or shellfish,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131419,"Diadumene lineata (Verrill, 1869)"
 4283395,Introduced species vector dispersal,in United Kingdom part of the Celtic Sea (Marine Region) : Ships: general,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131419,"Diadumene lineata (Verrill, 1869)"
 4283395,Introduced species vector dispersal,in United Kingdom part of the North Sea (Marine Region) : Fisheries: accidental with deliberate translocations of fish or shellfish,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131419,"Diadumene lineata (Verrill, 1869)"
-4285694,degree of establishment,casual,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117251,Oreochromis niloticus
 4285694,native range,Africa,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117251,Oreochromis niloticus
-4285694,pathway,cbd_2014_pathway:escape_aquaculture,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117251,Oreochromis niloticus
-4285968,degree of establishment,established,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117233,Ponticola kessleri
 4285968,native range,Eastern Europe,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117233,Ponticola kessleri
-4285968,pathway,cbd_2014_pathway:corridor_water,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117233,Ponticola kessleri
-4285968,pathway,cbd_2014_pathway:stowaway_ballast_water,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117233,Ponticola kessleri
-4286942,degree of establishment,casual,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117240,Carassius auratus
 4286942,native range,Asia,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117240,Carassius auratus
 4286942,pathway,cbd_2014_pathway:escape,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042314,"Carassius auratus Linnaeus, 1758"
-4286942,pathway,cbd_2014_pathway:escape_ornamental,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117240,Carassius auratus
 4286942,pathway,cbd_2014_pathway:release,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042314,"Carassius auratus Linnaeus, 1758"
 4286975,Introduced species impact,in Belgian part of the North Sea : Other impact - undefined or uncertain,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157130041,"Cyprinus carpio Linnaeus, 1758"
 4286975,Introduced species vector dispersal,Argentinean part of the South Atlantic Ocean  (Marine Region) Individual release: deliberate release by individuals,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157130041,"Cyprinus carpio Linnaeus, 1758"
 4286975,Introduced species vector dispersal,Uruguayan part of the South Atlantic Ocean  (Marine Region) Individual release: deliberate release by individuals,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157130041,"Cyprinus carpio Linnaeus, 1758"
 4286975,Introduced species vector dispersal,in Polish part of the Baltic Sea : Fisheries: deliberate translocations of fish or shellfish to establish or support fishery,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157130041,"Cyprinus carpio Linnaeus, 1758"
 4286975,Introduced species vector dispersal,in Polish part of the Baltic Sea : Individual release: deliberate release by individuals,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157130041,"Cyprinus carpio Linnaeus, 1758"
-4286975,degree of establishment,established,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117232,Cyprinus carpio
 4286975,native range,Eastern Europe,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117232,Cyprinus carpio
-4286975,pathway,cbd_2014_pathway:escape_aquaculture,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117232,Cyprinus carpio
-4287131,degree of establishment,casual,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117234,Acipenser baeri
 4287131,native range,Asia,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117234,Acipenser baeri
-4287131,pathway,cbd_2014_pathway:escape_aquaculture,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117234,Acipenser baeri
-4287131,pathway,cbd_2014_pathway:escape_ornamental,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117234,Acipenser baeri
 4287413,degree of establishment,casual,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661080,"Anolis sagrei (Duméril and Bibron, 1837)"
 4307880,degree of establishment,established,22211949-9a6e-445f-86c0-6a0e019bc055,181972050,"Potamothrix heuscheri (Bretscher, 1900)"
 4307880,pathway of introduction,corridor_water,22211949-9a6e-445f-86c0-6a0e019bc055,181972050,"Potamothrix heuscheri (Bretscher, 1900)"
@@ -7704,22 +7683,15 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 5200414,Introduced species vector dispersal,United States part of the North Pacific Ocean  (Marine Region)  Aquaculture: Accidental,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157129932,"Diplosoma listerianum (Milne Edwards, 1841)"
 5200414,Introduced species vector dispersal,in Belgian part of the North Sea: Ships: general,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157129932,"Diplosoma listerianum (Milne Edwards, 1841)"
 5200414,Introduced species vector dispersal,in Dutch part of the North Sea : Shipping,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157129932,"Diplosoma listerianum (Milne Edwards, 1841)"
-5202520,degree of establishment,casual,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117248,Ictalurus punctatus
 5202520,native range,Northern America,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042375,"Ictalurus punctatus (Rafinesque, 1818)"
 5202520,pathway,cbd_2014_pathway:escape,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042375,"Ictalurus punctatus (Rafinesque, 1818)"
-5202520,pathway,cbd_2014_pathway:escape_aquaculture,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117248,Ictalurus punctatus
 5202520,pathway,cbd_2014_pathway:release,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042375,"Ictalurus punctatus (Rafinesque, 1818)"
-5202793,degree of establishment,casual,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117231,Clarias gariepinus
 5202793,native range,Africa,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117231,Clarias gariepinus
 5202793,native range,Asia,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042315,"Clarias gariepinus (Burchell, 1822)"
 5202793,pathway,cbd_2014_pathway:escape,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042315,"Clarias gariepinus (Burchell, 1822)"
-5202793,pathway,cbd_2014_pathway:escape_aquaculture,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117231,Clarias gariepinus
 5202793,pathway,cbd_2014_pathway:release,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042315,"Clarias gariepinus (Burchell, 1822)"
-5203111,degree of establishment,established,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117253,Umbra pygmaea
 5203111,native range,Northern America,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042380,"Umbra pygmaea (DeKay, 1842)"
 5203111,pathway,cbd_2014_pathway:corridor,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042380,"Umbra pygmaea (DeKay, 1842)"
-5203111,pathway,cbd_2014_pathway:escape_aquaculture,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117253,Umbra pygmaea
-5203111,pathway,cbd_2014_pathway:escape_ornamental,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117253,Umbra pygmaea
 5203111,pathway,cbd_2014_pathway:natural_dispersal,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042380,"Umbra pygmaea (DeKay, 1842)"
 5203111,pathway,cbd_2014_pathway:release,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042380,"Umbra pygmaea (DeKay, 1842)"
 5204019,Introduced species impact,Chinese part of the Yellow Sea (Marine Region) Consumes native species (predator or herbivore),0a2eaf0c-5504-4f48-a47f-c94229029dc8,157130623,"Oncorhynchus mykiss (Walbaum, 1792)"
@@ -7734,11 +7706,8 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 5204019,Introduced species vector dispersal,in Belgian part of the North Sea : Fisheries: deliberate translocations of fish or shellfish to establish or support fishery,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157130623,"Oncorhynchus mykiss (Walbaum, 1792)"
 5204019,Introduced species vector dispersal,in Celtic Sea (IHO Sea Area) : Fisheries: deliberate translocations of fish or shellfish to establish or support fishery,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157130623,"Oncorhynchus mykiss (Walbaum, 1792)"
 5204019,Introduced species vector dispersal,in France (Nation) : Fisheries: deliberate translocations of fish or shellfish to establish or support fishery,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157130623,"Oncorhynchus mykiss (Walbaum, 1792)"
-5204019,degree of establishment,casual,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117245,Oncorhynchus mykiss
 5204019,native range,Asia,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042371,Oncorhynchus mykiss (Walbaum 1792)
 5204019,native range,Northern America,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042371,Oncorhynchus mykiss (Walbaum 1792)
-5204019,pathway,cbd_2014_pathway:escape_aquaculture,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117245,Oncorhynchus mykiss
-5204019,pathway,cbd_2014_pathway:escape_food_bait,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117245,Oncorhynchus mykiss
 5204019,pathway,cbd_2014_pathway:release,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042371,Oncorhynchus mykiss (Walbaum 1792)
 5204034,native range,Northern America,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042340,Oncorhynchus kisutch (Walbaum 1792)
 5204034,pathway,cbd_2014_pathway:corridor,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042340,Oncorhynchus kisutch (Walbaum 1792)
@@ -7754,9 +7723,11 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 5216933,degree of establishment,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164300736,"Rhinella marina (Linnaeus, 1758)"
 5216933,introduction pathway,stowaway_container,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661050,"Rhinella marina (Linnaeus, 1758)"
 5216933,native range,Central America,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164300736,"Rhinella marina (Linnaeus, 1758)"
-5217334,degree of establishment,casual,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661053,"Xenopus laevis (Daudin, 1802)"
+5217334,degree of establishment,established,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661053,"Xenopus laevis (Daudin, 1802)"
 5217334,degree of establishment,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164300741,"Xenopus laevis (Daudin, 1802)"
+5217334,introduction pathway,escape_pet,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661053,"Xenopus laevis (Daudin, 1802)"
 5217334,introduction pathway,escape_research,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661053,"Xenopus laevis (Daudin, 1802)"
+5217334,introduction pathway,release_other,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661053,"Xenopus laevis (Daudin, 1802)"
 5217334,native range,Africa,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661053,"Xenopus laevis (Daudin, 1802)"
 5217334,pathway,cbd_2014_pathway:escape_research,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164300741,"Xenopus laevis (Daudin, 1802)"
 5218786,degree of establishment,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164300844,"Procyon lotor (Linnaeus, 1758)"
@@ -7801,6 +7772,7 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 5221283,pathway,cbd_2014_pathway:escape_pet,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,168131257,"Eublepharis macularius (Blyth, 1854)"
 5221283,pathway,cbd_2014_pathway:release_other,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,168131257,"Eublepharis macularius (Blyth, 1854)"
 5221394,degree of establishment,casual,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661120,"Hemidactylus (Oken, 1817)"
+5221528,degree of establishment,casual,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213159014,"Hemidactylus turcicus (Linnaeus, 1758)"
 5221810,degree of establishment,casual,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661077,"Basiliscus plumifrons (Cope, 1876)"
 5221810,degree of establishment,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,168131254,"Basiliscus plumifrons (Cope, 1876)"
 5221810,introduction pathway,escape_pet,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661077,"Basiliscus plumifrons (Cope, 1876)"
@@ -7815,11 +7787,11 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 5221988,pathway,cbd_2014_pathway:escape_pet,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,168131326,"Furcifer pardalis (Cuvier, 1829)"
 5221988,pathway,cbd_2014_pathway:release_other,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,168131326,"Furcifer pardalis (Cuvier, 1829)"
 5222820,degree of establishment,casual,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661165,"Lycodon capucinus (Boie, 1827)"
-5223725,degree of establishment,casual,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661163,"Heterodon nasicus (Baird & Girard, 1852)"
+5223725,degree of establishment,casual,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661163,"Heterodon nasicus (Baird & Girard, 1852)"
 5223725,degree of establishment,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,168131302,"Heterodon nasicus (Baird & Girard, 1852)"
-5223725,introduction pathway,escape_pet,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661163,"Heterodon nasicus (Baird & Girard, 1852)"
-5223725,introduction pathway,release_other,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661163,"Heterodon nasicus (Baird & Girard, 1852)"
-5223725,native range,Northern America,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661163,"Heterodon nasicus (Baird & Girard, 1852)"
+5223725,introduction pathway,escape_pet,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661163,"Heterodon nasicus (Baird & Girard, 1852)"
+5223725,introduction pathway,release_other,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661163,"Heterodon nasicus (Baird & Girard, 1852)"
+5223725,native range,Northern America,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661163,"Heterodon nasicus (Baird & Girard, 1852)"
 5223725,pathway,cbd_2014_pathway:escape_pet,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,168131302,"Heterodon nasicus (Baird & Girard, 1852)"
 5223725,pathway,cbd_2014_pathway:release_other,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,168131302,"Heterodon nasicus (Baird & Girard, 1852)"
 5224481,degree of establishment,casual,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661186,"Lampropeltis getula californiae (Blainville, 1835)"
@@ -7829,10 +7801,7 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 5224481,native range,Northern America,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661186,"Lampropeltis getula californiae (Blainville, 1835)"
 5224481,pathway,cbd_2014_pathway:escape_pet,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,168131315,"Lampropeltis getula californiae (Blainville, 1835)"
 5224481,pathway,cbd_2014_pathway:release_other,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,168131315,"Lampropeltis getula californiae (Blainville, 1835)"
-5224503,degree of establishment,casual,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661188,"Lampropeltis triangulum (Lacépède, 1788)"
 5224503,degree of establishment,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,168131317,"Lampropeltis triangulum (Lacépède, 1788)"
-5224503,introduction pathway,escape_pet,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661188,"Lampropeltis triangulum (Lacépède, 1788)"
-5224503,introduction pathway,release_other,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661188,"Lampropeltis triangulum (Lacépède, 1788)"
 5224503,pathway,cbd_2014_pathway:escape_pet,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,168131317,"Lampropeltis triangulum (Lacépède, 1788)"
 5224503,pathway,cbd_2014_pathway:release_other,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,168131317,"Lampropeltis triangulum (Lacépède, 1788)"
 5224543,degree of establishment,casual,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661187,"Lampropeltis triangulum hondurensis (K.L. Williams, 1978)"
@@ -10226,9 +10195,7 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 5831906,pathway,cbd_2014_pathway:contaminant_seed,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266078,Bupleurum gerardi All.
 5844936,native range,Southern Europe,e1c3be64-2799-4342-8312-49d076993132,159498669,"Cyanopica cooki Bonaparte, 1850"
 5844936,pathway,cbd_2014_pathway:escape,e1c3be64-2799-4342-8312-49d076993132,159498669,"Cyanopica cooki Bonaparte, 1850"
-5851603,degree of establishment,established,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117238,Aspius aspius
 5851603,native range,Eastern Europe,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117238,Aspius aspius
-5851603,pathway,cbd_2014_pathway:escape_food_bait,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117238,Aspius aspius
 5864277,degree of establishment,established,289244ee-e1c1-49aa-b2d7-d379391ce265,140562997,Gammarus roeseli
 5864277,native range,Southern Europe,289244ee-e1c1-49aa-b2d7-d379391ce265,140562997,Gammarus roeseli
 5864277,pathway,cbd_2014_pathway:corridor_water,289244ee-e1c1-49aa-b2d7-d379391ce265,140562997,Gammarus roeseli
@@ -10349,11 +10316,11 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 6128436,Introduced species vector dispersal,in Gulf of Mexico (IHO Sea Area) : Ships: general,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131628,"Amphibalanus reticulatus (Utinomi, 1967)"
 6128436,degree of establishment,established,289244ee-e1c1-49aa-b2d7-d379391ce265,140562978,Amphibalanus reticulatus
 6128436,pathway,cbd_2014_pathway:stowaway_hull_fouling,289244ee-e1c1-49aa-b2d7-d379391ce265,140562978,Amphibalanus reticulatus
-6156934,degree of establishment,casual,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661224,"Chrysemys picta subsp. Bellii (Gray, 1831)"
+6156934,degree of establishment,casual,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213159101,"Chrysemys picta bellii (Gray, 1831)"
 6156934,degree of establishment,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,168131348,"Chrysemys picta subsp. Bellii (Gray, 1831)"
-6156934,introduction pathway,escape_pet,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661224,"Chrysemys picta subsp. Bellii (Gray, 1831)"
-6156934,introduction pathway,release_other,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661224,"Chrysemys picta subsp. Bellii (Gray, 1831)"
-6156934,native range,Northern America,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661224,"Chrysemys picta subsp. Bellii (Gray, 1831)"
+6156934,introduction pathway,escape_pet,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213159101,"Chrysemys picta bellii (Gray, 1831)"
+6156934,introduction pathway,release_other,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213159101,"Chrysemys picta bellii (Gray, 1831)"
+6156934,native range,Northern America,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213159101,"Chrysemys picta bellii (Gray, 1831)"
 6156934,pathway,cbd_2014_pathway:escape_pet,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,168131348,"Chrysemys picta subsp. Bellii (Gray, 1831)"
 6156934,pathway,cbd_2014_pathway:release_other,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,168131348,"Chrysemys picta subsp. Bellii (Gray, 1831)"
 6157026,degree of establishment,casual,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661219,"Trachemys scripta elegans (Wied, 1838)"
@@ -10370,24 +10337,27 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 6157035,native range,Northern America,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661220,"Trachemys scripta troostii (Holbrook, 1836)"
 6157035,pathway,cbd_2014_pathway:escape_pet,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164300879,"Trachemys scripta troostii (Holbrook, 1836)"
 6157035,pathway,cbd_2014_pathway:release_other,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164300879,"Trachemys scripta troostii (Holbrook, 1836)"
-6157050,degree of establishment,casual,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661230,"Graptemys pseudogeographica subsp. kohnii (Baur, 1890)"
+6157050,degree of establishment,casual,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213159098,"Graptemys pseudogeographica kohnii (Baur, 1890)"
 6157050,degree of establishment,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164300883,"Graptemys pseudogeographica subsp. kohnii (Baur, 1890)"
-6157050,introduction pathway,escape_pet,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661230,"Graptemys pseudogeographica subsp. kohnii (Baur, 1890)"
-6157050,introduction pathway,release_other,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661230,"Graptemys pseudogeographica subsp. kohnii (Baur, 1890)"
-6157050,native range,Northern America,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661230,"Graptemys pseudogeographica subsp. kohnii (Baur, 1890)"
+6157050,introduction pathway,escape_pet,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213159098,"Graptemys pseudogeographica kohnii (Baur, 1890)"
+6157050,introduction pathway,release_other,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213159098,"Graptemys pseudogeographica kohnii (Baur, 1890)"
+6157050,native range,Northern America,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213159098,"Graptemys pseudogeographica kohnii (Baur, 1890)"
 6157050,pathway,cbd_2014_pathway:escape_pet,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164300883,"Graptemys pseudogeographica subsp. kohnii (Baur, 1890)"
 6157050,pathway,cbd_2014_pathway:release_other,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164300883,"Graptemys pseudogeographica subsp. kohnii (Baur, 1890)"
 6159223,degree of establishment,casual,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661131,"Lacerta agilis (Linnaeus, 1758)"
+6159238,degree of establishment,casual,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213159043,"Lacerta strigata (Eichwald, 1831)"
+6159238,introduction pathway,stowaway_container,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213159043,"Lacerta strigata (Eichwald, 1831)"
+6159238,native range,Asia,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213159043,"Lacerta strigata (Eichwald, 1831)"
 6159273,degree of establishment,casual,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661130,"Lacerta viridis (Laurenti, 1768) s.l."
 6159273,degree of establishment,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164300870,"Lacerta viridis (Laurenti, 1768) s.l."
 6159273,introduction pathway,escape_pet,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661130,"Lacerta viridis (Laurenti, 1768) s.l."
 6159273,introduction pathway,release_other,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661130,"Lacerta viridis (Laurenti, 1768) s.l."
 6159273,native range,Southern Europe,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164300870,"Lacerta viridis (Laurenti, 1768) s.l."
+6161327,Asia,"""Europe",a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661100,"Natrix tessellata (Laurenti, 1768)"
 6161327,degree of establishment,casual,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661100,"Natrix tessellata (Laurenti, 1768)"
 6161327,degree of establishment,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164300866,"Natrix tessellata (Laurenti, 1768)"
-6161327,introduction pathway,stowaway_other,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661100,"Natrix tessellata (Laurenti, 1768)"
+6161340,"Africa""","""Europe",a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661101,"Natrix maura (Linnaeus, 1758)"
 6161340,degree of establishment,casual,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661101,"Natrix maura (Linnaeus, 1758)"
-6161340,introduction pathway,contaminant_timber,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661101,"Natrix maura (Linnaeus, 1758)"
 6161340,native range,Europe,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164300867,"Natrix maura (Linnaeus, 1758)"
 6161340,pathway,cbd_2014_pathway:contaminant_timber,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164300867,"Natrix maura (Linnaeus, 1758)"
 6300805,degree of establishment,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265117,Pilosella bauhini (Schult. ex Besser) Arv.-Touv.
@@ -10609,11 +10579,11 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 7172720,native range,Eastern Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265038,Sedum dasyphyllum L.
 7172720,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265038,Sedum dasyphyllum L.
 7172720,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265038,Sedum dasyphyllum L.
-7190901,degree of establishment,casual,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661229,"Graptemys pseudogeographica subsp. pseudogeographica (Gray, 1831)"
+7190901,degree of establishment,casual,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213159099,"Graptemys pseudogeographica pseudogeographica (Gray, 1831)"
 7190901,degree of establishment,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164300882,"Graptemys pseudogeographica subsp. pseudogeographica (Gray, 1831)"
-7190901,introduction pathway,escape_pet,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661229,"Graptemys pseudogeographica subsp. pseudogeographica (Gray, 1831)"
-7190901,introduction pathway,release_other,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661229,"Graptemys pseudogeographica subsp. pseudogeographica (Gray, 1831)"
-7190901,native range,Northern America,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661229,"Graptemys pseudogeographica subsp. pseudogeographica (Gray, 1831)"
+7190901,introduction pathway,escape_pet,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213159099,"Graptemys pseudogeographica pseudogeographica (Gray, 1831)"
+7190901,introduction pathway,release_other,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213159099,"Graptemys pseudogeographica pseudogeographica (Gray, 1831)"
+7190901,native range,Northern America,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213159099,"Graptemys pseudogeographica pseudogeographica (Gray, 1831)"
 7190901,pathway,cbd_2014_pathway:escape_pet,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164300882,"Graptemys pseudogeographica subsp. pseudogeographica (Gray, 1831)"
 7190901,pathway,cbd_2014_pathway:release_other,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164300882,"Graptemys pseudogeographica subsp. pseudogeographica (Gray, 1831)"
 7222196,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265172,Achillea cartilaginea Ledeb. ex Reichenb. s.l.
@@ -11032,6 +11002,8 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 7443846,native range,Eastern Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267067,Dipsacus strigosus Willd. ex Roem. & Schult.
 7443846,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267067,Dipsacus strigosus Willd. ex Roem. & Schult.
 7443846,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267067,Dipsacus strigosus Willd. ex Roem. & Schult.
+7444957,degree of establishment,casual,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213159045,"Podarcis liolepis (Boulenger, 1905)"
+7444957,introduction pathway,stowaway_other,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213159045,"Podarcis liolepis (Boulenger, 1905)"
 7455425,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264993,Phyla nodiflora (L.) var. minor (Hook.) N. O'Leary & Múlgura
 7455425,native range,Americas,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264993,Phyla nodiflora (L.) var. minor (Hook.) N. O'Leary & Múlgura
 7455425,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264993,Phyla nodiflora (L.) var. minor (Hook.) N. O'Leary & Múlgura
@@ -11133,6 +11105,10 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 7572133,degree of establishment,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164301250,"Anoplophora glabripennis (Motschulsky, 1854)"
 7572133,native range,Asia,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164301250,"Anoplophora glabripennis (Motschulsky, 1854)"
 7572133,pathway,cbd_2014_pathway:stowaway_organic_packing,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164301250,"Anoplophora glabripennis (Motschulsky, 1854)"
+7576179,degree of establishment,casual,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213159075,"Pantherophis spiloides (Duméril, Bibron and Duméril, 1854)"
+7576179,introduction pathway,escape_pet,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213159075,"Pantherophis spiloides (Duméril, Bibron and Duméril, 1854)"
+7576179,introduction pathway,release_other,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213159075,"Pantherophis spiloides (Duméril, Bibron and Duméril, 1854)"
+7576179,native range,Northern America,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213159075,"Pantherophis spiloides (Duméril, Bibron and Duméril, 1854)"
 7576335,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266146,Amaranthus x ozanonii
 7581174,Introduced species vector dispersal,"Belgian part of the North Sea (Marine Region) Ships: accidental with ballast water, sea water systems, live wells or other deck basins",0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131229,"Eucheilota menoni Kramp, 1959"
 7581174,Introduced species vector dispersal,in Spanish part of the Bay of Biscay (Marine Region) : Shipping,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131229,"Eucheilota menoni Kramp, 1959"
@@ -11656,6 +11632,9 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 8210972,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,168400491,Jacobaea x albescens (Burb. & Colgan) Verloove & Lambinon
 8212772,degree of establishment,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267060,Symphoricarpos x doorenbosii Krüssm.
 8212772,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267060,Symphoricarpos x doorenbosii Krüssm.
+8219807,degree of establishment,casual,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213159053,"Trimeresurus albolabris (Gray, 1842)"
+8219807,introduction pathway,stowaway_container,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213159053,"Trimeresurus albolabris (Gray, 1842)"
+8219807,native range,Asia,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213159053,"Trimeresurus albolabris (Gray, 1842)"
 8223023,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265015,Saxifraga x geum L.
 8223023,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265015,Saxifraga x geum L.
 8223023,pathway,cbd_2014_pathway:escape_horticulture,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265015,Saxifraga x geum L.
@@ -11664,6 +11643,8 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 8227753,native range,Eastern Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266345,Anchusa procera Besser
 8227753,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266345,Anchusa procera Besser
 8227753,pathway,cbd_2014_pathway:contaminant_on_animals,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266345,Anchusa procera Besser
+8228334,degree of establishment,casual,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213159001,"Daboia palaestinae (Werner, 1938)"
+8228334,introduction pathway,stowaway_container,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213159001,"Daboia palaestinae (Werner, 1938)"
 8241853,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264612,Athyrium niponicum (Mett.) Hance
 8241853,native range,Eastern Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264612,Athyrium niponicum (Mett.) Hance
 8241853,native range,Eastern Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264612,Athyrium niponicum (Mett.) Hance
@@ -12016,7 +11997,6 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 9182765,pathway,cbd_2014_pathway:contaminant_seed,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265139,Calendula arvensis L.
 9185677,degree of establishment,casual,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661133,"Podarcis siculus (Rafinesque-schmaltz, 1810)"
 9185677,degree of establishment,introduced,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164300872,"Podarcis siculus (Rafinesque-schmaltz, 1810)"
-9185677,introduction pathway,stowaway_other,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661133,"Podarcis siculus (Rafinesque-schmaltz, 1810)"
 9185677,native range,Southern Europe,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661133,"Podarcis siculus (Rafinesque-schmaltz, 1810)"
 9187223,degree of establishment,casual,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661179,"Pituophis melanoleucus (Daudin, 1803)"
 9187223,introduction pathway,escape_pet,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661179,"Pituophis melanoleucus (Daudin, 1803)"
@@ -12071,6 +12051,9 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 9326020,native range,Southeastern Asia,e1c3be64-2799-4342-8312-49d076993132,159498410,"Gallus gallus (Linnaeus, 1758)"
 9326020,native range,Southern Asia,e1c3be64-2799-4342-8312-49d076993132,159498410,"Gallus gallus (Linnaeus, 1758)"
 9326020,pathway,cbd_2014_pathway:escape_farm,e1c3be64-2799-4342-8312-49d076993132,159498410,"Gallus gallus (Linnaeus, 1758)"
+9342283,degree of establishment,casual,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213159023,"Thamnophis marcianus (Baird and Girard,1853)"
+9342283,introduction pathway,escape_pet,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213159023,"Thamnophis marcianus (Baird and Girard,1853)"
+9342283,introduction pathway,release_other,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213159023,"Thamnophis marcianus (Baird and Girard,1853)"
 9350124,degree of establishment,established,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661099,"Natrix helvetica Lacépède, 1789"
 9350124,introduction pathway,release_conservation,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661099,"Natrix helvetica Lacépède, 1789"
 9350124,introduction pathway,release_landscape_improvement,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661099,"Natrix helvetica Lacépède, 1789"
@@ -12093,6 +12076,7 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 9405645,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266377,Anchusa ovata Lehm.
 9405645,native range,Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266377,Anchusa ovata Lehm.
 9405645,pathway,cbd_2014_pathway:contaminant_seed,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266377,Anchusa ovata Lehm.
+9416124,degree of establishment,casual,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213159072,"Zamenis scalaris (Schinz, 1822)"
 9419993,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266440,Erodium moschatum (L.) L'Hérit. var. moschatum
 9419993,native range,Africa,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266440,Erodium moschatum (L.) L'Hérit. var. moschatum
 9419993,native range,Eastern Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266440,Erodium moschatum (L.) L'Hérit. var. moschatum
@@ -12223,6 +12207,9 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 10730110,native range,Australia and New Zealand,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265040,Crassula peduncularis (Smith) F. Meigen
 10730110,native range,South America,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265040,Crassula peduncularis (Smith) F. Meigen
 10730110,pathway,cbd_2014_pathway:contaminant_on_animals,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265040,Crassula peduncularis (Smith) F. Meigen
+10857535,degree of establishment,casual,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213158981,"Dryophytes japonicus (Günther, 1859)"
+10857535,introduction pathway,stowaway_container,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213158981,"Dryophytes japonicus (Günther, 1859)"
+10857535,native range,Asia,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213158981,"Dryophytes japonicus (Günther, 1859)"
 10966302,degree of establishment,established,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265798,Digitaria sanguinalis (L.) Scop. subsp. sanguinalis
 10966302,native range,Africa,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265798,Digitaria sanguinalis (L.) Scop. subsp. sanguinalis
 10966302,native range,Eastern Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265798,Digitaria sanguinalis (L.) Scop. subsp. sanguinalis
@@ -12235,6 +12222,8 @@ verificationKey,type,description,datasetKey,taxonKey,scientificName
 11136683,native range,Eastern Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265317,Pulicaria arabica (L.) Cass. subsp. arabica
 11136683,native range,Eastern Europe,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265317,Pulicaria arabica (L.) Cass. subsp. arabica
 11136683,pathway,cbd_2014_pathway:contaminant_on_animals,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265317,Pulicaria arabica (L.) Cass. subsp. arabica
+11205618,degree of establishment,casual,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213159069,"Leptodeira ashmeadii (Hallowell, 1845)"
+11205618,introduction pathway,stowaway_container,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213159069,"Leptodeira ashmeadii (Hallowell, 1845)"
 11335341,degree of establishment,casual,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265789,Trisetaria panicea (Lam.) Maire
 11335341,native range,Africa,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265789,Trisetaria panicea (Lam.) Maire
 11335341,native range,Eastern Asia,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265789,Trisetaria panicea (Lam.) Maire

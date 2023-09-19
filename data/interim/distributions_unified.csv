@@ -677,8 +677,8 @@ verificationKey,locality,locationId,startYear,endYear,datasetKey,taxonKeys,scien
 2331942,Flemish Region,ISO_3166:BE-VLG,1986,1986,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157129825,"Styela clava Herdman, 1881"
 2337607,Belgium,ISO_3166:BE,1983,2017,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042351,"Silurus glanis Linnaeus, 1758"
 2340977,Belgium,ISO_3166:BE,1892,2017,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042376,"Ameiurus melas Rafinesque, 1820"
-2340989,Belgium,ISO_3166:BE,1871,2018,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117244,Ameiurus nebulosus
-2340989,Flemish Region,ISO_3166:BE-VLG,1871,2018,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117244,Ameiurus nebulosus
+2340989,Belgium,ISO_3166:BE,1871,1871,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117244,Ameiurus nebulosus
+2340989,Flemish Region,ISO_3166:BE-VLG,1871,1871,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117244,Ameiurus nebulosus
 2350050,Belgium,ISO_3166:BE,2017,2021,2c38cf8a-f981-4dfb-bc9d-dd2b6fc792ed,206099210,Poecilia reticulatus
 2350050,Flemish Region,ISO_3166:BE-VLG,2021,2021,2c38cf8a-f981-4dfb-bc9d-dd2b6fc792ed,206099210,Poecilia reticulatus
 2350050,Walloon Region,ISO_3166:BE-WAL,2017,2017,2c38cf8a-f981-4dfb-bc9d-dd2b6fc792ed,206099210,Poecilia reticulatus
@@ -689,59 +689,61 @@ verificationKey,locality,locationId,startYear,endYear,datasetKey,taxonKeys,scien
 2351271,Walloon Region,ISO_3166:BE-WAL,2013,2013,2c38cf8a-f981-4dfb-bc9d-dd2b6fc792ed,206109294,Salvelinus fontinalis
 2351413,Belgium,ISO_3166:BE,1954,2017,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042377,"Hucho hucho (Linnaeus, 1758)"
 2360504,Belgium,ISO_3166:BE,2001,2017,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042330,"Vimba vimba (Linnaeus, 1758)"
-2362030,Belgium,ISO_3166:BE,1967,2018,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117254,Ctenopharyngodon idella
+2362030,Belgium,ISO_3166:BE,1967,1967,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117254,Ctenopharyngodon idella
 2362030,Brussels-Capital Region,ISO_3166:BE-BRU,2021,2021,2c38cf8a-f981-4dfb-bc9d-dd2b6fc792ed,206110650,Ctenopharyngodon idella
-2362030,Flemish Region,ISO_3166:BE-VLG,1967,2018,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117254,Ctenopharyngodon idella
+2362030,Flemish Region,ISO_3166:BE-VLG,1967,1967,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117254,Ctenopharyngodon idella
 2362030,Walloon Region,ISO_3166:BE-WAL,2017,2021,2c38cf8a-f981-4dfb-bc9d-dd2b6fc792ed,206110650,Ctenopharyngodon idella
-2362473,Belgium,ISO_3166:BE,1975,2018,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117235,Hypophthalmichthys molitrix
+2362473,Belgium,ISO_3166:BE,1975,1975,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117235,Hypophthalmichthys molitrix
 2362473,Brussels-Capital Region,ISO_3166:BE-BRU,2021,2021,2c38cf8a-f981-4dfb-bc9d-dd2b6fc792ed,206110812,Hypophthalmichthys molitrix
-2362473,Flemish Region,ISO_3166:BE-VLG,1975,2018,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117235,Hypophthalmichthys molitrix
-2362486,Belgium,ISO_3166:BE,1975,2018,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117249,Hypophthalmichthys nobilis
-2362486,Flemish Region,ISO_3166:BE-VLG,1975,2018,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117249,Hypophthalmichthys nobilis
-2362868,Belgium,ISO_3166:BE,1992,2018,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117252,Pseudorasbora parva
-2362868,Flemish Region,ISO_3166:BE-VLG,1992,2018,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117252,Pseudorasbora parva
+2362473,Flemish Region,ISO_3166:BE-VLG,1975,1975,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117235,Hypophthalmichthys molitrix
+2362486,Belgium,ISO_3166:BE,1975,1975,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117249,Hypophthalmichthys nobilis
+2362486,Flemish Region,ISO_3166:BE-VLG,1975,1975,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117249,Hypophthalmichthys nobilis
+2362868,Belgium,ISO_3166:BE,1992,1992,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117252,Pseudorasbora parva
+2362868,Flemish Region,ISO_3166:BE-VLG,1992,1992,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117252,Pseudorasbora parva
 2362868,Walloon Region,ISO_3166:BE-WAL,2013,2021,2c38cf8a-f981-4dfb-bc9d-dd2b6fc792ed,206110593,Pseudorasbora parva
 2362881,Belgium,ISO_3166:BE,,,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157130045,"Leucaspius delineatus (Heckel, 1843)"
-2366634,Belgium,ISO_3166:BE,1601,2018,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117236,Carassius gibelio
-2366634,Flemish Region,ISO_3166:BE-VLG,1601,2018,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117236,Carassius gibelio
+2366634,Belgium,ISO_3166:BE,1601,1601,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117236,Carassius gibelio
+2366634,Flemish Region,ISO_3166:BE-VLG,1601,1601,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117236,Carassius gibelio
 2366634,Walloon Region,ISO_3166:BE-WAL,2017,2021,2c38cf8a-f981-4dfb-bc9d-dd2b6fc792ed,206109665,Carassius gibelio
-2367033,Belgium,ISO_3166:BE,2016,2018,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117246,Ballerus ballerus
-2367033,Flemish Region,ISO_3166:BE-VLG,2016,2018,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117246,Ballerus ballerus
-2367742,Belgium,ISO_3166:BE,1984,2018,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117237,Pimephales promelas
-2367742,Flemish Region,ISO_3166:BE-VLG,1984,2018,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117237,Pimephales promelas
+2367033,Belgium,ISO_3166:BE,2016,2016,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117246,Ballerus ballerus
+2367033,Flemish Region,ISO_3166:BE-VLG,2016,2016,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117246,Ballerus ballerus
+2367742,Belgium,ISO_3166:BE,1984,1984,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117237,Pimephales promelas
+2367742,Flemish Region,ISO_3166:BE-VLG,1984,1984,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117237,Pimephales promelas
 2367742,Walloon Region,ISO_3166:BE-WAL,2010,2010,2c38cf8a-f981-4dfb-bc9d-dd2b6fc792ed,206103617,Pimephales promelas
 2367919,Belgium,ISO_3166:BE,2006,2006,2c38cf8a-f981-4dfb-bc9d-dd2b6fc792ed,206107315,Misgurnus anguillicaudatus
 2367919,Flemish Region,ISO_3166:BE-VLG,2006,2006,2c38cf8a-f981-4dfb-bc9d-dd2b6fc792ed,206107315,Misgurnus anguillicaudatus
 2374521,Belgium,ISO_3166:BE,2019,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,168131164,"Terapon jarbua (Forsskål, 1775)"
 2374521,Flemish Region,ISO_3166:BE-VLG,2019,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,168131164,"Terapon jarbua (Forsskål, 1775)"
-2379089,Belgium,ISO_3166:BE,2010,2018,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117247,Neogobius melanostomus
+2379089,Belgium,ISO_3166:BE,2010,2010,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117247,Neogobius melanostomus
 2379089,Brussels-Capital Region,ISO_3166:BE-BRU,2018,2018,2c38cf8a-f981-4dfb-bc9d-dd2b6fc792ed,206111637,Neogobius melanostomus
-2379089,Flemish Region,ISO_3166:BE-VLG,2010,2018,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117247,Neogobius melanostomus
+2379089,Flemish Region,ISO_3166:BE-VLG,2010,2010,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117247,Neogobius melanostomus
 2379089,Walloon Region,ISO_3166:BE-WAL,2013,2021,2c38cf8a-f981-4dfb-bc9d-dd2b6fc792ed,206111637,Neogobius melanostomus
-2379105,Belgium,ISO_3166:BE,2015,2018,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117241,Neogobius fluviatilis
-2379105,Flemish Region,ISO_3166:BE-VLG,2015,2018,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117241,Neogobius fluviatilis
-2379245,Belgium,ISO_3166:BE,2010,2018,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,143611964,Proterorhinus semilunaris
-2379245,Flemish Region,ISO_3166:BE-VLG,2010,2018,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,143611964,Proterorhinus semilunaris
-2382155,Belgium,ISO_3166:BE,1890,2018,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117242,Sander lucioperca
+2379105,Belgium,ISO_3166:BE,2015,2015,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117241,Neogobius fluviatilis
+2379105,Flemish Region,ISO_3166:BE-VLG,2015,2015,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117241,Neogobius fluviatilis
+2379245,Belgium,ISO_3166:BE,2010,2010,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,143611964,Proterorhinus semilunaris
+2379245,Flemish Region,ISO_3166:BE-VLG,2010,2010,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,143611964,Proterorhinus semilunaris
+2382155,Belgium,ISO_3166:BE,1890,1890,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117242,Sander lucioperca
 2382155,Brussels-Capital Region,ISO_3166:BE-BRU,2015,2015,2c38cf8a-f981-4dfb-bc9d-dd2b6fc792ed,206110119,Sander lucioperca
-2382155,Flemish Region,ISO_3166:BE-VLG,1890,2018,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117242,Sander lucioperca
+2382155,Flemish Region,ISO_3166:BE-VLG,1890,1890,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117242,Sander lucioperca
 2382155,Walloon Region,ISO_3166:BE-WAL,2008,2022,2c38cf8a-f981-4dfb-bc9d-dd2b6fc792ed,206110119,Sander lucioperca
-2394486,Belgium,ISO_3166:BE,1885,2018,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117243,Lepomis gibbosus
-2394486,Flemish Region,ISO_3166:BE-VLG,1885,2018,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117243,Lepomis gibbosus
+2394486,Belgium,ISO_3166:BE,1885,1885,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117243,Lepomis gibbosus
+2394486,Flemish Region,ISO_3166:BE-VLG,1885,1885,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117243,Lepomis gibbosus
 2394486,Walloon Region,ISO_3166:BE-WAL,2008,2020,2c38cf8a-f981-4dfb-bc9d-dd2b6fc792ed,206111413,Lepomis gibbosus
 2394563,Belgium,ISO_3166:BE,1877,2017,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042312,"Micropterus salmoides (Lacépède, 1802)"
 2399874,Belgium,ISO_3166:BE,1998,1998,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157130149,"Micropogonias undulatus (Linnaeus, 1766)"
-2402129,Belgium,ISO_3166:BE,2005,2018,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117250,Acipenser guldenstaedti
-2402129,Flemish Region,ISO_3166:BE-VLG,2005,2018,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117250,Acipenser guldenstaedti
+2402129,Belgium,ISO_3166:BE,2005,2005,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117250,Acipenser guldenstaedti
+2402129,Flemish Region,ISO_3166:BE-VLG,2005,2005,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117250,Acipenser guldenstaedti
 2402129,Walloon Region,ISO_3166:BE-WAL,2018,2018,2c38cf8a-f981-4dfb-bc9d-dd2b6fc792ed,206106933,Acipenser gueldenstaedtii
-2402168,Belgium,ISO_3166:BE,2000,2018,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117255,Acipenser ruthenus
-2402168,Flemish Region,ISO_3166:BE-VLG,2000,2018,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117255,Acipenser ruthenus
+2402168,Belgium,ISO_3166:BE,2000,2000,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117255,Acipenser ruthenus
+2402168,Flemish Region,ISO_3166:BE-VLG,2000,2000,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117255,Acipenser ruthenus
 2423441,Belgium,ISO_3166:BE,2009,2019,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661059,"Bombina orientalis (Boulenger, 1890)"
 2423441,Flemish Region,ISO_3166:BE-VLG,2009,2019,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661059,"Bombina orientalis (Boulenger, 1890)"
 2426640,Belgium,ISO_3166:BE,2000,2020,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661063,"Pelophylax cf bedriagae (Camerano, 1882)"
 2426640,Brussels-Capital Region,ISO_3166:BE-BRU,2004,2006,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661063,"Pelophylax cf bedriagae (Camerano, 1882)"
 2426640,Flemish Region,ISO_3166:BE-VLG,2000,2020,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661063,"Pelophylax cf bedriagae (Camerano, 1882)"
 2426640,Walloon Region,ISO_3166:BE-WAL,2020,2020,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661063,"Pelophylax cf bedriagae (Camerano, 1882)"
+2426658,Belgium,ISO_3166:BE,2005,2005,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213158993,"Pelophylax perezi (López-Seoane, 1885)"
+2426658,Brussels-Capital Region,ISO_3166:BE-BRU,2005,2005,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213158993,"Pelophylax perezi (López-Seoane, 1885)"
 2426661,Belgium,ISO_3166:BE,1975,2020,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661062,"Pelophylax ridibundus (Pallas, 1771)"
 2426661,Brussels-Capital Region,ISO_3166:BE-BRU,2006,2020,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661062,"Pelophylax ridibundus (Pallas, 1771)"
 2426661,Flemish Region,ISO_3166:BE-VLG,1975,2020,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661062,"Pelophylax ridibundus (Pallas, 1771)"
@@ -755,10 +757,13 @@ verificationKey,locality,locationId,startYear,endYear,datasetKey,taxonKeys,scien
 2431781,Flemish Region,ISO_3166:BE-VLG,2017,2017,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661044,"Salamandra atra (Laurenti, 1768)"
 2431875,Belgium,ISO_3166:BE,2011,2012,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661041,"Pleurodeles waltl Michahelles, 1830"
 2431875,Flemish Region,ISO_3166:BE-VLG,2011,2012,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661041,"Pleurodeles waltl Michahelles, 1830"
-2431886,Belgium,ISO_3166:BE,2018,2020,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661037,"Triturus marmoratus (Latreille, 1800)"
+2431886,Belgium,ISO_3166:BE,1877,2020,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661037,"Triturus marmoratus (Latreille, 1800)"
+2431886,Brussels-Capital Region,ISO_3166:BE-BRU,1877,1897,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661037,"Triturus marmoratus (Latreille, 1800)"
 2431886,Flemish Region,ISO_3166:BE-VLG,2018,2020,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661037,"Triturus marmoratus (Latreille, 1800)"
 2431965,Belgium,ISO_3166:BE,2018,2019,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661031,"Ambystoma macrodactylum (Baird, 1849)"
 2431965,Flemish Region,ISO_3166:BE-VLG,2018,2019,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661031,"Ambystoma macrodactylum (Baird, 1849)"
+2431993,Belgium,ISO_3166:BE,1970,1970,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213158974,"Ambystoma tigrinum (Green, 1825)"
+2431993,Brussels-Capital Region,ISO_3166:BE-BRU,1970,1970,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213158974,"Ambystoma tigrinum (Green, 1825)"
 2432063,Belgium,ISO_3166:BE,2014,2014,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661034,"Siren intermedia (Barnes, 1826)"
 2432063,Flemish Region,ISO_3166:BE-VLG,2014,2014,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661034,"Siren intermedia (Barnes, 1826)"
 2432352,Belgium,ISO_3166:BE,2015,2015,2c38cf8a-f981-4dfb-bc9d-dd2b6fc792ed,206102414,Eptesicus fuscus
@@ -820,11 +825,12 @@ verificationKey,locality,locationId,startYear,endYear,datasetKey,taxonKeys,scien
 2440954,Walloon Region,ISO_3166:BE-WAL,2018,2021,2c38cf8a-f981-4dfb-bc9d-dd2b6fc792ed,206109798,Cervus nippon
 2441122,Belgium,ISO_3166:BE,2018,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164300824,"Ovis ammon (Linnaeus, 1758)"
 2441122,Walloon Region,ISO_3166:BE-WAL,2018,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164300824,"Ovis ammon (Linnaeus, 1758)"
-2441454,Belgium,ISO_3166:BE,2013,2020,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661237,"Testudo hermanni (Gmelin, 1789)"
+2441454,Belgium,ISO_3166:BE,1935,2020,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661237,"Testudo hermanni (Gmelin, 1789)"
+2441454,Brussels-Capital Region,ISO_3166:BE-BRU,1935,1935,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661237,"Testudo hermanni (Gmelin, 1789)"
 2441454,Flemish Region,ISO_3166:BE-VLG,2013,2020,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661237,"Testudo hermanni (Gmelin, 1789)"
 2441454,Walloon Region,ISO_3166:BE-WAL,,,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661237,"Testudo hermanni (Gmelin, 1789)"
-2441461,Belgium,ISO_3166:BE,2010,2020,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661235,"Testudo graeca (Linnaeus, 1758)"
-2441461,Brussels-Capital Region,ISO_3166:BE-BRU,2017,2017,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661235,"Testudo graeca (Linnaeus, 1758)"
+2441461,Belgium,ISO_3166:BE,1935,2020,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661235,"Testudo graeca (Linnaeus, 1758)"
+2441461,Brussels-Capital Region,ISO_3166:BE-BRU,1935,2017,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661235,"Testudo graeca (Linnaeus, 1758)"
 2441461,Flemish Region,ISO_3166:BE-VLG,2010,2020,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661235,"Testudo graeca (Linnaeus, 1758)"
 2441461,Walloon Region,ISO_3166:BE-WAL,2019,2020,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661235,"Testudo graeca (Linnaeus, 1758)"
 2441533,Belgium,ISO_3166:BE,2017,2017,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661233,"Centrochelys sulcata (Miller, 1779)"
@@ -855,6 +861,8 @@ verificationKey,locality,locationId,startYear,endYear,datasetKey,taxonKeys,scien
 2443133,Flemish Region,ISO_3166:BE-VLG,2009,2009,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661223,"Chrysemys picta (Schneider, 1783)"
 2443173,Belgium,ISO_3166:BE,2012,2012,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661211,"Terrapene carolina (Linnaeus, 1758)"
 2443173,Flemish Region,ISO_3166:BE-VLG,2012,2012,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661211,"Terrapene carolina (Linnaeus, 1758)"
+2443339,Belgium,ISO_3166:BE,2018,2018,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661213,"Mauremys (Gray, 1869)"
+2443339,Flemish Region,ISO_3166:BE-VLG,2018,2018,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661213,"Mauremys (Gray, 1869)"
 2443597,Belgium,ISO_3166:BE,2014,2017,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661214,"Mauremys reevesii (Gray, 1831)"
 2443597,Flemish Region,ISO_3166:BE-VLG,2014,2017,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661214,"Mauremys reevesii (Gray, 1831)"
 2443876,Belgium,ISO_3166:BE,2017,2017,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661110,"Echis carinatus (Schneider, 1801)"
@@ -868,9 +876,11 @@ verificationKey,locality,locationId,startYear,endYear,datasetKey,taxonKeys,scien
 2444339,Flemish Region,ISO_3166:BE-VLG,2007,2007,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661108,"Vipera aspis (Linnaeus, 1758)"
 2444356,Belgium,ISO_3166:BE,2019,2019,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661143,"Crotalus atrox (Baird & Girard, 1853)"
 2444356,Walloon Region,ISO_3166:BE-WAL,2019,2019,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661143,"Crotalus atrox (Baird & Girard, 1853)"
-2445034,Belgium,ISO_3166:BE,2013,2018,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661116,"Tarentola mauritanica (Linnaeus, 1758)"
-2445034,Flemish Region,ISO_3166:BE-VLG,2013,2018,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661116,"Tarentola mauritanica (Linnaeus, 1758)"
+2445034,Belgium,ISO_3166:BE,2013,2022,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661116,"Tarentola mauritanica (Linnaeus, 1758)"
+2445034,Flemish Region,ISO_3166:BE-VLG,2013,2022,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661116,"Tarentola mauritanica (Linnaeus, 1758)"
 2445034,Walloon Region,ISO_3166:BE-WAL,2015,2018,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661116,"Tarentola mauritanica (Linnaeus, 1758)"
+2445496,Belgium,ISO_3166:BE,2010,2019,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661139,"Pachydactylus (Wiegmann, 1834)"
+2445496,Flemish Region,ISO_3166:BE-VLG,2010,2019,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661139,"Pachydactylus (Wiegmann, 1834)"
 2447367,Belgium,ISO_3166:BE,2010,2012,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661119,"Gekko gecko (Linnaeus, 1758)"
 2447367,Flemish Region,ISO_3166:BE-VLG,2010,2012,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661119,"Gekko gecko (Linnaeus, 1758)"
 2447418,Belgium,ISO_3166:BE,2013,2018,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661137,"Phelsuma (Gray, 1825)"
@@ -890,31 +900,40 @@ verificationKey,locality,locationId,startYear,endYear,datasetKey,taxonKeys,scien
 2455676,Belgium,ISO_3166:BE,2013,2020,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661173,"Pantherophis obsoletus (Say, 1823)"
 2455676,Flemish Region,ISO_3166:BE-VLG,2013,2020,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661173,"Pantherophis obsoletus (Say, 1823)"
 2455676,Walloon Region,ISO_3166:BE-WAL,,,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661173,"Pantherophis obsoletus (Say, 1823)"
+2457224,Belgium,ISO_3166:BE,2021,2021,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213159066,"Dolichophis caspius (Gmelin, 1789)"
+2457224,Flemish Region,ISO_3166:BE-VLG,2021,2021,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213159066,"Dolichophis caspius (Gmelin, 1789)"
 2457378,Belgium,ISO_3166:BE,2015,2015,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661113,"Rhamphiophis (Peters, 1854)"
 2457378,Flemish Region,ISO_3166:BE-VLG,2015,2015,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661113,"Rhamphiophis (Peters, 1854)"
 2457522,Belgium,ISO_3166:BE,2021,2021,2c38cf8a-f981-4dfb-bc9d-dd2b6fc792ed,206110257,Thamnophis sirtalis
 2457522,Flemish Region,ISO_3166:BE-VLG,2021,2021,2c38cf8a-f981-4dfb-bc9d-dd2b6fc792ed,206110257,Thamnophis sirtalis
+2457577,Belgium,ISO_3166:BE,1993,1994,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213159022,"Thamnophis saurita (Linnaeus, 1766)"
+2457577,Brussels-Capital Region,ISO_3166:BE-BRU,1993,1994,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213159022,"Thamnophis saurita (Linnaeus, 1766)"
 2457825,Belgium,ISO_3166:BE,2012,2015,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661180,"Thamnophis (Fitzinger, 1843)"
 2457825,Flemish Region,ISO_3166:BE-VLG,2012,2015,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661180,"Thamnophis (Fitzinger, 1843)"
+2458374,Belgium,ISO_3166:BE,2018,2018,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213159073,"Zamenis situla (Linnaeus, 1758)"
+2458374,Brussels-Capital Region,ISO_3166:BE-BRU,2018,2018,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213159073,"Zamenis situla (Linnaeus, 1758)"
 2458386,Belgium,ISO_3166:BE,2014,2014,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661182,"Elaphe sauromates (Pallas, 1814)"
 2458386,Flemish Region,ISO_3166:BE-VLG,2014,2014,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661182,"Elaphe sauromates (Pallas, 1814)"
 2458438,Belgium,ISO_3166:BE,2019,2020,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661184,"Elaphe schrenckii (Strauch, 1873)"
 2458438,Flemish Region,ISO_3166:BE-VLG,2019,2020,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661184,"Elaphe schrenckii (Strauch, 1873)"
-2458538,Belgium,ISO_3166:BE,2016,2020,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661169,"Zamenis longissimus (Laurenti, 1768)"
-2458538,Flemish Region,ISO_3166:BE-VLG,2016,2020,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661169,"Zamenis longissimus (Laurenti, 1768)"
-2458916,Belgium,ISO_3166:BE,2010,2014,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661190,"Hierophis viridiflavus (Lacépède, 1987)"
-2458916,Flemish Region,ISO_3166:BE-VLG,2010,2014,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661190,"Hierophis viridiflavus (Lacépède, 1987)"
+2458538,Belgium,ISO_3166:BE,2016,2021,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661169,"Zamenis longissimus (Laurenti, 1768)"
+2458538,Flemish Region,ISO_3166:BE-VLG,2016,2021,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661169,"Zamenis longissimus (Laurenti, 1768)"
+2458916,Belgium,ISO_3166:BE,1894,2023,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661190,"Hierophis viridiflavus (Lacépède, 1987)"
+2458916,Brussels-Capital Region,ISO_3166:BE-BRU,1894,1967,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661190,"Hierophis viridiflavus (Lacépède, 1987)"
+2458916,Flemish Region,ISO_3166:BE-VLG,2010,2023,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661190,"Hierophis viridiflavus (Lacépède, 1987)"
+2459603,Belgium,ISO_3166:BE,2021,2022,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213159049,"Ctenosaura similis (Gray, 1831)"
+2459603,Flemish Region,ISO_3166:BE-VLG,2021,2022,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213159049,"Ctenosaura similis (Gray, 1831)"
 2459658,Belgium,ISO_3166:BE,2010,2019,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661105,"Iguana iguana (Linnaeus, 1758)"
 2459658,Flemish Region,ISO_3166:BE-VLG,2010,2019,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661105,"Iguana iguana (Linnaeus, 1758)"
 2459675,Belgium,ISO_3166:BE,2013,2013,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661103,"Iguana (Laurenti, 1768)"
 2459675,Flemish Region,ISO_3166:BE-VLG,2013,2013,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661103,"Iguana (Laurenti, 1768)"
-2464899,Belgium,ISO_3166:BE,2006,2020,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661124,"Boa constrictor (Linnaeus, 1758)"
-2464899,Flemish Region,ISO_3166:BE-VLG,2006,2020,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661124,"Boa constrictor (Linnaeus, 1758)"
-2464899,Walloon Region,ISO_3166:BE-WAL,,,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661124,"Boa constrictor (Linnaeus, 1758)"
+2464899,Belgium,ISO_3166:BE,2006,2023,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661124,"Boa constrictor (Linnaeus, 1758)"
+2464899,Flemish Region,ISO_3166:BE-VLG,2006,2023,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661124,"Boa constrictor (Linnaeus, 1758)"
+2464899,Walloon Region,ISO_3166:BE-WAL,2022,2022,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661124,"Boa constrictor (Linnaeus, 1758)"
 2465003,Belgium,ISO_3166:BE,2018,2018,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661096,"Antaresia childreni (Gray, 1842)"
 2465003,Flemish Region,ISO_3166:BE-VLG,2018,2018,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661096,"Antaresia childreni (Gray, 1842)"
-2465369,Belgium,ISO_3166:BE,2010,2018,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661092,"Python molurus (Linnaeus, 1758)"
-2465369,Flemish Region,ISO_3166:BE-VLG,2010,2018,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661092,"Python molurus (Linnaeus, 1758)"
+2465369,Belgium,ISO_3166:BE,2010,2018,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661092,"Python molurus (Linnaeus, 1758)"
+2465369,Flemish Region,ISO_3166:BE-VLG,2010,2018,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661092,"Python molurus (Linnaeus, 1758)"
 2465380,Belgium,ISO_3166:BE,2010,2020,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661094,"Python regius (Shaw, 1802)"
 2465380,Flemish Region,ISO_3166:BE-VLG,2010,2020,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661094,"Python regius (Shaw, 1802)"
 2465380,Walloon Region,ISO_3166:BE-WAL,,,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661094,"Python regius (Shaw, 1802)"
@@ -928,15 +947,18 @@ verificationKey,locality,locationId,startYear,endYear,datasetKey,taxonKeys,scien
 2465641,Walloon Region,ISO_3166:BE-WAL,,,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661148,"Pogona vitticeps (Ahl, 1926)"
 2465649,Belgium,ISO_3166:BE,2020,2020,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661150,"Pogona henrylawsoni (Wells and Wellington, 1985)"
 2465649,Flemish Region,ISO_3166:BE-VLG,2020,2020,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661150,"Pogona henrylawsoni (Wells and Wellington, 1985)"
-2466496,Belgium,ISO_3166:BE,2018,2018,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661153,"Calotes (Cuvier, 1817)"
+2466496,Belgium,ISO_3166:BE,2018,2022,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661153,"Calotes (Cuvier, 1817)"
 2466496,Brussels-Capital Region,ISO_3166:BE-BRU,2018,2018,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661153,"Calotes (Cuvier, 1817)"
-2469188,Belgium,ISO_3166:BE,1999,2020,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661134,"Podarcis muralis (Laurenti, 1768)"
-2469188,Brussels-Capital Region,ISO_3166:BE-BRU,1999,2020,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661134,"Podarcis muralis (Laurenti, 1768)"
+2466496,Flemish Region,ISO_3166:BE-VLG,2022,2022,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661153,"Calotes (Cuvier, 1817)"
+2469188,Belgium,ISO_3166:BE,1970,2020,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661134,"Podarcis muralis (Laurenti, 1768)"
+2469188,Brussels-Capital Region,ISO_3166:BE-BRU,1970,2020,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661134,"Podarcis muralis (Laurenti, 1768)"
 2469188,Flemish Region,ISO_3166:BE-VLG,2004,2020,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661134,"Podarcis muralis (Laurenti, 1768)"
 2470376,Belgium,ISO_3166:BE,2020,2020,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661127,"Naja melanoleuca (Hallowell, 1857)"
 2470376,Flemish Region,ISO_3166:BE-VLG,2020,2020,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661127,"Naja melanoleuca (Hallowell, 1857)"
 2470656,Belgium,ISO_3166:BE,2011,2018,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661074,"Varanus niloticus (Linnaeus, 1766)"
 2470656,Flemish Region,ISO_3166:BE-VLG,2011,2018,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661074,"Varanus niloticus (Linnaeus, 1766)"
+2473221,Belgium,ISO_3166:BE,2021,2021,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213159025,"Blanus (Wagler, 1830)"
+2473221,Flemish Region,ISO_3166:BE-VLG,2021,2021,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213159025,"Blanus (Wagler, 1830)"
 2473341,Belgium,ISO_3166:BE,,,e1c3be64-2799-4342-8312-49d076993132,159498394,"Numida meleagris (Linnaeus, 1758)"
 2473341,Flemish Region,ISO_3166:BE-VLG,2004,2022,2c38cf8a-f981-4dfb-bc9d-dd2b6fc792ed,206097837,Numida meleagris
 2473341,Walloon Region,ISO_3166:BE-WAL,2015,2022,2c38cf8a-f981-4dfb-bc9d-dd2b6fc792ed,206097837,Numida meleagris
@@ -5577,20 +5599,20 @@ verificationKey,locality,locationId,startYear,endYear,datasetKey,taxonKeys,scien
 4271356,Flemish Region,ISO_3166:BE-VLG,2017,2017,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266067,Heracleum sibiricum L.
 4283395,Belgium,ISO_3166:BE,1998,1998,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157131419,"Diadumene lineata (Verrill, 1869)"
 4283395,Flemish Region,ISO_3166:BE-VLG,2011,2013,2c38cf8a-f981-4dfb-bc9d-dd2b6fc792ed,206110864,Diadumene lineata
-4285694,Belgium,ISO_3166:BE,1990,2018,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117251,Oreochromis niloticus
-4285694,Flemish Region,ISO_3166:BE-VLG,1990,2018,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117251,Oreochromis niloticus
-4285968,Belgium,ISO_3166:BE,2012,2018,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117233,Ponticola kessleri
-4285968,Flemish Region,ISO_3166:BE-VLG,2012,2018,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117233,Ponticola kessleri
-4286942,Belgium,ISO_3166:BE,1601,2018,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117240,Carassius auratus
+4285694,Belgium,ISO_3166:BE,1990,1990,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117251,Oreochromis niloticus
+4285694,Flemish Region,ISO_3166:BE-VLG,1990,1990,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117251,Oreochromis niloticus
+4285968,Belgium,ISO_3166:BE,2012,2012,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117233,Ponticola kessleri
+4285968,Flemish Region,ISO_3166:BE-VLG,2012,2012,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117233,Ponticola kessleri
+4286942,Belgium,ISO_3166:BE,1601,1601,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117240,Carassius auratus
 4286942,Brussels-Capital Region,ISO_3166:BE-BRU,2020,2021,2c38cf8a-f981-4dfb-bc9d-dd2b6fc792ed,206110545,Carassius auratus
-4286942,Flemish Region,ISO_3166:BE-VLG,1601,2018,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117240,Carassius auratus
+4286942,Flemish Region,ISO_3166:BE-VLG,1601,1601,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117240,Carassius auratus
 4286942,Walloon Region,ISO_3166:BE-WAL,2009,2017,2c38cf8a-f981-4dfb-bc9d-dd2b6fc792ed,206110545,Carassius auratus
-4286975,Belgium,ISO_3166:BE,1201,2018,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117232,Cyprinus carpio
+4286975,Belgium,ISO_3166:BE,1201,1201,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117232,Cyprinus carpio
 4286975,Brussels-Capital Region,ISO_3166:BE-BRU,2008,2021,2c38cf8a-f981-4dfb-bc9d-dd2b6fc792ed,206110689,Cyprinus carpio
-4286975,Flemish Region,ISO_3166:BE-VLG,1201,2018,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117232,Cyprinus carpio
+4286975,Flemish Region,ISO_3166:BE-VLG,1201,1201,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117232,Cyprinus carpio
 4286975,Walloon Region,ISO_3166:BE-WAL,2007,2022,2c38cf8a-f981-4dfb-bc9d-dd2b6fc792ed,206110689,Cyprinus carpio
-4287131,Belgium,ISO_3166:BE,2001,2018,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117234,Acipenser baeri
-4287131,Flemish Region,ISO_3166:BE-VLG,2001,2018,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117234,Acipenser baeri
+4287131,Belgium,ISO_3166:BE,2001,2001,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117234,Acipenser baeri
+4287131,Flemish Region,ISO_3166:BE-VLG,2001,2001,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117234,Acipenser baeri
 4287413,Belgium,ISO_3166:BE,2018,2018,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661080,"Anolis sagrei (Duméril and Bibron, 1837)"
 4287413,Flemish Region,ISO_3166:BE-VLG,2018,2018,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661080,"Anolis sagrei (Duméril and Bibron, 1837)"
 4293134,Belgium,ISO_3166:BE,2017,2017,2c38cf8a-f981-4dfb-bc9d-dd2b6fc792ed,206106732,Neoclytus acuminatus
@@ -5983,14 +6005,14 @@ verificationKey,locality,locationId,startYear,endYear,datasetKey,taxonKeys,scien
 5199161,Belgium,ISO_3166:BE,2000,2016,289244ee-e1c1-49aa-b2d7-d379391ce265,140562891,Hypania invalida
 5199161,Flemish Region,ISO_3166:BE-VLG,2000,2016,289244ee-e1c1-49aa-b2d7-d379391ce265,140562891,Hypania invalida
 5200414,Belgium,ISO_3166:BE,,,0a2eaf0c-5504-4f48-a47f-c94229029dc8,157129932,"Diplosoma listerianum (Milne Edwards, 1841)"
-5202520,Belgium,ISO_3166:BE,1884,2018,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117248,Ictalurus punctatus
-5202520,Flemish Region,ISO_3166:BE-VLG,1884,2018,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117248,Ictalurus punctatus
-5202793,Belgium,ISO_3166:BE,1980,2018,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117231,Clarias gariepinus
-5202793,Flemish Region,ISO_3166:BE-VLG,1980,2018,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117231,Clarias gariepinus
-5203111,Belgium,ISO_3166:BE,1920,2018,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117253,Umbra pygmaea
-5203111,Flemish Region,ISO_3166:BE-VLG,1920,2018,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117253,Umbra pygmaea
-5204019,Belgium,ISO_3166:BE,1884,2018,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117245,Oncorhynchus mykiss
-5204019,Flemish Region,ISO_3166:BE-VLG,1884,2018,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117245,Oncorhynchus mykiss
+5202520,Belgium,ISO_3166:BE,1884,1884,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117248,Ictalurus punctatus
+5202520,Flemish Region,ISO_3166:BE-VLG,1884,1884,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117248,Ictalurus punctatus
+5202793,Belgium,ISO_3166:BE,1980,1980,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117231,Clarias gariepinus
+5202793,Flemish Region,ISO_3166:BE-VLG,1980,1980,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117231,Clarias gariepinus
+5203111,Belgium,ISO_3166:BE,1920,1920,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117253,Umbra pygmaea
+5203111,Flemish Region,ISO_3166:BE-VLG,1920,1920,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117253,Umbra pygmaea
+5204019,Belgium,ISO_3166:BE,1884,1884,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117245,Oncorhynchus mykiss
+5204019,Flemish Region,ISO_3166:BE-VLG,1884,1884,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117245,Oncorhynchus mykiss
 5204019,Walloon Region,ISO_3166:BE-WAL,2008,2020,2c38cf8a-f981-4dfb-bc9d-dd2b6fc792ed,206110511,Oncorhynchus mykiss
 5204034,Belgium,ISO_3166:BE,,,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042340,Oncorhynchus kisutch (Walbaum 1792)
 5208832,Belgium,ISO_3166:BE,2018,2018,1f3505cd-5d98-4e23-bd3b-ffe59d05d7c2,164300713,"Gobiosoma bosc (Lacepède, 1800)"
@@ -5998,9 +6020,9 @@ verificationKey,locality,locationId,startYear,endYear,datasetKey,taxonKeys,scien
 5211250,Belgium,ISO_3166:BE,1873,2017,1738f272-6b5d-4f43-9a92-453a8c5ea50a,146042378,"Micropterus dolomieui Lacepède, 1802"
 5216933,Belgium,ISO_3166:BE,2010,2019,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661050,"Rhinella marina (Linnaeus, 1758)"
 5216933,Flemish Region,ISO_3166:BE-VLG,2010,2019,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661050,"Rhinella marina (Linnaeus, 1758)"
-5217334,Belgium,ISO_3166:BE,2006,2016,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661053,"Xenopus laevis (Daudin, 1802)"
-5217334,Flemish Region,ISO_3166:BE-VLG,2006,2016,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661053,"Xenopus laevis (Daudin, 1802)"
-5217334,Walloon Region,ISO_3166:BE-WAL,2006,2016,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661053,"Xenopus laevis (Daudin, 1802)"
+5217334,Belgium,ISO_3166:BE,2006,2022,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661053,"Xenopus laevis (Daudin, 1802)"
+5217334,Flemish Region,ISO_3166:BE-VLG,2006,2022,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661053,"Xenopus laevis (Daudin, 1802)"
+5217334,Walloon Region,ISO_3166:BE-WAL,2006,2022,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661053,"Xenopus laevis (Daudin, 1802)"
 5218786,Belgium,ISO_3166:BE,1986,2022,2c38cf8a-f981-4dfb-bc9d-dd2b6fc792ed,206111295,Procyon lotor
 5218786,Brussels-Capital Region,ISO_3166:BE-BRU,2017,2017,2c38cf8a-f981-4dfb-bc9d-dd2b6fc792ed,206111295,Procyon lotor
 5218786,Flemish Region,ISO_3166:BE-VLG,1986,2021,2c38cf8a-f981-4dfb-bc9d-dd2b6fc792ed,206111295,Procyon lotor
@@ -6038,23 +6060,23 @@ verificationKey,locality,locationId,startYear,endYear,datasetKey,taxonKeys,scien
 5221283,Walloon Region,ISO_3166:BE-WAL,2021,2021,2c38cf8a-f981-4dfb-bc9d-dd2b6fc792ed,206107084,Eublepharis macularius
 5221394,Belgium,ISO_3166:BE,2013,2018,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661120,"Hemidactylus (Oken, 1817)"
 5221394,Flemish Region,ISO_3166:BE-VLG,2013,2018,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661120,"Hemidactylus (Oken, 1817)"
-5221528,Belgium,ISO_3166:BE,2021,2021,2c38cf8a-f981-4dfb-bc9d-dd2b6fc792ed,206108051,Hemidactylus turcicus
-5221528,Walloon Region,ISO_3166:BE-WAL,2021,2021,2c38cf8a-f981-4dfb-bc9d-dd2b6fc792ed,206108051,Hemidactylus turcicus
+5221528,Belgium,ISO_3166:BE,2009,2009,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213159014,"Hemidactylus turcicus (Linnaeus, 1758)"
+5221528,Walloon Region,ISO_3166:BE-WAL,2009,2009,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213159014,"Hemidactylus turcicus (Linnaeus, 1758)"
 5221810,Belgium,ISO_3166:BE,2017,2017,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661077,"Basiliscus plumifrons (Cope, 1876)"
 5221810,Flemish Region,ISO_3166:BE-VLG,2017,2017,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661077,"Basiliscus plumifrons (Cope, 1876)"
 5221988,Belgium,ISO_3166:BE,2015,2015,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661160,"Furcifer pardalis (Cuvier, 1829)"
 5221988,Flemish Region,ISO_3166:BE-VLG,2015,2015,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661160,"Furcifer pardalis (Cuvier, 1829)"
 5222820,Belgium,ISO_3166:BE,2013,2013,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661165,"Lycodon capucinus (Boie, 1827)"
 5222820,Flemish Region,ISO_3166:BE-VLG,2013,2013,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661165,"Lycodon capucinus (Boie, 1827)"
-5223725,Belgium,ISO_3166:BE,2020,2020,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661163,"Heterodon nasicus (Baird & Girard, 1852)"
-5223725,Flemish Region,ISO_3166:BE-VLG,2020,2020,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661163,"Heterodon nasicus (Baird & Girard, 1852)"
+5223725,Belgium,ISO_3166:BE,2020,2021,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661163,"Heterodon nasicus (Baird & Girard, 1852)"
+5223725,Flemish Region,ISO_3166:BE-VLG,2020,2021,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661163,"Heterodon nasicus (Baird & Girard, 1852)"
 5224480,Belgium,ISO_3166:BE,2014,2019,2c38cf8a-f981-4dfb-bc9d-dd2b6fc792ed,206113463,Lampropeltis getula
 5224480,Flemish Region,ISO_3166:BE-VLG,2014,2019,2c38cf8a-f981-4dfb-bc9d-dd2b6fc792ed,206113463,Lampropeltis getula
 5224481,Belgium,ISO_3166:BE,2014,2019,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661186,"Lampropeltis getula californiae (Blainville, 1835)"
 5224481,Flemish Region,ISO_3166:BE-VLG,2014,2019,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661186,"Lampropeltis getula californiae (Blainville, 1835)"
 5224481,Walloon Region,ISO_3166:BE-WAL,2019,2019,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661186,"Lampropeltis getula californiae (Blainville, 1835)"
-5224503,Belgium,ISO_3166:BE,2010,2019,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661188,"Lampropeltis triangulum (Lacépède, 1788)"
-5224503,Flemish Region,ISO_3166:BE-VLG,2010,2019,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661188,"Lampropeltis triangulum (Lacépède, 1788)"
+5224503,Belgium,ISO_3166:BE,2017,2018,2c38cf8a-f981-4dfb-bc9d-dd2b6fc792ed,206112826,Lampropeltis triangulum
+5224503,Flemish Region,ISO_3166:BE-VLG,2017,2018,2c38cf8a-f981-4dfb-bc9d-dd2b6fc792ed,206112826,Lampropeltis triangulum
 5224543,Belgium,ISO_3166:BE,2017,2017,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661187,"Lampropeltis triangulum hondurensis (K.L. Williams, 1978)"
 5224543,Flemish Region,ISO_3166:BE-VLG,2017,2017,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661187,"Lampropeltis triangulum hondurensis (K.L. Williams, 1978)"
 5225137,Belgium,ISO_3166:BE,2017,2017,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661088,Chalcides ocellatus (Forskal 1775)
@@ -7878,8 +7900,8 @@ verificationKey,locality,locationId,startYear,endYear,datasetKey,taxonKeys,scien
 5831906,Walloon Region,ISO_3166:BE-WAL,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266078,Bupleurum gerardi All.
 5844936,Belgium,ISO_3166:BE,2015,2016,e1c3be64-2799-4342-8312-49d076993132,159498669,"Cyanopica cooki Bonaparte, 1850"
 5845390,Belgium,ISO_3166:BE,,,e1c3be64-2799-4342-8312-49d076993132,159498735,"Gracupica nigricollis (Paykull, 1807)"
-5851603,Belgium,ISO_3166:BE,1984,2018,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117238,Aspius aspius
-5851603,Flemish Region,ISO_3166:BE-VLG,1984,2018,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117238,Aspius aspius
+5851603,Belgium,ISO_3166:BE,1984,1984,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117238,Aspius aspius
+5851603,Flemish Region,ISO_3166:BE-VLG,1984,1984,98940a79-2bf1-46e6-afd6-ba2e85a26f9f,141117238,Aspius aspius
 5855746,Belgium,ISO_3166:BE,2018,2018,2c38cf8a-f981-4dfb-bc9d-dd2b6fc792ed,206096928,Meretrix lyrata
 5855746,Walloon Region,ISO_3166:BE-WAL,2018,2018,2c38cf8a-f981-4dfb-bc9d-dd2b6fc792ed,206096928,Meretrix lyrata
 5864277,Belgium,ISO_3166:BE,1937,2016,289244ee-e1c1-49aa-b2d7-d379391ce265,140562997,Gammarus roeseli
@@ -8004,9 +8026,9 @@ verificationKey,locality,locationId,startYear,endYear,datasetKey,taxonKeys,scien
 6128436,Flemish Region,ISO_3166:BE-VLG,1997,2016,289244ee-e1c1-49aa-b2d7-d379391ce265,140562978,Amphibalanus reticulatus
 6132234,Belgium,ISO_3166:BE,2020,2020,2c38cf8a-f981-4dfb-bc9d-dd2b6fc792ed,206111789,Rhynchophorus ferrugineus
 6132234,Flemish Region,ISO_3166:BE-VLG,2020,2020,2c38cf8a-f981-4dfb-bc9d-dd2b6fc792ed,206111789,Rhynchophorus ferrugineus
-6156934,Belgium,ISO_3166:BE,2012,2018,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661224,"Chrysemys picta subsp. Bellii (Gray, 1831)"
-6156934,Brussels-Capital Region,ISO_3166:BE-BRU,2018,2018,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661224,"Chrysemys picta subsp. Bellii (Gray, 1831)"
-6156934,Flemish Region,ISO_3166:BE-VLG,2012,2012,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661224,"Chrysemys picta subsp. Bellii (Gray, 1831)"
+6156934,Belgium,ISO_3166:BE,2012,2018,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213159101,"Chrysemys picta bellii (Gray, 1831)"
+6156934,Brussels-Capital Region,ISO_3166:BE-BRU,2018,2018,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213159101,"Chrysemys picta bellii (Gray, 1831)"
+6156934,Flemish Region,ISO_3166:BE-VLG,2012,2012,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213159101,"Chrysemys picta bellii (Gray, 1831)"
 6157026,Belgium,ISO_3166:BE,1975,2020,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661219,"Trachemys scripta elegans (Wied, 1838)"
 6157026,Brussels-Capital Region,ISO_3166:BE-BRU,2009,2020,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661219,"Trachemys scripta elegans (Wied, 1838)"
 6157026,Flemish Region,ISO_3166:BE-VLG,1975,2020,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661219,"Trachemys scripta elegans (Wied, 1838)"
@@ -8015,16 +8037,20 @@ verificationKey,locality,locationId,startYear,endYear,datasetKey,taxonKeys,scien
 6157035,Brussels-Capital Region,ISO_3166:BE-BRU,2012,2019,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661220,"Trachemys scripta troostii (Holbrook, 1836)"
 6157035,Flemish Region,ISO_3166:BE-VLG,2003,2020,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661220,"Trachemys scripta troostii (Holbrook, 1836)"
 6157035,Walloon Region,ISO_3166:BE-WAL,2018,2018,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661220,"Trachemys scripta troostii (Holbrook, 1836)"
-6157050,Belgium,ISO_3166:BE,2005,2018,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661230,"Graptemys pseudogeographica subsp. kohnii (Baur, 1890)"
-6157050,Flemish Region,ISO_3166:BE-VLG,2005,2018,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661230,"Graptemys pseudogeographica subsp. kohnii (Baur, 1890)"
+6157050,Belgium,ISO_3166:BE,2005,2018,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213159098,"Graptemys pseudogeographica kohnii (Baur, 1890)"
+6157050,Flemish Region,ISO_3166:BE-VLG,2005,2018,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213159098,"Graptemys pseudogeographica kohnii (Baur, 1890)"
 6159223,Belgium,ISO_3166:BE,2017,2017,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661131,"Lacerta agilis (Linnaeus, 1758)"
 6159223,Flemish Region,ISO_3166:BE-VLG,2017,2017,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661131,"Lacerta agilis (Linnaeus, 1758)"
+6159238,Belgium,ISO_3166:BE,2021,2021,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213159043,"Lacerta strigata (Eichwald, 1831)"
+6159238,Flemish Region,ISO_3166:BE-VLG,2021,2021,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213159043,"Lacerta strigata (Eichwald, 1831)"
 6159273,Belgium,ISO_3166:BE,2006,2017,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661130,"Lacerta viridis (Laurenti, 1768) s.l."
 6159273,Flemish Region,ISO_3166:BE-VLG,2006,2017,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661130,"Lacerta viridis (Laurenti, 1768) s.l."
-6161327,Belgium,ISO_3166:BE,2007,2014,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661100,"Natrix tessellata (Laurenti, 1768)"
+6161327,Belgium,ISO_3166:BE,1962,2014,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661100,"Natrix tessellata (Laurenti, 1768)"
+6161327,Brussels-Capital Region,ISO_3166:BE-BRU,1962,1962,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661100,"Natrix tessellata (Laurenti, 1768)"
 6161327,Flemish Region,ISO_3166:BE-VLG,2007,2014,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661100,"Natrix tessellata (Laurenti, 1768)"
 6161327,Walloon Region,ISO_3166:BE-WAL,,,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661100,"Natrix tessellata (Laurenti, 1768)"
-6161340,Belgium,ISO_3166:BE,2015,2019,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661101,"Natrix maura (Linnaeus, 1758)"
+6161340,Belgium,ISO_3166:BE,1967,2019,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661101,"Natrix maura (Linnaeus, 1758)"
+6161340,Brussels-Capital Region,ISO_3166:BE-BRU,1967,1967,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661101,"Natrix maura (Linnaeus, 1758)"
 6161340,Flemish Region,ISO_3166:BE-VLG,2015,2019,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661101,"Natrix maura (Linnaeus, 1758)"
 6300805,Belgium,ISO_3166:BE,1909,2020,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265117,Pilosella bauhini (Schult. ex Besser) Arv.-Touv.
 6300805,Brussels-Capital Region,ISO_3166:BE-BRU,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265117,Pilosella bauhini (Schult. ex Besser) Arv.-Touv.
@@ -8198,8 +8224,8 @@ verificationKey,locality,locationId,startYear,endYear,datasetKey,taxonKeys,scien
 7172831,Belgium,ISO_3166:BE,2012,2021,2c38cf8a-f981-4dfb-bc9d-dd2b6fc792ed,206100615,Phedimus aizoon
 7172831,Flemish Region,ISO_3166:BE-VLG,2012,2016,2c38cf8a-f981-4dfb-bc9d-dd2b6fc792ed,206100615,Phedimus aizoon
 7172831,Walloon Region,ISO_3166:BE-WAL,2021,2021,2c38cf8a-f981-4dfb-bc9d-dd2b6fc792ed,206100615,Phedimus aizoon
-7190901,Belgium,ISO_3166:BE,2005,2018,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661229,"Graptemys pseudogeographica subsp. pseudogeographica (Gray, 1831)"
-7190901,Flemish Region,ISO_3166:BE-VLG,2005,2018,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661229,"Graptemys pseudogeographica subsp. pseudogeographica (Gray, 1831)"
+7190901,Belgium,ISO_3166:BE,2005,2018,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213159099,"Graptemys pseudogeographica pseudogeographica (Gray, 1831)"
+7190901,Flemish Region,ISO_3166:BE-VLG,2005,2018,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213159099,"Graptemys pseudogeographica pseudogeographica (Gray, 1831)"
 7222196,Belgium,ISO_3166:BE,1986,1986,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265172,Achillea cartilaginea Ledeb. ex Reichenb. s.l.
 7222196,Flemish Region,ISO_3166:BE-VLG,1986,1986,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265172,Achillea cartilaginea Ledeb. ex Reichenb. s.l.
 7223276,Belgium,ISO_3166:BE,1824,2019,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265209,Centaurea solstitialis L. subsp. solstitialis
@@ -8518,6 +8544,8 @@ verificationKey,locality,locationId,startYear,endYear,datasetKey,taxonKeys,scien
 7443846,Belgium,ISO_3166:BE,2012,2020,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267067,Dipsacus strigosus Willd. ex Roem. & Schult.
 7443846,Brussels-Capital Region,ISO_3166:BE-BRU,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267067,Dipsacus strigosus Willd. ex Roem. & Schult.
 7443846,Flemish Region,ISO_3166:BE-VLG,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267067,Dipsacus strigosus Willd. ex Roem. & Schult.
+7444957,Belgium,ISO_3166:BE,2011,2011,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213159045,"Podarcis liolepis (Boulenger, 1905)"
+7444957,Walloon Region,ISO_3166:BE-WAL,2011,2011,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213159045,"Podarcis liolepis (Boulenger, 1905)"
 7455425,Belgium,ISO_3166:BE,2010,2017,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264993,Phyla nodiflora (L.) var. minor (Hook.) N. O'Leary & Múlgura
 7455425,Flemish Region,ISO_3166:BE-VLG,2010,2017,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264993,Phyla nodiflora (L.) var. minor (Hook.) N. O'Leary & Múlgura
 7461690,Belgium,ISO_3166:BE,2007,2007,b043c480-dd36-4f4f-aa82-e188753ff09d,143610767,Frommeëlla mexicana (Mains) J.W. McCain & J.F. Hennen
@@ -8592,6 +8620,8 @@ verificationKey,locality,locationId,startYear,endYear,datasetKey,taxonKeys,scien
 7569785,Walloon Region,ISO_3166:BE-WAL,1890,1890,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265300,Hieracium pilosum Schleich. ex Froel.
 7572133,Belgium,ISO_3166:BE,2008,2008,2c38cf8a-f981-4dfb-bc9d-dd2b6fc792ed,206111541,Anoplophora glabripennis
 7572133,Flemish Region,ISO_3166:BE-VLG,2008,2008,2c38cf8a-f981-4dfb-bc9d-dd2b6fc792ed,206111541,Anoplophora glabripennis
+7576179,Belgium,ISO_3166:BE,2022,2022,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213159075,"Pantherophis spiloides (Duméril, Bibron and Duméril, 1854)"
+7576179,Flemish Region,ISO_3166:BE-VLG,2022,2022,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213159075,"Pantherophis spiloides (Duméril, Bibron and Duméril, 1854)"
 7576335,Belgium,ISO_3166:BE,1983,2015,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266146,Amaranthus x ozanonii
 7576335,Flemish Region,ISO_3166:BE-VLG,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266146,Amaranthus x ozanonii
 7576335,Walloon Region,ISO_3166:BE-WAL,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266146,Amaranthus x ozanonii
@@ -8954,12 +8984,16 @@ verificationKey,locality,locationId,startYear,endYear,datasetKey,taxonKeys,scien
 8212772,Belgium,ISO_3166:BE,1955,2020,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267060,Symphoricarpos x doorenbosii Krüssm.
 8212772,Flemish Region,ISO_3166:BE-VLG,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267060,Symphoricarpos x doorenbosii Krüssm.
 8212772,Walloon Region,ISO_3166:BE-WAL,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141267060,Symphoricarpos x doorenbosii Krüssm.
+8219807,Belgium,ISO_3166:BE,2021,2021,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213159053,"Trimeresurus albolabris (Gray, 1842)"
+8219807,Flemish Region,ISO_3166:BE-VLG,2021,2021,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213159053,"Trimeresurus albolabris (Gray, 1842)"
 8223023,Belgium,ISO_3166:BE,1949,2018,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265015,Saxifraga x geum L.
 8223023,Flemish Region,ISO_3166:BE-VLG,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265015,Saxifraga x geum L.
 8223023,Walloon Region,ISO_3166:BE-WAL,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265015,Saxifraga x geum L.
 8227753,Belgium,ISO_3166:BE,1904,2020,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266345,Anchusa procera Besser
 8227753,Flemish Region,ISO_3166:BE-VLG,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266345,Anchusa procera Besser
 8227753,Walloon Region,ISO_3166:BE-WAL,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266345,Anchusa procera Besser
+8228334,Belgium,ISO_3166:BE,2022,2022,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213159001,"Daboia palaestinae (Werner, 1938)"
+8228334,Flemish Region,ISO_3166:BE-VLG,2022,2022,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213159001,"Daboia palaestinae (Werner, 1938)"
 8237223,Belgium,ISO_3166:BE,2012,2012,2c38cf8a-f981-4dfb-bc9d-dd2b6fc792ed,206104309,Halimium lasianthum
 8237223,Flemish Region,ISO_3166:BE-VLG,2012,2012,2c38cf8a-f981-4dfb-bc9d-dd2b6fc792ed,206104309,Halimium lasianthum
 8241853,Belgium,ISO_3166:BE,2017,2017,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264612|168400417,"Athyrium niponicum (Mett.) Hance|Anisocampium niponicum (Mett.) Y.C. Liu, W.L. Chiou & M. Kato"
@@ -9171,8 +9205,8 @@ verificationKey,locality,locationId,startYear,endYear,datasetKey,taxonKeys,scien
 8909595,Brussels-Capital Region,ISO_3166:BE-BRU,2010,2021,2c38cf8a-f981-4dfb-bc9d-dd2b6fc792ed,206107023,Faxonius limosus
 8909595,Flemish Region,ISO_3166:BE-VLG,1977,2016,289244ee-e1c1-49aa-b2d7-d379391ce265,140563019,Orconectes limosus
 8909595,Walloon Region,ISO_3166:BE-WAL,2007,2021,2c38cf8a-f981-4dfb-bc9d-dd2b6fc792ed,206107023,Faxonius limosus
-8909809,Belgium,ISO_3166:BE,2010,2020,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661216,"Emys orbicularis (Linnaeus, 1758)"
-8909809,Brussels-Capital Region,ISO_3166:BE-BRU,2018,2018,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661216,"Emys orbicularis (Linnaeus, 1758)"
+8909809,Belgium,ISO_3166:BE,1990,2020,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661216,"Emys orbicularis (Linnaeus, 1758)"
+8909809,Brussels-Capital Region,ISO_3166:BE-BRU,1990,2018,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661216,"Emys orbicularis (Linnaeus, 1758)"
 8909809,Flemish Region,ISO_3166:BE-VLG,2010,2020,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661216,"Emys orbicularis (Linnaeus, 1758)"
 8909809,Walloon Region,ISO_3166:BE-WAL,,,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661216,"Emys orbicularis (Linnaeus, 1758)"
 8911082,Belgium,ISO_3166:BE,1835,2020,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266183,Amaranthus blitum L. s.l.
@@ -9237,7 +9271,8 @@ verificationKey,locality,locationId,startYear,endYear,datasetKey,taxonKeys,scien
 9182765,Brussels-Capital Region,ISO_3166:BE-BRU,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265139,Calendula arvensis L.
 9182765,Flemish Region,ISO_3166:BE-VLG,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265139,Calendula arvensis L.
 9182765,Walloon Region,ISO_3166:BE-WAL,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265139,Calendula arvensis L.
-9185677,Belgium,ISO_3166:BE,2004,2017,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661133,"Podarcis siculus (Rafinesque-schmaltz, 1810)"
+9185677,Belgium,ISO_3166:BE,1998,2017,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661133,"Podarcis siculus (Rafinesque-schmaltz, 1810)"
+9185677,Brussels-Capital Region,ISO_3166:BE-BRU,1998,1998,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661133,"Podarcis siculus (Rafinesque-schmaltz, 1810)"
 9185677,Flemish Region,ISO_3166:BE-VLG,2004,2017,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661133,"Podarcis siculus (Rafinesque-schmaltz, 1810)"
 9187223,Belgium,ISO_3166:BE,2013,2013,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661179,"Pituophis melanoleucus (Daudin, 1803)"
 9187223,Flemish Region,ISO_3166:BE-VLG,2013,2013,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,180661179,"Pituophis melanoleucus (Daudin, 1803)"
@@ -9277,6 +9312,8 @@ verificationKey,locality,locationId,startYear,endYear,datasetKey,taxonKeys,scien
 9321334,Brussels-Capital Region,ISO_3166:BE-BRU,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265333,Pilosella x prussica (Naeg. & Peter) Soják
 9321334,Walloon Region,ISO_3166:BE-WAL,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265333,Pilosella x prussica (Naeg. & Peter) Soják
 9326020,Belgium,ISO_3166:BE,,,e1c3be64-2799-4342-8312-49d076993132,159498410,"Gallus gallus (Linnaeus, 1758)"
+9342283,Belgium,ISO_3166:BE,1993,1994,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213159023,"Thamnophis marcianus (Baird and Girard,1853)"
+9342283,Brussels-Capital Region,ISO_3166:BE-BRU,1993,1994,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213159023,"Thamnophis marcianus (Baird and Girard,1853)"
 9345027,Belgium,ISO_3166:BE,1991,2021,2c38cf8a-f981-4dfb-bc9d-dd2b6fc792ed,206111032,Spatula cyanoptera
 9345027,Brussels-Capital Region,ISO_3166:BE-BRU,2021,2021,2c38cf8a-f981-4dfb-bc9d-dd2b6fc792ed,206111032,Spatula cyanoptera
 9345027,Flemish Region,ISO_3166:BE-VLG,1991,2021,2c38cf8a-f981-4dfb-bc9d-dd2b6fc792ed,206111032,Spatula cyanoptera
@@ -9296,6 +9333,8 @@ verificationKey,locality,locationId,startYear,endYear,datasetKey,taxonKeys,scien
 9405645,Belgium,ISO_3166:BE,1850,2019,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266377,Anchusa ovata Lehm.
 9405645,Flemish Region,ISO_3166:BE-VLG,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266377,Anchusa ovata Lehm.
 9405645,Walloon Region,ISO_3166:BE-WAL,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266377,Anchusa ovata Lehm.
+9416124,Belgium,ISO_3166:BE,2023,2023,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213159072,"Zamenis scalaris (Schinz, 1822)"
+9416124,Flemish Region,ISO_3166:BE-VLG,2023,2023,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213159072,"Zamenis scalaris (Schinz, 1822)"
 9419993,Belgium,ISO_3166:BE,1813,2020,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266440,Erodium moschatum (L.) L'Hérit. var. moschatum
 9419993,Flemish Region,ISO_3166:BE-VLG,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266440,Erodium moschatum (L.) L'Hérit. var. moschatum
 9419993,Walloon Region,ISO_3166:BE-WAL,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141266440,Erodium moschatum (L.) L'Hérit. var. moschatum
@@ -9388,6 +9427,8 @@ verificationKey,locality,locationId,startYear,endYear,datasetKey,taxonKeys,scien
 10730110,Belgium,ISO_3166:BE,1894,1920,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265040,Crassula peduncularis (Smith) F. Meigen
 10730110,Walloon Region,ISO_3166:BE-WAL,1894,1920,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265040,Crassula peduncularis (Smith) F. Meigen
 10797854,Belgium,ISO_3166:BE,,,b043c480-dd36-4f4f-aa82-e188753ff09d,143611062,Puccinia grisea (F. Strauss) G. Winter
+10857535,Belgium,ISO_3166:BE,2021,2021,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213158981,"Dryophytes japonicus (Günther, 1859)"
+10857535,Flemish Region,ISO_3166:BE-VLG,2021,2021,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213158981,"Dryophytes japonicus (Günther, 1859)"
 10933479,Belgium,ISO_3166:BE,2012,2018,2c38cf8a-f981-4dfb-bc9d-dd2b6fc792ed,206101879,Haliclona xena
 10933479,Flemish Region,ISO_3166:BE-VLG,2012,2018,2c38cf8a-f981-4dfb-bc9d-dd2b6fc792ed,206101879,Haliclona xena
 10937982,Belgium,ISO_3166:BE,2020,2020,2c38cf8a-f981-4dfb-bc9d-dd2b6fc792ed,206106914,Phonipara canora
@@ -9406,6 +9447,8 @@ verificationKey,locality,locationId,startYear,endYear,datasetKey,taxonKeys,scien
 11136683,Walloon Region,ISO_3166:BE-WAL,1898,1898,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265317,Pulicaria arabica (L.) Cass. subsp. arabica
 11141765,Belgium,ISO_3166:BE,2013,2015,2c38cf8a-f981-4dfb-bc9d-dd2b6fc792ed,206096973,Tetramoera langmaidi
 11141765,Flemish Region,ISO_3166:BE-VLG,2013,2015,2c38cf8a-f981-4dfb-bc9d-dd2b6fc792ed,206096973,Tetramoera langmaidi
+11205618,Belgium,ISO_3166:BE,2023,2023,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213159069,"Leptodeira ashmeadii (Hallowell, 1845)"
+11205618,Flemish Region,ISO_3166:BE-VLG,2023,2023,a12e2bf8-13ce-4d0b-b2d4-b1cd20450a63,213159069,"Leptodeira ashmeadii (Hallowell, 1845)"
 11335341,Belgium,ISO_3166:BE,1947,2015,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265789,Trisetaria panicea (Lam.) Maire
 11335341,Flemish Region,ISO_3166:BE-VLG,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265789,Trisetaria panicea (Lam.) Maire
 11335341,Walloon Region,ISO_3166:BE-WAL,,,9ff7d317-609b-4c08-bd86-3bc404b77c42,141265789,Trisetaria panicea (Lam.) Maire

@@ -31,13 +31,17 @@ This was already done in \@ref(filter-on-distribution), where only distributions
 progressr::with_progress({
   progress_bar <- progressor(steps = length(taxon_keys))
   speciesprofiles <-
-    future_map_dfr(taxon_keys, function(x) {
-      progress_bar()
-      rgbif::name_usage(
-        key = x,
-        data = "speciesProfiles"
-      )$data
-  }, .options = furrr_options(seed = TRUE))
+    future_map_dfr(
+      taxon_keys,
+      function(x) {
+        progress_bar()
+        rgbif::name_usage(
+          key = x,
+          data = "speciesProfiles"
+        )$data
+      },
+      .options = furrr_options(seed = TRUE)
+    )
 })
 ```
 
@@ -56,13 +60,17 @@ write_csv(speciesprofiles, here("data", "raw", "speciesprofiles.csv"), na = "")
 progressr::with_progress({
   progress_bar <- progressor(steps = length(taxon_keys))
   descriptions <-
-    future_map_dfr(taxon_keys, function(x) {
-      progress_bar()
-      rgbif::name_usage(
-        key = x,
-        data = "description"
-      )$data
-  }, .options = furrr_options(seed = TRUE))
+    future_map_dfr(
+      taxon_keys,
+      function(x) {
+        progress_bar()
+        rgbif::name_usage(
+          key = x,
+          data = "description"
+        )$data
+      },
+      .options = furrr_options(seed = TRUE)
+    )
 })
 ```
 

@@ -59,8 +59,10 @@ progressr::with_progress({
       rgbif::name_usage(
         key = key, 
         data = "synonyms")$data %>%
-        select(-contains("issues"))
-    }, .options = furrr_options(seed = TRUE)
+        select(-contains("issues")
+      )
+    },
+    .options = furrr_options(seed = TRUE)
   )
 })
 library(tidylog)

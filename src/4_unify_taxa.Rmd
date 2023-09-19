@@ -84,13 +84,17 @@ Even though we stored some backbone information for most of our taxa in the prev
 
 progressr::with_progress({
   progress_bar <- progressor(steps = length(verification_keys))
-backbone_info <-
-  future_map_dfr(verification_keys, function(x) {
-    progress_bar()
-    rgbif::name_usage(
-      key = x
-    )$data
-  }, .options = furrr_options(seed = TRUE))
+  backbone_info <-
+    future_map_dfr(
+      verification_keys,
+      function(x) {
+        progress_bar()
+        rgbif::name_usage(
+          key = x
+        )$data
+      },
+      .options = furrr_options(seed = TRUE)
+    )
 })
 ```
 

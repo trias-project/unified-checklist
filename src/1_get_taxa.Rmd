@@ -147,13 +147,17 @@ taxon_keys <-
 progressr::with_progress({
   progress_bar <- progressor(steps = length(taxon_keys))
   distributions <-
-    future_map_dfr(taxon_keys, function(x) {
-      progress_bar()
-      rgbif::name_usage(
-        key = x,
-        data = "distribution"
-      )$data
-    }, .options = furrr_options(seed = TRUE))
+    future_map_dfr(
+      taxon_keys,
+      function(x) {
+        progress_bar()
+        rgbif::name_usage(
+          key = x,
+          data = "distribution"
+        )$data
+      },
+      .options = furrr_options(seed = TRUE)
+    )
 })
 ```
 
@@ -223,16 +227,19 @@ nub_keys <-
 2. Get GBIF backbone taxonomy information.
 
 ```{r get_taxa-get_backbone_info_from_gbif, cache = TRUE}
-
 progressr::with_progress({
   progress_bar <- progressor(steps = length(nub_keys))
   backbone_info <-
-    future_map_dfr(nub_keys, function(x) {
-      progress_bar()
-      rgbif::name_usage(
-        key = x
-      )$data
-    }, .options = furrr_options(seed = TRUE))
+    future_map_dfr(
+      nub_keys,
+      function(x) {
+        progress_bar()
+        rgbif::name_usage(
+          key = x
+        )$data
+      },
+      .options = furrr_options(seed = TRUE)
+    )
 })
 ```
 

@@ -14,9 +14,10 @@ This unified checklist is the result of two open and reproducible data pipelines
 6. Registry of introduced terrestrial molluscs in Belgium ([Backeljau et al. 2019](https://doi.org/10.15468/t13kwo))
 7. Checklist of alien species in the Scheldt estuary in Flanders, Belgium ([Soors et al. 2021](https://doi.org/10.15468/8zq9s4))
 8. Catalogue of the Rust Fungi of Belgium ([Vanderweyen et al. 2018](https://doi.org/10.15468/2dboyn))
-9. WRiMS: World Register of Introduced Marine Species ([Flanders Marine Institute 2019](https://doi.org/10.14284/347))
-10. Ad hoc checklist of alien species in Belgium ([Reyserhove et al. 2018](https://doi.org/10.15468/3pmlxs))
-11. RINSE - Pathways and vectors of biological invasions in Northwest Europe ([Zieritz et al. 2018](https://doi.org/10.15468/guejza))
+9. WRiMS: World Register of Introduced Marine Species ([Rius et al. 2023](https://doi.org/10.14284/347))
+10. Waarnemingen.be / observations.be - List of species observed in Belgium ([Swinnen et al. 2022](https://doi.org/10.15468/a7wkuh))
+11. Ad hoc checklist of alien species in Belgium ([Reyserhove et al. 2018](https://doi.org/10.15468/3pmlxs))
+12. RINSE - Pathways and vectors of biological invasions in Northwest Europe ([Zieritz et al. 2018](https://doi.org/10.15468/guejza))
 
 ## Workflow
 

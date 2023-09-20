@@ -175,7 +175,9 @@ taxa_unified <-
   taxa_unified %>% filter(
     scientificName != "Anser fabalis (Latham, 1787)",
     scientificName != "Anser anser (Linnaeus, 1758)",
-    scientificName != "Branta leucopsis (Bechstein, 1803)"
+    scientificName != "Branta leucopsis (Bechstein, 1803)",
+    scientificName != "Olios (Walckenaer, 1806)", # Don't include entire genus
+    scientificName != "Pholcus Walckenaer, 1805" # Don't include entire genus
   )
 ```
 

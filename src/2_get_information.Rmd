@@ -56,7 +56,6 @@ write_csv(speciesprofiles, here("data", "raw", "speciesprofiles.csv"), na = "")
 1. Get descriptions for our taxa from GBIF.
 
 ```{r get_information-get_descriptions_from_gbif, cache = TRUE}
-
 progressr::with_progress({
   progress_bar <- progressor(steps = length(taxon_keys))
   descriptions <-

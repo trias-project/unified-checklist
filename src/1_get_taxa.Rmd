@@ -315,7 +315,7 @@ Save to two CSVs:
 write_csv(taxa, here("data", "raw", "taxa.csv"), na = "")
 ```
 
-* [`data/interim/taxa_with_verification.csv`](https://github.com/trias-project/unified-checklist/blob/master/data/interim/taxa_with_verification.csv.csv): subset of checklist taxa with a valid distribution and an empty column `verificationKey`. This file will be used in later steps.
+* [`data/interim/taxa_with_verification.csv`](https://github.com/trias-project/unified-checklist/blob/master/data/interim/taxa_with_verification.csv): subset of checklist taxa with a valid distribution and an empty column `verificationKey`. This file will be used in later steps.
 
 ```{r get_taxa-24}
 taxa %>%

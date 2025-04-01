@@ -3675,7 +3675,7 @@ taxonKey,scientificName,taxonID,datasetKey,nameType,issues,validDistribution,bb_
 206097152,Catalpa bignonioides,9232,2c38cf8a-f981-4dfb-bc9d-dd2b6fc792ed,SCIENTIFIC,,TRUE,3172615,Catalpa bignonioides Walter,Plantae,SPECIES,ACCEPTED,,,3172615
 206097155,Pinus contorta,7193,2c38cf8a-f981-4dfb-bc9d-dd2b6fc792ed,SCIENTIFIC,,TRUE,5285750,Pinus contorta Douglas ex Loudon,Plantae,SPECIES,ACCEPTED,,,5285750
 206097159,Philadelphus microphyllus,7171,2c38cf8a-f981-4dfb-bc9d-dd2b6fc792ed,SCIENTIFIC,,TRUE,2986010,Philadelphus microphyllus A.Gray,Plantae,SPECIES,ACCEPTED,,,2986010
-206097162,Erica herbacea,6750,2c38cf8a-f981-4dfb-bc9d-dd2b6fc792ed,SCIENTIFIC,,TRUE,7328905,Erica herbacea Georgi,Plantae,SPECIES,HETEROTYPIC_SYNONYM,2882482,Calluna vulgaris (L.) Hull,2882482
+206097162,Erica herbacea,6750,2c38cf8a-f981-4dfb-bc9d-dd2b6fc792ed,SCIENTIFIC,,TRUE,7328905,Erica herbacea Georgi,Plantae,SPECIES,HETEROTYPIC_SYNONYM,2882482,Calluna vulgaris (L.) Hull,5682465
 206097165,Vaccaria hispanica,7600,2c38cf8a-f981-4dfb-bc9d-dd2b6fc792ed,SCIENTIFIC,,TRUE,3085320,Vaccaria hispanica (Mill.) Rauschert,Plantae,SPECIES,SYNONYM,8091998,Gypsophila vaccaria (L.) Sm.,8091998
 206097166,Calendula officinalis,6502,2c38cf8a-f981-4dfb-bc9d-dd2b6fc792ed,SCIENTIFIC,,TRUE,5391480,Calendula officinalis L.,Plantae,SPECIES,ACCEPTED,,,5391480
 206097169,Digitaria sanguinalis,6694,2c38cf8a-f981-4dfb-bc9d-dd2b6fc792ed,SCIENTIFIC,,TRUE,5289972,Digitaria sanguinalis (L.) Scop.,Plantae,SPECIES,ACCEPTED,,,5289972

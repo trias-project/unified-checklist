@@ -2488,9 +2488,6 @@ verificationKey,locality,locationId,startYear,endYear,datasetKey,taxonKeys,scien
 2882360,Flemish Region,ISO_3166:BE-VLG,2014,2014,2c38cf8a-f981-4dfb-bc9d-dd2b6fc792ed,206105955,Fagus orientalis
 2882443,Belgium,ISO_3166:BE,1998,2020,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264668,Cabomba caroliniana A. Gray
 2882443,Flemish Region,ISO_3166:BE-VLG,1998,2020,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264668,Cabomba caroliniana A. Gray
-2882482,Belgium,ISO_3166:BE,2011,2021,2c38cf8a-f981-4dfb-bc9d-dd2b6fc792ed,206097162,Erica herbacea
-2882482,Flemish Region,ISO_3166:BE-VLG,2011,2021,2c38cf8a-f981-4dfb-bc9d-dd2b6fc792ed,206097162,Erica herbacea
-2882482,Walloon Region,ISO_3166:BE-WAL,2011,2011,2c38cf8a-f981-4dfb-bc9d-dd2b6fc792ed,206097162,Erica herbacea
 2882631,Belgium,ISO_3166:BE,2018,2019,9ff7d317-609b-4c08-bd86-3bc404b77c42,168400471,Pieris japonica (Thunb.) D. Don
 2882631,Flemish Region,ISO_3166:BE-VLG,2018,2019,9ff7d317-609b-4c08-bd86-3bc404b77c42,168400471,Pieris japonica (Thunb.) D. Don
 2882753,Belgium,ISO_3166:BE,1943,2019,9ff7d317-609b-4c08-bd86-3bc404b77c42,141264939,Gaultheria procumbens L.

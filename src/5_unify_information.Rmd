@@ -14,7 +14,7 @@ distributions <- read_csv(
   here("data", "raw", "distributions.csv"),
   col_types = cols(
     .default = col_character(),
-    taxonKey = col_double()
+    key = col_double()
   )
 )
 speciesprofiles <- read_csv(here("data", "raw", "speciesprofiles.csv"))
@@ -58,7 +58,7 @@ distributions_unified <-
   # Split temporal on "/" into startYear and endYear
   # If temporal only contains a single year, then endYear will be empty
   separate(
-    temporal,
+    eventDate,
     into = c("startYear", "endYear"),
     sep = "/",
     remove = FALSE,
@@ -95,6 +95,7 @@ distributions_unified <-
     "De Panne" = "Flemish Region",
     "Haven van Antwerpen" = "Flemish Region",
     "Kanaal Gent - Terneuzen" = "Flemish Region",
+    "Kanaal van Gent naar Terneuzen" = "Flemish Region",
     "Knokke-Heist" = "Flemish Region",
     "Koksijde" = "Flemish Region",
     "Nieuwpoort Harbour" = "Flemish Region",
@@ -106,7 +107,8 @@ distributions_unified <-
     "Spuikom" = "Flemish Region",
     "Zeebrugge" = "Flemish Region",
     "Flanders" = "Flemish Region",
-    "Wallonia" = "Walloon Region"
+    "Wallonia" = "Walloon Region",
+    "Vlaanderen" = "Flemish Region"
   )) %>%
   
   # Standardize locationId for all
@@ -126,7 +128,7 @@ distributions_belgium_from_regions <-
   distributions_unified %>%
 
   # Group by taxonKey within a checklist
-  group_by(taxonKey) %>%
+  group_by(key) %>%
 
   # Filter on those groups without a national distribution
   filter(!"Belgium" %in% locality) %>%
@@ -137,7 +139,7 @@ distributions_belgium_from_regions <-
     startYear = min(startYear, na.rm = TRUE),
     endYear = max(endYear, na.rm = TRUE)
   ) %>%
-  ungroup() %>%
+  ungroup() %>% 
 
   # Convert dates to integers and set Inf to NA
   mutate(
@@ -160,7 +162,7 @@ distributions_unified <-
   bind_rows(distributions_belgium_from_regions) %>%
 
   # Sort by taxonKey
-  arrange(taxonKey)
+  arrange(key)
 ```
 
 5. Choose a single distribution per locality within a checklist.

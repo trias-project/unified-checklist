@@ -136,10 +136,11 @@ E.g. compare:
 1. Get verbatim information for our key from GBIF.
 
 ```{r}
-verbatim_info <- purrr::map(
-  taxa$taxonKey,
-  ~rgbif::name_usage(key = ., data = "verbatim"),
-  .progress = "verbatim"
+verbatim_info <- 
+  purrr::map(
+    taxa$taxonKey,
+    ~rgbif::name_usage(key = ., data = "verbatim"),
+    .progress = "verbatim"
 )
 names(verbatim_info) <- taxa$taxonKey
 ```

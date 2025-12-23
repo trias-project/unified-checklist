@@ -71,17 +71,6 @@ checklists <- head(checklists, -1)
 
 1. Get taxa from these checklists from GBIF. **Note**: here we get _checklist taxa_, not _GBIF backbone taxa_.
 
-```{r get_taxa-get_checklist_taxa_from_gbif, cache = TRUE}
-taxa <-
-  map_df(checklists$datasetKey, function(x) {
-    rgbif::name_usage(
-      datasetKey = x,
-      limit = 99999 # Should be more than total taxa for all checklists
-    )$data
-  })
-```
-
-
 ```{r}
 taxa <- 
   purrr::map(checklists$datasetKey,
@@ -92,7 +81,7 @@ taxa <-
 
 ```
 
-2. Keep only source taxa, 
+2. Keep only source taxa 
 
 ```{r get-taxa-6}
 taxa <-
@@ -115,7 +104,6 @@ taxa <-
   select(key, scientificName, taxonID, datasetKey, nameType, issues, nubKey) %>%
   rename(taxonKey = key)
 ```
-
 5. Fix `scientificName` spelling issues (i.e. double quotes).
 
 ```{r get_taxa-9}

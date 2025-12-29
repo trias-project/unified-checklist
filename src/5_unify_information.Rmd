@@ -335,7 +335,8 @@ write_csv(speciesprofiles_unified, here("data", "interim", "speciesprofiles_unif
 
 ```{r unify_information-15, echo = TRUE}
 descriptions_unified <-
-  descriptions %>%
+  descriptions %>% 
+    rename(taxonKey = key) %>% 
   mutate(description = recode(description,
     "Africa" = "Africa",
     "Africa (WGSRPD:2)" = "Africa",
@@ -539,14 +540,17 @@ descriptions_unified <-
     description_1, description_2, description_3,
     na.rm = TRUE,
     convert = TRUE
-  ) 
+  ) %>% 
+  
+  # Remove key
+  select(-key)
 ```
 
 3. Remove `NA` and empty descriptions.
 
 ```{r unify_information-19}
-descriptions <-
-  descriptions %>%
+descriptions_unified <-
+  descriptions_unified %>%
   mutate(description = na_if(description, "")) %>% # Change "" to NA
   filter(!is.na(description))
 ```
@@ -554,8 +558,8 @@ descriptions <-
 4. Select unique descriptions (within their type) within a checklist.
 
 ```{r unify_information-20, echo = TRUE}
-descriptions <-
-  descriptions %>%
+descriptions_unified <-
+  descriptions_unified %>%
 
   # Join species profile with taxon to get verificationKey and checklist order
   left_join(taxa, by = "taxonKey") %>%

@@ -23,7 +23,7 @@ descriptions <- read_csv(
   col_types = cols(
     .default = col_character(),
     key = col_double(),
-    taxonKey = col_double()
+    key = col_double()
   )
 )
 ```
@@ -179,6 +179,7 @@ Both are considered (verified) synonyms of [Medicago monantha Trautv.](https://w
 ```{r unify_information-7, echo = TRUE}
 distributions_unified <-
   distributions_unified %>%
+    rename(taxonKey = key) %>% 
 
   # Join distribution with taxon to get verificationKey and checklistOrder
   left_join(taxa, by = "taxonKey") %>%
@@ -330,21 +331,11 @@ write_csv(speciesprofiles_unified, here("data", "interim", "speciesprofiles_unif
 
 ## Unify descriptions
 
-### Native range
-
-1. Retrieve native range.
-
-```{r unify_information-14}
-native_range <-
-  descriptions %>%
-  filter(type == "native range")
-```
-
-2. Standardize native range:
+1. Standardize native range:
 
 ```{r unify_information-15, echo = TRUE}
-native_range <-
-  native_range %>%
+descriptions_unified <-
+  descriptions %>%
   mutate(description = recode(description,
     "Africa" = "Africa",
     "Africa (WGSRPD:2)" = "Africa",
@@ -524,31 +515,6 @@ native_range <-
     .default = "" # Change to description to discover new values
   ))
 ```
-
-### Degree of establishment
-
-1. Rename invasion stage to degree of establishment, so the values can be combined.
-
-```{r unify_information-16}
-descriptions <-
-  descriptions %>%
-  mutate(type = recode(type,
-    "invasion stage" = "degree of establishment"
-  ))
-```
-
-### Combine and process descriptions
-
-1. Combine descriptions.
-
-```{r unify_information-17}
-descriptions_unified <-
-  native_range %>%
-  bind_rows(
-    descriptions %>% filter(type != "native range")
-  )
-```
-
 2. Split and gather descriptions on `|`.
 
 ```{r unify_information-18}
@@ -573,17 +539,14 @@ descriptions_unified <-
     description_1, description_2, description_3,
     na.rm = TRUE,
     convert = TRUE
-  ) %>%
-  
-  # Remove key column
-  select(-key)
+  ) 
 ```
 
 3. Remove `NA` and empty descriptions.
 
 ```{r unify_information-19}
-descriptions_unified <-
-  descriptions_unified %>%
+descriptions <-
+  descriptions %>%
   mutate(description = na_if(description, "")) %>% # Change "" to NA
   filter(!is.na(description))
 ```
@@ -591,8 +554,8 @@ descriptions_unified <-
 4. Select unique descriptions (within their type) within a checklist.
 
 ```{r unify_information-20, echo = TRUE}
-descriptions_unified <-
-  descriptions_unified %>%
+descriptions <-
+  descriptions %>%
 
   # Join species profile with taxon to get verificationKey and checklist order
   left_join(taxa, by = "taxonKey") %>%

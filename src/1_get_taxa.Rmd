@@ -88,6 +88,7 @@ taxa <-
   taxa %>%
   filter(origin == "SOURCE")
 ```
+
 3. Keep only taxa that are not considered synonyms by source checklist.
 
 ```{r get-taxa-7}
@@ -104,6 +105,7 @@ taxa <-
   select(key, scientificName, taxonID, datasetKey, nameType, issues, nubKey) %>%
   rename(taxonKey = key)
 ```
+
 5. Fix `scientificName` spelling issues (i.e. double quotes).
 
 ```{r get_taxa-9}

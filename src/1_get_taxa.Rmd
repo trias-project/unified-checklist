@@ -71,17 +71,17 @@ checklists <- head(checklists, -1)
 
 1. Get taxa from these checklists from GBIF. **Note**: here we get _checklist taxa_, not _GBIF backbone taxa_.
 
-```{r get_taxa-get_checklist_taxa_from_gbif, cache = TRUE}
-taxa <-
-  map_df(checklists$datasetKey, function(x) {
-    rgbif::name_usage(
-      datasetKey = x,
-      limit = 99999 # Should be more than total taxa for all checklists
-    )$data
-  })
+```{r}
+taxa <- 
+  purrr::map(checklists$datasetKey,
+  ~rgbif::name_usage(datasetKey = ., limit = 99999),
+  .progress = "taxa"
+) %>%
+  purrr::map_dfr("data")
+
 ```
 
-2. Keep only source taxa, not denormed higher classification taxa (= taxa added by GBIF if `kingdom`, `phylum`, etc. was populated)
+2. Keep only source taxa 
 
 ```{r get-taxa-6}
 taxa <-
@@ -135,30 +135,45 @@ E.g. compare:
 
 **Note**: if a checklist has related information for a taxon, but not a valid distribution, that related information will NOT be included in the unified checklist. This is to exclude related information about a taxon for which the checklist did not even consider a Belgian scope (e.g. pathway).
 
-1. Get distributions for our taxa from GBIF.
+1. Get verbatim information for our key from GBIF.
 
-```{r get_taxa-get_distributions_from_gbif, cache = TRUE}
-# Extract taxonKeys as a vector
-taxon_keys <-
-  taxa %>%
-  pull(taxonKey)
+```{r}
+verbatim_info <- 
+  purrr::map(
+    taxa$taxonKey,
+    ~rgbif::name_usage(key = ., data = "verbatim"),
+    .progress = "verbatim"
+)
+names(verbatim_info) <- taxa$taxonKey
+```
 
-# Get distributions
-progressr::with_progress({
-  progress_bar <- progressor(steps = length(taxon_keys))
-  distributions <-
-    future_map_dfr(
-      taxon_keys,
-      function(x) {
-        progress_bar()
-        rgbif::name_usage(
-          key = x,
-          data = "distribution"
-        )$data
-      },
-      .options = furrr_options(seed = TRUE)
-    )
-})
+Extract distribution extension
+
+```{r}
+distribution_extension_path <- "http://rs.gbif.org/terms/1.0/Distribution"
+
+distributions <- purrr::imap(
+  verbatim_info,
+  function(x, i) {
+    if (!distribution_extension_path %in% names(x$data$extensions)) {
+      return(NULL)
+    }
+    x$data$extensions[[distribution_extension_path]] %>%
+    # Make a data.frame for each taxon
+    purrr::map(function(x) {
+      dplyr::as_tibble(x) %>%
+        # Rename all columns by taking the characters after the very last backslash
+        dplyr::rename_with(~ sub(".*\\/", "", .x))
+    }) %>%
+      # Bind all rows together
+      purrr::list_rbind() %>%
+      # Add taxon key as a new column `key`
+      dplyr::mutate(key = i) %>%
+      # Relocate `key` to first column
+      dplyr::relocate(key)
+  }
+) %>%
+  purrr::list_rbind()
 ```
 
 2. Filter distributions on present, alien species in Belgium:
@@ -167,9 +182,9 @@ progressr::with_progress({
 distributions <-
   distributions %>%
   filter(
-    country == "BE",
-    establishmentMeans %in% c("INTRODUCED", "NATURALISED", "INVASIVE", "ASSISTED COLONISATION"),
-    !status %in% c("ABSENT", "EXCLUDED", "DOUBTFUL") # Inverse filter!
+    countryCode == "BE",
+    establishmentMeans %in% c("introduced", "Alien", "vagrant"),
+    !occurrenceStatus %in% c("presence uncertain", "absent", "doubtful", "Uncertain", "Not specified", "excluded", "Recorded in error", "In captivity/cultivated", "Absent", "Extirpated", "Eradicated") # Inverse filter!
   )
 ```
 
@@ -185,7 +200,7 @@ write_csv(distributions, here("data", "raw", "distributions.csv"), na = "")
 taxa <-
   taxa %>%
   mutate(validDistribution = if_else(
-    taxonKey %in% unique(distributions$taxonKey),
+    taxonKey %in% unique(distributions$key),
     TRUE,
     FALSE
   ))
@@ -304,7 +319,7 @@ taxa %>%
     valid_dist = sum(validDistribution),
     valid_dist_not_in_backbone = sum(validDistribution & is.na(bb_key))
   ) %>%
-  adorn_totals("row")
+  adorn_totals("row") %>% View() 
 ```
 
 Save to two CSVs:

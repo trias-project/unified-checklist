@@ -537,6 +537,13 @@ distribution %<>% mutate(dwc_occurrenceStatus = "present")
 distribution %<>% mutate(dwc_establishmentMeans = "introduced")
 ```
 
+#### degreeOfEstablishment
+
+```{r dwc_mapping-47, echo = TRUE}
+distribution %<>% mutate(dwc_establishmentMeans = "introduced")
+```
+
+
 #### eventDate
 
 The distribution information applies to a certain date range, which we will express here as an ISO 8601 date `yyyy/yyyy` (`startYear/endYear`). How the information for `startYear` and `endYear` is extracted from the source checklists, is described in \@ref(unify-distribution). As a result, each taxon in `input_distribution` has _or_ an `startYear` and an `endYear` _or_ no `eventDate` information at all.

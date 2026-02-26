@@ -56,21 +56,30 @@ write_csv(speciesprofiles, here("data", "raw", "speciesprofiles.csv"), na = "")
 1. Get descriptions for our taxa from GBIF.
 
 ```{r get_information-get_descriptions_from_gbif, cache = TRUE}
-progressr::with_progress({
-  progress_bar <- progressor(steps = length(taxon_keys))
-  descriptions <-
-    future_map_dfr(
-      taxon_keys,
-      function(x) {
-        progress_bar()
-        rgbif::name_usage(
-          key = x,
-          data = "description"
-        )$data
-      },
-      .options = furrr_options(seed = TRUE)
-    )
-})
+description_extension_path <- "http://rs.gbif.org/terms/1.0/Description"
+descriptions <- purrr::imap(
+  verbatim_info,
+  function(x, i) {
+    if (!description_extension_path %in% names(x$data$extensions)) {
+      return(NULL)
+    }
+    x$data$extensions[[description_extension_path]] %>%
+      # Make a data.frame for each taxon
+      purrr::map(function(x) {
+        dplyr::as_tibble(x) %>%
+          # Rename all columns by taking the characters after the very last backslash
+          dplyr::rename_with(~ stringr::str_extract(.x, "[^/]+$"))
+      }) %>%
+      # Bind all rows together
+      purrr::list_rbind() %>%
+      # Add taxon key as a new column `key`
+      dplyr::mutate(key = i) %>%
+      # Relocate `key` to first column
+      dplyr::relocate(key)
+  }
+) %>%
+  purrr::list_rbind()
+
 ```
 
 2. Save to [CSV](https://github.com/trias-project/unified-checklist/blob/master/data/raw/descriptions.csv).

@@ -14,7 +14,7 @@ distributions <- read_csv(
   here("data", "raw", "distributions.csv"),
   col_types = cols(
     .default = col_character(),
-    taxonKey = col_double()
+    key = col_double()
   )
 )
 speciesprofiles <- read_csv(here("data", "raw", "speciesprofiles.csv"))
@@ -23,7 +23,7 @@ descriptions <- read_csv(
   col_types = cols(
     .default = col_character(),
     key = col_double(),
-    taxonKey = col_double()
+    key = col_double()
   )
 )
 ```
@@ -58,7 +58,7 @@ distributions_unified <-
   # Split temporal on "/" into startYear and endYear
   # If temporal only contains a single year, then endYear will be empty
   separate(
-    temporal,
+    eventDate,
     into = c("startYear", "endYear"),
     sep = "/",
     remove = FALSE,
@@ -95,6 +95,7 @@ distributions_unified <-
     "De Panne" = "Flemish Region",
     "Haven van Antwerpen" = "Flemish Region",
     "Kanaal Gent - Terneuzen" = "Flemish Region",
+    "Kanaal van Gent naar Terneuzen" = "Flemish Region",
     "Knokke-Heist" = "Flemish Region",
     "Koksijde" = "Flemish Region",
     "Nieuwpoort Harbour" = "Flemish Region",
@@ -106,7 +107,8 @@ distributions_unified <-
     "Spuikom" = "Flemish Region",
     "Zeebrugge" = "Flemish Region",
     "Flanders" = "Flemish Region",
-    "Wallonia" = "Walloon Region"
+    "Wallonia" = "Walloon Region",
+    "Vlaanderen" = "Flemish Region"
   )) %>%
   
   # Standardize locationId for all
@@ -126,7 +128,7 @@ distributions_belgium_from_regions <-
   distributions_unified %>%
 
   # Group by taxonKey within a checklist
-  group_by(taxonKey) %>%
+  group_by(key) %>%
 
   # Filter on those groups without a national distribution
   filter(!"Belgium" %in% locality) %>%
@@ -137,7 +139,7 @@ distributions_belgium_from_regions <-
     startYear = min(startYear, na.rm = TRUE),
     endYear = max(endYear, na.rm = TRUE)
   ) %>%
-  ungroup() %>%
+  ungroup() %>% 
 
   # Convert dates to integers and set Inf to NA
   mutate(
@@ -160,7 +162,7 @@ distributions_unified <-
   bind_rows(distributions_belgium_from_regions) %>%
 
   # Sort by taxonKey
-  arrange(taxonKey)
+  arrange(key)
 ```
 
 5. Choose a single distribution per locality within a checklist.
@@ -177,9 +179,10 @@ Both are considered (verified) synonyms of [Medicago monantha Trautv.](https://w
 ```{r unify_information-7, echo = TRUE}
 distributions_unified <-
   distributions_unified %>%
+    rename(taxonKey = key) %>% 
 
   # Join distribution with taxon to get verificationKey and checklistOrder
-  left_join(taxa, by = "taxonKey") %>%
+  left_join(taxa, by = "taxonKey") %>% 
 
   # Remove records that have no verificationKey (e.g. one wasn't assigned yet)
   filter(!is.na(verificationKey)) %>%
@@ -191,16 +194,19 @@ distributions_unified <-
     verificationKey,
     locality,
     locationId
-  ) %>%
+  ) %>% 
 
-  # Take earliest year, latest year and note taxonKey(s) and scientificName(s)
+  # Take earliest year, latest year and note taxonKey(s), scientificName(s), degree of establishment and pathways of introduction
   summarize(
     startYear = min(startYear, na.rm = TRUE),
     endYear = max(endYear, na.rm = TRUE),
     taxonKeys = paste(unique(taxonKey), collapse = "|"),
-    scientificNames = paste(unique(scientificName), collapse = "|")
-  ) %>%
-  ungroup() %>%
+    scientificNames = paste(unique(scientificName), collapse = "|"),
+    degreeOfEstablishments = paste(unique(degreeOfEstablishment), collapse = "|"),
+    pathways = paste(unique(pathway), collapse = "|")
+    ) %>% 
+
+  ungroup() %>% 
 
   # Convert dates to integers and set Inf to NA
   mutate(
@@ -232,7 +238,9 @@ distributions_unified <-
     endYear = first(endYear),
     datasetKey = first(datasetKey),
     taxonKeys = first(taxonKeys),
-    scientificNames = first(scientificNames)
+    scientificNames = first(scientificNames),
+    degreeOfEstablishments = first(degreeOfEstablishments),
+    pathways = first(pathways)
   ) %>%
   ungroup() %>%
 
@@ -328,21 +336,12 @@ write_csv(speciesprofiles_unified, here("data", "interim", "speciesprofiles_unif
 
 ## Unify descriptions
 
-### Native range
-
-1. Retrieve native range.
-
-```{r unify_information-14}
-native_range <-
-  descriptions %>%
-  filter(type == "native range")
-```
-
-2. Standardize native range:
+1. Standardize native range:
 
 ```{r unify_information-15, echo = TRUE}
-native_range <-
-  native_range %>%
+descriptions_unified <-
+  descriptions %>% 
+    rename(taxonKey = key) %>% 
   mutate(description = recode(description,
     "Africa" = "Africa",
     "Africa (WGSRPD:2)" = "Africa",
@@ -522,31 +521,6 @@ native_range <-
     .default = "" # Change to description to discover new values
   ))
 ```
-
-### Degree of establishment
-
-1. Rename invasion stage to degree of establishment, so the values can be combined.
-
-```{r unify_information-16}
-descriptions <-
-  descriptions %>%
-  mutate(type = recode(type,
-    "invasion stage" = "degree of establishment"
-  ))
-```
-
-### Combine and process descriptions
-
-1. Combine descriptions.
-
-```{r unify_information-17}
-descriptions_unified <-
-  native_range %>%
-  bind_rows(
-    descriptions %>% filter(type != "native range")
-  )
-```
-
 2. Split and gather descriptions on `|`.
 
 ```{r unify_information-18}
@@ -571,9 +545,9 @@ descriptions_unified <-
     description_1, description_2, description_3,
     na.rm = TRUE,
     convert = TRUE
-  ) %>%
+  ) %>% 
   
-  # Remove key column
+  # Remove key
   select(-key)
 ```
 
